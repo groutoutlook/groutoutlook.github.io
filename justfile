@@ -11,14 +11,9 @@ export JUST_ENV := "just_env" # WARN: this is also a method to export env var.
 _default:
     @just --list
 
-placeholder args="nothing":
-    #!{{ shebang }}
-    Write-Host "Havent written build task for this repo." -ForegroundColor Red
-    if($env:pwsh_env) {Write-Host "$env:pwsh_env and {{args}} as ``just`` args"}
-    else {Write-Host "Apparently no .env as well" -ForegroundColor Yellow}
-
 alias b := build
-build: (placeholder "from build") 
+build: 
+    # nothing yet.
 
 alias fmt := format
 format args="nothing":
@@ -32,5 +27,5 @@ run args=default_args:
 
 var_test := "test format"
 alias t := test
-test *args=var_test: (format args) && (placeholder "'from test'") 
-    # also something directly test behaviour.
+test:
+    #not yet.
