@@ -1,7 +1,7 @@
 #!/usr/sbin/sh
 cd ~
-yes | pacman -Syyuu
-yes | pacman -S nushell helix neovim fd bat ripgrep direnv zoxide eza starship just git fzf yazi difftastic openssh github-cli uutils-coreutils wl-clipboard chezmoi base-devel
+pacman -Syyuu --noconfirm
+pacman -S nushell helix neovim fd bat ripgrep zoxide eza starship just git fzf yazi difftastic openssh github-cli uutils-coreutils wl-clipboard base-devel --noconfirm
 git clone https://github.com/groutoutlook/nushellConfig ~/.config/nushell
 git clone https://github.com/groutoutlook/dotfiles
 ln -sr ~/dotfiles/.gitconfig ~
