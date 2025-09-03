@@ -3,7 +3,7 @@ set shell := ["nu", "-c"]
 set windows-shell := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
 set dotenv-load := true
 set script-interpreter := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
-set dotenv-filename	:= ".env"
+set dotenv-filename  := ".env"
 set unstable
 set fallback
 # set dotenv-required := true
@@ -13,8 +13,8 @@ _default:
 
 alias b := build
 build:
-    # build task here
-
+    jrnl til --format yaml --file ./tils    
+    # And more...
 alias r := run
 default_args := 'args here'
 run args=default_args:
@@ -43,3 +43,10 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
+
+
+
+alias fe := frontmatter-export
+[script]
+frontmatter-export:
+    jrnl triv --format yaml --file ./tils && scooter -s "\t" -r '  ' -X && gci ./tils | % { yq "del(.body)" $_}
