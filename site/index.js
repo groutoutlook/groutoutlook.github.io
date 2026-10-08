@@ -10,23 +10,32 @@ const sortListTopicCount = list => [...list].sort((a, b) => {
 });
 
 (() => {
-    const storedTheme = localStorage.getItem("theme");
+    let storedTheme;
+    try {
+        storedTheme = localStorage.getItem("theme");
+    } catch {
+        // Theme switching still works when browser storage is unavailable.
+    }
     const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const theme = storedTheme || (systemDark ? "dark" : "light");
+    const theme = ["dark", "light"].includes(storedTheme) ? storedTheme : (systemDark ? "dark" : "light");
     document.documentElement.dataset.theme = theme;
 
-    window.toggleTheme = () => {
-        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-        document.documentElement.dataset.theme = nextTheme;
-        localStorage.setItem("theme", nextTheme);
-        const button = document.querySelector(".theme-toggle");
-        if (button) button.setAttribute("aria-label", `Switch to ${nextTheme === "dark" ? "light" : "dark"} mode`);
+    const syncSwitch = () => {
+        const control = document.querySelector('.theme-toggle input');
+        if (control) control.checked = document.documentElement.dataset.theme === "dark";
     };
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const button = document.querySelector(".theme-toggle");
-        if (button) button.setAttribute("aria-label", `Switch to ${theme === "dark" ? "light" : "dark"} mode`);
-    });
+    window.setTheme = nextTheme => {
+        document.documentElement.dataset.theme = nextTheme;
+        syncSwitch();
+        try {
+            localStorage.setItem("theme", nextTheme);
+        } catch {
+            // A blocked storage preference must not prevent changing the theme.
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", syncSwitch);
 })();
 
 function sortAlpha() {

@@ -1,0 +1,1 @@
+C:/Users/COHOTECH/hw/obs/note_Knowledge/Trivia.Technologia.Journal.md

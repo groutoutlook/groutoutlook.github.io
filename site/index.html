@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>TILs</title>
+        <title>TILs - Page 1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style.css">
         <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.rss">
@@ -10,7 +10,10 @@
         <script type="text/javascript" src="/index.js"></script>
         <nav class="top-links" aria-label="Site navigation">
             <a class="top-link" href="/">All TILs</a>
-            <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch theme">Theme</button>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
         </nav>
 
         <h1>TILs</h1>
@@ -21,8 +24,362 @@
 
         </div>
 
-        <h2>TILs by topic</h2>
-        <div class="by-topic">
+        <section aria-labelledby="recent-heading">
+        <h2 id="recent-heading">Recent TILs</h2>
+        <nav class="pagination" aria-label="Recent TIL pages">
+            <span aria-disabled="true">&larr; Newer</span>
+            <span>Page 1 of 16</span>
+            <a rel="next" href="/recent/2/">Older &rarr;</a>
+        </nav>
+        <ol class="recent-list">
+            <li class="recent-til">
+                <span class="til-date">2026-10-08 01:41:42 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/blog-openai-developers">Blog | OpenAI Developers</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                    <a class="til-tag" href="/category/harness">
+                        <span>harness</span>
+                    </a>
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-10-05 10:29:45 AM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/tag-700-motion-applied-limited">TAG-700 - Motion Applied Limited</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/ecu">
+                        <span>ecu</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-10-04 04:01:55 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/epaulette">Epaulette</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/culture">
+                        <span>culture</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-10-01 03:07:13 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/the-cuckoo-s-egg">The Cuckoo&#x27;s Egg</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                    <a class="til-tag" href="/category/compsci">
+                        <span>compsci</span>
+                    </a>
+                    <a class="til-tag" href="/category/discussion">
+                        <span>discussion</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-27 10:26:26 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/taxonomy-suggestions-nhentai">Taxonomy Suggestions » nhentai</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/category">
+                        <span>category</span>
+                    </a>
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-23 07:28:01 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/bulb">Bulb</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/biology">
+                        <span>biology</span>
+                    </a>
+                    <a class="til-tag" href="/category/terminology">
+                        <span>terminology</span>
+                    </a>
+                    <a class="til-tag" href="/category/vocabulary">
+                        <span>vocabulary</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-23 02:07:21 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/phase-rules-engine-and-game-client-rust-wasm-react">&#x60;phase&#x60; rules engine and game client — Rust + WASM + React</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                    <a class="til-tag" href="/category/sdk/game">
+                        <span>sdk/game</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-22 01:40:25 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/xiaomi-mimo-v2-6">Xiaomi MiMo v2.6</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/annoucement">
+                        <span>annoucement</span>
+                    </a>
+                    <a class="til-tag" href="/category/llm">
+                        <span>llm</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-19 06:15:02 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/sapote-hong-xiem">Sapote - Hồng xiêm.</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/food/fruit">
+                        <span>food/fruit</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-19 06:01:41 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/bon-bon-wikipedia-tieng-viet">Bòn bon – Wikipedia tiếng Việt</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/food/fruit">
+                        <span>food/fruit</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-19 05:50:00 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/longan-nhan">Longan - nhãn</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/food/fruit">
+                        <span>food/fruit</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-18 06:34:38 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                    <a class="til-tag" href="/category/camera/ip">
+                        <span>camera/ip</span>
+                    </a>
+                    <a class="til-tag" href="/category/infosec">
+                        <span>infosec</span>
+                    </a>
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-17 06:49:41 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/qudit">Qudit</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/physic">
+                        <span>physic</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-16 07:26:22 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/this-isn-t-a-post-about-eating-meat-jacob-kaplan-moss">This isn&#x27;t a post about eating meat - Jacob Kaplan-Moss</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/food">
+                        <span>food</span>
+                    </a>
+                    <a class="til-tag" href="/category/opinion">
+                        <span>opinion</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-15 05:34:18 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/nutmeg">Nutmeg</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/food">
+                        <span>food</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-08 04:34:06 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/33-rules-of-good-social-skills-liam-rosen">33 Rules of Good Social Skills | Liam Rosen</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                    <a class="til-tag" href="/category/psychology">
+                        <span>psychology</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-07 03:59:46 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/r-onebag-wiki-the-ultimate-guide-to-minimalist-travel">r/onebag Wiki: The Ultimate Guide to Minimalist Travel</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-09-05 12:38:56 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/jitx-skills">jitx-skills</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/ai">
+                        <span>ai</span>
+                    </a>
+                    <a class="til-tag" href="/category/hardware">
+                        <span>hardware</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-27 02:38:07 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/neumann-u87-1968-western-germany-vintage-reverb">Neumann U87 1968 - Western Germany Vintage | Reverb</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/culture">
+                        <span>culture</span>
+                    </a>
+                    <a class="til-tag" href="/category/hardware">
+                        <span>hardware</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-27 12:27:32 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/wenzhao-hu">Wenzhao Hu</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/compsci">
+                        <span>compsci</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-25 07:40:11 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/ai-coding-will-prevent-expertise">AI Coding will Prevent Expertise</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/AI">
+                        <span>AI</span>
+                    </a>
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-25 07:29:34 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/xiaomi-new-cpu-matches-apple-cores-single-threaded-much-faster-multithreaded">Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/cpu">
+                        <span>cpu</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-22 10:30:01 AM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/weather-ballon-and-how-a-joke-domain-purchase-turned-into-geopolitical-warfare">Weather Ballon and How a joke domain purchase turned into geopolitical warfare</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/hardware">
+                        <span>hardware</span>
+                    </a>
+                    <a class="til-tag" href="/category/misc">
+                        <span>misc</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-20 02:03:44 PM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/cvent">Cvent</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/corportaion">
+                        <span>corportaion</span>
+                    </a>
+                    <a class="til-tag" href="/category/misc">
+                        <span>misc</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+            <li class="recent-til">
+                <span class="til-date">2026-08-19 09:32:14 AM</span>
+                <div class="recent-entry">
+                    <h3><a class="til-title" href="/post/history-of-apis-api-evangelist">History of APIs - API Evangelist</a></h3>
+                    <div class="recent-tags">
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                    <a class="til-tag" href="/category/web/api">
+                        <span>web/api</span>
+                    </a>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <nav class="pagination" aria-label="Recent TIL pages">
+            <span aria-disabled="true">&larr; Newer</span>
+            <span>Page 1 of 16</span>
+            <a rel="next" href="/recent/2/">Older &rarr;</a>
+        </nav>
+        </section>
+
+        <details class="by-topic" id="topics">
+            <summary>TILs by topic</summary>
             <p>
                 Sort <button class="sort" onclick="sortAlpha()">alphabetically</button>,
                 or <button class="sort" onclick="sortCount()">by count</button>.
@@ -1925,241 +2282,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
-
-        <h2>Recent TILs</h2>
-        <div class="recent">
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/blog-openai-developers">Blog | OpenAI Developers</a></h3>
-                    <span class="til-date">2026-10-08 01:41:42 PM</span>
-                    <a class="til-tag" href="/category/blog">
-                        <span>blog</span>
-                    </a>
-                    <a class="til-tag" href="/category/harness">
-                        <span>harness</span>
-                    </a>
-                    <a class="til-tag" href="/category/meta">
-                        <span>meta</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/tag-700-motion-applied-limited">TAG-700 - Motion Applied Limited</a></h3>
-                    <span class="til-date">2026-10-05 10:29:45 AM</span>
-                    <a class="til-tag" href="/category/ecu">
-                        <span>ecu</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/epaulette">Epaulette</a></h3>
-                    <span class="til-date">2026-10-04 04:01:55 PM</span>
-                    <a class="til-tag" href="/category/culture">
-                        <span>culture</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/the-cuckoo-s-egg">The Cuckoo&#x27;s Egg</a></h3>
-                    <span class="til-date">2026-10-01 03:07:13 PM</span>
-                    <a class="til-tag" href="/category/blog">
-                        <span>blog</span>
-                    </a>
-                    <a class="til-tag" href="/category/compsci">
-                        <span>compsci</span>
-                    </a>
-                    <a class="til-tag" href="/category/discussion">
-                        <span>discussion</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/taxonomy-suggestions-nhentai">Taxonomy Suggestions » nhentai</a></h3>
-                    <span class="til-date">2026-09-27 10:26:26 PM</span>
-                    <a class="til-tag" href="/category/category">
-                        <span>category</span>
-                    </a>
-                    <a class="til-tag" href="/category/meta">
-                        <span>meta</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/bulb">Bulb</a></h3>
-                    <span class="til-date">2026-09-23 07:28:01 PM</span>
-                    <a class="til-tag" href="/category/biology">
-                        <span>biology</span>
-                    </a>
-                    <a class="til-tag" href="/category/terminology">
-                        <span>terminology</span>
-                    </a>
-                    <a class="til-tag" href="/category/vocabulary">
-                        <span>vocabulary</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/phase-rules-engine-and-game-client-rust-wasm-react">&#x60;phase&#x60; rules engine and game client — Rust + WASM + React</a></h3>
-                    <span class="til-date">2026-09-23 02:07:21 PM</span>
-                    <a class="til-tag" href="/category/library">
-                        <span>library</span>
-                    </a>
-                    <a class="til-tag" href="/category/rust">
-                        <span>rust</span>
-                    </a>
-                    <a class="til-tag" href="/category/sdk/game">
-                        <span>sdk/game</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/xiaomi-mimo-v2-6">Xiaomi MiMo v2.6</a></h3>
-                    <span class="til-date">2026-09-22 01:40:25 PM</span>
-                    <a class="til-tag" href="/category/annoucement">
-                        <span>annoucement</span>
-                    </a>
-                    <a class="til-tag" href="/category/llm">
-                        <span>llm</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/sapote-hong-xiem">Sapote - Hồng xiêm.</a></h3>
-                    <span class="til-date">2026-09-19 06:15:02 PM</span>
-                    <a class="til-tag" href="/category/food/fruit">
-                        <span>food/fruit</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/bon-bon-wikipedia-tieng-viet">Bòn bon – Wikipedia tiếng Việt</a></h3>
-                    <span class="til-date">2026-09-19 06:01:41 PM</span>
-                    <a class="til-tag" href="/category/food/fruit">
-                        <span>food/fruit</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/longan-nhan">Longan - nhãn</a></h3>
-                    <span class="til-date">2026-09-19 05:50:00 PM</span>
-                    <a class="til-tag" href="/category/food/fruit">
-                        <span>food/fruit</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a></h3>
-                    <span class="til-date">2026-09-18 06:34:38 PM</span>
-                    <a class="til-tag" href="/category/android">
-                        <span>android</span>
-                    </a>
-                    <a class="til-tag" href="/category/camera/ip">
-                        <span>camera/ip</span>
-                    </a>
-                    <a class="til-tag" href="/category/infosec">
-                        <span>infosec</span>
-                    </a>
-                    <a class="til-tag" href="/category/linux">
-                        <span>linux</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/qudit">Qudit</a></h3>
-                    <span class="til-date">2026-09-17 06:49:41 PM</span>
-                    <a class="til-tag" href="/category/physic">
-                        <span>physic</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/this-isn-t-a-post-about-eating-meat-jacob-kaplan-moss">This isn&#x27;t a post about eating meat - Jacob Kaplan-Moss</a></h3>
-                    <span class="til-date">2026-09-16 07:26:22 PM</span>
-                    <a class="til-tag" href="/category/food">
-                        <span>food</span>
-                    </a>
-                    <a class="til-tag" href="/category/opinion">
-                        <span>opinion</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/nutmeg">Nutmeg</a></h3>
-                    <span class="til-date">2026-09-15 05:34:18 PM</span>
-                    <a class="til-tag" href="/category/food">
-                        <span>food</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/33-rules-of-good-social-skills-liam-rosen">33 Rules of Good Social Skills | Liam Rosen</a></h3>
-                    <span class="til-date">2026-09-08 04:34:06 PM</span>
-                    <a class="til-tag" href="/category/meta">
-                        <span>meta</span>
-                    </a>
-                    <a class="til-tag" href="/category/psychology">
-                        <span>psychology</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/r-onebag-wiki-the-ultimate-guide-to-minimalist-travel">r/onebag Wiki: The Ultimate Guide to Minimalist Travel</a></h3>
-                    <span class="til-date">2026-09-07 03:59:46 PM</span>
-                    <a class="til-tag" href="/category/meta">
-                        <span>meta</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/jitx-skills">jitx-skills</a></h3>
-                    <span class="til-date">2026-09-05 12:38:56 PM</span>
-                    <a class="til-tag" href="/category/ai">
-                        <span>ai</span>
-                    </a>
-                    <a class="til-tag" href="/category/hardware">
-                        <span>hardware</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/wenzhao-hu">Wenzhao Hu</a></h3>
-                    <span class="til-date">2026-08-27 12:27:32 PM</span>
-                    <a class="til-tag" href="/category/compsci">
-                        <span>compsci</span>
-                    </a>
-                </header>
-            </div>
-            <div class="recent-til">
-                <header class="til-header">
-                    <h3><a class="til-title" href="/post/neumann-u87-1968-western-germany-vintage-reverb">Neumann U87 1968 - Western Germany Vintage | Reverb</a></h3>
-                    <span class="til-date">2026-08-27 02:38:07 PM</span>
-                    <a class="til-tag" href="/category/culture">
-                        <span>culture</span>
-                    </a>
-                    <a class="til-tag" href="/category/hardware">
-                        <span>hardware</span>
-                    </a>
-                </header>
-            </div>
-        </div>
+        </details>
     </body>
 </html>

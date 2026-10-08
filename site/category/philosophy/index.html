@@ -9,7 +9,10 @@
         <script type="text/javascript" src="/index.js"></script>
         <nav class="top-links" aria-label="Site navigation">
             <a class="top-link" href="/">All TILs</a>
-            <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch theme">Theme</button>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
         </nav>
 
         <h1>TILs for philosophy</h1>
@@ -39,15 +42,6 @@
         </div>
         <div class="til">
             <header class="til-header">
-                <h3><a class="til-title" href="/post/altruism">Altruism</a></h3>
-                <span class="til-date">2025-10-03 08:03:35 AM</span>
-                <a class="til-tag" href="/category/philosophy">
-                    <span>philosophy</span>
-                </a>
-            </header>
-        </div>
-        <div class="til">
-            <header class="til-header">
                 <h3><a class="til-title" href="/post/list-of-philosophies">List of philosophies</a></h3>
                 <span class="til-date">2025-10-03 05:10:58 PM</span>
                 <a class="til-tag" href="/category/meta">
@@ -58,6 +52,15 @@
                 </a>
                 <a class="til-tag" href="/category/social">
                     <span>social</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/altruism">Altruism</a></h3>
+                <span class="til-date">2025-10-03 08:03:35 AM</span>
+                <a class="til-tag" href="/category/philosophy">
+                    <span>philosophy</span>
                 </a>
             </header>
         </div>

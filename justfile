@@ -3,50 +3,40 @@ set shell := ["nu", "-c"]
 set windows-shell := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
 set dotenv-load := true
 set script-interpreter := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
-set dotenv-filename  := ".env"
+set dotenv-filename	:= ".env"
 set unstable
 set fallback
+set lists
+
 # set dotenv-required := true
-export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
-_default:
-    @just --list
+
+    
+set windows-powershell := true
+
+sync:
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Sync-TilSources.ps1"
 
 alias b := build
+alias rb := rebuild
 build:
-    jrnl til --format yaml --file ./tils    
-    # And more...
-alias r := run
-default_args := 'args here'
-run args=default_args:
-    @Write-Host {{default_args}} -ForegroundColor Red
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1"
 
-alias fmt := format
-format:
-    # format plesase. could also run rfmt
+rebuild: build
 
-alias t := test
-test:
-    # test.
+dev port="1337": build
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Start-TilPreview.ps1" -Port {{port}}
 
-alias w := watch
-watch:
-    # watch, mostly spin up an application e.g. `r r`-> read log by less/bat/ov/tailspin
+dev-stop port="1337":
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Stop-TilPreview.ps1" -Port {{port}}
 
-alias dep := deploy
-deploy:
-    # deploy ...like at least commit and push to remote first.
+daily:
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Register-TilDailyTask.ps1"
 
-alias sk := seek
-seek:
-    # seek ...what? maybe reference to other?
+scan:
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-SecretScan.ps1"
 
-[script]
-script:
-    Write-Host "this is in powershell, without shebang syntax"
+hooks:
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Install-GitHooks.ps1"
 
-
-
-alias fe := frontmatter-export
-[script]
-frontmatter-export:
-    jrnl triv --format yaml --file ./tils && scooter -s "\t" -r '  ' -X && gci ./tils | % { yq "del(.body)" $_}
+pub: build
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Publish-TilSite.ps1"

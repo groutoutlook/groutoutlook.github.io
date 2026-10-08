@@ -9,7 +9,10 @@
         <script type="text/javascript" src="/index.js"></script>
         <nav class="top-links" aria-label="Site navigation">
             <a class="top-link" href="/">All TILs</a>
-            <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch theme">Theme</button>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
         </nav>
 
         <h1>TILs for artist</h1>

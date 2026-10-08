@@ -1,9 +1,2 @@
-base_url = "https://groutoutlook.github.io/"
-
-[[top_links]]
-title = "Homepage"
-url = "https://groutoutlook.github.io/"
-
-[[top_links]]
-title = "TILs"
-url = "https://groutoutlook.github.io/site/index.html"
+base_url = "/"
+exclude_tags = ["adult"]
