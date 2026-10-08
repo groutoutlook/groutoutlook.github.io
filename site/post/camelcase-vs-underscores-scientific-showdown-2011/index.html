@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: CamelCase vs underscores: Scientific showdown (2011)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch theme">Theme</button>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">CamelCase vs underscores: Scientific showdown (2011)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-18 06:09:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/convention">
+                        <span>convention</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/naming">
+                        <span>naming</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/programming">
+                        <span>programming</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://news.ycombinator.com/item?id=40425315">CamelCase vs underscores: Scientific showdown (2011)</a>
+<ul>
+<li>Recap: I personally like dot case. people  prefer <code>train-case</code>/<code>kebab-case</code>.
+<ul>
+<li>those are patterns often seen in URLs.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>#powershell : <a href="https://stackoverflow.com/questions/4857792/powershell-reference-a-property-that-contains-a-space">csv - Powershell: Reference a property that contains a space</a>
+<ul>
+<li>Root: comments on this. variable dispatch on double quotes or braces, handles spaces nicely.
+<ul>
+<li>even some extra nasty delimiters.</li>
+</ul>
+</li>
+<li>Resolution: FYI, <code>pwsh</code> couldnt take anything other than <code>_</code> in normal variable name.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: so in <code>pwsh</code>,  camelCase for normal variables, methods or functions.
+<ul>
+<li>PascalCase for class. snake_case for something else e.g. ScriptBlock.</li>
+<li>Settled with dot case.
+<ul>
+<li>Pro: it's delimiter in #imgui itself. any delimiter like <code>-</code>/<code>_</code> is not usable for file names.
+<ul>
+<li>other options as <code>,</code> or <code>/</code>,.. are  horrible in any kind of shell.</li>
+<li>True representation is <code>Space</code> but it's obviously impossible to parse without braces.</li>
+</ul>
+</li>
+<li>Con: no one preferably use it. Any mainstream programming language use <code>.</code> either as operator or access method to members or objects/classes/structs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: I want to search for a frequently used case within #filesystem.</li>
+<li>Related:
+<ul>
+<li>#filesystem: <code>kebab-case</code> is how <code>gh</code> translated <code>space</code> on my path. To <code>hyphen</code>.</li>
+<li>#blog : <a href="https://lobste.rs/s/ilmbgu/microfeatures_i_d_like_see_more_languages">Microfeatures I'd like to see in more languages</a>
+<ul>
+<li>another <code>kebab-case</code> echo chamber.</li>
+</ul>
+</li>
+<li>#medical : <a href="https://www.reddit.com/r/RSI/comments/1j9uzgs">25M dealing with RSI in both hands</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/Repetitive_strain_injury">RSI Repetitive strain injury</a></li>
+<li>Related: <a href="https://rdrama.net/h/slackernews/post/809987">annual programming thread</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>
