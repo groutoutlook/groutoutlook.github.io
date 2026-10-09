@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pcb - When is it OK for connectors to be SMT instead of TH?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pcb - When is it OK for connectors to be SMT instead of TH?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-23 03:02:29 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pad">
+                        <span>pad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/112372/when-is-it-ok-for-connectors-to-be-smt-instead-of-th">pcb - When is it OK for connectors to be SMT instead of TH?</a>
+<ul>
+<li>Recap: SMD pad is the pad that only visible in one layer, thus perfect for internal layer connecting.</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:  <a href="https://electronics.stackexchange.com/questions/678867/npth-through-smd-pad">pcb - NPTH through SMD pad</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/77941/drill-files-from-kicad-for-pth-and-npth">pcb fabrication - Drill files from Kicad for PTH and NPTH</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#pcb/drc <a href="https://amesweb.info/Screws/Clearance-Hole-Chart.aspx">Clearance Hole Chart</a></li>
+<li>#pad/smd <a href="https://electronics.stackexchange.com/questions/325450/placing-the-pads-of-smd-components-in-different-layers-kicad-pcb-design/325460#325460">Placing the pads of SMD components in different layers (KiCad PCB design)</a></li>
+<li>#via #pad <a href="https://electronics.stackexchange.com/questions/39287/vias-directly-on-smd-pads/691122#691122">Vias directly on SMD pads?</a>
+<ul>
+<li>yeah you can do that, but it's gonna be more expensive.
+<ul>
+<li>Recite: a 0.2mm via on a nominal 0.7mm pad. Pads need to be significantly bigger.</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/170209/anything-bad-to-place-a-via-on-a-pad/662862#662862">pcb - Anything bad to place a via on a pad?</a></li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/woK4PR1WGv7FWCh4EQ3UxA">Is the hole process in the pad(Via-in-Pad) feasible?</a>
+<ul>
+<li>somehow pad is translated to disc in auto translation</li>
+</ul>
+</li>
+<li>Related: #chinese 过孔 is via.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

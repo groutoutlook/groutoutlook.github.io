@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: git-stash changes without reverting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">git-stash changes without reverting</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-18 12:45:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/workflow">
+                        <span>workflow</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/39412407/git-stash-changes-without-reverting">git-stash changes without reverting</a>
+<ul>
+<li>Recap: git stash keeping changes instead of resetting everything.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash store <span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash create</span><span class="punctuation section parens end shell">)</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Stash commit message<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">or an alias</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span> alias.stk <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>!git stash store $(git stash create)<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stk<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Stash commit message<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash show<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> <span class="keyword operator assignment redirection shell">&gt;</span> ./hx.patch <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> equal with a format-patch without actually commit.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span> alias.stss <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>!git stashes<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I&#39;m that lazy.    </span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#patch <a href="https://stackoverflow.com/questions/2160638/how-can-i-format-patch-with-what-i-stash-away/41489686#41489686">git format patch with what I stash away</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://docs.rs/clap/latest/clap/_derive/index.html#arg-attributes">clap::_derive - Rust</a>
+<ul>
+<li><a href="https://github.com/clap-rs/clap/discussions/4270">Derive: set custom long and short names different from field name · clap-rs/clap · Discussion #4270</a>
+<ul>
+<li><a href="https://github.com/ajeetdsouza/zoxide/commit/261cf8846a0ee03ce072b7632010341a03a66e23">--base-dir query option (#1027) · ajeetdsouza/zoxide@261cf88</a>
+<ul>
+<li>which I added <code>-b</code> as short hand for current dir.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#git #patch <a href="https://stackoverflow.com/questions/2217452/in-git-how-do-i-create-a-single-patch-for-the-last-2-revisions/52460808#52460808">In git, how do I create a single patch for the last 2+ revisions?</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> format-patch<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>rangediff</span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> traditional</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> format-patch<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>2</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>stdout</span> <span class="keyword operator assignment redirection shell">&gt;</span> changes.patch</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> am ./<span class="keyword operator regexp quantifier shell">*</span>patch <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I&#39;m so lazy.      </span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li><a href="https://stackoverflow.com/questions/52884437/git-generate-a-single-patch-across-multiple-commits">format a single patch across multiple commits</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

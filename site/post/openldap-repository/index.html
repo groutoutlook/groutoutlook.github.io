@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: OpenLDAP repository</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">OpenLDAP repository</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-31 11:33:21 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/auth/ldap">
+                        <span>auth/ldap</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web/standard">
+                        <span>web/standard</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/openldap/openldap">OpenLDAP repository</a>
+<ul>
+<li>Recap: for identity management. OpenLDAP is mostly for #linux, while in #windows we have AD.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ldapwhoami</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>D</span> cn=admin,dc=example,dc=com<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>W</span></span>
+<span class="meta function-call shell"><span class="variable function shell">ldapsearch</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>LLL</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>b</span> dc=example,dc=com <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>(uid=john)<span class="punctuation definition string end shell">&#39;</span></span> cn gidNumber</span>
+<span class="meta function-call shell"><span class="variable function shell">ldapadd</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>D</span> cn=admin,dc=example,dc=com<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>W</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> add_content.ldif</span>
+<span class="meta function-call shell"><span class="variable function shell">ldappasswd</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>D</span> cn=admin,dc=example,dc=com<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>W</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>S</span></span>
+<span class="meta function-call shell"><span class="variable function shell">slapd</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.redhat.com/en/blog/linux-active-directory">How to join a Linux system to an Active Directory domain</a>
+<ul>
+<li>Active Directory (AD) is a distributed database which is implemented on LDAP.
+<ul>
+<li>is a Microsoft tech. Expecting limited terminology/glossary of that in Linux world.
+<ul>
+<li>#blog: <a href="https://lobste.rs/s/f13wey/don_t_even_consider_starting_with">Don't even consider starting with Microsoft</a>
+<ul>
+<li>they consider MSFT's DNA to be backward-compatible to an extreme.</li>
+</ul>
+</li>
+<li>#acronym: FTA: from the article.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#rust: <a href="https://github.com/lldap/lldap">lldap Light LDAP implementation</a></li>
+<li>#powershell/discussion: <a href="https://stackoverflow.com/questions/45607911/ldap-query-in-powershell">active directory - LDAP query in PowerShell</a></li>
+<li>#golang: <a href="https://github.com/go-ldap/ldap">Basic LDAP v3 functionality for the GO programming language.</a></li>
+<li>#alternative: <a href="https://github.com/Infisical/infisical">Infisical/infisical: ♾ Infisical is the open-source secret management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Search from each selection · Issue #5672 · helix-editor/helix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Search from each selection · Issue #5672 · helix-editor/helix</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-19 11:04:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selection">
+                        <span>selection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/helix-editor/helix/issues/5672">Search from each selection · Issue #5672 · helix-editor/helix</a>
+<ul>
+<li>Recap: <code>v/</code> spawn new cursor in selection.
+<ul>
+<li>useful if you want to spawn extra cursors at new place, without moving current one.</li>
+<li>in new arbitrary location, and then you could move all of them to start of the line.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>trying to spawn cursors like that is worse than <code>Ctrl+alt+leftclick</code>
+<ul>
+<li>in #neovim: <code>v/</code> then <code>n</code>/<code>N</code> expand selection to that searched patterns.</li>
+<li>in #helix: <code>v/</code> -&gt; <code>enter</code> -&gt; <code>esc</code> -&gt; <code>n</code>/<code>N</code> get main cursor on new place.</li>
+<li>#ide/vs: <code>alt+shift+=</code> == Edit.ExpandSelection
+<ul>
+<li><code>alt+shift+]</code> == Edit.ExpandSelectionToContainingBlock,</li>
+<li><code>hx</code> <code>alt+o</code> == <code>expand_selection</code> / <code>alt+i</code> == <code>shrink_selection</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>alt+p</code>/<code>alt+n</code> == <code>select_prev_sibling</code>/<code>select_next_sibling</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

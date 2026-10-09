@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Why are unnamed namespaces used and what are their benefits?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Why are unnamed namespaces used and what are their benefits?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-06 02:51:25 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/namespace">
+                        <span>namespace</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <p><a href="https://stackoverflow.com/questions/357404/why-are-unnamed-namespaces-used-and-what-are-their-benefits/25565298#25565298">c++ - Why are unnamed namespaces used and what are their benefits?</a></p>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++">namespace<span class="meta block c++"><span class="punctuation section block begin c++">{</span> <span class="storage type c">int</span> a <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span><span class="punctuation section block end c++">}</span></span>
+<span class="storage type c">int</span> a <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span>    
+</span></code></pre>
+</li>
+<li>Resolution: for making class/object static inside the compilation units. Kinda the same as <code>static</code>
+<ul>
+<li>improvement over static as they even allow making types translation-unit-local.
+<ul>
+<li>#compsci <a href="https://wikipedia.org/wiki/One_Definition_Rule">ODR : One Definition Rule</a></li>
+</ul>
+</li>
+<li>improve a bit of performance on desktop environment.</li>
+<li><a href="https://stackoverflow.com/questions/5312213/uses-of-unnamed-namespace-in-c/5312351#5312351">use a unnamed namespace for classes</a>
+<ul>
+<li>e.g, you need a class that will only be defined in a .cpp file and used only within
+that file. You want to call it CModuleLock. If it is not in an unnamed namespace and
+some other .cpp file accidentially has another class CModuleLock not in an unnamed
+namespace you won't be able to link your program.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.learncpp.com/cpp-tutorial/unnamed-and-inline-namespaces/">7.13 — Unnamed and inline namespaces – Learn C++</a></li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/11016220/what-are-inline-namespaces-for">inline namespaces</a>
+<ul>
+<li>Useful for splitting stuff into multiple sub-namespaces that all look like one namespace, if you need to do that for some reason.
+<ul>
+<li>This is similar to writing <code>using</code> <code>namespace</code> inner in the outer namespace,
+<ul>
+<li>but without the DRY violation of writing the name of the inner namespace twice.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>using</code> is for aliasing type names, <code>namespace</code> is for aliasing namespaces.</li>
+<li>Somehow I still kept misusing them, alias typename is <code>using</code>, alias namespace is <code>namespace</code>.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

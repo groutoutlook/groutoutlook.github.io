@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Show the key and heatmap that pressed by keyboard or mouse, statistics of app usage and keystroke</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Show the key and heatmap that pressed by keyboard or mouse, statistics of app usage and keystroke</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-17 04:20:27 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/productivity">
+                        <span>productivity</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/visualize">
+                        <span>visualize</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/pattazl/showKeyBoard">Show the key and heatmap that pressed by keyboard or mouse, statistics of app usage and keystroke</a>
+<ul>
+<li>Recap: this is better than <code>keyviz</code> + <code>activityWatch</code></li>
+<li>Resolution: this is sensitive information. must pay attention to #infosec.
+<ul>
+<li><a href="http://127.0.0.1:9900/Setting/">Settings of showKeyBoard.</a> in #vimium <code>Ctrl+s ctrl+k</code>
+<ul>
+<li>#vimium : I map <a href="http://127.0.0.1:9900/Statistics">Stat pages of showKeyboard with <code>Ctrl+s ctrl+shift+k</code> </a></li>
+</ul>
+</li>
+<li><code>Ctrl+alt+shift+s</code> == &quot;Show/Hide Key&quot; toggle that on to show keys on bottom right.</li>
+</ul>
+</li>
+<li>Reason: in scoop.
+<ul>
+<li>but many of them are outdated since the development pace is fast.</li>
+<li>Pro: comprehensive data, everything live inside local machine.</li>
+<li>Con: using autohotkey, which means no porting.</li>
+</ul>
+</li>
+<li>Root: running amok. I want to monitor my keyboard performance.</li>
+<li>Related:
+<ul>
+<li>#terminal :<a href="https://github.com/microsoft/terminal/issues/6487">Question: Is there a way to get keybinding and convert it to string (text)? · Issue #6487 · microsoft/terminal</a></li>
+<li>#alternative : #linux : <a href="https://github.com/d7omdev/keyvis">d7omdev/keyvis: A simple and lightweight keystroke visualisation tool</a>
+<ul>
+<li>This could be much slower.</li>
+</ul>
+</li>
+<li>#original : <a href="https://github.com/mulaRahul/keyviz">mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and ️ mouse actions in real-time.</a>a
+<ul>
+<li>#crossplatform although... eh not really well I guess.</li>
+<li>Cons: development stop about a year ago.
+<ul>
+<li>It does nothing else other than showing keystrokes, which BongoCat can do much better.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#discussion : <a href="https://lobste.rs/s/aqwsn5/praise_autohotkey">In Praise of AutoHotKey</a>
+<ul>
+<li>this talk about #macos as well.</li>
+</ul>
+</li>
+<li>#alternative : <a href="https://whatpulse.org/premium">WhatPulse Premium: More Stats, Deeper Insights | WhatPulse</a>
+<ul>
+<li>#crossplatform , but this is not open sourced. Just being free though.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: This maybe the trueway for me to serialize keybindings.
+<ul>
+<li>Or at least copythinggs tostring for my own usage.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

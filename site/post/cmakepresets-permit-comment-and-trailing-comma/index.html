@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: cmakepresets permit comment and trailing comma.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">cmakepresets permit comment and trailing comma.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-29 10:22:53 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cmake">
+                        <span>build/cmake</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>cmakepresets permit comment and trailing comma.
+<ul>
+<li>Recap:</li>
+<li>Resolution: dont you see it's so convenient for a list to extend its member...Codegen friendly even.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id4">cmake-presets(7) — cmake 4.0.1 documentation</a>
+<ul>
+<li>in the new preset (v10 up, which visual studio not yet support)...
+<ul>
+<li>we can have <code>$comment</code> which is multiline.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#cpp #csharp: <a href="https://devblogs.microsoft.com/oldnewthing/20240209-00/?p=109379">On the virtues of the trailing comma - The Old New Thing</a>
+<ul>
+<li>Recap: it's in init list.</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/cplusplus/papers/issues/1818">P0562 R2 Trailing Commas in Base-clauses and Ctor-initializers · Issue #1818 · cplusplus/papers</a></li>
+<li><a href="https://isocpp.org/files/papers/P3776R0.html#introduction">More trailing commas</a></li>
+</ul>
+</li>
+<li>Root: I need it for weird c++17 function call...</li>
+<li>Related: Zig supports trailing comma in parameter lists. Well, C++ dont do that.
+<ul>
+<li>#rust <a href="https://doc.rust-lang.org/style-guide/#trailing-commas"> Trailing commas </a></li>
+<li>#powershell : <a href="https://github.com/PowerShell/PowerShell/issues/16844">Syntax sugar: allow trailing commas in bracket-enclosed lists · Issue #16844 · PowerShell/PowerShell</a>
+<ul>
+<li>yeah basically we have something like that, it's called optional comma in array/hashtable.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

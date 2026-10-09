@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: powershell - How to elevate to SYSTEM - needed to execute RunAsUser module</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">powershell - How to elevate to SYSTEM - needed to execute RunAsUser module</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-26 08:06:36 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/73919478/how-to-elevate-to-system-needed-to-execute-runasuser-module/73934783#73934783">powershell - How to elevate to SYSTEM - needed to execute RunAsUser module</a>
+<ul>
+<li>Recap: elevate to <code>NT_AUTHORITY\SYSTEM</code></li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://serverfault.com/questions/517468/run-a-powershell-command-as-nt-authority-system">Run a PowerShell command as NT AUTHORITY\SYSTEM - Server Fault</a>
+<ul>
+<li>using <code>psexec -i -s</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: removing something like <code>Pester</code> out of <code>$env:ProgramFiles\WindowsPowerShell\Modules\</code>
+<ul>
+<li>which is protect by TrustedInstaller.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

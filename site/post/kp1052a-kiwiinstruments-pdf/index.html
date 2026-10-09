@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: KP1052A-KiwiInstruments.pdf</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">KP1052A-KiwiInstruments.pdf</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-24 02:22:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lighting">
+                        <span>lighting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/psu">
+                        <span>psu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://datasheet4u.com/pdf-down/K/P/1/KP1052A-KiwiInstruments.pdf">KP1052A-KiwiInstruments.pdf</a>
+<ul>
+<li>Recap: Footprint SOT33-4.</li>
+<li>Run: this is the main driver chips for the constant current PSU, which Mr.Khai use to drive 12V LED strip...?
+<ul>
+<li>maybe we can use it in a different way... although I'm not sure.</li>
+</ul>
+</li>
+<li>Resolution: for driving LED with direct AC lines, just a mb10f is enough.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/HV0ehz-rEZIQjrQcDc_VZw">Dismantling and repairing a bull's 18w flat panel lamp (MP-A018B-AS) is easily upgraded</a></li>
+<li>Related: KP3310 offline regularto 5v30mA, 3v3, 2v7. you have to adjust through SEL pin with resistor.
+<ul>
+<li>extremely simple, one bridge BR1 + 470uf VT C1 + 100k R1 + 10uF MLCC C2...</li>
+<li>but not as simple as SI13305 SOT23-6, those are not even one bridge.</li>
+<li>Root: #blog: <a href="https://mp.weixin.qq.com/s/NRXIgDm9yGxLQIh8MGCmCA">KP3310WGA/KP3310SGA/KP3310DP inductive-non-capacitive wall switch, dimmer scheme</a></li>
+<li>well this is the more mature version of YD925, comparing of market share.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

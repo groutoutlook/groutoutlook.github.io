@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: vim.fn.expand</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">vim.fn.expand</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-01 02:42:29 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/builtin">
+                        <span>builtin</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://neovim.io/doc/user/builtin.html#expand()">vim.fn.expand</a>
+<ul>
+<li>Use to capture word, name, links under cursor(default) or specified location.</li>
+<li>Use a set of <a href="https://neovim.io/doc/user/cmdline.html#cmdline-special">cmdline-special</a>
+<ul>
+<li>Recap: which is heavily used in ex cmdline mode. Most of things are in the first link already.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://neovim.io/doc/user/lua.html#vim.ui">vim.ui</a>.
+<blockquote>
+<p>[!warning] &gt; <code>ui</code> here is <code>User Input</code> not <code>User Interface</code>.
+Terminology is messed up there.</p>
+</blockquote>
+</li>
+<li>Recap: <em>Especially</em> <code>vim.ui.open()</code>
+<ul>
+<li>Used it for my <code>; g x</code> keymap in configs.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

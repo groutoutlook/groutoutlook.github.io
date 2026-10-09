@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;gh repo edit&#x60; full help.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;gh repo edit&#x60; full help.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-22 01:12:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/github">
+                        <span>github</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cli.github.com/manual/gh_repo_edit"><code>gh repo edit</code> full help.</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> repo edit<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>visibility</span> public</span>
+<span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> repo edit<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>description</span><span class="keyword operator assignment option shell">=</span><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>github description<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> change/update description</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> repo edit<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>default-branch</span> main  <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> change edit repo&#39;s default-branch... should be local/remote name similar.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">then git push --set-upstream origin main or so.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/74960450/change-default-branch-via-cli">github / gh Change or Set default branch via CLI</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/7757751/how-do-you-change-a-repository-description-on-github/70455907#70455907">How do you change a repository description on GitHub?</a></li>
+<li>Related:
+<ul>
+<li><a href="https://cli.github.com/manual/gh_repo_fork"><code>gh repo fork</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Spawning the language server with cmd: lua-language-server failed.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Spawning the language server with cmd: lua-language-server failed.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-04-12 07:50:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/williamboman/nvim-lsp-installer/discussions/509">Spawning the language server with cmd: lua-language-server failed.</a>
+<ul>
+<li>The fix is: put the <code>mason.nvim</code> plugin startup first before loading any kind of lsp.</li>
+<li>Which is  activate <code>mason.lua</code> files in my astronvim config.</li>
+<li>now I think I sufferred from neovim stutter.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

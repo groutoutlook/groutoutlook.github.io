@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ISP: In-system programming</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ISP: In-system programming</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-26 11:55:00 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/firmware">
+                        <span>firmware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/hardware">
+                        <span>hardware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu">
+                        <span>mcu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/In-system_programming">ISP: In-system programming</a>
+<ul>
+<li>Recap: also called in-circuit serial programming, is the ability of some programmable logic devices, microcontrollers, chipsets and other embedded devices to be programmed while installed in a complete system.
+<ul>
+<li>rather than requiring the chip to be programmed prior to installing it into the system.</li>
+<li>Which is practically the act of reburning the chips...</li>
+<li>BOOT0, BOOT1 is the result of ISP, which you have a bootloader to program the other part.</li>
+</ul>
+</li>
+<li>Resolution: ICP : In Circuit Programming which utilize JTAG or SWD interface
+<ul>
+<li>IAP: In Application Programming, burn program on runtime, use UART, I2C, SPI and many other which is set up in runtime.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/5g4vpg8ZIYSN6_ZxTrfkDw">MCU need BOOT0? not about choosing the startup method but a lifeline left by the chip itself</a></li>
+</ul>
+</li>
+<li>Root: saw in cheap MCU as <a href="https://item.taobao.com/item.htm?id=771626070765">CA51F003T3 TSSOP20 Jinrui flash single-chip MCU chip with LED driver-Taobao</a>
+<ul>
+<li><a href="https://www.embedic.com/technology/details/introduction-to-programming-of-microcontroller--isp--iap-and-icp">Introduction to Programming of Microcontroller: ISP, IAP and ICP Embedded Technology Information EmbedIc</a>
+<ul>
+<li>Resolution: common #acronym you come across dev boards, which is ICE In-Circuit Emulator</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#pcb/test <a href="https://wikipedia.org/wiki/Boundary_scan">Boundary scan testing</a>
+<ul>
+<li>from OpenOCD.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

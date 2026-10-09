@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: I go back to bootstrap wsl from archlinux.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">I go back to bootstrap wsl from archlinux.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-11 01:14:11 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wsl">
+                        <span>wsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>I go back to bootstrap wsl from archlinux.
+<ul>
+<li>Recap:</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="support function cd shell">cd</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">pacman</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Syyu</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>noconfirm</span></span>
+<span class="meta function-call shell"><span class="variable function shell">pacman</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>S</span> nushell helix vim neovim fd bat ripgrep direnv zoxide eza starship just git fzf yazi openssh</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> clone https://github.com/groutoutlook/nushellConfig <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/.config/nushell</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> clone https://github.com/groutoutlook/dotfiles</span>
+<span class="meta function-call shell"><span class="variable function shell">cp</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/dotfiles/.gitconfig <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">cp</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/dotfiles/config/helix <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/.config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>rf</span></span>
+<span class="meta function-call shell"><span class="variable function shell">cp</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/dotfiles/config/starship.toml <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/.config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>rf</span></span>
+<span class="meta function-call shell"><span class="variable function shell">chsh</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> /usr/bin/nu</span>
+</span></code></pre>
+<ul>
+<li>final solution is <code>sh -c &quot;$(curl -L https://groutoutlook.github.io/bootstrap.sh)&quot;</code></li>
+<li>unless you delete <code>~/.config/nushell</code>, and havent launch <code>nu</code>, <a href="https://github.com/groutoutlook/nushellConfig"><code>nu</code> config can freely be cloned.</a>
+<ul>
+<li>else you run from <code>bash</code> first.</li>
+<li>Hard dependencies are <code>starship</code> <code>zoxide</code>,... so you may want to clone MiscLang,
+then navigate to correct dir and symlink <code>just</code> then build things from there.</li>
+</ul>
+</li>
+<li>in #ubuntu, only  one choice of install <code>nu</code>, which is from <code>snap install nushell --classic</code> or by GUI (App Store)
+As [ Sunday, June 7, 2026 07:19:18 AM ] it is still not in <code>apt</code> while <code>fish</code> is.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> nano /etc/shells <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> to avoid invalid shells error, add `nu` here. `nano` is the default one. maybe `vi`?</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">chsh</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> /usr/bin/nu</span>
+</span></code></pre>
+<ul>
+<li>#doc <a href="https://www.mankier.com/1/chsh"><code>chsh</code> change your login shell | Man Page | Commands | util-linux | ManKier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: I repeatedly unregister archlinux, so.</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#pacman/pacman : <a href="https://unix.stackexchange.com/a/293537/607776">pacman all yes</a>
+<ul>
+<li><code>--noconfirm</code> will agree to <em>mostly</em> everything.</li>
+</ul>
+</li>
+<li>#blog : <a href="https://shibumi.dev/posts/how-to-handle-dotfiles/">How to handle dotfiles</a>
+<ul>
+<li>Recap: whitelist what you want, this guy chose <code>sway</code> config. See <a href="https://shibumi.dev/posts/more-ways-to-handle-dotfiles/">part 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

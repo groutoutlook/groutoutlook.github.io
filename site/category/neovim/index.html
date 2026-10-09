@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TILs: neovim</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <h1>TILs for neovim</h1>
+
+        <hr>
+
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/in-nvim-g-go-to-last-edited-gi-go-to-last-insert-location">in &#x60;nvim&#x60; &#x60;g;&#x60; go to last edited. &#x60;gi&#x60; go to last insert location.</a></h3>
+                <span class="til-date">2025-07-07 12:06:33 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/space-g-c-open-picker-which-show-commits-of-current-file">&#x60;space g c&#x60; open picker which show commits of current file.</a></h3>
+                <span class="til-date">2025-06-06 10:29:31 AM</span>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-spider-use-the-w-e-b-motions-like-a-spider-move-by-subwords-and-skip-insignificant-punctuation">&#x60;nvim-spider&#x60; Use the w, e, b motions like a spider. Move by subwords and skip insignificant punctuation.</a></h3>
+                <span class="til-date">2025-05-29 01:11:11 PM</span>
+                <a class="til-tag" href="/category/navigate">
+                    <span>navigate</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/abecodes-tabout-nvim-tabout-plugin-for-neovim">abecodes/tabout.nvim: tabout plugin for neovim</a></h3>
+                <span class="til-date">2025-05-27 02:48:04 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/csvview-nvim-for-csv-file-editing">&#x60;csvview.nvim&#x60; for CSV file editing.</a></h3>
+                <span class="til-date">2025-05-26 09:32:55 PM</span>
+                <a class="til-tag" href="/category/format/csv">
+                    <span>format/csv</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-bind-d-in-helix-to-be-the-same-as-nvim-which-is-delete-and-yank-till-end-of-line">I bind &#x60;D&#x60; in helix to be the same as &#x60;nvim&#x60; which is delete and yank till end of line,</a></h3>
+                <span class="til-date">2025-05-22 12:35:14 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/in-commands-output">&#x60;^@&#x60; in commands output</a></h3>
+                <span class="til-date">2025-05-17 10:29:45 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/stdout">
+                    <span>stdout</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/zi-toggle-all-folds-in-file-while-zm-close-all-folds-in-file">&#x60;zi&#x60; toggle all folds in file., while &#x60;zM&#x60; **close** all folds in file.</a></h3>
+                <span class="til-date">2025-05-13 04:41:41 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/astronvim-has-a-quirky-thing-in-its-lazy-setup">AstroNvim has a quirky thing in its &#x60;lazy_setup&#x60;</a></h3>
+                <span class="til-date">2025-04-08 10:34:03 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/news-default-on-nvim-0-11-neovim-docs">News Default on nvim 0.11 - Neovim docs</a></h3>
+                <span class="til-date">2025-03-27 03:16:41 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ctrl-win-shift-z-toggle-vim-mode-windows-edit-mode">&#x60;Ctrl+win+shift+z&#x60; toggle Vim mode/Windows Edit mode.</a></h3>
+                <span class="til-date">2024-10-04 09:40:34 AM</span>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/jumpto-diffs">jumpto-diffs</a></h3>
+                <span class="til-date">2024-10-02 01:57:06 PM</span>
+                <a class="til-tag" href="/category/diff">
+                    <span>diff</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding/default">
+                    <span>keybinding/default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/window-moving">window-moving</a></h3>
+                <span class="til-date">2024-10-02 01:36:14 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding/default">
+                    <span>keybinding/default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/share-configs-helix-editor-helix-discussion-1360">Share configs · helix-editor/helix · Discussion #1360</a></h3>
+                <span class="til-date">2024-10-01 03:51:02 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/devpod-open-source-dev-environments-as-code">DevPod - Open Source Dev-Environments-As-Code</a></h3>
+                <span class="til-date">2024-10-01 09:55:56 AM</span>
+                <a class="til-tag" href="/category/cloud">
+                    <span>cloud</span>
+                </a>
+                <a class="til-tag" href="/category/docker">
+                    <span>docker</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/selfhost">
+                    <span>selfhost</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-yank-from-vscode-neovim-to-system-clipboard-issue-835-vscode-neovim-vscode-neovim">how to yank from VSCode neovim to system clipboard? · Issue #835 · vscode-neovim/vscode-neovim</a></h3>
+                <span class="til-date">2024-09-22 02:42:46 PM</span>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vscode-config">vscode config</a></h3>
+                <span class="til-date">2024-09-22 01:08:32 PM</span>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/could-be-accesed">could be accesed</a></h3>
+                <span class="til-date">2024-09-20 09:51:36 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mfussenegger-nvim-dap-python-an-extension-for-nvim-dap-providing-default-configurations-for-python-and-methods-to-debug-individual-test-methods-or-classes">mfussenegger/nvim-dap-python: an extension for nvim-dap, providing default configurations for python and methods to debug individual test methods or classes.</a></h3>
+                <span class="til-date">2024-09-20 09:38:15 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/vscode">
+                    <span>vscode</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nishantpillai5-neovim-vscode-config-shared-config-for-neovim-and-neovim-extension-for-vscode">nishantpillai5/neovim_vscode_config: Shared config for Neovim and Neovim extension for VSCode</a></h3>
+                <span class="til-date">2024-09-20 09:05:00 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/recommend-changing-our-own-plugin-s-function-inside-nvim-data-folder">Recommend changing our own plugin&#x27;s function inside &#x60;nvim-data&#x60; folder.</a></h3>
+                <span class="til-date">2024-09-16 06:02:21 PM</span>
+                <a class="til-tag" href="/category/module">
+                    <span>module</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/emacsinsert-nvim-my-separate-emacs-insert-mode-in-neovim">emacsinsert.nvim: My separate emacs insert mode in neovim</a></h3>
+                <span class="til-date">2024-09-16 01:29:30 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/emacs">
+                    <span>emacs</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fw-will-search-for-the-current-word-underneath-the-cursor">&#x60;;fw&#x60; will search for the current word underneath the cursor</a></h3>
+                <span class="til-date">2024-09-11 07:24:10 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/repeat-last-jump">&#x60;;&#x60; repeat last jump</a></h3>
+                <span class="til-date">2024-09-11 07:07:56 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/hiberabyss-readline-nvim">hiberabyss/readline.nvim</a></h3>
+                <span class="til-date">2024-08-19 05:33:16 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/traversing-text-in-insert-mode">Traversing text in Insert mode</a></h3>
+                <span class="til-date">2024-08-19 05:20:46 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/mode/insert">
+                    <span>mode/insert</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/6-or-could-navigate-directly-to-last-edited-position-in-files">&#x60;&#x27;6&#x60; or &#x60;&#x27;^&#x60; could navigate directly to last edited position in files.</a></h3>
+                <span class="til-date">2024-08-19 03:32:17 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/quickfix-neovim-docs">Quickfix - Neovim docs</a></h3>
+                <span class="til-date">2024-08-18 05:58:51 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/g-keybinding-tips">g keybinding tips</a></h3>
+                <span class="til-date">2024-08-18 05:38:55 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vi-using-normal-mode-motions-in-command-line-mode-in-vim">vi - Using normal-mode motions in command-line mode in Vim</a></h3>
+                <span class="til-date">2024-08-18 05:30:53 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-treesitter-context-show-code-context">nvim-treesitter-context: Show code context</a></h3>
+                <span class="til-date">2024-08-14 06:00:21 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/merging-two-vertical-blocks-with-vim">Merging two vertical blocks with vim</a></h3>
+                <span class="til-date">2024-08-08 01:43:20 PM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ctrl-arrow-will-escape-the-suggestion-without-leaving-the-insert-mode">&#x60;ctrl arrow&#x60; will escape the suggestion without leaving the insert mode.</a></h3>
+                <span class="til-date">2024-08-08 01:42:24 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/go-to-last-edit-in-neovim-is">Go to last edit in neovim is &#x60;&#x27;^&#x60;</a></h3>
+                <span class="til-date">2024-08-06 10:36:51 AM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scottmckendry-cyberdream-nvim-robot-zzz-high-contrast-futuristic-vibrant-coloursheme-for-neovim">scottmckendry/cyberdream.nvim: 🤖💤 High-contrast, Futuristic &amp; Vibrant Coloursheme for Neovim</a></h3>
+                <span class="til-date">2024-08-03 09:34:29 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin/theme">
+                    <span>plugin/theme</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/snippets-in-visual-studio-code">Snippets in Visual Studio Code</a></h3>
+                <span class="til-date">2024-08-02 11:45:02 PM</span>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/snippet">
+                    <span>snippet</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/if-you-encounter-swap-files-issue-when-nothing-happened-then-delete-the-shada-files">If you encounter swap files issue when nothing happened, then delete the shada files.</a></h3>
+                <span class="til-date">2024-08-02 08:41:48 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/bakpakin-fennel-lua-lisp-language">bakpakin/Fennel: Lua Lisp Language</a></h3>
+                <span class="til-date">2024-08-02 02:44:03 AM</span>
+                <a class="til-tag" href="/category/language/transpile">
+                    <span>language/transpile</span>
+                </a>
+                <a class="til-tag" href="/category/lisp">
+                    <span>lisp</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/api-key-wakatime">API Key - WakaTime</a></h3>
+                <span class="til-date">2024-08-02 02:19:21 AM</span>
+                <a class="til-tag" href="/category/browser">
+                    <span>browser</span>
+                </a>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/programming">
+                    <span>programming</span>
+                </a>
+                <a class="til-tag" href="/category/tracking">
+                    <span>tracking</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovim-config-switcher">Neovim Config Switcher</a></h3>
+                <span class="til-date">2024-08-02 01:21:13 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/live-grep-on-word-under-cursor-stopped-working-issue-1911-nvim-telescope-telescope-nvim">live_grep on word under cursor stopped working · Issue #1911 · nvim-telescope/telescope.nvim</a></h3>
+                <span class="til-date">2024-07-31 11:51:45 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin/telescope">
+                    <span>plugin/telescope</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/special-character">Special Character</a></h3>
+                <span class="til-date">2024-07-31 02:28:51 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/if-vim-neovim-shada-files-mark-files-have-issues-go-to-there-and-delete-all-of-them">If Vim/Neovim ShaDa files (mark files) have issues,  go to there and delete all of them</a></h3>
+                <span class="til-date">2024-07-31 12:09:27 PM</span>
+                <a class="til-tag" href="/category/issue">
+                    <span>issue</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/leath-dub-snipe-nvim-efficient-targetted-menu-built-for-fast-buffer-navigation">leath-dub/snipe.nvim: Efficient targetted menu built for fast buffer navigation</a></h3>
+                <span class="til-date">2024-07-30 05:50:21 PM</span>
+                <a class="til-tag" href="/category/editing">
+                    <span>editing</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/lua-neovim-docs">Lua - Neovim docs</a></h3>
+                <span class="til-date">2024-07-30 12:52:01 AM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/function-that-return-visually-selected-text-lua-neovim-discourse">Function that return visually selected text - Lua - Neovim Discourse</a></h3>
+                <span class="til-date">2024-07-30 12:40:12 AM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kylechui-nvim-surround-vs-mini-surround">kylechui/nvim-surround vs mini.surround</a></h3>
+                <span class="til-date">2024-07-27 04:11:14 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-support-for-alt-shift-and-ctrl-shift">nvim support for &#x60;Alt+shift&#x60; and &#x60;Ctrl+shift&#x60;</a></h3>
+                <span class="til-date">2024-07-24 12:29:34 AM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/junegunn-vim-plug-hibiscus-minimalist-vim-plugin-manager">junegunn/vim-plug: :hibiscus: Minimalist Vim Plugin Manager</a></h3>
+                <span class="til-date">2024-07-23 09:01:36 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/is-it-possible-to-disable-lsp-formatting-temporarily">is it possible to disable lsp formatting temporarily?</a></h3>
+                <span class="til-date">2024-07-23 10:57:08 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/formatting">
+                    <span>formatting</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/cmdline-neovim-docs">Cmdline - Neovim docs</a></h3>
+                <span class="til-date">2024-07-21 01:07:37 AM</span>
+                <a class="til-tag" href="/category/command">
+                    <span>command</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding/default">
+                    <span>keybinding/default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/good-way-to-write-mapping">good way to write mapping</a></h3>
+                <span class="til-date">2024-07-19 11:11:11 AM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugins">
+                    <span>plugins</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/macrothis-nvim-macrothis-is-a-plugin-for-neovim-to-save-and-load-macros">macrothis.nvim: Macrothis is a plugin for neovim to save and load macros</a></h3>
+                <span class="til-date">2024-07-19 10:45:51 AM</span>
+                <a class="til-tag" href="/category/editing/register">
+                    <span>editing/register</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scroll-neovim-docs">Scroll - Neovim docs</a></h3>
+                <span class="til-date">2024-07-19 09:20:58 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-do-i-run-something-after-vim-api-nvim-feedkeys">How do I run something after vim.api.nvim_feedkeys?</a></h3>
+                <span class="til-date">2024-07-12 08:42:30 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-create-user-command">nvim_create_user_command</a></h3>
+                <span class="til-date">2024-07-08 12:06:35 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-get-the-first-character-of-a-string-in-lua">How to get the first character of a string in Lua?</a></h3>
+                <span class="til-date">2024-07-06 02:35:43 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/for-loop-on-lua-stack-overflow">for loop on lua - stack overflow</a></h3>
+                <span class="til-date">2024-07-06 01:53:39 PM</span>
+                <a class="til-tag" href="/category/basic">
+                    <span>basic</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/quick-vim-tips-to-generate-and-increment-numbers">Quick vim tips to generate and increment numbers</a></h3>
+                <span class="til-date">2024-07-05 03:28:32 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-replace-termcode">nvim_replace_termcode</a></h3>
+                <span class="til-date">2024-07-05 02:00:06 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vim-adjust-the-other-end-of-a-visual-selection">vim - Adjust the other end of a visual selection</a></h3>
+                <span class="til-date">2024-07-05 11:14:06 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/switch-buffer-using-leader-bb-or-bb-the-identifier-is-the-first-letter-of-files-name">Switch buffer using &#x60;&lt;leader&gt;bb&#x60; or &#x60;;bb&#x60;, the identifier is the first letter of files&#x27; name.</a></h3>
+                <span class="til-date">2024-07-03 12:26:39 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vim-fn-expand">vim.fn.expand</a></h3>
+                <span class="til-date">2024-07-01 02:42:29 PM</span>
+                <a class="til-tag" href="/category/builtin">
+                    <span>builtin</span>
+                </a>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/build-now-being-aliased-in-neovim-as-tb">&#x60; build&#x60; now being aliased in &#x60;neovim&#x60; as &#x60;;tb&#x60;</a></h3>
+                <span class="til-date">2024-06-27 07:52:18 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/use-overseer-nvim-extensively-because-now-i-grok-the-usage-with-just">Use &#x60;overseer.nvim&#x60; extensively because now I grok the usage with &#x60;just&#x60;.</a></h3>
+                <span class="til-date">2024-06-27 06:35:10 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/rainbow-delimeters">Rainbow-delimeters</a></h3>
+                <span class="til-date">2024-06-27 02:53:10 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/transparent-the-process-color">transparent the process color</a></h3>
+                <span class="til-date">2024-06-25 05:12:55 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/shader">
+                    <span>shader</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/change-syntax-highlighting-on-the-fly">Change syntax highlighting on the fly</a></h3>
+                <span class="til-date">2024-06-25 11:42:32 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/open-files-with-specific-lines-number">Open files with specific lines number</a></h3>
+                <span class="til-date">2024-06-25 10:18:06 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/resolve-conflict-with-git-mergetool">resolve conflict with &#x60;git mergetool&#x60;</a></h3>
+                <span class="til-date">2024-06-21 03:49:47 PM</span>
+                <a class="til-tag" href="/category/diff">
+                    <span>diff</span>
+                </a>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/rocks-nvim">rocks.nvim</a></h3>
+                <span class="til-date">2024-06-13 01:39:08 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-in-neovim">regex in neovim</a></h3>
+                <span class="til-date">2024-06-09 03:45:10 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/since-from-0-10-neovim-support-markdown-natively-i-could-remove-some-of-redundant-packages">Since from 0.10, neovim support markdown natively, I could remove some of redundant packages.</a></h3>
+                <span class="til-date">2024-06-07 11:34:04 AM</span>
+                <a class="til-tag" href="/category/markdown">
+                    <span>markdown</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovide-also-has-config-files">neovide also has config files</a></h3>
+                <span class="til-date">2024-05-23 03:46:14 PM</span>
+                <a class="til-tag" href="/category/gui">
+                    <span>gui</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/multiline-strings-in-lua">multiline strings in lua</a></h3>
+                <span class="til-date">2024-05-18 03:53:47 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/frecency-file-picker-in-neovim">frecency file picker in neovim</a></h3>
+                <span class="til-date">2024-05-13 10:57:01 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/autocmd-event-in-neovim">autocmd event in neovim</a></h3>
+                <span class="til-date">2024-05-13 09:05:09 PM</span>
+                <a class="til-tag" href="/category/autocmd">
+                    <span>autocmd</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/config-options-of-astrolsp">config options of astrolsp</a></h3>
+                <span class="til-date">2024-05-13 08:00:49 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/astrolsp-api-doc">astrolsp api doc</a></h3>
+                <span class="til-date">2024-05-13 07:24:41 PM</span>
+                <a class="til-tag" href="/category/autocmd">
+                    <span>autocmd</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vim-filetype-lua-api">vim.filetype lua api</a></h3>
+                <span class="til-date">2024-05-13 05:31:06 PM</span>
+                <a class="til-tag" href="/category/api">
+                    <span>api</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/register-edit">register edit.</a></h3>
+                <span class="til-date">2024-05-13 04:40:19 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/register">
+                    <span>register</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/difference-between-matching-in-helix-and-neovim">difference between matching in helix and neovim</a></h3>
+                <span class="til-date">2024-05-12 06:01:46 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/basic-default-vim-motion-and-command">basic default vim motion and command</a></h3>
+                <span class="til-date">2024-05-10 12:06:04 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/tutorial">
+                    <span>tutorial</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/supress-errors-like-command-already-existed">supress errors like command already existed</a></h3>
+                <span class="til-date">2024-05-09 03:32:09 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovim-made-it-too-hard-to-disable-lsp">Neovim  made it too hard to disable LSP.</a></h3>
+                <span class="til-date">2024-05-09 03:19:45 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vs">
+                    <span>ide/vs</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fzf-lua">fzf.lua</a></h3>
+                <span class="til-date">2024-05-02 08:23:11 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/fzf">
+                    <span>fzf</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/from-an-issue-of-lapce">from an issue of lapce</a></h3>
+                <span class="til-date">2024-04-29 06:53:47 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/clipboard-issue-on-termux">clipboard issue on termux</a></h3>
+                <span class="til-date">2024-04-29 01:16:44 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovim-terminal-couldnt-take-combo-key-such-as-ctrl-alt-or-ctrl-shift-or-alt-shift">Neovim terminal couldnt take combo key such as ctrl+alt or ctrl+shift or alt+shift.</a></h3>
+                <span class="til-date">2024-04-27 05:22:20 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/the-link-wont-be-executed-in-terminal-if-only-half-of-the-url-is-rendered">The link wont be executed in terminal if only half of the url is rendered...</a></h3>
+                <span class="til-date">2024-04-26 01:16:56 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovim-and-emacs-run-way-smoother-than-in-windows">Neovim and emacs run way smoother than in Windows.</a></h3>
+                <span class="til-date">2024-04-25 03:04:46 PM</span>
+                <a class="til-tag" href="/category/emacs">
+                    <span>emacs</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-realized-that-opts-args-only-work-if-opts-is-a-table">i  realized that &#x60;opts.args&#x60; only work if &#x60;opts&#x60; is a table...</a></h3>
+                <span class="til-date">2024-04-23 08:13:53 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/friendly-snippet">friendly snippet</a></h3>
+                <span class="til-date">2024-04-23 07:25:53 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/snippet">
+                    <span>snippet</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/tab-mapping-issue-on-neovim">tab mapping issue on neovim</a></h3>
+                <span class="til-date">2024-04-22 01:10:07 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/mapping">
+                    <span>mapping</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vscode-neovim-plugins-being-unusable-when-it-come-to-reach-the-f1-f12-keys">vscode neovim plugins  being unusable when it come to reach the &#x60;f1-f12&#x60; keys.</a></h3>
+                <span class="til-date">2024-04-21 06:07:40 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/vscode">
+                    <span>vscode</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/most-important-keymap-on-the-grapple-nvim-plugin-is-the-c-p-to-traverse-the-tagged-files">Most important keymap on the grapple.nvim plugin is the &#x60;&lt;C-p&gt;&#x60; to traverse the tagged files.</a></h3>
+                <span class="til-date">2024-04-21 03:52:13 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/c-w-c-w-swap-between-windows">&#x60;&lt;c-w&gt;&lt;c-w&gt;&#x60; swap between windows.</a></h3>
+                <span class="til-date">2024-04-21 02:49:32 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/motion">
+                    <span>motion</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/install-neovim-nightly-on-debian-by-building-itself">install neovim nightly on debian by building itself</a></h3>
+                <span class="til-date">2024-04-20 10:30:27 PM</span>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/telescope-fzf-native-nvim-error-message">telescope-fzf-native-nvim error message</a></h3>
+                <span class="til-date">2024-04-20 09:36:39 PM</span>
+                <a class="til-tag" href="/category/cmake">
+                    <span>cmake</span>
+                </a>
+                <a class="til-tag" href="/category/make">
+                    <span>make</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/text-object-i-look-for-it-since-i-discovered-paragraph">text object. i look for it since i discovered paragraph.</a></h3>
+                <span class="til-date">2024-04-18 07:03:27 PM</span>
+                <a class="til-tag" href="/category/motion">
+                    <span>motion</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/telescpoe-undo-undo-history">telescpoe-undo, undo history</a></h3>
+                <span class="til-date">2024-04-18 04:50:52 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/join-in-neovim-vim-using-j">join in neovim/vim using &#x60;j&#x60;</a></h3>
+                <span class="til-date">2024-04-18 04:35:39 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fastest-way-to-even-panes-after-reopenning-a-session-on-neovim-is-split-horizontal-or-vertical-again">fastest way to even panes after reopenning a session on neovim is split horizontal or vertical again.</a></h3>
+                <span class="til-date">2024-04-18 01:11:48 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim">how to insert text at beginning of a multi-line selection in vi/vim</a></h3>
+                <span class="til-date">2024-04-18 12:19:04 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/hinting-windows">hinting windows</a></h3>
+                <span class="til-date">2024-04-18 12:00:00 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/oil-nvim-editing-filesystem">oil.nvim editing filesystem</a></h3>
+                <span class="til-date">2024-04-17 11:51:43 PM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/yanky-nvim-default-on-astrocommunity">yanky.nvim default on astrocommunity</a></h3>
+                <span class="til-date">2024-04-17 11:46:57 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/edgy-nvim-default-setting">edgy.nvim default setting</a></h3>
+                <span class="til-date">2024-04-17 11:29:02 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mini-move">mini.move</a></h3>
+                <span class="til-date">2024-04-17 11:02:32 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/quickfix-code-action-when-you-see-fix-available">quickfix code action when you see &#x27;fix available&#x27;</a></h3>
+                <span class="til-date">2024-04-17 10:55:35 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/replace-backslash-with-forward-slash">replace backslash with forward slash</a></h3>
+                <span class="til-date">2024-04-17 07:21:24 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/detail-explains-of-vim-cmd-in-so">detail explains of vim.cmd() in SO</a></h3>
+                <span class="til-date">2024-04-16 10:37:30 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/grapple">grapple</a></h3>
+                <span class="til-date">2024-04-16 10:16:33 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/leap-nvim-a-plugin-for-navigation">&#x60;leap.nvim&#x60;, a plugin for navigation</a></h3>
+                <span class="til-date">2024-04-16 08:18:54 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/seeing-weird-m-character">seeing weird &#x60;^M&#x60; character?</a></h3>
+                <span class="til-date">2024-04-16 07:17:28 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/move-cursor-by-call-vim-cmd">move cursor by call vim.cmd</a></h3>
+                <span class="til-date">2024-04-15 11:50:32 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/unsplit-windows-in-neovim">unsplit windows in neovim</a></h3>
+                <span class="til-date">2024-04-15 11:40:32 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-selected-text-in-lua-visual-mode-neovim">get selected text in lua visual mode neovim</a></h3>
+                <span class="til-date">2024-04-15 11:16:13 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vim-fn-getreg-get-neovim-register-value-in-lua">vim.fn.getreg(), get neovim register value in lua</a></h3>
+                <span class="til-date">2024-04-15 10:45:19 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-feedkeys-behaviour">nvim_feedkeys behaviour</a></h3>
+                <span class="til-date">2024-04-15 10:21:17 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/now-i-m-trying-to-check-on-autocmd-and-filetype-in-neovim">Now I&#x27;m trying to check on autocmd and filetype in neovim.</a></h3>
+                <span class="til-date">2024-04-14 06:07:57 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vim-fn-has-is-the-same-as-has-in-neovim">vim.fn.has() is the same as has() in neovim</a></h3>
+                <span class="til-date">2024-04-14 04:53:09 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/grab-visual-selection-to-replace">grab visual selection to replace</a></h3>
+                <span class="til-date">2024-04-14 03:25:46 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vimscript">
+                    <span>vimscript</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/replace-mode-and-virtual-replace-mode">Replace mode and virtual replace mode</a></h3>
+                <span class="til-date">2024-04-14 03:13:16 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/delete-blank-lines-normal-mode-in-neovim">delete blank lines normal mode in neovim</a></h3>
+                <span class="til-date">2024-04-14 02:10:36 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/website-to-promote-plugins-for-neovim">website to promote plugins for neovim</a></h3>
+                <span class="til-date">2024-04-14 12:54:15 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/tip-from-neovim-to-edit-files">tip from neovim to edit files</a></h3>
+                <span class="til-date">2024-04-14 12:12:17 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/tip">
+                    <span>tip</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/realize-that-in-windows-cmdline-can-only-get-result-of-single-command-word-cant-tolerate-whitespace">realize that in windows, cmdline can only get result of single command word, cant tolerate whitespace.</a></h3>
+                <span class="til-date">2024-04-14 12:11:12 AM</span>
+                <a class="til-tag" href="/category/cmdline">
+                    <span>cmdline</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/output-of-a-vim-command-to-lua">output of a vim command to lua</a></h3>
+                <span class="til-date">2024-04-14 12:08:18 AM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-map-it-to-the-other-expression">I map it to the other expression</a></h3>
+                <span class="til-date">2024-04-13 11:01:35 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/gui-option-only">Gui option only</a></h3>
+                <span class="til-date">2024-04-13 10:41:14 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-mode-of-vim-by-vim-fn-mode-wah-never-believed-the-if-then-elseif-then-end-loop-is-that-verbose">Get mode of vim by &#x60;vim.fn.mode()&#x60;- wah never believed the &#x60;if then elseif then end&#x60; loop is that verbose</a></h3>
+                <span class="til-date">2024-04-13 07:56:13 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mini-animate">mini.animate</a></h3>
+                <span class="til-date">2024-04-13 08:46:07 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/options-in-neovim">Options in neovim</a></h3>
+                <span class="til-date">2024-04-13 07:49:15 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/move-with-c-u-and-c-d">move with &#x60;&lt;C-u&gt;&#x60; and &#x60;&lt;C-d&gt;&#x60;</a></h3>
+                <span class="til-date">2024-04-13 05:01:35 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/delete-everything-inside-quotes-or-brackets">delete everything inside quotes or brackets</a></h3>
+                <span class="til-date">2024-04-13 04:59:16 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/lots-of-new-keybinding-come-up-with-duplication">lots of new keybinding come up... with duplication..</a></h3>
+                <span class="til-date">2024-04-12 11:46:53 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/deleting-text">deleting text</a></h3>
+                <span class="til-date">2024-04-12 07:53:41 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/spawning-the-language-server-with-cmd-lua-language-server-failed">Spawning the language server with cmd: lua-language-server failed.</a></h3>
+                <span class="til-date">2024-04-12 07:50:50 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovim-pattern-search">neovim pattern search</a></h3>
+                <span class="til-date">2024-04-12 07:42:19 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/a-crazy-guy-who-do-review-neovim-plugin">a crazy guy who do review neovim plugin</a></h3>
+                <span class="til-date">2024-04-12 06:25:02 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/video">
+                    <span>video</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/powershell-have-weird-regex-using-jrnl-with-it-is-hard">PowerShell have weird regex. using &#x60;jrnl&#x60; with it is hard.</a></h3>
+                <span class="til-date">2024-04-12 06:08:16 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/setitng-up-neovim-is-a-daunting-task">setitng up neovim is a daunting task...</a></h3>
+                <span class="til-date">2024-04-12 05:04:37 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/rival-of-obsidian-nvim-neorg">Rival of obsidian.nvim, &#x60;neorg&#x60;</a></h3>
+                <span class="til-date">2024-04-12 04:48:17 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/notetaking">
+                    <span>notetaking</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/code-minimap">code minimap</a></h3>
+                <span class="til-date">2024-04-12 04:35:24 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-map-shift-enter-and-ctrl-enter">How to map shift enter and ctrl enter</a></h3>
+                <span class="til-date">2024-04-12 04:17:45 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/mapping">
+                    <span>mapping</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/floating-cmdline-in-neovim-noice-nvim">floating cmdline in neovim, noice.nvim</a></h3>
+                <span class="til-date">2024-04-12 03:24:45 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/now-my-config-is-able-to-trigger-git-cij-jrnl-obsidian-with-wg-tj-to-key">now my config is able to trigger &#x60;git cij&#x60;, &#x60;jrnl&#x60;, &#x60;obsidian&#x60; with &#x60;;wg ;tj ;to&#x60; key....</a></h3>
+                <span class="til-date">2024-04-12 03:13:12 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/task-runner-in-neovim-overseer">Task runner in neovim, overseer</a></h3>
+                <span class="til-date">2024-04-12 03:04:56 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/session">
+                    <span>session</span>
+                </a>
+                <a class="til-tag" href="/category/task">
+                    <span>task</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/job-control">Job control</a></h3>
+                <span class="til-date">2024-04-12 02:55:24 PM</span>
+                <a class="til-tag" href="/category/job">
+                    <span>job</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-trigger-autocomplete-suggestion-box-in-vim-or-neovim-plugin-neoclide-coc-vim">How to trigger autocomplete suggestion box in vim or neovim (Plugin neoclide/coc.vim)</a></h3>
+                <span class="til-date">2024-04-12 12:20:14 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/suggestion">
+                    <span>suggestion</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/tag-in-neovim">Tag in neovim</a></h3>
+                <span class="til-date">2024-04-11 11:46:26 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/builtin-function-in-neovim">Builtin function in neovim</a></h3>
+                <span class="til-date">2024-04-11 11:13:25 PM</span>
+                <a class="til-tag" href="/category/command">
+                    <span>command</span>
+                </a>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/delete-lines-based-on-character-s-in-specific-position-on-line">Delete lines based on character(s) in specific position on line</a></h3>
+                <span class="til-date">2024-04-11 10:34:18 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ternary-in-lua">ternary in lua</a></h3>
+                <span class="til-date">2024-04-11 01:01:12 AM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vim-filetype">vim.filetype</a></h3>
+                <span class="til-date">2024-04-11 12:32:07 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/in-the-nvim-repo">In the nvim repo.</a></h3>
+                <span class="til-date">2024-04-10 05:35:01 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/obsidian">
+                    <span>obsidian</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/same-keybind-in-multiple-mode">Same keybind in multiple mode</a></h3>
+                <span class="til-date">2024-04-10 01:33:11 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/todo-in-neovim">TODO: in neovim</a></h3>
+                <span class="til-date">2024-04-10 01:11:15 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/feedkeys-in-neovim">feedkeys in neovim</a></h3>
+                <span class="til-date">2024-04-10 12:18:28 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/the-autosave-part">the autosave part</a></h3>
+                <span class="til-date">2024-04-09 09:19:32 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ex-command">Ex Command</a></h3>
+                <span class="til-date">2024-04-05 06:05:27 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/this-directory">this directory</a></h3>
+                <span class="til-date">2024-04-02 07:25:19 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/center-current-line-by-zz">center current line by &#x60;zz&#x60;</a></h3>
+                <span class="til-date">2024-04-02 05:42:35 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/multi-line-commands-in-neovim">multi line commands in neovim</a></h3>
+                <span class="til-date">2024-04-02 05:16:58 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/now-i-installed-code-stats-for-all-major-editors-vs-vscode-and-neovim">now i installed code::stats for all major editors: vs, vscode and neovim.</a></h3>
+                <span class="til-date">2024-04-02 03:27:18 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vs">
+                    <span>vs</span>
+                </a>
+                <a class="til-tag" href="/category/vscode">
+                    <span>vscode</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nvim-start-command">nvim start command</a></h3>
+                <span class="til-date">2024-04-02 02:18:57 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/now-my-write-only-jrnl-mimic-can-open-nvim-start-at-insertmode">now my write only jrnl mimic can open nvim start at insertmode</a></h3>
+                <span class="til-date">2024-04-02 02:15:29 AM</span>
+                <a class="til-tag" href="/category/jrnl">
+                    <span>jrnl</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/test-this-shit-it-wild">test this shit, it  wild.</a></h3>
+                <span class="til-date">2024-04-02 02:11:33 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/code-stats">code::stats</a></h3>
+                <span class="til-date">2024-04-02 12:13:05 AM</span>
+                <a class="til-tag" href="/category/codestats">
+                    <span>codestats</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/texteditor">
+                    <span>texteditor</span>
+                </a>
+                <a class="til-tag" href="/category/tracking">
+                    <span>tracking</span>
+                </a>
+                <a class="til-tag" href="/category/vs">
+                    <span>vs</span>
+                </a>
+                <a class="til-tag" href="/category/vscode">
+                    <span>vscode</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-think-i-must-dig-deep-into-neovim-session-function">I think I must dig deep into neovim session function.</a></h3>
+                <span class="til-date">2024-04-01 01:55:33 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/press-ctrl-o-to-temporarily-enter-normal-mode-for-one-command-upon-execution-it-will-automatically-return-to-insert-mode">press &#x60;&lt;Ctrl-O&gt;&#x60; to temporarily enter Normal mode for one command. Upon execution it will automatically return to Insert mode.</a></h3>
+                <span class="til-date">2024-03-30 02:40:41 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-find-myself-forgot-about-append-and-insert-most-of-the-time-i-insert-by-i">I find myself forgot about append and insert, most of the time I  insert by &#x60;i&#x60;...</a></h3>
+                <span class="til-date">2024-03-30 02:38:06 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/https-github-com-max397574-better-escape-nvim">https://github.com/max397574/better-escape.nvim</a></h3>
+                <span class="til-date">2024-03-29 07:53:05 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vimgolf">vimgolf</a></h3>
+                <span class="til-date">2024-03-29 07:18:59 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/vim">
+                    <span>vim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-realized-i-could-yank-space-by-yw-a-space">I  realized I could &#x60;yank&#x60; space by &#x60;yw&#x60; a space.</a></h3>
+                <span class="til-date">2024-03-29 11:54:45 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/explain-between-remap-things">explain between remap things...</a></h3>
+                <span class="til-date">2024-03-28 03:43:38 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/today-i-installed-vim-to-fix-setup-when-i-accidentally-broke-it">today I installed &#x60;vim&#x60; to fix setup when I accidentally broke it.</a></h3>
+                <span class="til-date">2024-03-28 10:00:30 AM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-dir-of-current-opened-buffer">get dir of current opened buffer.</a></h3>
+                <span class="til-date">2024-03-23 08:47:43 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/suddenly-i-realized-i-could-commit-in-by-open-the-float-terminal">suddenly I realized I could commit in by open the float terminal.</a></h3>
+                <span class="til-date">2024-03-21 07:09:56 PM</span>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+    </body>
+</html>

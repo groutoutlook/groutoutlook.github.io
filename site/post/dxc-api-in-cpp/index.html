@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: dxc api in cpp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">dxc api in cpp</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-09 04:56:48 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/directx">
+                        <span>directx</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/hlsl">
+                        <span>hlsl</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shader">
+                        <span>shader</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://simoncoenen.com/blog/programming/graphics/dxccompiling">dxc api in cpp</a>
+<ul>
+<li>Recap: it's quite the same á what we used in vulkan example, use glslc to compile glsl inside cpp aplication</li>
+<li>Related:
+<ul>
+<li>Run: [2026-02-04 17:35:45 PM] issue when newly cloned and merge things.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">glslc</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\i</span>mgui.frag<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> .<span class="constant character escape shell">\i</span>mgui.frag.spv</span>
+<span class="meta function-call shell"><span class="variable function shell">glslc</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\i</span>mgui.vert<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> .<span class="constant character escape shell">\i</span>mgui.vert.spv</span>
+<span class="meta function-call shell"><span class="variable function shell">glslc</span></span><span class="meta function-call arguments shell"> shaders/uioverlay/uioverlay.vert<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> shaders/uioverlay/uioverlay.vert.spv</span>
+<span class="meta function-call shell"><span class="variable function shell">glslc</span></span><span class="meta function-call arguments shell"> shaders/uioverlay/uioverlay.frag<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> shaders/uioverlay/uioverlay.frag.spv    </span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Parallel IO - ESP32-P4 - — ESP-IDF Programming Guide latest documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Parallel IO - ESP32-P4 - — ESP-IDF Programming Guide latest documentation</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-28 09:21:54 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/esp32p4">
+                        <span>esp32p4</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/esp32s3">
+                        <span>esp32s3</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/api-reference/peripherals/parlio/index.html">Parallel IO - ESP32-P4 - — ESP-IDF Programming Guide latest documentation</a>
+<ul>
+<li>Recap: somehow only this has documented this generic parallel IO interface.</li>
+<li>Run:</li>
+<li>Resolution: there is <strong>H4, P4 and C6</strong>, <em><strong>not S3</strong></em> have PARLIO/Parallel IO controller.
+<ul>
+<li>Parallel IO limit is 40Mhz. It can use external CLK to sample based on that as well.</li>
+<li>#example/repo <a href="https://github.com/espressif/esp-idf/tree/25c40d45/examples/peripherals/parlio/parlio_rx/logic_analyzer">esp-idf/examples/peripherals/parlio/parlio_rx/logic_analyzer</a>
+<ul>
+<li><a href="https://github.com/espressif/esp-idf/tree/25c40d4563be7d4caf375b59c52283ff80c62d08/examples/peripherals/parlio/parlio_tx/advanced_rgb_led_matrix">esp-idf/examples/peripherals/parlio/parlio_tx/advanced_rgb_led_matrix</a></li>
+</ul>
+</li>
+<li>I will not consider H2, it's being phased out recently in favor of H2.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.eevblog.com/forum/microcontrollers/esp32-generic-parallel-interface/">ESP32 Generic Parallel Interface?</a></li>
+<li>Related:
+<ul>
+<li>#gui : <a href="https://github.com/sigrokproject/pulseview"><code>pulseview</code></a></li>
+<li>#issue : <a href="https://github.com/espressif/esp-idf/issues/17581">ESP32-P4: PARLIO RX end of data is sometimes corrupted or missing (IDFGH-16449) · Issue #17581 · espressif/esp-idf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

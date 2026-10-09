@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How to Enable and Configure SSH Server on Windows with OpenSSH | Windows OS Hub</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How to Enable and Configure SSH Server on Windows with OpenSSH | Windows OS Hub</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-21 06:38:09 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote">
+                        <span>remote</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ssh">
+                        <span>ssh</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://woshub.com/connect-to-windows-via-ssh/">How to Enable and Configure SSH Server on Windows with OpenSSH | Windows OS Hub</a>
+<ul>
+<li>Recap: add <code>sshd</code> to windows.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-WindowsCapability -Online | Where-Object Name -match &#39;OpenSSH.Server*&#39; | Add-WindowsCapability –Online
+Install-Module Microsoft.PowerShell.RemotingTools
+Enable-SSHRemoting # or sudo for that.
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement">Key-based authentication in OpenSSH for Windows</a>
+<ul>
+<li>Contrast of <code>enter-pssession</code> with <code>user\hostname</code> , we have to <code>ssh user@hostname</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;navidrome&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;navidrome&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-10 05:20:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/host/self">
+                        <span>host/self</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/navidrome/navidrome"><code>navidrome</code></a>
+<ul>
+<li>Resolution: Turns out only navidrome could be crossplatform</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">navidrome --MusicFolder . --DataFolder $tmp --Port 4533 --InitialAdminUsername navi --InitialAdminPassword navi
+navidrome --musicfolder &quot;$(zq 3-audio)&quot; --cachefolder &quot;$(zq 3-audio)&quot; --datafolder &quot;$(zq 3-audio)&quot; --port 4533 --configfile &quot;$(zqi config navidr)\navidrome.toml&quot;
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#cli/option #config <a href="https://www.navidrome.org/docs/usage/configuration/options/#command-line-arguments">Navidrome Configuration Options | Navidrome</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2024-07-11 09:44:25 PM] #audio #windows #crossplatform, wonder about why subsonic dont have windows servers...</li>
+<li>Related:
+<ul>
+<li><a href="https://www.navidrome.org/docs/usage/features/jukebox/">Jukebox mode for <code>mpv</code></a>
+<ul>
+<li><a href="https://github.com/dweymouth/supersonic"><code>supersonic</code> A lightweight and full-featured cross-platform desktop client for self-hosted music servers</a>
+<ul>
+<li>in scoop.</li>
+</ul>
+</li>
+<li>Root: <a href="https://github.com/navidrome/navidrome/discussions/3539">jukebox satellites · navidrome/navidrome · Discussion #3539</a></li>
+<li>Rival: <a href="https://github.com/jeffvli/feishin"><code>feishin</code> modern self-hosted music player.</a>, client of navidrome, jellyfin or subsonic.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/jellyfin/jellyfin"><code>jellyfin</code> Free Software Media System</a>, alternative to subsonic
+<ul>
+<li><a href="https://github.com/geigerzaehler/beets-alternatives"><code>Beets</code> plugin to manage external files</a>
+<ul>
+<li>Resolution: first installed <code>beets</code>: <a href="https://github.com/beetbox/beets">music library manager and MusicBrainz tagger</a></li>
+<li>Root: #discussion <a href="https://news.ycombinator.com/item?id=45873037">Beets: The music geek's media organizer</a></li>
+<li>Related: <a href="https://github.com/metabrainz/picard"><code>Picard</code> cross-platform music tagger powered by the MusicBrainz database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

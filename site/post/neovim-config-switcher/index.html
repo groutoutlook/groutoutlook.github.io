@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Neovim Config Switcher</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Neovim Config Switcher</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-02 01:21:13 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/plugin">
+                        <span>plugin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/neovim/comments/123mf4g">Neovim Config Switcher</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution: #discussion: <a href="https://www.reddit.com/r/neovim/comments/113z6bb">Switching Neovim configs, is easier than ever now!</a>
+<ul>
+<li><code>$NVIM_APPNAME</code> variable.</li>
+<li>#windows: Use it as <code>$env:NVIM_APPNAME='nvim-nvchad'</code>
+<ul>
+<li>It will check the <code>$env:APPDATA\$env:NVIM_APPNAME</code> path.
+<ul>
+<li>Can make it null to make it revert back to normal.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#linux: could be much more messier, check the blog of Michael above.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #blog : <a href="https://michaeluloth.com/neovim-switch-configs/">Switching Configs in Neovim • Michael Uloth</a></li>
+<li>Related: #meta: [2024-08-02 04:52:35 AM] #neovim #plugin #config/repo
+<ul>
+<li><a href="https://github.com/LazyVim/LazyVim">LazyVim: Neovim config for the lazy</a></li>
+<li><a href="https://github.com/amaanq/nvim-config">nvim-config: Neovim config generated with LazyVim</a></li>
+<li><a href="https://github.com/NvChad/NvChad">NvChad: Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your neovim experience.</a></li>
+<li><a href="https://github.com/Alexis12119/nvim-config">nvim-config: Generalized and Personalized</a></li>
+<li><a href="https://github.com/echasnovski/mini.nvim">mini.nvim: Library of 40+ independent Lua modules improving overall Neovim (version 0.8 and higher) experience with minimal effort</a></li>
+<li><a href="https://github.com/echasnovski/nvim">nvim: My custom NeoVim setup</a></li>
+<li><a href="https://github.com/lunarvim/lunarvim">LunarVim: 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.</a></li>
+<li><a href="https://github.com/ggandor/leap.nvim">leap.nvim: Neovim's answer to the mouse 🦘</a></li>
+<li><a href="https://dotfyle.com/craftzdog/dotfiles-public-config-nvim">dotfiles-public - Neovim configuration</a></li>
+<li><a href="https://github.com/Olical/dotfiles">dotfiles: Configuration for Linux, i3, Kitty, Fish, Neovim and more</a></li>
+<li><a href="https://github.com/Shaobin-Jiang/IceNvim">IceNvim: A beautiful, powerful and customizable neovim config that is blazing fast</a></li>
+<li><a href="https://github.com/NormalNvim/NormalNvim">NormalNvim: A normal Neovim distribution</a></li>
+<li><a href="https://github.com/craftzdog/dotfiles-public">dotfiles-public: My personal dotfiles</a></li>
+<li><a href="https://github.com/CosmicNvim/CosmicNvim">CosmicNvim: CosmicNvim is a lightweight and opinionated Neovim config for web development, specifically designed to provide a 💫 COSMIC programming experience!</a></li>
+<li><a href="https://github.com/rafi/vim-config">vim-config: Lean mean Neovim machine, carefully crafted with Use with latest Neovim.</a></li>
+<li><a href="https://github.com/lvim-tech/lvim">lvim: LVIM IDE is a modular Neovim configuration written in LUA with full customization. LSP support for 60+ languages. Debug support for c, cpp, dart, elixir, go, haskell, java, javascript/typescript, lua, php, python, ruby, rust.</a></li>
+<li><a href="https://github.com/ecosse3/nvim">nvim: A non-minimal Neovim config built to work most efficiently with Frontend Development</a></li>
+<li><a href="https://github.com/jdhao/nvim-config">nvim-config: A modern Neovim configuration with full battery for Python, Lua, C++, Markdown, LaTeX, and more...</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

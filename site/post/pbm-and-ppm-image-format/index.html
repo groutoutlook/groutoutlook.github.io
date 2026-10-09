@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pbm and ppm image format</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pbm and ppm image format</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-11 10:20:59 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/acronym">
+                        <span>acronym</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/image">
+                        <span>image</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/typesetting">
+                        <span>typesetting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/Netpbm">pbm and ppm image format</a>
+<ul>
+<li>Recap: plain text image format. I kept typing bpm instead of pbm.</li>
+<li>Run:</li>
+<li>Resolution: #library #cpp: <a href="https://github.com/ToruNiina/pnm"><code>pnm</code> pbm, pgm, ppm image IO for modern C++ (single header only library)</a>
+<ul>
+<li>#library #java: <a href="https://github.com/haraldk/TwelveMonkeys/wiki/PNM-Plugin">PNM Plugin · TwelveMonkeys Wiki</a>
+<ul>
+<li>Read support for the following file types:
+<ul>
+<li>PBM in P1 (ASCII) and P4 (binary) formats, 1 bit per pixel</li>
+<li>PGM in P2 (ASCII) and P5 (binary) formats, up to 16/32 bits per pixel</li>
+<li>PPM in P3 (ASCII) and P6 (binary) formats, up to 16/32 bits per pixel component</li>
+<li>PAM in P7 (binary) format up to 32 bits per pixel component</li>
+<li>Limited support for PFM in Pf (gray) and PF (RGB) formats, 32 bits floating point</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:<a href="https://askubuntu.com/questions/911541/what-programs-support-pam-image-format">What programs support PAM image format?</a></li>
+<li>Related:
+<ul>
+<li>#libc <a href="https://github.com/jasper-software/jasper"><code>jasper</code> Image Coding Toolkit</a></li>
+<li><a href="https://github.com/pnggroup/libpng"><code>libpng</code> official libpng repository</a></li>
+<li>#format psf1 and psf2 files is <a href="https://wiki.osdev.org/PC_Screen_Font">PC Screen Font - OSDev Wiki</a></li>
+<li>#alternative #cpp #library: <a href="https://github.com/giovanni-iannaccone/eikon#-usage"><code>eikon</code> image processing library</a>
+<ul>
+<li>make it easier to draw some shapes on here.</li>
+</ul>
+</li>
+<li>#library #csharp <a href="https://github.com/dbrant/imageformats"><code>imageformats</code> Library for decoding obscure graphics formats, such as Targa (.TGA), Sun raster (.RAS, .SUN), ZSoft (.PCX), Netpbm (.PPM, .PGM, .PBM, .PNM), Amiga (LBM, PIC), SGI, MacPaint, AOL .ART, PSP, and DICOM.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

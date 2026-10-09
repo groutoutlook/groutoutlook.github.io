@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;vs-NavigateTabGroups&#x60; switching to different tab groups/Navigate DocumentGroup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;vs-NavigateTabGroups&#x60; switching to different tab groups/Navigate DocumentGroup</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-29 12:06:54 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vs">
+                        <span>ide/vs</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/navigate">
+                        <span>navigate</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/plugin">
+                        <span>plugin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jagt/vs-NavigateTabGroups/tree/vs2022"><code>vs-NavigateTabGroups</code> switching to different tab groups/Navigate DocumentGroup</a>
+<ul>
+<li>Recap: <code>Tools.NavigateTabGroups.Next</code> == <code>alt+right</code>(Text Editor) <del><code>Ctrl+w ctrl+w</code></del>.
+<ul>
+<li><code>Tools.NavigateTabGroups.Previous</code> == <code>Ctrl+shift+w ctrl+shift+w</code>.</li>
+</ul>
+</li>
+<li>Resolution: In VS, Official name of Tab Group is Document Group though.
+<ul>
+<li>VSCode call it &quot;Group&quot;.</li>
+<li>This is for 3 panes setup, since I may want to previous pane...</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/zastrowm/vs-NavigateTabGroups/issues/10">Support for VS 2022 · Issue #10 · zastrowm/vs-NavigateTabGroups</a>.
+<ul>
+<li>Issues in DevCom : <a href="https://developercommunity.visualstudio.com/t/Add-Keyboard-Shortcut-for-Tab-Group-Navi/1596104">Add Keyboard Shortcut for Document Group Navigation - Developer Community</a></li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Revisit: [2025-09-14 14:36:28] <a href="https://developercommunity.visualstudio.com/t/BUG-MSVC--VS2026-consuming-a-huge-amo/10966078?sort=newest&amp;q=msvc">MSVC + VS2026 consuming a huge amount of memory on 32GB machine - Developer Community</a>
+<ul>
+<li>My first ever devcom ticket about vs18/VS2026.</li>
+<li>Resolution: I renamed <code>vcpkgsrv</code> to <code>vcpkgsrv_</code> to avoid leaking memory and cloning process like that.
+<ul>
+<li>No <code>intellisense</code> for you of course. No fancy highlight/type info.
+only jump to definition, even that is a huge stretch since it cant tell things apart.</li>
+<li>Conclusion: <code>vcpkgsrv</code> is the Intellisense itself...</li>
+</ul>
+</li>
+<li>Root: <a href="https://stackoverflow.com/questions/3884318/visual-c-express-dozens-of-vcpkgsrv-exe">Visual C++ Express - Dozens of vcpkgsrv.exe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

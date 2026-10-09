@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: To delete something that is start with &#x60;Layer&#x60;,&#x60;0&#x60;,&#x60;Shape[0-9]*&#x60;.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">To delete something that is start with &#x60;Layer&#x60;,&#x60;0&#x60;,&#x60;Shape[0-9]*&#x60;.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-02 09:46:14 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/freecad">
+                        <span>freecad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selection">
+                        <span>selection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>To delete something that is start with <code>Layer</code>,<code>0</code>,<code>Shape[0-9]*</code>.
+<ul>
+<li>Recap: which is artifact from the import of its own's dxf export file.. Dont know how.</li>
+<li>Run: up to this point you can delete whatever you want in here.</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta statement import python"><span class="keyword control import python">import</span> <span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span></span> <span class="keyword control import as python">as</span> <span class="meta qualified-name python"><span class="meta generic-name python">App</span></span></span>
+<span class="meta statement import python"><span class="keyword control import python">import</span> <span class="meta qualified-name python"><span class="meta generic-name python">Draft</span></span></span>
+
+<span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span> <span class="keyword operator assignment python">=</span> <span class="meta qualified-name python"><span class="meta generic-name python">App</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">ActiveDocument</span></span>
+<span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span><span class="punctuation section block conditional python">:</span></span>
+    <span class="meta statement for python"><span class="keyword control flow for python">for</span> <span class="meta generic-name python">obj</span> <span class="meta statement for python"><span class="keyword control flow for in python">in</span></span></span><span class="meta statement for python"> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Objects</span></span><span class="punctuation section block for python">:</span></span>
+        <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">TypeId</span></span> <span class="keyword operator comparison python">!=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">Part::Feature<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation section block conditional python">:</span></span>
+            <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">removeObject</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Name</span></span></span><span class="punctuation section arguments end python">)</span></span>
+    <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">recompute</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span>
+</span></code></pre>
+<ul>
+<li>And the exporting scripts, without Gui interaction:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta statement import python"><span class="keyword control import python">import</span> <span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span></span><span class="punctuation separator import-list python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">importDXF</span></span><span class="punctuation separator import-list python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">os</span></span></span>
+
+<span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">getDocument</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">_m0_inox_long_8corner_25_64ray<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span>
+<span class="meta qualified-name python"><span class="meta generic-name python">out_dir</span></span> <span class="keyword operator assignment python">=</span> <span class="storage type string python">r</span><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python"><span class="source regexp python">D:/ProgramDataD/Mua-ban-TQ-VN/Electric-25/Q4/Reference/VC0-Star</span><span class="punctuation definition string end python">&quot;</span></span></span>
+<span class="meta qualified-name python"><span class="meta generic-name python">out_file</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">os</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">path</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">join</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">out_dir</span></span><span class="punctuation separator arguments python">,</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">8m0.inox.long.8corner.25.64ray.dxf<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span>
+
+<span class="meta qualified-name python"><span class="meta generic-name python">__objs__</span></span> <span class="keyword operator assignment python">=</span> <span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta qualified-name python"><span class="meta generic-name python">obj</span></span> <span class="meta expression generator python"><span class="keyword control flow for generator python">for</span> <span class="meta generic-name python">obj</span> <span class="keyword control flow for in python">in</span></span> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Objects</span></span> <span class="keyword control flow if inline python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">TypeId</span></span> <span class="keyword operator comparison python">==</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">Part::Feature<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation section list end python">]</span></span>
+
+<span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">__objs__</span></span><span class="punctuation section block conditional python">:</span></span>
+    <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">hasattr</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">importDXF</span></span><span class="punctuation separator arguments python">,</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">exportOptions<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation section block conditional python">:</span></span>
+        <span class="meta qualified-name python"><span class="meta generic-name python">opts</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">importDXF</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">exportOptions</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">out_file</span></span></span><span class="punctuation section arguments end python">)</span></span>
+        <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">importDXF</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">export</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">__objs__</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">out_file</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">opts</span></span></span><span class="punctuation section arguments end python">)</span></span>
+    <span class="meta statement conditional python"><span class="keyword control flow conditional python">else</span><span class="punctuation section block python">:</span></span>
+        <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">importDXF</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">export</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">__objs__</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">out_file</span></span></span><span class="punctuation section arguments end python">)</span></span>
+
+<span class="keyword other del python">del</span> <span class="meta qualified-name python"><span class="meta generic-name python">__objs__</span></span>
+</span></code></pre>
+<ul>
+<li>Resolution: so much faster than Shift+PageDown in the object tree.</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

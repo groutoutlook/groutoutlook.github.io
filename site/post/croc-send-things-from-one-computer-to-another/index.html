@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;croc&#x60; send things from one computer to another</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;croc&#x60; send things from one computer to another</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-01-08 04:16:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/files">
+                        <span>files</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/schollz/croc"><code>croc</code> send things from one computer to another</a>
+<ul>
+<li>Recap: a kind of P2P but through normal TCP.
+<ul>
+<li>P2P is done through <a href="https://wikipedia.org/wiki/Rendezvous_protocol">Rendezvous protocol</a></li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">croc</span></span><span class="meta function-call arguments shell"> send ./AFile <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> sender. Will make a code-string to match.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">croc</span></span><span class="meta function-call arguments shell"> send<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>code</span> 111111 <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>D:\ProgramDataD\9-ProductionFiles\Firmware-Finished\FMD\OfflineFile\EasyFlasher\1m0.24drop.5cm.Chandelier_yam.akf<span class="punctuation definition string end shell">&quot;</span></span></span>
+
+<span class="meta function-call shell"><span class="variable function shell">croc</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>code-string<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> receiver.... Then you can paste the code-string generated above.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/schollz/croc#use-pipes---stdin-and-stdout">pipe <code>stdin</code> and <code>stdout</code> with croc</a></li>
+</ul>
+</li>
+<li>Reason: in scoop.
+<ul>
+<li>And in #termux</li>
+</ul>
+</li>
+<li>Root: <a href="https://www.reddit.com/r/termux/comments/1c17d08">File Share Via Termux</a>
+<ul>
+<li>#og <a href="https://github.com/meejah/fowl"><code>fowl</code> Forward over Wormhole: streams over magic-wormhole Dilation connections</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#host/self #alternative :<a href="https://github.com/mtlynch/picoshare"><code>picoshare</code> sharing images and other files</a>
+<ul>
+<li><a href="https://github.com/andrii-kryvoviaz/slink"><code>slink</code> Self-hosted image sharing service</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/n0-computer/sendme"><code>sendme</code> tool to send files and directories</a>
+<ul>
+<li>Recap: using <code>iroh</code> with it.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

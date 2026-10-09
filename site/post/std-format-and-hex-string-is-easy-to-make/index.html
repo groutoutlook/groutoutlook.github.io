@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: std::format and hex string is easy to make.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">std::format and hex string is easy to make.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-27 11:10:00 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format">
+                        <span>format</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>std::format and hex string is easy to make.
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++">std<span class="punctuation accessor c++">::</span>string <span class="meta function c++"><span class="entity name function c++">toHexString</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="support type stdint c">int64_t</span> <span class="variable parameter c++">value</span><span class="punctuation separator c++">,</span> <span class="storage type c">int</span> <span class="variable parameter c++">width</span> <span class="keyword operator assignment c++">=</span> <span class="constant numeric c++">0</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++">
+</span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    <span class="keyword control c++">if</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span>width <span class="keyword operator comparison c">&gt;</span> <span class="constant numeric c++">0</span><span class="punctuation section group end c++">)</span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span> <span class="keyword control c++">return</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">format</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>{:0{}x}<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> value<span class="punctuation separator c++">,</span> width</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span> <span class="punctuation section block end c++">}</span></span>
+    <span class="keyword control c++">return</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">format</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>{:x}<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> value</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

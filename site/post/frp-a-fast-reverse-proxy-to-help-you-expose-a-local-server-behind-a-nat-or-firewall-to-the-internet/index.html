@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;frp&#x60; A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;frp&#x60; A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-22 05:00:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/backend/proxy">
+                        <span>backend/proxy</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selfhost">
+                        <span>selfhost</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/service">
+                        <span>service</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/fatedier/frp"><code>frp</code> A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.</a>
+<ul>
+<li>Recap: #alternative of <code>ngrok</code> and easier to use than <code>nginx</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">frp <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> ?    </span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li>Resolution: concept of reverse proxy clicked for me. #server facing #client proxy.
+<ul>
+<li>Server received traffic and route it to somewhere else.</li>
+<li><a href="https://github.com/fatedier/frp/blob/dev/doc/virtual_net.md"> <code>frp</code> Virtual Network - <code>VirtualNet</code></a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Con: more steps than using <code>iroh</code>.</li>
+</ul>
+</li>
+<li>Root: in scoop.
+<ul>
+<li>in #windows you have to whitelist this from Windows Security/Defender...</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#meta: <a href="https://github.com/anderspitman/awesome-tunneling">List of ngrok/Cloudflare Tunnel alternatives and other tunneling software and services. Focus on self-hosting.</a></li>
+<li>#alternative : <a href="https://github.com/sadoyan/aralez"><code>aralez</code> Reverse proxy and service mesh built on top of Cloudflare's Pingora</a></li>
+<li><a href="https://github.com/plabayo/rama"><code>rama</code> modular service framework to move and transform network packets</a></li>
+<li>#server : <a href="https://github.com/openresty/openresty">High Performance Web Platform Based on Nginx and LuaJIT</a></li>
+<li>#blog <a href="https://lobste.rs/s/wj0k0e/improving_nat_traversal_part_2">Improving NAT traversal, part 2: challenges in cloud environments</a></li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/connet-dev/connet"><code>connet</code> p2p reverse proxy with NAT traversal. Inspired by frp, rathole and ngrok</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

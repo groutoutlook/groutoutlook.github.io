@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;LinkHints.activate&#x60; match CSS selector.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;LinkHints.activate&#x60; match CSS selector.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-02 03:31:17 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/browser">
+                        <span>browser</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/css">
+                        <span>css</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/plugin">
+                        <span>plugin</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selection">
+                        <span>selection</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vimium">
+                        <span>vimium</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/895#issuecomment-1479926112"><code>LinkHints.activate</code> match CSS selector.</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> gfb LinkHints.activate match=<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>.btn,button<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> g and f is so close to each other.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution: I'm actually thinking of integrating <code>kanata</code> into this. as tap-hold-eager <code>f</code> or tap-dance to trigger...
+<ul>
+<li>or just <code>defchordsv2</code> them to trigger advance matching, since there will be a lot of <code>gfb</code> like mapping I would like to see in vimium</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/gdh1995/vimium-c/issues/866#issuecomment-2663947689">take action on specific elements on a specific website using Vimium C.</a>
+<ul>
+<li>which employ the <code>env</code> for url name(mandatory for setting per-site keybindings.).</li>
+<li>can run javascript bookmarklet even.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#workflow #idea: At one rate I will not type QWERTY any more... Colemak or Workman.
+<ul>
+<li>So I will make some keyboard translation software (<code>kanata</code> related) to translate every config imaginable to other layout.</li>
+</ul>
+</li>
+<li>#javascript #selection <a href="https://stackoverflow.com/questions/71475378/how-to-use-document-queryselector-to-find-elements-with-a-specific-class-name"><code>document.querySelector()</code> to find elements with a specific class name that are within a div with a specific ID</a>
+<ul>
+<li>use javascript bookmarklet to execute query in JS, not limited by just CSS.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

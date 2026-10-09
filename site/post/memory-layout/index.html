@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: memory layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">memory layout</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-09 01:42:26 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/glsl">
+                        <span>glsl</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shader">
+                        <span>shader</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.khronos.org/opengl/wiki/interface_block_(glsl)#memory_layout">memory layout</a>
+<ul>
+<li>brief: some weird keyword in layout binding such as <code>std140</code> and <code>std430</code>. it's more like something described on each standard version of <code>opengl</code> and <code>vulkan</code></li>
+</ul>
+</li>
+<li><code>std140</code>: normal standard.</li>
+</ul>
+<blockquote>
+<p>[!info]
+the rules of <code>std140</code> layout explicitly state the layout arrangement of any interface block declared with this layout. this also means that such an interface block can be shared across programs, much like shared. the only downside to this layout type is that the rules for packing elements into arrays/structs can introduce a lot of unnecessary padding.
+the rules for <code>std140</code> layout are covered quite well in the opengl specification (opengl 4.5, section 7.6.2.2, page 137). among the most important is the fact that arrays of types are not necessarily tightly packed. an array of floats in such a block will not be the equivalent to an array of floats in c/c++. the array stride (the bytes between array elements) is always rounded up to the size of a vec4 (ie: 16-bytes).
+so arrays will only match their c/c++ definitions if the type is a multiple of 16 bytes</p>
+</blockquote>
+<ul>
+<li><code>std430</code>: minor refactor.</li>
+</ul>
+<blockquote>
+<p>[!info] &gt; <strong>std430</strong>: this layout works like <code>std140</code>, except with a few optimizations in the alignment and strides for arrays and structs of scalars and vector elements (except for vec3 elements, which remain unchanged from <code>std140</code>). specifically, they are no longer rounded up to a multiple of 16 bytes. so an array of <code>float</code>s will match with a c++ array of <code>float</code>s.</p>
+</blockquote>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

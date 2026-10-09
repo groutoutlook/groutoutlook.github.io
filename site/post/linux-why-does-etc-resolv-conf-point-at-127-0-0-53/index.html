@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: linux - Why does /etc/resolv.conf point at 127.0.0.53?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">linux - Why does /etc/resolv.conf point at 127.0.0.53?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-15 06:08:15 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://unix.stackexchange.com/questions/612416/why-does-etc-resolv-conf-point-at-127-0-0-53">linux - Why does /etc/resolv.conf point at 127.0.0.53?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>
+<h2>Resolution: <a href="https://www.mankier.com/8/systemd-resolved.service"><code>systemd-resolved.service</code> Network Name Resolution manager | systemd-resolved</a></h2>
+</li>
+<li>Reason:</li>
+<li>Root: #wsl use this as DNS resolver. To be exact, <code>dig</code> does.
+<ul>
+<li>Run <code>dig dell-p7670.local</code>. you will see this address appear in DNS server.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;dynamic-macro&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;dynamic-macro&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-31 11:31:26 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kanata">
+                        <span>kanata</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#dynamic-macro"><code>dynamic-macro</code></a>
+<ul>
+<li>Recap: you will need this in e.g. replay #vimium macros like <code>gfe 4</code> ot <code>5&lt;tab&gt;</code>.
+<ul>
+<li>sometimes you just want to navigate by macros... Since GUI is literally block all other keyboard navigation options.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#sequences"><code>defseq</code> and <code>sldr</code> sequences</a>
+<ul>
+<li>Resolution: behave exactly like how leader combo in #neovim works.
+<ul>
+<li>or more familiar, the <code>macro</code>-like mapping, but for input.</li>
+</ul>
+</li>
+<li>Recite: When in sequence mode, keys are not typed (by default) but are saved until one of the following happens:
+<ul>
+<li>A key is typed that does not match any sequence</li>
+<li>sequence-timeout milliseconds elapses since the most recent key press</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#zippychord"><code>defzippy</code></a>
+<ul>
+<li><code>zippychord</code> is an espanso #alternative.
+<ul>
+<li>Pro: it can nested modifier keys e.g. <code>ctrl</code> or <code>alt</code> or anything inside a text sequences.</li>
+<li>Con: does not have a clear structure to config that outside of dumping all them in a files.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

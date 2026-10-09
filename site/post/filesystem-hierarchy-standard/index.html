@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Filesystem Hierarchy Standard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Filesystem Hierarchy Standard</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-15 11:06:24 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/convention">
+                        <span>convention</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/Filesystem_Hierarchy_Standard">Filesystem Hierarchy Standard</a>
+<ul>
+<li>Recap: #acronym FHS, specify which directory for which purpose.</li>
+<li>Root: trying to understand where to put program's data.</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/Microsoft/vcpkg-tool#installuseremove"><code>vcpkg-tool</code> Components of microsoft/vcpkg's binary.</a>
+<ul>
+<li>.. put  data at <code>$HOME</code> directory.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>So there is nothing closely resemble &quot;Program Data&quot; in Linux. Just stack everything in <code>$HOME</code> directory.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

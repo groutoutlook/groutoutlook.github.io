@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TILs: regex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <h1>TILs for regex</h1>
+
+        <hr>
+
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/feat-implement-reg-register-expansion">Feat: implement &#x60;%reg{}&#x60; register expansion</a></h3>
+                <span class="til-date">2026-04-16 10:07:49 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-search-within-webs">Regex Search within webs:</a></h3>
+                <span class="til-date">2026-03-27 12:10:09 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/search/engine">
+                    <span>search/engine</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ripgrep-tests-regression-rs-at-master-burntsushi-ripgrep">ripgrep/tests/regression.rs at master · BurntSushi/ripgrep</a></h3>
+                <span class="til-date">2025-09-14 04:19:01 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+                <a class="til-tag" href="/category/test/integration">
+                    <span>test/integration</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/can-regex-support-mismatching">[Can regex support mismatching &#x27;</a></h3>
+                <span class="til-date">2025-09-14 04:09:40 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-in-regex-rust">Regex in regex - Rust</a></h3>
+                <span class="til-date">2025-09-04 10:43:51 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/match-like-matching-operators">&#x60;-match&#x60;,&#x60;-like&#x60; Matching operators</a></h3>
+                <span class="til-date">2025-07-21 03:01:40 PM</span>
+                <a class="til-tag" href="/category/pattern/matching">
+                    <span>pattern/matching</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-negate-specific-word-in-regex">How to negate specific word in regex?</a></h3>
+                <span class="til-date">2025-07-21 02:20:21 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fancy-regex">&#x60;fancy_regex&#x60;</a></h3>
+                <span class="til-date">2025-07-20 11:06:54 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fastmod-fast-partial-replacement-for-the-codemod-tool">&#x60;fastmod&#x60; fast partial replacement for the codemod tool</a></h3>
+                <span class="til-date">2025-07-20 11:00:59 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/modified-ecmascript-regular-expression-grammar">Modified ECMAScript regular expression grammar</a></h3>
+                <span class="til-date">2025-07-18 05:15:31 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/std-regex-search">&#x60;std::regex_search&#x60;</a></h3>
+                <span class="til-date">2025-07-18 04:12:50 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/both-scooter-rgr-and-rg-use-regex-crates-so-it-share-the-quirky-named-capturing-group">Both &#x60;scooter&#x60; | &#x60;rgr&#x60; and &#x60;rg&#x60; use &#x60;regex&#x60; crates so it share the quirky named capturing group.</a></h3>
+                <span class="til-date">2025-07-18 04:02:24 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/grep">
+                    <span>grep</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/debian-understanding-grep-op-in-a-script">debian - Understanding &#x60;grep -oP&#x60; .... In a script</a></h3>
+                <span class="til-date">2025-07-16 01:15:02 PM</span>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/split-operator">&#x60;-split&#x60; operator</a></h3>
+                <span class="til-date">2025-06-24 05:09:48 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/gnu-awk-user-s-guide">GNU Awk User’s Guide</a></h3>
+                <span class="til-date">2025-06-08 12:39:10 PM</span>
+                <a class="til-tag" href="/category/og">
+                    <span>og</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/about-switch-switch-regex-microsoft-learn">about_Switch | &#x60;switch -regex&#x60; Microsoft Learn</a></h3>
+                <span class="til-date">2025-06-02 12:13:36 PM</span>
+                <a class="til-tag" href="/category/pattern/matching">
+                    <span>pattern/matching</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-how-does-b-work-when-using-regular-expressions-stack-overflow">regex - how does &#x60;\b&#x60; work when using regular expressions? - stack overflow</a></h3>
+                <span class="til-date">2025-06-02 10:49:55 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/sd-usage">&#x60;sd&#x60; usage</a></h3>
+                <span class="til-date">2025-06-01 10:34:44 PM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/rakudo-butterfly-rakudo-raku-on-moarvm-jvm-and-js">&#x60;rakudo&#x60;: 🦋 Rakudo – Raku on MoarVM, JVM, and JS</a></h3>
+                <span class="til-date">2025-06-01 08:17:26 AM</span>
+                <a class="til-tag" href="/category/language">
+                    <span>language</span>
+                </a>
+                <a class="til-tag" href="/category/perl">
+                    <span>perl</span>
+                </a>
+                <a class="til-tag" href="/category/raku">
+                    <span>raku</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/w-regex-for-alphanumeric-and-underscores-stack-overflow">&#x60;\w&#x60; regex for alphanumeric and underscores - stack overflow</a></h3>
+                <span class="til-date">2025-06-01 12:56:14 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/since-winget-doesnt-accept-glob-or-regex-in-any-subcommand-have-to-use-with-powershell">Since &#x60;winget&#x60; doesnt accept glob or regex in any subcommand, have to use with powershell.</a></h3>
+                <span class="til-date">2025-05-30 04:00:45 PM</span>
+                <a class="til-tag" href="/category/pacman/winget">
+                    <span>pacman/winget</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scooter-pre-populating-search-fields">&#x60;scooter&#x60; Pre-populating search fields</a></h3>
+                <span class="til-date">2025-05-23 08:28:39 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/select-string-sls-alias">&#x60;Select-String&#x60; | &#x60;sls&#x60; alias</a></h3>
+                <span class="til-date">2025-05-19 07:03:59 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mastering-spaces-in-regex">mastering spaces in regex</a></h3>
+                <span class="til-date">2025-05-19 06:13:48 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/if-you-are-unsure-about-how-to-match-the-path-with-a-very-complex-name-of-the-dir">If you are unsure about how to match the path with a very complex name of the dir</a></h3>
+                <span class="til-date">2025-05-17 08:25:48 PM</span>
+                <a class="til-tag" href="/category/cli/utils">
+                    <span>cli/utils</span>
+                </a>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/zoxide">
+                    <span>zoxide</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/if-you-want-search-a-whole-word-that-contains-space-add">if you want search a whole word that contains space add &#x60;\ &#x60;</a></h3>
+                <span class="til-date">2025-05-06 11:54:43 PM</span>
+                <a class="til-tag" href="/category/cli/utils">
+                    <span>cli/utils</span>
+                </a>
+                <a class="til-tag" href="/category/fzf">
+                    <span>fzf</span>
+                </a>
+                <a class="til-tag" href="/category/query">
+                    <span>query</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcre2-pcre2-development-is-based-here">&#x60;pcre2&#x60;: PCRE2 development is based here.</a></h3>
+                <span class="til-date">2025-05-06 01:39:08 PM</span>
+                <a class="til-tag" href="/category/libc">
+                    <span>libc</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/search-for-none-or-exact-one-character">&#x60;.?&#x60; search for none or exact one character.</a></h3>
+                <span class="til-date">2025-04-29 12:38:28 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/about-special-characters">about_Special_Characters</a></h3>
+                <span class="til-date">2025-04-26 12:23:10 AM</span>
+                <a class="til-tag" href="/category/delimiter">
+                    <span>delimiter</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-what-are-the-differences-between-pegs-and-cfgs">regex - What are the differences between PEGs and CFGs?</a></h3>
+                <span class="til-date">2025-04-24 04:07:14 PM</span>
+                <a class="til-tag" href="/category/parser">
+                    <span>parser</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ai-could-help-me-refactor-code-based-on-regex-find-and-replace-very-easy">ai could help me refactor code based on regex find and replace very easy.</a></h3>
+                <span class="til-date">2025-04-20 10:19:32 AM</span>
+                <a class="til-tag" href="/category/ai">
+                    <span>ai</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scooter-interactive-find-and-replace-in-the-terminal">&#x60;scooter&#x60; Interactive find and replace in the terminal</a></h3>
+                <span class="til-date">2025-01-18 07:15:10 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/swap-string-order-in-one-line-or-swap-lines-order-in-powershell">Swap string order in one line or swap lines order in powershell</a></h3>
+                <span class="til-date">2024-11-30 05:39:17 PM</span>
+                <a class="til-tag" href="/category/csharp">
+                    <span>csharp</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/powershell-and-the-contains-operator">PowerShell and the -contains operator</a></h3>
+                <span class="til-date">2024-11-17 10:31:18 AM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/globbing-and-regex-so-similar-so-different-linux-journal">globbing and regex: so similar, so different | linux journal</a></h3>
+                <span class="til-date">2024-11-10 05:31:31 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/hanickadot-compile-time-regular-expressions-compile-time-regular-expression-in-c">hanickadot/compile-time-regular-expressions: Compile Time Regular Expression in C++</a></h3>
+                <span class="til-date">2024-10-18 08:25:27 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ai-helps-me-write-this-regex-to-search-in-cpp-files">AI helps me write this regex to search in cpp files.</a></h3>
+                <span class="til-date">2024-10-13 07:29:51 PM</span>
+                <a class="til-tag" href="/category/ai">
+                    <span>ai</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/searchmarkers-mark-my-search-search-keyword-highlighter-for-firefox-and-chromium">searchmarkers/mark-my-search: Search keyword highlighter for Firefox and Chromium</a></h3>
+                <span class="til-date">2024-10-04 11:47:47 AM</span>
+                <a class="til-tag" href="/category/browser/plugin">
+                    <span>browser/plugin</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+                <a class="til-tag" href="/category/vimium">
+                    <span>vimium</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/meilisearch-search-api-that-fits-into-your-apps">&#x60;meilisearch&#x60; search API that fits into your apps</a></h3>
+                <span class="til-date">2024-10-03 03:16:08 PM</span>
+                <a class="til-tag" href="/category/library">
+                    <span>library</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+                <a class="til-tag" href="/category/search/engine">
+                    <span>search/engine</span>
+                </a>
+                <a class="til-tag" href="/category/web/api">
+                    <span>web/api</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/free-and-open-source-distributed-restful-search-engine">Free and Open Source, Distributed, RESTful Search Engine</a></h3>
+                <span class="til-date">2024-10-03 03:13:30 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-what-are-the-differences-between-glob-style-patterns-and-regular-expressions">regex - What are the differences between glob-style patterns and regular expressions?</a></h3>
+                <span class="til-date">2024-10-02 01:58:55 PM</span>
+                <a class="til-tag" href="/category/bash">
+                    <span>bash</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/shell">
+                    <span>shell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regular-expressions-with-powershell">regular expressions with powershell</a></h3>
+                <span class="til-date">2024-09-27 11:50:19 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-can-i-search-for-regular-expressions-within-webpages-using-google-chrome-or-ie">How can I search for regular expressions within webpages using Google Chrome or IE?</a></h3>
+                <span class="til-date">2024-09-25 03:11:11 PM</span>
+                <a class="til-tag" href="/category/browser">
+                    <span>browser</span>
+                </a>
+                <a class="til-tag" href="/category/chrome">
+                    <span>chrome</span>
+                </a>
+                <a class="til-tag" href="/category/javascript">
+                    <span>javascript</span>
+                </a>
+                <a class="til-tag" href="/category/msedge">
+                    <span>msedge</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/match-letters-and-numbers">match letters and numbers</a></h3>
+                <span class="til-date">2024-09-22 03:10:37 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/grep-how-to-add-an-or-condition-unix-linux-stack-exchange">gRep: how to add an &quot;or&quot; condition? - unix &amp; linux stack exchange</a></h3>
+                <span class="til-date">2024-09-07 03:17:02 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/windows-powershell-glob-pattern-matching">windows - Powershell glob pattern matching</a></h3>
+                <span class="til-date">2024-08-09 07:55:11 AM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/simple-glob-in-c-on-unix-system">Simple glob in C++ on unix system?</a></h3>
+                <span class="til-date">2024-08-09 07:54:58 AM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/library">
+                    <span>library</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/black-joker-expansion-z-shell">🃏 Expansion | Z-Shell</a></h3>
+                <span class="til-date">2024-08-09 07:12:55 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/zsh">
+                    <span>zsh</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regular-expressions-1-special-characters">regular expressions 1. special characters</a></h3>
+                <span class="til-date">2024-08-06 08:53:47 AM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-match-position-using-switch-regex">get match position using &#x60;switch -regex&#x60;</a></h3>
+                <span class="til-date">2024-08-06 08:39:21 AM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/do-not-use-double-quotes-to-contain-regex-patterns">Do not use &#x60;&quot;&quot;&#x60;(double quotes) to contain regex patterns.</a></h3>
+                <span class="til-date">2024-07-31 03:51:42 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/special-character">Special Character</a></h3>
+                <span class="til-date">2024-07-31 02:28:51 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/php-matching-a-space-in-regex-stack-overflow">php - matching a space in regex - stack overflow</a></h3>
+                <span class="til-date">2024-07-27 12:30:20 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-to-match-only-letters-stack-overflow">regex to match only letters - stack overflow</a></h3>
+                <span class="til-date">2024-07-23 03:16:53 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/powershell-regex-pattern-for-username-validation">powershell - Regex pattern for username validation</a></h3>
+                <span class="til-date">2024-07-23 10:52:24 AM</span>
+                <a class="til-tag" href="/category/AI">
+                    <span>AI</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/powershell-and-regex-a-comprehensive-guide">PowerShell and Regex: A Comprehensive Guide</a></h3>
+                <span class="til-date">2024-07-16 04:03:13 PM</span>
+                <a class="til-tag" href="/category/grep">
+                    <span>grep</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/irregular-use-regex-in-a-slightly-more-powershell-manner">&#x60;Irregular&#x60;, use regex in a slightly more PowerShell manner</a></h3>
+                <span class="til-date">2024-06-29 07:50:53 PM</span>
+                <a class="til-tag" href="/category/libraries">
+                    <span>libraries</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/common-used-regex">common used regex</a></h3>
+                <span class="til-date">2024-06-09 04:09:52 PM</span>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-in-neovim">regex in neovim</a></h3>
+                <span class="til-date">2024-06-09 03:45:10 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nfa-and-dfa">nfa and dfa </a></h3>
+                <span class="til-date">2024-06-06 06:03:22 PM</span>
+                <a class="til-tag" href="/category/compsci">
+                    <span>compsci</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/grep-the-powershell-way">grep the powershell way</a></h3>
+                <span class="til-date">2024-05-03 08:12:01 AM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/grex">&#x60;grex&#x60;</a></h3>
+                <span class="til-date">2024-05-03 07:18:00 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/programming">
+                    <span>programming</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: themes - How to change window title bar size in Windows 10</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">themes - How to change window title bar size in Windows 10</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-10 09:06:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/desktop">
+                        <span>desktop</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/952395/how-to-change-window-title-bar-size-in-windows-10">themes - How to change window title bar size in Windows 10</a>
+<ul>
+<li>Recap:</li>
+<li>Root: title bar height in glfw</li>
+<li>Resolution:
+<ul>
+<li>Check <code>Computer\HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics</code></li>
+<li>#powertoys : RegistryPreview should be useful
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/powertoys/registry-preview">PowerToys Registry Preview for Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#api/windows : <a href="https://stackoverflow.com/questions/28524463/how-to-get-the-default-caption-bar-height-of-a-window-in-windows">winapi - How to get the default caption bar height of a window in Windows?</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.shell.windowchrome?view=windowsdesktop-8.0">WindowChrome Class (System.Windows.Shell)</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/msi/captionheight">CaptionHeight property - Win32 apps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#article : [<a href="https://www.virtualplastic.net/html/desk_reg.html">VP} - Desktop/General/Windowmetrics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;fd -td&#x60; find only directory/path. Add &#x60;--type directory&#x60; on it.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;fd -td&#x60; find only directory/path. Add &#x60;--type directory&#x60; on it.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-26 03:49:22 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>fd -td</code> find only directory/path. Add <code>--type directory</code> on it.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fd</span></span><span class="meta function-call arguments shell"> glaze<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>HI</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>td <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> try on vulkan-cpp.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="support function cd shell">cd</span></span><span class="meta function-call arguments shell"> (f -p ports.icu -td</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">) <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> use with -p/full path to quickly cd to it.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"> (f star<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>td</span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="variable other readwrite assignment shell">--config</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell">no</span> <span class="variable other readwrite assignment shell">--load-scripts</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell">no</span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> because something like this.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/Dudemanguy/mpv-manga-reader">Manga reading script for mpv</a>
+<ul>
+<li>#keybinding: <code>y</code> toggle manga mode single page mode (by default) and rebind some keys. #default:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">toggle-manga-reader:</span></span><span class="meta function-call arguments shell"> y</span>
+<span class="meta function-call shell"><span class="variable function shell">toggle-double-page:</span></span><span class="meta function-call arguments shell"> d</span>
+<span class="meta function-call shell"><span class="variable function shell">toggle-continuous-mode:</span></span><span class="meta function-call arguments shell"> c</span>
+<span class="meta function-call shell"><span class="variable function shell">toggle-manga-mode:</span></span><span class="meta function-call arguments shell"> m</span>
+<span class="meta function-call shell"><span class="variable function shell">next-page:</span></span><span class="meta function-call arguments shell"> LEFT</span>
+<span class="meta function-call shell"><span class="variable function shell">prev-page:</span></span><span class="meta function-call arguments shell"> RIGHT</span>
+<span class="meta function-call shell"><span class="variable function shell">next-page-mouse:</span></span><span class="meta function-call arguments shell"> MBTN_FORWARD</span>
+<span class="meta function-call shell"><span class="variable function shell">prev-page-mouse:</span></span><span class="meta function-call arguments shell"> MBTN_BACK</span>
+<span class="meta function-call shell"><span class="variable function shell">next-single-page:</span></span><span class="meta function-call arguments shell"> Shift+LEFT</span>
+<span class="meta function-call shell"><span class="variable function shell">prev-single-page:</span></span><span class="meta function-call arguments shell"> Shift+RIGHT</span>
+<span class="meta function-call shell"><span class="variable function shell">skip-forward:</span></span><span class="meta function-call arguments shell"> Ctrl+LEFT</span>
+<span class="meta function-call shell"><span class="variable function shell">skip-backward:</span></span><span class="meta function-call arguments shell"> Ctrl+RIGHT</span>
+<span class="meta function-call shell"><span class="variable function shell">first-page:</span></span><span class="meta function-call arguments shell"> HOME</span>
+<span class="meta function-call shell"><span class="variable function shell">last-page:</span></span><span class="meta function-call arguments shell"> END</span>
+<span class="meta function-call shell"><span class="variable function shell">pan-up:</span></span><span class="meta function-call arguments shell"> UP</span>
+<span class="meta function-call shell"><span class="variable function shell">pan-down:</span></span><span class="meta function-call arguments shell"> DOWN</span>
+<span class="meta function-call shell"><span class="variable function shell">jump-page:</span></span><span class="meta function-call arguments shell"> /</span>
+<span class="meta function-call shell"><span class="variable function shell">open-bookmark:</span></span><span class="meta function-call arguments shell"> Ctrl+b</span>
+<span class="meta function-call shell"><span class="variable function shell">delete-bookmark:</span></span><span class="meta function-call arguments shell"> Ctrl+d</span>
+<span class="meta function-call shell"><span class="variable function shell">create-bookmark:</span></span><span class="meta function-call arguments shell"> Ctrl+n</span>
+<span class="meta function-call shell"><span class="variable function shell">update-bookmark:</span></span><span class="meta function-call arguments shell"> Ctrl+u</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

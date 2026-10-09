@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: I don&#x27;t want streaming music, I want to stream my music</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">I don&#x27;t want streaming music, I want to stream my music</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-04 01:36:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/music">
+                        <span>music</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/software">
+                        <span>software</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://news.ycombinator.com/item?id=35461596">I don't want streaming music, I want to stream my music</a>
+<ul>
+<li>Recap: Emby, Jellyfin, Subsonic and some alternative to Spotify.</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-server-windows/">Windows tray app and installer for Jellyfin Server on Windows.</a></li>
+<li><a href="https://jellyfin.org/docs/general/post-install/networking/">Networking | Jellyfin</a>
+<ul>
+<li>Recap: #default port HTTP 8096 , HTTPS 8920. access using browser to those localhost to run test.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: in <code>scoop</code>. it comes with <code>createdump</code> binary as well, I dont really know.
+<ul>
+<li>Pro: seems like Jellyfin is so famous now.</li>
+<li>Con: lacking in UI compared to Plex or so.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#desktop/client <a href="https://github.com/DonutWare/Fladder"><code>Fladder</code> cross-platform Jellyfin Frontend built on top of Flutter</a>
+<ul>
+<li>Reason: in <code>scoop</code> and much <strong>modern than everything else</strong></li>
+</ul>
+</li>
+<li>#tui <a href="https://github.com/dhonus/jellyfin-tui"><code>jellyfin-tui</code> Modern music streaming client for the terminal</a></li>
+<li><a href="https://github.com/GioF71/minidlna-docker"><code>minidlna-docker</code> Easily run MiniDLNA with Docker</a></li>
+<li>#cpp #firmware <a href="https://github.com/Linkenelis/ESP32-DLNA-Client">ESP32 DLNA Client</a></li>
+</ul>
+</li>
+<li>Rival: instead of trying to fit in the jellyfin system, just do UPnP/DLNA interface.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

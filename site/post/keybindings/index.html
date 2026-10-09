@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;keybindings&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;keybindings&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-26 09:13:47 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nushell">
+                        <span>nushell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.nushell.sh/commands/docs/keybindings.html"><code>keybindings</code></a>
+<ul>
+<li>Recap: <code>keybindings listen</code> will echo what you typed.
+<ul>
+<li>Same as <code>[Console]::ReadKey($true)</code> or <code>$Host.UI.RawUI.ReadKey()</code> in powershell.
+<ul>
+<li>Run: <code>$keyobj = [Console]::ReadKey($true);$keyobj.key.ToString() + &quot;+&quot; + $keyobj.Modifiers.ToString()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run: [Monday, March 9, 2026 10:48:17 AM] #crossplatform that's why.
+<pre class="syntax-highlighting"><code class="language-nu"><span class="text plain">kitten show-key -m kitty # spin up wsl for this. not gonna lie.
+keybindings listen 
+input listen # one shot check input, which is kinda like [Console]::ReadKey($true) in powershell.
+</span></code></pre>
+</li>
+<li>Resolution: Map <code>F5</code> to reload config. As same as <code>exec nu</code> commands.</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

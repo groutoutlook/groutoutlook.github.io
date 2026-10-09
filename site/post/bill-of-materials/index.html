@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Bill of Materials</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Bill of Materials</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-08-04 05:33:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/bom">
+                        <span>bom</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/erp">
+                        <span>erp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/inventree">
+                        <span>inventree</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.inventree.org/en/latest/manufacturing/bom/">Bill of Materials</a>
+<ul>
+<li>Recap: try to figure out a good xlsx for this is the task for the mean time.</li>
+<li>Run:
+<ul>
+<li><a href="http://localhost:7998/web/part/5/bom">Part: FT32-MicrodotModule-26.pour5v-17dbe | V1</a></li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://docs.inventree.org/en/stable/manufacturing/bom/#bom-validation">Bill of Materials - BOM Validation</a>
+<ul>
+<li>it's like, doing a commit with an anchor hash.</li>
+</ul>
+</li>
+<li>can <a href="https://docs.inventree.org/en/stable/manufacturing/bom/#replacing-components">replace components/parts at will within BOM UI.</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://docs.inventree.org/en/stable/manufacturing/bom/#bom-comparison">Bill of Materials - Diff BOM comparison</a>
+<ul>
+<li>you can compare BOM to BOM of different things here..</li>
+<li><a href="http://localhost:7998/web/part/9/bom?compare=5">Part: FT32-MicrodotModul ... QFN32-F072BDW-13822 | V1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

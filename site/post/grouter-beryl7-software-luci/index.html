@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: grouter-beryl7 - Software - LuCI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">grouter-beryl7 - Software - LuCI</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-08-27 06:43:48 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/openwrt">
+                        <span>openwrt</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/os">
+                        <span>os</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman">
+                        <span>pacman</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="http://console.gl-inet.com:8080/cgi-bin/luci/admin/system/opkg">grouter-beryl7 - Software - LuCI</a>
+<ul>
+<li>Recap: shit... this is ouroboros.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"> root@grouter-beryl7 opkg install luci-app-uhttpd luci-app-frpc luci-app-frps frpc frps </span>
+<span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"> root@grouter-beryl7 opkg install luci-proto-pppossh sstp-client <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> several differnt vpn for you.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="http://console.gl-inet.com:8080/cgi-bin/luci/admin/services/uhttpd">grouter-beryl7 - uHTTPd - LuCI</a></li>
+<li>Related:
+<ul>
+<li>for the freshly config frpc/frps on openwrt, you can try <code>ssh</code> onto them.
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"> root@grouter-beryl7<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p6000 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> well, I am a bit puzzled, the 7000 is for `frps`.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

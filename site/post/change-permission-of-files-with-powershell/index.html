@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: change permission of files, with powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">change permission of files, with powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-03 12:56:59 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/github">
+                        <span>github</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/a/1329702/1870003">change permission of files, with powershell</a>
+<ul>
+<li>Recap:</li>
+<li>Run: in this case AWS complaining ssh keys permission is too opened.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">New-Variable -Name Key -Value &quot;$env:UserProfile\.ssh\id_rsa&quot; # Set Key File Variable:
+
+Icacls $Key /c /t /Inheritance:d # Remove Inheritance:
+
+Icacls $Key /c /t /Grant ${env:UserName}:F # Set Ownership to Owner:  Key&#39;s within $env:UserProfile:
+
+TakeOwn /F $Key # Key&#39;s outside of $env:UserProfile:
+Icacls $Key /c /t /Grant:r ${env:UserName}:F
+
+Icacls $Key /c /t /Remove:g Administrator &quot;Authenticated Users&quot; BUILTIN\Administrators BUILTIN Everyone System Users # Remove All Users, except for Owner:
+
+Icacls $Key # Verify:
+
+Remove-Variable -Name Key # Remove Variable:
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls"><code>icacls</code></a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cacls"><code>cacls</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/32431644/difference-between-host-based-authentication-and-key-based-authentication">linux - Difference between host based authentication and key based authentication</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

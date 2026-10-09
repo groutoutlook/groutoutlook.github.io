@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TILs: scripting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <h1>TILs for scripting</h1>
+
+        <hr>
+
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/is-there-a-way-in-powershell-to-get-the-default-value-of-a-script-parameter">Is there a way in PowerShell to get the default value of a script parameter?</a></h3>
+                <span class="til-date">2026-10-01 01:28:46 PM</span>
+                <a class="til-tag" href="/category/cmdlet">
+                    <span>cmdlet</span>
+                </a>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/bash-linux-find-all-symlinks-of-a-given-original-file-reverse-readlink">bash - Linux: Find all symlinks of a given &#x27;original&#x27; file? (reverse &#x27;readlink&#x27;)</a></h3>
+                <span class="til-date">2026-10-01 11:15:41 AM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/show-known-network-or-so-i-believe">show known network or so? I believe.</a></h3>
+                <span class="til-date">2026-08-18 03:08:11 PM</span>
+                <a class="til-tag" href="/category/network">
+                    <span>network</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/ssh">
+                    <span>ssh</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/csv-are-there-different-formats-for-an-excel-xlsx-file-and-which-is-the-smallest">csv - Are there different formats for an Excel/XLSX file, and which is the smallest?</a></h3>
+                <span class="til-date">2026-08-07 11:48:24 AM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/xlsx">
+                    <span>xlsx</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/timestamp-attributes">timestamp]&#x60; attributes.</a></h3>
+                <span class="til-date">2026-07-26 05:56:53 PM</span>
+                <a class="til-tag" href="/category/chrono">
+                    <span>chrono</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/stdout">
+                    <span>stdout</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/why-are-scripting-languages-e-g-perl-python-and-ruby-not-suitable-as-shell-languages">Why are scripting languages (e.g. Perl, Python, and Ruby) not suitable as shell languages?</a></h3>
+                <span class="til-date">2026-07-11 04:04:54 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/unix-how-can-i-cat-multiple-files-together-into-one-without-intermediary-file">unix - How can I &#x60;cat&#x60; multiple files together into one without intermediary file?</a></h3>
+                <span class="til-date">2026-06-20 11:30:58 AM</span>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-run-markdown-recipes-now-as-long-as-it-s-in-just-codeblock">&#x60;just&#x60; run markdown recipes now, as long as it&#x27;s in &#x60;just&#x60; codeblock.</a></h3>
+                <span class="til-date">2026-06-10 10:27:18 AM</span>
+                <a class="til-tag" href="/category/format/markdown">
+                    <span>format/markdown</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mpv-force-window-change-background-when-playing-audio-files-applications-desktop-environments">&#x60;mpv --force-window&#x60; - change background when playing audio files? / Applications &amp; Desktop Environments</a></h3>
+                <span class="til-date">2026-05-08 02:51:43 PM</span>
+                <a class="til-tag" href="/category/mpv">
+                    <span>mpv</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/software">
+                    <span>software</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/list-number-of-lines-of-every-file-in-a-directory-in-human-readable-format">list number of lines of every file in a directory in human readable format.</a></h3>
+                <span class="til-date">2026-04-28 11:06:05 AM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pikapython">&#x60;pikapython&#x60;</a></h3>
+                <span class="til-date">2026-04-09 11:21:26 AM</span>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/runtime/script">
+                    <span>runtime/script</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-speed-up-slow-down-a-video-ffmpeg">How to speed up / slow down a video – FFmpeg</a></h3>
+                <span class="til-date">2026-03-20 05:57:37 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/video">
+                    <span>video</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/smartcontextmenu-have-deep-connection-with-windows-api">&#x60;smartcontextmenu&#x60; have deep connection with Windows API</a></h3>
+                <span class="til-date">2026-03-08 10:06:58 AM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/clipboard">
+                    <span>clipboard</span>
+                </a>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/property-manipulation">Property Manipulation</a></h3>
+                <span class="til-date">2026-03-07 03:30:01 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/mpv">
+                    <span>mpv</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/cross-platform-native-clipboard-commands">Cross-platform native clipboard commands</a></h3>
+                <span class="til-date">2026-03-06 06:49:18 PM</span>
+                <a class="til-tag" href="/category/clipboard">
+                    <span>clipboard</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/to-know-more-details-about-current-ssh-shell">to know more details about current ssh shell,</a></h3>
+                <span class="til-date">2026-02-03 09:58:37 AM</span>
+                <a class="til-tag" href="/category/bash">
+                    <span>bash</span>
+                </a>
+                <a class="til-tag" href="/category/nu">
+                    <span>nu</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/make-ts">make.ts</a></h3>
+                <span class="til-date">2026-01-28 08:03:17 PM</span>
+                <a class="til-tag" href="/category/deno">
+                    <span>deno</span>
+                </a>
+                <a class="til-tag" href="/category/discussion">
+                    <span>discussion</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/typescript">
+                    <span>typescript</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/lx-shell-minimal-unix-like-shell-for-the-m5stack-cardputer-adv-with-a-tiny-vi-nano-editor-core-commands-and-lx-script-support">&#x60;lx_shell&#x60; Minimal Unix-like shell for the M5Stack Cardputer ADV, with a tiny vi/nano editor, core commands, and Lx script support.</a></h3>
+                <span class="til-date">2026-01-26 06:24:17 PM</span>
+                <a class="til-tag" href="/category/esp32s3">
+                    <span>esp32s3</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/shell">
+                    <span>shell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/http-sh-a-web-framework-written-in-bash-fully-configurable-with-a-basic-templating-engine-router-and-much-more-the-sakamoto-git-server">http.sh: a web framework written in bash. fully configurable, with a basic templating engine, router and much more - the sakamoto git server</a></h3>
+                <span class="til-date">2026-01-21 03:21:26 PM</span>
+                <a class="til-tag" href="/category/bash">
+                    <span>bash</span>
+                </a>
+                <a class="til-tag" href="/category/http">
+                    <span>http</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/server">
+                    <span>server</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/xna-how-to-uninstall-vsix-visual-studio-extensions">xna - How to uninstall .vsix Visual Studio Extensions?</a></h3>
+                <span class="til-date">2026-01-19 10:55:02 AM</span>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/vs">
+                    <span>vs</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/about-parameters-default-values">about_Parameters_Default_Values</a></h3>
+                <span class="til-date">2026-01-08 10:44:26 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/function">
+                    <span>function</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/command-line">Command line</a></h3>
+                <span class="til-date">2026-01-07 01:59:13 PM</span>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/debug-adapter-configuration-openocd-user-s-guide">Debug Adapter Configuration (OpenOCD User’s Guide)</a></h3>
+                <span class="til-date">2025-12-25 04:18:27 PM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/lume-lua-functions-geared-towards-gamedev">&#x60;lume&#x60; Lua functions geared towards gamedev</a></h3>
+                <span class="til-date">2025-12-23 03:13:54 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicad-python-kicad-api-python-bindings">&#x60;kicad-python&#x60;: KiCad API Python Bindings</a></h3>
+                <span class="til-date">2025-11-02 11:21:09 AM</span>
+                <a class="til-tag" href="/category/api/ipc">
+                    <span>api/ipc</span>
+                </a>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/jimtcl-jim-tcl-an-open-source-small-footprint-implementation-of-tcl">&#x60;jimtcl&#x60; Jim Tcl, an open-source, small footprint implementation of Tcl</a></h3>
+                <span class="til-date">2025-10-12 02:34:47 PM</span>
+                <a class="til-tag" href="/category/development">
+                    <span>development</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/small-and-highly-portable-detection-tests-based-on-mitre-s-att-ck">Small and highly portable detection tests based on MITRE&#x27;s ATT&amp;CK.</a></h3>
+                <span class="til-date">2025-10-12 12:26:24 PM</span>
+                <a class="til-tag" href="/category/example/repo">
+                    <span>example/repo</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/python-api-examples-pyocd">Python API examples — pyOCD</a></h3>
+                <span class="til-date">2025-10-12 12:45:59 AM</span>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/arrays-placing-based-on-custom-pitch-grid-or-circular-distance">Arrays placing based on custom pitch, grid or circular distance.</a></h3>
+                <span class="til-date">2025-10-10 09:32:10 PM</span>
+                <a class="til-tag" href="/category/automation">
+                    <span>automation</span>
+                </a>
+                <a class="til-tag" href="/category/batch">
+                    <span>batch</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-index-of-current-item-in-a-powershell-loop">Get index of current item in a PowerShell loop</a></h3>
+                <span class="til-date">2025-10-05 09:01:08 PM</span>
+                <a class="til-tag" href="/category/functional">
+                    <span>functional</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/slice-a-powershell-array-into-groups-of-smaller-arrays">Slice a PowerShell array into groups of smaller arrays</a></h3>
+                <span class="til-date">2025-10-05 02:02:44 PM</span>
+                <a class="til-tag" href="/category/container">
+                    <span>container</span>
+                </a>
+                <a class="til-tag" href="/category/golf/oneline">
+                    <span>golf/oneline</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/freecad-scripting-basics-freecad-documentation">FreeCAD Scripting Basics - FreeCAD Documentation</a></h3>
+                <span class="til-date">2025-10-04 09:49:01 PM</span>
+                <a class="til-tag" href="/category/doc/official">
+                    <span>doc/official</span>
+                </a>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/repl">
+                    <span>repl</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicad-python-cross-version-python-api-for-kicad-pcbnew-v5-v9">&#x60;kicad-python&#x60; Cross-version python API for KiCAD pcbnew v5-v9</a></h3>
+                <span class="til-date">2025-10-04 09:40:16 PM</span>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ahk-compile-toolset-compile-ahk-to-exe-files-for-distribution">&#x60;ahk-compile-toolset&#x60; compile ahk to exe files for distribution</a></h3>
+                <span class="til-date">2025-10-03 08:18:14 AM</span>
+                <a class="til-tag" href="/category/ahk">
+                    <span>ahk</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/wait-process">&#x60;Wait-Process&#x60;</a></h3>
+                <span class="til-date">2025-09-22 08:16:48 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/process">
+                    <span>process</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pipelines-nushell">Pipelines | Nushell</a></h3>
+                <span class="til-date">2025-09-17 06:49:04 PM</span>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/from-xml">&#x60;from xml&#x60;</a></h3>
+                <span class="til-date">2025-08-31 07:35:50 AM</span>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/parser">
+                    <span>parser</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/xml">
+                    <span>xml</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scripting-pcb-editor-9-0-kicad">Scripting | PCB Editor | 9.0 | KiCad</a></h3>
+                <span class="til-date">2025-07-26 11:23:51 AM</span>
+                <a class="til-tag" href="/category/doc/official">
+                    <span>doc/official</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nmap-scripting-engine-nmap-network-scanning">Nmap Scripting Engine | Nmap Network Scanning</a></h3>
+                <span class="til-date">2025-07-24 01:29:31 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/nmap">
+                    <span>nmap</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-can-i-run-text-selected-in-the-active-editor-in-vs-code-s-integrated-terminal">How can I run text selected in the active editor in VS Code&#x27;s integrated terminal?</a></h3>
+                <span class="til-date">2025-07-24 12:08:33 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/repl">
+                    <span>repl</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/vscode">
+                    <span>vscode</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ssh-localcommand-args-karl-auer-s-blog">ssh, LocalCommand, “!args”… – Karl Auer&#x27;s Blog</a></h3>
+                <span class="til-date">2025-07-24 11:18:36 AM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/remote/ssh">
+                    <span>remote/ssh</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-can-i-automatically-change-directory-on-ssh-login">How can I automatically change directory on ssh login?</a></h3>
+                <span class="til-date">2025-07-24 11:13:07 AM</span>
+                <a class="til-tag" href="/category/remote/ssh">
+                    <span>remote/ssh</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/server">
+                    <span>server</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/building-a-tiny-cli-shell-for-tiny-firmware-interrupt">Building a Tiny CLI Shell for Tiny Firmware | Interrupt</a></h3>
+                <span class="til-date">2025-07-15 04:54:28 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/libc">
+                    <span>libc</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/bash-why-can-i-not-use-variables-as-prefix-to-a-command-to-set-environment-variables">bash - Why can I not use variables as prefix to a command to set environment variables?</a></h3>
+                <span class="til-date">2025-07-10 12:56:20 PM</span>
+                <a class="til-tag" href="/category/env">
+                    <span>env</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/conditionally-set-alias-issue-5068-nushell-nushell">Conditionally set alias · Issue #5068 · nushell/nushell</a></h3>
+                <span class="til-date">2025-07-04 11:23:55 AM</span>
+                <a class="til-tag" href="/category/alias">
+                    <span>alias</span>
+                </a>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/strings-comparisons-operator">Strings Comparisons operator</a></h3>
+                <span class="til-date">2025-07-04 11:03:03 AM</span>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/operator">
+                    <span>operator</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/seq-1-linux-manual-page">seq(1) - Linux manual page</a></h3>
+                <span class="til-date">2025-06-23 12:34:17 AM</span>
+                <a class="til-tag" href="/category/bash">
+                    <span>bash</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/shell-send-text-file-line-by-line-with-netcat">shell - Send text file, line by line, with netcat</a></h3>
+                <span class="til-date">2025-06-20 01:52:37 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/netcat">
+                    <span>netcat</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/esplivescript-c-like-compiler-for-esp32">&#x60;ESPLiveScript&#x60; C like compiler for esp32</a></h3>
+                <span class="til-date">2025-06-11 03:04:48 PM</span>
+                <a class="til-tag" href="/category/board/esp32">
+                    <span>board/esp32</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mar04-chapters-for-mpv-mpv-script-for-adding-editing-removing-saving-loading-chapters">mar04/chapters_for_mpv: mpv script for adding/editing/removing/saving/loading chapters</a></h3>
+                <span class="til-date">2025-06-07 07:01:12 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/mpv">
+                    <span>mpv</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ark-arkscript-is-a-small-fast-functional-and-scripting-language-for-c-projects">&#x60;Ark&#x60; - ArkScript is a small, fast, functional and scripting language for C++ projects</a></h3>
+                <span class="til-date">2025-06-06 12:03:32 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/embedded">
+                    <span>embedded</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ulisp-version-of-the-lisp-programming-language-for-atmega-based-arduino-boards">&#x60;ulisp&#x60; version of the Lisp programming language for ATmega-based Arduino boards.</a></h3>
+                <span class="til-date">2025-06-06 12:00:56 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/library">
+                    <span>library</span>
+                </a>
+                <a class="til-tag" href="/category/lisp">
+                    <span>lisp</span>
+                </a>
+                <a class="til-tag" href="/category/mcu">
+                    <span>mcu</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/command-evaluation-using-backticks">Command Evaluation Using Backticks</a></h3>
+                <span class="til-date">2025-06-04 09:50:02 AM</span>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/shell">
+                    <span>shell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/cmd">&#x60;cmd&#x60;</a></h3>
+                <span class="til-date">2025-06-03 11:08:05 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/software">
+                    <span>software</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/io-redirection-what-does-exec-fd-dev-watchdog-do-in-bash">io redirection - What does &#x60;exec {fd}&lt;/dev/watchdog&#x60; do in Bash</a></h3>
+                <span class="til-date">2025-06-02 10:01:30 PM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ripgrep-pre-preprocessor-files-before-search">ripgrep &#x60;--pre&#x60; preprocessor files before search.</a></h3>
+                <span class="til-date">2025-06-02 08:40:44 PM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/grep">
+                    <span>grep</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mpv-io">mpv.io</a></h3>
+                <span class="til-date">2025-06-02 11:43:26 AM</span>
+                <a class="til-tag" href="/category/ipc">
+                    <span>ipc</span>
+                </a>
+                <a class="til-tag" href="/category/mpv">
+                    <span>mpv</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/running-gui-apps-as-scripts-using-net-and-c">Running GUI apps as scripts using .NET and C#</a></h3>
+                <span class="til-date">2025-06-01 12:07:57 AM</span>
+                <a class="til-tag" href="/category/dotnet">
+                    <span>dotnet</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ahkpp-ahk-provides-autohotkey-v1-and-v2-support-for-vs-code-theia-ide-and-more">&#x60;ahkpp&#x60; AHK++ provides AutoHotkey v1 and v2 support for VS Code, Theia IDE, and more</a></h3>
+                <span class="til-date">2025-05-31 05:53:10 PM</span>
+                <a class="til-tag" href="/category/ahk">
+                    <span>ahk</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/lsp">
+                    <span>lsp</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fend-unit-aware-calculator">&#x60;fend&#x60; unit-aware calculator</a></h3>
+                <span class="til-date">2025-05-31 05:16:55 PM</span>
+                <a class="til-tag" href="/category/crossplatform">
+                    <span>crossplatform</span>
+                </a>
+                <a class="til-tag" href="/category/eval">
+                    <span>eval</span>
+                </a>
+                <a class="til-tag" href="/category/math">
+                    <span>math</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/a-very-useful-usage-is-when-you-selected-text-and-you-want-to-evaluate-underneath-math-expression">A very useful &#x60;|&#x60; usage is when you selected text, and you want to evaluate underneath math expression.</a></h3>
+                <span class="til-date">2025-05-31 12:15:34 PM</span>
+                <a class="til-tag" href="/category/cli/utils">
+                    <span>cli/utils</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/powershell-quick-tip-how-to-retrieve-the-current-line-number-and-file-name-in-your-powershell-script-poshoholic">PowerShell Quick Tip: How to retrieve the current line number and file name in your PowerShell script – Poshoholic</a></h3>
+                <span class="til-date">2025-05-30 02:18:10 PM</span>
+                <a class="til-tag" href="/category/debugging">
+                    <span>debugging</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ahk-main-repo">&#x60;ahk&#x60; main repo</a></h3>
+                <span class="til-date">2025-05-30 11:57:26 AM</span>
+                <a class="til-tag" href="/category/ahk">
+                    <span>ahk</span>
+                </a>
+                <a class="til-tag" href="/category/gui">
+                    <span>gui</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/foreach-object-with-more-than-two-script-blocks">&#x60;ForEach-Object&#x60; with more than two script blocks</a></h3>
+                <span class="til-date">2025-05-29 06:18:06 PM</span>
+                <a class="til-tag" href="/category/pipeline">
+                    <span>pipeline</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/tee-object-to-stdout-without-out-host">&#x60;Tee-Object&#x60; to stdout without &#x60;Out-Host&#x60;</a></h3>
+                <span class="til-date">2025-05-29 02:34:34 PM</span>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/stdout">
+                    <span>stdout</span>
+                </a>
+                <a class="til-tag" href="/category/tee">
+                    <span>tee</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/solvm-yet-another-lua-runtime">&#x60;SolVM&#x60;: Yet another Lua Runtime</a></h3>
+                <span class="til-date">2025-05-29 11:50:21 AM</span>
+                <a class="til-tag" href="/category/golang">
+                    <span>golang</span>
+                </a>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/quickjs-javascript-engine">QuickJS Javascript Engine</a></h3>
+                <span class="til-date">2025-05-21 09:41:40 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/embedded">
+                    <span>embedded</span>
+                </a>
+                <a class="til-tag" href="/category/javascript">
+                    <span>javascript</span>
+                </a>
+                <a class="til-tag" href="/category/libc">
+                    <span>libc</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nu-n-for-no-config-shell">&#x60;nu -n&#x60; for no config shell.</a></h3>
+                <span class="til-date">2025-05-20 02:16:08 PM</span>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/carapace-bin-multi-shell-completion-binary">&#x60;carapace-bin&#x60; multi-shell completion binary.</a></h3>
+                <span class="til-date">2025-05-20 07:43:04 AM</span>
+                <a class="til-tag" href="/category/completion">
+                    <span>completion</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/select-object-select">&#x60;Select-Object&#x60; | &#x60;select&#x60;</a></h3>
+                <span class="til-date">2025-05-19 11:17:34 AM</span>
+                <a class="til-tag" href="/category/pipeline">
+                    <span>pipeline</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/about-script-blocks">about_Script_Blocks</a></h3>
+                <span class="til-date">2025-05-18 07:45:11 PM</span>
+                <a class="til-tag" href="/category/functional">
+                    <span>functional</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/explore">&#x60;explore&#x60;</a></h3>
+                <span class="til-date">2025-05-15 12:26:23 PM</span>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/attributes">attributes</a></h3>
+                <span class="til-date">2025-05-09 08:36:24 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/git-ls-list-item-which-isnt-in-gitignore">&#x60;git ls&#x60; list item which isnt in &#x60;.gitignore&#x60;</a></h3>
+                <span class="til-date">2025-05-09 07:57:12 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ffmprovisr">ffmprovisr</a></h3>
+                <span class="til-date">2025-05-08 07:49:27 PM</span>
+                <a class="til-tag" href="/category/ffmpeg">
+                    <span>ffmpeg</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mjdave-tui-tui-is-a-small-cross-platform-open-source-embeddable-scripting-language-and-serialization-library-for-c">mjdave/tui: tui is a small, cross platform, open source embeddable scripting language and serialization library for C++</a></h3>
+                <span class="til-date">2025-05-07 04:31:52 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/reflection">
+                    <span>reflection</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/running-recipes-at-the-end-of-a-recipe">Running Recipes at the End of a Recipe</a></h3>
+                <span class="til-date">2025-05-07 01:04:50 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/olivetin-safe-and-simple-access-to-predefined-shell-commands-from-web-ui">&#x60;OliveTin&#x60; safe and simple access to predefined shell commands from web UI</a></h3>
+                <span class="til-date">2025-05-06 11:45:50 PM</span>
+                <a class="til-tag" href="/category/cicd">
+                    <span>cicd</span>
+                </a>
+                <a class="til-tag" href="/category/cli/utils">
+                    <span>cli/utils</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/web/ui">
+                    <span>web/ui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/triggers-event-triggering-with-tekton">&#x60;triggers&#x60; Event triggering with Tekton!</a></h3>
+                <span class="til-date">2025-05-06 11:26:25 PM</span>
+                <a class="til-tag" href="/category/cicd">
+                    <span>cicd</span>
+                </a>
+                <a class="til-tag" href="/category/debugger">
+                    <span>debugger</span>
+                </a>
+                <a class="til-tag" href="/category/k8s">
+                    <span>k8s</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/save">save</a></h3>
+                <span class="til-date">2025-05-06 08:27:42 AM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nushell-src-command-rs">nushell/src/command.rs</a></h3>
+                <span class="til-date">2025-05-01 11:27:51 AM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/about-pwsh-pwsh-cli-options">about_Pwsh - &#x60;pwsh&#x60; cli options</a></h3>
+                <span class="til-date">2025-05-01 11:23:12 AM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/nushell-nupm-a-manager-for-nushell-packages">nushell/nupm: A manager for Nushell packages.</a></h3>
+                <span class="til-date">2025-04-26 11:58:56 AM</span>
+                <a class="til-tag" href="/category/module">
+                    <span>module</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ai-is-pretty-strong-at-porting-powershell-to-nushell-especially-grok-in-this-time">AI is pretty strong at porting powershell to nushell, especially Grok in this time.</a></h3>
+                <span class="til-date">2025-04-25 01:51:35 PM</span>
+                <a class="til-tag" href="/category/AI">
+                    <span>AI</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/conditional-if-else-in-recipe">conditional &#x60;if/else&#x60; in recipe</a></h3>
+                <span class="til-date">2025-04-24 11:16:13 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/more-about-recipe-dependencies-execution-sequence">more about recipe dependencies&#x27; execution sequence.</a></h3>
+                <span class="til-date">2025-04-24 10:59:51 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/generate">generate</a></h3>
+                <span class="til-date">2025-04-24 09:04:11 AM</span>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/topiary-formatter-for-nushell">topiary formatter for nushell</a></h3>
+                <span class="til-date">2025-04-23 10:19:00 AM</span>
+                <a class="til-tag" href="/category/formatter">
+                    <span>formatter</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/have-to-reinstall-direnv-and-mise-for-booting-up-nu">Have to reinstall &#x60;direnv&#x60; and &#x60;mise&#x60;  for booting up &#x60;nu&#x60;</a></h3>
+                <span class="til-date">2025-04-23 09:42:22 AM</span>
+                <a class="til-tag" href="/category/dotfiles">
+                    <span>dotfiles</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/nushell">
+                    <span>nushell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/qualcomm-eld-embedded-linker">qualcomm/eld: Embedded Linker</a></h3>
+                <span class="til-date">2025-04-15 02:31:45 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/sdk">
+                    <span>sdk</span>
+                </a>
+                <a class="til-tag" href="/category/tooling">
+                    <span>tooling</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ncruces-zenity-zenity-dialogs-for-golang-windows-macos">ncruces/zenity: Zenity dialogs for Golang, Windows, macOS</a></h3>
+                <span class="til-date">2025-04-13 11:47:00 AM</span>
+                <a class="til-tag" href="/category/cli/utils">
+                    <span>cli/utils</span>
+                </a>
+                <a class="til-tag" href="/category/crossplatform">
+                    <span>crossplatform</span>
+                </a>
+                <a class="til-tag" href="/category/golang">
+                    <span>golang</span>
+                </a>
+                <a class="til-tag" href="/category/gui">
+                    <span>gui</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/stdout">
+                    <span>stdout</span>
+                </a>
+                <a class="til-tag" href="/category/terminal">
+                    <span>terminal</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fish-user-friendly-command-line-shell">&#x60;fish&#x60; user-friendly command line shell.</a></h3>
+                <span class="til-date">2025-03-25 09:00:57 PM</span>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/shell">
+                    <span>shell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/using-brace-expansion-in-bash-shell">Using Brace Expansion in Bash Shell</a></h3>
+                <span class="til-date">2025-03-21 01:43:57 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/shell/bash">
+                    <span>shell/bash</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/cadquery-a-python-parametric-cad-scripting-framework-based-on-occt">&#x60;cadquery&#x60; A python parametric CAD scripting framework based on OCCT</a></h3>
+                <span class="til-date">2025-03-10 10:53:46 AM</span>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/software">
+                    <span>software</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/shell-ish-scripting-in-go-with-ease-hacker-news">shell-ish scripting in go with ease | hacker news</a></h3>
+                <span class="til-date">2025-02-01 03:52:43 PM</span>
+                <a class="til-tag" href="/category/golang">
+                    <span>golang</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/secrets-of-c-scripting-bindings-bridging-compile-time-and-run-time-jason-turner-cppcon-2024">Secrets of C++ Scripting Bindings: Bridging Compile Time and Run Time - Jason Turner - CppCon 2024</a></h3>
+                <span class="til-date">2025-01-23 12:09:50 AM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/export-layers-while-retain-canvas-size">export layers while retain canvas size</a></h3>
+                <span class="til-date">2024-11-22 07:21:53 PM</span>
+                <a class="til-tag" href="/category/asset">
+                    <span>asset</span>
+                </a>
+                <a class="til-tag" href="/category/photoshop">
+                    <span>photoshop</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/tcl-9-0-hacker-news">tcl 9.0 | hacker news</a></h3>
+                <span class="til-date">2024-10-19 07:37:55 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/difference-between-webdriver-and-chromedriver">difference between WebDriver and ChromeDriver?</a></h3>
+                <span class="til-date">2024-10-04 01:46:27 PM</span>
+                <a class="til-tag" href="/category/chrome">
+                    <span>chrome</span>
+                </a>
+                <a class="til-tag" href="/category/msedge">
+                    <span>msedge</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/test">
+                    <span>test</span>
+                </a>
+                <a class="til-tag" href="/category/web/ui">
+                    <span>web/ui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/as-now-only-wechat-could-host-mini-app-inside-desktop-client">as now only WeChat could host mini app inside Desktop Client....</a></h3>
+                <span class="til-date">2024-10-03 11:22:23 AM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/superapp">
+                    <span>superapp</span>
+                </a>
+                <a class="til-tag" href="/category/wechat">
+                    <span>wechat</span>
+                </a>
+                <a class="til-tag" href="/category/zalo">
+                    <span>zalo</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/minify-c-or-unminify-c-plus-plus-code-online-unminify-all">Minify c++ or Unminify C Plus Plus Code Online - Unminify All</a></h3>
+                <span class="til-date">2024-09-27 09:57:47 PM</span>
+                <a class="til-tag" href="/category/compsci">
+                    <span>compsci</span>
+                </a>
+                <a class="til-tag" href="/category/format/text">
+                    <span>format/text</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/wechat-windows-versions-bao-cun-wei-xin-li-shi-ban-ben">wechat-windows-versions: 保存微信历史版本</a></h3>
+                <span class="til-date">2024-09-25 11:55:37 PM</span>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/wechat">
+                    <span>wechat</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-can-i-search-for-regular-expressions-within-webpages-using-google-chrome-or-ie">How can I search for regular expressions within webpages using Google Chrome or IE?</a></h3>
+                <span class="til-date">2024-09-25 03:11:11 PM</span>
+                <a class="til-tag" href="/category/browser">
+                    <span>browser</span>
+                </a>
+                <a class="til-tag" href="/category/chrome">
+                    <span>chrome</span>
+                </a>
+                <a class="til-tag" href="/category/javascript">
+                    <span>javascript</span>
+                </a>
+                <a class="til-tag" href="/category/msedge">
+                    <span>msedge</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mikedh-trimesh-python-library-for-loading-and-using-triangular-meshes">mikedh/trimesh: Python library for loading and using triangular meshes.</a></h3>
+                <span class="til-date">2024-09-21 05:14:49 PM</span>
+                <a class="til-tag" href="/category/openscad">
+                    <span>openscad</span>
+                </a>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/could-be-accesed">could be accesed</a></h3>
+                <span class="til-date">2024-09-20 09:51:36 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/linker-script">linker script</a></h3>
+                <span class="til-date">2024-09-19 12:16:36 AM</span>
+                <a class="til-tag" href="/category/ide/keil">
+                    <span>ide/keil</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pipe-after-a-piped-xargs">pipe after a piped xargs</a></h3>
+                <span class="til-date">2024-09-17 12:51:23 AM</span>
+                <a class="til-tag" href="/category/piping">
+                    <span>piping</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/shell">
+                    <span>shell</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+                <a class="til-tag" href="/category/zsh">
+                    <span>zsh</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/hillya51-lunatranslator-galgamefan-yi-qi-zhi-chi-hookar-atie-ban-deng-asual-novel-translator-support-hook-ocr-clipboard">HIllya51/LunaTranslator: Galgame翻译器，支持HOOKãR〉ª贴板等ãsual Novel Translator , support HOOK / OCR / clipboard</a></h3>
+                <span class="til-date">2024-09-14 08:08:44 PM</span>
+                <a class="til-tag" href="/category/ai">
+                    <span>ai</span>
+                </a>
+                <a class="til-tag" href="/category/crossplatform">
+                    <span>crossplatform</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scripts-copyq-commands">Scripts copyq-commands</a></h3>
+                <span class="til-date">2024-09-10 03:22:26 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/clipboard">
+                    <span>clipboard</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mpv-lrc-download-synchronized-lyrics-from-mpv">&#x60;mpv-lrc&#x60; Download synchronized lyrics from &#x60;mpv&#x60;</a></h3>
+                <span class="til-date">2024-09-09 07:54:06 AM</span>
+                <a class="til-tag" href="/category/format/lrc">
+                    <span>format/lrc</span>
+                </a>
+                <a class="til-tag" href="/category/mpv">
+                    <span>mpv</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mpv-playlistmanager-lua-script-to-create-and-manage-playlists">&#x60;mpv-playlistmanager&#x60; lua script to create and manage playlists</a></h3>
+                <span class="til-date">2024-09-07 10:11:01 AM</span>
+                <a class="til-tag" href="/category/mpv">
+                    <span>mpv</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/a-guide-to-the-zsh-line-editor-with-examples">A Guide to the Zsh Line Editor with Examples</a></h3>
+                <span class="til-date">2024-08-19 03:43:55 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/zsh">
+                    <span>zsh</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/bash-fc-command-easily-wield-the-bash-shell-like-a-pro">Bash &#x60;fc&#x60; Command : Easily Wield the Bash Shell Like a Pro</a></h3>
+                <span class="til-date">2024-08-19 03:04:50 PM</span>
+                <a class="til-tag" href="/category/bash">
+                    <span>bash</span>
+                </a>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/micropython">&#x60;micropython&#x60;</a></h3>
+                <span class="til-date">2024-08-07 05:51:44 PM</span>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/berry-language-reference-manual-documentation">berry language reference manual documentation</a></h3>
+                <span class="til-date">2024-08-07 04:57:28 PM</span>
+                <a class="til-tag" href="/category/embedded">
+                    <span>embedded</span>
+                </a>
+                <a class="til-tag" href="/category/language/berry">
+                    <span>language/berry</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scripting-alternatives-to-lua-as-an-embedded-language">scripting - Alternatives to Lua as an embedded language?</a></h3>
+                <span class="til-date">2024-08-07 04:32:18 PM</span>
+                <a class="til-tag" href="/category/lua">
+                    <span>lua</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/forth">forth</a></h3>
+                <span class="til-date">2024-08-07 04:07:27 PM</span>
+                <a class="til-tag" href="/category/embedded/firmware">
+                    <span>embedded/firmware</span>
+                </a>
+                <a class="til-tag" href="/category/language/forth">
+                    <span>language/forth</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mprocs-run-multiple-commands-in-parallel">&#x60;mprocs&#x60; Run multiple commands in parallel</a></h3>
+                <span class="til-date">2024-08-01 07:55:41 AM</span>
+                <a class="til-tag" href="/category/process">
+                    <span>process</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/some-old-softwares-check-path-manually-like-this">Some old softwares check path manually like this.</a></h3>
+                <span class="til-date">2024-06-30 01:05:42 PM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/windows">
+                    <span>windows</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/il2cpp-backend-of-unity">il2cpp backend of unity</a></h3>
+                <span class="til-date">2024-06-14 01:15:12 PM</span>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/csharp">
+                    <span>csharp</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/unity">
+                    <span>unity</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/detach-a-process-entirely-in-unix">detach a process entirely in unix</a></h3>
+                <span class="til-date">2024-04-22 12:00:00 AM</span>
+                <a class="til-tag" href="/category/linux">
+                    <span>linux</span>
+                </a>
+                <a class="til-tag" href="/category/process">
+                    <span>process</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-date-date">&#x60;Get-Date&#x60; | &#x60;date&#x60;</a></h3>
+                <span class="til-date">2024-04-04 05:58:02 PM</span>
+                <a class="til-tag" href="/category/chrono">
+                    <span>chrono</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/time">
+                    <span>time</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/chaiscript">ChaiScript</a></h3>
+                <span class="til-date">2024-03-30 06:15:58 PM</span>
+                <a class="til-tag" href="/category/chaiscript">
+                    <span>chaiscript</span>
+                </a>
+                <a class="til-tag" href="/category/cpp">
+                    <span>cpp</span>
+                </a>
+                <a class="til-tag" href="/category/language">
+                    <span>language</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+    </body>
+</html>

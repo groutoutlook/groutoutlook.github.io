@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Serial-Studio&#x60; realtime telemetry workbench for embedded systems.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Serial-Studio&#x60; realtime telemetry workbench for embedded systems.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-19 02:04:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/embedded">
+                        <span>embedded</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mqtt">
+                        <span>mqtt</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/telemetry">
+                        <span>telemetry</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uart">
+                        <span>uart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Serial-Studio/Serial-Studio"><code>Serial-Studio</code> realtime telemetry workbench for embedded systems.</a>
+<ul>
+<li>Recap:</li>
+<li>Run: shim to <code>sstu</code>.
+<ul>
+<li>Clone and Build with :
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cmake</span></span><span class="meta function-call arguments shell"> ../<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>DPRODUCTION_OPTIMIZATION</span><span class="keyword operator assignment option shell">=</span>ON<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>DCMAKE_BUILD_TYPE</span><span class="keyword operator assignment option shell">=</span>Release</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> then open visual studio solution file in there, select as startup and build.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+<ul>
+<li>Have to add <code>qt</code> cmake script into <code>$env:path</code> so that FindQt6.cmake is invokable</li>
+<li>Right now this doesnt start on #cli, only when double click on GUI icon then it work...?
+<ul>
+<li>It has to <code>sudo</code> due to USB and network socket access nature...
+I have done all invoke-sudopwsh work inside my shim.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>#example <a href="https://github.com/Serial-Studio/Serial-Studio/tree/master/examples">Serial-Studio example project</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: in scoop.</li>
+<li>Related:
+<ul>
+<li>#compiler/msvc <a href="https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-170">/RTC (Run-time error checks)</a></li>
+<li><a href="https://stackoverflow.com/questions/37007939/command-line-error-d8016-o2-and-rtc1-command-line-options-are-incompatibl/44416270#44416270">visual studio - Command line error D8016: '/O2' and '/RTC1' command-line options are incompatible</a></li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/x-tools-author/x-tools"><code>x-tools</code> Qt-SerialPort-HID-BLE-UDP-TCP-WebSocket-Modbus-CANBus-MQTT debugging tool, which support custom lua, javascript, chart view and data transmitting...</a>
+<ul>
+<li>Recap: another swiss knife... shim to .<code>xtools</code></li>
+<li>Related: <a href="https://www.ip33.com/">ip33.com_专注互联网小工具</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

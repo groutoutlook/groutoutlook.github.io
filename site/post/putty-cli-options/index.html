@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: putty cli options</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">putty cli options</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-04-27 10:12:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uart">
+                        <span>uart</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://documentation.help/PuTTY/using-general-opts.html">putty cli options</a>
+<ul>
+<li>Recap: and <a href="https://documentation.help/PuTTY/plink-options.html"><code>plink</code> cli options</a>
+<ul>
+<li>plink could take all the putty options.</li>
+</ul>
+</li>
+<li>Run: read serial COM port.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">plink -serial COM11 -sercfg 115200,8,n,1,X
+</span></code></pre>
+</li>
+<li>Resolution: simplify something.</li>
+<li>Root: I need this for my Wi-Fi DAPLINK burner.</li>
+<li>Related: #linux :<a href="https://stackoverflow.com/questions/52187/virtual-serial-port-for-linux">Virtual Serial Port for Linux</a>
+<ul>
+<li>turns out linux already has <code>socat</code>.</li>
+</ul>
+</li>
+<li>Rival: #windows #cli <a href="https://github.com/fasteddy516/SimplySerial"><code>SimplySerial</code> | <code>ss</code> console app CLI for serial communications.</a>
+<ul>
+<li>Recap: much simpler and autonomous than <code>plink</code> or <code>putty</code>.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">ss # default is this. and the same as the above plink incantation.
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

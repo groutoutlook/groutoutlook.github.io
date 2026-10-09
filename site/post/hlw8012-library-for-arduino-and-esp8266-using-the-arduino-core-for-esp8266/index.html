@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;HLW8012&#x60; library for Arduino and ESP8266 using the Arduino Core for ESP8266.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;HLW8012&#x60; library for Arduino and ESP8266 using the Arduino Core for ESP8266.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-01-05 05:55:47 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/firmware">
+                        <span>firmware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/xoseperez/hlw8012"><code>HLW8012</code> library for Arduino and ESP8266 using the Arduino Core for ESP8266.</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/Brokly/hlw8012">hlw8012: EspHome Component for BL0937</a>
+<ul>
+<li><a href="https://www.belling.com.cn/media/file_object/bel_product/BL0937/datasheet/BL0937_V1.02_en.pdf">BL0937_V1.02_en.pdf</a>
+<ul>
+<li>this one have SEL, which 0 == read current, 1 == read voltage. All RMS.</li>
+<li>Related: <a href="https://oshwlab.com/oshwhub.com/smart-socket-esphome-version-bl0">Smart socket (ESPHome version) BL0937 metering chip has been calibrated - OSHWLab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=686954446565">HLW8012 全新原装正品 单相电功率测量IC/电量计芯片 贴片 SOP-8</a>
+<ul>
+<li><a href="https://docs.espressif.com/projects/esp-iot-solution/en/latest/sensors/power_measure.html">Power Measure - ESP-IoT-Solution latest documentation</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#alternative: <a href="https://item.taobao.com/item.htm?id=955511036335">BL0942核心板/免校准/隔离/智能插座/低成本/电能计量芯片</a>
+<ul>
+<li>Recap: <a href="https://item.taobao.com/item.htm?id=701550054122">220V AC voltage current power acquisition charging pile BL0942 energy metering module serial output zero-crossing</a></li>
+<li>Resolution: #uart <a href="https://github.com/Brokly/bl0942">bl0942</a> on esp32 within ESPHOME of course.
+<ul>
+<li>this is in English <a href="https://github.com/SanteriLindfors/BL0942">SanteriLindfors/BL0942</a></li>
+</ul>
+</li>
+<li>Related: #sdk <a href="https://github.com/libretiny-eu/libretiny">libretiny-eu/libretiny: PlatformIO development platform for IoT modules</a>
+<ul>
+<li>#soc #mcu <a href="https://item.taobao.com/item.htm?id=994853589222">博通集成BK7231N WiFi4+BLE5.2支持 低功耗 真随机数生成器 eFuse</a></li>
+<li>those are SDK for the less well known chips from Beken and the like.</li>
+</ul>
+</li>
+<li>Revisit: [ Saturday, March 21, 2026 6:08:39 PM ] #pcb
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=701550054122">220V AC voltage current power collection charging pile BL0942 power metering module serial port output crossing zero</a>
+<ul>
+<li>Resolution: #blog on usage with esp32
+<ul>
+<li><a href="https://blog.csdn.net/qishi3250/article/details/152926029">基于ESP32-C3驱动BL0942电参数采集模块Arduino代码_bl0942程序</a></li>
+<li><a href="https://blog.csdn.net/qishi3250/article/details/130035944">BL0942电参数采集模块操作说明及疑问解答</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://item.taobao.com/item.htm?id=610194191221">220V交流电压电流采集芯片充电桩电能计量模块HLW8032串口输出</a>
+<ul>
+<li>Root: <a href="https://shop137299279.taobao.com/category.htm">零欧姆电子企业店</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

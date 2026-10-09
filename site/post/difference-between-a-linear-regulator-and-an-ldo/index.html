@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: difference between a linear regulator and an LDO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">difference between a linear regulator and an LDO</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-26 07:30:54 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ic">
+                        <span>ic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/power">
+                        <span>power</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/595732/what-is-the-difference-between-a-linear-regulator-and-an-ldo">difference between a linear regulator and an LDO</a>
+<ul>
+<li>Recap: lower drop out, just that.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Recite:  Linear regulators control the output voltage by adjusting the current through an output transistor.</li>
+<li><code>78xx</code> is typically stable no matter what as long as you give it adequate capacitance
+on the output, but a fancy LDO with only 100 mV of dropout may require the output
+capacitance be in a narrow range, and that capacitance needs to have high enough
+(but not too high) ESR to avoid oscillation.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.ti.com/content/dam/videos/external-videos/en-us/1/3816841626001/4495336119001.mp4/subassets/not-all-regulators-are-created-equal-nanomodule-or-ldo-presentation.pdf">not-all-regulators-are-created-equal-nanomodule-or-ldo-presentation.pdf</a>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzE5MTM0ODMzMg==&amp;mid=2247483713&amp;idx=1&amp;sn=1f4c487aa380a3ba23e4526ad420df4d&amp;chksm=979e1d982544ba5baca988fb6ab08fdade4190386188d5413876d04c19cbf08bf9f3e9963111&amp;scene=126&amp;sessionid=1756164916&amp;subscene=7&amp;clicktime=1756164933&amp;enterid=1756164933#rd">Power chip selection guide</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/490846/charge-controller-for-small-lithium-ion-lithium-titanate-lto-cell">battery charging - Charge Controller for Small Lithium Ion (Lithium Titanate, LTO) Cell</a>
+<ul>
+<li>LTO Cell - Lithium Titanate is also a kind of battery cell. Cheap one.</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/337731/ldo-output-capacitor-selection-and-esr-consideration/730714#730714">LDO Output Capacitor Selection and ESR Consideration</a></li>
+<li>#blog : <a href="https://www.ti.com/lit/ta/sszt658/sszt658.pdf">LDO Basics: Preventing reverse current</a>
+<ul>
+<li>Recap: using diode with LDO. There is a parasitic diode from Drain to Well, which has a limit on taking discharged things.</li>
+<li>Reason: people use schottky diode above LDO is for this purpose. You can always use diode in the VIN.</li>
+</ul>
+</li>
+<li><a href="https://www.ti.com/lit/an/slva139/slva139.pdf">Reverse Current/Battery Protection Circuits</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

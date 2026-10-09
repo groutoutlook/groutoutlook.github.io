@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Windows MIDI Services</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Windows MIDI Services</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-15 12:39:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/midi">
+                        <span>protocol/midi</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/MIDI">Windows MIDI Services</a>
+<ul>
+<li>Recap: MIDI 2.0 Windows Driver.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">vcpkg</span></span><span class="meta function-call arguments shell"> install microsoft-windows-devices-midi2</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> then just try to find this Microsoft::Windows::Devices::Midi2</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Resolution: there are SDK releases there, have to download anyway.
+<ul>
+<li><a href="https://github.com/microsoft/MIDI/releases">Releases · microsoft/MIDI</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> cmd dev-replace-winrt-midi1.cmd <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> have to invoke this somehow.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>when you run their sdk and runtime installation, you will get an <code>MIDISettings</code> executable.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: MIDI 2 is originated from here.</li>
+</ul>
+</li>
+<li>Root: <a href="https://microsoft.github.io/MIDI/">About Windows MIDI Services</a></li>
+<li>Related:
+<ul>
+<li><a href="https://superuser.com/questions/997896/how-to-re-enable-the-default-midi-synth-in-windows-10">How to re enable the default MIDI synth in Windows 10?</a>
+<ul>
+<li>it's builtin, the default output Microsoft GS Wavetable Synth</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

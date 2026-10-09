@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;hx&#x60; Goto mode - initial: &#x60;g&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;hx&#x60; Goto mode - initial: &#x60;g&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-24 12:41:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/motion">
+                        <span>motion</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.helix-editor.com/master/keymap.html?highlight=visual#goto-mode"><code>hx</code> Goto mode - initial: <code>g</code></a>
+<ul>
+<li>Recap: to be fair it's quite like vim anyway.
+<ul>
+<li><code>g.</code> should be most used. It's <code>goto_last_modification</code>.
+<ul>
+<li>It's often <code>Ctrl+shift+backspace</code> in other ide/editor as #ide/vs .
+<ul>
+<li>I mapped it in insert mode and normal mode in helix the same now.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>gg,ge,gf,gs</code> is the most typical one. <code>gs</code> go to first non-whitespace char.</li>
+<li><code>gw</code> is <code>goto_word</code>, I mapped it to <code>Enter</code>,
+<ul>
+<li>Selection mode, map this to <code>Enter</code> only change to normal mode goto_word,
+<ul>
+<li>but if you <code>gw</code> it will select up to that word. So <code>vgw</code> is a legit combo.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>gn,gp</code> next buffer/previous buffer.</li>
+<li><code>g&lt;n&gt;|</code> == <code>goto_column</code>, you will use it more for scripting macros...</li>
+</ul>
+</li>
+<li>Root: I tried <code>gf</code> as <code>goto_files</code> to open links but it seems broken in Windows.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

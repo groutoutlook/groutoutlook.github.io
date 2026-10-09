@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;smartsystemmenu&#x60;/&#x60;smartcontextmenu&#x60; could change title. no cli flags for that.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;smartsystemmenu&#x60;/&#x60;smartcontextmenu&#x60; could change title. no cli flags for that.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-19 09:29:54 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/desktop">
+                        <span>desktop</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powertoys">
+                        <span>powertoys</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/productivity">
+                        <span>productivity</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>smartsystemmenu</code>/<code>smartcontextmenu</code> could change title. no cli flags for that.
+<ul>
+<li>Recap: so I could powertoys run faster.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">smartcontextmenu --titleContains Zalo --sendtobottom
+smartcontextmenu --titleContains Weixin --sendtobottom
+</span></code></pre>
+</li>
+<li>Resolution: <code>--title</code>/<code>--titleContains</code>/<code>--processId</code> to match.
+<ul>
+<li><code>--clearclipboard</code> could make <code>Ctrl+v</code>/<code>Shift+insert</code> output nothing.</li>
+<li><code>--sendtobottom</code> self-explained</li>
+<li><code>--borderless</code> / <code>-b</code> . As now, cant toggle on/off.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>whatever run first can override the other, you couldnt run system menu in CLI whatsoever.
+<ul>
+<li>since you are letting <code>smartcontextmenu</code> running.</li>
+<li>I only need one so I chose <code>smartcontextmenu</code> as #default.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>Does not work really well with #wechat and #zalo.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Analysis of PowerPi D140C fast charging solution</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Analysis of PowerPi D140C fast charging solution</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-18 01:36:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/charger">
+                        <span>charger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/psu">
+                        <span>psu</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/usb/pd">
+                        <span>usb/pd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mp.weixin.qq.com/s/HCggBL44bLycQhSNBANMmg">Analysis of PowerPi D140C fast charging solution</a>
+<ul>
+<li>Recap: #pmic IP2736U as PD2.0/PD3.1 USB-C interface IC.</li>
+<li>Run:</li>
+<li>Resolution: #meta #selection/table <a href="https://www.injoinic.com/product/detail/32">INJOINIC 深圳英集芯科技股份有限公司</a>
+<ul>
+<li>IP2006H SOT-23-6 flyback controller + SIF7N70F TO-252T NMOS + IP2002TS SOP-8 synchronous rectifier with integrated MOSFET.</li>
+<li>IP2199 USB/PD protocol (TFCP, QC3.0, BC, DCP,...)</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/R9ZSbY3lzJKpESSYwNa0Tg">Transsion TECNO 45W fast charging charger</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/Vjr20GN7OsY4PMWnU3Fi6A">Hyenertech releases a DPS reference scheme based on HUSB363</a>
+<ul>
+<li>USB-PD 3.2 source controller with usb type-c rev2.4.
+<ul>
+<li>#mcu : <a href="https://www.cnx-software.com/2025/06/13/renesas-ra2l2-the-first-low-power-mcu-with-usb-c-revision-2-4-support/">Renesas RA2L2 - The first low-power MCU with USB-C Revision 2.4 support - CNX Software</a>
+with usb type-c 15W CC detection...</li>
+<li>Related: <a href="https://www.renesas.com/en/design-resources/boards-kits/ebc10293?srsltid=AfmBOoofsktbPcc6J-50FjvYjwYQLxKe26emvWFLXgeQS0Wz_jDXVzs5">EBC10293 - 240W USB PD 3.2 EPR Evaluation Board | Renesas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#alternative: <a href="https://mp.weixin.qq.com/s/tv9EvtexTCWwvIRtFKTqCQ">专业拆解发现英集芯IP2366进入大客户供应链</a>
+<ul>
+<li>1A1C type of power bank use this PMIC chips.</li>
+<li><a href="https://mp.weixin.qq.com/s/RKg82YM9GiFW5JLDNgsNwA">Analysis of Yingjixin IP2366 PD3.1 140W multi-string lithium battery charging and discharging solution</a></li>
+</ul>
+</li>
+<li><a href="https://mp.weixin.qq.com/s/s0oOCQO8OchvEQ0Oc7oWyQ">Belkin's 240W fast charging line breakdown, Qinheng CH254 EMarker, core component</a>
+<ul>
+<li>or E-Marker from POWER-Z</li>
+</ul>
+</li>
+<li>#blog : <a href="https://mp.weixin.qq.com/s/NfKKzgSsDQ6NrFB6JL-62A">OPPO 10000mAh 22.5W self-cable fast charging power bank</a>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/zPOImqG4I3Tu2jwSjSiqxA">Lenovo 140W USB-C GaN power adapter</a></li>
+</ul>
+</li>
+<li>#instrument <a href="https://item.taobao.com/item.htm?id=1002184973592">ChargerLAB POWER-Z P240多协议双向电源支持PD3.1 UFCS协议</a>
+<ul>
+<li>Recap: it's fucking 5000 now.</li>
+<li><a href="https://item.taobao.com/item.htm?id=619059370033">ChargerLAB POWER-Z USB PD电压诱骗仪表 KT002 充电头网测试仪</a></li>
+<li>2000 this shit. <a href="https://item.taobao.com/item.htm?id=912737049326&amp;skuId=5942839070719">POWER-Z ET240协议分析仪PD3.2协议分析解码DP消息USB4边带消息</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [ Monday, May 11, 2026 10:17:50 AM ] #blog <a href="https://mp.weixin.qq.com/s/0pH2QlxW2NicaWe2RaU5Mg">Yingjixin's IP5539 flagship TWS charging compartment SOC was released, with built-in 64KB FLASH to improve efficiency, reduce costs and upgrade experience</a>
+<ul>
+<li>another promotion blog post.</li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/4dsWVQk0y1PRXHgUSXjD5A">Teardown Report: Zhineng 450W GaN TFX PC Power Supply</a>
+<ul>
+<li>Recap: DIP magnetic bead... tin back, vertical pluggable PCB into main board. no component in the back.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: [Fri Sep  4 14:28:36 2026] <a href="https://powerpi.com/blogs/news/1">PowerPi X240C engineering prototype validation completed, measured single-port output 240W power – PowerPi | Power Your Next Build</a>
+<ul>
+<li>this is much stronger than D140C 140W.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

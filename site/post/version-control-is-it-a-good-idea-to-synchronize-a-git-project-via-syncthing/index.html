@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: version control - Is it a good idea to synchronize a Git project via Syncthing?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">version control - Is it a good idea to synchronize a Git project via Syncthing?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-03 10:25:04 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem/sync">
+                        <span>filesystem/sync</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/77746625/is-it-a-good-idea-to-synchronize-a-git-project-via-syncthing">version control - Is it a good idea to synchronize a Git project via Syncthing?</a>
+<ul>
+<li>Recap: No, because of git will corrupt if it's interrupted.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:  [2024-04-12 07:34:18 PM] #syncthing
+<ul>
+<li>the only way to get rid of conflict files is deleting them on all devices.
+<ul>
+<li>which will be an extra work to do, either make a script to delete all of them at once on all device.</li>
+</ul>
+</li>
+<li>or turn <code>syncthing</code> off for a while.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#library #alternative <a href="https://github.com/automerge/automerge"><code>automerge</code> JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically.</a>
+<ul>
+<li>For JS and Rust.</li>
+<li>well <code>iroh</code> does mentioned them.</li>
+</ul>
+</li>
+<li>#ios #app : <a href="https://github.com/pixelspark/sushitrain"><code>sushitrain</code> synchronize files with your devices on iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

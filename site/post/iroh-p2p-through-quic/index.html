@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;iroh&#x60; p2p through QUIC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;iroh&#x60; p2p through QUIC</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-12 11:34:07 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network/p2p">
+                        <span>network/p2p</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/root/iroh">
+                        <span>root/iroh</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/n0-computer/iroh"><code>iroh</code> p2p through QUIC</a>
+<ul>
+<li>Recap: it's a relay and DNS server which punch through NAT.</li>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"></code></pre>
+<ul>
+<li>Resolution:
+<ul>
+<li>#proxy/reverse : <a href="https://github.com/n0-computer/iroh/pull/2341">refactor(iroh-net)!: Rework relay-server binary, more configurable, reverse-proxy support by flub · Pull Request #2341 · n0-computer/iroh</a></li>
+<li>#utils <a href="https://github.com/n0-computer/iroh-doctor"><code>iroh-doctor</code> tool for testing iroh connectivity</a>
+<ul>
+<li>a kind of health-check utils.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: doesnt need a centralized server as public endpoint at all...
+<ul>
+<li>#guide : <a href="https://github.com/n0-computer/iroh-examples/tree/main/tauri-todos">TODO example for how to use Iroh to add sync and networking to apps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: in scoop
+<ul>
+<li><a href="https://www.dumbpipe.dev/"><code>dumbpipe</code> Dumb Pipe</a>
+<ul>
+<li>Root: #meta <a href="https://wikipedia.org/wiki/HTTP/3">HTTP/3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/tencent/tquic"><code>tquic</code> cross-platform QUIC library</a></li>
+<li><code>sendme</code> #nightly, same as <code>croc</code> and <code>copyparty</code>. Punch NAT for P2P with <code>iroh</code>.</li>
+<li>#library <a href="https://github.com/n0-computer/net-tools"><code>net-tools</code> Cross platform, networking utilties in Rust</a></li>
+<li>#acronym <a href="https://github.com/n0-computer/iroh/discussions/1275">So, what is DERP and its &quot;regions&quot;? · n0-computer/iroh · Discussion #1275</a>
+<ul>
+<li>Tailscale's relay concept.</li>
+</ul>
+</li>
+<li><a href="https://rair.dev/wireguard-ssh/">Rair Dev | Wireguard + SSH</a></li>
+<li>Once you built it #nightly, check out <a href="https://github.com/n0-computer/iroh#repository-structure">Repository Structure</a>
+<ul>
+<li>I have to look at <code>.github</code> workflows to see build scripts...
+<ul>
+<li>Which led me to install <code>act</code> #nightly.</li>
+</ul>
+</li>
+<li>Look at <a href="https://github.com/n0-computer/iroh/blob/b791123fc6657167b02aa37e489321f3abf35ef9/.github/workflows/release.yml#L187">iroh/.github/workflows/release.yml</a>
+seems like the way to build is <code>cargo build --profile optimized-release --all-features</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

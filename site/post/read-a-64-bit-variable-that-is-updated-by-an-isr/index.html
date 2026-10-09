@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: read a 64-bit variable that is updated by an ISR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">read a 64-bit variable that is updated by an ISR</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-22 11:45:03 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/firmware">
+                        <span>firmware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/interrupt">
+                        <span>interrupt</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/threading">
+                        <span>threading</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/71624109/reading-a-64-bit-variable-that-is-updated-by-an-isr/71625693#71625693">read a 64-bit variable that is updated by an ISR</a>
+<ul>
+<li>Recap: it's always atomic for 32bit mcu.</li>
+<li>Run:this is more for 64-bit atomic read.</li>
+<li>Resolution:</li>
+<li>Reason: you dont need to poll or scare of extra checking whether ISR tampered with it or not.</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

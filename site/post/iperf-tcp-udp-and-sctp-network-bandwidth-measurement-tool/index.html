@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;iperf&#x60; TCP, UDP, and SCTP network bandwidth measurement tool</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;iperf&#x60; TCP, UDP, and SCTP network bandwidth measurement tool</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-18 02:20:32 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tcp">
+                        <span>tcp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web">
+                        <span>web</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/esnet/iperf"><code>iperf</code> TCP, UDP, and SCTP network bandwidth measurement tool</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">iperf3 -u -c ping.online.net -i 1 -p 5200
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason: in <code>scoop</code>, quick start with <a href="https://github.com/ar51an/iperf3-win-builds#speed-test">iperf3 binaries for Windows</a></li>
+<li>Root: #blog <a href="https://packetlosstest.com/command-line-test">Command Line Packet Loss Test – Packet Loss Test</a></li>
+<li>Related:</li>
+<li>Rival: <a href="https://github.com/lance0/xfr"><code>xfr</code> iperf3 alternative with live TUI, multi-client server, and QUIC support</a>  - Rival: <a href="https://github.com/lance0/xfr"><code>xfr</code> modern iperf3 alternative with live TUI, multi-client server, and QUIC support. Built in Rust.</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: linux - How to remove the Win10&#x27;s PATH from WSL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">linux - How to remove the Win10&#x27;s PATH from WSL</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-08 11:12:20 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/env">
+                        <span>env</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wsl">
+                        <span>wsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/51336147/how-to-remove-the-win10s-path-from-wsl">linux - How to remove the Win10's PATH from WSL</a>
+<ul>
+<li>Recap:</li>
+<li>Run: Append this on <code>/etc/wsl.conf</code>
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">[interop]
+appendWindowsPath = false
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#doc/official : <a href="https://learn.microsoft.com/en-us/windows/wsl/wsl-config">Advanced settings configuration in WSL</a>
+<code>wsl.conf</code> is per distro config. <code>.wslconfig</code> is global one.
+<ul>
+<li>to make it clear, <code>/etc/wsl.conf</code> is not in <code>$HOME</code> or <code>$env:Appdata</code>directory</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: cleaner <code>env</code></li>
+<li>Con: cant call e.g. <code>hx.exe</code> or <code>jrnl.exe</code> from within wsl.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

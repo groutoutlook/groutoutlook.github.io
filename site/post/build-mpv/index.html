@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: build &#x60;mpv&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">build &#x60;mpv&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-01 07:21:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vs">
+                        <span>ide/vs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/mpv-player/mpv/blob/master/DOCS/compile-windows.md#native-compilation-with-clang-windows-sdk-build">build <code>mpv</code></a>
+<ul>
+<li>Recap: ...</li>
+<li>Root:</li>
+<li>Resolution: found the command to trigger devenv msvc....
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&amp; &quot;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1&quot; -Arch amd64 -HostArch amd64 -SkipAutomaticLocation | Out-Null
+</span></code></pre>
+<ul>
+<li>It included <code>cl.exe</code> as that's MSVC binaries.</li>
+<li>Although you with need <code>envvar</code>.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$env:CC = &#39;clang&#39;
+$env:CXX = &#39;clang++&#39;
+$env:CC_LD = &#39;lld&#39;
+$env:CXX_LD = &#39;lld&#39;
+$env:WINDRES = &#39;llvm-rc&#39;
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

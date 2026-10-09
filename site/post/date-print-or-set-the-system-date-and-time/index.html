@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;date&#x60;: print or set the system date and time</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;date&#x60;: print or set the system date and time</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-08-08 12:35:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/datetime">
+                        <span>datetime</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format">
+                        <span>format</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.mankier.com/1/date"><code>date</code>: print or set the system date and time</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">date</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>@1782996729<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> unix timestamp to human readable text...</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ul>
+<li>#windows:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">get-date -unix 1782996729
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: extremely common in system like OpenWrt to have this kind of metadata in pure timestamp.</li>
+<li>Related: <a href="https://wikipedia.org/wiki/Year_2038_problem">Year 2038 problem - 64-bit UNIX timestamp.</a>
+<ul>
+<li>#definition #standard <a href="https://wikipedia.org/wiki/Unix_time">Unix time</a></li>
+</ul>
+</li>
+<li>Revisit: [Mon Sep  7 19:13:10 2026] #programming <a href="https://www.benjoffe.com/fast-time-of-day">A faster way to convert a timestamp ➜ Hour, Min, Sec</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

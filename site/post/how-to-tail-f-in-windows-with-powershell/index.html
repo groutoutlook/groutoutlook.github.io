@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How to &#x60;tail -f&#x60; in Windows with powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How to &#x60;tail -f&#x60; in Windows with powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-05 08:05:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/44394271">How to <code>tail -f</code> in Windows with powershell</a>
+<ul>
+<li>Recap: <code>gc .\logfile.txt -wait | tspin</code></li>
+<li>Root:</li>
+<li>Resolution: I alias <code>less</code> to <code>tspin</code> in pwsh since it's colorful.</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#cli/utils: <a href="https://github.com/sharkdp/bat#how-to-use">bat syntax higlighting</a>
+<ul>
+<li><code>bat</code> higlight text output from <code>tail</code>, <code>less</code> or even <code>--help</code> of commands. E.g: <code>aria2c --help | bat -l man</code>
+<ul>
+<li>using manpage syntax with #cli/utils help document. Highlight straight from stdout..
+<ul>
+<li>#powershell: <code>man gal | bat -lpowershell</code> to highlight its own help command.
+<ul>
+<li><code>(gcm getcent*).Definition | b -lpowershell -P</code>, <code>-P</code> flag enable no paging.</li>
+</ul>
+</li>
+<li>#nushell: <code>help ls | bat</code> is enough if launch from shell and <strong>builtin commands</strong> only.
+<ul>
+<li>since as now <a href="https://github.com/sharkdp/bat/issues/2129">Support Nushell Files · Issue #2129 · sharkdp/bat</a> is still opened.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Update 2025-05-13 : I use <code>| bat -lman</code> to get help on commands the most.</li>
+</ul>
+</li>
+<li><code>--paging=never</code> if you need them to process text as pipe to some other commands.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: regular expressions 1. special characters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">regular expressions 1. special characters</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-06 08:53:47 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>regex symbol explaination meaning : <a href="https://www.fon.hum.uva.nl/praat/manual/regular_expressions_1__special_characters.html">regular expressions 1. special characters</a>
+<ul>
+<li>Recap: <code>? * . + &lt; &gt; &amp;</code> symbol meaning. other as <code>[-] ()</code> is... eh.
+<ul>
+<li><code>?</code> and <code>*</code> is same category. <a href="https://stackoverflow.com/questions/61336030/javascript-regular-expression-quantifiers-what-does-it-mean-to-match-zero-or-mo">check the preceding symbol.</a></li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"></code></pre>
+</li>
+<li>Resolution: checkout [[001-regex]]
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Capturing_group">Capturing group: (...) - JavaScript | MDN</a>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Non-capturing_group">Non-capturing group: (?:...) - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group">Named capturing group: (?<!-- raw HTML omitted -->...) - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_backreference">Named backreference: \k<!-- raw HTML omitted --> - JavaScript | MDN</a></li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion">Lookahead assertion: (?=...), (?!...) - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookbehind_assertion">Lookbehind assertion: (?&lt;=...), (?&lt;!...) - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape">Unicode character class escape: \p{...}, \P{...} - JavaScript | MDN</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: I want to quickly make up a regex capturing group but cant make sense of syntax.</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/7068751/regex-to-find-two-or-more-consecutive-chars">RegEx to find two or more consecutive chars</a>
+<ul>
+<li>cant use two <code>+</code>, you have to use <code>.{2,}</code>. Maybe this is my most used behind <code>.*</code></li>
+</ul>
+</li>
+<li><code>[A-z]</code> match all ASCII, see <a href="https://stackoverflow.com/questions/4923380/difference-between-regex-a-z-and-a-za-z">Difference between regex <code>[A-z]</code> and <code>[a-zA-Z]</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

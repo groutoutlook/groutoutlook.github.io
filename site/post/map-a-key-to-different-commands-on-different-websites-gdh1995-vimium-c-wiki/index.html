@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Map a key to different commands on different websites · gdh1995/vimium-c Wiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Map a key to different commands on different websites · gdh1995/vimium-c Wiki</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-27 09:14:45 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/browser">
+                        <span>browser</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/plugin">
+                        <span>plugin</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vimium">
+                        <span>vimium</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites">Map a key to different commands on different websites · gdh1995/vimium-c Wiki</a>
+<ul>
+<li>Recap: <code>runKey</code> and <code>env</code> in Vimium C. Revisit 2025-05</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-lua"><span class="source lua">mapkey <span class="keyword operator lua">&lt;</span>e:v<span class="keyword operator lua">&gt;</span> <span class="keyword operator lua">&lt;</span>v<span class="keyword operator lua">-</span>omniedit<span class="keyword operator lua">&gt;</span>
+map <span class="keyword operator lua">&lt;</span>v<span class="keyword operator lua">-</span>omniedit<span class="keyword operator lua">&gt;</span> Vomnibar.activateEditUrlInNewTab keyword<span class="keyword operator lua">=</span><span class="string quoted double lua"><span class="punctuation definition string begin lua">&quot;</span><span class="punctuation definition string end lua">&quot;</span></span>
+</span></code></pre>
+</li>
+<li>Resolution: <code>v-***&gt;</code> is also a new syntax since v1.88.0. It focuses on declaring a &quot;fake&quot; composed key
+<ul>
+<li>to use in <code>mapkey</code> and <code>runKey</code>, and can improve the performance of looking up keys slightly.</li>
+<li>#glossary <a href="https://github.com/gdh1995/vimium-c/wiki/Use-in-another-keyboard-layout#per-mode-mapkey">Per-mode mapKey</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+<li>Root:</li>
+<li>Revisit: 2025-05-17 23:33:53 :</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

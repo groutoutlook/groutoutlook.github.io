@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;socktop&#x60; remote system monitor with a rich TUI interface, inspired by &#x60;top&#x60; and &#x60;btop&#x60;, that communicates with a lightweight remote agent over WebSockets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;socktop&#x60; remote system monitor with a rich TUI interface, inspired by &#x60;top&#x60; and &#x60;btop&#x60;, that communicates with a lightweight remote agent over WebSockets</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-29 11:13:20 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/monitor">
+                        <span>monitor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/telemetry">
+                        <span>telemetry</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web/api">
+                        <span>web/api</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/websocket">
+                        <span>websocket</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jasonwitty/socktop"><code>socktop</code> remote system monitor with a rich TUI interface, inspired by <code>top</code> and <code>btop</code>, that communicates with a lightweight remote agent over WebSockets</a>
+<ul>
+<li>Recap: #alternative to <code>bottom</code> which is nearly useless on windows.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#build/cmake: require built <code>aws-lc-sys</code>, see <a href="https://github.com/aws/aws-lc-rs/blob/main/aws-lc-sys/README.md#use-of-prebuilt-nasm-objects">aws-lc-rs/aws-lc-sys/README.md at main · aws/aws-lc-rs</a>
+<ul>
+<li>which force you to install <code>nasm</code> on scoop.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <code>btop</code> for sure.
+<ul>
+<li>btw something like CPU temperature can be get from here. we not really need <code>lm-sensors</code> for that.</li>
+</ul>
+</li>
+<li>Related: #build/cargo : <a href="https://stackoverflow.com/questions/54196846/how-to-specify-a-certain-commit-in-dependencies-in-cargo-toml">github - How to specify a certain commit in dependencies in Cargo.toml?</a>
+<ul>
+<li>simple as <code>thelib = { git = &quot;https://github.com/someguys/thelib&quot;, rev = &quot;9f35b8e&quot; }</code></li>
+</ul>
+</li>
+<li>Revisit: [Tue Jul 28 12:40:23 2026] currently I deleted it, <code>socktop</code> is bug ridden on Windows for lots of thing.
+<ul>
+<li>Recap: <code>btm</code> is helpful for checking if your application start. I have <code>pcbnew</code> stucked. right now.</li>
+<li>Resolutionl: <a href="https://gitlab.com/kicad/code/kicad/-/work_items/25061">Opening PCB editor crashes 10.99.0-2240-g92da588451 Win11 (#25061) · Issue · kicad/code/kicad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

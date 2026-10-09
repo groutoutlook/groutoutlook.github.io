@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;xdg-mime&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;xdg-mime&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-19 12:59:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uri">
+                        <span>uri</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>xdg-mime</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">xdg-mime</span></span><span class="meta function-call arguments shell"> query <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> filetype | default <span class="punctuation section expansion brace end shell">}</span></span> ...</span>
+
+<span class="meta function-call shell"><span class="variable function shell">xdg-mime</span></span><span class="meta function-call arguments shell"> default application mimetype(s</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span>
+<span class="meta function-call shell"><span class="variable function shell">xdg-mime</span></span><span class="meta function-call arguments shell"> install <span class="keyword control regexp set begin shell">[</span>-<span class="keyword operator word shell">-</span>mode mode<span class="keyword control regexp set end shell">]</span> <span class="keyword control regexp set begin shell">[</span>-<span class="keyword operator word shell">-</span>novendor<span class="keyword control regexp set end shell">]</span> mimetypes-file</span>
+<span class="meta function-call shell"><span class="variable function shell">xdg-mime</span></span><span class="meta function-call arguments shell"> uninstall <span class="keyword control regexp set begin shell">[</span>-<span class="keyword operator word shell">-</span>mode mode<span class="keyword control regexp set end shell">]</span> mimetypes-file</span>
+<span class="meta function-call shell"><span class="variable function shell">xdg-mime</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> --help | --manual | --version <span class="punctuation section expansion brace end shell">}</span></span></span>
+</span></code></pre>
+<ul>
+<li><code>xdg-settings</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">xdg-settings</span></span><span class="meta function-call arguments shell"> - get various settings from the desktop environment</span>
+<span class="meta function-call shell"><span class="variable function shell">xdg-settings</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> get | check | set <span class="punctuation section expansion brace end shell">}</span></span> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>property<span class="punctuation section expansion brace end shell">}</span></span> <span class="keyword control regexp set begin shell">[</span>subproperty<span class="keyword control regexp set end shell">]</span> <span class="keyword control regexp set begin shell">[</span>value<span class="keyword control regexp set end shell">]</span></span>
+
+<span class="meta function-call shell"><span class="variable function shell">xdg-settings</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> --help | --list | --manual | --version <span class="punctuation section expansion brace end shell">}</span></span></span>
+
+<span class="meta function-call shell"><span class="variable function shell">Use</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>man xdg-settings<span class="punctuation definition string end shell">&#39;</span></span> or <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>xdg-settings --manual<span class="punctuation definition string end shell">&#39;</span></span> for additional info.</span>
+</span></code></pre>
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/77136/xdg-open-default-applications-behavior">xdg-open default applications behavior</a></li>
+<li><a href="https://stackoverflow.com/questions/57667116/how-do-i-set-the-default-browser-for-xdg-open-on-centos-7-if-xdg-settings-has-no">How do I set the default browser for xdg-open on Centos 7 if xdg-settings has no desktop environment</a>
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-TOML"><span class="text plain">[Default Applications]
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/ftp=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

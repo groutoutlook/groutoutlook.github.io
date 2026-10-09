@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: automatically use the directory as the project name in cmake - stack overflow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">automatically use the directory as the project name in cmake - stack overflow</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-26 06:05:48 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cmake">
+                        <span>build/cmake</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/12344368/automatically-use-the-directory-as-the-project-name-in-cmake">automatically use the directory as the project name in cmake - stack overflow</a>
+<ul>
+<li>Recap: cmake has horrendous string substitution. <code>${cmake_project_name}</code> and <code>${project_name}</code> is different things
+<ul>
+<li>highly related to <code>project_is_top_level</code></li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Resolution: <code>${cmake_project_name}</code> is top parent dir. when you make new cmakefiles
+<ul>
+<li>declare yourself <code>project(name)</code> and your <code>${project_name}</code> == <code>name</code>.</li>
+</ul>
+</li>
+<li>Reason: all <code>${}</code> is variable expansion / variable substitution. e.g. automatic variables like those.
+<ul>
+<li>or you can  get from env var, <code>set()</code>, <code>options()</code> ,...</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

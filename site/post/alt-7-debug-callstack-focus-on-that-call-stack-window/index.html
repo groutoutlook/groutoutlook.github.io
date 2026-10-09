@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Alt+7&#x60; &#x3D;&#x3D; &#x60;Debug.CallStack&#x60; focus on that Call Stack Window.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Alt+7&#x60; &#x3D;&#x3D; &#x60;Debug.CallStack&#x60; focus on that Call Stack Window.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-04 12:16:38 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vs">
+                        <span>ide/vs</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>Alt+7</code> == <code>Debug.CallStack</code> focus on that Call Stack Window.
+<ul>
+<li>Recap: <code>Alt+8</code> == <code>Debug.Disassembly</code> or so.
+<ul>
+<li><code>Alt+2</code> ==            <code>View.Output</code></li>
+<li><code>Alt+4</code> ==           <code>Debug.Locals</code></li>
+<li><code>Alt+5</code> ==        <code>Debug.Registers</code></li>
+<li><code>Alt+6</code> ==          <code>Debug.Memory1</code></li>
+<li><code>Alt+0</code> ==  <code>Window.ActiveDocument</code>, focus main editor. go batch to open other.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: <code>Debug.Watch1</code> and <code>Debug.Watch2</code> is <code>Ctrl+alt+w 1</code> and <code>Ctrl+alt+w 2</code>.
+<ul>
+<li>quick add to watch is <code>menu w</code>.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2024-07-29 06:02:38 PM] #ide/vs #debug/vs/cpp #keybinding
+<ul>
+<li>quickwatch in visual studio pop up a small windows for us.
+<ul>
+<li>resolution: <code>Shift+f9</code> is the default. may change since it's quite clunky to press.
+<ul>
+<li>after <code>Shift+f9</code> you can <code>Alt+w</code> to add to watch1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>related: <a href="https://learn.microsoft.com/en-us/visualstudio/debug/watch-and-quickwatch-windows?view=vs-2022">set a watch on variables and expressions - visual studio (windows) | microsoft learn</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

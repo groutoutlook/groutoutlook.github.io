@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Memcpy for converting array to vector</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Memcpy for converting array to vector</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-31 09:17:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container">
+                        <span>container</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/29708865/memcpy-for-converting-array-to-vector">c++ - Memcpy for converting array to vector</a></p>
+<ul>
+<li>
+<p>Recap:</p>
+</li>
+<li>
+<p>Root: Trying to read from UBO to local std::vector.</p>
+</li>
+<li>
+<p>Resolution: have to <code>map</code> and <code>unmap</code>, honestly dont know why it turns out like that.</p>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++">
+<span class="meta function-call c++"><span class="variable function c++">memcpy</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="keyword operator c">&amp;</span>picked_id<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="constant numeric c++">0</span><span class="punctuation section brackets end c++">]</span></span><span class="punctuation separator c++">,</span> buffer<span class="punctuation accessor arrow c++">-&gt;</span><span class="meta method-call c++"><span class="variable function member c++">get_data</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation separator c++">,</span>size_storage_buffer</span><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>
+<p>Reason:</p>
+</li>
+<li>
+<p>Related:</p>
+<ul>
+<li>#vulkan/buffer: <a href="https://github.com/KhronosGroup/Vulkan-Samples/blob/main/framework/core/buffer.h#L123">painfully that we need to map and remap shit again.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

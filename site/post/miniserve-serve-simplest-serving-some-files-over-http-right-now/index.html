@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;miniserve&#x60; | &#x60;serve&#x60; simplest serving some files over HTTP right now!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;miniserve&#x60; | &#x60;serve&#x60; simplest serving some files over HTTP right now!</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-07 07:56:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/frontend">
+                        <span>frontend</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/svenstaro/miniserve"><code>miniserve</code> | <code>serve</code> simplest serving some files over HTTP right now!</a>
+<ul>
+<li>
+<p>Recap: development pace is the fastest. I #nightly the alias to <code>serve</code>.</p>
+</li>
+<li>
+<p>Run:</p>
+<ul>
+<li>Recite:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"> linux-distro-collection/ <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Serve a directory:</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"> linux-distro.iso <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Serve a single file:</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>index</span> test.html <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Set a custom index file to serve instead of a file listing:</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>spa</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>index</span> index.html <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## serve SPA so non-existent paths are forwarded to SPA&#39;s router instead</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>auth</span> joe:123 unreleased-linux-distros/ <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Require username/password:</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Require username/password as hash:</span><span class="comment line number-sign shell">
+</span><span class="variable other readwrite assignment shell">pw</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell"><span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="variable parameter option shell"><span class="punctuation definition parameter shell">-</span>n</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>123<span class="punctuation definition string end shell">&quot;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">sha256sum</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">cut</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> 1<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span> <span class="punctuation definition string end shell">&#39;</span></span></span><span class="punctuation section parens end shell">)</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>auth</span> joe:sha256:<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">pw</span></span> unreleased-linux-distros/</span>
+<span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>auth-file</span> auth.txt unreleased-linux-distros/ <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Require username/password from file (separate logins with new lines):</span><span class="comment line number-sign shell">
+</span></span>
+<span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> 192.168.0.1<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>random-route</span> /tmp <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Generate random 6-hexdigit URL: /private/tmp at http://192.168.0.1/c789b6</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> 192.168.0.1<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> 10.13.37.10<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> ::1 /tmp/ <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Bind to multiple interfaces</span><span class="comment line number-sign shell">
+</span></span>
+<span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>u</span><span class="keyword operator end-of-options shell"> --</span></span><span class="meta function-call arguments shell"> . <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> in host</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">curl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>F</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>path=@<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">FILE</span></span><span class="punctuation definition string end shell">&quot;</span></span> http://localhost:8080/upload<span class="constant character escape shell">\?</span>path<span class="constant character escape shell">\=</span>/ <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> client upload using curl</span><span class="comment line number-sign shell">
+</span></span>
+<span class="meta function-call shell"><span class="variable function shell">miniserve</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>u</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> image<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>q <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">## Take pictures and upload them from smartphones</span><span class="comment line number-sign shell">
+</span></span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this uses the `--media-type` option, which sends a hint for the expected media type to the browser.       </span><span class="comment line number-sign shell">
+</span></span></code></pre>
+<p>Note that for uploading, we have to use <code>--</code> to disambiguate the argument to <code>-u</code>.
+This is because <code>-u</code> can also take a path (or multiple). If a path argument to <code>-u</code>
+is given, uploading will only be possible to the provided paths, not every path.</p>
+<p>Another effect of this is that you can't just combine flags like this <code>-uv</code> when <code>-u</code>
+is used. In this example, you'd need to use <code>-u -v</code>.</p>
+</li>
+<li>
+<p>Resolution: sometimes #browser will cache served page, mitigate that by reload the page.</p>
+<ul>
+<li><code>ssh</code> onto phone,
+<ul>
+<li>Run: <code>start http://192.168.110.142:8080</code> or <code>xdg-open</code> anything, to prompt into copy portal.</li>
+<li>Download it to phone.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Reason:</p>
+<ul>
+<li>Pro: in scoop.
+<ul>
+<li>Not involving things like cloud, VPN, no cable involved as well.</li>
+</ul>
+</li>
+<li>Con: ehh... still.</li>
+</ul>
+</li>
+<li>
+<p>Root: #predecessor : <a href="https://github.com/vercel/serve"><code>serve</code> Static file serving and directory listing</a></p>
+</li>
+<li>
+<p>Related:</p>
+<ul>
+<li>#alternative : <a href="https://github.com/TheWaWaR/simple-http-server">simple-http-server: Simple http server in Rust (Windows/Mac/Linux)</a></li>
+<li><a href="https://nakkaya.com/2009/04/15/using-netcat-for-file-transfers/">Using <code>netcat</code> for File Transfers</a>
+<ul>
+<li>for when you only have <code>nc</code> or <code>ncat</code> available, otherwise use <code>miniserve</code></li>
+</ul>
+</li>
+<li>#alternative to <code>croc</code> as well, although <code>croc</code> working through rendezvous server which allow me to P2P.</li>
+<li>#html <a href="https://hamy.xyz/blog/2024-02_htmx-for-side-projects">Why you should choose HTMX for your next web-based side project</a>
+<ul>
+<li>#acronym : MPA : multi-page Application, SPA : single-page application</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Revisit: [2025-09-02 15:18:46]</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/34681936/what-is-httpd-exactly">apache - What is <code>httpd</code> exactly?</a>
+<ul>
+<li>Recap: <code>httpd</code> implemented <code>cgi</code> protocol, <code>miniserve</code>'ll never - for simplicity.</li>
+<li>Rival: <a href="https://github.com/zhaojh329/libuhttpd"><code>libuhttpd</code> A very flexible, lightweight and high performance HTTP server library based on libev and http-parser for Embedded Linux.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

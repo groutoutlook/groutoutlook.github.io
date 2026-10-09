@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Kicad &#x60;pcbnew&#x60; Placing and moving footprints </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Kicad &#x60;pcbnew&#x60; Placing and moving footprints </h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-28 05:22:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/navigation/moving">
+                        <span>navigation/moving</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#placing_and_moving_footprints">Kicad <code>pcbnew</code> Placing and moving footprints </a>
+<ul>
+<li>Recap: default <code>m</code>, <code>shift+m</code> move item precisely, <code>ctrl+m</code> move individually (while selected a bunch of them).</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><code>ctrl+m</code> move individually with multiple objects: This is neat since I dont have to manually select lots of them.
+<ul>
+<li>After placing the first item, it will prompt you to place the 2nd one, so on.</li>
+<li>The sequence/order of selection matters.</li>
+<li>Skip moving a footprint by pressing <code>Tab</code>, commit the current move and skip any remaining moves
+by double-clicking, or cancel all moves (including those already completed) by pressing <code>Esc</code>.</li>
+</ul>
+</li>
+<li><code>D</code> literally drag footprint/pad/track/via(selected object) and rest of the tracks to new position.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: curious about other move mode after right click on multiple objects.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

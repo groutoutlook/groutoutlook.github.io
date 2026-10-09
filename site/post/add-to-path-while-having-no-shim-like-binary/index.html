@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: add to path while having no &#x60;shim&#x60; like binary.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">add to path while having no &#x60;shim&#x60; like binary.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-02-09 08:40:41 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>add to path while having no <code>shim</code> like binary.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-Powershell"><span class="text plain">[Environment]::SetEnvironmentVariable(&#39;Path&#39;, $env:Path + &#39;;C:\Users\COHOTECH\AppData\Local\Programs\ProtonPass&#39;, &#39;User&#39;)
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

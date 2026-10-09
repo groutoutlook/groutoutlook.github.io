@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;MPD&#x60; Music Player Daemon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;MPD&#x60; Music Player Daemon</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-26 12:24:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/music">
+                        <span>music</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/MusicPlayerDaemon/MPD"><code>MPD</code> Music Player Daemon</a>
+<ul>
+<li>Recap: #documentation <a href="https://mpd.readthedocs.io/en/stable/user.html">User’s Manual</a>
+<ul>
+<li>edit <code>.mpdignore</code> in the db is instantly effective.</li>
+<li>Con: <a href="https://github.com/MusicPlayerDaemon/MPD/issues/1532#issue-1238309498">is it possible to use a single <code>.mpdignore</code> in root directory? · Issue #1532 · MusicPlayerDaemon/MPD</a>
+<ul>
+<li>no, you have to nested it... but you can ignore everything by putting a single <code>*</code> on it.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">iex &quot;mpd `&quot;$(zqi dotf conf)/.mpdconf`&quot; &amp; &quot;
+# or just cd to `3-Audio` and
+r run-mpd | iex # then this will be a background job.
+</span></code></pre>
+</li>
+<li>Resolution: <code>mpd</code> is pretty bad one in windows though... Last usable <code>flac</code> included decoder is <code>0.24.6</code>
+<ul>
+<li>only working client is <a href="https://github.com/torum/MPDCtrl"><code>MPDCtrl</code> MPD client for Windows.</a>
+<ul>
+<li>#successor <a href="https://github.com/torum/MPDCtrlX"><code>MPDCtrlX</code> Cross-platform MPD (Music Player Daemon) client.</a>
+<ul>
+<li>shim to <code>mpdc</code> and <code>mpcg</code> since well I am using <code>mpc</code> now. this will be my only gui to use with it.</li>
+</ul>
+</li>
+<li>this is more of a remote controller as <a href="https://github.com/ADeltaX/NPSMLib"><code>NPSMLib</code> NowPlayingSessionManager wrapper library - used for controlling SMTC apps (e.g. Groove Music, Movies &amp; TV, etc...)</a>
+not for actual controlling the quality of sounds... all that sound server thing <code>mpd</code> control all of that.</li>
+</ul>
+</li>
+<li>#tui  <a href="https://github.com/mierak/rmpc"><code>rmpc</code> MPD Client with album art support via terminal image protocols</a></li>
+</ul>
+</li>
+<li>Reason: kinda og one.
+<ul>
+<li>Pro: #linux <a href="https://mpd.readthedocs.io/en/stable/user.html#satellite-setup">Satellite setup on weak SBC as you mount music collection in NAS, and realtime scheduling</a></li>
+</ul>
+</li>
+<li>Root: <code>navidrome</code> cant let me do some jukebox things so...
+<ul>
+<li>[2026-01-10 08:19:58 AM] #audio #server <a href="https://github.com/yara-blue/mpdhaj"><code>mpdhaj</code> mpd in Rust</a></li>
+</ul>
+</li>
+<li>Related: <a href="https://community.snakeoil-os.net/t/music-player-daemon-general-discusion/232">Music Player Daemon general discusion - General - Snakeoil OS</a>
+<ul>
+<li>for building this one I have to change content of
+<code>/mnt/d/ProgramDataD/MiscLang/07.01-C++/nightly/MPD/output/win64/lib/x86_64-w64-mingw32/build/libsamplerate-0.2.2/CMakeLists.txt</code>
+<ul>
+<li>to a newer cmake...</li>
+</ul>
+</li>
+<li>#client <a href="https://github.com/MusicPlayerDaemon/mpc"><code>mpc</code> cli for MPD</a>
+<ul>
+<li>Recap: clone and build it ... just dont do it with bleeding edge meson(now buildable with v1.11.0).
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">meson</span></span><span class="meta function-call arguments shell"> . output</span>
+<span class="meta function-call shell"><span class="variable function shell">ninja</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>C</span> output</span>
+</span></code></pre>
+</li>
+<li>Run: #cli/option <a href="https://www.musicpd.org/doc/mpc/html/#commands">mpc — mpc 0.36 documentation</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">mpc</span></span><span class="meta function-call arguments shell"> update <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `up` alias</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpc</span></span><span class="meta function-call arguments shell"> next <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `n` alias next song for you if you found something so irritating.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpc</span></span><span class="meta function-call arguments shell"> current<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>wait</span></span><span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="variable function shell">mpc</span></span><span class="meta function-call arguments shell"> next</span><span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="variable function shell">mpc</span></span><span class="meta function-call arguments shell"> current<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>wait</span></span> <span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="support function kill shell">kill</span></span><span class="meta function-call arguments shell"> <span class="variable parameter option shell"><span class="punctuation definition parameter shell">-</span>n</span> mpd<span class="keyword operator regexp quantifier shell">*</span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> you can --wait for certain command.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpc</span></span><span class="meta function-call arguments shell"> seek 0:00 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `s 90%` ...  same as mpv</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ul>
+<li>funny thing is, the &quot;shuffle&quot; option is not in <code>mpc</code>, that's a thing of <code>mpdctrlx</code>,
+so index is hold stable when you are next-ing song in <code>mpc</code></li>
+</ul>
+</li>
+<li>Reason: <code>mpd</code> is the perfect experience if you want to hear things in terminal.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival:
+<ul>
+<li><a href="https://github.com/sentriz/gonic"><code>gonic</code> music streaming server / free-software subsonic server API implementation</a>
+<ul>
+<li><a href="https://github.com/sentriz/gonic#configuration-options"> env vars and configuration options </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

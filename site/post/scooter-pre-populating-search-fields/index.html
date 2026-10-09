@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;scooter&#x60; Pre-populating search fields</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;scooter&#x60; Pre-populating search fields</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-23 08:28:39 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/search">
+                        <span>search</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tui">
+                        <span>tui</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/thomasschafer/scooter/#pre-populating-search-fields"><code>scooter</code> Pre-populating search fields</a>
+<ul>
+<li>Recap: as now you can do <code>scooter --search-text a --replace-text b</code></li>
+<li>Run: <code>rgr -s search_term</code> most of the time, dont use <code>-R</code> and <code>-S</code> except in script.</li>
+<li>Resolution: I alias <code>scooter</code> | <code>rgr</code> so... Also I will cover short version only.
+<ul>
+<li><code>-s</code> search text, <code>-r</code> replace text, <code>-w</code> whole word. <code>-i</code> case insensitive.</li>
+<li><code>-f</code> | <code>--fixed-strings</code> self-explained.</li>
+<li><code>-I</code> glob include, <code>-E</code> glob exclude. It's about file.</li>
+<li><code>--immediate-search</code>|<code>-S</code> and <code>--immediate-replace</code>|<code>-R</code> self-explained.</li>
+<li><code>-P</code> | <code>--print-results</code>  print to stdout</li>
+<li><code>-X</code> | <code>--immediate</code> do <code>immediate_search</code>, <code>immediate_replace</code> and <code>print_results</code></li>
+<li><a href="https://github.com/thomasschafer/scooter#performance"><code>-N</code> | <code>--no-tui</code></a>
+<ul>
+<li><code>scooter -N -s before -r after</code></li>
+</ul>
+</li>
+<li><code>scooter</code> can use capture syntax, e.g. <code>\s([A-Z]+).*\.</code> : <code>$1</code> that will return only Full Capitalize phrase, i.e the acronym.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#cli: <a href="https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#replacements">show only captured match</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this only show acronym of two or more characters in current dir.</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> better do it in single quote</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>\s([A-Z]{2,}).*\.<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>or</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>$1<span class="punctuation definition string end shell">&#39;</span></span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>#powershell #regex: <a href="https://stackoverflow.com/questions/33913878/how-to-get-the-captured-groups-from-select-string/59900840#59900840">How to get the captured groups from Select-String</a>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_regular_expressions#groups-captures-and-substitutions">Groups, Captures, and Substitutions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

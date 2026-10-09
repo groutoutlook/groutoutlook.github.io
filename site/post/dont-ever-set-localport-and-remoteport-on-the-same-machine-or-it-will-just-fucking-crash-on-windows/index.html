@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Dont ever set localport and remoteport on the same machine. Or it will just fucking crash on Windows.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Dont ever set localport and remoteport on the same machine. Or it will just fucking crash on Windows.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-06-21 01:19:54 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/frp">
+                        <span>frp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/reverse/proxy">
+                        <span>reverse/proxy</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Dont ever set localport and remoteport on the same machine. Or it will just fucking crash on Windows.
+<ul>
+<li>Recap: it really is, I once did on <code>Lanraragi</code> 8098 on both.</li>
+<li>Run:</li>
+<li>Resolution: <code>frp</code> help me redirect some ports from software that either I cant change it using their config.
+<ul>
+<li>or it will be faulty to change them due to DNS, software issues, hardcoded scripts or so.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

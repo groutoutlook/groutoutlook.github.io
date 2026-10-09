@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: linux - What is the reason for a Kerberos keytab file when setting up SSH authentication on a server?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">linux - What is the reason for a Kerberos keytab file when setting up SSH authentication on a server?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-16 12:05:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/auth/kerberos">
+                        <span>auth/kerberos</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/auth/sso">
+                        <span>auth/sso</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/43111105/what-is-the-reason-for-a-kerberos-keytab-file-when-setting-up-ssh-authentication">linux - What is the reason for a Kerberos keytab file when setting up SSH authentication on a server?</a>
+<ul>
+<li>Recap: For SSO.</li>
+<li>Run: enable <code>GSSAPIAuthentication yes</code> to authenticate with <code>kerberos</code>.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/4851288/linux-keytab-file-for-authentication?rq=3">security - Linux keytab file for authentication</a>
+<ul>
+<li><code>nmap</code> scanned this 4444 port is opened for <code>krb524</code>, which is a legacy one.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#comparison: <a href="https://stackoverflow.com/questions/111386/difference-between-ssl-and-kerberos-authentication">Difference between SSL and Kerberos authentication?</a></li>
+<li><a href="https://computingforgeeks.com/configure-ldap-sssd-kerberos-authentication-on-ubuntu/">Configure LDAP, SSSD and Kerberos Authentication on Ubuntu | ComputingForGeeks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

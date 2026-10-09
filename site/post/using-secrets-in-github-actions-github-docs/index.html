@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: using secrets in github actions - github docs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">using secrets in github actions - github docs</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-02 10:57:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cicd">
+                        <span>cicd</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/deploy">
+                        <span>deploy</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions">using secrets in github actions - github docs</a>
+<ul>
+<li>Recap: you have to make a new secret with a different name than <code>github_token</code>. like <code>secret_token</code> or so.
+<ul>
+<li>they are <code>ghp</code>,<code>gho</code>, <code>ghu</code> or anything alike.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/groutoutlook/groutoutlook.github.io/settings/actions">actions settings</a>
+<ul>
+<li>repo settings -&gt; actions -&gt; general -&gt; workflow permission</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/groutoutlook/groutoutlook.github.io/settings/pages">pages</a>
+<ul>
+<li>settings -&gt; pages -&gt;  &quot;build and deployment&quot; -&gt; then select github actions source.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

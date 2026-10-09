@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Tab Wrangler</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Tab Wrangler</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-17 04:12:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/browser">
+                        <span>browser</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/plugin">
+                        <span>plugin</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vimium">
+                        <span>vimium</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://chromewebstore.google.com/detail/tab-wrangler/egnjhciaieeiiohknchakcodbpgjnchh">Tab Wrangler</a>
+<ul>
+<li>Recap: <a href="https://github.com/tabwrangler/tabwrangler">source tree</a></li>
+<li>Root: I'm trying to autoclose tab when there is no history to navigate back.</li>
+<li>Resolution:
+<ul>
+<li>#vimium <code>Alt+s</code> and <code>Alt+down</code>. I even map it to <code>Alt+left</code> although it's a static default mapping in #msedge and #chrome.
+<ul>
+<li>Con: it doesnt work on any tab which dont have any history(have traversed one link on that tab).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: #macos <a href="https://community.brave.com/t/back-navigation-should-close-tab-if-new-tab-no-sites-to-go-back-to/529365/3">Back navigation should close tab if new tab/no sites to go back to - Brave Feature Requests / iOS Requests - Brave Community</a></li>
+<li>Related:
+<ul>
+<li>#plugin : <a href="https://superuser.com/questions/1680409/firefox-close-tab-on-last-back-action-if-link-was-opened-from-another-tab-sa">Firefox: Close tab on last &quot;back&quot; action if link was opened from another tab (Safari behavior)</a>
+<ul>
+<li>also in #chrome and #msedge <a href="https://chrome.google.com/webstore/detail/close-on-back/pejmaahmbkcgbilcnckdadngeibiekbd">Close on back</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: adb - How do you pair a Device for Wireless Debugging with a QR Code?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">adb - How do you pair a Device for Wireless Debugging with a QR Code?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-10 01:18:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/adb">
+                        <span>adb</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns/mdns">
+                        <span>dns/mdns</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://android.stackexchange.com/questions/234465/how-do-you-pair-a-device-for-wireless-debugging-with-a-qr-code">adb - How do you pair a Device for Wireless Debugging with a QR Code?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> mdns check</span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> mdns services</span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> pair mainphone:43991 324612 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just about the most rudimental method.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> connect mainphone:41037</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/65991502/adb-over-wi-fi-android-11-on-windows-how-to-keep-a-fixed-port-or-connect-aut">adb over Wi-Fi (Android 11+) on Windows: how to keep a fixed port or connect automatically?</a></li>
+<li>Related:
+<ul>
+<li><a href="https://source.android.com/docs/core/ota/modular-system/dns-resolver">DNS Resolver  |  Android Open Source Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

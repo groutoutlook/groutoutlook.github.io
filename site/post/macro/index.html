@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;macro&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;macro&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-01 12:16:53 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kanata">
+                        <span>kanata</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/macro">
+                        <span>macro</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#macro"><code>macro</code></a>
+<ul>
+<li>Recap: basic building block of keybinding. Multiple actions dispatched sequentially.
+<ul>
+<li>in constrast of <code>multi</code> which is parallel/simultaneously.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: default <code>macro</code> helps dispatch a key <strong>only one time</strong>, no hold/repeatable.
+<ul>
+<li>there are <code>macro-repeat</code>/<code>macro-cancel-on-press</code> and release for fine-grained control.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related: <code>one-shot</code> which hold or combine another modifier, can be fast for touch type.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

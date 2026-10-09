@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c - popen() alternative</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c - popen() alternative</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-23 01:30:34 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/os">
+                        <span>os</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/6743771/popen-alternative?rq=4">c - popen() alternative</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa?redirectedfrom=MSDN">CreateProcessA function (processthreadsapi.h) - Win32 apps</a></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#library: <a href="https://github.com/mutouyun/cpp-ipc">mutouyun/cpp-ipc: C++ IPC Library: A high-performance inter-process communication using shared memory on Linux/Windows.</a></li>
+<li>#library/boost : <a href="https://www.boost.org/doc/libs/1_86_0/doc/html/process.html">Chapter 28. Boost.Process - 1.86.0</a></li>
+<li><a href="https://stackoverflow.com/questions/1200998/sharing-memory-between-two-processes-c-windows">Sharing memory between two processes (C, Windows)</a>
+<ul>
+<li>shared memory object is different in Windows than in #linux land</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

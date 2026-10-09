@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Quick snippet for making a sheet of firmware quantity in the fly. Plus hash.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Quick snippet for making a sheet of firmware quantity in the fly. Plus hash.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-26 10:08:02 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/firmware">
+                        <span>firmware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Quick snippet for making a sheet of firmware quantity in the fly. Plus hash.
+<ul>
+<li>Recap: given you already include the quantity on the first in file name.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&#39;3000pcs-fw1-C6U-25-BiggerGap (2).hex&#39;,&#39;.\1000pcs-0m5.hex&#39;,&#39;.\500pcs-0m7.hex&#39;,&#39;.\500pcs-0m9.hex&#39; |
+ForEach-Object {
+    $hash = Get-FileHash $_
+    [pscustomobject]@{
+        algo     = $hash.Algorithm
+        hash     = $hash.Hash
+        quantity = ($hash.Path -replace &#39;.*?(\d+)pcs.*&#39;, &#39;$1&#39;)
+        file     = [System.IO.Path]::GetFileName($hash.Path)
+    }
+} | ConvertTo-Csv -NoTypeInformation &gt; ./25-11-25-Firmware-quantity.csv
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

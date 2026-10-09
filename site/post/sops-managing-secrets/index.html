@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;sops&#x60; managing secrets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;sops&#x60; managing secrets</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-23 12:39:19 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/auth/pgp">
+                        <span>auth/pgp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/backend">
+                        <span>backend</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cicd">
+                        <span>cicd</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cloud">
+                        <span>cloud</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/infosec">
+                        <span>infosec</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/getsops/sops"><code>sops</code> managing secrets</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:</li>
+<li>Reason: in scoop</li>
+<li>Root: <a href="https://github.com/Mic92/sops-nix#use-with-gpg-instead-of-ssh-keys">sops-nix secret provisioning for NixOS based on sops</a></li>
+<li>Related: #encode #filesystem : <a href="https://github.com/FiloSottile/age"><code>age</code> encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.</a></li>
+<li>Revisit: [2025-05-17 09:10:53]: I need to edit pgp/gpg files. Can use this with pgp.
+<ul>
+<li><code>gpg</code> is in scoop. it's also embedded in msys and git bash, etc...</li>
+<li>#mail : <a href="https://proton.me/support/pgp-key-management">Key management | Proton</a>
+<ul>
+<li>with PGP keys.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

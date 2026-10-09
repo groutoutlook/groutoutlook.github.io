@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Group-Object&#x60; | &#x60;group&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Group-Object&#x60; | &#x60;group&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-16 07:35:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/csv">
+                        <span>format/csv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/group-object"><code>Group-Object</code> | <code>group</code></a>
+<ul>
+<li>Recap: it counts the number of same value you group of a property, useful for csv.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$portPoints | group port
+# complex.
+Get-ChildItem -File |
+Sort-Object Extension |
+  Group-Object -NoElement -Property @{
+    Expression={
+      switch ($_.Extension) {
+        &#39;.md&#39;   {&#39;Content&#39;}
+        &#39;&#39;      {&#39;Metacontent&#39;}
+        &#39;.ps1&#39;  {&#39;Automation&#39;}
+        &#39;.yml&#39;  {&#39;Automation&#39;}
+        default {&#39;Configuration&#39;}
+      }
+    }
+  }
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Use this extensively for counting occurence of a value of a property, in a JSON object or an array, or an hashtable of very big things.</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_calculated_properties#group-object">about_Calculated_Properties - <code>group</code></a></li>
+<li>It returns <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.groupinfo?view=powershellsdk-7.4.0"><code>GroupInfo</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/49973391/csv-file-group-by-col1-and-display-max-value-of-col2">powershell - csv file group by col1 and display max value of col2</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

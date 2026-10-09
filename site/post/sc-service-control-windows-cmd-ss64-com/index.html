@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: SC - Service Control - Windows CMD - SS64.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">SC - Service Control - Windows CMD - SS64.com</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-24 11:00:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://ss64.com/nt/sc.html">SC - Service Control - Windows CMD - SS64.com</a>
+<ul>
+<li>Recap: Service Control Manager and <code>sc</code> is the most important windows OS, as <code>systemd</code> with <code>systemctl</code>.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/3582108/create-windows-service-from-executable">Create Windows service from executable</a></li>
+<li><code>sc create serviceName binPath</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/cpp/comments/1ljb1zq">From 300s to 60s: C++ build boost by disabling SysMain</a>
+<ul>
+<li>disable SysMain with <code>sc stop &quot;SysMain&quot; &amp; sc config &quot;SysMain&quot; start=disabled</code></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/28139377/daemon-and-service-difference">linux - Daemon and Service Difference</a>
+<ul>
+<li><a href="https://askubuntu.com/questions/192058/what-is-the-technical-difference-between-a-daemon-a-service-and-a-process">What is the technical difference between a daemon, a service and a process?</a></li>
+</ul>
+</li>
+<li>#dotnet : <a href="https://stackoverflow.com/questions/41454563/how-to-write-a-linux-daemon-with-net-core">How to write a linux daemon with .Net Core</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-create">sc.exe create</a>
+<ul>
+<li>From <a href="https://github.com/mokeyish/smartdns-rs/blob/main/TODO.md">smartdns-rs/TODO.md</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

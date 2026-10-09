@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;curl -F&#x60; usage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;curl -F&#x60; usage</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-20 07:43:38 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/api/web">
+                        <span>api/web</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/url">
+                        <span>url</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/10859374/curl-f-what-does-it-mean-php-instagram"><code>curl -F</code> usage</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">curl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>X</span> POST<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>F</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>key1=9<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>F</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>file1=@/path/to/file1.txt \
+http://example.com/upload # URL endpoint 
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/12667797/using-curl-to-upload-post-data-with-files/78453801#78453801">cURL upload POST data with files</a>  - Reason:</li>
+</ul>
+</li>
+<li>Root: <a href="https://everything.curl.dev/http/post/postvspost.html"><code>-d</code> vs <code>-F</code> - everything curl</a></li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/57885057/curl-35-schannel-next-initializesecuritycontext-failed-sec-e-invalid-token">django - curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_INVALID_TOKEN (0x80090308) - The token supplied to the function is invalid</a>
+<ul>
+<li>use <code>http</code> instead of assuming it's <code>https</code> all the time
+<ul>
+<li>Root: try <code>rustypaste</code>...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit:
+<ul>
+<li><a href="https://stackoverflow.com/questions/22491129/how-to-send-multipart-form-data-with-powershell-invoke-restmethod">How to send multipart/form-data with PowerShell Invoke-RestMethod</a></li>
+<li><a href="https://stackoverflow.com/questions/79488957/globbing-wildcard-problem-with-powershell-path-cmdlets">Globbing/Wildcard problem with PowerShell <code>-Path</code> cmdlets</a>
+<ul>
+<li><code>-LiteralPath</code> to properly escape <code>[]</code></li>
+</ul>
+</li>
+<li>#stdout : <a href="https://stackoverflow.com/questions/11447598/redirecting-standard-input-output-in-windows-powershell/57650210#57650210">Redirecting standard input\output in Windows PowerShell</a>
+<ul>
+<li><code>Start-Process</code> has <code>-RedirectStandardOutput</code> and <code>-RedirectStandardInput</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

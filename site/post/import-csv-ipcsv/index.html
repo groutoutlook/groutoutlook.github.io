@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Import-Csv&#x60; | &#x60;ipcsv&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Import-Csv&#x60; | &#x60;ipcsv&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-26 11:11:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/csv">
+                        <span>csv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/import-csv"><code>Import-Csv</code> | <code>ipcsv</code></a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">import-csv .\0m7.plastic.square.5corner.csv | ft
+csvtk pretty .\0m7.plastic.square.5corner.csv 
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/PowerShell/PowerShell/issues/25736#issuecomment-3047731051"><code>Import-Csv -ReadCount</code></a></li>
+<li>Related: <code>epcsv</code> of course.
+<ul>
+<li><a href="https://devblogs.microsoft.com/powershell-community/mastering-the-steppable-pipeline/#multiple-output-pipelines">Mastering the (steppable) pipeline - PowerShell Community</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.scriptblock.getsteppablepipeline?view=powershellsdk-7.4.0">ScriptBlock.GetSteppablePipeline Method</a>
+This method return a kind of iterator of a instantiated pipeline created on the go.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

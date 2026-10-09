@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: AI teach me to do some Path shit.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">AI teach me to do some Path shit.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-19 05:38:27 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/AI">
+                        <span>AI</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>AI teach me to do some Path shit.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain"># Example string representing a file path
+$filePathString = &quot;C:\path\to\your\file.txt&quot;
+# Convert the string to a path (optional)
+$filePath = [System.IO.Path]::GetFullPath($filePathString)
+# Get the leaf (file name with extension)
+$leaf = [System.IO.Path]::GetFileName($filePath)
+# Define the new subdirectory path
+$newSubDir = &quot;C:\new\subdir&quot;
+# Combine the new subdirectory path with the leaf
+$newFilePath = [System.IO.Path]::Combine($newSubDir, $leaf)
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Root: resize clip. Videos downloaded at max quality(2K/4K). Have to resize them to HD.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">gci -Name *webm | % {ffmpeg -i $_ -vf &quot;scale=1920:1080&quot; -c:a copy ([System.IO.Path]::Combine(&quot;./DownSample&quot;, [System.IO.Path]::GetFileName($_)))}
+</span></code></pre>
+<ul>
+<li>Check if my unwanted files has already been converted. I <code>gci &gt; ../blacklist.txt</code> then.
+<ul>
+<li><code>Get-Content $filePath | Select-String -Pattern $string</code> to check if it's in the file.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: eh... validate how cool AI is I decide to do AI subscription on Github Copilot.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Force new tab with those a link. it&#x27;s mostly from a HN page.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Force new tab with those a link. it&#x27;s mostly from a HN page.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-02-15 09:13:08 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/bookmarklet">
+                        <span>bookmarklet</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/javascript">
+                        <span>javascript</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Force new tab with those a link. it's mostly from a HN page.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-javascript"><span class="source js"><span class="entity name label js">javascript</span><span class="punctuation separator js">:</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="meta function declaration js"><span class="storage type function js">function</span><span class="punctuation section group begin js">(</span><span class="punctuation section group end js">)</span></span><span class="meta block js"><span class="punctuation section block js">{</span>
+    <span class="storage type js">var</span> <span class="variable other readwrite js">links</span> <span class="keyword operator assignment js">=</span> <span class="support type object dom js">document</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="variable function js">querySelectorAll</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>a<span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+    <span class="storage type js">var</span> <span class="variable other readwrite js">count</span> <span class="keyword operator assignment js">=</span> <span class="constant numeric js">0</span><span class="punctuation terminator statement js">;</span>
+    <span class="variable other object js">links</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="variable function js">forEach</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="meta function declaration js"><span class="storage type function js">function</span><span class="punctuation section group begin js">(</span><span class="variable parameter function js">l</span><span class="punctuation section group end js">)</span></span><span class="meta block js"><span class="punctuation section block js">{</span>
+        <span class="comment block js"><span class="punctuation definition comment js">/*</span> Skip javascript links or empty anchors <span class="punctuation definition comment js">*/</span></span>
+        <span class="meta conditional js"><span class="keyword control conditional js">if</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="variable other object js">l</span><span class="punctuation accessor js">.</span><span class="meta property object js">href</span> <span class="keyword operator logical js">&amp;&amp;</span> <span class="keyword operator logical js">!</span><span class="variable other object js">l</span><span class="punctuation accessor js">.</span><span class="meta property object js">href</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="variable function js">startsWith</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>javascript:<span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span> <span class="keyword operator logical js">&amp;&amp;</span> <span class="variable other object js">l</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function dom js">getAttribute</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>href<span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span> <span class="keyword operator comparison js">!==</span> <span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>#<span class="punctuation definition string end js">&#39;</span></span><span class="punctuation section group js">)</span></span><span class="meta block js"><span class="punctuation section block js">{</span>
+            <span class="variable other object js">l</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function dom js">setAttribute</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>target<span class="punctuation definition string end js">&#39;</span></span><span class="punctuation separator comma js">,</span> <span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>_blank<span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+            <span class="variable other object js">l</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function dom js">setAttribute</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>rel<span class="punctuation definition string end js">&#39;</span></span><span class="punctuation separator comma js">,</span> <span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>noopener<span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+            <span class="variable other readwrite js">count</span><span class="keyword operator arithmetic js">++</span><span class="punctuation terminator statement js">;</span>
+        </span><span class="meta block js"><span class="punctuation section block js">}</span></span></span>
+    <span class="punctuation section block js">}</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+    <span class="comment block js"><span class="punctuation definition comment js">/*</span> Show a small temporary message in top right corner <span class="punctuation definition comment js">*/</span></span>
+    <span class="storage type js">var</span> <span class="variable other readwrite js">msg</span> <span class="keyword operator assignment js">=</span> <span class="support type object dom js">document</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function dom js">createElement</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>div<span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+    <span class="variable other object js">msg</span><span class="punctuation accessor js">.</span><span class="meta property object js">innerText</span> <span class="keyword operator assignment js">=</span> <span class="variable other readwrite js">count</span> <span class="keyword operator arithmetic js">+</span> <span class="string quoted double js"><span class="punctuation definition string begin js">&quot;</span> Links set to New Tab<span class="punctuation definition string end js">&quot;</span></span><span class="punctuation terminator statement js">;</span>
+    <span class="variable other object js">msg</span><span class="punctuation accessor js">.</span><span class="meta property object js">style</span><span class="punctuation accessor js">.</span><span class="meta property object js">cssText</span> <span class="keyword operator assignment js">=</span> <span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span>position:fixed;top:10px;right:10px;background:#d00;color:#fff;padding:8px 12px;z-index:2147483647;border-radius:4px;font-family:sans-serif;font-weight:bold;box-shadow:0 2px 5px rgba(0,0,0,0.3);<span class="punctuation definition string end js">&#39;</span></span><span class="punctuation terminator statement js">;</span>
+    <span class="support type object dom js">document</span><span class="punctuation accessor js">.</span><span class="meta property object js">body</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function dom js">appendChild</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="variable other readwrite js">msg</span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+    <span class="meta function-call js"><span class="support function js">setTimeout</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="meta function declaration js"><span class="storage type function js">function</span><span class="punctuation section group begin js">(</span><span class="punctuation section group end js">)</span></span><span class="meta block js"><span class="punctuation section block js">{</span> <span class="variable other object js">msg</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function dom js">remove</span><span class="meta group js"><span class="punctuation section group js">(</span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span> <span class="punctuation section block js">}</span></span><span class="punctuation separator comma js">,</span> <span class="constant numeric js">2000</span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+<span class="punctuation section block js">}</span></span><span class="punctuation section group js">)</span></span><span class="meta group js"><span class="punctuation section group js">(</span><span class="punctuation section group js">)</span></span><span class="punctuation terminator statement js">;</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Copy the code block above entirely -&gt; <code>Ctrl+d</code> -&gt; Name: Force New Tabs -&gt;  URL: Paste the code. Save it.</li>
+</ul>
+</li>
+<li>Reason: to use with #vimium .
+<ul>
+<li>so you can preview all the bookmarklets using vomnibar. <code>alt+1,2,3,4</code> all you want.
+<pre class="syntax-highlighting"><code class="language-vimscript"><span class="text plain">map b Vomnibar.activate engines=&quot;bookmark&quot; keyword=&quot;javascript&quot;
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Root: #AI teach me all this.</li>
+<li>Related:
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=47095429">CERN rebuilt the original browser from 1989</a>
+<ul>
+<li>Run: <code>document.designMode = 'on'</code> can make edits like you have cursors...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

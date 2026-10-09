@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: #default :&#x60;vc&#x60; caret mode, I set to &#x60;c&#x60;, navigate using &#x60;w&#x60;/&#x60;e&#x60;/&#x60;{}&#x60;/&#x60;[]&#x60;/&#x60;()&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">#default :&#x60;vc&#x60; caret mode, I set to &#x60;c&#x60;, navigate using &#x60;w&#x60;/&#x60;e&#x60;/&#x60;{}&#x60;/&#x60;[]&#x60;/&#x60;()&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-17 11:26:20 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/browser">
+                        <span>browser</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mode/caret">
+                        <span>mode/caret</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vimium">
+                        <span>vimium</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>#default :<code>vc</code> caret mode, I set to <code>c</code>, navigate using <code>w</code>/<code>e</code>/<code>{}</code>/<code>[]</code>/<code>()</code>
+<ul>
+<li>Recap: <code>fFtT</code> even after typed cant move the caret, but then <code>n</code>/<code>N</code> can.
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/blob/master/background/key_mappings.ts#L867">Full keybinding in visual mode #vimium</a></li>
+</ul>
+</li>
+<li>Resolution: nothing move faster than <code>Ctrl+f</code>. I turn caret mode all the time now.
+<ul>
+<li>Pro: you now can move the caret a definitive time by adding numeral like <code>10w</code>
+<ul>
+<li>caret mode here is a submode of visual mode, so everything from visual mode retained.
+<ul>
+<li>as <code>p</code> to search current selection. this avoid polluting clipboard.</li>
+<li>Can also be used as <code>collapse_selection</code> as well, quite hillarious.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Some difference with #neovim default:
+<ul>
+<li><code>a</code> : <code>aw</code> expand mid word, <code>as</code> mid sentence.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-jsonc"><span class="text plain">// #INFO this is how we scroll without touching `PgUp`/`PgDn`
+{
+  &quot;ctrl+e&quot;: VisualAction.ScrollDown,
+  &quot;ctrl+y&quot;: VisualAction.ScrollUp,
+  &quot;ctrl+down&quot;: VisualAction.ScrollDown,
+  &quot;ctrl+up&quot;: VisualAction.ScrollUp
+}      
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Con: still an extension.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#til : #motion : #neovim : <code>()</code> move to end of a <code>sentence</code> text object.
+<ul>
+<li>such as <code>.?!</code>, notations which define a sentence.</li>
+<li>I almost never used them, it's also note the default of #helix either.</li>
+</ul>
+</li>
+<li>#plugin : <a href="https://github.com/gdh1995/vimium-c/wiki/Auto-run-a-tree-of-commands">Auto run a tree of commands · gdh1995/vimium-c Wiki</a>
+<ul>
+<li>Resolution: either you use <code>$then</code> or  put a bunch of <code>runKey</code>.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> <span class="keyword operator assignment redirection shell">&lt;</span>a-s<span class="keyword operator assignment redirection shell">&gt;</span> goBack <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">else</span></span>=<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>x<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> c enterVisualMode mode=<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>caret<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+<li>Root: still trying to understand <code>runkey</code> and <code>mapkey</code>...</li>
+<li>My <code>Alt+s</code> or <code>Alt+down</code> now can close tab while it's no history to go back.
+<ul>
+<li>map <code>Alt+left</code> to that too although #msedge doesnt let me do.</li>
+<li>Con: it doesnt work on any tab which dont have any history</li>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/1001">Automate a series of clicks? · Issue #1001 · gdh1995/vimium-c</a></li>
+</ul>
+</li>
+<li>Related: <a href="https://github.com/gdh1995/vimium-c/issues/110#issuecomment-580088981"><code>Shift+del</code> close tabs in Vomnibar</a>
+<ul>
+<li>not even that, you can <code>tab</code> / <code>Shift+tab</code> in vomnibar to navigate between choices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-09-02 14:47:43]
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/blob/31885269460a3f0635c7dd69176ed387ad138e96/background/key_mappings.ts#L643">Call all the commands in vimium C</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pipe · pico.sh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pipe · pico.sh</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-11 04:43:04 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/backend">
+                        <span>backend</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/golang">
+                        <span>golang</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/programming">
+                        <span>programming</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://pico.sh/pipe">pipe · pico.sh</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Recite: The simplest authenticated pubsub system. Send messages through user-defined
+topics (aka channels). By default, topics are private to the authenticated ssh user.
+The default pubsub model is multicast with bidirectional blocking, meaning a publisher
+(pub) will send its message to all subscribers (sub) for a topic. There can be many
+publishers and many subscribers on a topic. Further, both pub and sub will wait for at
+least one event to be sent or received on the topic. .</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://blog.pico.sh/ann-022-pubsub">pipe: our pubsub ssh service: Authenticated *nix pipes over ssh</a></li>
+<li>Related:
+<ul>
+<li>#blog <a href="https://pico.sh/prose">prose · pico.sh</a>
+<ul>
+<li>publishing articles... or something like that.</li>
+</ul>
+</li>
+<li>#p2p #tunnel #nat : <a href="https://pico.sh/tuns">tuns · pico.sh</a>
+<ul>
+<li>#alternative to <code>iroh</code> since this does provide free SSL and things...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://exe.dev/docs/why-exe">exe docs: Why EXE?</a>
+<ul>
+<li>Root: #discussion in <a href="https://news.ycombinator.com/item?id=46397609">HN</a></li>
+<li>Related: <a href="https://lobste.rs/s/fpeeq0/meet_exe_dev_modern_vms">Meet exe.dev, modern VMs</a>
+<ul>
+<li>some compare it with Replit... but does it make any sense? in <a href="https://news.ycombinator.com/item?id=46544276"> 'terrorist sympathizer.' Now his AI company is valued at $3B</a></li>
+</ul>
+</li>
+<li>Rival: counter argument against <code>exe.dev</code> in <a href="https://lobste.rs/s/yghhn6/i_am_building_cloud">I am building a cloud</a>
+<ul>
+<li><a href="https://github.com/openrundev/openrun"><code>openrun</code> Internal tools deployment. Web apps on a single-node or on Kubernetes.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;rg -q&#x60; check quietly. Do not return anything, but have exit code information.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;rg -q&#x60; check quietly. Do not return anything, but have exit code information.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-13 12:02:22 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grep">
+                        <span>grep</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>rg -q</code> check quietly. Do not return anything, but have exit code information.
+<ul>
+<li>Recap:
+<ul>
+<li><a href="https://www.nushell.sh/book/stdout_stderr_exit_codes.html#exit-code">Stdout, Stderr, and Exit Codes</a></li>
+<li>#powershell: check <code>$?</code> for exit code but boolean. For numeric value, <code>$LASTEXITCODE</code>.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: #profile I use this for better ctrl+s.
+<ul>
+<li>avoiding duplicate search on internet while I have something existed offline.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/28724388/how-to-set-the-exit-code-when-throwing-an-exception">powershell - How to set the exit code when throwing an exception</a>
+<ul>
+<li>basically you call <code>exit 2</code> to set an error code like that.</li>
+</ul>
+</li>
+<li>Recite: Exit Status
+<ul>
+<li>a match, exit with a status code of 0.</li>
+<li>no matches, exit with a status code of 1.</li>
+<li>an error, exit with a status code of 2.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

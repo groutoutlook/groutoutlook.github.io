@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: So I discovered some of this though AI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">So I discovered some of this though AI</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-21 01:26:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ffmpeg">
+                        <span>ffmpeg</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>So I discovered some of this though AI
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$microphoneName = Get-PnpDevice -Class AudioEndpoint `
+| where{$_.Status -eq &quot;OK&quot;} `
+| where { $_.FriendlyName -like &quot;microphone*JBL*&quot; } `
+
+ffmpeg -f dshow -i audio=&quot;$($microphoneName.FriendlyName)&quot; -f wav - | ffplay -
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

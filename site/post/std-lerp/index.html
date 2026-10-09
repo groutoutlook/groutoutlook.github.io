@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;std::lerp&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;std::lerp&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-24 02:27:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/algorithm">
+                        <span>algorithm</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/stem/math">
+                        <span>stem/math</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/numeric/lerp"><code>std::lerp</code></a>
+<ul>
+<li>Recap: C++20 though. <code>lerp</code> can do extrapolation, not just interpolation.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> the same coefficient span out even over of the `[0,1)` range.
+</span><span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> t<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="keyword operator arithmetic c">-</span><span class="constant numeric c++">2.0</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span> t <span class="keyword operator comparison c">&lt;=</span> <span class="constant numeric c++">2.0</span><span class="punctuation terminator c++">;</span> t <span class="keyword operator assignment augmented c">+=</span> <span class="constant numeric c++">0.5</span><span class="punctuation section group end c++">)</span></span>
+  std<span class="punctuation accessor c++">::</span>cout <span class="keyword operator arithmetic c">&lt;&lt;</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">lerp</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="constant numeric c++">5.0</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">10.0</span><span class="punctuation separator c++">,</span> t</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator arithmetic c">&lt;&lt;</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span> <span class="punctuation definition string end c">&#39;</span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Recite:  Computes the linear interpolation between a and b, if the parameter t is
+inside <code>[0,1)</code> (the linear extrapolation otherwise), i.e. the result of <code>a+t(b−a)</code> with
+accounting for floating-point calculation imprecision. The library provides overloads
+for all cv-unqualified floating-point types as the type of the parameters a, b and
+t.(since C++23).</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://wikipedia.org/wiki/Slerp">Slerp: spherical linear interpolation/lerp function.</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/62943083/interpolate-between-two-quaternions-the-long-way">c++ - Interpolate between two quaternions the long way</a></li>
+<li><a href="https://stackoverflow.com/questions/46156903/how-to-lerp-between-two-quaternions/46187052#46187052">scenekit - How to Lerp between two quaternions?</a></li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

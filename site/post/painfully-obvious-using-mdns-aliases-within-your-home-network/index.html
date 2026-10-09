@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Painfully Obvious → Using mDNS aliases within your home network</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Painfully Obvious → Using mDNS aliases within your home network</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-10 12:35:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/board/rpi">
+                        <span>board/rpi</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://andrewdupont.net/2022/01/27/using-mdns-aliases-within-your-home-network/">Painfully Obvious → Using mDNS aliases within your home network</a>
+<ul>
+<li>Recap: compelling reason to not spin up your own DNS server. as pi-hole and the likes</li>
+<li>Run: mDNS can help me #remote/ssh like this, superior when you are in public network.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">ssh Redmi-Note-13-Pro.lan -p 8022
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li>Pro:
+<ul>
+<li>convenient when you cant assert your own DNS server in current network
+<ul>
+<li>or cant bend dhcp as will, etc...</li>
+</ul>
+</li>
+<li>100% uptime, since it's decentralized.</li>
+</ul>
+</li>
+<li>Con:
+<ul>
+<li>not very fine-grained but anyway.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

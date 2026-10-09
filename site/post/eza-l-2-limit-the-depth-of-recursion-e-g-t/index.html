@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;eza -L 2&#x60; limit the depth of recursion e.g: &#x60;-T&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;eza -L 2&#x60; limit the depth of recursion e.g: &#x60;-T&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-23 08:46:36 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>eza -L 2</code> limit the depth of recursion e.g: <code>-T</code>
+<ul>
+<li>Recap: so <code>ls -T -L 2</code> only recurse up to that subdirectory. Quite useful.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ls</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>stype</span></span>
+<span class="meta function-call shell"><span class="variable function shell">ls</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>sextension</span></span>
+</span></code></pre>
+</li>
+<li>Root:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#powershell : <a href="https://stackoverflow.com/questions/10798301/powershell-get-childitem-recurse-doesnt-get-all-items">recursion - Powershell Get-ChildItem -recurse doesn't get all items</a>
+<ul>
+<li><code>-Include</code> options taking an array or  a string of pattern.
+<ul>
+<li><code>-Exclude</code> is same thing.</li>
+</ul>
+</li>
+<li><code>-Depth</code> with numerals value of depth.  like the <code>eza</code> above.</li>
+<li><code>-Force</code> show hidden one which couldnt be accessed by current user.
+<ul>
+<li>which is a multi-tenant thing, not an issue with dev machine.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

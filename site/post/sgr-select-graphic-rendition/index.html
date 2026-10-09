@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;SGR&#x60; — Select Graphic Rendition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;SGR&#x60; — Select Graphic Rendition</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-15 02:37:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/acronym">
+                        <span>acronym</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/programming">
+                        <span>programming</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminology">
+                        <span>terminology</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://vt100.net/docs/vt510-rm/SGR.html"><code>SGR</code> — Select Graphic Rendition</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/avih/sgrtab">avih/sgrtab: Display standard/custom table of SGR combinations (terminal colors)</a>
+<ul>
+<li>Acid test for terminals.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>FTXUI also support some SGR sequences, basic one as color.</li>
+<li><a href="https://github.com/wezterm/wezterm/blob/main/docs/escape-sequences.md#operating-system-command-sequences"><code>OSC</code> is Operating System Command Sequences</a>
+<ul>
+<li>not exactly the same as <code>SGR</code>, they fall into the same category as ANSI escape sequences.</li>
+</ul>
+</li>
+<li><a href="https://vt100.net/docs/vt510-rm/chapter4.html">ANSI Control Functions Summary</a>
+<ul>
+<li>which has <code>ENQ</code> which request terminal status response.</li>
+<li>Related: <a href="https://terminalguide.namepad.de/seq/">Control Characters - a web ui to look at</a>
+<ul>
+<li>data is presented in tabular form so easier to track.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://github.com/wezterm/wezterm/blob/main/docs/escape-sequences.md#graphic-rendition-sgr">wezterm escape-sequences</a></li>
+<li>Revisit: #acronym : <a href="https://github.com/microsoft/terminal/blob/main/doc/reference/master-sequence-list.csv">terminal/doc/reference/master-sequence-list.csv at main · microsoft/terminal</a>
+<ul>
+<li>about <code>DSR</code> - Device Status Report. Mostly for cursor position e.g. vim.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

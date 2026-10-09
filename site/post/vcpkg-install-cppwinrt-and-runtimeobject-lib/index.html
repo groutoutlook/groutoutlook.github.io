@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;vcpkg install cppwinrt&#x60; and &#x60;RuntimeObject.lib&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;vcpkg install cppwinrt&#x60; and &#x60;RuntimeObject.lib&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-19 10:24:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cmake">
+                        <span>build/cmake</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman/vcpkg">
+                        <span>pacman/vcpkg</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/vcpkg/issues/15339#issuecomment-2164020414"><code>vcpkg install cppwinrt</code> and <code>RuntimeObject.lib</code></a>
+<ul>
+<li>Recap: It's needed for backporting, also help if you want to use c++/winrt.
+<ul>
+<li>Since I literally couldnt understand how one could start using it.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>you have to <a href="https://github.com/microsoft/wil/"><code>vcpkg install wil</code></a> as well.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><code>vcpkg help triplet</code> is quite useful.</li>
+<li><code>vcpkg</code> can install <code>qt</code>. But it's insanely large.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

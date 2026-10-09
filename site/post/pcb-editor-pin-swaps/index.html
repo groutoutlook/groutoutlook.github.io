@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: PCB Editor Pin swaps </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">PCB Editor Pin swaps </h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-18 11:12:38 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/layout/pin">
+                        <span>layout/pin</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#pin_swaps">PCB Editor Pin swaps </a>
+<ul>
+<li>Recap: there is a gate swap in <code>pcbnew</code> right below this section</li>
+<li>Run:  Swapping more than two items means things will be cycled in cyclic sequence.</li>
+<li>Resolution:
+<ul>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#gate-swaps">Gate (unit) swaps in <code>eeschema</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#symbol-units-and-body-styles">Schematic Editor | Symbol units and alternate body styles </a>
+<ul>
+<li>multi-unit symbol as U1A, U1B, etc...</li>
+<li>the pin number must be different.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: both &#x60;igrep&#x60; and &#x60;scooter&#x60; is too far from the update. I pulled changes and compile myself...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">both &#x60;igrep&#x60; and &#x60;scooter&#x60; is too far from the update. I pulled changes and compile myself...</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-25 10:13:51 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grep">
+                        <span>grep</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>both <code>igrep</code> and <code>scooter</code> is too far from the update. I pulled changes and compile myself...
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution: I all #nightly them now.</li>
+<li>Reason:
+<ul>
+<li><code>igrep</code> fix double read when pressing <code>j/k/up/down/q</code>, virtually any key.
+<ul>
+<li>This is common within Rust CLI tools.
+<ul>
+<li>should be related to <code>crossterm</code>, but I dont understand anything about that..</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>scooter</code>...? Fix various bug I guess.
+<ul>
+<li>Check out [[001.005.002-scooter]]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Revisit: everythin above can be considered <em>obsoleted</em> now.
+<ul>
+<li>I put them #nightly now. So better navigate to that dir and <code>just build</code>.</li>
+<li>[2025-08-31 09:58:41] <a href="https://github.com/konradsz/igrep/issues/84">FR: add <code>-U</code> for multi-line search. · Issue #84 · konradsz/igrep</a>
+<ul>
+<li>Maybe I will open a PR for this.</li>
+</ul>
+</li>
+<li>#rust #tui #library <a href="https://github.com/helix-editor/termina"><code>termina</code> VT manipulation library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

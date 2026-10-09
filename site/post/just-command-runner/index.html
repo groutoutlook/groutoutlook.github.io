@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;just&#x60; - command runner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;just&#x60; - command runner</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-03 11:58:01 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/genesis">
+                        <span>genesis</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner/just">
+                        <span>runner/just</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just"><code>just</code> - command runner</a>
+<ul>
+<li>Recap: as in <code>make</code>, <code>cmake</code> and something else run commands.</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: [[001-just]]</li>
+<li>Related:
+<ul>
+<li>#plugin/vscode :<a href="https://github.com/nefrob/vscode-just">nefrob/vscode-just: vscode syntax highlighting for just files</a></li>
+<li>#plugin/neovim :<a href="https://github.com/stevearc/overseer.nvim/">stevearc/overseer.nvim: a task runner and job management plugin for neovim</a></li>
+<li>#powershell #justfile I build <code>just</code> with <code>just</code>.
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># I really added that in the end of `just` &#39;s `justfile`
+[group(&#39;dev&#39;)]
+b : # for just windows.
+  cargo build --release
+</span></code></pre>
+then invoke by :
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">(r -s b )[-1]|iex # `just -s` show the recipes to stdout..
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

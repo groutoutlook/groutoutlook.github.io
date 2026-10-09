@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Quickly render structure of a directory to both &#x60;svg&#x60; and &#x60;png&#x60;.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Quickly render structure of a directory to both &#x60;svg&#x60; and &#x60;png&#x60;.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-22 05:09:03 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/screenshot">
+                        <span>screenshot</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Quickly render structure of a directory to both <code>svg</code> and <code>png</code>.
+<ul>
+<li>Recap:</li>
+<li>Run: auto resizing since the stdout can be arbitrarily long.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">tree --color=always *&gt;&amp;1 | termframe -Wauto -Hauto &gt; tree-l1.svg &amp;&amp; msedge file://$pwd/tree-l1.svg &amp;&amp; resvg ./tree-l1.svg ./tree-l1.png &amp;&amp; catimg ./tree-l1.png
+# or when you want to render color on a code snippet.
+gcb | b -lc --no-pager --color=always| termframe -Wauto -Hauto &gt; RenderedCode.svg &amp;&amp; msedge file://$pwd/RenderedCode.svg &amp;&amp; resvg ./RenderedCode.svg ./RenderedCode.png &amp;&amp; catimg ./RenderedCode.png
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

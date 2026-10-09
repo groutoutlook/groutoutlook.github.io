@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: py32f031_hal_hdiv</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">py32f031_hal_hdiv</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-24 09:08:56 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/hardware/module">
+                        <span>hardware/module</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu/py32">
+                        <span>mcu/py32</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/OpenPuya/PY32F031_Firmware/blob/master/Drivers/PY32F031_HAL_Driver/Inc/py32f031_hal_hdiv.h">py32f031_hal_hdiv</a>
+<ul>
+<li>Recap: first time I saw a HDIV. must because of Arm cortex m0 dont have a hardware divider instruction.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#meta <a href="https://www.puyasemi.com/mcu_weichuliqi.html">MCU 微处理器_普冉半导体（上海）selection table</a>
+<ul>
+<li>So T090 and T020 all the latest model is in here.</li>
+<li><a href="https://www.puyasemi.com/gongjuyuruanjian.html">Tools and Software , Keil Packs are in here as well.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://blog.csdn.net/ic2121/article/details/133644944">HWDIV/HDIV hardware divider example in MM32F0160 _hw division-CSDN blog</a>
+<ul>
+<li>from PY32F031L18D6 DFN8 <code>2*2mm</code> 72Mhz 64/8 Kb. there is PY32F030L16D6 DFN8 <code>1.5*1.5mm</code> 48Mhz 32/4 Kb.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://www.puyasemi.com/en/py32f032/3593.html">PY32F032F18U7 QFN20(19 GPIO) 3*3mm 64/8 Flash/RAM</a>
+<ul>
+<li>F032 here have LPUART which is one more IP block than F031. Have I2S as well, what?</li>
+<li>only price reference is from this: <a href="https://item.taobao.com/item.htm?id=1043646030070">PY32F032K18U7（64K QFN32）is 1.1 / PY32F031K28U7 PY32F410K1BU7 PY32F040C1BT6</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/OpenPuya/PY32F072_Firmware">PY32F072 驱动开发库</a></li>
+<li><a href="https://github.com/OpenPuya/PY32F071_Firmware">PY32F071 的开发驱动库</a></li>
+<li>those mcu all have internal LCD driver as COM*SEG or something .</li>
+<li><a href="https://blog.csdn.net/xiebingsuccess/article/details/91876306">Segment LCD Principles _com seg-CSDN blog</a></li>
+<li><a href="https://www.infineon.com/assets/row/public/documents/cross-divisions/396/infineon-component-segment-lcd-seglcd-v2.0-software-module-datasheets-en.pdf?fileId=8ac78c8c7d0d8da4017d0e97633e20cc">Component - Segment LCD (SegLCD) V2.0 Datasheet - infineon-component-segment-lcd-seglcd-v2.0-software-module-datasheets-en.pdf</a></li>
+</ul>
+</li>
+<li>Rival:
+<ul>
+<li><a href="https://www.puyasemi.com/download_path/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/MCU%20%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8/PY32T020%E7%B3%BB%E5%88%97%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_V1.4.pdf">PY32T020613V7 24Mhz 12/1 Kb SOT23-6 (2.9*2.9mm). Have TOUCH key.</a>
+<ul>
+<li>impressive this is the first ever SOT-23-6 MCU I ever see.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Match mode - Keymap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Match mode - Keymap</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-25 11:10:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mode/match">
+                        <span>mode/match</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.helix-editor.com/master/keymap.html#match-mode">Match mode - Keymap</a>
+<ul>
+<li>Recap:</li>
+<li>Run: <code>mim</code>/<code>mam</code> is the most common I used.</li>
+<li>Resolution: match mode can be used with normal / select / extend mode.
+<ul>
+<li><code>ms[</code> add surround <code>[</code>, <del>map it to <code>S</code></del>.hard to remember <code>ms</code> things... <code>surround_add</code>
+<ul>
+<li><code>S</code> is <code>split_selection</code>,  as <code>s</code> is <code>select_regex</code>, this can spawn new cursor on certain chars/words.</li>
+</ul>
+</li>
+<li><code>mr[*</code> replace surround <code>[</code> with surround <code>*</code> e.g. parenthesis to brace.
+notice selection should not include surrounds at all, or it will not work.
+<ul>
+<li><code>mr[</code> motion <em>dont need to</em> pre-select. Specify pair and helix do the rest.</li>
+</ul>
+</li>
+<li><code>md[</code> delete surround <code>[</code>. It deletes virtually any char you put after, even <code>md&lt;space&gt;</code> work.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Those actions are actually more useful while using phones than desktop.</li>
+<li><code>(</code>:	rotate main selection backward	<code>rotate_selections_backward</code></li>
+<li><code>)</code>:	rotate main selection forward	<code>rotate_selections_forward</code></li>
+<li>Alt-(<code>:	rotate selection contents backward	</code>rotate_selection_contents_backward`</li>
+<li>Alt-)<code>:	rotate selection contents forward	</code>rotate_selection_contents_forward`</li>
+</ul>
+</li>
+<li>Root: the most significant difference compared to <code>vim</code>.</li>
+<li>Related:
+<ul>
+<li><a href="https://docs.helix-editor.com/master/keymap.html#movement">Movement</a>
+<ul>
+<li><code>f,F,t,T</code> is not limit by the current line.</li>
+<li><code>.</code> : <code>repeat_last_insert</code>, which you enter insert mode, type and enter multicursor mode.
+<ul>
+<li>either <code>v/</code> or <code>C</code>/<code>S</code>... and press <code>.</code>. will repeat insert but in the end of line.</li>
+</ul>
+</li>
+<li><code>Alt+.</code> : <code>repeat_last_motion</code>, mapped to <code>,</code>, map in normal and selection mode.
+<ul>
+<li>Use <code>repeat_last_motion</code> to jump  as <a href="https://github.com/ggandor/flit.nvim#features">flit.nvim</a> does.
+<ul>
+<li>Repeat last motion of those <code>f</code>, <code>t</code>, <code>m</code>, <code>[</code>, <code>]</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>d</code> originally <code>delete_selection</code>, map to <code>delete_selection_noyank</code>.</li>
+<li>[2025-05-29 14:01:27]: my #neovim config also set <code>d</code> not yank to main clipboard.
+<pre class="syntax-highlighting"><code class="language-lua"><span class="source lua"><span class="comment line double-dash lua"><span class="punctuation definition comment lua">--</span> For normal and visual mode deletion without yanking to the clipboard:
+</span>vim.keymap.set({ <span class="string quoted double lua"><span class="punctuation definition string begin lua">&quot;</span>n<span class="punctuation definition string end lua">&quot;</span></span>, <span class="string quoted double lua"><span class="punctuation definition string begin lua">&quot;</span>x<span class="punctuation definition string end lua">&quot;</span></span> }, <span class="string quoted double lua"><span class="punctuation definition string begin lua">&quot;</span>d<span class="punctuation definition string end lua">&quot;</span></span>, <span class="string quoted single lua"><span class="punctuation definition string begin lua">&#39;</span>&quot;_d<span class="punctuation definition string end lua">&#39;</span></span>)
+</span></code></pre>
+</li>
+<li><code>K</code>/<code>Shift+k</code> further selection while <strong>in multiple cursors</strong>. <code>keep_selection</code>, whitelist style.
+<ul>
+<li>For example, try spawn multiple cursor then <code>x</code>/<code>X</code> or expand.
+<ul>
+<li>Then <code>K</code> and type a phrase within those selection ranges.</li>
+<li><code>Alt+K</code>/<code>Alt+shift+k</code> who do blacklist instead <code>remove_selections</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: powershell - how to Find the password of all wlan via netsh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">powershell - how to Find the password of all wlan via netsh</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-04 02:35:32 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/74034529/how-to-find-the-password-of-all-wlan-via-netsh">powershell - how to Find the password of all wlan via netsh</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">netsh</span></span><span class="meta function-call arguments shell"> wlan show all <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or show networks only.</span><span class="comment line number-sign shell">
+</span></span>
+<span class="meta function-call shell"><span class="variable function shell">Get-NetConnectionProfile</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>InterfaceAlias</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>*Wi-Fi*<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.tenforums.com/network-sharing/192139-list-availible-wifi-networks-powershell.html">List availible wifi networks with powershell - Windows 10 Forums</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

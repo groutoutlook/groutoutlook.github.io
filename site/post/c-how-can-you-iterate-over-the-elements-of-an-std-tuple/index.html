@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - How can you iterate over the elements of an std::tuple?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - How can you iterate over the elements of an std::tuple?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-30 06:43:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/tuple">
+                        <span>container/tuple</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/1198260/how-can-you-iterate-over-the-elements-of-an-stdtuple">c++ - How can you iterate over the elements of an std::tuple?</a>
+<ul>
+<li>Recap: std::</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>using mp11 or boost.hana honestly... since that require <code>template for</code>. Worked at c++11 and c++14, respectively.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>c++23 and c++26 havent got support for <a href="https://github.com/cplusplus/papers/issues/156">P1306 R3 Expansion statements · Issue #156 · cplusplus/papers</a>
+<ul>
+<li><a href="https://www.reddit.com/r/cpp/comments/qwsekk">Did 'template for' make it into C++23?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2>Related:</h2>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

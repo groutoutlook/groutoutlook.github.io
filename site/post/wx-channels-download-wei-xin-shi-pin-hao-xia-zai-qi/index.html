@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;wx_channels_download&#x60; 微信视频号下载器</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;wx_channels_download&#x60; 微信视频号下载器</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-24 07:31:59 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/downloader">
+                        <span>downloader</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/extractor">
+                        <span>extractor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/video">
+                        <span>video</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/ltaoo/wx_channels_download"><code>wx_channels_download</code> 微信视频号下载器</a>
+<ul>
+<li>Recap: #default binary is <code>wx_channel</code> ,I shim to <code>wxdl</code></li>
+<li>Run: you can copy the URL and download with <code>wxdl download --url</code> later
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> specify host name and port. Maybe for proxy setup.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">wx_channel</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>hostname</span> localhost<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>port</span> 2023</span>
+</span></code></pre>
+</li>
+<li>Resolution: it can be very insane as, you can batch download every videos in one's channel.
+<ul>
+<li>by clicking in their profiles, beside the &quot;Follow&quot; button, there is that one button which batch download.</li>
+<li>in WX Channel UI, there are injected extra <code>Download</code> symbol, and Download action in the right edge.
+<ul>
+<li>FWIW, the third option is the download one.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

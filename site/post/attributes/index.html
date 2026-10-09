@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: attributes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">attributes</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-09 08:36:24 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just/blob/master/readme.md#attributes">attributes</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution: it could be multiple line or just <code>[no-cd, private]</code> concatenated like lists in python.
+<ul>
+<li>[working-directory(path)]	set recipe working directory. path may be relative or absolute. if relative, it is interpreted relative to the default working directory.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/casey/just/readme.md#private-recipes">private recipes</a>
+<ul>
+<li>Recap: <code>[private]</code> attribute/<code>_</code> intial  use to hide recipes or aliases. ( in <code>--list</code>)
+<ul>
+<li>useful for helper recipes which are <strong>only meant to be used as dependencies of other recipes</strong>.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">_hid:
+
+[private]
+foo:
+
+[private]
+alias b := bar
+
+bar:
+</span></code></pre>
+<ul>
+<li>Invoke:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>list <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> only `bar` pop out.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/casey/just/readme.md#script-recipes">script recipes</a>
+<ul>
+<li><code>[script(command)]</code> attribute are run as scripts interpreted by command.
+<ul>
+<li>recipes with an empty <code>[script]</code> attribute are executed with the value of
+<ul>
+<li><code>set script-interpreter := […]</code>, defaulting to <code>sh -eu</code>.</li>
+</ul>
+</li>
+<li>the body of the recipe is evaluated, written to disk in the temporary directory, and run by passing its path as an argument to command.</li>
+<li>the <code>[script(…)]</code> attribute is unstable, so you'll need to use set unstable, set the just_unstable environment variable, or pass --unstable on the command line.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[<code>[doc]</code> attribute can be used to <a href="https://github.com/casey/just/blob/master/readme.md#documentation-comments">set or suppress a recipe's doc comment.</a>
+<ul>
+<li><a href="https://github.com/casey/just/issues/2684"><code>just --usage</code> should support multi-line documentation comments by <code>[doc]</code> attribute</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: <a href="https://github.com/casey/just/issues/2260#issuecomment-3000742935">concatenated string in custom <code>script()</code> attributes</a>
+<ul>
+<li>use with <code>nix-shell</code> and <code>python</code> for example.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

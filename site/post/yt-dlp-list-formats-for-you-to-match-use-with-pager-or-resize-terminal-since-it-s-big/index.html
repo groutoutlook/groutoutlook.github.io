@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;yt-dlp --list-formats&#x60; for you to match. Use with pager or resize terminal since it&#x27;s big.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;yt-dlp --list-formats&#x60; for you to match. Use with pager or resize terminal since it&#x27;s big.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-20 12:55:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>yt-dlp --list-formats</code> for you to match. Use with pager or resize terminal since it's big.
+<ul>
+<li>Recap:</li>
+<li>Run: in my <code>$PROFILE</code> I add <code>ytlf</code> as cmdlets for list random URL formats. Mostly youtube.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: [2026-01-22 16:39:27] pay attention that some of the times it can miss several high quality format.
+<ul>
+<li>In that case
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>vUo</span> whiplash-aespa <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>https://youtu.be/-8N3i6gfy_U<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>cookies-from-browser</span><span class="keyword operator assignment option shell">=</span>firefox</span>
+<span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>vUo</span> eleven-ive https://youtu.be/dfx69SAXt1k<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>cookies-from-browser</span><span class="keyword operator assignment option shell">=</span>firefox<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-playlist</span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> that&#39;s the only way now for a cookie copyable in a Windows machine.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

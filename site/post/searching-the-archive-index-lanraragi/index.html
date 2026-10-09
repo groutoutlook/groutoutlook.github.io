@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Searching the Archive Index &#x60;LANraragi&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Searching the Archive Index &#x60;LANraragi&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-06-20 07:41:20 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/search/operator">
+                        <span>search/operator</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://sugoi.gitbook.io/lanraragi/dev/basic-operations/searching">Searching the Archive Index <code>LANraragi</code></a>
+<ul>
+<li>Recap: x both tags and a specific title in a search if you want.
+<ul>
+<li>Search for galleries with a specific number of pages with pages:20, or with a page range: pages:&gt;20, pages:&lt;=30.
+<ul>
+<li>specific number of pages read with similar syntax, <code>read:20</code>, or with a range: <code>read:&gt;20</code>, <code>read:&lt;=30</code></li>
+</ul>
+</li>
+<li>Special characters in a search:
+Quotation Marks (&quot;...&quot;) Exact string search. Everything placed inside a pair of quotation marks is treated as a singular term. Wildcard characters are still interpreted as wildcards.
+Question Mark (?), Underscore (_) Wildcard. Can match any single character.
+Asterisk (*), Percentage Sign (%) Wildcard. Can match any sequence of characters (including none).
+Subtraction Sign (-) Exclusion. When placed before a term, prevents search results from including that term.
+Dollar Sign ($) Add at the end of a tag to perform an exact tag search rather than displaying all elements that start with the term. Can be used as an exclusion to ignore misc tags in the search query.</li>
+</ul>
+</li>
+<li>Run: fwiw
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="variable other readwrite assignment shell">?sort</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell">0</span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> is sorting by title...</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell"><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>chapter:*02<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> have everything have chapter 02, even 002.5</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">series:*elf$,</span></span><span class="meta function-call arguments shell"> chapter:00<span class="keyword operator regexp quantifier shell">*</span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> and this add to the query...</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: GD32A503 evaluation board for the LIN CANFD GigaDevice automotive MCU</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">GD32A503 evaluation board for the LIN CANFD GigaDevice automotive MCU</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-21 11:01:32 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lin">
+                        <span>lin</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu">
+                        <span>mcu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mp.weixin.qq.com/s/KNJAhG1kGnooVxhV7QsvQw">GD32A503 evaluation board for the LIN CANFD GigaDevice automotive MCU</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#doc/an <a href="https://www.ti.com/lit/an/slla383a/slla383a.pdf">LIN Protocol and Physical Layer Requirements (Rev. A) - slla383a.pdf</a>
+<ul>
+<li>Recap: no MCU has internal LIN tranceivers, only <strong>LIN controller</strong>. Same with CAN/CAN-FD.</li>
+<li>Recite: Typical voltage levels for the TXD and RXD are TTL from most MCU: 3.3 V and 5 V.
+The LIN bus and LIN transceivers usually operate at voltages ranging from 9 V to 18 V,
+but some can go up to 30 V (depending on the application).
+typical vehicle is a 12-V battery system, but some larger vehicles go up to 24 V</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/559201/should-i-connect-rxd-to-txd-and-vice-versa?rq=1">Should I connect RXD to TXD and vice versa?</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

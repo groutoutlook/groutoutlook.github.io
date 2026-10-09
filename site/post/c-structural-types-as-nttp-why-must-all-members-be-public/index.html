@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Structural types as NTTP: why must all members be public?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Structural types as NTTP: why must all members be public?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-19 02:26:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiletime">
+                        <span>compiletime</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/template">
+                        <span>template</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/59422612/structural-types-as-nttp-why-must-all-members-be-public">c++ - Structural types as NTTP: why must all members be public?</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://youtu.be/Hyuvpv42YM8">... + CTAD + NTTP =  - Miro Knejp</a></li>
+<li>Resolution: a more common usage is using NTTP with std::optional.</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#blog: <a href="https://ctrpeach.io/posts/cpp20-class-as-non-type-template-param/">Literal Classes as Non-type Template Parameters in C++20 | Kevin Hartman</a>
+<ul>
+<li>#definition : <a href="https://stackoverflow.com/questions/21787488/can-have-definition-variable-of-non-literal-type-in-constexpr-function-body-c1/21787700#21787700">can have definition variable of non-literal type in constexpr function body c++14?</a>
+<ul>
+<li>something like <code>std::string</code> <em>can't</em> be inside a trivial/PoD-like Struct/Classes so it can be <code>constexpr</code>.
+<ul>
+<li>See <a href="https://wikipedia.org/wiki/Passive_data_structure">POD : Plain Old Data/Passive data structure</a></li>
+<li>The only workaround is either you make the declared one <code>static const</code> instead of <code>static constexpr</code>
+<ul>
+<li>which cost RAM but eh, we have to do that sometime if forced.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#example: <a href="https://yuang-chen.github.io/posts/2024-06-17-constrained-non-type-template-parameter/">Constrained Non Type Template Parameter | Yac's Log</a>
+<ul>
+<li>or as this guy's abbreviation, CNTTP. Something from C++20 onward.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

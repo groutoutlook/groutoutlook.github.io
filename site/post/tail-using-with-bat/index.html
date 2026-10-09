@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: tail using with bat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">tail using with bat</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-05 07:45:12 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugging">
+                        <span>debugging</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/logging">
+                        <span>logging</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/sharkdp/bat#tail--f">tail using with bat</a>
+<ul>
+<li>recap: for continous logging with syntax highlighting.</li>
+<li>root:</li>
+<li>resolution:</li>
+<li>reason:</li>
+<li>related:
+<ul>
+<li>#gui : <a href="https://github.com/logexperts/logexpert">logexperts/logexpert: windows tail program and log file analyzer.</a></li>
+<li>#cli : <a href="https://github.com/bensadeh/tailspin">bensadeh/tailspin:  a log file highlighter</a>
+<ul>
+<li>this could also be helpful.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">get-content .\logfile.txt -wait | tspin
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>revisit: 2025-05-17 12:51:50 well <code>ov</code> is better than <code>moar</code> or <code>tspin</code> or <code>less</code>
+<ul>
+<li>#golang : <a href="https://github.com/noborus/ov"><code>ov</code> pager repo</a>, help by pressing <code>h</code> or <code>CTRL+f1</code>
+<ul>
+<li>truly a #successor of <code>less</code>, now <code>$env:pager = ov</code>.</li>
+<li><del>i much prefer either tailspin with pwsh or  logexpert.</del> old opinion.</li>
+<li>#config : symlink-ed to dotfiles repo. that's why i made <code>quicksymlink</code>.
+<ul>
+<li>both <code>ov</code> and <code>bat</code> is symlink to <code>dotfiles</code>, same with <code>helix</code> and <code>jrnl</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#alternative: <a href="https://github.com/sachaos/viddy"><code>viddy</code>: 👀 A modern watch command. Time machine and pager etc.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

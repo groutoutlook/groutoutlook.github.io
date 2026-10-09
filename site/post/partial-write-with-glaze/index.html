@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: partial_write with glaze</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">partial_write with glaze</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-29 01:26:21 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/reflection">
+                        <span>reflection</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/partial-write.md">partial_write with glaze</a>
+<ul>
+<li>Recap: parsing a string to modify the state of objects in runtime.</li>
+<li>Run: See <code>vulkan_samples</code> I used that to iterate through runtime JSON fields.</li>
+<li>Resolution: Actually it's <a href="https://github.com/stephenberry/glaze/blob/main/docs/json-pointer-syntax.md">JSON Pointer syntax</a>
+<ul>
+<li>using setter getter here.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reachablecode.com/2025/07/31/c26-reflections-adventures-compile-time-uml/">C++26 Reflections adventures &amp; compile time UML – ReachableCode</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=44772917">C++26 Reflections adventures and compile-time UML</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/pure-reflection.md"><code>glaze</code> Pure Reflection</a>
+<ul>
+<li>Recap:  Treating reflected structs as positional arrays with <code>glz::as_array&lt;&amp;T::member&gt;</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">Person_details</span></span><span class="meta struct c++"> <span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++">
+   std<span class="punctuation accessor c++">::</span>string_view name<span class="punctuation terminator c++">;</span> std<span class="punctuation accessor c++">::</span>string_view surname<span class="punctuation terminator c++">;</span>
+   std<span class="punctuation accessor c++">::</span>string_view city<span class="punctuation terminator c++">;</span> std<span class="punctuation accessor c++">::</span>string_view street<span class="punctuation terminator c++">;</span>
+</span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+
+<span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">Person</span></span><span class="meta struct c++"> <span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++">
+   <span class="storage type c">int</span> id<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span> Person_details person<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+</span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+
+<span class="meta template c++"><span class="storage type template c++">template</span> <span class="punctuation section generic begin c++">&lt;</span></span><span class="meta template c++"><span class="punctuation section generic end c++">&gt;</span></span>
+<span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">glz</span></span><span class="meta struct c++"><span class="punctuation separator c++">:</span>:<span class="entity other inherited-class c++">meta</span><span class="punctuation section generic begin c++">&lt;</span>Person<span class="punctuation section generic end c++">&gt;</span>
+<span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++">
+   <span class="keyword control c++">using</span> T <span class="keyword operator assignment c">=</span> Person<span class="punctuation terminator c++">;</span>
+   <span class="storage modifier c++">static</span> <span class="storage modifier c++">constexpr</span> <span class="storage type c">auto</span> value <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">glz<span class="punctuation accessor c++">::</span></span><span class="variable function c++">object</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">
+      <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>id<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> <span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>id<span class="punctuation separator c++">,</span>
+      <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>person<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> glz<span class="punctuation accessor c++">::</span>as_array<span class="keyword operator comparison c">&lt;</span><span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>person<span class="keyword operator comparison c">&gt;</span> <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> consume a JSON array as Person_details
+</span>   </span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+
+std<span class="punctuation accessor c++">::</span>string_view payload <span class="keyword operator assignment c">=</span> <span class="string quoted double c++"><span class="storage type string c++">R</span><span class="punctuation definition string begin c++">&quot;(</span>{
+   &quot;id&quot;: 1,
+   &quot;person&quot;: [&quot;Joe&quot;, &quot;Doe&quot;, &quot;London&quot;, &quot;Chamber St&quot;]
+}<span class="punctuation definition string end c++">)&quot;</span></span><span class="punctuation terminator c++">;</span>
+
+Person p<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span> <span class="keyword control c++">if</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> ec <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">glz<span class="punctuation accessor c++">::</span></span><span class="variable function c++">read_json</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">p<span class="punctuation separator c++">,</span> payload</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span> ec<span class="punctuation section group end c++">)</span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+   <span class="keyword control c++">throw</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">runtime_error</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="meta function-call c++"><span class="variable function c++">glz<span class="punctuation accessor c++">::</span></span><span class="variable function c++">format_error</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">ec<span class="punctuation separator c++">,</span> payload</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="punctuation section block end c++">}</span></span>
+<span class="storage type c">auto</span> out <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">glz<span class="punctuation accessor c++">::</span></span><span class="variable function c++">write_json</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">p</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">value</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> out == R&quot;({&quot;id&quot;:1,&quot;person&quot;:[&quot;Joe&quot;,&quot;Doe&quot;,&quot;London&quot;,&quot;Chamber St&quot;]})&quot;
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Tue Sep 29 09:55:25 SEAST 2026] <a href="https://stephenberry.github.io/glaze/lazy-json/">Lazy JSON (On-Demand) - Glaze Documentation</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

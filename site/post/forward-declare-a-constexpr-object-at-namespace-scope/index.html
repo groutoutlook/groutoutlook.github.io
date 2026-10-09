@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: forward declare a constexpr object at namespace scope?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">forward declare a constexpr object at namespace scope?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-27 11:31:20 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/constexpr">
+                        <span>constexpr</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/declaration">
+                        <span>declaration</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/19958868/how-do-i-forward-declare-a-constexpr-object-at-namespace-scope/19966826#19966826">forward declare a constexpr object at namespace scope?</a>
+<ul>
+<li>Recap: forward declaration of constexpr variable.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> in a (header) file
+</span><span class="storage modifier c++">extern</span> <span class="storage modifier c++">const</span> a_future_constexpr<span class="punctuation terminator c++">;</span>
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> in a source file or any later file in the dependency graph.
+</span><span class="storage modifier c++">static</span> <span class="storage modifier c++">constexpr</span> a_future_constexpr <span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+  <span class="punctuation accessor dot c++">.</span><span class="variable other readwrite member c++">something</span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation separator c++">,</span>
+  <span class="punctuation accessor dot c++">.</span><span class="variable other readwrite member c++">need_init</span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation separator c++">,</span>
+<span class="punctuation section block end c++">}</span></span>
+</span></code></pre>
+</li>
+<li>Resolution: So you can initialize them where you want.</li>
+<li>Reason: <a href="https://stackoverflow.com/questions/33197817/forward-declare-a-constexpr-variable-template/33198182#33198182">c++ - Forward declare a constexpr variable template</a></li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/69047064/how-to-make-explicit-instantiation-of-template-constexpr-variable-in-c?rq=3">make explicit instantiation of template constexpr variable in C++?</a></li>
+<li><a href="https://stackoverflow.com/questions/78941157/how-to-export-sfinae-constrained-ctor-defined-in-cpp-file-for-explicitly-instant">c++ - How to export SFINAE-constrained ctor defined in cpp file for explicitly instantiated template class?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

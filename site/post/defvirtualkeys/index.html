@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;defvirtualkeys&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;defvirtualkeys&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-03 04:52:17 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kanata">
+                        <span>kanata</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/6f097f854a8832a4979fd60ca587a300eac00174/docs/config.adoc#virtual-keys"><code>defvirtualkeys</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: <code>hold-for-duration</code> is for this kind of keys.
+<ul>
+<li>In case you want to deactivate that hold, <a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#release-a-key-or-layer">have to send a <code>release-key</code> action</a>
+<ul>
+<li>or <code>release-layer</code> also works.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: there is an older <code>deffakekeys</code> so I want to make that clear.
+<ul>
+<li>Pro:</li>
+<li>Con:</li>
+</ul>
+</li>
+<li>Root: <a href="https://github.com/jtroo/kanata/issues/1306">Feature request: <code>hold-for-duration &lt;key|layer&gt; &lt;time&gt;</code> · Issue #1306 · jtroo/kanata</a></li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/jtroo/kanata/blob/6f097f854a8832a4979fd60ca587a300eac00174/docs/config.adoc#variables"><code>defvar</code></a>
+<ul>
+<li>Recite: Variables can be used to substitute most values. Some notable exceptions:
+<ul>
+<li>variables cannot be used in <code>defcfg</code>, <code>defsrc</code>, or <code>deflocalkeys</code></li>
+<li>variables cannot be used to substitute an action name</li>
+<li>Variables are referred to by prefixing their name with <code>$</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

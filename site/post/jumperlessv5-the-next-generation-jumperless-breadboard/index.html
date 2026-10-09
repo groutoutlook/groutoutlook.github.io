@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;JumperlessV5&#x60; The next generation jumperless breadboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;JumperlessV5&#x60; The next generation jumperless breadboard</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-30 03:26:38 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/board/rp2350">
+                        <span>board/rp2350</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/multiplex">
+                        <span>multiplex</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/prototype">
+                        <span>prototype</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/switch">
+                        <span>switch</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Architeuthis-Flux/JumperlessV5"><code>JumperlessV5</code> The next generation jumperless breadboard</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#multiplex: <a href="https://akizukidenshi.com/goodsaffix/CH446.pdf">8x16 Analog Switch Array Chip CH446Q and 5x24 Analog Switch Array Chip CH446X</a>
+<ul>
+<li>Recap: 128 analog switches in intersection point of 5x24 matrix consisting of 24 X ports and 5 Y ports,
+allowing any X port and any Y port to conduct or disconnect/ <strong>2 X ports</strong> to conduct to <strong>1 Y port</strong>
+enabling indirect conduction between any two X ports or any two Y ports (CH446X has only 120 analog switches)</li>
+<li>It's even a #wch #mcu. Clone of MT8816.
+3dB rolloff (1/2 the passband) is 50MHz. Which can be considered bandwidth.</li>
+<li>#board : <a href="https://item.taobao.com/item.htm?id=924718314512">8x16模拟开关阵列可级联XY脚双向导通自动接线CH446Q接自动化方案</a>
+<ul>
+<li><a href="https://www.cnblogs.com/Tuple-Joe/p/13529488.html">Hardware Drivers | 5x24 Analog Switch Array CH446X - Tuple - Blog Garden</a></li>
+<li>Recap: Bitbanging the CH446X itself.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.globalspec.com/learnmore/semiconductors/analog_mixed_signals/amplifier_linear_devices/analog_crosspoint_switches">IC Analog Crosspoint Switches Selection Guide: Types, Features, Applications | GlobalSpec</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://modwiggler.com/forum/viewtopic.php?t=276128">I made a thing that might be useful for some of you folks: a jumperless (solderless) breadboard - MOD WIGGLER</a></li>
+<li>Related: #taobao <a href="https://item.taobao.com/item.htm?id=844546662859">Jumperless V5 The next generation jumperless breadboard</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/25525/are-there-any-analog-fpgas">Are there any Analog FPGAs?</a></li>
+<li>#linux #container <a href="https://github.com/detiber/k8s-jumperless"><code>k8s-jumperless</code></a></li>
+<li>3db is coming from this <a href="https://wikipedia.org/wiki/Cutoff_frequency">Cutoff frequency</a>
+<ul>
+<li>Recap: sometimes the f_cutoff just mean  maximum usable frequency.</li>
+<li>#til: Double Pole: both the signal wires will be thrown at once. Single pole: only throw one at a time.</li>
+<li>Rival: <a href="https://www.belling.com.cn/product_info.html?id=761">BL1522 - DPQT double pole quad throw Shanghai Belling Co., Ltd</a></li>
+<li>Related: #definition #acronym <a href="https://www.e-switch.com/news-events/blog/switches-simplified/what-does-make-before-break-mean-shorting-vs-non-shorting/">MBB Make-Before-Break Mean vs BBM: Break-Before-Make?</a></li>
+</ul>
+</li>
+<li><a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FTuDo-Makerspace%2FMIDI-Breakouts%2Fblob%2Fb9dfe038f9741ef2019afd47008d8c9093785a86%2FMIDI_OUT%2FMIDI_OUT.kicad_sch%23L818">DPDT switch for voltage mode selection.</a></li>
+<li>Rival: #i2c <a href="https://canaduino.com/downloads/ch423.pdf">CH423 Datasheet - ch423.pdf</a>
+<ul>
+<li>Recap: GPIO expander. IO0-IO7 is bidirectional while OC0-OC15 is push-pull output pin.</li>
+<li>Resolution: so 8*16 is 128 monochrome LED in a matrix, or just 24 LED separatedly.
+Could be a 7-segment LED/LCD display or something.</li>
+<li>Related: <strong>can not</strong> be an alternative for analog signal/bidirectional signal.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

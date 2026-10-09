@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: windows - Is it possible to send the content of text file over PuTTY over a serial port?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">windows - Is it possible to send the content of text file over PuTTY over a serial port?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-13 08:14:58 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/uart">
+                        <span>protocol/uart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/30826002/is-it-possible-to-send-the-content-of-text-file-over-putty-over-a-serial-port">windows - Is it possible to send the content of text file over PuTTY over a serial port?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">plink -serial COM11 -sercfg 115200,8,n,1,X
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://wikipedia.org/wiki/Serial_port">Serial port</a>
+<ul>
+<li>in #linux we have <code>/dev/tty*</code> devices, uart will have <code>/dev/ttyS*</code>.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> interactively</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">stty</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>F</span> /dev/ttyS0 115200 cs8<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>cstopb</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>parenb</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ixon</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ixoff</span>      </span>
+</span></code></pre>
+</li>
+<li><a href="https://unix.stackexchange.com/questions/111749/how-to-send-a-file-using-xmodem-protocol-from-the-command-line">modem - How to send a file using xmodem protocol from the command line</a>
+<ul>
+<li><a href="https://github.com/UweOhse/lrzsz"><code>lrzsz</code> repo</a>
+<ul>
+<li>since it contains <code>sx</code> and <code>rx</code>. <code>sz</code> and <code>rz</code> and so on.</li>
+</ul>
+</li>
+<li><a href="https://unix.stackexchange.com/questions/56614/send-file-by-xmodem-or-kermit-protocol-with-gnu-screen">serial port - Send file by xmodem or kermit protocol with GNU screen</a>
+<ul>
+<li>use <code>stty</code> to change baudrate and then do whatever you want.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro:</li>
+<li>Con: so much easier to do in #linux, see <a href="https://unix.stackexchange.com/questions/242778/what-is-the-easiest-way-to-configure-serial-port-on-linux">configure serial port on Linux</a></li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/46591648/executing-command-using-plink-does-not-work-but-does-in-putty">powershell - Executing command using Plink does not work, but does in PuTTY</a></li>
+<li>#control/sequence : <a href="https://wikipedia.org/wiki/Software_flow_control">XON/XOFF Software flow control</a>
+<ul>
+<li>XON == <code>Ctrl+q</code>, XOFF == <code>Ctrl+s</code>, which resume/pause transmission.</li>
+<li>which is a non problem on modern UART nowadays.</li>
+<li>#alternative to this is DTR/DSR and RTS/CTS sequences.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

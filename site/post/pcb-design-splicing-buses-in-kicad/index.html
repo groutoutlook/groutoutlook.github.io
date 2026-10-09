@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pcb design - Splicing buses in KiCad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pcb design - Splicing buses in KiCad</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-08 01:17:23 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/eeschema">
+                        <span>eeschema</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wiring/bus">
+                        <span>wiring/bus</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/72591/splicing-buses-in-kicad/551678#551678">pcb design - Splicing buses in KiCad</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: In <code>eeschema</code> <code>Inspect</code> (<code>alt+i</code>) -&gt; <code>Show Bus Syntax Help</code> will show all this.
+<ul>
+<li>#keybinding default is <code>b</code>, from <a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#buses">Buses</a></li>
+<li><strong>Vector bus</strong> is a collection of signals that start with a common prefix and end with a number.
+<ul>
+<li>Run: <code>PB[0..15]</code>, <code>USB[0..1]_W[..]</code> or so.</li>
+</ul>
+</li>
+<li><strong>Group bus</strong> is a collection of one or more signals and/or vector buses.
+<ul>
+<li>Run: Group have more explicit syntax with curly brace as the grouping e.g. <code>I2C0_{SCL SDA}</code>
+<ul>
+<li>Space in signal name is <code>\ </code> (not <code>\s</code> as I imagine).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#keybinding <code>c</code> == <code>Unfold from Bus</code> but first selected bus. It's global, can invoke anywhere you want.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

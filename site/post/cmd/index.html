@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;cmd&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;cmd&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-03 11:08:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/software">
+                        <span>software</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#cmd"><code>cmd</code></a>
+<ul>
+<li>Recap: normally used with <code>macro</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-scheme"><span class="text plain">nlockon  (cmd-output-keys powershell.exe &quot;if ($([console]::NumberLock) -match &#39;True&#39;) { echo &#39;()&#39; } else { echo &#39;(NumLock)&#39; }&quot;)
+nlockoff (cmd-output-keys powershell.exe &quot;if ($([console]::NumberLock) -match &#39;True&#39;) { echo &#39;(NumLock)&#39; } else { echo &#39;()&#39; }&quot;)    
+</span></code></pre>
+</li>
+<li>Resolution: <code>cmd-output-keys</code>, it literally using external software to compute key states.
+<ul>
+<li>as for #powershell or some others.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/gerhard-h/kmonad-keymaps/blob/14a5c8bbcea98fca9ec43bfc745c68b8853135dd/kanatav30.kbd#L160C12-L160C12">an example</a>
+<ul>
+<li><a href="https://github.com/jtroo/kanata/discussions/1675">Best practice for custom shiftable keys · jtroo/kanata · Discussion #1675</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#clipboard-actions"><code>clipboard-set</code> and other <code>clipboard</code> command</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;eza&#x60; A modern alternative to ls</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;eza&#x60; A modern alternative to ls</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-27 08:13:48 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/eza-community/eza"><code>eza</code> A modern alternative to ls</a>
+<ul>
+<li>Recap: alias to <code>ls</code> in my $PROFILE #config</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ls</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list all hidden, even .git.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">ls</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list all in long output, looks more like `ls` of zsh or `gci` of PowerShell.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Check <a href="obsidian://open?vault=MainVault&amp;file=note_IDEAndTools%2FDev%2FCLI%2F001.008-CLI%20eza">vault's note</a></li>
+<li>#config #theme <a href="https://github.com/eza-community/eza-themes">eza-themes: Themes for eza</a>
+<ul>
+<li>For #windows and #powershell, have to set #env/var
+<code>$env:EZA_CONFIG_DIR = &quot;$env:USERPROFILE\.config\eza&quot;</code>
+<ul>
+<li>symlink Force from my dotfiles repo to <code>theme.yml</code>, for some reason....</li>
+<li>in Linux it could have been <code>ln -sr</code>.
+<ul>
+<li>I chose catppuccin.yml</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related: #alternative: <a href="https://github.com/bgreenwell/lstr"><code>lstr</code> directory tree viewer</a>
+<ul>
+<li>#nightly worthy as in [2025-09-01 15:29:55].</li>
+<li>Run: #cli/option <a href="https://github.com/bgreenwell/lstr#usage"><code>lstr</code> flags</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `tre` in my $profile</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">lstr</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>hyperlinks</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>icons</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>gG</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>L</span><span class="keyword operator assignment option shell">=</span>2<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dirs-first</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>natural-sort</span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">args</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `trei` also in my $profile, interactive use, open default $EDITOR if it&#39;s a file.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">lstr</span></span><span class="meta function-call arguments shell"> interactive<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>icons</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>gG</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dirs-first</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>natural-sort</span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">args</span></span></span>
+</span></code></pre>
+</li>
+<li>Related: <a href="https://github.com/rhysd/path-slash/issues/6">verbatim path <code>\\?\</code> prefix not normalized correctly</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

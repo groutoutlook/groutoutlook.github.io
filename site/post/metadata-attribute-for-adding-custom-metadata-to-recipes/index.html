@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: metadata]&#x60; attribute for adding custom metadata to recipes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">metadata]&#x60; attribute for adding custom metadata to recipes</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-04 10:46:59 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/attribute">
+                        <span>attribute</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just/pull/2794"><code>[metadata]</code> attribute for adding custom metadata to recipes</a>
+<ul>
+<li>Recap: for <code>just --dump --dump-format json</code> this is for interop. e.g. pipe to <code>jq</code>...</li>
+<li>Run: try
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dump</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dump-format</span> json</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+<li>Rival: #attribute
+<ul>
+<li><a href="https://github.com/casey/just#groups"><code>[group('name')]</code></a>
+<ul>
+<li><code>just --groups</code> to check groups. It can pretty print nicely.</li>
+</ul>
+</li>
+<li><a href="https://github.com/casey/just#documentation-comments"><code>[doc('comments...')]</code></a>
+<ul>
+<li>A kind of silent comments instead of PHONY as default comments above recipes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

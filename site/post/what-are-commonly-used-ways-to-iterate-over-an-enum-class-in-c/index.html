@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: What are commonly-used ways to iterate over an enum class in C++?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">What are commonly-used ways to iterate over an enum class in C++?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-19 05:15:20 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/enum">
+                        <span>enum</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/std">
+                        <span>std</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/69762598/what-are-commonly-used-ways-to-iterate-over-an-enum-class-in-c">What are commonly-used ways to iterate over an enum class in C++?</a></p>
+<ul>
+<li>
+<p>Recap: iterate enum in c++</p>
+</li>
+<li>
+<p>Root: <a href="https://cppreference.com/w/cpp/types/is_enum">std::is_enum</a></p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/46401502/is-enum-class-a-class-type-in-c/46401548#46401548">c++11 - Is &quot;enum class&quot; a class type in C++?</a>
+<ul>
+<li><code>std::is_class</code> as well. All belong to <a href="https://cppreference.com/w/cpp/header/type_traits">type_traits (C++11)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Resolution:</p>
+<ul>
+<li><a href="https://cppreference.com/w/cpp/utility/to_underlying">std::to_underlying</a>, convert enum to inherited type/underlying type.</li>
+</ul>
+</li>
+<li>
+<p>Reason:</p>
+</li>
+<li>
+<p>Related:</p>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

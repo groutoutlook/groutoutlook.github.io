@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;CherryDAP&#x60; CherryUSB + ARMmbed DAPLink.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;CherryDAP&#x60; CherryUSB + ARMmbed DAPLink.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-30 04:27:44 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/daplink">
+                        <span>daplink</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/libc">
+                        <span>libc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/usb">
+                        <span>usb</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/cherry-embedded/CherryDAP"><code>CherryDAP</code> CherryUSB + ARMmbed DAPLink.</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#usb <a href="https://github.com/cherry-embedded/CherryUSB"><code>CherryUSB</code> USB host and device stack for embedded system with USB IP</a>
+<ul>
+<li>this has USB DFU related source files, although I dont know will that work with AT32.</li>
+<li>It has an example on it though. Using different pin than PA10/PA11</li>
+<li>Related: <code>dfu-util</code>. <code>Microboot</code> as well.</li>
+</ul>
+</li>
+<li>#shell #scripting <a href="https://github.com/cherry-embedded/CherrySH"><code>CherrySH</code> shell designed for embedded applications</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/VinCSS-Public-Projects/FlexiCAN"><code>FlexiCAN</code> OBD-II CAN device for software-configurable automotive diagnostics.</a></li>
+<li>Related:
+<ul>
+<li>#firmware <a href="https://www.cnblogs.com/Tuple-Joe/p/13278462.html">STM32H743 | FDCAN Baud Rate Questions - Tuple - Blog Park</a></li>
+<li>#esp32 : <a href="https://github.com/espterm/espterm-firmware"><code>espterm-firmware</code> ESP8266 terminal emulator</a></li>
+<li>#wch probably? <a href="https://item.taobao.com/item.htm?id=836926294372">Ultra-fast DAPLink 480M debug downloader serial port FanX Tek ESD chip fuse</a>
+<ul>
+<li>#firmware <a href="https://github.com/XIVN1987/DAPLink">DAPLink in Artery AT32F425, WCH CH32V203 and CH32V305.</a>
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/EutLUYwKbC16ZqrsV3ky-w">handheld game console with 2 yuan CH32V203</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/prosper00/CH32V305-DAPLink-HS">CH32V305 DAPLink - USB2.0 High Speed DAPLink firmware for the WCH-LinkE</a></li>
+</ul>
+</li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32s3/api-guides/dfu.html">Device Firmware Upgrade via USB - ESP32-S3 - — ESP-IDF Programming Guide v6.0.1 documentation</a>
+<ul>
+<li>Recap: no DFU for H2,C3,C6, only S2,S3 have that.</li>
+<li>Root: <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/cdc_dfu_flash.html">USB CDC and DFU Flashing Capabilities</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

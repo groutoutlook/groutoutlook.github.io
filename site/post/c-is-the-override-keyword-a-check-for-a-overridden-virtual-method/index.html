@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Is the &#x27;override&#x27; keyword  a check for a overridden virtual method?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Is the &#x27;override&#x27; keyword  a check for a overridden virtual method?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-09 10:39:45 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/polymorphism">
+                        <span>polymorphism</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/13880205/is-the-override-keyword--a-check-for-a-overridden-virtual-method">c++ - Is the 'override' keyword  a check for a overridden virtual method?</a>
+<ul>
+<li>Brief: yeah. It's for the sake of compiler, help them complaining louder.</li>
+<li>Origin: wonder why every end of my overload function have that keyword.</li>
+<li>Resolution: It notices the compiler check base classes' existence of the method. If not found, they will spit out errors.</li>
+<li>Related: <a href="https://stackoverflow.com/a/69617980/22954711">best explained in that thread</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

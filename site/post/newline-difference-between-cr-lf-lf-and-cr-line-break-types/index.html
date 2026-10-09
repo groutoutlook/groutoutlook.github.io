@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: newline - Difference between CR LF, LF and CR line break types</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">newline - Difference between CR LF, LF and CR line break types</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-09 07:11:47 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/1552749/difference-between-cr-lf-lf-and-cr-line-break-types">newline - Difference between CR LF, LF and CR line break types</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">foreach($file in (gci &quot;*csv&quot; -recurse )){
+  ((Get-Content $file) -join &quot;`n&quot;) + &quot;`n&quot; | Set-Content -NoNewline $file
+}
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://stackoverflow.com/questions/19127741/replace-crlf-using-powershell/48919146#48919146">Replace CRLF using powershell</a>
+<ul>
+<li>well but crlf is the default in Windows, even <code>ipcsv</code> and <code>epcsv</code> emit crlf.</li>
+<li>Unless you lint it like above... Or <code>convertto-csv</code> the variable then trim string.
+then <code>Set-Content</code> that variable then you maybe able to bypass CRLF in Windows.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <code>glaze</code> in recent version updated its <code>csv</code> parser.</li>
+<li>Related</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

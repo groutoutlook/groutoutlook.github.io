@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;vsp-router&#x60; Create virtual serial ports, connect them to physical serial ports, and create routes between them all.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;vsp-router&#x60; Create virtual serial ports, connect them to physical serial ports, and create routes between them all.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-13 09:12:55 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uart">
+                        <span>uart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/rfdonnelly/vsp-router"><code>vsp-router</code> Create virtual serial ports, connect them to physical serial ports, and create routes between them all.</a>
+<ul>
+<li>Recap: but cannot create VCOM in #windows....
+<ul>
+<li>setup <code>com0com</code> <a href="https://vovsoft.com/blog/how-to-sniff-serial-port-communication/">in here</a>
+<ul>
+<li><code>setupc</code> or <code>setupg</code> to use <code>com0com</code>. Remember run in sudo shell.</li>
+<li>Also need <a href="https://sourceforge.net/projects/com0com/files/hub4com/">hub4com</a></li>
+</ul>
+</li>
+<li>Newer #alternative : <a href="https://www.virtual-serial-port.org/">Virtual COM Port Driver: create virtual COM ports in a system</a>
+<ul>
+<li>but premium though</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://tibbo.com/support/downloads/tdst.html">Tibbo Device Server Toolkit software for Windows</a>
+<ul>
+<li>this free. #doc : <a href="https://docs.tibbo.com/soism/an008_vsp">Establishing a Connection Through a Virtual Serial Port - Tibbo Docs</a></li>
+<li><a href="https://github.com/tibbotech/CA-SOI">Serial-over-IP (SoI) application turns Tibbo programmable hardware into Device Servers — network interfaces for devices with serial interfaces.</a></li>
+<li>based on <a href="https://github.com/microsoft/Windows-driver-samples/blob/main/serial/serenum/README.md">serenum · microsoft/Windows-driver-samples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [Sat Aug 29 03:59:35 2026] <strong>dead, no activity.</strong>.</li>
+<li>Related:
+<ul>
+<li><a href="https://www.compuphase.com/software_termite.htm">Termite: a simple RS232 terminal</a></li>
+<li><a href="https://hhdsoftware.com/virtual-serial-port-tools#pr-features">HHD Software Virtual Serial Port Tools</a></li>
+<li><a href="https://technofossy.com/how-to-access-serial-ports-com-ttys-in-windows-subsystem-for-linux-wsl1-wsl2/">How to Access Serial Ports (COM &amp; ttyS) in Windows Subsystem for Linux (WSL1 &amp; WSL2) -</a></li>
+<li>#alternative: <a href="https://www.virtualserialportdriver.com/">Virtual Serial Port Driver - Virtual COM Port Emulation</a></li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/wayyoungboy/serialserver/blob/master/README_EN.md"><code>serialserver</code> VSP - Virtual Serial Port Cloud Platform for remote serial port Access</a>
+<ul>
+<li>Recap: PLC debugging, IoT device management, serial-to-TCP tunneling..</li>
+<li>Resolution: <a href="https://github.com/janekbaraniewski/kubeserial"><code>kubeserial</code> k8s operator for managing serial devices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

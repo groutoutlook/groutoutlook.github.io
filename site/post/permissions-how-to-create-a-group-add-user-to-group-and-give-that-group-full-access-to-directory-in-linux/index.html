@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: permissions - How to create a group, add user to group, and give that group full access to directory in linux</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">permissions - How to create a group, add user to group, and give that group full access to directory in linux</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-18 03:43:27 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/management">
+                        <span>management</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wsl">
+                        <span>wsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/914666/how-to-create-a-group-add-user-to-group-and-give-that-group-full-access-to-dir">permissions - How to create a group, add user to group, and give that group full access to directory in linux</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">useradd</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>G</span> wheel<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> /usr/sbin/nu golk <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> add new user...</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> usermod<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span> old new <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> rename current user, passwd required.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">userdel</span></span><span class="meta function-call arguments shell"> golk <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> samething.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Root: <a href="https://askubuntu.com/questions/34074/how-do-i-change-my-username">permissions - How do I change my username?</a>
+<ul>
+<li>#sysadmin topic mainly.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#sysadmin : <a href="https://askubuntu.com/questions/985296/how-can-i-add-a-user-and-set-the-password-for-them-at-the-same-time">add a user and set the password for them at the same time?</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> adduser golk</span>
+</span></code></pre>
+<ul>
+<li>or if in #wsl : <strong>remember to run</strong> as root <code>passwd</code> and <code>passwd golk</code> first
+<ul>
+<li>#perl is a decent tool for substitue #string. It's like #awk on steroid</li>
+<li>#AI/llm teach me:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cp</span></span><span class="meta function-call arguments shell"> /etc/sudoers /etc/sudoers.bak <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> remember sudo-rs dont understand NOPASSWD: or so.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Uncomment wheel group line</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">perl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>pe</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>s/^#\s*(%wheel\s+ALL=\(ALL:ALL\)\s+ALL)/$1/<span class="punctuation definition string end shell">&#39;</span></span> /etc/sudoers</span>
+<span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Wheel group granted sudo access.<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li><a href="https://askubuntu.com/questions/118204/sudoers-simple-explanation-requested/118227#118227">sudo - sudoers - simple explanation requested</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

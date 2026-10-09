@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Measure-Command&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Measure-Command&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-29 03:12:53 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debug/benchmark">
+                        <span>debug/benchmark</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell/utils">
+                        <span>powershell/utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/measure-command"><code>Measure-Command</code></a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/3513650/timing-a-commands-execution-in-powershell#3513669">Timing a command's execution in PowerShell</a></li>
+<li>Resolution: no alias whatsoever.
+<ul>
+<li>as [2024-07-31 11:59:42 AM] I alias/wrap it to <code>mcm</code> and <code>time</code>. easier to comprehend
+<ul>
+<li>Run: <code>mcm{gci|out-default}</code></li>
+<li>and such a joy to type shorthand like that.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;gin&quot;,&quot;fastfetch&quot; | % {measure-command -E {iex $_} }
+fastfetch -l none # this output no log for you.
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#utils: <code>systeminfo.exe</code>(builtin) and <code>PSInfo</code>(Sysinternal), Just use <code>Get-ComputerInfo</code>.
+<ul>
+<li>#linux: <a href="https://unix.stackexchange.com/questions/334145/universal-non-bash-time-benchmark-alternative">shell script - Universal non-bash <code>time</code> benchmark alternative?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: #config: more like Ricing but you know, PSInfo spawn a transparent windows on desktop.
+<ul>
+<li>you could easily do that now with <code>smcon</code> and windows terminal.</li>
+<li>make it <code>borderless</code>, <code>clickthrough</code>, show on all Windows in <code>Win+tab</code>, <code>hidealttab</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

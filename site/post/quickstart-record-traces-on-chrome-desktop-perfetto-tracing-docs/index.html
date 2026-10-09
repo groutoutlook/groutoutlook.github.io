@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Quickstart: Record traces on Chrome desktop - Perfetto Tracing Docs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Quickstart: Record traces on Chrome desktop - Perfetto Tracing Docs</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-25 11:11:21 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/profiler">
+                        <span>profiler</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tracing">
+                        <span>tracing</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://perfetto.dev/docs/quickstart/chrome-tracing?_gl=1*mfl5po*_ga*MTE3MzkyMzg1Mi4xNzQ0OTU2Mjc1*_ga_BD89KT2P3C*MTc0NTU1NDIwNS4yLjEuMTc0NTU1NDIyNS4wLjAuMA..">Quickstart: Record traces on Chrome desktop - Perfetto Tracing Docs</a>
+<ul>
+<li>Recap: both #chrome and #msedge , on android.</li>
+<li>Root:</li>
+<li>Resolution: to make <code>justfile</code>'s recipe <code>buildtrace</code>.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">ninjatracing &quot;out/build/x64-Debug/.ninja_log&quot; &gt; trace.json
+(Get-ChildItem &quot;out/build/x64-Debug/trace.json&quot;).FullName | Set-Clipboard
+# 2025-05-18 17:38:04 : you better do it like `rvpa ./path | scb`
+Start-Process https://ui.perfetto.dev
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

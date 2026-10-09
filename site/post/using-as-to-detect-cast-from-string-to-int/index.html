@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Using &#x60;-as&#x60; to detect/cast from &#x60;string&#x60; to &#x60;int&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Using &#x60;-as&#x60; to detect/cast from &#x60;string&#x60; to &#x60;int&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-05 05:26:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>
+<p><a href="https://stackoverflow.com/a/71366842/22954711">Using <code>-as</code> to detect/cast from <code>string</code> to <code>int</code></a></p>
+<ul>
+<li>
+<p>Brief:</p>
+</li>
+<li>
+<p>Origin: Since I'm fiddle with the URI of code error logs
+<code>:v C:\Users\COHOTECH\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1:61</code></p>
+</li>
+<li>
+<p>I also <a href="https://stackoverflow.com/questions/7723584/powershell-how-do-i-convert-an-array-object-to-a-string-in-powershell">repeatedly forgot about <code>-join</code></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Things are in my $PROFILE now.</p>
+</li>
+<li>
+<p>Also check out <a href="https://stackoverflow.com/questions/12640962/using-powershell-how-can-i-count-the-occurrence-of-each-element-in-an-array">counting occurence</a></p>
+<ul>
+<li>Brief: Could also use like this</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-bash"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">1,2,4,2</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">group</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>.count<span class="punctuation section expansion brace end shell">}</span></span></span>
+</span></code></pre>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

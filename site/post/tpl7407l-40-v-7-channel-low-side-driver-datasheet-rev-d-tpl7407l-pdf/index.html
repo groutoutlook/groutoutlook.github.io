@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: TPL7407L 40-V 7-Channel Low Side Driver datasheet (Rev. D) - tpl7407l.pdf</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">TPL7407L 40-V 7-Channel Low Side Driver datasheet (Rev. D) - tpl7407l.pdf</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-12 01:05:03 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ic/driver">
+                        <span>ic/driver</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mosfet">
+                        <span>mosfet</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.ti.com/lit/ds/symlink/tpl7407l.pdf">TPL7407L 40-V 7-Channel Low Side Driver datasheet (Rev. D) - tpl7407l.pdf</a>
+<ul>
+<li>Recap: funny thing is you can use two or more output to try to sink/source a load with more than rated current.</li>
+<li>Run:  #meta <a href="https://www.ti.com/product-category/power-management/gate-drivers/low-side/overview.html">Low-side drivers | TI.com</a></li>
+<li>Resolution:
+<ul>
+<li>#ee #blog <a href="https://mp.weixin.qq.com/s/J1ojRLjE4waMjRd7lnulHg">Vgs(th) of MOSFET states 2V, so why drive it at 10V?</a>
+<ul>
+<li>at e.g. Vgs = 3.3V , It can only open the drain up to I_d = 1mA.</li>
+<li>strong voltage lead to smaller R_ds -&gt; bigger on current .</li>
+<li>Recite: With 12V, V_gs can quickly pass through Miller platform area, reducing switching time and losses.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: truly the line driver you are looking for. An array of MOSFET or you can say, <a href="https://wikipedia.org/wiki/Darlington_transistor">Darlington transistor</a></li>
+<li>Related: primitive mosfet/darlington BJT as AO3400A/ULN2003A
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/400821/controlling-solenoid-valves-with-uln2003a-inrush-current-arduino">Controlling Solenoid Valves with ULN2003A, Inrush Current, Arduino</a></li>
+</ul>
+</li>
+<li>Rival: also from TI <a href="https://www.ti.com/product/ULN2803C">ULN2803C Darlington Transistor Array</a>
+<ul>
+<li>they are being used as current amplifier to source enough current to peripheral devices.</li>
+<li>Related: #example/pcb <a href="https://github.com/julester23/seesaw_cape">SeeSaw Cape</a></li>
+<li><a href="https://assets.nexperia.com/documents/data-sheet/2N7002.pdf">2N7002 60 V, 300 mA N-MOS SOT-23-3</a>
+<ul>
+<li>Recap: direct rival of AO3400A if you want to use logic level transistors.</li>
+<li>Run: 7002 silkscreen SOT-23-3 is this one <a href="https://item.taobao.com/item.htm?id=868098635837">CJ长电长晶2N7002 2N7002 丝印7002 SOT-23 49.5/3Kpcs</a>
+<ul>
+<li>#example/pcb <a href="https://mp.weixin.qq.com/s/VWAKl42wHHHXgvxpfP5paA">Qinheng 100W One Toto CH9241 fast charging also use 2N7002</a></li>
+</ul>
+</li>
+<li>Root: <a href="https://www.reddit.com/r/esp32/comments/kly2f7">NMOS for simple 3.3v logic level between 2N7002, AO3400A and FS8205A</a></li>
+</ul>
+</li>
+<li><a href="https://www.thegioiic.com/china-bs170-mosfet-kenh-n-60v-500ma-to-92">BS170 NMOS 60V 500mA TO-92</a>
+<ul>
+<li>Recap: used quite a lot as well, logic level. but mostly in RF circuit due to high cutoff frequency</li>
+<li>Resolution: SOT-23-3 counterpart <a href="https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf">MMBF170 N‐Channel FET, Enhancement Mode</a>
+<ul>
+<li>Dynamic characteristic is capacitance of those parasitic in FET which bs170 is better than ao3400 -&gt; RF application</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/522285/calculating-mosfet-gate-current-at-certain-pwm-frequency">Calculating MOSFET gate current at certain PWM frequency</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

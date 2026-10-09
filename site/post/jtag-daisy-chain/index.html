@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: JTAG Daisy Chain</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">JTAG Daisy Chain</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-10 12:45:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/jtag">
+                        <span>protocol/jtag</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/swd">
+                        <span>swd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/JTAG#Electrical_characteristics">JTAG Daisy Chain</a>
+<ul>
+<li>Recap: fwiw, JTAG require <strong>4 pins</strong> while SWD only <strong>2 pins</strong>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/53571/jtag-vs-swd-debugging/292850#292850">JTAG vs SWD debugging</a></li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>but we do have a cJTAG
+<ul>
+<li>Root: <a href="https://weekly-geekly.imtqy.com/articles/237885/index.html">We understand the protocol 2-wire JTAG</a></li>
+<li>Related: <a href="https://github.com/kuopinghsu/cjtag">Verilog implementations of <code>cjtag</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/8sPThJ9zzUdxQOpoThfe0g">Don't just use SWD and JTAG! Teach you how to play with two-wire CJTAG with CMSIS-DAP</a></li>
+<li>Related:
+<ul>
+<li>#usb <a href="https://electronics.stackexchange.com/questions/157160/high-speed-data-from-microcontrollers-to-pc-using-daisy-chain">High speed data from microcontrollers to pc using daisy chain</a></li>
+<li>#i2c <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/616909/pca9518-daisy-chaining-of-i2c-or-other-hubs-for-multiple-point---to---point-connections-creating-a-large-tree-network">PCA9518: Daisy chaining of I2C (or other) hubs for multiple point - to - point connections creating a large tree network - Interface forum - Interface - TI E2E support forums</a></li>
+<li>#spi <a href="https://www.analog.com/en/resources/technical-articles/2022/07/16/09/49/daisychaining-spi-devices.html">Daisy-Chaining SPI Devices | Analog Devices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

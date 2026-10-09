@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Just Use MSYS2 You Say?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Just Use MSYS2 You Say?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-04 08:30:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://news.ycombinator.com/item?id=40994421">Just Use MSYS2 You Say?</a>
+<ul>
+<li>Recap: People ranting about msys2 or VM, docker,... on shipping applications.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://superuser.com/questions/1648564/difference-between-msys2-exe-and-mingw64-exe-in-msys-installation">Difference between msys2.exe and mingw64.exe in MSYS installation</a>
+<ul>
+<li>Another difference: <code>msys2</code> will not include windows' PATH while <code>ucrt64</code> and <code>mingw64</code> does.
+<ul>
+<li>inside msys2, cant run windows executable, but <code>mingw</code>/<code>ucrt64</code> can. Try <code>env</code> to see the difference.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/45144542/why-do-i-get-the-error-the-program-cant-start-because-msys-2-0-dll-is-missing/79569000#79569000">c - Why do I get the error &quot;The program can't start because msys-2.0.dll is missing from your computer&quot;? Is there a fix?</a>
+<ul>
+<li>#powershell <a href="https://stackoverflow.com/questions/47438779/executing-a-script-in-msys2-mingw/79201770#79201770">windows - Executing a script in MSYS2/MinGW</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/47438779/executing-a-script-in-msys2-mingw/74082160#74082160">now with a log file.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

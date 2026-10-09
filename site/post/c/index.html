@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;&#x60;&#x60;c++</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;&#x60;&#x60;c++</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-11 02:31:02 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/practice">
+                        <span>practice</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/std">
+                        <span>std</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>algorithm<span class="punctuation definition string end c++">&gt;</span></span>
+</span><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>numeric<span class="punctuation definition string end c++">&gt;</span></span>
+</span>
+
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> you can use includes, for example:
+</span><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>algorithm<span class="punctuation definition string end c++">&gt;</span></span>
+</span><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>numeric<span class="punctuation definition string end c++">&gt;</span></span>
+</span>
+<span class="storage type c">int</span> <span class="meta function c++"><span class="entity name function c++">shortest_distance</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">vector<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> <span class="keyword operator c">&amp;</span><span class="variable parameter c++">A</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    <span class="keyword control c++">if</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span>A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">size</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator comparison c">==</span> <span class="constant numeric c++">2</span><span class="punctuation section group end c++">)</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        <span class="keyword control c++">return</span> <span class="meta function-call c++"><span class="support function C99 c">abs</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">A<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="constant numeric c++">0</span><span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator arithmetic c">-</span> A<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="constant numeric c++">1</span><span class="punctuation section brackets end c++">]</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+    <span class="storage type c">auto</span> a <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span>
+    <span class="storage type c">int</span> left_val <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">accumulate</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">begin</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation separator c++">,</span> A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">begin</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="keyword operator arithmetic c">+</span>a<span class="punctuation separator c++">,</span> <span class="constant numeric c++">0</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="storage type c">int</span> right_val <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">accumulate</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">begin</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="keyword operator arithmetic c">+</span>a<span class="punctuation separator c++">,</span> A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">end</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">0</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="storage type c">auto</span> ans <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">min</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">ans<span class="punctuation separator c++">,</span> <span class="meta function-call c++"><span class="support function C99 c">abs</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">left_val<span class="keyword operator arithmetic c">-</span>right_val</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="keyword control c++">for</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> a <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span> a <span class="keyword operator comparison c">&lt;</span> A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">size</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator arithmetic c">-</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span> a<span class="keyword operator arithmetic c">+</span><span class="keyword operator arithmetic c">+</span><span class="punctuation section group end c++">)</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        left_val <span class="keyword operator assignment augmented c">+=</span> A<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>a<span class="punctuation section brackets end c++">]</span></span><span class="punctuation terminator c++">;</span>
+        right_val <span class="keyword operator assignment augmented c">-=</span> A<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>a<span class="punctuation section brackets end c++">]</span></span><span class="punctuation terminator c++">;</span>
+        ans <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">min</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">ans<span class="punctuation separator c++">,</span> <span class="meta function-call c++"><span class="support function C99 c">abs</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">left_val<span class="keyword operator arithmetic c">-</span>right_val</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+    <span class="keyword control c++">return</span> ans<span class="punctuation terminator c++">;</span> <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span>std::accumulate(A.begin()+1,A.end(),0);
+</span></span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+
+<span class="storage type c">int</span> <span class="meta function c++"><span class="entity name function c++">solution</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">vector<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> <span class="keyword operator c">&amp;</span><span class="variable parameter c++">A</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    <span class="keyword control c++">return</span> <span class="meta function-call c++"><span class="variable function c++">shortest_distance</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">A</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+</span></code></pre>
+<p><a href="https://cppreference.com/w/cpp/algorithm/accumulate">std::accumulate</a>
+<a href="https://cppreference.com/w/cpp/numeric/math/abs">std::abs, std::labs, std::llabs, std::imaxabs</a>
+<a href="https://cppreference.com/w/cpp/algorithm/min">std::min</a>''</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/3221812/how-to-sum-up-elements-of-a-stdvector">c++ - How to sum up elements of a std::vector?</a>
+<ul>
+<li>Some good ways to combine elements in cpp.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: FOTA updates on nRF54L Series devices</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">FOTA updates on nRF54L Series devices</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-04 12:09:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu/nordic">
+                        <span>mcu/nordic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nrf54">
+                        <span>nrf54</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/prod/update/ota">
+                        <span>prod/update/ota</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/sdk">
+                        <span>sdk</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html">FOTA updates on nRF54L Series devices</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#doc/official : <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_basics.html">Introduction to KMU key provisioning</a>
+<ul>
+<li>#acronym Hardware KMU : Key Management Unit. This is the act of ID-ing IC and MCU.
+<ul>
+<li>#infosec purpose mainly</li>
+</ul>
+</li>
+<li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html">Performing KMU provisioning</a></li>
+</ul>
+</li>
+<li>
+<h2>#acronym #bootloader <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/dfu_config.html">Configuring DFU: Device Firmware Update and MCUboot</a></h2>
+</li>
+</ul>
+</li>
+<li>Reason: serious contender to Espressif chips due to sheer enormous amount of software stack.</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#pcb for nRF54H20 : <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54h/ug_nrf54h20_custom_pcb.html">Configuring your application for a custom PCB</a>
+<ul>
+<li>#blob #config <a href="https://devzone.nordicsemi.com/f/nordic-q-a/124647/bicr-file-for-custom-boards">BICR file for custom boards - Nordic Q&amp;A - Nordic DevZone - Nordic DevZone</a>
+<ul>
+<li>Recap: hardware config to interacts with board: power schemes, oscillators, GPIO drive, etc...</li>
+<li>Resolution: a JSON file... which consumed by Nordic's IDE/SDK utils.
+<ul>
+<li>similar to User Option bytes in other ARM chips, but more flexible and wider scope.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

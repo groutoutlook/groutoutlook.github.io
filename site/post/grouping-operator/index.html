@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: grouping operator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">grouping operator</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-15 08:01:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/operator">
+                        <span>operator</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Parentheses <code>()</code>:<a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_operators#grouping-operator--">grouping operator</a>
+<ul>
+<li>Recap: which most useful when you do Grouping assignment statements.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">($var = 1 + 2) -eq 3
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: I'm trying to find information about two dot <code>..</code> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_operators#range-operator-">range operator</a>
+<ul>
+<li>which most useful when you iota 1..10 or 'a'..'z'.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#dotnet <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_operators#static-member-operator-">Static member operator <code>::</code></a>
+<ul>
+<li>.NET member could be tab suggestion.</li>
+</ul>
+</li>
+<li>#type/safety : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_operators#null-conditional-operators--and-">Null-conditional operators <code>?.</code> and <code>?[]</code></a>
+<ul>
+<li>Safe guard property/method which can probably be null, as in json object or custom class.</li>
+<li>#til that even array/map can have null coalescing like that.</li>
+</ul>
+</li>
+<li>#rust: <a href="https://doc.rust-lang.org/reference/expressions/range-expr.html">Range expressions <code>..</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;input.conf&#x60; syntax</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;input.conf&#x60; syntax</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-16 01:22:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/media">
+                        <span>media</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mpv">
+                        <span>mpv</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mpv.io/manual/master/#input-conf"><code>input.conf</code> syntax</a>
+<ul>
+<li>Recap: while single-key bindings override builtin bindings, it's not for multi-key sequences.
+For example, <code>b-c</code> sequence in input.conf would be overridden by builtin binding <code>b</code>.
+In this case, if you don't care about <code>b</code>, you can <code>b ignore</code>.
+<ul>
+<li>bind both <code>b</code> and <code>a-b-c</code> won't work, since <code>b</code> would override <code>a-b-c</code>
+<ul>
+<li>add <code>a-b ignore</code> would allow that, longest match <code>a-b</code> is ignored, and following <code>c</code> would trigger
+the sequence <code>a-b-c</code> while <code>b</code> alone would still work.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>input-keylist <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list all keybindings.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+<ul>
+<li><code>load-input-conf &lt;filename&gt;</code> Load an input configuration file, similar to <code>--input-conf</code> option.
+If the file was already included, its previous bindings are not reset before it is reparsed.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://mpv.io/manual/master/#miscellaneous-commands">Miscellaneous Commands</a>
+<ul>
+<li><code>ignore</code>, <code>ab-loop</code>,...</li>
+</ul>
+</li>
+<li><a href="https://mpv.io/manual/master/#flat-command-syntax">Flat command syntax</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;RAMMap&#x60; - Sysinternals</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;RAMMap&#x60; - Sysinternals</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-22 05:33:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/rammap"><code>RAMMap</code> - Sysinternals</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">sudo run pwsh
+# eula very much accepted
+ni -path HKLM:\SOFTWARE\Sysinternals -ItemType Key
+New-ItemProperty -path HKLM:\SOFTWARE\Sysinternals -PropertyType DWord -Name EulaAccepted -Value 1 -Force
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://youtu.be/XF72UwcteWE">Big Brother is Watching! - Bartek Bielawski - PSConfEU 2025</a></li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns#autorunsc-usage"><code>Autoruns</code> - Sysinternals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

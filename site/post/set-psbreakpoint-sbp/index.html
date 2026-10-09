@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Set-PSBreakpoint&#x60; | &#x60;sbp&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Set-PSBreakpoint&#x60; | &#x60;sbp&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-30 12:27:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/repl">
+                        <span>repl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint"><code>Set-PSBreakpoint</code> | <code>sbp</code></a>
+<ul>
+<li>Recap: invoke breakpoint inside REPL.</li>
+<li>Run: Can run in <code>psm1</code> as well as <code>ps1</code>.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">sbp -s &quot;$((gmo quickPwshUtils).Path)&quot; -Line 242 # REPL debugging with powershell.
+</span></code></pre>
+<ul>
+<li>Or can run in function/cmdlets by name/alias. <code>-Commmand</code> can not be used with <code>-Line</code>.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">sbp -c &quot;rvcb&quot; 
+</span></code></pre>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_debuggers#debugging-functions">Debugging Advanced Functions (with <code>begin</code>,<code>process</code>,<code>end</code>)</a>
+It will break on each of start on those 3 blocks. Otherwise, it's breaking on start only.</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_debuggers#debugger-commands">about_Debuggers | Debugger commands </a>
+<ul>
+<li>When you hit Breakpoints in REPL. it will prompt you that you have enter debug mode.
+Use this as <code>gdb</code>, quite funny to see that.
+<ul>
+<li>Keybinding(?)/Command: <code>?</code> to see all help.
+only care about <code>s</code>/<code>v</code>/<code>c</code>. <code>o</code> step out. <code>l</code> show contexts. <code>k</code> show call stacks.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint#example-3-set-a-breakpoint-on-a-variable">breakpoint on a variable</a>
+<ul>
+<li>breakpoint on every command that begins with specified text, by glob.</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint#example-5-set-a-breakpoint-depending-on-the-value-of-a-variable">breakpoint depending on the value of a variable/data breakpoint in powershell</a></li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_debuggers#the-debugger-environment">debugger environment - <code>$PSDebugContext</code></a></li>
+</ul>
+</li>
+<li>Root: <a href="https://blog.ironmansoftware.com/daily-powershell/powershell-debugging-terminal/">Stepping through PowerShell Scripts with the PowerShell Terminal</a></li>
+<li>Reason: I need a data breakpoint in powershell, within #ide/vscode.</li>
+<li>Related: <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-psbreakpoint"><code>Get-PSBreakpoint</code> | <code>gbp</code></a>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/enable-psbreakpoint"><code>Enable-PSBreakpoint</code> | <code>ebp</code></a></li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/disable-psbreakpoint"><code>Disable-PSBreakpoint</code> | <code>dbp</code></a></li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/remove-psbreakpoint"><code>Remove-PSBreakpoint</code> | <code>rbp</code></a></li>
+<li>#process <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/debug-process"><code>Debug-Process</code></a>
+<ul>
+<li>so much more advanced that just <code>ps</code>/<code>kill</code>... , since it's using MSVC's JIT debugger.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

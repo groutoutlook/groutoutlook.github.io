@@ -1,0 +1,1 @@
+D:/ProgramDataD/Notes/Obsidian/MainVault/note_algo_lang/Chemistry.Journal.md

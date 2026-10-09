@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mpc&#x60; playlist control - queue commands</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mpc&#x60; playlist control - queue commands</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-27 09:12:24 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option/mpd">
+                        <span>cli/option/mpd</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/command">
+                        <span>command</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://musicpd.org/doc/mpc/html/#queue-commands"><code>mpc</code> playlist control - queue commands</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">mpc add (spa -leaf $pwd) # add based on relative path of filesystem. `mpc add /` add everything in db.
+mpc ins &quot;$(mpc search &quot;(title contains &#39;Magnetic&#39;)&quot;)&quot; &amp;&amp; mpc q # ins is `insert`&#39;s alias
+mpc searchplay title &#39;Magnetic&#39; # search and play rightaway
+$(mpc search title ive) |%{ mpc in $_} &amp;&amp; mpc q
+mpc search &quot;(file contains &#39;jazz&#39;)&quot;|%{mpc ins $_}
+mpc clear # delete whole queue ; `mpc crop` keep the current song only
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://mpd.readthedocs.io/en/latest/protocol.html#filters"><code>mpd</code>/<code>mpc</code> search syntax</a>
+<ul>
+<li>Root: <a href="https://github.com/MusicPlayerDaemon/MPD/issues/2464">FR: playing audio track from video files (<code>mkv</code>, <code>webm</code>, <code>mp4</code>,...)</a></li>
+<li>Run: current decoder already trying to select the separate audio track...
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\A</span>ccendio-IVE.mkv<span class="variable parameter option shell"><span class="punctuation definition parameter shell">  -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:a<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:a<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>strict</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>2</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a aac .<span class="constant character escape shell">\A</span>ccendio-IVE-multi.mkv</span>
+
+<span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">files</span></span></span></span><span class="meta function-call arguments shell"> = (gci <span class="keyword operator regexp quantifier shell">*</span>webm,<span class="keyword operator regexp quantifier shell">*</span>mkv<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>exclude</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>-reenc<span class="punctuation definition string end shell">&quot;</span></span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span><span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">files</span></span></span></span><span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> prevent recurring reencode...</span><span class="comment line number-sign shell">
+</span>    <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">file</span></span> = <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>.BaseName;
+    ffmpeg -i <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>.<span class="constant character escape shell">\$</span>(<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>.Name)<span class="punctuation definition string end shell">&quot;</span></span>  -map 0:v -c:v copy -map 0:a -c:a copy -map 0:a -strict -2 -c:a aac <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>.<span class="constant character escape shell">\$</span>file-reenc.mkv<span class="punctuation definition string end shell">&quot;</span></span>
+    rm <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span> ; mv <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>.<span class="constant character escape shell">\$</span>_-reenc.mkv<span class="punctuation definition string end shell">&quot;</span></span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>./<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>.mkv<span class="punctuation definition string end shell">&quot;</span></span>
+<span class="punctuation section expansion brace end shell">}</span></span></span>
+</span></code></pre>
+</li>
+<li>Related: <a href="https://stackoverflow.com/questions/21567029/ffmpeg-to-duplicate-an-audio-stream-and-encode-this-new-stream">Ffmpeg to duplicate an audio stream and encode this new stream</a></li>
+</ul>
+</li>
+<li><code>search</code>/<code>searchplay</code> <!-- raw HTML omitted --> <!-- raw HTML omitted --> [<!-- raw HTML omitted --> <!-- raw HTML omitted -->]... Searches for substrings in song tags. (and play).
+Any number of tag type and query combinations can be specified.
+tag: artist, album, title, track, name, genre, date, composer, performer, comment, disc, filename, or any (to match any tag).</li>
+<li><code>find</code>/<code>findadd</code>  <!-- raw HTML omitted --> <!-- raw HTML omitted --> [<!-- raw HTML omitted --> <!-- raw HTML omitted -->]... == <code>search</code> but tag values must match query exactly
+instead of doing a substring match.</li>
+<li><code>add</code> if you do <code>add /</code> it will add everything in database.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/MusicPlayerDaemon/mpc/issues/125">search and insert a music</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

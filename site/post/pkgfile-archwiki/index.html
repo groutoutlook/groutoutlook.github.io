@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;pkgfile&#x60; - ArchWiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;pkgfile&#x60; - ArchWiki</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-04 10:40:01 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman/pacman">
+                        <span>pacman/pacman</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wiki.archlinux.org/title/Pkgfile"><code>pkgfile</code> - ArchWiki</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">pkgfile</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span> nmap <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> have to download the packages.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">pacman</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Ql</span> nmap </span>
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:<a href="https://bbs.archlinux.org/viewtopic.php?id=170225">Pacman to show all the files inside a package that is not installed / Pacman &amp; Package Upgrade Issues / Arch Linux Forums</a>
+<ul>
+<li>try to use <code>nc</code> in #termux, end up with <a href="https://man.openbsd.org/nc.1"><code>netcat-openbsd</code> - OpenBSD manual pages</a>
+<ul>
+<li>even have to alias it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

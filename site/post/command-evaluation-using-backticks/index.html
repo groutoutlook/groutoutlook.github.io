@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Command Evaluation Using Backticks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Command Evaluation Using Backticks</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-04 09:50:02 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shell">
+                        <span>shell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://just.systems/man/en/command-evaluation-using-backticks.html">Command Evaluation Using Backticks</a>
+<ul>
+<li>Recap: backticks in <code>just</code> to store command's output into variable. Shell expansion with <code>just</code>.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">localhost</span></span><span class="meta function-call arguments shell"> := <span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="meta function-call shell"><span class="variable function shell">dumpinterfaces</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">cut</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span>:<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f2</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">sed</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>s/\/.*//<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">sed</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>s/ //g<span class="punctuation definition string end shell">&#39;</span></span></span><span class="punctuation section group end shell">`</span></span></span>
+</span></code></pre>
+</li>
+<li>Resolution: Better yet we have <a href="https://just.systems/man/en/functions.html#external-commands">Functions - External commands</a>
+<ul>
+<li>which is <code>shell(...)</code> in here. Although it only works reliably with unix shells.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/mokeyish/smartdns-rs/blob/main/justfile">smartdns-rs justfile</a>
+<ul>
+<li>#til : somehow <code>positional-arguments</code> tail the recipe's own name into the argument list.
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">set shell := [&quot;C://Program Files//Git//bin//bash.exe&quot;,&quot;-eu&quot;]
+set windows-shell := [&quot;pwsh.exe&quot;, &quot;-NoLogo&quot;, &quot;-NoProfile&quot;,&quot;-Command&quot;]
+
+alias cb := custom-build-for-win
+[group(&#39;dev&#39;)]
+[windows]
+custom-build-for-win +args=&quot;&quot;:
+  @cargo build --release; echo 
+</span></code></pre>
+<ul>
+<li>Run <code>just cb</code>: build -&gt; echo <code>custom-build-for-win</code> which is theoretically <code>$0</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

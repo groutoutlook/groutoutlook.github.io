@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;res2cpp&#x60; Tool for embedding files in C++ source code.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;res2cpp&#x60; Tool for embedding files in C++ source code.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-17 01:35:03 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/asset">
+                        <span>asset</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/houmain/res2cpp"><code>res2cpp</code> Tool for embedding files in C++ source code.</a>
+<ul>
+<li>Recap: metadata generator, in place of <code>#embed</code> directives which hasnt come to MSVC and pal.</li>
+<li>Run: Worked on v6.24 and <code>-std=gnu++2c</code>/<code>-std=gnu++26</code>. Tried on <a href="https://github.com/groutoutlook/RGB_CPP_V2_2024">the Keil repo</a>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage modifier c++">const</span> <span class="storage type c">char</span> message<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator assignment c">=</span>
+<span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+#embed <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>flash_log.txt<span class="punctuation definition string end c">&quot;</span></span> <span class="meta function-call c++"><span class="variable function c++">if_empty</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>M<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>i<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>s<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>s<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>i<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>n<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>g<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span><span class="constant character escape c">\n</span><span class="punctuation definition string end c">&#39;</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span>
+<span class="punctuation separator c++">,</span><span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span><span class="constant character escape c">\0</span><span class="punctuation definition string end c">&#39;</span></span> <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> null terminator
+</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+
+<span class="storage type c">void</span> <span class="meta function c++"><span class="entity name function c++">dump</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="storage modifier c++">const</span> <span class="support type stdint c">uint8_t</span> <span class="variable parameter c++">arr</span><span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="punctuation section brackets end c++">]</span></span><span class="punctuation separator c++">,</span> <span class="support type sys-types c">size_t</span> <span class="variable parameter c++">size</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++">
+</span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    <span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="support type sys-types c">size_t</span> i <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">0</span><span class="punctuation terminator c++">;</span> i <span class="keyword operator comparison c">!=</span> size<span class="punctuation terminator c++">;</span> <span class="keyword operator arithmetic c">+</span><span class="keyword operator arithmetic c">+</span>i<span class="punctuation section group end c++">)</span></span>
+        <span class="meta function-call c++"><span class="support function C99 c">printf</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span><span class="constant other placeholder c">%02X</span><span class="constant other placeholder c">%c</span><span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> arr<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>i<span class="punctuation section brackets end c++">]</span></span><span class="punctuation separator c++">,</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span>i <span class="keyword operator arithmetic c">+</span> <span class="constant numeric c++">1</span><span class="punctuation section group end c++">)</span></span> <span class="keyword operator arithmetic c">%</span> <span class="constant numeric c++">16</span> <span class="keyword operator ternary c">?</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span> <span class="punctuation definition string end c">&#39;</span></span> <span class="keyword operator ternary c">:</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span><span class="constant character escape c">\n</span><span class="punctuation definition string end c">&#39;</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span>puts(&quot;&quot;);
+</span></span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://github.com/YosysHQ/nextpnr/commit/b127fa9c110b72e56693526a1bfba9e8bcbebada">bba: fix <code>#embed</code> on Windows. · YosysHQ/nextpnr@b127fa9</a>
+<ul>
+<li>[2025-10-04 15:31:23] at this time this is the only way to do <code>#embed</code> in WIN32.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

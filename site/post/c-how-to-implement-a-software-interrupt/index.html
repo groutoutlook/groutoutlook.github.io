@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c# - How to implement a software interrupt?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c# - How to implement a software interrupt?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-17 12:57:10 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/control/flow">
+                        <span>control/flow</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/csharp">
+                        <span>csharp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dotnet">
+                        <span>dotnet</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/75965221/how-to-implement-a-software-interrupt/75965543#75965543">c# - How to implement a software interrupt?</a>
+<ul>
+<li>Recap: only event, no interrupt for software. have to implement your simulated interrupt on top of event system.</li>
+<li>Run:</li>
+<li>Resolution: Only kernel, either Windows or Linux can trigger interrupt, not as MCU.
+<ul>
+<li>where you can trigger interrupt by changing value of some registers.</li>
+<li>Jump table, IVT, ... IT's foregin to the desktop world to implement.
+<ul>
+<li>either polling or some watcher/async coroutine.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #cpp #linux #syscall <a href="https://mp.weixin.qq.com/s/6HB0gA72ZdAfzB9R2bBnlw">Xiaomi Mi C++ soft opening two sides: the difference between select, poll, and epoll, why is epoll efficient?</a>
+<ul>
+<li>#doc/offical: <a href="https://www.mankier.com/7/epoll"><code>epoll</code> I/O event notification facility | Miscellanea | Man Pages | ManKier</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#comparison: <a href="https://stackoverflow.com/questions/76598320/is-epoll-a-better-api-than-io-uring">asynchronous - Is epoll a better API than io_uring?</a>
+<ul>
+<li>#alternative to <code>epoll</code> is #libc <a href="https://github.com/mheily/libkqueue"><code>libkqueue</code> kqueue(2) compatibility library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

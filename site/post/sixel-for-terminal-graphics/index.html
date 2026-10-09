@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: sixel for terminal graphics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">sixel for terminal graphics</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-01 12:19:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/til">
+                        <span>til</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://konfou.xyz/posts/sixel-for-terminal-graphics/">sixel for terminal graphics</a>
+<ul>
+<li>Recap:</li>
+<li>Run: Quick dirty tricks to test <code>sixel</code>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gnuplot</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>e</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>set term sixelgd truec; test palette<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">gnuplot</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>e</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>set term sixelgd truec; plot &#39;Pastedimage20240929191645.png&#39; binary filetype=png with rgbalpha <span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>Turns out <code>Windows Terminal</code> work quite well with <code>sixel</code> here.
+<ul>
+<li>I could go up and down on terminal output and the plot is still intact, now like it will be broken or anything.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>Check <a href="https://stackoverflow.com/questions/67419355/gnuplot-how-to-insert-image-in-graph">gnuplot: How to insert image in graph?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

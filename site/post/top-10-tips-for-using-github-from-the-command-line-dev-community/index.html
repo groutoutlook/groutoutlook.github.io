@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: top 10 tips for using github from the command line - dev community</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">top 10 tips for using github from the command line - dev community</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-23 04:01:26 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/github/cli">
+                        <span>github/cli</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://dev.to/github/top-10-tips-for-using-github-from-the-command-line-1me6">top 10 tips for using github from the command line - dev community</a>
+<ul>
+<li>Recap: visit branch on browser <code>gh browse -b dev</code>
+<ul>
+<li>run: on raddebugger repo.
+<ul>
+<li>also <code>gh browse -c=last</code> will prompt last commit. notice the branch.</li>
+<li><code>gh browse -c=33326a8fa66bce6169de8bb6ecc4b550fe3e33ec</code>
+<ul>
+<li>it's partial match from the initial, up to the 5th digit. it's the most stable behaviour.</li>
+<li>short sha-1 is 7 hex digits. long one is 40 digits.
+<ul>
+<li><a href="https://stackoverflow.com/questions/28792784/why-does-git-use-a-cryptographic-hash-function">why does git use a cryptographic hash function? - stack overflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>run: <code>gh browse -c=&quot;$(git rev-parse --short head)&quot;</code> on any repo which has updated remote.
+<ul>
+<li>has <code>--short</code> flag or not is actually fine, since <code>gh</code> accept all of it.</li>
+<li>#powershell : <code>gh browse -c=&quot;$((git rev-parse --short head).substring(0,5))&quot;</code>
+<ul>
+<li>if it's (0,4) ; could match on some small hash amounts of repo.</li>
+<li>recommend use up to 5 in most case. even that is still too small.</li>
+<li>it's convenient if you want a web viewer of those files inside browser.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: #discussion <a href="https://lobste.rs/s/jcio2j/evolving_git_for_next_decade">Evolving Git for the next decade</a></li>
+<li>Resolution: all of them prompt a small cli picker as <code>fzf</code>...
+<ul>
+<li><code>gh auth</code></li>
+<li><code>gh pr create</code>
+<ul>
+<li>and <code>-t</code> <code>-b</code> <code>-a</code> flags.</li>
+</ul>
+</li>
+<li><code>gh issue create</code>
+<ul>
+<li>and <code>-t</code> <code>-b</code> <code>-a</code> flags.</li>
+</ul>
+</li>
+<li><code>gh release create</code> with <code>-t</code> flags only.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

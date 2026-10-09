@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: MicroKeen v4带屏高速DAPLINK仿真器在线脱机下载器烧录替代JLINK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">MicroKeen v4带屏高速DAPLINK仿真器在线脱机下载器烧录替代JLINK</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-04 10:29:17 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/offline">
+                        <span>offline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/recorder">
+                        <span>recorder</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/taobao">
+                        <span>taobao</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://item.taobao.com/item.htm?id=1020501356342">MicroKeen v4带屏高速DAPLINK仿真器在线脱机下载器烧录替代JLINK</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#guide <a href="https://mp.weixin.qq.com/s/3kNaZb-_IFLfAVBoS0judQ">MKLINK v4 RTT viewer guide</a></li>
+<li><a href="https://microboot.readthedocs.io/zh-cn/latest/tools/microlink/SystemView/">SystemView for mklink v4</a></li>
+<li><a href="https://microboot.readthedocs.io/zh-cn/latest/tools/microlink/vofa/">VOFA+ for mklink v4</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-py"><span class="source python"><span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">vofa</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">send</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="constant numeric integer hexadecimal python"><span class="punctuation definition numeric hexadecimal python">0x</span>20000030</span><span class="punctuation separator arguments python">,</span><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">uint8_t<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span><span class="constant numeric integer hexadecimal python"><span class="punctuation definition numeric hexadecimal python">0x</span>2000154c</span><span class="punctuation separator arguments python">,</span><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">float<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span><span class="constant numeric integer hexadecimal python"><span class="punctuation definition numeric hexadecimal python">0x</span>20001550</span><span class="punctuation separator arguments python">,</span><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">float<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span><span class="constant numeric float python">0<span class="punctuation separator decimal python">.</span>00001</span></span><span class="punctuation section arguments end python">)</span></span>
+<span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> 0x20000030 Variable 1 memory address;
+</span><span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> `uint8_t` Variable 1 data type;
+</span><span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> 0.00001 Read period, per second, minimum support 1us
+</span><span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> relevant variable address can be found by looking at the .map file generated by MDK compilation.
+</span></span></code></pre>
+</li>
+<li>Recap: <a href="https://www.vofa.plus/docs/function/release_note/?v=4/2/2026">Changelog | VOFA-Plus host computer</a></li>
+<li>Related: <a href="https://www.vofa.plus/downloads/?index=1&amp;plugin_index=1">Download Center | VOFA-Plus host computer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://microboot.readthedocs.io/zh-cn/latest/tools/microlink/microlink/">简介 - MicroBoot</a></li>
+<li>Related: this use <code>pikapython</code> for its scripting runtime
+<ul>
+<li>#libc <a href="https://github.com/Aladdin-Wang/MicroBoot"><code>MicroBoot</code> framework of modular code designed to simplify and accelerate the upgrade and development process of embedded microcontroller programs.</a>
+<ul>
+<li>an implementation of YMODEM for embedded application.</li>
+<li><a href="https://microboot.readthedocs.io/zh-cn/latest/tools/microlink/microlink/#7ymodem">mklink Built-in Ymodem protocol download</a>
+<ul>
+<li>transfer files between (embedded) devices. or you link up a console and send binary in runtime.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/Aladdin-Wang/MicroBootRom"><del>MicroBootLoader</del> MicroBootRom</a>
+<ul>
+<li><a href="https://github.com/Aladdin-Wang/MicroBoot_Demo">MicroBoot DEMO 的使用例程</a></li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/oN0jrqesN2sDaaSfIgineQ">In the era of all in AI, I still insist on rubbing the bootloader with my hands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

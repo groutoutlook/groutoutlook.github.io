@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about_Output_Streams</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about_Output_Streams</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-29 05:12:59 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/stdout">
+                        <span>stdout</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_output_streams">about_Output_Streams</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&amp;{
+Write-Warning &quot;hello`n&quot;
+Write-Error &quot;hello`n&quot;
+Write-Output &quot;hi&quot;
+} 3&gt;&amp;1 2&gt;&amp;1 &gt; ~\redirection.log
+2&gt;&amp;1 # Redirects the specified stream(here is Error) to the Success stream.
+*&gt;&amp;1 # Write-* come to stdout/Success stream
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_redirection">about_Redirection</a>
+<ul>
+<li>
+<p>Type of stream:</p>
+<table>
+<thead>
+<tr>
+<th>Stream #</th>
+<th>Description</th>
+<th>Write Cmdlet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Success</strong> Stream</td>
+<td><code>Write-Output</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Error</strong> Stream</td>
+<td><code>Write-Error</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Warning</strong> Stream</td>
+<td><code>Write-Warning</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Verbose</strong> Stream</td>
+<td><code>Write-Verbose</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Debug</strong> Stream</td>
+<td><code>Write-Debug</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Information</strong> Stream</td>
+<td><code>Write-Information</code>, <code>Write-Host</code></td>
+</tr>
+<tr>
+<td>*</td>
+<td>All Streams</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_redirection#powershell-redirection-operators">Redirection operators</a>: <code>&gt;</code>(Send),<code>&gt;&gt;</code>(Append),<code>&gt;&amp;[1..6]</code>(redirect to [1..6])</p>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/45071557/powershell-redirect-stderr-and-stdout-to-two-different-places/79695608#79695608">Powershell redirect stderr and stdout to two different places</a></li>
+<li>Related:
+<ul>
+<li>all kind of write : Write-Debug Write-Error Write-Host Write-Information Write-Output Write-Progress Write-Verbose Write-Warning</li>
+<li>Some <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_redirection#notes">Notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

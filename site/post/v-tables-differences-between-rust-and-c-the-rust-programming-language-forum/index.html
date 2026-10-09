@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: V-tables differences between Rust and C++ - The Rust Programming Language Forum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">V-tables differences between Rust and C++ - The Rust Programming Language Forum</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-28 11:00:44 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/polymorphism">
+                        <span>polymorphism</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://users.rust-lang.org/t/v-tables-differences-between-rust-and-c/92445">V-tables differences between Rust and C++ - The Rust Programming Language Forum</a>
+<ul>
+<li>Recap: for Runtime polymorphism, which is <code>virtual</code> function in C++.
+<ul>
+<li>and <code>dyn trait</code> in Rust.
+<ul>
+<li>They are all in <code>vtable</code>. Which is a metadata structure which consists one or many of those dynamically dispatcher.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://lukasatkinson.de/2018/interface-dispatch/">Interface Dispatch | Lukas Atkinson</a>
+<ul>
+<li>well in embedded world you wont have that much chance to call those actual vtables.
+<ul>
+<li>Better do something like static polymorphism thigns.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution: well the main things that we still use <code>vtables</code> related method/trait is
+<ul>
+<li>Dependency Injection for testing/mocking/debugging</li>
+<li>Calling functions at compile time. Quite exotic isnt it.</li>
+</ul>
+</li>
+<li>Reason: #compsci concepts ofc.
+<ul>
+<li><a href="https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java">oop - What is the difference between dynamic and static polymorphism in Java?</a>
+<ul>
+<li>more terms like <code>late binding</code> vs <code>early binding</code> and shits.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/2413483/virtual-method-tables">c# - Virtual method tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

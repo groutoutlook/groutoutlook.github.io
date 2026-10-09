@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TILs: helix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <h1>TILs for helix</h1>
+
+        <hr>
+
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/feat-implement-reg-register-expansion">Feat: implement &#x60;%reg{}&#x60; register expansion</a></h3>
+                <span class="til-date">2026-04-16 10:07:49 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/regex">
+                    <span>regex</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/now-i-can-p-r-and-p-r-to-paste-root-and-related-of-url">now I can &#x60;P R&#x60; and &#x60;P r&#x60; to paste Root and Related of URL.</a></h3>
+                <span class="til-date">2026-03-06 06:12:30 PM</span>
+                <a class="til-tag" href="/category/editting">
+                    <span>editting</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/jrnl">
+                    <span>jrnl</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/command-line">Command line</a></h3>
+                <span class="til-date">2026-01-07 01:59:13 PM</span>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/zed-themes-export-fish-functions-zed-to-helix-jq-at-master-dangh-zed-themes-export-fish">zed_themes_export.fish/functions/zed_to_helix.jq at master · dangh/zed_themes_export.fish</a></h3>
+                <span class="til-date">2025-09-04 10:11:15 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/json">
+                    <span>json</span>
+                </a>
+                <a class="til-tag" href="/category/theme">
+                    <span>theme</span>
+                </a>
+                <a class="til-tag" href="/category/toml">
+                    <span>toml</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/default-one-with-the-lsp">Default one with the lsp</a></h3>
+                <span class="til-date">2025-08-26 12:12:39 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/lsp">
+                    <span>lsp</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/adding-rainbow-bracket-queries">Adding rainbow bracket queries</a></h3>
+                <span class="til-date">2025-08-23 08:50:40 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/command-line">Command line</a></h3>
+                <span class="til-date">2025-08-19 12:05:09 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/command">
+                    <span>command</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/g-g-is-goto-next-change-goto-prev-change-now">&#x60;]g&#x60;/&#x60;[g&#x60; is &#x60;goto_next_change&#x60;/&#x60;goto_prev_change&#x60; now.</a></h3>
+                <span class="til-date">2025-08-01 09:54:39 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/normal-mode-insert-character-interactive-insert-char-without-leaving-normal-select-mode">Normal mode: &#x60;insert_character_interactive&#x60; insert char without leaving normal/select mode.</a></h3>
+                <span class="til-date">2025-07-31 09:57:42 AM</span>
+                <a class="til-tag" href="/category/command">
+                    <span>command</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/insert">
+                    <span>insert</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mapping-to-open-markdown-formatted-url-like-vim-s-gx">mapping to open Markdown-formatted URL (like Vim&#x27;s &#x60;gx&#x60;)</a></h3>
+                <span class="til-date">2025-07-26 04:35:42 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/uri">
+                    <span>uri</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/using-helix-s-global-search-helix-editor-tutorials">Using Helix&#x27;s Global Search | Helix Editor Tutorials</a></h3>
+                <span class="til-date">2025-07-22 06:59:14 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/global-search-space-grep-entire-code-base-as-space-f-w-does-in-nvim">&#x60;global_search&#x60; &#x3D;&#x3D; &#x60;space /&#x60;, grep entire code base as &#x60;space f w&#x60; does in &#x60;nvim&#x60;</a></h3>
+                <span class="til-date">2025-07-22 06:01:45 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/hx-merge-selections-alt-merge-consecutive-selections-alt-alt-shift">hx &#x60;merge_selections&#x60;&#x3D;&#x3D;&#x60;Alt+-&#x60;, &#x60;merge_consecutive_selections&#x60;&#x3D;&#x3D;&#x60;Alt+_&#x60;(&#x60;Alt+shift+-&#x60;)</a></h3>
+                <span class="til-date">2025-07-14 07:20:52 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/in-nvim-g-go-to-last-edited-gi-go-to-last-insert-location">in &#x60;nvim&#x60; &#x60;g;&#x60; go to last edited. &#x60;gi&#x60; go to last insert location.</a></h3>
+                <span class="til-date">2025-07-07 12:06:33 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/add-rotate-selections-first-last-commands-13615">Add rotate_selections_{first,last} commands #13615</a></h3>
+                <span class="til-date">2025-06-08 11:08:41 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/cd-to-current-file-s-directory-in-helix">&#x60;cd&#x60; to current file&#x27;s directory in helix</a></h3>
+                <span class="til-date">2025-06-06 10:33:10 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/languages">Languages</a></h3>
+                <span class="til-date">2025-06-03 06:07:48 PM</span>
+                <a class="til-tag" href="/category/file/extension">
+                    <span>file/extension</span>
+                </a>
+                <a class="til-tag" href="/category/format">
+                    <span>format</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/s-split-selection-not-only-spawn-new-cursor-but-can-help-you-remove-some-cursor-on-unwanted-character-as-well">&#x60;S&#x60; &#x3D;&#x3D; &#x60;split_selection&#x60; not only spawn new cursor but can help you remove some cursor on unwanted character as well.</a></h3>
+                <span class="til-date">2025-06-03 03:40:14 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/space-g-changed-file-picker-which-based-on-git-to-jump-on-last-changed">&#x60;space g&#x60; &#x3D;&#x3D; &#x60;changed_file_picker&#x60; which based on &#x60;git&#x60; to jump on last changed.</a></h3>
+                <span class="til-date">2025-06-03 11:16:49 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/picker">
+                    <span>picker</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/feature-request-universal-repl-issue-2806-helix-editor-helix">Feature request: universal REPL · Issue #2806 · helix-editor/helix</a></h3>
+                <span class="til-date">2025-06-03 10:43:51 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/issue">
+                    <span>issue</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/due-to-i-mapped-as-repeat-last-motion-keep-primary-selection-mapped-to-ctrl">Due to I mapped &#x60;,&#x60; as &#x60;repeat_last_motion&#x60;, &#x60;keep_primary_selection&#x60; mapped to &#x60;Ctrl+.&#x60;</a></h3>
+                <span class="til-date">2025-06-02 08:17:25 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/k-alt-k-use-regex-so-you-can-use-or-logic-to-whitelist-among-them">&#x60;K&#x60;/&#x60;Alt+K&#x60; use regex, so you can use &#x60;|&#x60; - OR logic to whitelist among them.</a></h3>
+                <span class="til-date">2025-06-02 01:15:34 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pipe-and-in-hx">Pipe &#x60;|&#x60; and &#x60;!&#x60; in &#x60;hx&#x60;</a></h3>
+                <span class="til-date">2025-05-31 04:37:07 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/pipeline">
+                    <span>pipeline</span>
+                </a>
+                <a class="til-tag" href="/category/tui">
+                    <span>tui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/a-very-useful-usage-is-when-you-selected-text-and-you-want-to-evaluate-underneath-math-expression">A very useful &#x60;|&#x60; usage is when you selected text, and you want to evaluate underneath math expression.</a></h3>
+                <span class="til-date">2025-05-31 12:15:34 PM</span>
+                <a class="til-tag" href="/category/cli/utils">
+                    <span>cli/utils</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/lsp-setup-in-helix-custom-one">LSP setup in &#x60;helix&#x60;, custom one.</a></h3>
+                <span class="til-date">2025-05-30 12:48:00 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/lsp">
+                    <span>lsp</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/uwu-colors-simple-language-server-to-colorize-hex-color-strings-via-textdocument-documentcolor">&#x60;uwu_colors&#x60; simple language server to colorize hex color strings via textDocument/documentColor</a></h3>
+                <span class="til-date">2025-05-30 12:41:06 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/color">
+                    <span>color</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/lsp">
+                    <span>lsp</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/mim-will-not-match-what-is-in-backtick-if-there-are-many-nested-level">&#x60;mim&#x60; will not match what is in backtick if there are many nested level.</a></h3>
+                <span class="til-date">2025-05-29 02:43:59 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/sort-command">&#x60;:sort&#x60; command</a></h3>
+                <span class="til-date">2025-05-29 01:35:24 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/abecodes-tabout-nvim-tabout-plugin-for-neovim">abecodes/tabout.nvim: tabout plugin for neovim</a></h3>
+                <span class="til-date">2025-05-27 02:48:04 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-bind-d-in-helix-to-be-the-same-as-nvim-which-is-delete-and-yank-till-end-of-line">I bind &#x60;D&#x60; in helix to be the same as &#x60;nvim&#x60; which is delete and yank till end of line,</a></h3>
+                <span class="til-date">2025-05-22 12:35:14 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/search-from-each-selection-issue-5672-helix-editor-helix">Search from each selection · Issue #5672 · helix-editor/helix</a></h3>
+                <span class="til-date">2025-05-19 11:04:50 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/command-line-toggle-option">Command line - &#x60;:toggle-option&#x60;</a></h3>
+                <span class="til-date">2025-05-19 12:07:56 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/statusline-indicator-to-show-number-of-selected-chars-by-wes-adams-pull-request-4682-helix-editor-helix">Statusline indicator to show number of selected chars by wes-adams · Pull Request #4682 · helix-editor/helix</a></h3>
+                <span class="til-date">2025-05-17 10:55:34 AM</span>
+                <a class="til-tag" href="/category/editor/status">
+                    <span>editor/status</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/add-support-for-continuous-hard-wrap-issue-2274-helix-editor-helix">add support for continuous hard wrap · Issue #2274 · helix-editor/helix</a></h3>
+                <span class="til-date">2025-05-16 04:24:49 PM</span>
+                <a class="til-tag" href="/category/formatting">
+                    <span>formatting</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vscode">
+                    <span>ide/vscode</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/if-you-want-to-paste-and-replace-under-match-you-have-to-enter-visual-selection-mode-first">if you want to paste and replace under match, you have to enter visual/selection mode first</a></h3>
+                <span class="til-date">2025-05-14 09:41:56 AM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/macros-helix">Macros | Helix</a></h3>
+                <span class="til-date">2025-05-08 04:12:06 PM</span>
+                <a class="til-tag" href="/category/basic">
+                    <span>basic</span>
+                </a>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/insert-mode">Insert mode</a></h3>
+                <span class="til-date">2025-04-28 12:05:00 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/mode/insert">
+                    <span>mode/insert</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/window-mode">Window mode</a></h3>
+                <span class="til-date">2025-04-25 11:35:58 PM</span>
+                <a class="til-tag" href="/category/editor/panes">
+                    <span>editor/panes</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/view-mode-z">View mode - &#x60;z&#x60;</a></h3>
+                <span class="til-date">2025-04-25 11:31:36 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/match-mode-keymap">Match mode - Keymap</a></h3>
+                <span class="til-date">2025-04-25 11:10:30 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/mode/match">
+                    <span>mode/match</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/custom-typable-commands-issue-4423-helix-editor-helix">Custom typable commands · Issue #4423 · helix-editor/helix</a></h3>
+                <span class="til-date">2025-04-24 01:33:27 PM</span>
+                <a class="til-tag" href="/category/command">
+                    <span>command</span>
+                </a>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/hx-goto-mode-initial-g">&#x60;hx&#x60; Goto mode - initial: &#x60;g&#x60;</a></h3>
+                <span class="til-date">2025-04-24 12:41:07 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/motion">
+                    <span>motion</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/felix-blog-a-review-of-helix-after-1-5-years">Felix&#x27; Blog - A Review of Helix after 1.5 Years</a></h3>
+                <span class="til-date">2025-03-16 04:53:29 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/introduction">
+                    <span>introduction</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/unimpaired-keymap">Unimpaired Keymap</a></h3>
+                <span class="til-date">2025-01-18 03:18:08 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding/default">
+                    <span>keybinding/default</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/support-for-macro-style-keybinding-issue-1383-helix-editor-helix">Support for macro-style keybinding · Issue #1383 · helix-editor/helix</a></h3>
+                <span class="til-date">2025-01-04 05:38:53 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/in-hx-u-redo-u-undo">in &#x60;hx&#x60; : &#x60;U&#x60; redo. &#x60;u&#x60; undo.</a></h3>
+                <span class="til-date">2024-12-21 02:07:37 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding/default">
+                    <span>keybinding/default</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/search-find-and-replace-text-in-helix">Search / Find and Replace text in helix</a></h3>
+                <span class="til-date">2024-12-13 09:48:00 AM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/space-mode-keymap">Space mode Keymap</a></h3>
+                <span class="til-date">2024-10-05 05:04:51 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/keymap">Keymap</a></h3>
+                <span class="til-date">2024-10-05 04:37:32 PM</span>
+                <a class="til-tag" href="/category/default/keybinding">
+                    <span>default/keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/three-things-that-helped-me-make-the-switch-to-helix-from-emacs">Three things that helped me make the switch to helix from emacs</a></h3>
+                <span class="til-date">2024-10-03 05:23:48 PM</span>
+                <a class="til-tag" href="/category/default/keybinding">
+                    <span>default/keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/regex-fuzzy-regular-expressions">regex - Fuzzy Regular Expressions</a></h3>
+                <span class="til-date">2024-10-02 02:04:42 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/share-configs-helix-editor-helix-discussion-1360">Share configs · helix-editor/helix · Discussion #1360</a></h3>
+                <span class="til-date">2024-10-01 03:51:02 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/interact-with-shell-output">interact with shell output</a></h3>
+                <span class="til-date">2024-05-18 06:13:16 PM</span>
+                <a class="til-tag" href="/category/editor">
+                    <span>editor</span>
+                </a>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/difference-between-matching-in-helix-and-neovim">difference between matching in helix and neovim</a></h3>
+                <span class="til-date">2024-05-12 06:01:46 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/neovim-made-it-too-hard-to-disable-lsp">Neovim  made it too hard to disable LSP.</a></h3>
+                <span class="til-date">2024-05-09 03:19:45 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+                <a class="til-tag" href="/category/ide/vs">
+                    <span>ide/vs</span>
+                </a>
+                <a class="til-tag" href="/category/neovim">
+                    <span>neovim</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/helix-editor-helix-a-post-modern-modal-text-editor">helix-editor/helix: A post-modern modal text editor.</a></h3>
+                <span class="til-date">2024-04-21 08:08:58 PM</span>
+                <a class="til-tag" href="/category/helix">
+                    <span>helix</span>
+                </a>
+            </header>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Bộ gõ tiếng Việt nguồn mở cho Windows 10/11</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Bộ gõ tiếng Việt nguồn mở cho Windows 10/11</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-17 11:16:04 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/typing">
+                        <span>typing</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/dinhngtu/VietType">Bộ gõ tiếng Việt nguồn mở cho Windows 10/11</a>
+<ul>
+<li>Recap: quite pleasant to use. <code>Win+Space</code>/<code>Win+Shift+Space</code> to switch languages.</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>#keybinding : <code>Alt+backtick</code> to toggle IME.
+<ul>
+<li>It's different from <code>GoTiengViet</code> which is not IME, it  pure key-logging</li>
+<li><code>Ctrl</code> (trong lúc gõ từ): Kết thúc từ ngay lập tức.</li>
+<li><code>Esc</code> (trong lúc gõ từ): Huỷ bỏ gõ từ, chuyển về phím được gõ ban đầu.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>#personal : <a href="https://github.com/groutoutlook/VietType_powershell">my fork</a>
+<ul>
+<li>default installer(WiX) currently placed them in <code>$env:{ProgramFiles(x86)}</code></li>
+<li>I <code>shim</code> them, and rename script files to <code>vietconf</code>
+<ul>
+<li>since it's IME not keylogger as GoTiengViet.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#acronym IME is also in my experience abbreviated.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: There is always &#x60;sourcehut&#x60;/&#x60;sr.ht&#x60; if you ever want to push code on cloud.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">There is always &#x60;sourcehut&#x60;/&#x60;sr.ht&#x60; if you ever want to push code on cloud.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-04 07:57:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/code/forge">
+                        <span>code/forge</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ssh">
+                        <span>ssh</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web">
+                        <span>web</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>There is always <code>sourcehut</code>/<code>sr.ht</code> if you ever want to push code on cloud.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> ~~remember to create that one repo in the web portal first.... or no? I&#39;m not sure, no CLI clue.~~</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">hut</span></span><span class="meta function-call arguments shell"> git create 2023_RGB_CPP</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> remote add srht git@git.sr.ht:<span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>golk/2023_RGB_CPP <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> https is read-only, remember to use git URI.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> then a prompt will asked you to authenticated via ssh user-agent, since we do git over ssh.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> push srht GodStatue_RGB <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> yeah, pretty much all the work.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution: I'm thinking of pushing to multiple remote, which can be easily managed over <code>just</code> recipes.
+<ul>
+<li>so sourcehut come to mind.</li>
+</ul>
+</li>
+<li>Reason: no official CLI.</li>
+<li>Root: <a href="https://sourcehut.org/pricing/">sourcehut pricing - the hacker's forge</a>
+<ul>
+<li>basically for alpha there is nothing to be paid for unless you want to do CI(builds.sr.ht)</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://paste.sr.ht/~golk">pastebin-alike of sourcehut</a></li>
+<li><a href="https://lists.sr.ht/">mailing lists service</a></li>
+<li><a href="https://todo.sr.ht/">todo/ticket tracking</a></li>
+<li>#cli <a href="https://git.sr.ht/~xenrox/hut"> <code>hut</code> CLI tool for sr.ht - sourcehut git</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

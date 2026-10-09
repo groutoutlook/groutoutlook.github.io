@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: PCB Editor | Via protection</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">PCB Editor | Via protection</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-26 10:16:52 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#via-treatment-properties">PCB Editor | Via protection</a>
+<ul>
+<li>Recap: filling via, tented, plugged and more...</li>
+<li>Run:</li>
+<li>Resolution: with <code>None</code> protection applied.. there will be no solder mask -&gt; you can solder on it even.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://forum.kicad.info/t/how-to-define-tented-and-not-tented-vias/41740">How to define tented and not tented vias - Layout</a>
+<ul>
+<li>Vias are covered by soldermask by default, there are no round graphic items on them in the Mask layer.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://forum.kicad.info/t/default-qfn-thermal-vias-are-0-2mm/64382/4">Default QFN thermal vias are 0.2mm - Layout / Footprints</a>
+<ul>
+<li>solder theft is a thing. it's partly why people find it easier solder in clean smd pad vs THT pad.</li>
+</ul>
+</li>
+<li><a href="https://www.protoexpress.com/blog/signal-integrity-via-stubs-effects-signal-attenuation-data-transfer-rates/">Via Stubs, Signal Attenuation and DTR | Sierra Circuits</a>
+<ul>
+<li>Root: <a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#via_backdrilling_and_post_machining_counterbores_and_countersink">Via backdrilling and post-machining (counterbores and countersinks)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

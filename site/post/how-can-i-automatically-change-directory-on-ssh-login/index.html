@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How can I automatically change directory on ssh login?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How can I automatically change directory on ssh login?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-24 11:13:07 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/server">
+                        <span>server</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://serverfault.com/questions/167416/how-can-i-automatically-change-directory-on-ssh-login">How can I automatically change directory on ssh login?</a>
+<ul>
+<li>Recap: either with <code>ssh hostname &quot;echo 'execute this command'&quot;</code></li>
+<li>Run: Or setting up <a href="https://www.mankier.com/5/ssh_config#RemoteCommand"><code>RemoteCommand</code></a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash">
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.mankier.com/5/ssh_config#Tokens">Tokens start with <code>%</code> as placeholder in ssh_config</a>
+<ul>
+<li>will be expanded at runtime.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

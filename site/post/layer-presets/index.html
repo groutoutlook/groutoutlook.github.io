@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: layer presets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">layer presets</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-21 03:32:03 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/navigation">
+                        <span>navigation</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/visual">
+                        <span>visual</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>Ctrl+tab</code> switch between <a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#layer_presets">layer presets</a> of Appearance panes. It doesnt require focus from you.
+<ul>
+<li>Recap: you can always click into the pane and <code>hide all but selected</code>. but this is faster.</li>
+<li>Resolution: there could also be <code>Layer Display Options</code> which can dim inactive layers, only keep active layer <strong>in appearance /of selected objects</strong> to be highligted.
+<ul>
+<li>![[Pasted image 20250521161452.png|200]]</li>
+<li>Other than this, in Right Side Bar -&gt; Appearance -&gt; Objects, you can change
+<ul>
+<li>Opacity value of almost everything.</li>
+<li>Colors.</li>
+<li>DRC warnings/errors.</li>
+</ul>
+</li>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#layer_controls">PCB Editor | Layer controls</a>
+<ul>
+<li>Right Side Bar -&gt; Appearance -&gt; Layers -&gt; Layer Display Options</li>
+<li>change Inactive layers opacity settings: Normal , Dim , Hide. by or <code>h</code> to cycle through.
+<ul>
+<li>Dim one will not let you select certain items by mouse(mostly graphic one like texts and measurement drawing).
+That's why you still have to put Normal most of the time.
+<ul>
+<li>Cant decide what should I call this behaviour, pro or con. Maybe situational.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&quot;Flip board View&quot; is in here. That's how you can set a Presets like &quot;Back Layers&quot; one.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: I tried to meddle with layer's transparency. It kinda messed up.
+<ul>
+<li>Double Click <strong>on the Square UI which show color</strong> to change color/opacity.
+<ul>
+<li>Related: double click on the layer name copy its name to clipboard though. #trivia I guess.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

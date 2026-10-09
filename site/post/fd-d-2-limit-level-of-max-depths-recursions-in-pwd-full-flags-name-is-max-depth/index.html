@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;fd -d 2&#x60; limit level of max depths/recursions in $pwd. Full flags name is &#x60;--max-depth&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;fd -d 2&#x60; limit level of max depths/recursions in $pwd. Full flags name is &#x60;--max-depth&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-07 12:12:52 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/search/files">
+                        <span>search/files</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>fd -d 2</code> limit level of max depths/recursions in $pwd. Full flags name is <code>--max-depth</code>
+<ul>
+<li>Recap: it is kinda the same as <code>eza -L=2</code>. well it's conflicted with <code>fd -d=2</code> like that.
+<ul>
+<li>#idea : I alias <code>eza --hyperlink -T</code> to <code>tree</code>.</li>
+</ul>
+</li>
+<li>Run: <code>tree -a -I.git</code> will ignore <code>.git</code> folder and visualize the rest of my dir.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fd</span></span><span class="meta function-call arguments shell"> exe$<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>HI</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d1 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> most commonly use-case of mine. list executable on pwd, no recursive.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">f</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>eexe</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>HI</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d3 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or just like this, commonly used to find release there.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> holopin<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>u <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> ripgrep saerch ignore the .gitignore.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li>Root:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/BurntSushi/ripgrep/issues/2237">max-depth doesn't seem to have an effect · Issue #2237 · BurntSushi/ripgrep</a>
+<ul>
+<li>ripgrep <code>rg -d=2</code> limit max depth.</li>
+<li><code>rg -F &quot;rg -d&quot;</code> can search with no regex. only with smart-case and case-insensitive additional matching.</li>
+<li><code>rg -U</code>|<code>--multiline</code>: Permit matches to span multiple lines.</li>
+<li><code>rg -s</code> : will search case-sensitive instead of my default, smart case.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="punctuation section group end shell">`</span></span>s<span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="punctuation section group end shell">`</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>swp</span></span><span class="keyword operator logical pipe shell">|</span><span class="meta function-call shell"><span class="variable function shell">b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> with rgj it&#39;s double the fun.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-07-13 12:07:00] search for special symbols is especially hard in <code>powershell</code>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">rgj -F &#39;`$`?&#39;
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

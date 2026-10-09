@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: git push to multiple repositories</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">git push to multiple repositories</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-04 01:28:25 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/github">
+                        <span>github</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/programming">
+                        <span>programming</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/70392386/22954711">git push to multiple repositories</a>
+<ul>
+<li>Recap: a better and modern solutions for push changes to multiple remotes.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fetch origin</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> push<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>u</span> origin aggressiveLUT:aggresiveLUT</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fetch<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>tags</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/791959/download-a-specific-tag-with-git/32509705#32509705">Download a specific tag with Git</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/vcpkg/maintainers/registries#obtain-git-tree-sha">Registries reference | Obtaining a <code>git-tree</code> SHA</a>
+<ul>
+<li>Recap: it's like just usable for <code>vcpkg</code>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git -C $env:VCPKG_ROOT/ports ls-tree --format=&#39;%(objectname)&#39; HEAD -- icu
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

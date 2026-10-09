@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mpv&#x60; open console by &#x60;backtick&#x60;.  mostly for manually inputting internal lua commands/changing scripts options.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mpv&#x60; open console by &#x60;backtick&#x60;.  mostly for manually inputting internal lua commands/changing scripts options.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-07 01:51:25 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mpv">
+                        <span>mpv</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>mpv</code> open console by <code>backtick</code>.  mostly for manually inputting internal lua commands/changing scripts options.
+<ul>
+<li>Recap: in mpv's console you can navigate history by arrow keys.
+<ul>
+<li>as you fetch lyric files from earlier.. <code>backtick</code> -&gt; up to check history to add back again.</li>
+</ul>
+</li>
+<li>Run: in which you can manually do something like this.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">loadfile</span></span><span class="meta function-call arguments shell"> D:<span class="constant character escape shell">\P</span>rogramDataD<span class="constant character escape shell">\3</span>-Audio<span class="constant character escape shell">\m</span>usic.playlist.rarely<span class="constant character escape shell">\o</span>riginalSize<span class="constant character escape shell">\T</span>heChase-h2h.mkv append</span>
+<span class="meta function-call shell"><span class="variable function shell">loadfile</span></span><span class="meta function-call arguments shell"> D:<span class="constant character escape shell">\P</span>rogramDataD<span class="constant character escape shell">\3</span>-Audio<span class="constant character escape shell">\m</span>usic.playlist.rarely<span class="constant character escape shell">\o</span>riginalSize<span class="constant character escape shell">\r</span>ude-h2h.mkv insert-next</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://mpv.io/manual/master/#command-interface-%5B%3Coptions%3E%5D%5D%5D"><code>loadfile</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/mpv-player/mpv/issues/4761">Problems with sending filename with spaces through pipe</a>
+<ul>
+<li>it is racist toward <code>\</code> in general.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

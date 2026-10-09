@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mprocs&#x60; Run multiple commands in parallel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mprocs&#x60; Run multiple commands in parallel</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-01 07:55:41 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tui">
+                        <span>tui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/pvolok/mprocs"><code>mprocs</code> Run multiple commands in parallel</a>
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution:</li>
+<li>Reason: scoop available.
+<ul>
+<li>Pro: detect <code>justfile</code> recipes.
+<a href="https://github.com/pvolok/mprocs/pull/157">Add <code>--just</code> argument to load recipes from justfile</a>
+<ul>
+<li>Right now it doesnt accept arguments. You have to Enter the TUI to select.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#utils : <a href="https://github.com/aaronriekenberg/rust-parallel"><code>rust-parallel</code>in rust/tokio to run commands in parallel. Similar interface to GNU parallel or xargs plus useful features. Listed in Awesome Rust utilities.</a></li>
+</ul>
+</li>
+<li>Rival: #justfile <a href="https://github.com/casey/just#parallelism"><code>just</code> <code>[parallel]</code> attribute only for linewise recipes.</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> call `compile` with each element of `args` in parallel</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">[parallel]</span></span>
+<span class="meta function-call shell"><span class="variable function shell">build</span></span><span class="meta function-call arguments shell"> <span class="keyword operator regexp quantifier shell">*</span>args: <span class="keyword operator regexp quantifier shell">*</span><span class="punctuation section parens begin shell">(</span>compile <span class="keyword operator regexp quantifier shell">*</span>args<span class="punctuation section parens end shell">)</span></span>
+
+<span class="meta function-call shell"><span class="variable function shell">compile</span></span><span class="meta function-call arguments shell"> target:</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: TerminalControl: Support MinGW path translation style (C:\ -&gt; C:/) by abutcher-gh · Pull Request #18759 · microsoft/terminal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">TerminalControl: Support MinGW path translation style (C:\ -&gt; C:/) by abutcher-gh · Pull Request #18759 · microsoft/terminal</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-16 12:18:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uri">
+                        <span>uri</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/terminal/pull/18759">TerminalControl: Support MinGW path translation style (C:\ -&gt; C:/) by abutcher-gh · Pull Request #18759 · microsoft/terminal</a>
+<ul>
+<li>Recap: this is need for path and links translation from clipboard or drag and drop.
+<ul>
+<li>helpful if you ever need to quickly made <code>file:///</code> URI.</li>
+</ul>
+</li>
+<li>Root: try drag from my clipboard.</li>
+<li>Resolution:
+<ul>
+<li>Run: <code>cygpath -m &quot;C:\Users\COHOTECH\scoop\apps\git\current\usr\bin\file.exe&quot;</code></li>
+<li>Perfect I would say. <a href="https://cygwin.com/cygwin-ug-net/cygpath.html">cygpath man page</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

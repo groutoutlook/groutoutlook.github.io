@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: To select certain point knowing only coordinate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">To select certain point knowing only coordinate</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-06 09:16:15 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/freecad">
+                        <span>freecad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>To select certain point knowing only coordinate
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta statement import python"><span class="keyword control import python">import</span> <span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span></span><span class="punctuation separator import-list python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">FreeCADGui</span></span></span>
+
+<span class="meta function python"><span class="storage type function python">def</span> <span class="entity name function python"><span class="meta generic-name python">select_at</span></span></span><span class="meta function parameters python"><span class="punctuation section parameters begin python">(</span></span><span class="meta function parameters python"><span class="variable parameter python">x</span><span class="punctuation separator parameters python">,</span> <span class="variable parameter python">y</span><span class="punctuation separator parameters python">,</span> <span class="variable parameter python">tol</span></span><span class="meta function parameters default-value python"><span class="keyword operator assignment python">=</span><span class="constant numeric float python">1<span class="punctuation separator decimal python">.</span>0</span></span><span class="meta function parameters python"><span class="punctuation section parameters end python">)</span></span><span class="meta function python"><span class="punctuation section function begin python">:</span></span>
+    <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">FreeCADGui</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">Filter</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span> <span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> Clear any active filters
+</span>    <span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span> <span class="keyword operator assignment python">=</span> <span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">ActiveDocument</span></span>
+    <span class="meta qualified-name python"><span class="meta generic-name python">target</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">Vector</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">x</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">y</span></span><span class="punctuation separator arguments python">,</span> <span class="constant numeric integer decimal python">0</span></span><span class="punctuation section arguments end python">)</span></span>
+    
+    <span class="meta statement for python"><span class="keyword control flow for python">for</span> <span class="meta generic-name python">o</span> <span class="meta statement for python"><span class="keyword control flow for in python">in</span></span></span><span class="meta statement for python"> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Objects</span></span><span class="punctuation section block for python">:</span></span>
+        <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="keyword operator logical python">not</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">hasattr</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">o</span></span><span class="punctuation separator arguments python">,</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">Shape<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation section block conditional python">:</span></span> <span class="keyword control flow python">continue</span>
+        <span class="meta qualified-name python"><span class="meta generic-name python">p</span></span> <span class="keyword operator assignment python">=</span> <span class="meta qualified-name python"><span class="meta generic-name python">o</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Shape</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">CenterOfMass</span></span>
+        <span class="meta qualified-name python"><span class="meta generic-name python">dist</span></span> <span class="keyword operator assignment python">=</span> <span class="meta group python"><span class="punctuation section group begin python">(</span><span class="meta qualified-name python"><span class="meta generic-name python">target</span></span> <span class="keyword operator arithmetic python">-</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">FreeCAD</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">Vector</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">p</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">x</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">p</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">y</span></span><span class="punctuation separator arguments python">,</span> <span class="constant numeric integer decimal python">0</span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation section group end python">)</span></span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Length</span>
+        
+        <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">dist</span></span> <span class="keyword operator comparison python">&lt;</span> <span class="meta qualified-name python"><span class="meta generic-name python">tol</span></span><span class="punctuation section block conditional python">:</span></span>
+            <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">FreeCADGui</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">addSelection</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">o</span></span></span><span class="punctuation section arguments end python">)</span></span>
+            <span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">print</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="storage type string python">f</span><span class="meta string interpolated python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string interpolated python"><span class="string quoted double python">Selected </span><span class="meta interpolation python"><span class="punctuation section interpolation begin python">{</span><span class="source python embedded"><span class="meta qualified-name python"><span class="meta generic-name python">o</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Name</span></span></span></span><span class="meta interpolation python"><span class="punctuation section interpolation end python">}</span></span><span class="string quoted double python"> (dist: </span><span class="meta interpolation python"><span class="punctuation section interpolation begin python">{</span><span class="source python embedded"><span class="meta qualified-name python"><span class="meta generic-name python">dist</span></span></span><span class="meta format-spec python"><span class="constant other format-spec python">:.2f</span></span></span><span class="meta interpolation python"><span class="punctuation section interpolation end python">}</span></span><span class="string quoted double python">)<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span>
+            <span class="keyword control flow return python">return</span>
+            
+    <span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">print</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="storage type string python">f</span><span class="meta string interpolated python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string interpolated python"><span class="string quoted double python">Nothing found at </span><span class="meta interpolation python"><span class="punctuation section interpolation begin python">{</span><span class="source python embedded"><span class="meta qualified-name python"><span class="meta generic-name python">x</span></span></span><span class="meta format-spec python"><span class="constant other format-spec python">:.2f</span></span></span><span class="meta interpolation python"><span class="punctuation section interpolation end python">}</span></span><span class="string quoted double python">, </span><span class="meta interpolation python"><span class="punctuation section interpolation begin python">{</span><span class="source python embedded"><span class="meta qualified-name python"><span class="meta generic-name python">y</span></span></span><span class="meta format-spec python"><span class="constant other format-spec python">:.2f</span></span></span><span class="meta interpolation python"><span class="punctuation section interpolation end python">}</span></span><span class="string quoted double python"><span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span>
+
+<span class="meta function-call python"><span class="meta qualified-name python"><span class="variable function python">select_at</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="constant numeric float python">44051<span class="punctuation separator decimal python">.</span>914062</span><span class="punctuation separator arguments python">,</span><span class="keyword operator arithmetic python">-</span><span class="constant numeric float python">7011<span class="punctuation separator decimal python">.</span>940430</span></span><span class="punctuation section arguments end python">)</span></span>
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;ValidateSet&#x60; attribute - about_Functions_Argument_Completion</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;ValidateSet&#x60; attribute - about_Functions_Argument_Completion</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-21 05:37:44 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_argument_completion#validateset-attribute"><code>ValidateSet</code> attribute - about_Functions_Argument_Completion</a>
+<ul>
+<li>Recap: provide Tab completion for function's argument, since you cant remember all arguments value.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">[ValidateSet(&#39;Apple&#39;, &#39;Banana&#39;, &#39;Pear&#39;)]
+[string[]]$Fruit = &quot;Apple&quot;
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_argument_completion#argumentcompletions-attribute"><code>ArgumentCompletions</code> attribute</a>
+<ul>
+<li>Recite: Both attributes take a list of values to be presented when the user
+presses <code>Tab</code> after the parameter name. However, unlike ValidateSet, the values
+are not validated and more like suggestions. Therefore the user can supply any
+value, not just the values in the list.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_argument_completion#argumentcompleter-attribute"><code>ArgumentCompleter</code> attribute</a>
+<ul>
+<li>
+<p>Recite: <code>ArgumentCompleter</code> allows you to add tab completion values to a specific parameter. An ArgumentCompleter attribute must be defined for each parameter that needs tab completion.</p>
+</li>
+<li>
+<p>Recite:</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/73819139/using-validateset-with-functions-or-list">powershell - Using ValidateSet with functions or List</a></li>
+<li>Related:
+<ul>
+<li><a href="https://powershellcommands.com/powershell-validateset">Harnessing PowerShell ValidateSet for Efficient Scripting</a></li>
+<li><a href="https://adamtheautomator.com/powershell-validateset/">PowerShell ValidateSet: Tab-Completion &amp; Parameter Values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

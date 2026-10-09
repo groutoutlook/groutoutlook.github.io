@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How do I revert my changes to a git submodule?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How do I revert my changes to a git submodule?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-26 04:10:17 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option/reset">
+                        <span>cli/option/reset</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/10906554/how-do-i-revert-my-changes-to-a-git-submodule">How do I revert my changes to a git submodule?</a>
+<ul>
+<li>Recap: <code>reset</code> changes to submodules.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> submodule deinit<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> .</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> submodule update<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>init</span></span>
+
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> submodule foreach git reset<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>hard</span></span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> reset<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>hard</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>recurse-submodule <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this also reset main directory</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/ethersync/ethersync/issues/80">Dealing with SCM operations in <code>ethersync</code></a></li>
+<li>Related:
+<ul>
+<li>#git #cli/option <a href="https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard">What's the difference between git reset --mixed, --soft, and --hard?</a>
+<ul>
+<li>Run: <code>git reset --mixed</code> (default): uncommit + unstage changes, changes are left in working tree.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

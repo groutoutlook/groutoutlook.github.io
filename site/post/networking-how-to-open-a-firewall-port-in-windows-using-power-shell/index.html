@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: networking - How to open a firewall port in Windows using Power Shell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">networking - How to open a firewall port in Windows using Power Shell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-19 02:11:54 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/842698/how-to-open-a-firewall-port-in-windows-using-power-shell">networking - How to open a firewall port in Windows using Power Shell</a>
+<ul>
+<li>Recap: open an outbound port so LAN devices can access port.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Invoke-SudoPwsh &quot;netsh advfirewall firewall add rule name=`&quot;Open Port 80`&quot; dir=in action=allow protocol=TCP localport=80&quot;
+Invoke-SudoPwsh &quot;netsh advfirewall firewall delete rule name=`&quot;Open Port 80`&quot;&quot;
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

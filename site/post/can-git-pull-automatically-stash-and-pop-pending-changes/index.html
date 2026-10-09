@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Can &quot;git pull&quot; automatically stash and pop pending changes?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Can &quot;git pull&quot; automatically stash and pop pending changes?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-18 12:55:04 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/30208928/can-git-pull-automatically-stash-and-pop-pending-changes">Can &quot;git pull&quot; automatically stash and pop pending changes?</a>
+<ul>
+<li>Recap: <code>rebase.autostash</code> options.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> rbi <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> my alias in ~/gitalias.txt</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: all because <code>git rebase -i</code> is so intricated.</li>
+<li>Related:
+<ul>
+<li>#cli/option <a href="https://stackoverflow.com/questions/89332/how-do-i-recover-a-dropped-stash-in-git/91795#91795">How do I recover a dropped stash in Git?</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fsck<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-reflog</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">awk</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>/dangling commit/ {print $NF}<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash apply <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">stash_hash</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or if you fancy good old gitk</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">gitk</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>all</span> <span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span> <span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fsck<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-reflog</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">awk</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>/dangling commit/ {print $NF}<span class="punctuation definition string end shell">&#39;</span></span> </span><span class="punctuation section parens end shell">)</span></span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>#cli/option: <a href="https://stackoverflow.com/a/79070201/22954711"><code>git commit --fixup</code> a past commit?</a></li>
+<li>#cli/option: <a href="https://stackoverflow.com/questions/9725156/remove-old-git-commits/76308521#76308521">Remove old git commits with <code>git rebase --onto</code> and <code>git rebase -i</code> &quot;drop&quot; </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

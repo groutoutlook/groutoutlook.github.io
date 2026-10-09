@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Playback control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Playback control</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-26 03:37:27 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/media/playback">
+                        <span>media/playback</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mpv">
+                        <span>mpv</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mpv.io/manual/master/#playback-control">Playback control</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-56,<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-00:56 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> end time - 56 seconds. As negative indexing. </span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>50<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> middle of the file.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>30<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>end</span><span class="keyword operator assignment option shell">=</span>40 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> at 30 seconds, plays 10 seconds, and exits.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-3:20<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>length</span><span class="keyword operator assignment option shell">=</span>10 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> at 3:20 seconds before the end, plays 10s, and exits.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>#2<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>end</span><span class="keyword operator assignment option shell">=</span><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>#4<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Plays chapters 2 and 3, and exits.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>file/playlist loop: <code>--loop-file=&lt;N|inf|no&gt;, --loop=&lt;N|inf|no&gt;</code></li>
+<li>AB Loop set from cli: <code>--ab-loop-a=&lt;time&gt;, --ab-loop-b=&lt;time&gt;</code>
+<ul>
+<li>#default #keybinding <code>l</code> also do <code>ab-loop</code>, if you want to time the loop manually.</li>
+</ul>
+</li>
+<li>chapter from external metadata: <code>--chapters-file=&lt;filename&gt;</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2024-09-06 03:51:36 PM] #mpv #config
+<ul>
+<li><a href="https://mpv.io/manual/stable/#options-start">Playback Control - Start/End time.</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> all that so you can do:</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\h</span>ypnotize-xg-jazz.mkv<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>02:49.3</span>
+<span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ab-loop-a</span><span class="keyword operator assignment option shell">=</span>0:56<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ab-loop-b</span><span class="keyword operator assignment option shell">=</span>0:59</span>
+</span></code></pre>
+<ul>
+<li>Reason: especially useful when you trying to meddle with lyric timestamps manually.</li>
+<li>Root: <a href="https://stackoverflow.com/questions/9878138/playing-a-specific-interval-of-a-video-in-mplayer-using-command-line-option/24204021#24204021">playing a specific interval of a video in mplayer using command line option</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><code>--shuffle</code> to shuffle/play at random track in playlist,</li>
+<li><a href="https://mpv.io/manual/master/#watch-history">Watch History</a>
+<ul>
+<li>Recap: #keybinding <code>save-watch-history</code> enable me do <code>gh</code> to search history. <code>gc</code> search chapters.</li>
+</ul>
+</li>
+<li><a href="https://mpv.io/manual/master/#audio">Audio option</a></li>
+<li><a href="https://mpv.io/manual/master/#subtitles">Subtilte option</a>
+<ul>
+<li>I use <code>--sub-pos=20</code></li>
+</ul>
+</li>
+<li><a href="https://mpv.io/manual/stable/#low-latency-playback">LOW LATENCY PLAYBACK</a> with <code>--profile=low-latency</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

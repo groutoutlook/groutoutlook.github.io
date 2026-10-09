@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &quot;patent&quot;-free single wire communication</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&quot;patent&quot;-free single wire communication</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-24 03:54:26 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu">
+                        <span>mcu</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uart">
+                        <span>uart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.eevblog.com/forum/microcontrollers/patent-free-single-wire-communication/">&quot;patent&quot;-free single wire communication</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Recite : a definitely free and relatively simple option would be half duplex uart. eg tx and rx on the same pin.
+I know at some micro's support this as a configuration with no additional hardware, eg some (maybe all) stm32's.</li>
+<li><a href="https://electronics.stackexchange.com/questions/484079/stm32-usart-1-wire-communication">STM32 USART 1-wire communication</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/499232/uart-single-wire-half-duplex-level-conversion">12v - UART single-wire half-duplex level conversion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #board/evb #stm32 <a href="https://docs.flipper.net/ibutton">iButton - Flipper Zero - 1-Wire</a></li>
+<li>Related:
+<ul>
+<li>#network <a href="https://github.com/gioblu/PJON"><code>PJON</code> (Padded Jittering Operative Network)  experimental, multi-master, multi-media network protocol.</a></li>
+<li>#firmware #esp32 : <a href="https://github.com/sepastian/ESP32_ST3215">ESP32 controlling ST3215, <em>not</em> using the official controller board</a>
+<ul>
+<li>basically it's a servo.</li>
+<li>#taobao : <a href="https://item.taobao.com/item.htm?id=712179366565&amp;sku_properties=31309%3A7773156438">飞特19KG30KG双轴ST3215磁编码360度机器人机械臂TTL串行总线舵机</a></li>
+</ul>
+</li>
+<li>#irda : <a href="https://electronics.stackexchange.com/questions/214140/spi-using-one-wire">SPI using one wire</a>
+<ul>
+<li>esp32 has builtin support for <a href="https://wikipedia.org/wiki/IrDA">IrDA</a></li>
+<li><a href="https://www.arterytek.com/cn/product/AT32F490.jsp">AT32F490 2MB PSRAM LQFP64</a>
+and every other high performance AT32 (F435/F437) do IrDa. (红外发射器)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: #protocol/usart <a href="https://electronics.stackexchange.com/questions/364257/when-should-i-use-usart-instead-of-uart">USART instead of UART?</a>
+<ul>
+<li>Recap: it's ... interexchangable with I2C or SPI. it can be muxed with them.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

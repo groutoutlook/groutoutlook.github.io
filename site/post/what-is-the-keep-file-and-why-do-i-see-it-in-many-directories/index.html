@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: What is the &#x60;.keep&#x60; file and why do I see it in many directories?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">What is the &#x60;.keep&#x60; file and why do I see it in many directories?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-17 04:27:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/linuxquestions/comments/dae860">What is the <code>.keep</code> file and why do I see it in many directories?</a>
+<ul>
+<li>Recap:</li>
+<li>Run: spamming <code>git add --force</code> on those .keep, or .gitkeep, your choices..
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-ChildItem -Directory -Recurse | Where-Object {
+    ($_.FullName -split &#39;\\&#39;).Count -eq ($PWD.Path -split &#39;\\&#39;).Count + 2
+} | ForEach-Object {
+    $keepingDir = &quot;$_/.keep&quot;
+    New-Item $keepingDir -Force
+    git add $keepingDir --force
+}
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://stackoverflow.com/questions/7229885/what-are-the-differences-between-gitignore-and-gitkeep">git - What are the differences between <code>.gitignore</code> and <code>.gitkeep</code>?</a></li>
+<li>Reason:
+<ul>
+<li>Pro: <a href="https://stackoverflow.com/a/77332035/22954711">You can keep your <code>build</code> directory as a placeholder.</a></li>
+<li>Con: Not a true feature of <code>git</code> for now.</li>
+</ul>
+</li>
+<li>Root: <a href="https://github.com/firefart/sandbox/tree/master/scripts/setups">sandbox/scripts/setups at master · firefart/sandbox</a>
+<ul>
+<li><code>.keep</code> hold that directory in the entry of git.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

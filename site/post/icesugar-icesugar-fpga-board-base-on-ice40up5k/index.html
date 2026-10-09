@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;icesugar&#x60; iCESugar FPGA Board (base on iCE40UP5k)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;icesugar&#x60; iCESugar FPGA Board (base on iCE40UP5k)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-20 02:58:14 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/fpga">
+                        <span>fpga</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/interface/pmod">
+                        <span>interface/pmod</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/wuxx/icesugar"><code>icesugar</code> iCESugar FPGA Board (base on iCE40UP5k)</a>
+<ul>
+<li>Recap: Lots of PMOD things I bought from the guy.</li>
+<li>Resolution: #doc/official <a href="https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40.aspx#_21E33C7EC0BD48AA80FE384ED73CC895">iCE40 LP/HX | Low Power, High Performance FPGA</a>
+<ul>
+<li>low pin count and small.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/icebreaker-fpga/icebreaker"><code>icebreaker</code> low cost FPGA educational and development board</a></li>
+<li>Related: #board/evb/minimal: <a href="https://item.taobao.com/item.htm?id=671007870590">Lattice ICE40UP5K FPGA核心板 LPC11U35下载器 RISC-V移植</a>
+<ul>
+<li>iCE40UP5k but has  but has RPi Pico kind of pinout.</li>
+</ul>
+</li>
+<li>Revisit: [2025-09-21 19:28:11] <a href="https://item.taobao.com/item.htm?id=614093598737">iCESugar FPGA开发板开源RISC-V iCE40UP5k icebreaker fomu</a>
+<ul>
+<li>168 compare to the minimal 157...</li>
+<li><a href="https://item.taobao.com/item.htm?id=639661395487">iCESugar-Pro FPGA开发板Lattice ECP5开源RISC-V Linux SODIMM</a></li>
+<li><a href="https://www.st.com/resource/en/technical_note/dm00323609-stmod-interface-specification-stmicroelectronics.pdf">STMod+ interface specification - Technical note</a>
+<ul>
+<li>so this is ST's own PMOD like #alternative for daughter board/peripheral connectivity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: #evb #anlogic <a href="https://item.taobao.com/item.htm?id=695965174323">安路FPGA开发板核心板EG4X20BG256国产芯片ANLOGIC兼容替代Xilinx</a>
+<ul>
+<li><code>gowin</code>, <code>agm</code>. But AGM is quite a pain to develop with.
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=670809035307">AGM CPLD AG1280Q48 国产FPGA 超小封装FPGA 替换Altera EPM1270</a>
+<ul>
+<li>AG1280KQ32 QFN32 4x4mm, seems like a clone of XO2-1200.</li>
+</ul>
+</li>
+<li><a href="https://item.taobao.com/item.htm?id=798811708696&amp;skuId=5517109729546">AGM AGRV2KQ32 AGRV2KL48 CPLD单片机开发板 AG32VF303KCU6 FPGA</a>
+<ul>
+<li>**F303KQ32 one here has an ARM Cortex-M3 inside.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://item.taobao.com/item.htm?id=603155358911">Anlogic安路FPGA下载器-AL-Link</a></li>
+<li>#fpga/altera <a href="https://www.altera.com/products/fpga/max/10">MAX® 10 FPGA</a>
+<ul>
+<li>Root: <a href="https://www.eevblog.com/forum/fpga/intel-selling-off-51-of-altera/">Intel selling off 51% of Altera</a>
+<ul>
+<li>#book <a href="https://wikipedia.org/wiki/The_Innovator&#x27;s_Dilemma">The Innovator's Dilemma</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#fpga/lattice <a href="https://www.latticesemi.com/Products/FPGAandCPLD/MachXO2">MachXO2 | CPLD for Versatile Bridging | Lattice Semiconductor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: cron - ArchWiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">cron - ArchWiki</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-07 08:31:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/schedule">
+                        <span>schedule</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wiki.archlinux.org/title/Cron">cron - ArchWiki</a>
+<ul>
+<li>Recap: one of basic old scheduling methods. It's considering #legacy now.
+<ul>
+<li>had to install <a href="https://github.com/cronie-crond/cronie"><code>cronie</code></a> or <a href="http://fcron.free.fr/description.php"><code>fcron</code></a></li>
+<li>#default : <a href="https://wiki.archlinux.org/title/Systemd/Timers">systemd/Timers - ArchWiki</a>.</li>
+</ul>
+</li>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">pacman</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Syu</span> cronie</span>
+<span class="meta function-call shell"><span class="variable function shell">systemctl</span></span><span class="meta function-call arguments shell"> enable<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>now</span> cronie.service</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> further down the line you could disable your own sshd somehow so remember</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> systemctl enable<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>now</span> ssh</span>
+</span></code></pre>
+<ul>
+<li>Resolution: <code>crontab</code> is bundled with <code>cronie</code> so you dont have to think a lot about that.</li>
+<li>Reason:
+<ul>
+<li>I think I will go with <code>cronie</code> since it's also available in #termux</li>
+</ul>
+</li>
+<li>Root: <a href="https://unix.stackexchange.com/questions/261864/arch-linux-how-to-run-a-cron-job">Arch Linux - How to run a cron job?</a></li>
+<li>Related:
+<ul>
+<li>#rust #library : <a href="https://github.com/zslayton/cron">cron expression parser in Rust</a></li>
+<li><a href="https://github.com/aptible/supercronic">aptible/supercronic: Cron for containers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

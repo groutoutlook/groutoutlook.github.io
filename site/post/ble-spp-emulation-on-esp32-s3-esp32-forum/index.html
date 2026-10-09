@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: BLE SPP emulation on ESP32-S3 - ESP32 Forum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">BLE SPP emulation on ESP32-S3 - ESP32 Forum</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-17 06:57:20 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ble">
+                        <span>ble</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/bluetooth">
+                        <span>bluetooth</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/esp32s3">
+                        <span>esp32s3</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uart">
+                        <span>uart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://esp32.com/viewtopic.php?t=39521">BLE SPP emulation on ESP32-S3 - ESP32 Forum</a>
+<ul>
+<li>Recap: SPP is serial port profile.</li>
+<li>Run:</li>
+<li>Resolution: #doc/official : <a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/bluetooth/esp_spp.html">SPP API - ESP32 - — ESP-IDF Programming Guide v5.5.1 documentation</a>
+<ul>
+<li><a href="https://www.reddit.com/r/esp32/comments/1agrk4w">ESP32-S3 NOT support Bluetooth SPP, and ONLY support BLE?</a>
+<ul>
+<li><a href="https://esp32.com/viewtopic.php?t=33863">ESP32-S3 蓝牙是否支持SPP? - ESP32 Forum</a>
+<ul>
+<li>since BLE and SPP is not equivalent.</li>
+<li>#implementation <a href="https://github.com/espressif/esp-idf/blob/master/examples/bluetooth/nimble/ble_spp/spp_server/README.md">esp32s3 and esp32c6 nimble/ble_spp/spp_server </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/dr-stefan-krank/ESP32-S3-VCP-BT-Bridge"><code>ESP32-S3-VCP-BT-Bridge</code> connecting USB to Serial Adapters to an ESP32-S3 board and connect a terminal with bluetooth.</a></li>
+</ul>
+</li>
+<li>Reason: SPP is for Standard Bluetooth, not for BLE <a href="https://stackoverflow.com/questions/77394322/serial-comunication-over-bluetooth-low-energy-linux-and-arduino-nano-esp32">Serial comunication over Bluetooth Low Energy</a></li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/462902/is-it-possible-to-send-data-while-receiving-audio-with-a-bluetooth-module">microcontroller - Is it possible to send data while receiving audio with a bluetooth module</a></li>
+<li>Related:
+<ul>
+<li>#esp32c6 <a href="https://esp32.com/viewtopic.php?t=42604">BLE SPP mode sending unexpected AT events - ESP32-C6</a></li>
+<li>#ble #wifi <a href="https://docs.espressif.com/projects/esp-idf/en/v5.5.1/esp32c6/api-guides/ble/blufi.html">BluFi - ESP32-C6 - — ESP-IDF Programming Guide v5.5.1 documentation</a>
+<ul>
+<li>setup AP config on Wifi through Bluetooth/BLE. A good use case for such a hybrid stack..</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://docs.silabs.com/bluetooth/2.13/bluetooth-code-examples-applications/">SPP (Serial Port Profile) over BLE | Applications | Bluetooth LE | v2.13 | Silicon Labs</a>
+<ul>
+<li>Recap: the only chip I know which do SPP on BLE is those EFR32.</li>
+<li>Root: <a href="https://stackoverflow.com/questions/77788933/efr32bg22-ble-in-spp-mode-with-pc-windows-10-wont-connect/77809439#77809439">EFR32BG22 BLE in SPP mode with PC (Windows 10) won't connect</a></li>
+<li>Related: Even #nordic dont have a solution for this : <a href="https://devzone.nordicsemi.com/f/nordic-q-a/109333/use-of-an-spp-profile-in-ble-stack">Use of an SPP profile in BLE stack - Nordic Q&amp;A - Nordic DevZone - Nordic DevZone</a>
+<ul>
+<li>#example/repo : <a href="https://github.com/nrfconnect/sdk-nrf/blob/main//samples/bluetooth/peripheral_uart/README.rst">UART -&gt; NUS service -&gt; BLE </a>
+<ul>
+<li>NUS: Nordic UART Service.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: List all modes of items in Windows</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">List all modes of items in Windows</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-27 11:51:37 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/4939802/what-are-the-possible-mode-values-returned-by-powershells-get-childitem-cmdle">List all modes of items in Windows</a>
+<ul>
+<li>Recap: Which normal files are archives, most of the times, path is  dir, etc..</li>
+<li>Update 2025-04: <code>(gci $file).Attribute</code> other than <code>(gci $file).FullName</code> is another shorthand to check file type.
+<ul>
+<li>It's like <code>file</code> utils in Unix. or you could also use exiftool to check file's metadata.</li>
+<li>There are <code>a - archive</code> which is normal text/media files.</li>
+<li><code>l - reparse point, symlink</code> is another main type.
+<ul>
+<li><a href="https://superuser.com/questions/1297273/">windows - What is a Reparse Point, and why is it named so?</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/fileio/reparse-points">Reparse Points - Win32 apps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

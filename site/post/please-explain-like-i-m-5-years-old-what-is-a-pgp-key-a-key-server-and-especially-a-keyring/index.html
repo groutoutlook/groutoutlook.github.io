@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Please explain like I&#x27;m 5 years old: what is a PGP key, a key server, and (especially) a keyring?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Please explain like I&#x27;m 5 years old: what is a PGP key, a key server, and (especially) a keyring?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-16 01:57:15 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/auth/pgp">
+                        <span>auth/pgp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminology">
+                        <span>terminology</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/GnuPG/comments/uq8bq7">Please explain like I'm 5 years old: what is a PGP key, a key server, and (especially) a keyring?</a>
+<ul>
+<li>Recap: keyring is actually a contact list.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gpg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>export</span> <span class="keyword control regexp set begin shell">[</span>key<span class="keyword operator word shell">-</span>id<span class="keyword control regexp set end shell">]</span> <span class="keyword operator assignment redirection shell">&gt;</span> public-key.asc</span>
+<span class="meta function-call shell"><span class="variable function shell">gpg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>export-secret-keys</span> <span class="keyword control regexp set begin shell">[</span>key<span class="keyword operator word shell">-</span>id<span class="keyword control regexp set end shell">]</span> <span class="keyword operator assignment redirection shell">&gt;</span> private-key.asc</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or as I specify --output flags.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">gpg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>output</span> ./PGPPubKey.pgp<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>armor</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>export</span></span>
+<span class="meta function-call shell"><span class="variable function shell">gpg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>output</span> ./PGPSecKey.pgp<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>armor</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>export-secret-keys <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this will pop up a window require my passphrase.</span><span class="comment line number-sign shell">
+</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">gpg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>list-keys <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> you can use email or just type 1 in here, or even nothing.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">gpg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>fingerprint</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>keyid-format</span><span class="keyword operator assignment option shell">=</span>long <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> for somewhere keep asking for PGP Key fingerprint like aur archlinux.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li><a href="https://askubuntu.com/questions/186805/difference-between-pgp-and-gpg">security - Difference between PGP and GPG</a>
+<ul>
+<li><code>gpg</code> is referring to the implementation of OpenPGP.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://security.stackexchange.com/questions/231295/what-is-the-difference-between-the-many-identifiers-in-gnupg">key management - What is the difference between the many identifiers in GnuPG?</a>
+<ul>
+<li>keygrip is something else as well, that means independent SHA-1 with no <code>gpg</code> information.</li>
+</ul>
+</li>
+<li>Related: <a href="https://serverfault.com/questions/60064/using-pgp-keys-for-ssh">gpg - Using PGP keys for SSH</a>
+<ul>
+<li><a href="https://security.stackexchange.com/questions/129474/how-to-raise-a-key-to-ultimate-trust-on-another-machine">pgp - How to raise a key to ultimate trust on another machine?</a>
+<ul>
+<li><code>uid</code>, <code>trust</code>, <code>save</code>, <code>adduid</code> and even <code>revuid</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

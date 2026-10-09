@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Significance of wire wound resistor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Significance of wire wound resistor</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-17 10:58:55 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/resistor">
+                        <span>resistor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/678914/significance-of-wire-wound-resistor">Significance of wire wound resistor</a>
+<ul>
+<li>Recap: wirewound is not important – it's just that historically, most high-powered resistors were.</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.eevblog.com/forum/projects/switch-on-ac-supply-at-maximum-min-or-max-voltage/">Switch on AC supply at maximum or minumum voltage</a>
+<ul>
+<li>1/4 wave switching is for inductive loads: transformers, solenoids, induction motors. although it depends.</li>
+<li>Resolution: ZCD + Triac... or an SoC like <a href="https://www.onsemi.com/pub/Collateral/MOC3043M-D.pdf">MOC3021 or MOC3041</a>
+<ul>
+<li>Rival: EL3032 SOP-6 or ELM3023 SOP-4(7.0*4.0 Pitch 6.35/2.54)
+<ul>
+<li><a href="https://github.com/pablozg/freeds/tree/PID/hardware/Clinxer%20-%20Version%20ACS712/FreeDS_P">ACS712/FreeDS_P using MOC3041 to drive an external TRIAC (BTA26)</a>
+<ul>
+<li>using kicanvas to open this.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/MAX22707.pdf">MAX22707 Low Power, Precision Zero Crossing Detector</a></li>
+<li>#protocol/plc <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/MAX20340.pdf">MAX20340 Bidirectional DC Powerline Communication Management IC</a>
+<ul>
+<li>Rival: <a href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-cy8cplc10-powerline-communication-solution-datasheet-en.pdf">CY8CPLC10 Powerline Communication chip with Powerline Modem PHY and Network Protocol Stack</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

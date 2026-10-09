@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: nPM2100 PMIC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">nPM2100 PMIC</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-10 03:46:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu">
+                        <span>mcu</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/voltage/source">
+                        <span>voltage/source</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.nordicsemi.com/Products/nPM2100">nPM2100 PMIC</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Products can be shipped with the battery installed when using Ship mode(wake by SHPHLD pin).
+Ship mode supports sleep current down to 35 nA with multiple wakeup options,
+including a break-to-wake function that wakes product from Ship mode when an electrical connection is broken.
+<ul>
+<li>Break-to-wake mode is a variant of Ship mode where wakeup happens once a connection between the
+SHPHLD pin and ground is broken.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: their upcoming WLCSP chips is only 1.1V...so.
+<ul>
+<li>#mcu <a href="https://www.nordicsemi.com/Products/nRF54LV10A">nRF54LV10A Bluetooth LE 1.2-1.7 V supply, about 20mA @ 1.5V both TX/RX + CPU core</a>
+<ul>
+<li>lowest I ever seen.</li>
+<li><a href="https://www.nordicsemi.com/Products/nRF54LS05A">nRF54LS05A Ultra-low-power wireless SoC simple chip</a></li>
+<li><a href="https://www.nordicsemi.com/Products/nRF54LM20A">nRF54LM20A ultra-low-power wireless SoC more complex</a>
+<ul>
+<li>Revisit: [Fri Aug 14 14:23:26 2026] #alternative <a href="https://www.analog.com/en/products/max32690.html">MAX32690 Arm Cortex-M4 with FPU Microcontroller and Bluetooth LE 5 for Industrial and Wearables</a></li>
+</ul>
+</li>
+<li><a href="https://www.nordicsemi.com/Products/nRF54LC10A">nRF54LC10A wireless SoC for Bluetooth LE, Thread, Zigbee, and Matter</a>
+<ul>
+<li>Root: <a href="https://mp.weixin.qq.com/s/qBHPZb9774tJJh0qo4up4Q">sleep current of 50 nA and consumes 0.438 mAh/year, 1.7-3.6V</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#blog #news <a href="https://www.nordicsemi.com/Nordic-news/2026/03/nRF54LM20B-SoC-wins-product-prize-at-Embedded-World-2026">Nordic Semiconductor’s nRF54LM20B SoC wins product prize at Embedded World 2026</a></li>
+<li><a href="https://community.nxp.com/t5/Power-Management/PF1550-Exit-from-SHIP-mode/m-p/2061336">PF1550 Exit from SHIP mode</a></li>
+<li><a href="https://home.jeita.or.jp/tsc/downloadE.html">JEITA Technical Standardization Center | List of JEITA Standards</a></li>
+<li><a href="https://www.ti.com/lit/an/slyt365/slyt365.pdf">Li-ion battery-charger solutions for JEITA compliance - slyt365.pdf</a></li>
+</ul>
+</li>
+<li>Rival:
+<ul>
+<li><a href="https://www.nordicsemi.com/products/npm1304">nPM1304 PMIC</a></li>
+<li><a href="https://e2e.ti.com/support/power-management-group/power-management/f/power-management-forum/1009159/bq76952-ts2-wake-up-source-detection">BQ76952: TS2 Wake up Source Detection - Power management forum - Power management - TI E2E support forums</a>
+<ul>
+<li>Charger Detection Wakeup circuit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

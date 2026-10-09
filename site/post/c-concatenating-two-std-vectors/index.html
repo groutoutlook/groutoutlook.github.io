@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Concatenating two std::vectors</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Concatenating two std::vectors</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-27 08:01:47 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/vector">
+                        <span>container/vector</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/201718/concatenating-two-stdvectors/75793283#75793283">c++ - Concatenating two std::vectors</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> cpp23 upward.
+</span>vec1<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">append_range</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"><span class="meta group c++">vec2</span></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> otherwise have to use std::vector&lt;&gt;::insert(). See [templating operator overloading += and ++](https://stackoverflow.com/questions/3177241/what-is-the-best-way-to-concatenate-two-vectors/21391109#21391109)
+</span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/3177241/what-is-the-best-way-to-concatenate-two-vectors/55838758#55838758">coombine two vectors</a></li>
+<li>Related: <a href="https://stackoverflow.com/questions/47754679/how-to-convert-a-stdarray-to-a-stdvector/47754784#47754784">convert a std::array to a std::vector?</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

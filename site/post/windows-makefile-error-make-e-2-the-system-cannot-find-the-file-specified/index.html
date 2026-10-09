@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: windows - Makefile error make (e&#x3D;2): The system cannot find the file specified</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">windows - Makefile error make (e&#x3D;2): The system cannot find the file specified</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-07 05:03:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/make">
+                        <span>build/make</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/33674973/makefile-error-make-e-2-the-system-cannot-find-the-file-specified">windows - Makefile error make (e=2): The system cannot find the file specified</a>
+<ul>
+<li>Recap: Either add <code>git/usr/bin</code> into PATH, or open <code>sh</code> to run make.</li>
+<li>Root:</li>
+<li>Resolution: or <code>sh -c &quot;make clean&quot;</code>
+<ul>
+<li>Work everytime.</li>
+</ul>
+</li>
+<li>Reason: Remind you that <code>sh.exe</code> is <code>MSYS2</code> which is packaged inside <code>git</code> for windows.
+<ul>
+<li>and <code>make</code> binary inside <code>sh.exe</code> is actually my <code>make.exe</code> which is installed using <code>scoop</code></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>Built using WSL is better for some cases:
+<ul>
+<li>If you want to run <code>make test</code> and it have some quirky things like <code>lcov</code> inside the test...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

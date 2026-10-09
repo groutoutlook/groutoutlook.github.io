@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: difference between matching in helix and neovim</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">difference between matching in helix and neovim</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-05-12 06:01:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/74331732/22954711">difference between matching in helix and neovim</a>
+<ul>
+<li>Recap: <code>miw</code>, <code>mi&quot;</code> will match/select them first before changing/deleting anything.</li>
+<li>In neovim, we can <code>ciw</code> to change, <code>diw</code> to delete,...</li>
+</ul>
+</li>
+<li>Helix have a different matching scheme... outside of bracket/quote, it will not match
+the one which is in the current line like neovim do.
+<ul>
+<li>Instead it match what's between.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

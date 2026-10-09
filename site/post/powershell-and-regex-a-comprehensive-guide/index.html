@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: PowerShell and Regex: A Comprehensive Guide</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">PowerShell and Regex: A Comprehensive Guide</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-16 04:03:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grep">
+                        <span>grep</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://adamtheautomator.com/powershell-regex/#h-replacing-text-with-powershell-and-regex">PowerShell and Regex: A Comprehensive Guide</a>
+<ul>
+<li>Brief:</li>
+<li>Origin: Trying to grep files name with matched line number only, from ripgrep.</li>
+<li>Resolution: Instead of using <code>$1</code> as matching results, we have to use &quot;`$1&quot; to indicating matches.
+<ul>
+<li>Since the <code>$</code> symbol is the alias with variable expansion in PowerShell as well.</li>
+<li>Something like:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">(rg &quot;fake&quot; -n -g !&quot;*.js&quot;) -replace &quot;:(\d+):.*&quot;,&quot;:`$1&quot;
+</span></code></pre>
+<ul>
+<li>The above solution is for double quotes. Related links describe usage with single quotes, which is easier, no backtick involved.</li>
+</ul>
+</li>
+<li>Related: <a href="https://stackoverflow.com/a/14913272/22954711">-replace with single quote</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

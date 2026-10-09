@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Update fails when wsl is shutdown · Issue #12700 · microsoft/WSL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Update fails when wsl is shutdown · Issue #12700 · microsoft/WSL</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-28 11:12:34 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wsl">
+                        <span>wsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/WSL/issues/12700">Update fails when wsl is shutdown · Issue #12700 · microsoft/WSL</a>
+<ul>
+<li>Recap: <code>wsl --update --pre-release</code> kept failing. <del>you have to <code>sudo</code> them.</del></li>
+<li>Root: <a href="https://github.com/microsoft/WSL/issues/10324#issuecomment-1741779582">WslRegisterDistribution failed with error: 0x80071772 Error: 0x80071772 The specified file is encrypted and the user does not have the ability to decrypt it. · Issue #10324 · microsoft/WSL</a></li>
+<li>Resolution: remove every possible WSL installed in MSStore. Ubuntu, Debian, openSUSE, Arch Linux...</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

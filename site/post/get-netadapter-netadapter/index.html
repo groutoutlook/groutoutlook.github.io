@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-NetAdapter&#x60; (NetAdapter)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-NetAdapter&#x60; (NetAdapter)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-24 11:37:51 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/netadapter/get-netadapter?view=windowsserver2025-ps"><code>Get-NetAdapter</code> (NetAdapter)</a>
+<ul>
+<li>Recap: return MAC address</li>
+<li>Run:</li>
+<li>Resolution: #script : <a href="https://github.com/krzydoug/Tools/blob/master/Send-WakeOnLan.ps1">Tools/Send-WakeOnLan.ps1 at master · krzydoug/Tools</a>
+<ul>
+<li><a href="https://www.pdq.com/blog/how-to-turn-on-remote-computers-with-wake-on-lan/">How to turn on remote computers with Wake-on-LAN | PDQ</a></li>
+<li><a href="https://superuser.com/questions/295325/does-it-matter-what-udp-port-a-wol-signal-is-sent-to">ethernet - Does it matter what UDP port a WOL signal is sent to?</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/PowerShell/comments/zh1aj8">Wake On LAN Magic Packet</a></li>
+<li>Related:
+<ul>
+<li><a href="https://powershellcommands.com/powershell-wake-on-lan">PowerShell Wake On LAN Made Easy</a>
+<ul>
+<li>this keeps prompting errors</li>
+</ul>
+</li>
+<li><a href="https://www.pdq.com/blog/wake-on-lan-wol-magic-packet-powershell/">How to send a Wake-on-LAN magic packet with PowerShell | PDQ</a>
+<ul>
+<li>okay I'm still couldnt make any WoL packet yet.</li>
+</ul>
+</li>
+<li><a href="https://github.com/SR-G/sleep-on-lan">SR-G/sleep-on-lan: Multi-platform process allowing to sleep on LAN a linux or windows computer, through wake-on-lan (reversed) magic packets or through HTTP REST requests.</a></li>
+<li>#utils #windows: <a href="https://www.depicus.com/wake-on-lan/wake-on-lan-cmd"><code>wolcmd</code></a>
+<ul>
+<li>in scoop
+<ul>
+<li><a href="https://www.depicus.com/wake-on-lan/wake-on-lan-monitor">Welcome To Depicus - Home of the Geek</a>
+<ul>
+<li>Remember to change send port to 4343.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#utils :<a href="https://www.nirsoft.net/utils/wake_on_lan.html">WakeMeOnLan - Turn on computers on your network with Wake-on-LAN packet</a></li>
+<li><a href="https://unix.stackexchange.com/questions/421325/wake-on-lan-via-ssh">linux - Wake-on-LAN via SSH</a>
+<ul>
+<li>using <code>ethtool</code></li>
+</ul>
+</li>
+<li><a href="https://unix.stackexchange.com/questions/587173/wake-on-lan-via-my-custom-router">linux - Wake on lan via my custom router</a>
+<ul>
+<li>talk more about why it sent to <code>x.x.x.255</code>, it's the broadcast address.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-07-04 16:54:22] <a href="https://github.com/seriousm4x/UpSnap">seriousm4x/UpSnap: A simple wake on lan web app written with SvelteKit, Go and PocketBase.</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Test-NetConnection&#x60; | &#x60;tnc&#x60; (NetTCPIP)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Test-NetConnection&#x60; | &#x60;tnc&#x60; (NetTCPIP)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-19 12:57:40 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tcpip">
+                        <span>tcpip</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/nettcpip/test-netconnection?view=windowsserver2025-ps"><code>Test-NetConnection</code> | <code>tnc</code> (NetTCPIP)</a>
+<ul>
+<li>Recap: another #windows exclusive cmdlets.</li>
+<li>Run: It provides IntefaceAlias information (Loopback, Wi-Fi or Ethernet.)
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">tnc localhost -p 9000
+tnc 192.168.1.69 -p 9000
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Recite: unblocks PowerShell script files that were downloaded from the internet so
+you can run them, even when the PowerShell execution policy is RemoteSigned.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: short alias, quick to check.</li>
+<li>Con: no UDP.
+<ul>
+<li>#cli/option <a href="https://nmap.org/book/scan-methods-udp-scan.html">UDP Scan (<code>nmap -sU</code>) | Nmap Network Scanning</a></li>
+<li>#alternative: <a href="https://cloudbrothers.info/en/test-udp-connection-powershell/">Test UDP connection with PowerShell - Cloudbrothers</a>
+<ul>
+<li>you have to run a custom scripts for that.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://serverfault.com/a/892678">proper use of this.</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

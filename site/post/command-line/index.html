@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Command line</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Command line</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-01-07 01:59:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.helix-editor.com/command-line.html?highlight=git#expansions">Command line</a>
+<ul>
+<li>Recap: one of the common usage of binding a command to a keybinding in <code>hx</code> is to show status.</li>
+<li>Run: OR in my case, it's to use <code>bc</code>/<code>fend</code> to calculate things on place..
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">[keys.normal]
+# Print the current line&#39;s git blame information to the statusline.
+space.B = &quot;:echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}&quot;
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>there is <code>%sh</code>, <code>%u</code> to unicode and <code>%reg</code> to expand register</li>
+<li>Basic variable (context) available for those expansion is <code>cursor_line</code>, <code>cursor_column</code>, <code>buffer_name</code>
+<ul>
+<li><code>current_working_directory</code>,<code>workspace_directory</code>,</li>
+<li><code>selection</code>,<code>selection_line_start</code>,<code>selection_line_end</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

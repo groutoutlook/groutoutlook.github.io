@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;hurl&#x60; test HTTP requests with plain text.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;hurl&#x60; test HTTP requests with plain text.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-14 08:15:41 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/http">
+                        <span>protocol/http</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Orange-OpenSource/hurl"><code>hurl</code> test HTTP requests with plain text.</a>
+<ul>
+<li>Recap:</li>
+<li>Run: <code>hurl --test .</code> IT's per-project, not instant trigger like <code>xh</code> or <code>curl</code>.
+<ul>
+<li>you may already now some project has an <code>.http</code> (dotnet things). This has <code>.hurl</code> extension</li>
+</ul>
+</li>
+<li>Resolution: cant #nightly since <code>libxml</code> is a rust wrapper of <code>libxml2</code>, but the older one(&lt;2.12).</li>
+<li>Reason: in scoop.
+<ul>
+<li>#comparison : <code>hurl</code> use files of <code>.hurl</code> while <code>xh</code> generally work in shell.</li>
+</ul>
+</li>
+<li>Root: #alternative of <code>xh</code>, both of them are successor of <code>httpie</code>.</li>
+<li>Related:
+<ul>
+<li><code>hurl</code> using <code>libcurl</code>.</li>
+<li>#alternative: #ide:<a href="https://learn.microsoft.com/en-us/aspnet/core/test/http-files?view=aspnetcore-9.0">Use .http files in Visual Studio 2022</a>
+<ul>
+<li>Root: <a href="https://www.reddit.com/r/neovim/comments/19ei6je">Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from <code>.hurl</code> files. Elevate your API development workflow by executing and viewing responses without leaving your editor.</a></li>
+<li>Resolution: #ide/vscode has the best support for <code>.http</code> and then #ide/vs .
+<ul>
+<li>Possibly Jetbrains IDE also have support but I dont use them.</li>
+</ul>
+</li>
+<li>Related: <a href="https://www.reddit.com/r/dotnet/comments/1ejyfom">Anyone using .HTTP files in Visual Studio to test their APIs yet or still Postman etc.?</a>
+<ul>
+<li><code>bruno</code> is a separated tools for this kind of files.</li>
+<li>#ide/vscode: #cli: <a href="https://github.com/anweber/httpyac">AnWeber/httpyac: Command Line Interface for *.http and *.rest files. Connect with http, gRPC, WebSocket and MQTT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

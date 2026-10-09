@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;kakasi&#x60; Rust library to transliterate hiragana, katakana and kanji (Japanese text) into rōmaji (Latin/Roman alphabet)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;kakasi&#x60; Rust library to transliterate hiragana, katakana and kanji (Japanese text) into rōmaji (Latin/Roman alphabet)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-24 05:00:53 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/chinese">
+                        <span>chinese</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/japanese">
+                        <span>japanese</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/korean">
+                        <span>korean</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lingustic">
+                        <span>lingustic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lyric">
+                        <span>lyric</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web">
+                        <span>web</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Theta-Dev/kakasi"><code>kakasi</code> Rust library to transliterate hiragana, katakana and kanji (Japanese text) into rōmaji (Latin/Roman alphabet)</a>
+<ul>
+<li>Recap: <a href="https://github.com/masahills/kanada"><code>kanada</code> Text Transliteration, pure Java library based on <code>kakasi</code>, for converting Japanese text containing kanji into hiragana, katakana, or romaji, and performing natural word segmentation (wakatigaki). Now supercharged with AI-powered kanji reading disambiguation, think of it as &quot;KAKASI on steroids.&quot;</a></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">gc .\MixedNuts-1-cover.jap.lrc |%{&quot;$(kakasi $_) $($_ -replace &#39;\[.{1,8}]&#39;,&quot;Jap: &quot;)&quot;} &gt; .\MixedNuts-1-cover.lrc
+</span></code></pre>
+</li>
+<li>Resolution: For all of CJK. Chinese romanizer is more commonly known as transliterate to pinyin.
+<ul>
+<li>#web #chinese : <a href="https://www.chinese2pinyin.com/en/">Chinese to Pinyin Converter</a></li>
+<li>#cli #python #chinese : <a href="https://github.com/mozillazg/python-pinyin">python-pinyin: 汉字转拼音(<code>pypinyin</code>)</a>
+<ul>
+<li>Recap: have to install by <code>uv tool install pypinyin</code>. I cant just clone it and built. shim to <code>piny</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">pypinyin</span></span><span class="meta function-call arguments shell"> 大展鴻圖 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> dà zhǎn hóng tú </span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> s/--style: invalid choice: &#39;zh4a0&#39; (choose from NORMAL, zhao, TONE,</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> zh4ao, TONE2, zha4o, TONE3, zhao4, INITIALS, zh, FIRST_LETTER, z, FINALS,</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> ao, FINALS_TONE, 4ao, FINALS_TONE2, a4o, FINALS_TONE3, ao4, BOPOMOFO,</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> BOPOMOFO_FIRST, CYRILLIC, CYRILLIC_FIRST)</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Related: #rust #library <a href="https://github.com/mozillazg/rust-pinyin"><code>rust-pinyin</code> 汉字转拼音</a>
+<ul>
+<li>#cpp : <a href="https://github.com/wolfgitpr/cpp-pinyin"><code>cpp-pinyin</code> Chinese/Cantonese to Pinyin library.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#web #japanese #translate : <a href="https://www.romajidesu.com/translator">Japanese Translator | RomajiDesu!!</a>
+<ul>
+<li>Pro: More accurate than <code>kakasi</code>.</li>
+<li>from japanese (hiragana + kanji) -&gt; Romanji (Romanized speakable) so I can sing along.
+<ul>
+<li><a href="https://github.com/koozaki/romaji-conv"><code>romaji-conv</code>: Convert romaji into hiragana</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#web #korean <a href="https://translatormaker.com/translators/romanized-korean-translator">Romanized Korean Translator - Translator Maker</a>
+<ul>
+<li>#cli #python #library <a href="https://github.com/osori/korean-romanizer"><code>korean-romanizer</code> library for Korean romanization</a>
+<ul>
+<li>#nightly as <code>kroman</code> which you can <code>uv tool install .</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: #cli is local of course, no internet == Fine.</li>
+<li>Root: I want to singalong, that's all.</li>
+<li>Related:
+<ul>
+<li>#linguistic : <a href="https://japanese.stackexchange.com/questions/15780/how-would-one-emulate-capitalized-letters-in-japanese">katakana - How would one emulate capitalized letters in Japanese?</a></li>
+<li>#build #nightly issues with executables of Python in Windows is embedded invoked python version.
+<ul>
+<li>So try to pip uninstall pypinyin every once in a while and reinstall.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/sea-turt1e/kanjiconv"><code>kanjiconv</code> Kanji Converter to Hiragana, Katakana, Roman alphabet.</a>
+<ul>
+<li><a href="https://clrd.ninjal.ac.jp/unidic/en/">UniDic(v3.1 latest) Electronic Dictionary with Uniformmity and Identity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

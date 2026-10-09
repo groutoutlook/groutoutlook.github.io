@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Powershell Using Start-Process in PSSession to Open Notepad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Powershell Using Start-Process in PSSession to Open Notepad</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-26 11:27:57 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote">
+                        <span>remote</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/18748349/powershell-using-start-process-in-pssession-to-open-notepad">Powershell Using Start-Process in PSSession to Open Notepad</a>
+<ul>
+<li>Recap: less capable than <code>ssh</code>. Well at least I dont have to setup sshd in #windows.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/psexec"><code>psexec</code> - Sysinternals</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/microsoft/PowerToys/pull/48281">New module: <code>AltWindowCycle</code> <code>alt+backtick</code> to switch between the same executable's process</a>
+<ul>
+<li>as <code>msedge</code>, <code>wt</code>, <code>mupdf</code>, etc...</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://superuser.com/questions/210096/alt-tab-to-another-client-window-from-rdp-full-screen-session">remote desktop - ALT Tab to another client window from RDP full screen session</a>
+<ul>
+<li>#til <code>mstsc</code> is the executable name.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

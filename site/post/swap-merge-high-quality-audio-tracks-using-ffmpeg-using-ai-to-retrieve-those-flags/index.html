@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Swap/Merge high quality audio tracks using &#x60;ffmpeg&#x60;. Using #AI to retrieve those flags.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Swap/Merge high quality audio tracks using &#x60;ffmpeg&#x60;. Using #AI to retrieve those flags.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-26 07:14:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ffmpeg">
+                        <span>ffmpeg</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/video">
+                        <span>video</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Swap/Merge high quality audio tracks using <code>ffmpeg</code>. Using #AI to retrieve those flags.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\l</span>ikethat-babymon-8k.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>audio-file</span><span class="keyword operator assignment option shell">=</span>.<span class="constant character escape shell">\0</span>3-babymonster-like_that.flac</span>
+<span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\l</span>ikethat-babymon-8k.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\0</span>3-babymonster-like_that.flac<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>filter_complex</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>[1:a]adelay=2600|2600[a]<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>[a]<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a libopus .<span class="constant character escape shell">\l</span>ikethat-babymon-8k-dub-flac.webm</span>
+<span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\M</span>agnetic.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 00:00:07.3<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.\02. ILLit - Magnetic.flac<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 1:a<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a flac<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>shortest</span> Magnetic.mkv <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> the only way to retain flac is mkv, not av1-webm pair.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> it can even be arbitrary like this. notice the order of ss.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 158.007<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> psycho-babymonster.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>BABYMONSTER - WE GO UP - 02 PSYCHO.flac<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 1:a<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>shortest</span> psycho-babymonster-part2.mkv</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Revisit:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\W</span>hyNot-Loona.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.\02 Why Not.flac<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>filter_complex</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>[1:a]adelay=1000|1000[a];[0:a][a]amix=inputs=2[aout]<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>[aout]<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a flac<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>shortest</span> .<span class="constant character escape shell">\W</span>hyNot-Loona.mkv</span>
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;system-keyboard-lock&#x60; flags</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;system-keyboard-lock&#x60; flags</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-25 08:50:19 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/msedge">
+                        <span>msedge</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jondahlke/system-keyboard-lock/blob/master/EXPLAINER.md"><code>system-keyboard-lock</code> flags</a>
+<ul>
+<li>Recap: lock some system keyboard.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Recite:
+<ul>
+<li>System keyboard lock is only available when the document is in <a href="https://fullscreen.spec.whatwg.org/#fullscreen-enabled-flag">fullscreen mode</a>, and only from a secure origin.</li>
+<li>Browsers should optionally add permission, consent or reminder UI to ensure users understand how to exit system keyboard lock mode.</li>
+<li>If the user holds the Escape key for 2 seconds, both system keyboard lock and fullscreen should be exited. This shortcut cannot be captured by the site.</li>
+<li>Once system keyboard lock is granted, the browser will disable the typical behavior of specified system keys and shortcuts, and make them available to the web site. Keys and shortcuts which may be accessed in system keyboard lock include:
+<ul>
+<li><code>Escape</code></li>
+<li><code>Super</code> (e.g., Windows key, ChromeOS search key)</li>
+<li><code>Alt+Tab</code></li>
+<li><code>Alt+F4</code></li>
+<li><code>Alt+Backtick</code></li>
+<li><code>PrtScn</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://developer.chrome.com/docs/capabilities/web-apis/keyboard-lock">Capture Keys with the Keyboard Lock API  |  Capabilities  |  Chrome for Developers</a>
+<ul>
+<li>to be fair it's in edge://flags</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Select whole track between pads/vias/nets in single click - Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Select whole track between pads/vias/nets in single click - Layout</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-06 10:47:47 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selection">
+                        <span>selection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://forum.kicad.info/t/select-whole-track-in-single-click/56096/3?u=golkeda">Select whole track between pads/vias/nets in single click - Layout</a>
+<ul>
+<li>Recap: <code>u</code> will select all of them, then you can do <code>e</code> to change thickness of the traces instead of multiple click
+<ul>
+<li>selecting mechanism is the same as highlight the whole net I think, except it is disrupted at vias/pads</li>
+<li>other mechanism is select a track -&gt; RightClick -&gt; <code>s</code> -&gt; <code>right</code> -&gt; <code>s s</code>.
+I map <code>Select all tracks in net</code> == <code>Shift+u</code> so.</li>
+</ul>
+</li>
+<li>Run: <code>shift+del</code> can delete the tracks between what <code>u</code> can select.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: I try to change width for a batch of them using <code>Edit Track and Properties</code> and their filter..
+<ul>
+<li>Recap: but right now you can not enter arbitary value in it.</li>
+<li>Resolution: <a href="https://gitlab.com/kicad/code/kicad/-/work_items/16461"><code>pcbnew</code> value TrackWith in the Dialog Edit Track &amp; Via Properties is not editable</a></li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

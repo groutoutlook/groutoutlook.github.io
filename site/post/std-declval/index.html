@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: std::declval</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">std::declval</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-29 09:14:44 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/type">
+                        <span>type</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/utility/declval">std::declval</a>
+<ul>
+<li>Recap: helper function mostly used for decltype.</li>
+<li>Root:</li>
+<li>Resolution: &quot;converts any type T (which may be an incomplete type) to an expression of that type, making it possible to use member functions of T without the need to go through constructors.&quot;
+<ul>
+<li>Useful when you only have the forward declaration.</li>
+<li>Placeholder for class which doesnt have constructor (yet).</li>
+<li>Most of the time you would put the type directly there.
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage type c++">decltype</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span><span class="meta group c++"><span class="meta function-call c++"><span class="variable function c++">Default</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">foo</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span><span class="meta group c++"><span class="punctuation section group end c++">)</span></span>               n1 <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span>     <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> type of n1 is int
+</span><span class="storage type c++">decltype</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span><span class="meta group c++"><span class="meta function-call c++">std<span class="punctuation accessor double-colon c++">::</span><span class="variable function c++">declval</span><span class="punctuation section generic begin c++">&lt;</span>Default<span class="punctuation section generic end c++">&gt;</span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">foo</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span><span class="meta group c++"><span class="punctuation section group end c++">)</span></span> n2 <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span>     <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> same
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

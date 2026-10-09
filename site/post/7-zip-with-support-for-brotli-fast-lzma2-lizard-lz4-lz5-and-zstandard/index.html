@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: 7-Zip with support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">7-Zip with support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-22 09:35:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/archive">
+                        <span>archive</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/mcmilk/7-Zip-zstd">7-Zip with support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard</a>
+<ul>
+<li>Recap: #sucessor for <code>7z</code>.
+<ul>
+<li>tbf I couldnt understand all that commands from <code>7z</code>. Even <code>tar</code> is more intuitive.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">tar</span></span><span class="meta function-call arguments shell"> tf .<span class="constant character escape shell">\F</span>T32_F8P_25_bottom.zip <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> tar list `ls` all items in zipped/archive.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> next gen tar command - `ouch`</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">ouch</span></span><span class="meta function-call arguments shell"> l .<span class="constant character escape shell">\1</span>Layer.zip</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#cli/option : <code>tar xf</code> is like <code>Expand-Archive</code>, except the <code>pwsh</code> one couldnt work with <code>tar.xz</code>.
+<ul>
+<li><code>tar xfv</code>  add verbosity.</li>
+<li><code>tar tf</code> : <a href="https://askubuntu.com/questions/392885/how-can-i-view-the-contents-of-tar-gz-file-without-extracting-from-the-command-l">View the contents of tar.gz file without extracting</a>
+<ul>
+<li>Root: <a href="https://www.reddit.com/r/linux/comments/16m1f2t">How to write a 'tar' command</a>
+<ul>
+<li>with a nice illustration, although you should ask #AI more these days.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><code>ouch</code> is the next gen compressor/archiver #cli utils.</li>
+</ul>
+</li>
+<li>Rival:
+<ul>
+<li>#library : #rust <a href="https://github.com/hasenbanck/sevenz-rust2"><code>sevenz-rust2</code> 7z compressor / decompressor and LZMA/LZMA2 implementation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

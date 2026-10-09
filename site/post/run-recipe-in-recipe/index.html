@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: run recipe in recipe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">run recipe in recipe</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-13 02:55:21 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just/discussions/818#discussioncomment-707275">run recipe in recipe</a>
+<ul>
+<li>Recap: also <a href="https://github.com/casey/just#working-directory">notice no-cd attribute.</a>
+<ul>
+<li>you can also do <code>[working-directory: &quot;something-here&quot;]</code>
+<ul>
+<li>useful if you have justfile in every directory and set fallback on all of them.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># put that in the very root.
+alias roote := root-edit
+[working-directory: ]
+root-edit:
+    just -e
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: trying to make <code>just run</code> my <code>Vulkan-Samples</code>.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

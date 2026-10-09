@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: std::literals::string_view_literals::operator&quot;&quot;sv</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">std::literals::string_view_literals::operator&quot;&quot;sv</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-03 04:09:40 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/literal">
+                        <span>literal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/notation">
+                        <span>notation</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/string/basic_string_view/operator%22%22sv">std::literals::string_view_literals::operator&quot;&quot;sv</a>&quot;]
+<ul>
+<li>Recap: like <code>auto str_view = &quot;deducted as string_view&quot;sv;</code>
+<ul>
+<li>#basic: remember to use <code>using namespace std::literals;</code> or a specific literals before using them.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>Literals are used to produce objects of user-defined type by defining a user-defined suffix.</li>
+<li>Have to manually defined <code>operator &quot;&quot;rgb(args){}</code>.
+<ul>
+<li>Prefix is <code>operator rgb&quot;&quot;(args){}</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/symbol_index/chrono_literals">std::literals::chrono_literals Symbol Index</a>
+<ul>
+<li>those <code>ns,us,ms,s,min,h,d,y</code>.</li>
+</ul>
+</li>
+<li><a href="https://cppreference.com/w/cpp/numeric/complex/operator%22%22i">std::literals::complex_literals::operator&quot;&quot;i, operator&quot;&quot;if, operator&quot;&quot;il</a>]
+<ul>
+<li>those <code>i,if,il</code> behind imaginary parts of complex number.</li>
+</ul>
+</li>
+<li><a href="https://cppreference.com/w/cpp/language/integer_literal">Integer literal</a>
+<ul>
+<li>which newly added <code>z/Z</code> as signed <code>size_t</code>.</li>
+</ul>
+</li>
+<li>All of those literals are good for CTAD, <code>auto</code>,...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

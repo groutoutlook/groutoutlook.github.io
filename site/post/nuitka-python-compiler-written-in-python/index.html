@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;nuitka&#x60; Python compiler written in Python</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;nuitka&#x60; Python compiler written in Python</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-25 10:59:58 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/uv">
+                        <span>build/uv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiler">
+                        <span>compiler</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Nuitka/Nuitka"><code>nuitka</code> Python compiler written in Python</a>
+<ul>
+<li>Recap: compile scripts into a single executable to <code>shim</code> to PATH as common tools. E.g: <code>ninjatracing</code></li>
+<li>Run:
+<ul>
+<li>method 1: <code>venv</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> venv</span>
+<span class="meta function-call shell"><span class="variable function shell">.<span class="constant character escape shell">\.</span>venv<span class="constant character escape shell">\s</span>cripts<span class="constant character escape shell">\a</span>ctivate</span></span>
+<span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> pip install nuitka</span>
+<span class="meta function-call shell"><span class="variable function shell">python</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> nuitka<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>onefile</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>standalone</span> ./ninjatracing.py</span>
+</span></code></pre>
+<ul>
+<li>method 2: direct <code>add</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> add<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dev</span> nuitka <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> if you havent added it to `uv.lock`, otherwise  `uv run`</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> run python<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> nuitka<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>standalone</span> ./ninjatracing.py</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Soon we will move to <code>uv build</code> based compiler.</li>
+<li>I settled on <code>nuitka</code>+<code>uv</code> for this time.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/astral-sh/uv/issues/5802">Suggestion: <code>uv bundle</code>, <code>uv build --release</code> or similar to create a contained executable a la pyinstaller, py2exe · Issue #5802 · astral-sh/uv</a></li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/astral-sh/uv/issues/7957"><code>uv</code> havent added support for cross-platform environments · Issue #7957 · astral-sh/uv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

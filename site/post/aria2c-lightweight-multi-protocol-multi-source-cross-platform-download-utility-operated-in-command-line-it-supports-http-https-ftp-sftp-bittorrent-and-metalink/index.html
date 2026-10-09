@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;aria2c&#x60; lightweight multi-protocol &amp; multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;aria2c&#x60; lightweight multi-protocol &amp; multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-30 08:20:44 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/asset">
+                        <span>asset</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/media">
+                        <span>media</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/video">
+                        <span>video</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/aria2/aria2"><code>aria2c</code> lightweight multi-protocol &amp; multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">aria2c</span></span><span class="meta function-call arguments shell"> http://itorrents.org/torrent/F884D5A6980322C8F5C001391B5C1DE4EE9323CA.torrent</span>
+<span class="meta function-call shell"><span class="variable function shell">aria</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>all-proxy</span><span class="keyword operator assignment option shell">=</span><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>http://localhost:8191<span class="punctuation definition string end shell">&quot;</span></span> </span>
+</span></code></pre>
+<ul>
+<li>the process is not very intuitive tho, I cant be really sure when it finishes the download.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason: in scoop
+<ul>
+<li>and ani-cli suggested that</li>
+<li>also my scoop uses aria2c cli for downloading files</li>
+</ul>
+</li>
+<li>Root: those <code>torrent</code> and <code>magnet</code> links?</li>
+<li>Related:
+<ul>
+<li><a href="https://wikipedia.org/wiki/Magnet_URI_scheme">Magnet URI scheme</a>
+<ul>
+<li>mostly curious about why so many <code>tr=</code> after the main <code>xt=</code>, just delete all of them.</li>
+<li>btw leecher are someone who download from seeder, which is the original entity host the files.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

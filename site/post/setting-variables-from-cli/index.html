@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: setting variables from cli</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">setting variables from cli</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-24 11:49:03 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/arguments">
+                        <span>arguments</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just#setting-variables-from-the-command-line">setting variables from cli</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: either in form <code>name=value</code> can be passed before recipes: <code>just var_test=thiscli test</code>
+<ul>
+<li>or <code>just --set var_test &quot;this is atrocious&quot; test</code></li>
+<li>important: it has to prepend the recipe name.</li>
+<li>#cli/option : <code>just --evaluate</code> will evaluate every variables in <code>justfile</code>.
+<ul>
+<li>run: this <code>foobar := x'$home'</code>
+<ul>
+<li>it will not execute shell command to get envvar, it shell expanded.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: positional arguments may also be turned on on a per-recipe basis...
+<ul>
+<li>with the [positional-arguments] attribute.
+<ul>
+<li>note that powershell does not handle positional arguments in the same way as other shells, so turning on positional arguments will likely break recipes that use powershell.
+<ul>
+<li><del>the <code>-commandwithargs</code> flag will make positional arguments work as expected</del>.
+<ul>
+<li>not work for current v7.6 preview.</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">set shell := [&#39;pwsh.exe&#39;, &#39;-commandwithargs&#39;]
+set positional-arguments
+
+[positional-arguments]
+@foo bar:
+  echo $0
+  echo $1
+  foobar := x&#39;~/$0/$1&#39;
+
+print-args a b c:
+  write-output @($args[1..($args.count - 1)])
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+<li>Revisit: 2025-05-20 07:23:17 : #default : <code>just --choose</code> seems like a good default.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

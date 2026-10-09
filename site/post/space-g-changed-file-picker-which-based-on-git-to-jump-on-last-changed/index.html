@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;space g&#x60; &#x3D;&#x3D; &#x60;changed_file_picker&#x60; which based on &#x60;git&#x60; to jump on last changed.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;space g&#x60; &#x3D;&#x3D; &#x60;changed_file_picker&#x60; which based on &#x60;git&#x60; to jump on last changed.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-03 11:16:49 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/picker">
+                        <span>picker</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>space g</code> == <code>changed_file_picker</code> which based on <code>git</code> to jump on last changed.
+<ul>
+<li>
+<p>Recap:</p>
+</li>
+<li>
+<p>Run: <code>space j</code> open jump list. Most common use case is probably after I press <code>enter</code> to jump to word.</p>
+</li>
+<li>
+<p>Resolution:</p>
+<ul>
+<li>#config set <code>Ctrl+,</code> to <code>config-open</code> which means #windows/terminal is set to <code>Ctrl+alt+,</code></li>
+</ul>
+</li>
+<li>
+<p>Reason:</p>
+<ul>
+<li><a href="https://github.com/helix-editor/helix/pull/15197"><code>goto_word</code> does <code>save_selection</code> to jumplist before making the jump</a></li>
+</ul>
+</li>
+<li>
+<p>Recite:
+| Keybinding | Action                                     | Command          |
+| ---------- | ------------------------------------------ | ---------------- |
+| <code>Ctrl+i</code>   | Jump forward on the jumplist               | <code>jump_forward</code>   |
+| <code>Ctrl+o</code>   | Jump backward on the jumplist              | <code>jump_backward</code>  |
+| <code>Ctrl+s</code>   | Save the current selection to the jumplist | <code>save_selection</code> |</p>
+</li>
+<li>
+<p>Root:</p>
+</li>
+<li>
+<p>Related:</p>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

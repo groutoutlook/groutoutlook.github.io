@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Editing the .\etc\hosts file on Windows 10</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Editing the .\etc\hosts file on Windows 10</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-05 01:19:51 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/1191945/editing-the-etc-hosts-file-on-windows-10">Editing the .\etc\hosts file on Windows 10</a>
+<ul>
+<li>Recap: this <code>/etc/hosts</code> of #linux also exists in #windows</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">sudo run hx C:\Windows\System32\drivers\etc\hosts
+</span></code></pre>
+<ul>
+<li>or run #powertoys Host File Editor. You can have a button to toggle as well.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/212897/nslookup-dig-firefox-ignoring-etc-hosts-file-entries"><code>nslookup</code>, <code>dig</code>, <code>firefox</code> ignoring /etc/hosts file entries</a>
+<ul>
+<li>to use those #cli utils with <code>/etc/hosts</code>, use <code>unbound</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: simple. Remember to restart browsers and processes sometimes.</li>
+</ul>
+</li>
+<li>Root: <a href="https://unix.stackexchange.com/questions/329383/how-to-use-etc-hosts-in-unbound-dns-server">How to use /etc/hosts in <code>unbound</code> DNS server?</a></li>
+<li>Related:
+<ul>
+<li>#router : <a href="https://security.stackexchange.com/questions/133043/modify-the-hosts-file-of-the-router-and-redirect-trafic">dns - Modify the hosts file of the router and redirect trafic</a>
+<ul>
+<li>most of the time you only have DNS server redirection IP on the router config portal.</li>
+<li><a href="https://superuser.com/questions/1548070/hosts-file-but-for-whole-network">networking - hosts file but for whole network?</a>
+<ul>
+<li>yeah you need DNS server, and your router need to route traffic to there.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/NLnetLabs/nsd"><code>nsd</code> NLnet Labs Name Server Daemon (NSD) is an authoritative, RFC compliant DNS nameserver.</a>
+<ul>
+<li><a href="https://serverfault.com/questions/739829/unbound-stub-host-option-not-resolving-using-etc-hosts">domain name system - Unbound stub-host option not resolving using /etc/hosts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

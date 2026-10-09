@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Read/write USB Serial COM port using powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Read/write USB Serial COM port using powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-09 04:58:02 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protcol/uart">
+                        <span>protcol/uart</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/76250070/how-to-read-write-to-a-usb-serial-com-port-using-powershell">Read/write USB Serial COM port using powershell</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$mydevs = (Get-PnPDevice | Where-Object{$_.PNPClass -in  &quot;WPD&quot;,&quot;AndroidUsbDeviceClass&quot;,&quot;Modem&quot;,&quot;Ports&quot; } | 
+    Where-Object{$_.Present -in &quot;True&quot;} | 
+    Select-Object Name,Description,Manufacturer,PNPClass,Service,Present,Status,DeviceID | 
+    Sort-Object Name
+    
+$mydevs | Format-Table Description, Manufacturer, PNPClass, Service,
+    @{Label=&quot;COM port&quot;; Expression={ ($_.Name -Match &quot;\((COM\d{1,2})\)&quot; | Out-Null &amp;&amp; $Matches[1]) }},
+    @{Label=&quot;VID:PID&quot;; Expression={ ($_.DeviceID -Match &quot;USB\\VID_([0-9a-fA-F]{4})\&amp;PID_([0-9a-fA-F]{4})&quot; | Out-Null &amp;&amp; (&#39;{0}{1}{2}&#39; -f ${Matches}[1], &quot;:&quot;, ${Matches}[2]).ToLower() ) }},
+    Present, Status    
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/24307507/powershell-list-serial-ports-description">Powershell List Serial Ports + description</a>
+<ul>
+<li>how to list all COM ports in powershell.</li>
+<li>You can also use <code>usbipd list</code> to check for COM port numbers.</li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Revisit: <a href="https://stackoverflow.com/questions/31297365/how-to-continuously-read-serial-com-port-in-powershell-and-occasionally-write-to">How to continuously read Serial COM port in Powershell and occasionally write to COM port</a>
+<ul>
+<li>I hope it is as simple as <code>getty</code> in #linux but yeah. You can use <code>plink</code> instead.</li>
+<li><a href="https://stackoverflow.com/questions/79220211/is-there-a-way-to-send-character-strings-between-2-powershell-terminal-windows">Is there a way to send character strings between 2 powershell terminal windows?</a>
+<ul>
+<li>one way to do it is named pipe, but it's overcomplex.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

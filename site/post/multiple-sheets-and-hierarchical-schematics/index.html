@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Multiple sheets and hierarchical schematics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Multiple sheets and hierarchical schematics</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-08 01:47:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/eeschema">
+                        <span>eeschema</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#hierarchical-schematics">Multiple sheets and hierarchical schematics</a>
+<ul>
+<li>Recap: <code>s</code> == <code>Add Hierarchical Sheet</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">0..23|%{&quot;P$_&quot;}|scb # then try to paste that while enabling &quot;Multiple label&quot; option.
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#hierarchical-labels">Hierarchical sheet pins</a></li>
+<li>Recite: Electrical connections between sheets are made with labels. There are several kinds of labels in KiCad, each with a different connection scope.
+<ul>
+<li><code>l</code> == <code>Local labels</code> only make connections within a sheet. Therefore local labels cannot be used to connect between sheets.
+<ul>
+<li>this is the one which looks like a reference hover over the line. you need to click on wire to assign things to net.</li>
+</ul>
+</li>
+<li><code>ctrl+l</code> == <code>Global labels</code> make connections anywhere in a schematic, regardless of sheet.
+can be used to make connections between sheets whether the sheets are top-level or hierarchical.</li>
+<li><code>h</code> == <code>Hierarchical labels</code> in subsheet connect to hierarchical sheet pins accessible in parent sheet.
+Hierarchical designs rely on hierarchical labels and pins to connect between parent and child sheets.
+Think of sheet pins as defining the interface for a subsheet; hierarchical labels within the child sheet connect to corresponding sheet pins which are visible in the parent sheet.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: well when you select them it highlights very clearly in <code>pcbnew</code> and <code>3dviewer</code>
+<ul>
+<li>Root: fixed but... <a href="https://gitlab.com/kicad/code/kicad/-/work_items/24260">3D Viewer - You cannot deselect a highlighted component model. (#24260) · Issue · kicad/code/kicad</a>
+<ul>
+<li>so annoying up to the point I have to update nightly.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Con: subsheet often duplicate and replacing the next iteration of reference
+so be aware of that, delete or deactivate them before making edits.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

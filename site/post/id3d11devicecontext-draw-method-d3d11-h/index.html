@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ID3D11DeviceContext::Draw method (d3d11.h)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ID3D11DeviceContext::Draw method (d3d11.h)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-28 12:15:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/d3d11">
+                        <span>d3d11</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/hlsl">
+                        <span>hlsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-draw">ID3D11DeviceContext::Draw method (d3d11.h)</a>
+<ul>
+<li>Brief: Found in <a href="https://github.com/microsoft/terminal/blob/cb48babe9dfee5c3e830644eb7ee48f4116d3c47/src/renderer/atlas/BackendD3D.cpp#L2316">this line</a></li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage type c">void</span> <span class="meta function c++"><span class="entity name function c++">Draw</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">
+  <span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>in<span class="punctuation section brackets end c++">]</span></span> <span class="support type windows c">UINT</span> <span class="variable parameter c++">VertexCount</span><span class="punctuation separator c++">,</span>
+  <span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>in<span class="punctuation section brackets end c++">]</span></span> <span class="support type windows c">UINT</span> StartVertexLocation
+<span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+<ul>
+<li>What happened is,  draw with 4 vertecies, start with index 0.
+<ul>
+<li>Windows Terminal AtlasEngine BackendD3D.cpp have 2 render passes,
+<ul>
+<li>Step 0: initialize state, <a href="https://github.com/microsoft/terminal/blob/cb48babe9dfee5c3e830644eb7ee48f4116d3c47/src/renderer/atlas/BackendD3D.cpp#L137">including _blendState</a></li>
+<li>Calculate our custom pixel shader..</li>
+<li>Then In the final pipeline, <a href="https://github.com/microsoft/terminal/blob/cb48babe9dfee5c3e830644eb7ee48f4116d3c47/src/renderer/atlas/BackendD3D.cpp#L2340">set merger</a>
+<ul>
+<li><a href="https://youtu.be/wXe-qlkrAJQ">Output Merger stage &amp; blending</a>
+<ul>
+<li>Brief: #video</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The Merge Stage here is actually quite elegant than #glsl explicit merger shader, which take another subpass.</li>
+<li>The flow of each pass is IA -&gt; VS -&gt; PS -&gt; OM</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

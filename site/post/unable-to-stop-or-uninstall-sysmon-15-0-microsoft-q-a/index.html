@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Unable to stop or uninstall Sysmon 15.0 - Microsoft Q&amp;A</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Unable to stop or uninstall Sysmon 15.0 - Microsoft Q&amp;A</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-26 11:36:18 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/en-us/answers/questions/1347761/unable-to-stop-or-uninstall-sysmon-15-0?source=docs">Unable to stop or uninstall Sysmon 15.0 - Microsoft Q&amp;A</a>
+<ul>
+<li>Recap: can only stop <code>sysmon</code> thru NTUSER.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Invoke-SudoPwsh &#39;psexec -s -d -i 1 pwsh.exe&#39;
+sysmon64 -accepteula -u
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

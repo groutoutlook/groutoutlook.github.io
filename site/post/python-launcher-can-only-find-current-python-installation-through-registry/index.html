@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: python launcher can only find current python installation through registry.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">python launcher can only find current python installation through registry.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-17 02:14:02 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>python launcher can only find current python installation through registry.
+<ul>
+<li>Recap: if install python through scoop.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">Invoke-SudoPwsh</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.\install-pep-514.reg<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">py</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>0</span></span>
+</span></code></pre>
+</li>
+<li>Resolution: you may also need to visit scoop app python just to delete old version package.</li>
+<li>Reason:</li>
+<li>Root: everytime python version changed as I updated through <code>scoop</code>, I have to reinstall pep 514 again..
+<ul>
+<li>a bit of hurdle but nvm.</li>
+<li>some of the time I even have to <code>cdw yt-dlp</code> and edit the <code>3.14.3 -&gt; 3.14.4</code> version myself.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

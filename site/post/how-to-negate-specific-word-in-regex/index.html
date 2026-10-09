@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How to negate specific word in regex?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How to negate specific word in regex?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-21 02:20:21 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/1240275/how-to-negate-specific-word-in-regex">How to negate specific word in regex?</a>
+<ul>
+<li>Recap: negative look-ahead, possible with <code>pcre2</code>/<code>re2</code>.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">rg &quot;(?&lt;!-)-replace&quot; --pcre2 #this has look-ahead, only possible in pcre2
+rgj &quot;[[:^alpha:]]-replace&quot;
+rg &quot;[^-]-replace&quot; 
+</span></code></pre>
+</li>
+<li>Resolution: #AI teach me.
+<ul>
+<li>for <code>rg</code>, <code>fd</code>,.. usage, see <a href="https://docs.rs/regex/latest/regex/#matching-one-character">negative syntax in regex</a>
+<ul>
+<li>best used with <code>.[^something]</code> like that.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#explaination : <a href="https://stackoverflow.com/questions/2973436/regex-lookahead-lookbehind-and-atomic-groups">Regex lookahead, lookbehind and atomic groups</a></li>
+<li><a href="https://stackoverflow.com/questions/6488944/what-is-the-difference-between-atomic-and-non-capturing-groups">regex - What is the difference between atomic and non-capturing groups?</a></li>
+<li><a href="https://docs.rs/fancy-regex/latest/fancy_regex/#syntax">fancy_regex look-around</a>
+<ul>
+<li>which is in <code>scooter</code>, not <code>rg</code> or any <code>fd</code>,...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

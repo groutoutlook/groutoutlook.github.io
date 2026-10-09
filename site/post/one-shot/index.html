@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;one-shot&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;one-shot&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-24 07:17:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#one-shot"><code>one-shot</code></a>
+<ul>
+<li>Recap: Activate keys or layers for a time without keeping the input key held, for
+one subsequent key. Activating other one-shot actions, while one or more are already
+active, will reset the timeout, and overlap the one-shot actions.</li>
+<li>Run: <code>($one-shot-variant $timeout $action)</code> as in recite.</li>
+<li>Resolution:
+<ul>
+<li>Recite:
+<pre class="syntax-highlighting"><code class="language-lisp"><span class="source lisp"><span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>defalias
+  os1 <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>one<span class="keyword operator arithmetic lisp">-</span>shot <span class="constant numeric lisp">500</span> <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>layer<span class="keyword operator arithmetic lisp">-</span><span class="keyword control lisp">while</span><span class="keyword operator arithmetic lisp">-</span>held another<span class="keyword operator arithmetic lisp">-</span>layer<span class="punctuation definition group end lisp">)</span></span><span class="punctuation definition group end lisp">)</span></span>
+  os2 <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>one<span class="keyword operator arithmetic lisp">-</span>shot<span class="keyword operator arithmetic lisp">-</span>press <span class="constant numeric lisp">2000</span> lsft<span class="punctuation definition group end lisp">)</span></span>
+  os3 <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>one<span class="keyword operator arithmetic lisp">-</span>shot<span class="keyword operator arithmetic lisp">-</span>release <span class="constant numeric lisp">2000</span> lctl<span class="punctuation definition group end lisp">)</span></span>
+  os4 <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>one<span class="keyword operator arithmetic lisp">-</span>shot<span class="keyword operator arithmetic lisp">-</span>press<span class="keyword operator arithmetic lisp">-</span>pcancel <span class="constant numeric lisp">2000</span> lalt<span class="punctuation definition group end lisp">)</span></span>
+  os5 <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>one<span class="keyword operator arithmetic lisp">-</span>shot<span class="keyword operator arithmetic lisp">-</span>release<span class="keyword operator arithmetic lisp">-</span>pcancel <span class="constant numeric lisp">2000</span> lmet<span class="punctuation definition group end lisp">)</span></span>
+<span class="punctuation definition group end lisp">)</span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

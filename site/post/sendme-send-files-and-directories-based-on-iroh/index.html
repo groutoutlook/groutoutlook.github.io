@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;sendme&#x60; send files and directories, based on iroh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;sendme&#x60; send files and directories, based on iroh</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-02 07:05:40 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/NAS">
+                        <span>NAS</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/p2p">
+                        <span>p2p</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/sftp">
+                        <span>remote/sftp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/n0-computer/sendme"><code>sendme</code> send files and directories, based on iroh</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sendme</span></span><span class="meta function-call arguments shell"> send ./posh-fzf.exe<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>clipboard</span>     </span>
+</span></code></pre>
+</li>
+<li>Resolution: Complementing <code>iroh-ssh</code> since there is no <code>sftp</code> yet.
+<ul>
+<li>#keybinding</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: use that in place of a proper <code>sftp</code> and a faster <code>croc</code>.
+<ul>
+<li>Now you can compile on dev machine and push to other easily.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <code>iroh</code> awesome list.
+<ul>
+<li>I cant drag and drop in rustdesk as easy and seamless as I do in terminal.
+<ul>
+<li>Also want to avoid <code>croc</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Rival: <a href="https://github.com/nuwainfo/ffl"><code>ffl</code> FastFileLink CLI - Turn any file or folder into a secure, sharable HTTPS link</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

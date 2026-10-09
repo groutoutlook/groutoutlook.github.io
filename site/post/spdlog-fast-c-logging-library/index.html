@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;spdlog&#x60; Fast C++ logging library.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;spdlog&#x60; Fast C++ logging library.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-07 11:54:02 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp/library">
+                        <span>cpp/library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger/logging">
+                        <span>debugger/logging</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/gabime/spdlog#basic-usage"><code>spdlog</code> Fast C++ logging library.</a>
+<ul>
+<li>Recap: Look at basic usage...</li>
+<li>Root: <a href="https://news.ycombinator.com/item?id=41328447">Nanolog supports logging with 7 ns median latency</a></li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/gabime/spdlog/wiki/3.-Custom-formatting">3. Custom formatting · gabime/spdlog Wiki</a>
+<ul>
+<li>Formatting rules.</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Log_rotation">Log rotation</a>
+<ul>
+<li>Recap: which is overwritting log files once they exceed certain sizes.</li>
+<li>Root: 2025-05, I  realized <code>spdlog</code> could log to files.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://pigweed.dev/pw_tokenizer/">pw_tokenizer — Pigweed</a>
+<ul>
+<li><a href="https://github.com/rokath/trice"><code>trice</code> super fast and tiny embedded device printf-like trace ✍ code, works also inside ⚡ interrupts ⚡ and real-time PC  logging (trace ID visualization )</a>
+<ul>
+<li><a href="https://github.com/rokath/trice#data-transfer">Data transfer method, UART and RTT.</a>
+<ul>
+<li>suitable for small embedded devices.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#rust : <a href="https://defmt.ferrous-systems.com/">Introduction - defmt book</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

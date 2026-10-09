@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about_Pwsh - &#x60;pwsh&#x60; cli options</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about_Pwsh - &#x60;pwsh&#x60; cli options</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-01 11:23:12 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pwsh">about_Pwsh - <code>pwsh</code> cli options</a>
+<ul>
+<li>Recap: pwsh cli flags commomly used as <code>-Command</code> | <code>-c</code> and <code>-WorkingDirectory</code> | <code>-wd</code>.
+<ul>
+<li>even <code>-CommandWithArgs</code> | <code>-cwa</code> has its place.</li>
+</ul>
+</li>
+<li>Run: mostly I use with sudo.
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">sudo run pwsh -NoProfile -Command &quot;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser&quot;
+sudo run pwsh -file ./aScriptThatSudo.ps1
+pwsh -cwa &quot;echo yeah&quot; -c &quot;echo no&quot; # CommandWithArgs superseded Command
+</span></code></pre>
+</li>
+<li>Resolution: check my <a href="https://github.com/groutoutlook/pwsh_settings/blob/f980080a842d861d2a9154af4f87a3dd6a0df317/quickVimAction.psm1#L4"><code>:a</code> functions</a>
+<ul>
+<li>check out [[001-CLI pwsh]]</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pwsh#-file---f"><code>-File</code> | <code>-f</code> flags</a>
+<ul>
+<li>Most command situation you ever need to launch <code>pwsh.exe</code> cli.</li>
+</ul>
+</li>
+<li><code>-ConfigurationFile</code> Specifies a session configuration (.pssc) file path.</li>
+<li><code>-EncodedCommand</code> | <code>-e</code> | <code>-ec</code> same as <code>-c</code> but accept Base64-encoded string version.
+<ul>
+<li>Recap: submit commands to PowerShell that require complex, nested quoting.</li>
+<li>Related: <a href="https://stackoverflow.com/questions/15414678/how-to-decode-a-base64-string/55680423#55680423">decode a Base64 string?</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">[Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes(&#39;Motörhead&#39;))
+[Text.Encoding]::Utf8.GetString([Convert]::FromBase64String(&#39;TW90w7ZyaGVhZA==&#39;))
+</span></code></pre>
+</li>
+<li>Rival: unmaintained but <a href="https://github.com/powershell/textutility"><code>TextUtility</code> Microsoft.PowerShell.TextUtility module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>-NoProfile</code> | <code>-nop</code> self-explained.
+<ul>
+<li>Useful when you abruptly corrupt your <code>$Profile</code> beyond repair.
+Or use with <code>-file</code>.</li>
+<li>#runner : within <code>justfile</code>. It's my default template. Rarely I prefer it having some modules.</li>
+</ul>
+</li>
+<li><code>-SSHServerMode</code> | <code>-sshs</code> for using within <code>sshd_config</code>.
+<ul>
+<li>#windows: Speaking of which, change default sshd_config by <code>Invoke-SudoPwsh &quot;hx $env:ProgramData\ssh\sshd_config&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

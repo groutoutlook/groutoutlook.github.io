@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - When should I use std::thread::detach?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - When should I use std::thread::detach?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-22 04:47:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/threading">
+                        <span>threading</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/22803600/when-should-i-use-stdthreaddetach">c++ - When should I use std::thread::detach?</a>
+<ul>
+<li>Recap: when you are not going to wait for the newly spawned thread for any result,  detach() and let it run freely.
+<ul>
+<li>Although it seems to be not a best practice.</li>
+</ul>
+</li>
+<li>Root: AI tought me how to use <code>detach</code>. It's awesome.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#comparison : <a href="https://stackoverflow.com/a/66117492/22954711">detach dont stop main thread, but join does, it make main thread wait.</a></li>
+<li><a href="https://cppreference.com/w/cpp/thread/jthread/detach">std::jthread::detach</a>
+<ul>
+<li>even more freely detaching/joining mechanism, closer to Windows handle.
+<ul>
+<li>In this case POSIX threads is the more primitive and inferior one.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

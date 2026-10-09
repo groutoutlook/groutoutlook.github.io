@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: external commands</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">external commands</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-09 08:29:04 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>[external commands](https://github.com/casey/just#external-commands  - recap:
+<ul>
+<li>Root:</li>
+<li>Resolution: you have to append <code>set unstable</code> for now.
+<ul>
+<li><code>shell(command, args...)</code> returns the standard output of shell script
+<code>command</code> with zero or more positional arguments <code>args</code>. the shell used to
+interpret <code>command</code> is the same shell that is used to evaluate recipe lines,
+and can be changed with <code>set shell := […]</code>.</li>
+<li><code>command</code> is passed as the first argument, so if the command is <code>'echo $@'</code>,
+the full command line, with the default shell command <code>sh -cu</code> and <code>args</code> <code>'foo'</code> and <code>'bar'</code> will be:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell"><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>sh<span class="punctuation definition string end shell">&#39;</span></span></span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>-cu<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>echo $@<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>echo $@<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>foo<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>bar<span class="punctuation definition string end shell">&#39;</span></span></span>
+</span></code></pre>
+<ul>
+<li>this is so that <code>$@</code> works as expected, and <code>$1</code> refers to the first
+argument. <code>$@</code> does not include the first positional argument, which is
+expected to be the name of the program being run.</li>
+<li>#example :
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># arguments can be variables or expressions
+file := &#39;/sys/class/power_supply/bat0/status&#39;
+bat0stat := shell(&#39;cat $1&#39;, file)
+# commands can be variables or expressions
+command := &#39;wc -l&#39;
+output := shell(command + &#39; &quot;$1&quot;&#39;, &#39;main.c&#39;)
+# arguments referenced by the shell command must be used
+empty := shell(&#39;echo&#39;, &#39;foo&#39;)
+full := shell(&#39;echo $1&#39;, &#39;foo&#39;)
+</span></code></pre>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code></code></pre>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

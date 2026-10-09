@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: directory - Merging folders with mv?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">directory - Merging folders with mv?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-09 06:05:12 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://unix.stackexchange.com/questions/127712/merging-folders-with-mv">directory - Merging folders with mv?</a>
+<ul>
+<li>Recap: merge with <code>rsync</code>.</li>
+<li>Root:</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rsync</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>av</span> /source/ /destination/</span>
+<span class="punctuation definition compound begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">after</span></span><span class="meta function-call arguments shell"> checking</span><span class="punctuation definition compound end shell">)</span>
+<span class="meta function-call shell"><span class="variable function shell">rm</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>rf</span> /source/</span>
+</span></code></pre>
+</li>
+<li>Reason:
+<ul>
+<li>Alternative could also be <code>cp -a</code> or <code>cp -R</code></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/185899/what-is-the-difference-between-a-symbolic-link-and-a-hard-link">What is the difference between a symbolic link and a hard link?</a>
+<ul>
+<li>Since <code>cp -rl source/folder destination &amp;&amp; rm -r source/folder</code> can also create hard links.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

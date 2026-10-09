@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about Preference variable.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about Preference variable.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-03-28 06:00:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables#verbosepreference">about Preference variable.</a>
+<ul>
+<li>
+<p>Recap: there is a default table value in this page.</p>
+</li>
+<li>
+<p>Run:</p>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Variable *preference # Just do that to fetch all current Preference.
+</span></code></pre>
+</li>
+<li>
+<p>Resolution: mostly needed while you are in REPL.</p>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables#ofs"><code>$OFS</code> - PowerShell</a>
+<ul>
+<li>Use for the stringify of primitive array type like [array] and others.</li>
+<li>Recite: separate the values when an array is converted to a string.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$OFS = &quot;+&quot;;[string](1,2,3,4); # output 1+2+3+4. alternative is `-join` or `-f`.
+</span></code></pre>
+</li>
+<li>It's something really similar to IFS and FS in grep/awk/bash.
+<ul>
+<li><a href="https://bash.cyberciti.biz/guide/$IFS"><code>$IFS</code> Linux Bash Shell Scripting Tutorial Wiki</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Root: <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables#errorview"><code>$ErrorView</code></a></p>
+</li>
+<li>
+<p>Related: <a href="https://stackoverflow.com/questions/38064704/how-can-i-display-a-naked-error-message-in-powershell-without-an-accompanying">How can I display a 'naked' error message in PowerShell without an accompanying stacktrace?</a></p>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables#psnativecommandargumentpassing">about_Preference_Variables - PowerShell</a></li>
+</ul>
+</li>
+<li>
+<p>Revisit:[2025-07-13 12:35:34] #debugger</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/45289719/with-powershell-how-can-i-get-write-debug-output-to-appear-in-the-console">With PowerShell, how can I get Write-Debug output to appear in the console?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

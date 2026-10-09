@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about crlf</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about crlf</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-05-16 02:10:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/zsh">
+                        <span>zsh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>stupid errors... <a href="https://github.com/ohmyzsh/ohmyzsh/issues/4069#issue-89607351">about crlf</a>
+<ul>
+<li>Brief: This is the snippet.</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="support function cd shell">cd</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">ZSH</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or anywhere you store .zshrc first.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config core.autocrlf false</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> rm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>cached</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>r</span> .</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> reset<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>hard</span></span>
+</span></code></pre>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

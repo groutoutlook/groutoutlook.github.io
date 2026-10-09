@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Using Brace Expansion in Bash Shell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Using Brace Expansion in Bash Shell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-21 01:43:57 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shell/bash">
+                        <span>shell/bash</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://linuxhandbook.com/brace-expansion/">Using Brace Expansion in Bash Shell</a>
+<ul>
+<li>Recap: somewhat looks like range in python though...</li>
+<li>Root: <a href="https://github.com/Genymobile/scrcpy/blob/master/doc/camera.md#brace-expansion-tip">Brace Expansion tip in scrcpy</a></li>
+<li>Resolution:
+<ul>
+<li>It's this kind of expression <code>echo {01..10}</code>, or could have some intervals.
+<ul>
+<li><code>echo {A..H}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/3963716/how-to-manually-expand-a-special-variable-ex-tilde-in-bash">scripting - How to manually expand a special variable (ex: ~ tilde) in bash</a></li>
+<li><a href="https://linuxhandbook.com/bash-command-substitution/">Command Substitution: Use Output as Variable in Bash</a>
+<ul>
+<li>This one is  like <code>pwsh</code></li>
+</ul>
+</li>
+<li><a href="https://linuxopsys.com/bash-parameter-expansion">Bash Parameter Expansion with Cheat Sheet</a>
+<ul>
+<li>It's <code>:=</code>,<code>:-</code>, <code>:+</code> expression.</li>
+<li>Extract substring:
+<ul>
+<li><code>${var:0:4}</code></li>
+</ul>
+</li>
+<li>Substitute:
+<ul>
+<li><code>${var/red/blue}</code></li>
+</ul>
+</li>
+<li>Glob:
+<ul>
+<li><a href="https://stackoverflow.com/questions/48542352/bash-variable-substitution-with-a-regex-not-working-as-expected">Bash variable substitution with a regex not working as expected - Because it's glob</a></li>
+</ul>
+</li>
+<li>Split string to array/associative container.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash">
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">Define a string variable</span><span class="comment line number-sign shell">
+</span><span class="variable other readwrite assignment shell">course</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell"><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Code-CSE206:Name-Java2:Credit-2.0<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">Split the string into an array based on the colon(:)</span><span class="comment line number-sign shell">
+</span><span class="variable other readwrite assignment shell">course_info</span><span class="keyword operator assignment shell">=</span><span class="punctuation section parens begin shell">(</span><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section expansion parameter begin shell">{</span></span><span class="meta group expansion parameter shell"><span class="variable other readwrite shell">course</span></span><span class="meta group expansion parameter shell"><span class="keyword operator substitution shell">/</span></span><span class="meta group expansion parameter shell"><span class="variable parameter switch shell">/</span></span><span class="meta group expansion parameter shell">:<span class="keyword operator substitution shell">/</span></span><span class="meta group expansion parameter shell"> </span><span class="meta group expansion parameter shell"><span class="punctuation section expansion parameter end shell">}</span></span><span class="punctuation section parens end shell">)</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

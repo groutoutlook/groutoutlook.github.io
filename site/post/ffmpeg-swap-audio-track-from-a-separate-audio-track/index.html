@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;ffmpeg&#x60; swap audio track, from a separate audio track.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;ffmpeg&#x60; swap audio track, from a separate audio track.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-03 08:31:50 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ffmpeg">
+                        <span>ffmpeg</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>ffmpeg</code> swap audio track, from a separate audio track.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> thatsANoNo-Itzy (gcb</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="variable other readwrite assignment shell">--cookies-from-browser</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell">firefox</span> <span class="meta function-call shell"><span class="variable function shell">--no-playlist</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>audio-format</span> opus<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> https://youtu.be/5egJjtkj_Gc&amp;list [... 0 more matches]</span><span class="comment line number-sign shell">
+</span></span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> yt-dlp download only audio with format of something like opus/mp3</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x</span> (gcb</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">) <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> https://youtu.be/r_dVIEF1Sq4 </span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 00:00:00<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\G</span>enie-IVE.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 00:00:00<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\G</span>enie-IVE.ogg<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 1:a<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>shortest</span> .<span class="constant character escape shell">\G</span>enie-IVE.mkv </span>
+</span></code></pre>
+<ul>
+<li>Use external audio files as primary/main audio track, keep the old track as secondary.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ffmpeg -ss 00:00 -i .\VeryVeryVery-IOI.webm -ss 00:00.3 -i &quot;D:\ProgramDataD\3-Audio\proj\downloads\I.O.I - Very Very Very.flac&quot; -map 0:v:0 -map 1:a:0 -map 0:a:0 -c:v copy -c:a copy -disposition:a:0 default -disposition:a:1 0 .\VeryVeryVery-IOI.mkv -y
+</span></code></pre>
+<ul>
+<li>Related: <code>#</code> == <code>SHARP cycle audio</code> to check on real sound.</li>
+<li>ffmpeg delay audio of the first audio track, not touch second audio track at all.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ffmpeg -i .\SHEESH-BabyMonster.mkv -filter_complex &quot;[0:a:0]adelay=200|200[a0]&quot; -map 0:v -map &quot;[a0]&quot; -map 0:a:1 -c:v copy -c:a:1 copy -c:a:0 aac .\SHEESH-BabyMonster-.mkv -y
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><code>mpv</code> have a command with a #keybinding #default as:
+<ul>
+<li><code>ctrl++</code> == <code>add audio-delay 0.1</code> I set to <code>ctrl+shift+-</code> instead... nominal form is <code>Ctrl+_</code></li>
+<li><code>ctrl+-</code> == <code>add audio-delay -0.1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+<li>Revisit: [Sun Jul 19 18:01:34 2026] suddenly my cookies doesnt work anymore
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>vU</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> LemonTang-h2h (gcb</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">--no-playlist</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>write-subs</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>sub-lang</span> en<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>sub-format</span> vtt<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>force-ipv4</span>   </span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

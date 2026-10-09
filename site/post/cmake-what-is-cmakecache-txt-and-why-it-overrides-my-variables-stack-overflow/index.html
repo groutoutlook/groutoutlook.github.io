@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: cmake - what is cmakecache.txt and why it overrides my variables - stack overflow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">cmake - what is cmakecache.txt and why it overrides my variables - stack overflow</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-20 10:58:53 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cmake">
+                        <span>build/cmake</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/42160117/what-is-cmakecache-txt-and-why-it-overrides-my-variables">cmake - what is cmakecache.txt and why it overrides my variables - stack overflow</a>
+<ul>
+<li>brief:</li>
+<li>origin: from vulkan-samples...</li>
+<li>resolution: config files.
+<ul>
+<li>or you could call it directly on <code>cmake</code> build command.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cmake</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>dbuild_testing</span>:bool=on <span class="keyword operator assignment redirection shell">&lt;</span>etc...<span class="keyword operator assignment redirection shell">&gt;</span> ../foo</span>
+</span></code></pre>
+<ul>
+<li>this will be the main reason i work with cmake project from now on. cmakecache  not work with visual studio solution.</li>
+</ul>
+</li>
+<li>related: <a href="https://cmake.org/cmake/help/book/mastering-cmake/chapter/cmake%20cache.html">cmake cache — mastering cmake</a></li>
+<li><a href="https://cmake.org/cmake/help/latest/command/add_compile_definitions.html#command:add_compile_definitions">add_compile_definitions — cmake 3.30.1 documentation</a></li>
+<li><a href="https://stackoverflow.com/questions/59879199/how-to-make-cmake-re-run-from-scratch-without-deleting-and-re-creating-the-build">how to make cmake re-run from scratch without deleting and re-creating the build directory - stack overflow</a>
+<ul>
+<li>explained zero_check.</li>
+<li>and nope, have to edit <code>cmakecache</code> to change the defintion globally without poluuting preprocessor.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

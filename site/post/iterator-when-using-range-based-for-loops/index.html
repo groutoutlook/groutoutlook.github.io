@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: iterator when using range-based for loops</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">iterator when using range-based for loops</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-04 04:53:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/6953128/need-iterator-when-using-range-based-for-loops/69572065#69572065">iterator when using range-based for loops</a>
+<ul>
+<li>Recap: which is no other way that just generate one in the way, ensure scope.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">int</span> i <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">0</span><span class="punctuation terminator c++">;</span> <span class="storage type c">auto</span><span class="keyword operator c">&amp;</span> elem<span class="keyword operator ternary c">:</span> vec<span class="punctuation section group end c++">)</span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+   <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> ...
+</span>   i<span class="keyword operator arithmetic c">+</span><span class="keyword operator arithmetic c">+</span><span class="punctuation terminator c++">;</span>
+<span class="punctuation section block end c++">}</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

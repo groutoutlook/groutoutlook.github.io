@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-ChildItem&#x60; | &#x60;gci&#x60; alias</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-ChildItem&#x60; | &#x60;gci&#x60; alias</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-12 09:47:23 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-childitem#-attributes"><code>Get-ChildItem</code> | <code>gci</code> alias</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gci D:\ProgramDataD\9-ProductionFiles\Firmware-Finished -File|%{cp $_}
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><code>gci -File</code> and <code>-Directory</code> is convenient.</li>
+<li>#til : you can put some basic conditions on <code>gci</code>.
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">Get-ChildItem -Attributes !Directory+!System+Encrypted, !Directory+!System+Compressed
+</span></code></pre>
+</li>
+<li>can use <code>gci -Path -Filter</code> with others. <code>-Filter</code> only supports * and ? wildcards.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: builtin</li>
+<li>Con: not as portable and crossplatform as <code>fd</code>. Cant write <code>--exec</code> styles of command.</li>
+</ul>
+</li>
+<li>Root: I'm trying to match only <code>Archive</code> types in <code>music.playlist.main</code> using <code>-Attributes</code> | <code>-At</code>
+<ul>
+<li>Should have used <code>-File</code> instead.
+<ul>
+<li><a href="https://stackoverflow.com/questions/13249085/limit-get-childitem-recursion-depth/13250444#13250444">Limit <code>Get-ChildItem</code> recursion depth</a>
+<ul>
+<li>this get items <strong>start from that exact Depth level</strong>.</li>
+</ul>
+</li>
+<li><a href="https://stackoverflow.com/questions/15294836/how-can-i-exclude-multiple-folders-using-get-childitem-exclude?noredirect=1&amp;lq=1">exclude multiple folders using Get-ChildItem <code>-exclude</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

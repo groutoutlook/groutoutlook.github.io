@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: my-windhawk-mods/mods/taskbar-vertical.wh.cpp at ae9cbb050ddc9b054b393dfda5d75dd5f331e381 · m417z/my-windhawk-mods</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">my-windhawk-mods/mods/taskbar-vertical.wh.cpp at ae9cbb050ddc9b054b393dfda5d75dd5f331e381 · m417z/my-windhawk-mods</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-18 01:40:12 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/m417z/my-windhawk-mods/blob/ae9cbb050ddc9b054b393dfda5d75dd5f331e381/mods/taskbar-vertical.wh.cpp#L143">my-windhawk-mods/mods/taskbar-vertical.wh.cpp at ae9cbb050ddc9b054b393dfda5d75dd5f331e381 · m417z/my-windhawk-mods</a>
+<ul>
+<li>Recap: veritcal taskbar is on <code>windhawk</code>. If you want to add more icons, have to disable
+<ul>
+<li>vertical taskbar and icon size modifier.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li>Pro: vertical taskbar, toolbar, minimal size of icons, modern folder picker...</li>
+<li>Con: virus risk.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/blob/main/README.md#themes">windows-11-file-explorer-styling-guide/README.md</a></li>
+<li>#guide : #cli/option</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">windhawk.exe</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>tray-only</span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Other command-line flags that may be useful:</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">windhawk.exe</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>exit</span> <span class="keyword control regexp set begin shell">[</span>-wait<span class="keyword control regexp set end shell">]</span></span>
+<span class="meta function-call shell"><span class="variable function shell">windhawk.exe</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>restart</span> <span class="keyword control regexp set begin shell">[</span>-tray<span class="keyword operator word shell">-</span>only<span class="keyword control regexp set end shell">]</span></span>
+<span class="meta function-call shell"><span class="variable function shell">windhawk.exe</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>safe-mode</span></span>
+</span></code></pre>
+</li>
+<li>Revisit: [2025-06-03 15:13:15]: after updates from windows insider, this took me a while...
+<ul>
+<li>to recompile all the plugins I guess.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Get-Item</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Get-Item</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-26 02:39:59 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/sysadmin">
+                        <span>sysadmin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-item">Get-Item</a>
+<ul>
+<li>Recap: alias <code>gi</code>, when interact with directory, it wont get its children like <code>gci</code>.</li>
+<li>Root: try <code>gi Env:/HOME</code>. basically same as <code>gci Env:/HOME</code>
+<ul>
+<li>now try <code>gi $HOME</code>.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/set-item">Set-Item</a>
+<ul>
+<li>
+<h2>alias <code>si</code>. Mainly used for setting <code>Function:</code>, <code>env:</code>, <code>alias:</code>, <code>HKLM:</code>, <code>HKCU:</code> in runtime.</h2>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: weixin screenshot by &#x60;win+shift+f1&#x60; since that one can help me highlight things.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">weixin screenshot by &#x60;win+shift+f1&#x60; since that one can help me highlight things.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-04 05:23:32 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/screenshot">
+                        <span>screenshot</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wechat">
+                        <span>wechat</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>weixin screenshot by <code>win+shift+f1</code> since that one can help me highlight things.
+<ul>
+<li>Recap: quite useful for what its worth.</li>
+<li>Run: but if you really want to do <code>win+shift+s</code>, enable/disable through <code>powershell</code>.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">New-ItemProperty -Path &quot;HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; -Name &quot;DisabledHotkeys&quot; -PropertyType String -Value &quot;S&quot; -Force
+Stop-Process -Name explorer -Force
+# Re-enable default `win+shift+s` screenshot of windows.
+Remove-ItemProperty -Path &quot;HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; -Name &quot;DisabledHotkeys&quot; -ErrorAction SilentlyContinue
+Stop-Process -Name explorer -Force
+</span></code></pre>
+</li>
+<li>Resolution: this will disable Windows's screenshot and over-relying on Wechat so... either you enable it all the times or use <code>ScreenCapture for it.</code></li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

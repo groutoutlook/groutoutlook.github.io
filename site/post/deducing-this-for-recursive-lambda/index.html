@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Deducing this for recursive lambda.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Deducing this for recursive lambda.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-13 09:23:32 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/functional">
+                        <span>functional</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lambda">
+                        <span>lambda</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/72605846/22954711">Deducing this for recursive lambda.</a>
+<ul>
+<li>Recap:</li>
+<li>Run: <code>this const auto&amp; self</code> ... and then call <code>self()</code>, what a jargon.</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/a/72605846">c++ - How to make a recursive lambda</a>
+<ul>
+<li>Update 2025-04: this is the most concise explaination.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><a href="https://ib-krajewski.blogspot.com/2017/10/do-we-need-y-combinator-in-c-and.html">On Software and Languages: Do we need the Y-combinator in C++?</a>
+<ul>
+<li>Explaination on why recursive lambda is impossible before C++23.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/14531993/can-lambda-functions-be-recursive">c++ - Can lambda functions be recursive?</a></li>
+<li><a href="https://www.modernescpp.com/index.php/c23-deducing-this/">C++23: Deducing This – MC++ BLOG</a></li>
+<li>#rust : <a href="https://stackoverflow.com/questions/16946888/is-it-possible-to-make-a-recursive-closure-in-rust">recursion - Is it possible to make a recursive closure in Rust?</a>
+<ul>
+<li>Closure in Rust is lambda in c++, they are all unnamed functions inside a function</li>
+</ul>
+</li>
+<li><a href="https://www.dev0notes.com/intermediate/recursive_lambdas.html#going-self-sufficient-with-c23">Recursive lambdas from C++14 to C++23 - Notes from /dev/null</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

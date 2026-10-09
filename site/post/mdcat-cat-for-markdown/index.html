@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mdcat&#x60;: cat for markdown</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mdcat&#x60;: cat for markdown</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-31 04:05:26 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/swsnr/mdcat"><code>mdcat</code>: cat for markdown</a>
+<ul>
+<li>Recap: Output markdown better than <code>bat</code></li>
+<li>Resolution: use it from now on when <code>bat</code> output disturbs me.
+<ul>
+<li>it will trigger <code>less</code> and <code>more</code> when <code>stdout</code> is over the size of terminal <code>pty</code>.</li>
+<li>As now in my <code>$PROFILE</code>, I also alias them in place of <code>cat</code>.
+<ul>
+<li>Proper scripting in #powershell should be done via <code>Get-Content</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: it can conceal markdown links in terminal,  as <code>eza</code> could do.
+<ul>
+<li>Con: <strong>died</strong>, as in [ Saturday, June 6, 2026 08:11:44 AM ]</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+<li>Rival:  [2025-05-25 06:59:23 PM] #format/markdown #rust
+<ul>
+<li><a href="https://github.com/benjajaja/mdfried"><code>mdfried</code> markdown viewer for terminal that renders images and big headers</a>
+<ul>
+<li>Recap: <code>mdfried</code> act more like a #tui #pager like <code>ov</code>. Render sixel bytecode.</li>
+<li>Run: build with <code>cargo build --release --no-default-features --features &quot;svg,mermaid&quot;</code></li>
+<li>Root: still not very helpful trying to find something render osc8 links...
+But at least it's not archived like <code>mdcat</code> now. So I shim <code>mdcat</code> -&gt; <code>mdfried</code> as well.</li>
+</ul>
+</li>
+<li><a href="https://github.com/henriklovhaug/md-tui#key-binds"><code>md-tui</code> Markdown renderer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

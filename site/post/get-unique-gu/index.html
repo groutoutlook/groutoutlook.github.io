@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-Unique&#x60; | &#x60;gu&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-Unique&#x60; | &#x60;gu&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-04 08:36:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-unique"><code>Get-Unique</code> | <code>gu</code></a>
+<ul>
+<li>Recap: This is mostly used for processing strings...</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">@(1..30+30..1) | sort | unique # uu uniq # can also do uutils shim&#39;s uniq.
+</span></code></pre>
+</li>
+<li>Root: <code>uniq</code> commands in #linux.</li>
+<li>Resolution: <code>-OnType</code> flags with get only one object for each types processed.
+<ul>
+<li>which is quite suitable for getting a list of InputType first before process hard things.
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-unique#example-3-get-unique-object-types-in-a-directory">like this</a></li>
+</ul>
+</li>
+<li><code>-CaseInsensitive</code> self explained.
+<ul>
+<li>Run: <code>&quot;12,123,123,abc,ok,ABC,aBc&quot; -split &quot;,&quot; | gu -CaseInsensitive</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

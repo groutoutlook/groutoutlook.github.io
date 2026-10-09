@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Windows&#x27; Dtrace implementation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Windows&#x27; Dtrace implementation</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-06 01:43:37 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugging">
+                        <span>debugging</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/graph">
+                        <span>graph</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/os">
+                        <span>os</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syscall">
+                        <span>syscall</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/DTrace-on-Windows">Windows' Dtrace implementation</a>
+<ul>
+<li>Recap: #installation: <a href="https://github.com/microsoft/DTrace-on-Windows/blob/d394cf0f/README.md#L15-L20">DTrace-on-Windows/README.md at d394cf0f5bbcde8cae9801f73ec5eaef031dddad · microsoft/DTrace-on-Windows</a></li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <code>flamegraph</code>, the newer one.
+<ul>
+<li><a href="https://github.com/opendtrace/opendtrace"><code>opendtrace</code> implementation</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#acronym : <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-">Event Tracing for Windows (ETW) - Windows drivers</a></li>
+<li><a href="https://github.com/microsoft/ETW"><code>ETW</code> Event Tracing for Windows tools and samples</a>
+<ul>
+<li>Root: <a href="https://news.ycombinator.com/item?id=45087748">A Linux version of the Procmon Sysinternals tool</a></li>
+</ul>
+</li>
+<li>#linux <a href="https://github.com/draios/sysdig"><code>sysdig</code> system exploration and troubleshooting tool with first class support for containers</a>
+<ul>
+<li>#alternative to <code>dtrace</code> Exclusively for Linux.</li>
+</ul>
+</li>
+<li>#infosec : <a href="https://github.com/microsoft/detours"><code>Detours</code> software package for monitoring and instrumenting API calls on Windows. It is distributed in source code form.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

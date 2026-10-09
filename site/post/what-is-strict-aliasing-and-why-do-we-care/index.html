@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: What is Strict Aliasing and Why do we Care?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">What is Strict Aliasing and Why do we Care?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-13 12:31:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/type/punning">
+                        <span>type/punning</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8#c20-and-bit_cast">What is Strict Aliasing and Why do we Care?</a>
+<ul>
+<li>Recap: It's for c++20 so you can forget about them if you are still targeting keil-mdk</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/53401654/why-was-stdbit-cast-added-if-reinterpret-cast-could-do-the-same"><code>std::bit_cast</code> / <code>reinterpret_cast</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/cGTCDotBNO3RgwoynH9RlA">C++'s Strict Aliasing rules</a></li>
+<li>Related: #memory/byte
+<ul>
+<li><a href="https://stackoverflow.com/questions/77794466/do-we-have-a-strict-aliasing-rule-violation/77794541#77794541">Strict Aliasing rule violation?</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/77097673/a-byte-type-stdbyte-vs-stduint8-t-vs-unsigned-char-vs-char-vs-stdbitset8/77097674#77097674"><code>std::byte</code>vs <code>std::uint8_t</code> vs <code>unsigned char</code> vs <code>char </code>vs <code>std::bitset&lt;8&gt;</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

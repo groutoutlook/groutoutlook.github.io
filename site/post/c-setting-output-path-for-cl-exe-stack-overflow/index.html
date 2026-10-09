@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - setting output path for cl.exe - stack overflow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - setting output path for cl.exe - stack overflow</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-10 12:57:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiler">
+                        <span>compiler</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/10393315/setting-output-path-for-cl-exe">c++ - setting output path for cl.exe - stack overflow</a>
+<ul>
+<li>Recap: <code>/foout/files.exe</code> , kinda like that.</li>
+<li>Root: tinyfiledialogs, check the repo or  jump into it.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#debugger: <a href="https://stackoverflow.com/questions/10867186/why-do-i-need-ilk-pdb-and-exp-files">windows - why do i need ilk, pdb and exp files? - stack overflow</a>
+<ul>
+<li>#format</li>
+</ul>
+</li>
+<li>if you want to quickly check <code>cl.exe --version</code> but have no idea how to fetch that executable.
+<ul>
+<li>Run: <code>vcpkg install icu</code> or any legit vcpkg entry.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"></span><span class="meta function-call arguments shell"><span class="keyword operator assignment redirection shell">&gt;</span> vcpkg install icu:x64-windows-static<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>recurse</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>binarysource</span><span class="keyword operator assignment option shell">=</span>clear </span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> output</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">Compiler</span></span><span class="meta function-call arguments shell"> found: C:/Program Files/Microsoft Visual Studio/18/Insiders/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> then just copy and shim it. Done.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Related: <a href="https://github.com/microsoft/vcpkg/issues/51299"><code>icu</code> port issues can be fixed by moving completely..</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Sat Jun 27 15:15:15 2026]
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">vcpkg</span></span><span class="meta function-call arguments shell"> x-add-version icu <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> after every changes you made to the port.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Change color of copper(F.Cu/B.Cu), Silkscreen and especially Mask in order to view multiple layer at the same time.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Change color of copper(F.Cu/B.Cu), Silkscreen and especially Mask in order to view multiple layer at the same time.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-13 12:23:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/preference">
+                        <span>preference</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/viewer/3d">
+                        <span>viewer/3d</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Change color of copper(F.Cu/B.Cu), Silkscreen and especially Mask in order to view multiple layer at the same time.
+<ul>
+<li>Recap: currently copper cant be changed to something transparent.
+Component's opacity can be changed in <code>pcbnew</code> -&gt; Footprint Properties (<code>e</code>) -&gt; 3D model. There is a opacity slide bar in there.</li>
+<li>Run: Board Body color can also be changed. Plated Barrels(via, THT) is the same as copper color.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.kicad.org/blog/2020/09/Development-Highlight-3D-Viewer-Improvements/">Development Highlight: 3D Viewer Improvements | KiCad</a></li>
+<li>Related:
+<ul>
+<li><a href="https://gitlab.com/kicad/code/kicad/-/work_items/21865">pcbnew - missing colors when exporting STEP model (#21865) · Issue · kicad/code/kicad</a>
+<ul>
+<li>Recap: crispy art style which I'm looking for.. to make PCB anime-lookalike. Cuter and marketable.</li>
+<li>Resolution: export from KiCad to STEP file, then open in FreeCAD.</li>
+<li>Rival: <code>IDFv3</code> instead of STEP, since it's infinitesimally smaller.</li>
+</ul>
+</li>
+<li><a href="https://gitlab.com/kicad/code/kicad/-/work_items/23943">Opacity adjustment in Footprint properties is hidden (#23943) · Issue · kicad/code/kicad</a>
+<ul>
+<li>it's a small bug, you can workaround by adjusting the size of preview pane.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;files.associations&#x60; in vscode</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;files.associations&#x60; in vscode</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-08 07:42:25 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vscode">
+                        <span>ide/vscode</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/66850056/22954711"><code>files.associations</code> in vscode</a>
+<ul>
+<li>Recap: which can help us open file and ide will recognize as certains kind of source files.</li>
+<li>Root: <a href="https://github.com/jaded-encoding-thaumaturgy/vs-preview/blob/master/docs/installation/install_vscode.rst">jaded-encoding-thaumaturgy/vs-preview</a></li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-json"><span class="source json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>files.associations<span class="punctuation definition string end json">&quot;</span></span>: <span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
+      <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>*.md.html<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>markdown<span class="invalid illegal unclosed-string json">
+</span></span></span><span class="punctuation section dictionary end json">}</span></span>,
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#keybinding: <code>workbench.action.openglobalkeybindingsfile</code> == <code>Ctrl+shift+, ctrl+shift+k</code>
+<ul>
+<li>in which it could help a lot.</li>
+<li>also <code>workbench.action.opensettingsjson</code> == <code>Ctrl+shift+, ctrl+shift+,</code> open <code>settings.json</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

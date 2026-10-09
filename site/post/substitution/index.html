@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: substitution</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">substitution</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-24 11:36:36 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just#expressions-and-substitutions">substitution</a>
+<ul>
+<li>Recap:</li>
+<li>Root: i use a lot of <code>{{...}}</code> substitution and dont even know how they called.</li>
+<li>Resolution: <a href="https://github.com/casey/just#strings">more about string substitution and single quote, double quote, triple quote.</a>
+<ul>
+<li>cant nest more <code>{{...}}</code> inside <code>{{...}}</code>.</li>
+<li>complex strings:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">export FOO := &#39;&#39;&#39;
+  a complicated string with
+  some dis\tur\bi\ng escape sequences
+  and &quot;quotes&quot; of &#39;different&#39; kinds
+&#39;&#39;&#39;
+[script]
+bar:
+  echo &quot;$env:FOO&quot;
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://just.systems/man/en/expressions-and-substitutions.html#escaping-">esacping <code>{{</code></a>
+<ul>
+<li>by more <code>{{{{</code> or <code>&quot;{{&quot;</code>.</li>
+</ul>
+</li>
+<li><code>quote(path)</code> is interesting, used for converting single quote to <code>\'</code>. for escape sequence.
+<ul>
+<li>#typesetting: since single quote and double quote is a forever issue on how to escape strings.
+<ul>
+<li>we cant have nice things as upper and lower quote as in german.</li>
+<li>more at <a href="https://wikipedia.org/wiki/quotation_mark">quotation mark - wikipedia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

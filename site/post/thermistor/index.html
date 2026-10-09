@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Thermistor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Thermistor</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-17 08:37:55 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/components">
+                        <span>components</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/voltage">
+                        <span>voltage</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/Thermistor">Thermistor</a>
+<ul>
+<li>Recap: resistor in which the resistance is strongly dependent on temperature. like varistor for bidirectional diode..</li>
+<li>Run: normally known as NTC thermistor, used to suppress the surge current of power-on.
+<ul>
+<li>NTC : Negative Temperature Coefficient - resistance value decreases as the temperature rises, used
+in temperature sensors such as thermometers and air conditioners, and in temperature control devices such
+as smartphones, kettles, and irons .</li>
+</ul>
+</li>
+<li>Resolution:  NTC inrush limiter circuit...
+<ul>
+<li><a href="https://product.tdk.com/en/techlibrary/applicationnote/howto_ntc-limiter.html">Use NTC Thermistors for Inrush Current Limiting | Application Note | Tech Library | TDK Product Center</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/509949/using-thermistor-vs-soft-starter-for-motor">Using thermistor vs. soft starter for motor</a>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/qZtllKyQbD0D7yMVEpD4rQ">Teardown Report: Jinshengyang 550W Platinum Silicon Carbide Server Power Supply</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: NTC and varistor have a very similar looking schematic symbols.</li>
+<li>Related:
+<ul>
+<li>#firmware #libc <a href="https://github.com/libdriver/ntc"><code>ntc</code> NTC full-featured driver library for general-purpose MCU and Linux.</a></li>
+<li>#definition <a href="https://www.murata.com/en-global/products/thermistor/ptc">PTC Thermistors (POSISTOR) | Murata Manufacturing Co., Ltd.</a></li>
+<li>#definition <a href="https://www.murata.com/en-global/products/thermistor/ntc">NTC Thermistors | Murata Manufacturing Co., Ltd.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: nmap deep scan with port range and service Detection. Much more precise than quick check.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">nmap deep scan with port range and service Detection. Much more precise than quick check.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-01-24 08:08:26 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/infosec">
+                        <span>infosec</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nmap">
+                        <span>nmap</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/port">
+                        <span>port</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>nmap deep scan with port range and service Detection. Much more precise than quick check.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">nmap</span></span><span class="meta function-call arguments shell"> 192.168.100.242<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> 8000-8098</span>
+<span class="meta function-call shell"><span class="variable function shell">nmap</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> 0-65535<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>n</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>sV</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>version-all</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>O</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>osscan-guess</span> 113.161.81.70 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> -A flag also add traceroute result. </span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://nmap.org/book/vscan.html">Service and Application Version Detection | Nmap Network Scanning</a></li>
+<li>Related:
+<ul>
+<li><a href="https://serverfault.com/questions/24622/how-to-use-rsync-over-ftp">How to use <code>rsync</code> over <code>FTP</code> - Server Fault</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

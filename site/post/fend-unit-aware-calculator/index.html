@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;fend&#x60; unit-aware calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;fend&#x60; unit-aware calculator</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-31 05:16:55 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/eval">
+                        <span>eval</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/math">
+                        <span>math</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/printfn/fend"><code>fend</code> unit-aware calculator</a>
+<ul>
+<li>Recap: shim <code>bc</code>. <code>numbat</code> is so slow anyway. use <code>|</code> within #helix (pipe) is fast.</li>
+<li>Run: About that usage : <a href="https://printfn.github.io/fend/documentation/#scripting">Scripting</a>
+<ul>
+<li>can use with a text files contains calculation as well.</li>
+<li>Or can be used as quick current conversion.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">bc &quot;7cent to vnd&quot;
+bc &quot;2000 ft2 to m2&quot; # sqft/sqm or even test in helix with matching it...
+bc &quot;10mA*45V&quot;
+bc &quot;480Mbps to MB/s&quot; # that is possible, mind you.
+</span></code></pre>
+<ul>
+<li>#powershell In <code>$PROFILE</code>, I add #keybinding <code>ctrl+=</code> to add <code>bc</code> and wrap equations in quote.
+<ul>
+<li><code>ctrl+a</code> <code>ctrl+=</code> add a newline and solve it right away.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>#config : <a href="https://printfn.github.io/fend/documentation/#configuration"><code>fend</code> custom units and more config</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/gavinhoward/bc">gavinhoward/bc: An implementation of the POSIX bc calculator with GNU extensions and dc. Finished, but well-maintained.</a>
+<ul>
+<li>I searched from the <code>calculator</code> tag.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://lobste.rs/s/vtpnw6/gnu_units">GNU Units</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

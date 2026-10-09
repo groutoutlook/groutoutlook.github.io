@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: TOREX Semi Product website | A specialist in Analog Power Supply IC design</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">TOREX Semi Product website | A specialist in Analog Power Supply IC design</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-12 02:12:45 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/analog/soc">
+                        <span>analog/soc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/driver">
+                        <span>driver</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ldo">
+                        <span>ldo</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://product.torexsemi.com/en">TOREX Semi Product website | A specialist in Analog Power Supply IC design</a>
+<ul>
+<li>Recap:</li>
+<li>Run:  <a href="https://product.torexsemi.com/en/category/voltage-regulators">Voltage Regulators | TOREX SEMICONDUCTOR LTD.</a>
+<ul>
+<li>aside from the OG XC6210 250mA we have some ADJ variant as XC6220
+which can do 1A-2A LDO. impressive nonetheless.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason: @Lenolmessi10 is the wx's id of a torex agent. They send me a catalogue/selection table.</li>
+<li>Root: <a href="https://product.torexsemi.com/system/files/series/xc6194.pdf">XC6194 1A Output Current Push Button Smart Load Switch</a>
+<ul>
+<li><a href="https://www.reddit.com/r/AskElectronics/comments/1o1ibk7">Is this the correct setup for my purpose? - Load Switch</a>
+<ul>
+<li>#meta #selection/table <a href="https://www.m3tekic.com/index_en.php?action=product&amp;cid=5">M3 Technology (M3Tek) Inc.</a></li>
+</ul>
+</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=678066857765&amp;spm=a21wu.12321156-tw%2Fdefault.go-detail.1">MT7692NFER 丝印AG DFN4 5.5V/4A 配电负载开关芯片</a>
+<ul>
+<li>limit current in general.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#opamp #ldo <a href="https://product.torexsemi.com/system/files/series/xc6902.pdf">XC6902  -0.9 to -16V Input Three Terminal Negative Voltage Regulator</a>
+<ul>
+<li>for Opamp, reference voltage level, some weird shit.</li>
+<li>i.e you can inverse the 5v and GND of a circuit and feed onto this one.
+probably can be used to detect whether user plugging positive/negative in wrong direction
+-&gt; inverse the wiring by some switches.</li>
+</ul>
+</li>
+<li>#acronym <a href="https://product.torexsemi.com/en/longevity-program">TLP: Torex Longevity Program | TOREX SEMICONDUCTOR LTD.</a></li>
+<li><a href="https://product.torexsemi.com/en/series/xc6602">XC6602 1A, 0.5V Input Voltage, High Speed LDO Regulators </a>
+<ul>
+<li>V_bias is used for supplement more current into the output. since it's understandable thin traces + low voltage is devastated combo for high enough current</li>
+<li>used for DSP/FPGA chip, where we need absurd current of low voltage signals.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

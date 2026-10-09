@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;filter&#x60; in function</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;filter&#x60; in function</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-04 05:26:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions#filters"><code>filter</code> in function</a>
+<ul>
+<li>Recap: (Prefix) a type of function that runs on each object in the pipeline.
+<ul>
+<li>A filter resembles a function with all its statements in a process block.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">function Add-One { process { 1 + $_ } }
+filter Add-Two { 2 + $_ }
+3 | add-one | add-two
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason: Quick to write a pipeline function which use the <code>$_</code> auto var.
+<ul>
+<li>Pro: short</li>
+<li>Con: not an usual use. get familiar with function ... process instead. They also get you a <code>$_</code> to use.</li>
+</ul>
+</li>
+<li>Root: <a href="https://stackoverflow.com/questions/56446577/what-does-the-filter-keyword-do-in-powershell/69215694#69215694">What does the filter keyword do in PowerShell?</a></li>
+<li>Related:
+<ul>
+<li>#polymorphism #operator <a href="https://stackoverflow.com/questions/59290037/overloading-operator-in-powershell-classes">Overloading Operator % in PowerShell Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

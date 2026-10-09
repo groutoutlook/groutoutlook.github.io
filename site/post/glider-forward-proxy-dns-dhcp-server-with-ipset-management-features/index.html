@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;glider&#x60; forward proxy, dns/dhcp server with ipset management features</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;glider&#x60; forward proxy, dns/dhcp server with ipset management features</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-05 01:54:59 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/proxy/forward">
+                        <span>proxy/forward</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/nadoo/glider"><code>glider</code> forward proxy, dns/dhcp server with ipset management features</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/compsci/comments/ewkeyy">ELI5: What is the difference between a forward and backwards proxy?</a>
+<ul>
+<li>Forward proxy is client proxy, reverse proxy is server proxy.
+<ul>
+<li>Forward proxy is for blocking, filtering, timing content for client machine. Servers dont care about that.</li>
+<li>Reverse proxy is for load balancing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/jay7x/etc-hosts-proxy">jay7x/etc-hosts-proxy: Stop changing /etc/hosts file! Use <code>etc-hosts-proxy</code> instead!</a></li>
+<li><a href="https://github.com/saucelabs/forwarder/"><code>forwarder</code> MITM proxy with PAC support. It's suitable for debugging, intercepting and manipulating HTTP traffic. It's used as a core component of Sauce Labs Sauce Connect Proxy.</a>
+<ul>
+<li>which is a forward proxy by definition.</li>
+</ul>
+</li>
+<li><a href="https://github.com/StalkR/dns-reverse-proxy">StalkR/dns-reverse-proxy: DNS Reverse Proxy</a>
+<ul>
+<li>which route <strong>human readable URL</strong> into IP address of what you specified. normally it would be from URL to whatever default is.</li>
+<li>Common name:<a href="https://wikipedia.org/wiki/Reverse_DNS_lookup">Reverse DNS lookup</a>
+<ul>
+<li><a href="https://serverfault.com/questions/41064/whats-the-command-line-utility-in-windows-to-do-a-reverse-dns-look-up">domain name system - What's the command-line utility in Windows to do a reverse DNS look-up?</a>
+<ul>
+<li>lots of them <code>dig</code>, <code>nslookup</code>,..</li>
+</ul>
+</li>
+<li><a href="https://unix.stackexchange.com/questions/327165/is-dig-ptr-a-valid-way-to-perform-a-reverse-dns-query#327236">Is <code>dig ptr</code> a valid way to perform a reverse DNS query?</a></li>
+<li>it's <code>dig -x</code> to make a reverse DNS query.</li>
+</ul>
+</li>
+<li><a href="https://wpvip.com/blog/dns-reverse-proxy/">Pointing DNS Directly vs. Reverse Proxy | WordPress VIP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

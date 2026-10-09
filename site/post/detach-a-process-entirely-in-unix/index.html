@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: detach a process entirely in unix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">detach a process entirely in unix</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-04-22 12:00:00 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/178587/how-do-i-detach-a-process-from-terminal-entirely">detach a process entirely in unix</a>
+<ul>
+<li>Recap: Using <code>nohup &lt;process&gt; &amp;</code>
+<ul>
+<li>Quite useful when using <code>sway</code>, not a full blown window manager like <code>kdm</code>, <code>gdm</code> or <code>lightdm</code>.</li>
+</ul>
+</li>
+<li>Root: <a href="https://askubuntu.com/questions/551991/ubuntu-stuck-on-login-screen">Ubuntu stuck on login screen</a>
+<ul>
+<li>Run: <code>ctrl+alt+f3</code> or so.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> you can do chown username:username .Xauthority to give you login permission.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">ls</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ld</span> /tmp</span> <span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> chmod a+wt /tmp </span>
+<span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> apt-get purge lightdm</span>
+<span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> apt-get update</span>
+<span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> apt-get install lightdm</span>
+<span class="meta function-call shell"><span class="variable function shell">dpkg-reconfigure</span></span><span class="meta function-call arguments shell"> lightdm</span>
+<span class="meta function-call shell"><span class="variable function shell">sleep</span></span><span class="meta function-call arguments shell"> 1</span> <span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> shutdown<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>r</span> now</span>
+</span></code></pre>
+</li>
+<li>Revisit: [ Monday, June 8, 2026 02:55:50 AM ] im stuck at login's ubuntu.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

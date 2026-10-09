@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How do you copy the public key to a ssh-server?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How do you copy the public key to a ssh-server?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-13 10:42:54 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://unix.stackexchange.com/questions/29386/how-do-you-copy-the-public-key-to-a-ssh-server">How do you copy the public key to a ssh-server?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://superuser.com/questions/1747549/alternative-to-ssh-copy-id-on-windows">Alternative to <code>ssh-copy-id</code> on windows</a></li>
+<li><a href="https://unix.stackexchange.com/questions/29386/how-do-you-copy-the-public-key-to-a-ssh-server/639060#639060">Avoiding <code>ssh-copy-id</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.mankier.com/1/ssh-add"><code>ssh-add</code> adds private key identities to the OpenSSH authentication agent | openssh-clients Commands</a>
+<ul>
+<li><a href="https://gitolite.com/gitolite/quick_install">(unix/ssh experts) quick install and setup - Gitolite</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#cli/option : <a href="https://www.mankier.com/1/ssh-agent"><code>ssh-agent</code> OpenSSH authentication agent</a></li>
+<li>#cli/option <a href="https://www.mankier.com/8/sshd"><code>sshd</code> OpenSSH daemon | openssh-server</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sshd</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p8022</span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

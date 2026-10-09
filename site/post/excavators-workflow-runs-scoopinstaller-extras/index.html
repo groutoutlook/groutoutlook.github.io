@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Excavators Workflow runs · ScoopInstaller/Extras</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Excavators Workflow runs · ScoopInstaller/Extras</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-03 09:07:58 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cicd">
+                        <span>cicd</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman/scoop">
+                        <span>pacman/scoop</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/ScoopInstaller/Extras/actions">Excavators Workflow runs · ScoopInstaller/Extras</a>
+<ul>
+<li>Recap: more insights about how scoop use github actions to update version/URI database.</li>
+<li>Run: on <code>excavator.yml</code>:
+<pre class="syntax-highlighting"><code class="language-yaml"><span class="source yaml"><span class="constant language boolean yaml">on</span><span class="punctuation separator key-value mapping yaml">:</span>
+  <span class="string unquoted plain out yaml"><span class="entity name tag yaml">schedule</span></span><span class="punctuation separator key-value mapping yaml">:</span>
+<span class="comment line number-sign yaml"><span class="punctuation definition comment line number-sign yaml">#</span> run every 4 hours
+</span>    <span class="punctuation definition block sequence item yaml">-</span> <span class="string unquoted plain out yaml"><span class="entity name tag yaml">cron</span></span><span class="punctuation separator key-value mapping yaml">:</span> <span class="string quoted single yaml"><span class="punctuation definition string begin yaml">&#39;</span>20 */4 * * *<span class="punctuation definition string end yaml">&#39;</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/ScoopInstaller/Extras/commits/master/bucket/mpv-git.json">History for bucket/mpv-git.json - ScoopInstaller/Extras</a>
+<ul>
+<li>Root: <code>mpv-git</code> has sixel output built today, and the Excavators missed, thats' why..</li>
+<li>Revisit: [Wed Jun 24 11:46:49 2026] I migirated to <code>zhongfly</code> build.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scoop bucket add brian6932_dank-scoop https://github.com/brian6932/dank-scoop
+scoop install brian6932_dank-scoop/mpv-git
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

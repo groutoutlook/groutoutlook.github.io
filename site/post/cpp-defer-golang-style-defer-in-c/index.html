@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: cpp-defer: Golang-style defer in C++</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">cpp-defer: Golang-style defer in C++</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-16 10:05:27 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compsci/defer">
+                        <span>compsci/defer</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/sergereinov/cpp-defer">cpp-defer: Golang-style defer in C++</a>
+<ul>
+<li>Recap: a concept similar with <code>finally</code> block when leaving a scope.</li>
+<li>Root:
+<ul>
+<li><a href="https://github.com/Neargye/scope_guard">Neargye/scope_guard: Scope Guard &amp; Defer C++</a></li>
+</ul>
+</li>
+<li>Resolution: It's for making a lightweight destructor, without making a whole class over function.</li>
+<li>Reason:
+<ul>
+<li><a href="https://thephd.dev/ever-closer-c23-improvements">Ever Closer - C23 Draws Nearer | The Pasture</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://youtu.be/WjTrfoiB0MQ">CppCon 2015: Andrei Alexandrescu “Declarative Control Flow&quot;</a></li>
+</ul>
+</li>
+<li>Rival: #zig #doc/official <a href="https://ziglang.org/documentation/master/#defer"><code>defer</code> keyword Zig</a></li>
+<li>Revisit: [2026-02-21 11:17:27 AM] <a href="https://news.ycombinator.com/item?id=47031197">Defer available in gcc and clang</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

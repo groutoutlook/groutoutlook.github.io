@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;std::optional&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;std::optional&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-02 06:55:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/template">
+                        <span>template</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/utility/optional"><code>std::optional</code></a>
+<ul>
+<li>Recap: imagine default type <code>T</code>, now with <code>std::nullopt</code> state. This is nullable type.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>used as a RTTI feature, which can convert between type safely without punning.
+<ul>
+<li>E.g. for serializing need.</li>
+<li>See: <a href="https://github.com/stephenberry/glaze/blob/main/docs/wrappers.md">Wrappers for custom writing for types</a>
+<ul>
+<li>if you want to write bools as numbers and some quoted numbers for examples.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>when uninitialize, it's discoupled(<code>nullopt</code> state).
+<ul>
+<li>A common use case for optional is the return value of a function that may fail.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/stephenberry/glaze/issues/1892"><code>glz::cast&lt;&amp;T::field, std::optional&lt;U&gt;&gt;</code> does not work with <code>error_on_missing_keys = true</code> · Issue #1892 · stephenberry/glaze</a></li>
+<li>Related:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/utility/in_place">std::in_place, std::in_place_type, std::in_place_index, std::in_place_t, std::in_place_type_t, std::in_place_index_t</a></li>
+<li>#blog: <a href="https://www.sandordargo.com/blog/2025/10/01/cpp26-optional-of-reference">C++26: std::optional&lt;T&amp;&gt; | Sandor Dargo's Blog</a></li>
+<li>#rust <a href="https://doc.rust-lang.org/std/option/">std::option - Rust</a> is the nullable type.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

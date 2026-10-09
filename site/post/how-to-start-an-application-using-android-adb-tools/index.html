@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How to start an application using Android ADB tools</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How to start an application using Android ADB tools</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-01 11:15:25 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/adb">
+                        <span>adb</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/intent">
+                        <span>intent</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/4567904/how-to-start-an-application-using-android-adb-tools">How to start an application using Android ADB tools</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell am start<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>n</span> com.termux/.app.TermuxActivity</span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input text <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>sshd<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input keyevent KEYCODE_ENTER</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> &quot;input keyevent KEYCODE_ENTER &amp;&amp; input keyevent KEYCODE_HOME&quot; # can chain POWER in here.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/4094109/android-how-to-get-a-list-of-all-available-intent-filters">Android: How to get a list of all available intent filters?</a>
+<ul>
+<li>Run: #AI help me rewrite the regex.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell dumpsys package r</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">b</span></span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell dumpsys activity broadcasts</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>.+\.[0-9A-Z_\-]+:\s*$<span class="punctuation definition string end shell">&quot;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">sort</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">b</span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;git reflog&#x60; record every changes in your HEAD commit. That&#x27;s also the basis of &#x60;switch -&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;git reflog&#x60; record every changes in your HEAD commit. That&#x27;s also the basis of &#x60;switch -&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-11 06:36:55 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>git reflog</code> record every changes in your HEAD commit. That's also the basis of <code>switch -</code>
+<ul>
+<li>Recap: you can reflog and check about every action you do with git which involves changed to the commit or branch.
+<ul>
+<li>and of course, the current HEAD... There are lots of it.</li>
+</ul>
+</li>
+<li>Run:
+<ul>
+<li>This fix all your issues as, mis-committed heavy files... rs1 then rap is ofc, but this is cleaning.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> reflog expire<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>expire</span><span class="keyword operator assignment option shell">=</span>now<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>all</span> </span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> gc<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>prune</span><span class="keyword operator assignment option shell">=</span>now<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>aggressive</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

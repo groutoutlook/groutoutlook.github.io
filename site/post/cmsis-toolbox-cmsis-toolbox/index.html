@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;cmsis-toolbox&#x60; CMSIS Toolbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;cmsis-toolbox&#x60; CMSIS Toolbox</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-23 07:55:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/firmware">
+                        <span>firmware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Open-CMSIS-Pack/cmsis-toolbox"><code>cmsis-toolbox</code> CMSIS Toolbox</a>
+<ul>
+<li>Recap: CLI tools for CMSIS-Pack.</li>
+<li>Resolution: as now no scoop for you
+<ul>
+<li>I <code>shim</code> it.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell"></span></span><span class="meta function-call arguments shell"> cbridge.exe   cbuild2cmake.exe   cpackget.exe    launch-MCUXpressoConfigTools.bat   svdconv.exe</span>
+<span class="meta function-call shell"><span class="variable function shell"></span></span><span class="meta function-call arguments shell"> cbuild.exe    cbuildgen.exe      csolution.exe   packchk.exe                        vidx2pidx.exe</span>
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/Open-CMSIS-Pack/devtools">Open-CMSIS-Pack development tools - devtools</a></li>
+<li>Related:
+<ul>
+<li>#windows <a href="https://open-cmsis-pack.github.io/svd-spec/main/svd_SVDConv_pg.html"><code>SVDConv</code> utility</a>
+<ul>
+<li>inside uv4 installation.</li>
+</ul>
+</li>
+<li>Related: <a href="https://github.com/rust-embedded/svd2rust"><code>svd2rust</code> Generate Rust register maps (<code>struct</code>s) from SVD files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

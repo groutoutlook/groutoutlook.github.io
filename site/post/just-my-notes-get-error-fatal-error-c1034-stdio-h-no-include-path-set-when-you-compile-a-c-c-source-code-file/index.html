@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Just my notes: Get error: fatal error C1034: &quot;stdio.h: no include path set&quot; when you compile a C/C++ source code file.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Just my notes: Get error: fatal error C1034: &quot;stdio.h: no include path set&quot; when you compile a C/C++ source code file.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-10 11:54:55 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/libc">
+                        <span>libc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/msvc">
+                        <span>msvc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://koacervate.blogspot.com/2017/04/when-you-compile-cc-source-code-file.html">Just my notes: Get error: fatal error C1034: &quot;stdio.h: no include path set&quot; when you compile a C/C++ source code file.</a>
+<ul>
+<li>Recap:  try to open developer shell profile instead.</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>#justfile : You can also try this in <code>just</code> recipe:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wt:</span></span>
+  <span class="meta function-call shell"><span class="variable function shell">wt</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> new-tab<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Developer PowerShell for VS 2022<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span>  <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span><span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>invocation_directory()<span class="punctuation section expansion brace end shell">}</span></span><span class="punctuation section expansion brace end shell">}</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>tabColor</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>#FFFFFF<span class="punctuation definition string end shell">&#39;</span></span> </span>
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>well yeah, wt -d start in customized directory, but most of the time you will invoke <code>wt -d $pwd</code> instead.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

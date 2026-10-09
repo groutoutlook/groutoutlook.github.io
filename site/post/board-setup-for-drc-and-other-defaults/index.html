@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Board setup for DRC and other defaults</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Board setup for DRC and other defaults</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-15 11:30:03 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rule/setup">
+                        <span>rule/setup</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/test/drc">
+                        <span>test/drc</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#board_setup">Board setup for DRC and other defaults</a>
+<ul>
+<li>Recap: e.g you can change edge cuts distant constraint here.</li>
+<li>Run:</li>
+<li>Resolution: I set board setup and schematic setup to <code>Alt+,</code>.
+<ul>
+<li>Since #kicad #nightly havent let me put <code>Ctrl+shift+,</code> yet... Maybe use <code>Alt+f7</code>?
+<ul>
+<li>Revisit: set <code>Ctrl+Alt+,</code> = &quot;Board Setup&quot; to change netclass properties, board stackup and DRC easier.</li>
+</ul>
+</li>
+<li>use this to set up copper to edge cut clearance, super needed for #fpcb.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/115996/how-to-determine-annular-ring-width-for-thru-hole-pads">pcb - How to determine annular ring width for thru-hole pads?</a>
+<ul>
+<li>Recap: Annular width is distances between the edge of a drilled hole and the outer
+edge of the copper pad surrounding it on a printed circuit board (PCB).</li>
+<li>Related: #terminology <a href="https://mp.weixin.qq.com/s/Cr8-zO6ftalEhLQkwvFY2Q">Comprehensive optimization of differential via design in high-speed interface signals</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#schematic-setup">Schematic Setup for annotation and ERC : electrical rule check.</a></li>
+<li>#blog : <a href="https://mp.weixin.qq.com/s/jU1cc7Y87Zg83ZdaCN5F3Q">Technical specifications and best practices for PCB through-hole component aperture design</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/85292/what-pad-hole-drill-size-is-appropriate-for-a-given-through-hole-lead-diameter">pad hole (drill) nominal size is appropriate for a given through-hole lead diameter?</a>
+<ul>
+<li><a href="https://www.fastlinepcb.com/news/what-are-the-apertures-of-pcb-through-holes">What are the apertures of pcb through holes?</a>
+Aperture is shape and size of the tool used to create a pad or track.
+<ul>
+<li>#glossary : <a href="http://www.speedypcb.com/pcb-knowledgeBase/pcb-terminology.htm">PCB Terminology/Glossary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Laser_drilling">Laser drilling</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -13,9 +13,6 @@ set lists
     
 set windows-powershell := true
 
-sync:
-    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Sync-TilSources.ps1"
-
 alias b := build
 alias rb := rebuild
 build:

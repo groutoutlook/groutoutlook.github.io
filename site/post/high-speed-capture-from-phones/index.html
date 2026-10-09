@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: High speed capture from phones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">High speed capture from phones</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-21 01:40:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/adb">
+                        <span>adb</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils/scrcpy">
+                        <span>utils/scrcpy</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Genymobile/scrcpy/blob/master/doc/camera.md#high-speed-capture">High speed capture from phones</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">scrcpy</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>e</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>video-source</span><span class="keyword operator assignment option shell">=</span>camera<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>camera-size</span><span class="keyword operator assignment option shell">=</span>1280x720<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>camera-fps</span><span class="keyword operator assignment option shell">=</span>120<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>camera-high-speed</span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

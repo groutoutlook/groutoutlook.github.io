@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Add flag to select single result immediately · Issue #27 · junegunn/fzf</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Add flag to select single result immediately · Issue #27 · junegunn/fzf</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-01 08:51:38 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/fzf">
+                        <span>fzf</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/junegunn/fzf/issues/27">Add flag to select single result immediately · Issue #27 · junegunn/fzf</a>
+<ul>
+<li>Recap: also check out get best match non-interactive with <code>--filter=&quot;$1&quot;</code></li>
+<li>Run: <code>fzf --select-1 --exit-0</code> match if there is only one input, exit if there is none.
+<ul>
+<li>can use with <code>--bind one:accept</code>, see <a href="https://github.com/junegunn/fzf/issues/2494">an option to select instantly when the search only finds one answer</a>
+<ul>
+<li>the difference is that will autoselect only match <strong>when you are using the UI</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

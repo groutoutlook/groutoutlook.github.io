@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: H11L3M - 6-Pin DIP Schmitt Trigger Output high speed Optocoupler </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">H11L3M - 6-Pin DIP Schmitt Trigger Output high speed Optocoupler </h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-23 02:57:41 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/isolation">
+                        <span>isolation</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/optocoupler">
+                        <span>optocoupler</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="">H11L3M - 6-Pin DIP Schmitt Trigger Output high speed Optocoupler </a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.onsemi.com/products/interfaces/high-performance-optocouplers/high-speed-logic-gate-optocouplers/6n137">6N137S - High Speed Logic Gate Optocoupler SOP8</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.eevblog.com/forum/projects/help-with-optocoupler-optocoupler-connect-to-schmitt-trigger-74hc14/">Help with optocoupler optocoupler connect to schmitt trigger 74HC14</a></li>
+<li>Related:
+<ul>
+<li><a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Fniliha%2Fravelights-hardware%2Fblob%2Ff616716124059401508ee105a85f336a67e61643%2Fleading-edge-ac-dimmer%2Fzero-crossing-detection.kicad_sch%23L189">ZCD zero crossing could be an optocoupler and a bridge</a>
+<ul>
+<li>Or you can do two 2512 50kOhm 1W resistor at those points. quite the same things.</li>
+<li><a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Fparya03%2FEspressoMachineBoard_HW%2Fblob%2F0f2ae2313ca8baa5593a6bc3af9aa4f27fafa3f1%2FHVBoard%2FHVBoard.kicad_sch%23L2301">another one with no bridge</a></li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/dVyRkAzPW8-jn5fcfhyz6g">Such a good photocoupler study note, it would be nice to see it earlier</a>
+<ul>
+<li>a better in-depth blog that dig in basic ZCD with optocoupler.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/768086/bridge-rectifier-and-optocoupler-voltages-on-dc-side">opto isolator - Bridge rectifier and optocoupler... Voltages on DC side?</a></li>
+</ul>
+</li>
+<li>Rival: a bit classic but <a href="https://www.onsemi.com/pdf/datasheet/4n35-d.pdf">4N35 - 6-Pin BJT Phototransistor Optocouplers - 4N35-D.PDF</a>
+<ul>
+<li>Recap: <a href="https://www.eevblog.com/forum/beginners/purpose-of-the-base-on-the-opto-transistor-in-an-opto-coupler/">Purpose of the base on the opto-transistor in an opto-coupler</a>
+<ul>
+<li>I'm so perplexed on seeing optocoupler with a base...</li>
+</ul>
+</li>
+<li>Reason: that base lead (with another resistor) reduce the turn off time of that internal transistor.
+... that based on your specific use case.</li>
+<li><a href="https://www.onsemi.com/pdf/datasheet/fod3182-d.pdf">FOD3182 - 3 A Output Current, High Speed MOSFET Gate Driver Optocoupler - FOD3182-D.PDF</a></li>
+</ul>
+</li>
+<li>Revisit: [Mon Sep 21 09:49:34 SEAST 2026] <a href="https://mp.weixin.qq.com/s/klzM3-5nttKT5rgwyTvb7A">high-precision low-power isolated ZCD/zero-crossing detector</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

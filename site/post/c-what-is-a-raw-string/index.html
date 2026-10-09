@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - What is a raw string?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - What is a raw string?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-06 06:10:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/literals">
+                        <span>literals</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/56710024/what-is-a-raw-string">c++ - What is a raw string?</a>
+<ul>
+<li>Recap: <code>R&quot;()&quot;</code> regular string literal can encapsulate double quote and single quote.
+<ul>
+<li>no need to escape as normal quoted string.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: it's available from C++17 onward.
+<ul>
+<li>#doc/official : <a href="https://cppreference.com/w/cpp/language/string_literal">String literal - <code>R&quot;</code>,<code>U&quot;</code>,<code>u</code>,<code>u8</code>,..</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <code>glaze</code> use a lot of them to contain the single, double quotes, whitespaces,...</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

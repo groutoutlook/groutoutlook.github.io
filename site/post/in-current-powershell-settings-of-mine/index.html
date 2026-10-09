@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: In current powershell settings of mine...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">In current powershell settings of mine...</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-23 08:59:58 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grep">
+                        <span>grep</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/search">
+                        <span>search</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>In current powershell settings of mine...
+<ul>
+<li>Recap: I need 4 backtick to search for a single backtick in <code>rgj</code> functions.
+<ul>
+<li>Since it's wrapped two times on double quote.</li>
+<li>with <code>rg</code> I only need 2 backticks.</li>
+</ul>
+</li>
+<li>Root: try <code>rgj -w ````si</code> and <code>rg -w ``si</code></li>
+<li>Resolution: <code>-w</code> flags can be append. try <code>rg rgj -w</code> or <code>rgj &quot;rgj -w&quot; -w</code>
+<ul>
+<li>So recursive....</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#regex #cli/option <a href="https://stackoverflow.com/questions/67713798/ripgrep-to-find-files-which-contain-multiple-words-possibly-on-different-lines/70899464#70899464">ripgrep to find files which contain multiple words, possibly on different lines?</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>foo<span class="punctuation definition string end shell">&quot;</span></span> <span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>bar<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span></span><span class="punctuation section parens end shell">)</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> git <span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">rgj</span></span><span class="meta function-call arguments shell"> freecad<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span></span><span class="punctuation section parens end shell">)</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I use my own `rgj` a lot, here is another filter technique.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Related: #pcre <a href="https://www.pcre.org/current/doc/html/pcre2syntax.html#SEC20">pcre2syntax OPTION SETTING </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

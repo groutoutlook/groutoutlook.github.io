@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Bit-banding – An Elegant Approach to Setting &amp; Clearing Bits</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Bit-banding – An Elegant Approach to Setting &amp; Clearing Bits</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-27 09:25:25 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/register">
+                        <span>register</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://spin.atomicobject.com/bit-banding/#:%7E:text=How%20Bit-banding%20Works.%20Bit-banding%20is%20a%20term%20that,Region%29.%20The%20benefit%20of%20Bit-banding%20is%20that%20">Bit-banding – An Elegant Approach to Setting &amp; Clearing Bits</a>
+<ul>
+<li>Recap: almost every M3/M4 chip have this bit band alias region.</li>
+<li>Run: alias each bit in a register to a whole byte. so you can loop and read/write to each bit. No Read Modify Write.
+<ul>
+<li>doesn't have a benefit when you are writing GPIOB-&gt;ODR = 0x00000002 or GPIOB-&gt;BSRR = 0x00000002 since those are already atomic.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://developer.arm.com/documentation/ddi0439/b/Programmers-Model/Bit-banding">Cortex-M4 Technical Reference Manual r0p0</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/535547/stm32f10xxx-odr-register-atomic-write">STM32F10xxx ODR register atomic write</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

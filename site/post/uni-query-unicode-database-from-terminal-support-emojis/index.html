@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;uni&#x60; Query Unicode database from terminal, support emojis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;uni&#x60; Query Unicode database from terminal, support emojis</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-12 09:45:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/character">
+                        <span>character</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/golang">
+                        <span>golang</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/search">
+                        <span>search</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/unicode">
+                        <span>unicode</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/arp242/uni/"><code>uni</code> Query Unicode database from terminal, support emojis</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> i / <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> identify which ASCII character is it.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> i 🕃  <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> now this is UTF-8 turn, no need to google Unicode character anymore.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> i<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> +<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span><span class="variable other readwrite shell">unicode</span></span> a€🧟 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> emoji + first available unicode version of it/</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> ls all <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list all and every code block in utf-8</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> i K<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>%name %utf8<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>as</span> j <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or -as json, Can be shorter as `uni i k -aj` even.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> s <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>hand sign<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> globe <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> -o is OR logic, default with the space is AND logic.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> s arrows<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>as</span> table<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span></span>
+</span></code></pre>
+<ul>
+<li>Print weird character you identify on a normal string or #uri:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> p u+2043</span>
+<span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> p <span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span><span class="constant numeric integer decimal job shell">2</span></span>F <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `/`</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uni</span></span><span class="meta function-call arguments shell"> e<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>gender</span> man g:person-gesture</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: #meta #blog <a href="https://charlottebuff.com/unicode/misc/rejected-emoji-proposals/">Rejected Emoji Proposals</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

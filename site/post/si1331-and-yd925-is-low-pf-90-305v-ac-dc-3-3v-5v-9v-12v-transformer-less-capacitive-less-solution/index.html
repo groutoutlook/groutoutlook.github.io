@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: SI1331 and YD925 is Low PF 90-305V AC-DC 3.3v/5v/9v/12v transformer-less/capacitive-less solution.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">SI1331 and YD925 is Low PF 90-305V AC-DC 3.3v/5v/9v/12v transformer-less/capacitive-less solution.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-18 09:28:40 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/power">
+                        <span>power</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>SI1331 and YD925 is Low PF 90-305V AC-DC 3.3v/5v/9v/12v transformer-less/capacitive-less solution.
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: #wechat id : vical86</li>
+<li>Reason:</li>
+<li>Root: #hardware/test <a href="https://emcguide.com/emi/emi-emc-tests">EMI-EMC Tests</a></li>
+<li>Related: there can be SI13303 and SI13305 which is in the same ballpark.
+<ul>
+<li>#acronym <a href="https://ramtechno.com/7-protections-to-look-for-in-a-power-supply/">7 Protections to Look for in a Power Supply - RAM Technologies</a>
+<ul>
+<li><a href="https://www.ni.com/docs/en-US/bundle/pxie-4147/page/protection.html">OLP : Overload Protection - NI</a>
+Quantify by current (mA), over this threshold and it will decrease the voltage, even shutdown.
+if good IC, brown-out is rare, it's just straight up shutdown.</li>
+<li>OTP :  over-temperature protection: it will shutdown, when it's back to e.g. 140 celsius, it will reset.</li>
+</ul>
+</li>
+<li>#blog <a href="https://www.allaboutcircuits.com/technical-articles/safety-capacitor-class-x-and-class-y-capacitors/">Safety Capacitors First: Class-X and Class-Y Capacitors - Technical Articles</a>
+<ul>
+<li>some CX CY stuff in PCB.</li>
+<li>only purpose of CY is to propagated the high frequency current from secondary back to the primary. Reduce EMI.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: FT8441 and the likes from FMD/Huimang themselves, surprisingly.
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/appnotes/00954a.pdf">AN954, Transformerless Power Supplies: Resistive and Capacitive - 00954a.pdf</a>
+<ul>
+<li>Resisitive power supply with full bridge Rectifier is a thing. much bulkier resistor than capacitive tho.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

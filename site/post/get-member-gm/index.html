@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-Member&#x60; | &#x60;gm&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-Member&#x60; | &#x60;gm&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-15 12:24:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/method">
+                        <span>method</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/property">
+                        <span>property</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/reflection">
+                        <span>reflection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-member"><code>Get-Member</code> | <code>gm</code></a>
+<ul>
+<li>Recap: get-member and TypeName of a variable or anything it being piped.
+<ul>
+<li>You have to use <code>Get-Member</code> with <code>-inp</code> | <code>-InputObject</code> or used in pipelines.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Service -Name sshd | gm
+Get-Member -inp (Get-Service -Name sshd)    
+# or for a very fast preview
+Get-Service -Name sshd | ConvertTo-Json
+gbp | gm # Instead of using ConvertTo-Json to see all the field.
+</span></code></pre>
+</li>
+<li>Resolution: Use that when write-format is not enough to show useful information.
+<ul>
+<li>Explore type properties and preparing for a good filtering scripts.</li>
+</ul>
+</li>
+<li>Reason: I dont want to search for the typeinfo every time, So I make a small alias.
+<ul>
+<li>#config <code>gti</code> to <code>Get-Member -Inp</code>. Left to Right expression.</li>
+</ul>
+</li>
+<li>Root: #alternative is <code>Get-TypeData</code>, but this is more ergonomic.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

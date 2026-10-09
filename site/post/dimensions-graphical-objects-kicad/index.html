@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Dimensions graphical objects | KiCad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Dimensions graphical objects | KiCad</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-10 08:24:58 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/measurement">
+                        <span>measurement</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcb/pad">
+                        <span>pcb/pad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/9.0/en/pcbnew/pcbnew_editing.html#dimensions">Dimensions graphical objects | KiCad</a>
+<ul>
+<li>Recap: #keybinding : <code>ctrl+shift+h</code>. Mostly used <code>Aligned</code> tool. can use this in Footprint Editor as well.
+<ul>
+<li><code>User.Drawing</code> extra tools in place of measuring tape, which only have one instance.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: inside properties of a dimension item.
+<ul>
+<li>Precision: You can set more precision or enable trimming trailing zero.</li>
+<li>Arrow direction: when the items/distances are too small, changing size of arrows seems silly.
+You can change arrow directions from inward (default) to outward.</li>
+<li>Layer: for rendering sake. Or some styling, either in copper or silkscreen if you truly want.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/KiCad/comments/1b52s84">create pads out of these polygons in KiCad</a>
+<ul>
+<li>to access pad edit, just <code>ctrl+e ctrl+e</code>. I dont know why tho.</li>
+</ul>
+</li>
+<li>Related: somehow master doc dont have this hyperlink to dimensions...
+<ul>
+<li>#selection #placing <a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#aligning_objects">Kicad <code>pcbnew</code> Aligning objects</a>
+<ul>
+<li>select multiple(<strong>minimum 2</strong>) objects(mainly footprints and pads), there are two paths:
+<ul>
+<li>Right Click -&gt; Align/Distribute -&gt; Align to Left/Right/Horizontal Center | Top/Bottom/Vertical Center
+<ul>
+<li>upon that menu, you can <code>a a</code> -&gt; <code>d d</code> or you can bind hotkey and Align, havent bind one yet.</li>
+<li>Normally you align by center, then by distance.</li>
+</ul>
+</li>
+<li>Reason: really useful when you align an array of transistors/via/line driver IC. Tracks, not so much.
+<ul>
+<li>or when you want to align text on silkscreen. That shit cost lots of time.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Final</strong> selection is the anchor, be wise on select it, you can reselect to your like.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: Due to the Align/Distribute #til you can use CUI-like navigation(pressing initial)
+to move to wanted functionality. Another tip for (potentially) scripting UI (using ahk or pals).
+<ul>
+<li>I hope I only use this for quick #navigation. Using RightClick is excruciating enough.</li>
+<li>Related: #navigation by <code>RightClick</code> nothing can have you a drag warp border moving mode (panning camera).
+<ul>
+<li>Recap: same on both <code>eeschema</code> and <code>pcbnew</code>, in 3dviewer you cant wrap upon border.</li>
+<li>Resolution: use when you are so tired with using scrolling.</li>
+<li>Root: <a href="https://www.reddit.com/r/KiCad/comments/13n94o4">Right-click mouse to pan in eeschema and pcbnew.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

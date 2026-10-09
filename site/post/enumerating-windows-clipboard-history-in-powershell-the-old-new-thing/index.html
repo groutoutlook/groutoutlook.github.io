@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Enumerating Windows clipboard history in PowerShell - The Old New Thing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Enumerating Windows clipboard history in PowerShell - The Old New Thing</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-17 02:45:47 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp/winrt">
+                        <span>cpp/winrt</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://devblogs.microsoft.com/oldnewthing/20230303-00/?p=107894">Enumerating Windows clipboard history in PowerShell - The Old New Thing</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<ul>
+<li>Firstly, the Await function to access winrt. Only in Powershell v5.1.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Add-Type -AssemblyName System.Runtime.WindowsRuntime
+$asTaskGeneric = ([System.WindowsRuntimeSystemExtensions].GetMethods() | ? { $_.Name -eq &#39;AsTask&#39; -and $_.GetParameters().Count -eq 1 -and $_.GetParameters()[0].ParameterType.Name -eq &#39;IAsyncOperation`1&#39; })[0]
+function Await($WinRtTask, $ResultType) {
+ $asTask = $asTaskGeneric.MakeGenericMethod($ResultType)
+ $netTask = $asTask.Invoke($null, @($WinRtTask))
+ $netTask.Wait(-1) | Out-Null
+ $netTask.Result
+}
+</span></code></pre>
+<ul>
+<li>then access windows clipboard history with Powershell.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$null = [Windows.ApplicationModel.DataTransfer.Clipboard, Windows.ApplicationModel.DataTransfer, ContentType=WindowsRuntime]
+$op = [Windows.ApplicationModel.DataTransfer.Clipboard]::GetHistoryItemsAsync()
+$result = Await ($op) ([Windows.ApplicationModel.DataTransfer.ClipboardHistoryItemsResult])
+
+$textops = $result.Items.Content.GetTextAsync()
+for ($i = 0; $i -lt $textops.Count; $i++){ Await($textops[$i]) ([String]) }
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/21194315/call-winrt-async-method-from-powershell-to-set-account-picture-in-win8/57896590#57896590">c# - Call WinRT Async method from Powershell to set account picture in win8</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Custom Targets - The rustc book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Custom Targets - The rustc book</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-25 01:36:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiler/rustc">
+                        <span>compiler/rustc</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://doc.rust-lang.org/rustc/targets/custom.html#custom-target-lookup-path">Custom Targets - The rustc book</a>
+<ul>
+<li>Recap: cross-compile with <code>cargo build --target</code> and <code>rustc</code>.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rustc</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>print</span> target-list <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> from pc to embedded.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: [2024-08-12 09:59:18 AM] #rust #build #android
+<ul>
+<li><a href="https://www.reddit.com/r/rust/comments/ruafyd">fix termux build</a>
+<ul>
+<li>Root: <a href="https://stackoverflow.com/questions/57812916/how-do-i-change-the-default-rustc-cargo-linker">change linker in rust</a></li>
+<li>Related:
+<ul>
+<li>#build : <a href="https://github.com/cross-rs/cross"><code>cross</code> compiling in rust</a>
+<ul>
+<li><code>smartdns-rs</code> refer to this.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#libc #desktop : <a href="https://github.com/crosstool-ng/crosstool-ng">crosstool-ng: versatile (cross-)toolchain generator.</a>
+<ul>
+<li>Root: <a href="https://github.com/cross-rs/cross-toolchains">cross-toolchains: Additional Dockerfiles and crosstool-ng config files to build additional toolchains.</a></li>
+<li>which is required for MSVC targets, main <code>cross</code> has support for LLVM and GNU one.</li>
+</ul>
+</li>
+<li>#rust #cli <a href="https://github.com/casey/target"><code>target</code> Information about the current compilation target</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

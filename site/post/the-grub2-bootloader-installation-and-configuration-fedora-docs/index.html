@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: The GRUB2 Bootloader – Installation and Configuration :: Fedora Docs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">The GRUB2 Bootloader – Installation and Configuration :: Fedora Docs</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-06 08:07:51 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/bootloader">
+                        <span>bootloader</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grub">
+                        <span>grub</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.fedoraproject.org/en-US/quick-docs/grub2-bootloader/#_setting_default_entry_for_grub2">The GRUB2 Bootloader – Installation and Configuration :: Fedora Docs</a>
+<ul>
+<li>Recap: has to be edit within Linux/Fedora.</li>
+<li>Root:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> grub2-install /dev/sda</span>
+<span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> hx /etc/grub.d <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> hx /etc/default/grub </span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> grub2-mkconfig<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> /boot/grub2/grub.cfg</span>
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://discussion.fedoraproject.org/t/what-is-the-correct-command-to-use-to-update-grub-after-editing-the-kernels-menu-entries/77260/15">What is the correct command to use to update grub after editing the kernel's menu entries? - Fedora Discussion</a>
+<ul>
+<li>this link is not very useful.</li>
+</ul>
+</li>
+<li><a href="https://askubuntu.com/a/1108609/1773053">edit grub2 config within windows</a>
+<ul>
+<li>working in 2024</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

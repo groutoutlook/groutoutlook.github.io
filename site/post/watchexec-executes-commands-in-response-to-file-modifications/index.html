@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;watchexec&#x60; executes commands in response to file modifications</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;watchexec&#x60; executes commands in response to file modifications</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-05 06:45:11 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/software">
+                        <span>software</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/testing">
+                        <span>testing</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/watchexec/watchexec"><code>watchexec</code> executes commands in response to file modifications</a>
+<ul>
+<li>Recap: watch files change.</li>
+<li>Root: some mentions on <code>just</code> repo.
+<ul>
+<li>i really want to check diff of some changes on files when i run my program.</li>
+</ul>
+</li>
+<li>Resolution: we could test programs in runtime like this.
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">alias cint := check_integration
+check_integration args=&quot;csv&quot;:
+    watchexec -e {{args}} git dft *{{args}}
+</span></code></pre>
+</li>
+<li>Reason: in scoop.</li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/canop/bacon">canop/bacon: background code checker</a></li>
+<li>#python #library: <a href="https://github.com/samuelcolvin/watchfiles"><code>watchfiles</code> file watching and code reload</a>
+<ul>
+<li>to use within python scripts of course.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: quickly format files names so we can sort alphanumerically by default</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">quickly format files names so we can sort alphanumerically by default</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-17 12:54:09 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>quickly format files names so we can sort alphanumerically by default
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-ChildItem -File -Recurse |
+  Where-Object { $_.Extension -match &#39;^\.(png|jpe?g)$&#39; -and $_.BaseName -match &#39;^\d+$&#39; } |
+  ForEach-Object {
+    $newName = (&#39;{0:D4}&#39; -f [int]$_.BaseName) + $_.Extension.ToLower()
+    Rename-Item -LiteralPath $_.FullName -NewName $newName
+  }
+# for example I&#39;m doing something like download but format name with `aria2c`.
+$chap=6;((gcb)-split&#39;\n&#39;)|%{$id = 1;}{aria $_ -o &quot;$(&#39;c{0:D3}&#39; -f $chap)/$(&#39;{0:D4}&#39; -f [int]$id).jpg&quot;;$id+=1}
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://gist.github.com/tobek/a17fa9101d7e28ddad26">Save images from chrome inspector/dev tools network tab</a>
+<ul>
+<li>copy HAR in network tabs.
+<pre class="syntax-highlighting"><code class="language-js"><span class="source js"><span class="storage type js">var</span> <span class="variable other readwrite js">har</span> <span class="keyword operator assignment js">=</span> <span class="punctuation terminator statement js">;</span> <span class="comment line double-slash js"><span class="punctuation definition comment js">//</span> paste things here.
+</span><span class="storage type js">var</span> <span class="variable other readwrite js">imageUrls</span> <span class="keyword operator assignment js">=</span> <span class="meta sequence js"><span class="punctuation section brackets js">[</span><span class="punctuation section brackets js">]</span></span><span class="punctuation terminator statement js">;</span>
+<span class="variable other object js">har</span><span class="punctuation accessor js">.</span><span class="meta property object js">log</span><span class="punctuation accessor js">.</span><span class="meta property object js">entries</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="variable function js">forEach</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="meta function declaration js"><span class="storage type function js">function</span> <span class="punctuation section group begin js">(</span><span class="variable parameter function js">entry</span><span class="punctuation section group end js">)</span><span class="meta function declaration js"> </span></span><span class="meta block js"><span class="punctuation section block js">{</span>
+  <span class="comment line double-slash js"><span class="punctuation definition comment js">//</span> This step will filter out all URLs except images. If you just want e.g. just jpg&#39;s then check mimeType against &quot;image/jpeg&quot;, etc.
+</span>  <span class="meta conditional js"><span class="keyword control conditional js">if</span> <span class="meta group js"><span class="punctuation section group js">(</span><span class="variable other object js">entry</span><span class="punctuation accessor js">.</span><span class="meta property object js">response</span><span class="punctuation accessor js">.</span><span class="meta property object js">content</span><span class="punctuation accessor js">.</span><span class="meta property object js">mimeType</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="variable function js">indexOf</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted double js"><span class="punctuation definition string begin js">&quot;</span>image/<span class="punctuation definition string end js">&quot;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span> <span class="keyword operator comparison js">!==</span> <span class="constant numeric js">0</span><span class="punctuation section group js">)</span></span> </span><span class="keyword control flow js">return</span><span class="punctuation terminator statement js">;</span>
+  <span class="variable other object js">imageUrls</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="support function mutator js">push</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="variable other object js">entry</span><span class="punctuation accessor js">.</span><span class="meta property object js">request</span><span class="punctuation accessor js">.</span><span class="meta property object js">url</span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+<span class="punctuation section block js">}</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+<span class="meta function-call method js"><span class="support type object console js">console</span><span class="punctuation accessor js">.</span><span class="support function console js">log</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="variable other object js">imageUrls</span><span class="punctuation accessor js">.</span><span class="meta function-call method js"><span class="variable function js">join</span><span class="meta group js"><span class="punctuation section group js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">&#39;</span><span class="constant character escape js">\n</span><span class="punctuation definition string end js">&#39;</span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span></span><span class="meta group js"><span class="punctuation section group js">)</span></span></span><span class="punctuation terminator statement js">;</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

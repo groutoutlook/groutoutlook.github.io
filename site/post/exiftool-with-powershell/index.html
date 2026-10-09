@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;exiftool&#x60; with powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;exiftool&#x60; with powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-05-13 12:56:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/meta/metadata">
+                        <span>meta/metadata</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/perl">
+                        <span>perl</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.cron.dk/playing-with-exif/"><code>exiftool</code> with powershell</a>
+<ul>
+<li>Recap: use for edit metadata/manifest of media files, shim to <code>exif</code>, my hands may suffer from RSI typing all this.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">exif</span></span><span class="meta function-call arguments shell"> ./anything</span>
+<span class="meta function-call shell"><span class="variable function shell">exiftool</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>all</span><span class="keyword operator assignment option shell">=</span> image.jpg <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> To strip metadata</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resoluton: <a href="https://gist.github.com/ghotz/c614584f44bf975153ea">exiftool with powershell, now in a gist</a>
+<ul>
+<li>Recap: Feed arguments without launching new process.</li>
+<li>Revisit: 2025-03: I could pipe <code>exiftool $track | where{$_ -match &quot;comment&quot;}</code>
+<ul>
+<li>So I could retrieve comment value, any field's value.</li>
+</ul>
+</li>
+<li>#nightly and shim to <code>exif</code>.
+<ul>
+<li>Recite: ExifTool.exe file (&quot;exiftool(-k).exe&quot;) should be renamed to &quot;exiftool.exe&quot; to allow it to be run by
+typing &quot;exiftool&quot; at the command line .</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: in <code>scoop</code></li>
+<li>Root: #blog <a href="https://brentfitzgerald.com/posts/appreciating-exif/">Appreciating Exif | Brent Fitzgerald</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

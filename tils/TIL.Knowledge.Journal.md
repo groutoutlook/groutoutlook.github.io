@@ -1,1 +1,1 @@
-C:/Users/COHOTECH/hw/obs/note_Knowledge/TIL.Knowledge.Journal.md
+D:/ProgramDataD/Notes/Obsidian/MainVault/note_Knowledge/TIL.Knowledge.Journal.md

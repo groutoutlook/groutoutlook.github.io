@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: psutils: Command line utilities written in Powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">psutils: Command line utilities written in Powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-31 02:14:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman/scoop">
+                        <span>pacman/scoop</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/lukesampson/psutils">psutils: Command line utilities written in Powershell</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Example: <code>shim &quot;C:\Users\COHOTECH\scoop\apps\imhex\current\imhex.exe&quot;</code></li>
+<li>Behaviour: It created shim files at <code>C:\Users\COHOTECH\appdata\local\shims</code>,
+<ul>
+<li>also add that in $env:PATH. be cautious.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><a href="https://github.com/ScoopInstaller/Shim"><code>Shim</code> Scoop helper program for shimming executables</a>
+<ul>
+<li>This is embedded inside scoop. Not related to create custom shim for some executables.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: creating shim for <code>ImHex</code></li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/winpax/miniature">winpax/miniature: A tiny, self-contained and highly efficient shim</a></li>
+</ul>
+</li>
+<li>Revisit: 2025-05-17 23:27:01 : #til <code>shim</code> new files can overwrite old shim
+<ul>
+<li>Recap: so I can <code>shim</code> an executable anytime without worrying about deleting the old shims.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

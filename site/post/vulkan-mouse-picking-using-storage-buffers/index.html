@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Vulkan Mouse Picking using Storage Buffers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Vulkan Mouse Picking using Storage Buffers</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-08 09:52:44 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/controller/mouse">
+                        <span>controller/mouse</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vulkan">
+                        <span>vulkan</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://web.archive.org/web/20230331180635/https://blog.gavs.space/post/003-vulkan-mouse-picking/">Vulkan Mouse Picking using Storage Buffers</a>
+<ul>
+<li>Resolution: push Mouse Coor and Id thru pushConstant, using Depth Buffer.</li>
+<li>Related: <a href="https://community.khronos.org/t/readpixels-on-vulkan/6797/6">&quot;readPixels&quot; on vulkan - Vulkan - Khronos Forums</a></li>
+</ul>
+</li>
+<li><a href="https://www.opengl-tutorial.org/miscellaneous/clicking-on-objects/picking-with-an-opengl-hack/#get-the-color-under-the-mouse">OpenGL method</a>
+<ul>
+<li>Brief: OpenGL is simpler so we could do this easier in here.</li>
+<li>Origin: well still unique color, unique ID.</li>
+<li>Resolution: <code>glReadPixel</code> after <code>glFlush</code> and <code>glFinish</code>, also have to <code>glPixelStorei</code> as well.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

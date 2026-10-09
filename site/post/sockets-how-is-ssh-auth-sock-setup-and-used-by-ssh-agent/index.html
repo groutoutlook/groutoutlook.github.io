@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: sockets - How is SSH_AUTH_SOCK setup and used by ssh-agent?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">sockets - How is SSH_AUTH_SOCK setup and used by ssh-agent?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-14 07:10:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/22154423/how-is-ssh-auth-sock-setup-and-used-by-ssh-agent">sockets - How is SSH_AUTH_SOCK setup and used by ssh-agent?</a>
+<ul>
+<li>Recap:  by importing env var.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/339840/how-to-start-and-use-ssh-agent-as-systemd-service/390631#390631">How to start and use <code>ssh-agent</code> systemd service</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/indigo-dc/oidc-agent#usage-with-ssh">Usage with SSH</a></li>
+<li>Related:
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/188668/how-does-gpg-agent-work">How does GPG agent work?</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/73489997/whats-the-difference-between-signing-commits-with-ssh-versus-gpg">git - What's the difference between signing commits with SSH versus GPG?</a>
+<ul>
+<li>you better dont need to touch <code>gpg</code> now using other kinds of authentication...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#github : <a href="https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-git-access-to-your-organizations-repositories/about-ssh-certificate-authorities">About SSH certificate authorities - GitHub Enterprise Cloud Docs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

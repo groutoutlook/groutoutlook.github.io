@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: groutoutlook/powershell-clipboard: powershell-clipboard description</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">groutoutlook/powershell-clipboard: powershell-clipboard description</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-10 01:04:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/clipboard">
+                        <span>clipboard</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/image">
+                        <span>image</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/workflow">
+                        <span>workflow</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/groutoutlook/powershell-clipboard">groutoutlook/powershell-clipboard: powershell-clipboard description</a>
+<ul>
+<li>Recap: work with images, using <code>imgcat</code>.</li>
+<li>Run:
+<ul>
+<li><code>Get-ClipHistory -All</code> | <code>gcbh</code> | <code>lcb</code> show everything I copied. there is an <code>-Index</code> option.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gcbh
+scbh -i 4 # make the 4th entry(5th in natural number indexing) to become current clipboard
+</span></code></pre>
+</li>
+<li><code>Set-FileClipboard</code> | <code>scbf</code> as name, default is the path in clipboard.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scbf ./anykindofpath
+</span></code></pre>
+</li>
+<li>now my <code>cpcb</code> also paste from files handle to <code>$pwd</code>.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

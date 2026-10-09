@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Get-Process</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Get-Process</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-19 02:33:55 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/member">
+                        <span>member</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/object">
+                        <span>object</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/property">
+                        <span>property</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-process">Get-Process</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">ps -n pwsh -IncludeUserName | ? userName -eq $null |%{
+  Invoke-SudoPwsh &quot;kill -id $($_.id)&quot;
+}
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/64187004/powershell-selecting-noteproperty-type-objects-from-object">pscustomobject - Powershell Selecting NoteProperty Type Objects From Object</a>
+<ul>
+<li>Root: <a href="https://thinkpowershell.com/get-process-name-and-owner-user-name/">Get Process Name and Owner User Name</a>
+<ul>
+<li>I ran as <code>sudo</code> a lot, want to check which is which to kill.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: PowerShell arguments list passing like &#x60;-a &lt;args list&gt; -d &lt;args list&gt;&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">PowerShell arguments list passing like &#x60;-a &lt;args list&gt; -d &lt;args list&gt;&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-27 01:55:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/argument">
+                        <span>argument</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/7199481/powershell-arguments-list-passing-like-a-args-list-d-args-list">PowerShell arguments list passing like <code>-a &lt;args list&gt; -d &lt;args list&gt;</code></a>
+<ul>
+<li>Recap: Variadic arguments with arbitrary lengths</li>
+<li>Root:</li>
+<li>Resolution: As long as I put commas between arguments. and change attribute to <code>string[]</code></li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function shell"><span class="storage type function shell">function</span> <span class="entity name function shell">dummy</span><span class="punctuation section parens begin shell">(</span>
+[Parameter(Mandatory=$false<span class="punctuation section parens end shell">)</span>]
+[System.String[]]
+[Alias<span class="punctuation section parens begin shell">(</span>&quot;s&quot;<span class="punctuation section parens end shell">)</span>]
+$String
+)
+</span></span></code></pre>
+<ul>
+<li>Although we may need a better solution.
+<ul>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

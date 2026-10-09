@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;yq&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;yq&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-05-02 12:49:19 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/data">
+                        <span>data</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/yaml">
+                        <span>format/yaml</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/serialize">
+                        <span>serialize</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/successor/jq">
+                        <span>successor/jq</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/mikefarah/yq"><code>yq</code></a>
+<ul>
+<li>Recap: yaml parser, same as <code>jq</code>.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">jrnl</span></span><span class="meta function-call arguments shell"> triv<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>format</span> yaml<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> ./tils</span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="variable function shell">scooter</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>\t<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>r</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>  <span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>X</span></span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="variable function shell">gci</span></span><span class="meta function-call arguments shell"> ./tils</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> yq <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>del(.body)<span class="punctuation definition string end shell">&quot;</span></span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span><span class="punctuation section expansion brace end shell">}</span></span></span>
+</span></code></pre>
+</li>
+<li>Root:</li>
+<li>Resolution: <code>yq</code> and <code>mlr</code> will be the replacement for good old tools like <code>jq</code>.
+<ul>
+<li><a href="https://mikefarah.gitbook.io/yq/usage/csv-tsv">Working with CSV, TSV | yq</a></li>
+<li><a href="https://mikefarah.gitbook.io/yq/usage/convert">Working with JSON | yq</a></li>
+<li><a href="https://mikefarah.gitbook.io/yq/usage/front-matter">Front Matter | yq</a></li>
+<li><a href="https://mikefarah.gitbook.io/yq/operators">Operators | yq</a></li>
+</ul>
+</li>
+<li>Reason: in scoop. - Newer than <code>jq</code>. But literally dead now.</li>
+<li>Related:</li>
+<li>Rival: <a href="https://github.com/wader/fq"><code>fq</code> - <code>jq</code> for binary formats. Tool, language and decoders for working with binary formats.</a>
+<ul>
+<li>Root: <a href="https://lobste.rs/s/ttxwdz/what_software_do_you_use_daily_2026">What software do you use daily in 2026?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

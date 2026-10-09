@@ -1,0 +1,1 @@
+D:/ProgramDataD/Notes/Obsidian/MainVault/note_os_web/WebProgJournal.md

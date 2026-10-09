@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Microsoft.WinGet.Client&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Microsoft.WinGet.Client&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-19 11:37:02 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/manager/package">
+                        <span>manager/package</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/winget">
+                        <span>winget</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/winget-cli/tree/master/src/PowerShell/Microsoft.WinGet.Client"><code>Microsoft.WinGet.Client</code></a>
+<ul>
+<li>Recap: <code>Get-WinGetPackage</code> or <code>Find-WinGetSource</code>, etc...</li>
+<li>Run: Forcefully upgrade every dotnet, there's a particular version in the end. Maybe 11 soon.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">winget install Microsoft.DotNet.SDK.10 Microsoft.DotNet.Runtime.10 Microsoft.DotNet.DesktopRuntime.10 Microsoft.DotNet.AspNetCore.10 
+</span></code></pre>
+</li>
+<li>Resolution: Its cmdlet is available globally...call it and <code>pwsh</code> will import <code>Microsoft.WinGet.Client</code>
+<ul>
+<li><code>winget install</code> will also try to update as well.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#gui : <a href="https://github.com/marticliment/UnigetUI"><code>UniGetUI</code> Graphical Interface for your package managers. Could be terribly described as a package manager manager to manage your package managers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

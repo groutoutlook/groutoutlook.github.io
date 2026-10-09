@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;global_search&#x60; &#x3D;&#x3D; &#x60;space /&#x60;, grep entire code base as &#x60;space f w&#x60; does in &#x60;nvim&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;global_search&#x60; &#x3D;&#x3D; &#x60;space /&#x60;, grep entire code base as &#x60;space f w&#x60; does in &#x60;nvim&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-22 06:01:45 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tui">
+                        <span>tui</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>global_search</code> == <code>space /</code>, grep entire code base as <code>space f w</code> does in <code>nvim</code>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://helix-editor-tutorials.com/tutorials/using-helix-global-search/#narrowing-your-results-by-path">Narrowing your results by path, adding <code>%p</code> + extension in query</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/helix-editor/helix/blob/b01fbb4a22f24602006b05117597e54bd54c61de/helix-term/src/keymap/default.rs#L7">Default keymap of entire helix.</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

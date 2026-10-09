@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Raspberry Pi Pico 2 - RP2350 adds more PIO, RISC-V cores | Jeff Geerling</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Raspberry Pi Pico 2 - RP2350 adds more PIO, RISC-V cores | Jeff Geerling</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-07 08:49:50 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/board">
+                        <span>board</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/embedded">
+                        <span>embedded</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.jeffgeerling.com/blog/2024/raspberry-pi-pico-2-rp2350-adds-more-pio-risc-v-cores">Raspberry Pi Pico 2 - RP2350 adds more PIO, RISC-V cores | Jeff Geerling</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:
+<ul>
+<li>RP2350A - 30 GPIO in a 7 × 7 mm QFN-60EP package</li>
+<li>RP2350B - 48 GPIO in a 10 × 10 mm QFN-80EP package, simply has more pins.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/earlephilhower/arduino-pico/discussions/2371">RP2350A and RP2350B variant</a>
+<ul>
+<li>#board #minimal <a href="https://item.taobao.com/item.htm?id=879666840044">RP2350Tiny XL 开发板 RP2350A RP2350B 树莓派 PSRAMmicroPython</a></li>
+<li>which break out every pins of the RP2350B chips.</li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Revisit: [2026-02-21 10:16:44 AM] #blog <a href="https://news.ycombinator.com/item?id=47085387">Raspberry Pi Pico 2 at 873.5MHz with 3.05V Core Abuse</a></li>
+<li>Rival: [ Wednesday, June 3, 2026 08:51:52 AM ] #stm32/h5
+<ul>
+<li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm32h5-series.html">STM32H5 series</a>
+<ul>
+<li>STM32H503 WLCSP25 P0.4mm 128/32 Kb Flash/RAM 250Mhz ,I3C, FDCAN, USB Host/Device,...
+those chips also have PLAY(Programmable Logic ArraY) which is their version of PIO.</li>
+<li>Related: <a href="https://community.st.com/t5/stm32-mcus-products/stm32h5-usb-otg-fs-not-visible-amp-usb-device-option-missing-in/td-p/842020">STM32H5: USB_OTG_FS not visible &amp; USB_Device optio...</a>
+<ul>
+<li>no, USB OTG require ID pin. none of stm32h5 have that in hardware support.
+Instead it has USB DRD (Dual Role Device) controller.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

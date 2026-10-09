@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;uutils&#x60; Cross-platform Rust rewrite of the GNU &#x60;coreutils&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;uutils&#x60; Cross-platform Rust rewrite of the GNU &#x60;coreutils&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-14 08:37:07 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/uutils/coreutils"><code>uutils</code> Cross-platform Rust rewrite of the GNU <code>coreutils</code></a>
+<ul>
+<li>Recap: will run this #nightly. I need an utils like <code>busybox</code> so it doesnt collide with my commands and aliases.</li>
+<li>Run: <code>coreutils -h|b</code> . IT's the official name. May shim to <code>uu</code> instead.</li>
+<li>Root:</li>
+<li>Resolution:</li>
+<li>Reason: it replaces my usage of <code>busybox</code> - a multicall binaries. Just as <code>sfk</code>
+<ul>
+<li>has to run <code>cargo build --release --features windows</code>.</li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Revisit: [2025-05-30 16:21:36]</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

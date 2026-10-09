@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: usb c - How does USB-C PD change voltage?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">usb c - How does USB-C PD change voltage?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-18 07:39:39 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcb">
+                        <span>pcb</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/psu">
+                        <span>psu</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/usb/pd">
+                        <span>usb/pd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/739511/how-does-usb-c-pd-change-voltage">usb c - How does USB-C PD change voltage?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/707216/why-are-cc1-and-cc2-only-connected-to-usb-c">power supply - Why are CC1 and CC2 only connected to USB-C?</a>
+<ul>
+<li>CC1 and CC2 is utilized just for negotiating voltage and current purpose.</li>
+<li><a href="https://electronics.stackexchange.com/questions/642976/is-it-sufficient-to-put-5-1k-pulldowns-on-cc1-and-cc2-of-usbc-to-get-5v-1-5a">Is it sufficient to put 5.1k pulldowns on CC1 and CC2 of USBC to get 5V 1.5A?</a></li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/IvuznlV-gwZqcCXAeNGbjw">Drawing Type-C schematics? With the 5.1K pull-down resistor done, the true strength of Type-C should be revealed.</a>
+<ul>
+<li>more about Rp/Rd in DFP/UFP in USBPD.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/327791/using-usb-c-as-a-power-source">Using USB-C as a power source</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>I'm still finding how to permanently set voltage of USB-PD interfacing with an external device.
+<ul>
+<li>if they can be set by sinking resistor to a line, then it's easy.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/446903/does-usb-power-delivery-support-arbitrary-voltages/446910#446910">Does USB power delivery support arbitrary voltages?</a></li>
+<li>Related:
+<ul>
+<li>#usb/pinout : <a href="https://electronics.stackexchange.com/questions/738675/need-clarification-about-cc-lines-on-the-usb-c-port-of-a-laptop">charging - Need clarification about CC lines on the USB-C port of a laptop</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-dual-role-driver-stack-architecture">USB DRP: Dual Role Port Driver Stack Architecture - Windows drivers</a></li>
+<li>#comparison : <a href="https://electronics.stackexchange.com/questions/660676/usb-ufp-and-dfp-differences">Differences USB UFP - DFP</a></li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/hcK3MksF57P_rPe3NQAReQ">CC pin of Type-C is indeed more exquisitely designed~</a></li>
+</ul>
+</li>
+<li>#misc <a href="https://superuser.com/questions/1911139/does-usb-pd-support-dumb-charging">laptop - Does USB-PD support &quot;dumb&quot; charging?</a></li>
+<li>#layout <a href="https://mp.weixin.qq.com/s/cZJm2U5Q010z6hMEGn3WcA">Border Warrior, Type-C interface signal pin overvoltage protection design</a></li>
+<li>#footprint <a href="https://www.reddit.com/r/UsbCHardware/comments/1jqqhqw">USB-C Pins</a>
+<ul>
+<li>2/4/6/16/24 female receptacle.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

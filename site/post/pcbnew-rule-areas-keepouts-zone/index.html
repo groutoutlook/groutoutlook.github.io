@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;pcbnew&#x60; Rule areas (keepouts zone)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;pcbnew&#x60; Rule areas (keepouts zone)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-02 03:12:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/drc">
+                        <span>drc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#pcb-rule-areas"><code>pcbnew</code> Rule areas (keepouts zone)</a>
+<ul>
+<li>Recap: #keybinding #default is <code>ctrl+shift+k</code>. I keep mistaking this with draw filled zone.</li>
+<li>Run:</li>
+<li>Resolution: in here we can draw whatever zone you like.. unlike copper zone.
+<ul>
+<li>but it couldnt erase copper from pads/footprints...</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #pcb <a href="https://electronics.stackexchange.com/questions/254962/why-is-a-keepout-on-the-pcb">keepout on pcb</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/625290/kicad-show-keep-out-clearance-around-mounting-hole">pcb - KiCad: Show keep-out/clearance around mounting hole</a>
+<ul>
+<li>Recap: there is a keep-out layer in AD. but in Kicad there is no such layer.
+You can create one and fill them with keep-out zone.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://forum.kicad.info/t/silkscreen-layer-keepouts/61596/8">Silkscreen layer keepouts? - Layout</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

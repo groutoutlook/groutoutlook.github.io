@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Move or rotate items FreeCAD &#x3D;&#x3D; Transform(&#x60;ctrl+t&#x60;) and Placement(&#x60;ctrl+l ctrl+p&#x60;)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Move or rotate items FreeCAD &#x3D;&#x3D; Transform(&#x60;ctrl+t&#x60;) and Placement(&#x60;ctrl+l ctrl+p&#x60;)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-01 07:29:37 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/editor">
+                        <span>editor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/freecad">
+                        <span>freecad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keyboard">
+                        <span>keyboard</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mouse">
+                        <span>mouse</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/navigation">
+                        <span>navigation</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting/rad">
+                        <span>scripting/rad</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Move or rotate items FreeCAD == Transform(<code>ctrl+t</code>) and Placement(<code>ctrl+l ctrl+p</code>)
+<ul>
+<li>Recap: only placement can be access through <code>Menu</code> key with <code>l</code>-&gt; <code>Enter</code>.</li>
+<li>Run:</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta function python"><span class="storage type function python">def</span> <span class="entity name function python"><span class="meta generic-name python">move_selection</span></span></span><span class="meta function parameters python"><span class="punctuation section parameters begin python">(</span></span><span class="meta function parameters python"><span class="variable parameter python">dx</span><span class="punctuation separator parameters python">,</span> <span class="variable parameter python">dy</span><span class="punctuation separator parameters python">,</span> <span class="variable parameter python">doc</span></span><span class="meta function parameters default-value python"><span class="keyword operator assignment python">=</span><span class="constant language python">None</span></span><span class="meta function parameters python"><span class="punctuation section parameters end python">)</span></span><span class="meta function python"><span class="punctuation section function begin python">:</span></span>
+    <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span> <span class="keyword operator logical python">is</span> <span class="constant language python">None</span><span class="punctuation section block conditional python">:</span></span>
+        <span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span> <span class="keyword operator assignment python">=</span> <span class="meta qualified-name python"><span class="meta generic-name python">App</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">ActiveDocument</span></span>
+    <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span> <span class="keyword operator logical python">is</span> <span class="constant language python">None</span><span class="punctuation section block conditional python">:</span></span>
+        <span class="meta statement raise python"><span class="keyword control flow raise python">raise</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="support type exception python">ValueError</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">No active document found.<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span></span>
+    <span class="storage modifier global python">global</span> <span class="meta generic-name python">aa</span>
+    <span class="meta qualified-name python"><span class="meta generic-name python">selection</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">Gui</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">getSelection</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span>
+    <span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">copy</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span>
+    <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">openTransaction</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">move selection<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span>
+    <span class="meta statement try python"><span class="keyword control flow try python">try</span><span class="punctuation section block try python">:</span></span>
+        <span class="meta statement for python"><span class="keyword control flow for python">for</span> <span class="meta generic-name python">obj</span> <span class="meta statement for python"><span class="keyword control flow for in python">in</span></span></span><span class="meta statement for python"> <span class="meta qualified-name python"><span class="meta generic-name python">selection</span></span><span class="punctuation section block for python">:</span></span>
+            <span class="meta statement if python"><span class="keyword control flow conditional python">if</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">hasattr</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">obj</span></span><span class="punctuation separator arguments python">,</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">Placement<span class="punctuation definition string end python">&quot;</span></span></span></span><span class="punctuation section arguments end python">)</span></span> <span class="keyword operator logical python">and</span> <span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Document</span></span> <span class="keyword operator comparison python">==</span> <span class="meta qualified-name python"><span class="meta generic-name python">doc</span></span><span class="punctuation section block conditional python">:</span></span>
+                <span class="meta qualified-name python"><span class="meta generic-name python">base</span></span> <span class="keyword operator assignment python">=</span> <span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Placement</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Base</span></span>
+                <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">getObject</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Name</span></span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Placement</span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">App</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">Placement</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python">
+                    <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">App</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">Vector</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">base</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">x</span></span> <span class="keyword operator arithmetic python">+</span> <span class="meta qualified-name python"><span class="meta generic-name python">dx</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">base</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">y</span></span> <span class="keyword operator arithmetic python">+</span> <span class="meta qualified-name python"><span class="meta generic-name python">dy</span></span><span class="punctuation separator arguments python">,</span> <span class="meta qualified-name python"><span class="meta generic-name python">base</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">z</span></span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation separator arguments python">,</span>
+                    <span class="meta qualified-name python"><span class="meta generic-name python">obj</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Placement</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Rotation</span></span><span class="punctuation separator arguments python">,</span>
+                    <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">App</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">Vector</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="constant numeric integer decimal python">0</span><span class="punctuation separator arguments python">,</span> <span class="constant numeric integer decimal python">0</span><span class="punctuation separator arguments python">,</span> <span class="constant numeric integer decimal python">0</span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation separator arguments python">,</span>
+                </span><span class="punctuation section arguments end python">)</span></span>
+        <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">recompute</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span>
+    <span class="meta statement finally python"><span class="keyword control flow finally python">finally</span><span class="punctuation section block finally python">:</span></span>
+        <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">doc</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">commitTransaction</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span>
+
+<span class="meta function-call python"><span class="meta qualified-name python"><span class="variable function python">move_selection</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="constant numeric integer decimal python">0</span><span class="punctuation separator arguments python">,</span> <span class="constant numeric integer decimal python">30</span></span><span class="punctuation section arguments end python">)</span></span>
+</span></code></pre>
+<ul>
+<li>Resolution: <a href="https://wiki.freecad.org/Std_Placement">Std Placement - FreeCAD Documentation</a>
+You specify the displacement you want to put on
+<ul>
+<li>Translation: x,y,z. Apply axial will prompt you to choose by mouse.</li>
+<li>Center: x,y,z. Selected point will prompt you to select 3 point by mouse.</li>
+<li>Rotation:
+<ul>
+<li>Rotation Axis and Angle:</li>
+<li>Euler angle:</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://forum.freecad.org/viewtopic.php?style=4&amp;t=90891">why transform and placement are separate tools? - FreeCAD Forum</a></li>
+<li>Related: <a href="https://wikipedia.org/wiki/Euler_angles">Euler angles</a></li>
+<li>Rival: <a href="https://wiki.freecad.org/Std_TransformManip">Std TransformManip - FreeCAD Documentation</a>
+<ul>
+<li>#mouse : <a href="https://wiki.freecad.org/Std_TransformManip#Dragger">Dragger/Gizmo</a>
+<ul>
+<li>#example : <a href="https://wiki.freecad.org/Std_TransformManip#Pick_custom_dragger">Custom face/edge/vertex dragger</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

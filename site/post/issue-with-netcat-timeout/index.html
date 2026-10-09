@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Issue with netcat timeout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Issue with netcat timeout</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-24 06:06:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nmap/nc">
+                        <span>nmap/nc</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/24198456/issue-with-netcat-timeout">Issue with netcat timeout</a>
+<ul>
+<li>Recap:</li>
+<li>Run: use <code>nmap</code> instead...
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ncat</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>vz</span> OPPOA9-2018.lan 8022</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related: #ip/address #mac
+<ul>
+<li><code>nmap</code> also resolute the MAC address as well.
+<ul>
+<li>to do that for #android, try <code>ip link show wlan0</code>.</li>
+<li>if cant, move on to #adb, you can run this there.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell ip<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> inet addr show</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">awk</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>/scope global/ {print $2,$4,$6}<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>ss -tlp<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li><a href="https://superuser.com/questions/248389/list-open-ssh-tunnels/1592043#1592043">shell - List open SSH tunnels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

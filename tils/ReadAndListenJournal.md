@@ -1,1 +1,1 @@
-C:/Users/COHOTECH/hw/obs/note_Knowledge/ReadAndListenJournal.md
+D:/ProgramDataD/Notes/Obsidian/MainVault/note_Knowledge/ReadAndListenJournal.md

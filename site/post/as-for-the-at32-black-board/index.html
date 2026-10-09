@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: as for the at32 black board</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">as for the at32 black board</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-06 07:16:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/embedded">
+                        <span>embedded</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/uv4">
+                        <span>ide/uv4</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>as for the at32 black board</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="support function cd shell">cd</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">at_dir</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">uv4</span></span><span class="meta function-call arguments shell"> (fd <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.uvprojx<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>hi</span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">-f</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>j0</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span> flash_log.txt</span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="variable function shell">sleep</span></span><span class="meta function-call arguments shell"> 15</span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="variable function shell">cat</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\f</span>lash_log.txt</span>
+</span></code></pre>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

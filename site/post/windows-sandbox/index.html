@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Windows Sandbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Windows Sandbox</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-29 06:58:18 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/hyperv">
+                        <span>hyperv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/sandbox">
+                        <span>sandbox</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/virtualization">
+                        <span>virtualization</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview">Windows Sandbox</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">Disable-WindowsOptionalFeature -Online -FeatureName &quot;Containers-DisposableClientVM&quot;
+Enable-WindowsOptionalFeature -Online -FeatureName &quot;Containers-DisposableClientVM&quot; -All
+</span></code></pre>
+</li>
+<li>Root: since in windows insider, we have <code>wsb.exe</code> in cli</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/microsoft/Windows-Sandbox">microsoft/Windows-Sandbox: Disposable, secure and lightweight Windows Desktop Environment</a></li>
+<li>as now, from 24H2 Insider, you could try <code>wsb --help</code> to do things with Windows Sandbox.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/sandboxie-plus/Sandboxie">sandboxie-plus/Sandboxie: Sandboxie Plus &amp; Classic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

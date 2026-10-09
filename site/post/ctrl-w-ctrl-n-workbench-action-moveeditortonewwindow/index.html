@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Ctrl+w ctrl+n&#x60; &#x3D;&#x3D; &#x60;workbench.action.moveeditortonewwindow&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Ctrl+w ctrl+n&#x60; &#x3D;&#x3D; &#x60;workbench.action.moveeditortonewwindow&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-18 07:03:09 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vscode">
+                        <span>vscode</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>Ctrl+w ctrl+n</code> == <code>workbench.action.moveeditortonewwindow</code>
+<ul>
+<li>Recap: that's from what i set although i couldnt remember when did i do that.</li>
+<li>Root:</li>
+<li>Resolution: set it in #ide/vs, the default one can be accessed with <code>Alt+w alt+n</code>
+<ul>
+<li>update 2025-05 : and some other important #panes config:
+<ul>
+<li><code>Ctrl+w ctrl+[</code> == <code>workbench.action.moveeditortoleftgroup</code></li>
+<li><code>Ctrl+w ctrl+]</code> == <code>workbench.action.moveeditortorightgroup</code></li>
+<li><code>Ctrl+w ctrl+\</code> == <code>workbench.action.duplicateactiveeditorgroupdown</code></li>
+<li><code>Ctrl+w ctrl+shift+\</code> == <code>workbench.action.duplicateactiveeditorgroupright</code></li>
+</ul>
+</li>
+<li>same in #ide/vs: <code>window.newverticaltabgroup</code> and <code>window.newhorizontaltabgroup</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#vs <code>Ctrl+w ctrl+n</code> == <code>Duplicate Current Tab</code> so you can move them to another spilt windows.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

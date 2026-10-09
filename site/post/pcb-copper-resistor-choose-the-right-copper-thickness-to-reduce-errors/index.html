@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: PCB copper resistor: choose the right copper thickness to reduce errors...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">PCB copper resistor: choose the right copper thickness to reduce errors...</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-25 04:59:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/material">
+                        <span>material</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/resistor">
+                        <span>resistor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>PCB copper resistor: choose the right copper thickness to reduce errors...
+<ul>
+<li>Recap: 1oz copper for conventional PCBs, 2oz or 3oz copper for high-power parts (copper resistivity is 1.724×10⁻⁶Ω/cm at 25°C);
+<ul>
+<li>1oz copper foil thickness is about 0.036mm, resistance is 0.48mΩ/square, such as 0.25mm wide trace, resistance is about 19mΩ/cm;</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Combined capacitors: low-inductance ceramic capacitors filter high-frequency noise, electrolytic capacitors use &quot;charge banks&quot; to filter low-frequency noise, and ferrite magnetic beads can be selected to enhance the isolation effect;</li>
+<li>The decoupling capacitor is placed close to the power pin of the device, and the low-impedance ground layer is connected with a short trace or via to reduce the series inductance.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #blog <a href="https://mp.weixin.qq.com/s/dCZd4LcejE3Il4RRH1DaiA">9 Hybrid PCB Layout God Tips! Novices can also handle complex circuits, and the pit avoidance rate is increased by 90%</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

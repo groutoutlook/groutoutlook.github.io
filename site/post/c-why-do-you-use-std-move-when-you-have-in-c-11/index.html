@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Why do you use std::move when you have &amp;&amp; in C++11?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Why do you use std::move when you have &amp;&amp; in C++11?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-29 01:09:22 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/std/reference">
+                        <span>std/reference</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/14486367/why-do-you-use-stdmove-when-you-have-in-c11">c++ - Why do you use std::move when you have &amp;&amp; in C++11?</a>
+<ul>
+<li>Recap: for moving <code>lvalue</code> instead of create <code>rvalue</code>(nowadays it's called <code>prvalue</code>).</li>
+<li>Root: saving resources from calling excessive constructor.</li>
+<li>Resolution: It's also the difference from the core.</li>
+<li>Reason:</li>
+<li>Related: <a href="https://stackoverflow.com/questions/53257824/why-use-stdforwardt-instead-of-static-castt">c++ - Why use <code>std::forward&lt;T&gt; instead of static_cast&lt;T&amp;&amp;&gt;</code></a>
+<ul>
+<li>It is <code>move</code>, but an order higher(passing <code>decltype</code> in template arguments). See <a href="https://stackoverflow.com/questions/8526598/how-does-stdforward-work-especially-when-passing-lvalue-rvalue-references">here.</a></li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

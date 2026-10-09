@@ -1,0 +1,1 @@
+D:/ProgramDataD/Notes/Obsidian/MainVault/note_Knowledge/Personal.Psychology.Journal.md

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Pico Dual Ethernet - Raspberry Pi Forums</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Pico Dual Ethernet - Raspberry Pi Forums</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-20 12:22:57 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ethernet">
+                        <span>ethernet</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://forums.raspberrypi.com/viewtopic.php?t=367571">Pico Dual Ethernet - Raspberry Pi Forums</a>
+<ul>
+<li>Recap: about DP83848 and W5500</li>
+<li>Root:
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=784801855324">STM32H750VBT6开发板DP83848以太网WIFI物联网ESP8266开发板</a></li>
+<li><a href="https://item.taobao.com/item.htm?id=766577349329">STM32H750VBT6开发板W5500以太网网络WIFI iot开发板物联网开发板</a></li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li>Just use W5500 honestly, the other one is TI chip, expensive.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#rp2350 <a href="https://news.ycombinator.com/item?id=45754439">Raspberry Pi Pico Bit-Bangs 100 Mbit/S Ethernet</a>
+<ul>
+<li>Recap: bitbang Ethernet is possible...fuck. but it's TX only.
+RX is the hard part which is not yet implemented.</li>
+<li>Resolution: <a href="https://github.com/steve-m/Pico-100BASE-TX">Pico-100BASE-TX 100 MBit/s Fast Ethernet TX, UDP framer for RP2350</a></li>
+</ul>
+</li>
+<li>#protocol/hdmi <a href="https://github.com/steve-m/hsdaoh-rp2350"><code>hsdaoh-rp2350</code> High Speed Data Acquisition over HDMI - RP2350 HSTX implementation</a>
+<ul>
+<li>#connector/fpc <a href="https://www.adafruit.com/product/6055">RP2350 22-pin FPC HSTX to DVI Adapter for HDMI Displays Adafruit</a>
+<ul>
+<li>#firmware <a href="https://github.com/MichaelBell/dvhstx"><code>dvhstx</code> DVI for HSTX</a>
+<ul>
+<li>#connector <a href="https://wikipedia.org/wiki/Mini-DVI">Mini-DVI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#fpga <a href="https://github.com/steve-m/hsdaoh-fpga"><code>hsdaoh-fpga</code> High Speed Data Acquisition over HDMI</a></li>
+<li>#future work involving using either pure MCU or FPGA to capture data over 2812b LED/HUB75.</li>
+<li><a href="https://github.com/steve-m/ms2130_patcher">MS2130 firmware patcher for optimized video quality</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Friday, June 5, 2026 04:57:03 PM] #video [Microcontroller Magic: Under the Hood of “Sum Ergo Demonstro” - YouTube](https://youtube.com/w [... 0 more matches]
+<ul>
+<li>HSTX. for HDMI/DVI frame blitting... The guy is using HDMI and 3.5mm output audio jack</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: default vkClearValue</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">default vkClearValue</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-28 12:53:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vulkan">
+                        <span>vulkan</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/vulkan/comments/j78za2">default vkClearValue</a>
+<ul>
+<li>Brief: which in case of vulkan_hpp is <code>vk::ClearValue</code></li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++">	<span class="variable language c++">this</span><span class="punctuation accessor arrow c++">-&gt;</span><span class="variable other readwrite member c++">default_clear_color</span> <span class="keyword operator assignment c">=</span> std<span class="punctuation accessor c++">::</span>array<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">float</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">4</span><span class="punctuation section generic end c++">&gt;</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="constant numeric c++">0.002f</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">0.052f</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">0.012f</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">1.0f</span><span class="punctuation section block end c++">}</span></span><span class="punctuation section block end c++">}</span></span><span class="punctuation section group end c++">)</span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: voltage - Why do we need to use a 100ohm differential probe to measure ethernet signals when there is not any standard?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">voltage - Why do we need to use a 100ohm differential probe to measure ethernet signals when there is not any standard?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-16 11:54:26 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ethernet">
+                        <span>ethernet</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol">
+                        <span>protocol</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/usb">
+                        <span>usb</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/611576/why-do-we-need-to-use-a-100ohm-differential-probe-to-measure-ethernet-signals-wh/611577#611577">voltage - Why do we need to use a 100ohm differential probe to measure ethernet signals when there is not any standard?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason: I used 100 ohm as output resistor for AT32 boards... it's too noisy that signal keep catching EMI of other pin.</li>
+<li>Root: <a href="https://www.eevblog.com/forum/microcontrollers/sending-uart-to-multiple-devices-opamp-buffer-needed/">Sending UART to multiple devices - opamp buffer needed?</a></li>
+<li>Related: <a href="https://e2e.ti.com/support/power-management-group/power-management/f/power-management-forum/1348065/bq79656-q1-uart-multidrop-communication">BQ79656-Q1: UART Multidrop Communication - Power management forum - Power management - TI E2E support forums</a>
+<ul>
+<li><a href="https://arduino.stackexchange.com/questions/54009/arduino-uart-tx-rx-multidrop-1-master-50-slaves">Arduino UART (TX/RX) multidrop 1 master 50 slaves</a></li>
+<li><a href="https://www.ti.com/lit/ta/sszt500/sszt500.pdf">Frequently asked questions and answers for RS-485 transceivers - sszt500.pdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

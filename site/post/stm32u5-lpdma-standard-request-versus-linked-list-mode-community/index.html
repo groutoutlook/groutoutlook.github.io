@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: STM32U5 LPDMA: Standard Request versus Linked-List mode | Community</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">STM32U5 LPDMA: Standard Request versus Linked-List mode | Community</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-06-15 11:44:13 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dma">
+                        <span>dma</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/memory">
+                        <span>memory</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://community.st.com/stm32-mcus-products-25/stm32u5-lpdma-standard-request-versus-linked-list-mode-152816">STM32U5 LPDMA: Standard Request versus Linked-List mode | Community</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/ZanZXYNKsMFWndK5PeOW3Q">The Nuvoton M2L32 has an SRAM distribution of 168K + 8K</a>
+<ul>
+<li>Recap: LPPDMA is same stuff with STM32U5 LPDMA... it can be used with LPUART</li>
+<li>Resolution: <a href="https://community.st.com/stm32-mcus-embedded-software-32/stm32u545-lpuart-not-working-in-stop-mode-165958">STM32U545 lpuart not working in stop mode | Community</a></li>
+<li>Root: <a href="https://community.st.com/stm32-mcus-60/how-to-wake-up-the-stm32u5-from-stop2-using-lpuart-78">How to wake up the STM32U5 from STOP2 using LPUART | Community</a>
+<ul>
+<li>Recap: LPUART is one of the only thing work while in deep sleep/stop mode.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://devzone.nordicsemi.com/f/nordic-q-a/108234/using-low-power-vs-non-low-power-mode-peripherals">Using low-power VS non low-power mode peripherals - Nordic Q&amp;A - Nordic DevZone - Nordic DevZone</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/260394/stm32l0-low-power-uart-receiver-reads-the-wrong-data-at-high-baudrate-after-mcu">STM32L0 Low power UART-receiver reads the wrong data at high baudrate after MCU waking up</a></li>
+<li><a href="https://community.st.com/stm32-mcus-products-25/stm32u083cct6-wake-up-source-165713">STM32U083CCT6 Wake-up Source | Community</a>
+<ul>
+<li>another <code>STM32U*</code> line up that have LPUART.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

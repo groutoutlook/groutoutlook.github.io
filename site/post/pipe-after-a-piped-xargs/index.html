@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pipe after a piped xargs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pipe after a piped xargs</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-17 12:51:23 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/piping">
+                        <span>piping</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shell">
+                        <span>shell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/zsh">
+                        <span>zsh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://unix.stackexchange.com/questions/209249/piping-commands-after-a-piped-xargs">pipe after a piped xargs</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/35589179/when-to-use-xargs-when-piping">how to use xargs</a></li>
+<li>Resolution:
+<ul>
+<li><a href="https://superuser.com/questions/600253/why-is-xargs-necessary">bash - Why is xargs necessary?</a>
+<ul>
+<li>xargs can be thought of as converting STDIN-style input to arguments</li>
+</ul>
+</li>
+<li>quite like it eats the stdout and parse the newline, so new command will new arguments
+<ul>
+<li>from what it parsed. Far worse than PowerShell</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>it's infinitely worse than PowerShell. since in powershell we can <code>ls | %{$_}</code></li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

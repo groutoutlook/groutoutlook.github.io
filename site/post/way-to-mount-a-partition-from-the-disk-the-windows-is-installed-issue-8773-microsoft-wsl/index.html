@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-18 02:55:25 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wsl">
+                        <span>wsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/WSL/issues/8773">Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</a>
+<ul>
+<li>Recap: right now it's impossible to do it if your Linux partition is in the same disk as the one mounting in Windows
+<ul>
+<li>e.g. Windows disk, or <code>D:\</code> disk which is being mounted and running program, accessing files on them, etc...</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: If you are in <code>C:\</code>, good luck. Otherwise, unmount it right now.
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/storage/dismount-diskimage?view=windowsserver2025-ps">Dismount-DiskImage (Storage)</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://superuser.com/questions/1750399/eject-dismount-a-drive-using-powershell">windows 10 - Eject/dismount a drive using PowerShell</a></li>
+<li>Related:
+<ul>
+<li><a href="https://www.reddit.com/r/cloningsoftware/comments/1tzzc2f">What disk cloning software have you been using for years that seldom gets mentioned anywhere?</a>
+<ul>
+<li>actually just use <code>dd</code>. nothing else is better than that even in Windows.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

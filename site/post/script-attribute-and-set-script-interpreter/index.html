@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: script(…)]&#x60; attribute and &#x60;set script-interpreter&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">script(…)]&#x60; attribute and &#x60;set script-interpreter&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-24 11:15:07 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just/issues/2260">Stabilize <code>[script(…)]</code> attribute and <code>set script-interpreter</code></a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">set script-interpreter := if os() == &quot;windows&quot; { [&quot;busybox&quot;, &quot;sh&quot;, &quot;-eu&quot;] } else { [&quot;sh&quot;, &quot;-eu&quot;] }
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#pacman/scoop: <code>scoop i main/mingit-busybox</code> is the <code>busybox</code> I used in #windows.
+<ul>
+<li>this <a href="https://frippery.org/busybox/">one</a> shim everything so I wont use that.</li>
+<li>Root: testing crossplatform recipes in <code>just</code> of course.</li>
+<li>Revisit: [2025-08-20 12:20:03] not using right now.
+<ul>
+<li><a href="https://github.com/gapotchenko/gnu-tk/">gnu-tk provides seamless access to GNU toolkits on non-GNU operating systems.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#alternative: <code>uutils</code>|<code>uu</code> and <a href="https://github.com/landley/toybox"><code>toybox</code></a></li>
+<li><a href="https://github.com/casey/just/issues/2825">Recipe-level environment variables · Issue #2825 · casey/just</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/1420719/powershell-setting-an-environment-variable-for-a-single-command-only">windows - PowerShell: Setting an environment variable for a single command only</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

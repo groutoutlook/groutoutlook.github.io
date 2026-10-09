@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ad18学习笔记十六：v割_pcb v割怎么画</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ad18学习笔记十六：v割_pcb v割怎么画</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-22 05:42:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminology">
+                        <span>terminology</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://blog.csdn.net/gutie_bartholomew/article/details/135820646">ad18学习笔记十六：v割_pcb v割怎么画</a>
+<ul>
+<li>Recap: V cut ?  V割, V割拼板
+<ul>
+<li>more widely known as <a href="https://www.pcbway.com/pcb_prototype/PCB_V_Scoring.html">V-Scoring - PCB Prototype the Easy Way - PCBWay</a></li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.syspcb.com/pcb-blog/knowledge/pcb-stamp-holes-a-comprehensive-guide-to-design-and-application.html">PCB Stamp Holes: A Comprehensive Guide to Design and Application - SYS Technology Co., Ltd.</a>
+<ul>
+<li>Stamp Holes and V-Scoring comparison is in here.</li>
+</ul>
+</li>
+<li>#example/pcb <a href="https://github.com/AchimPieters/mouse-bite.pretty">Mouse bites KiCad footprints</a></li>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#cleaning_up_footprint_graphics">Cleaning up footprint graphics and text</a>
+<ul>
+<li><code>Tool</code> -&gt; <code>Cleaup Graphics...</code> critical if you want to draw mousebites.. since it merges misjointed one.</li>
+<li>also you can only draw arbitarily polygon + arc by clicking multiple lines + arc then cleanup.
+Those are also being stuck on keybinding by this issue. <a href="https://gitlab.com/kicad/code/kicad/-/work_items/15181">Shortcut for launching the &quot;Interactive Routing Settings&quot; is not working properly (#15181) · Issue · kicad/code/kicad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>V Cut of JLC require me to do 0.4mm clearance. if no V-cut and do forming edge, it's 0.2mm, bit more expensive of course.
+<ul>
+<li>0.6mm for V cut seems more typical...</li>
+<li>more costly is half-hole.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: My FT32_F6C_26 is once done by half hole (castellated hole) process.
+<ul>
+<li><a href="https://www.nextpcb.com/blog/complete-guide-to-pcb-stamp-holes">Complete Guide to Mouse Bite Panelization</a>
+<ul>
+<li>It's all related to final step in #pcb #prod (panelization).</li>
+</ul>
+</li>
+<li><a href="https://mp.weixin.qq.com/s/Plq1AOzDVaJfvfHQbMTAUw">Solder Party's &quot;RP2350 Stamp&quot; module features a Raspberry Pi RP2350A or RP2350B</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/Niich/mcu-coin"><code>mcu-coin</code> esp32c3</a>
+<ul>
+<li>Reason: have both ESP32-C3FH4 and the stamp hole I'm looking for ... but it's currently defective..</li>
+</ul>
+</li>
+<li><a href="https://github.com/Just4Stan/OpenRX"><code>OpenRX</code> ExpressLRS 4.0 receiver family — 6 designs from budget nano to Xrossband Gemini. ESP32-C3FH4, SX1281/LR1121</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

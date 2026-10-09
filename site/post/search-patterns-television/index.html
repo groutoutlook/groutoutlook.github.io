@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Search Patterns | Television</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Search Patterns | Television</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-08 09:48:16 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/fzf">
+                        <span>fzf</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://alexpasmantier.github.io/television/docs/Users/search-patterns">Search Patterns | Television</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">tv</span></span><span class="meta function-call arguments shell"> alias <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> quick for fuzzy search meaning of alias.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">tv</span></span><span class="meta function-call arguments shell"> env</span>
+<span class="meta function-call shell"><span class="variable function shell">tv</span></span><span class="meta function-call arguments shell"> list-channels</span>
+<span class="meta function-call shell"><span class="variable function shell">tv</span></span><span class="meta function-call arguments shell"> update-channels<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>force <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> once in a while you want to get upstream modification.</span><span class="comment line number-sign shell">
+</span></span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> use with git</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> sw (tv git-branch</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-pager</span> show <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span><span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">tv</span></span><span class="meta function-call arguments shell"> git-branch</span><span class="punctuation section parens end shell">)</span></span>:RGB_Bitbang.cpp<span class="punctuation definition string end shell">&quot;</span></span> <span class="keyword operator assignment redirection shell">&gt;</span> .<span class="constant character escape shell">\R</span>GB_Bitbang.cpp <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or checkout.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#default #keybinding : <a href="https://alexpasmantier.github.io/television/docs/Users/keybindings">Keybindings | Television</a>
+<ul>
+<li>not likely to change.</li>
+<li><code>Ctrl+y</code> Copy the selected entry to the clipboard
+use that to copy branches/remotes name or whatever.</li>
+<li><code>Ctrl+r</code> Toggle remote control mode</li>
+<li><code>Ctrl+d</code>/<code>Ctrl+u</code> Scroll the preview pane up / down just as <code>vim</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: more intuitive than <code>fzf</code> in the interface.</li>
+<li>Con: as now no <code>pwsh</code> module to bind keys with.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/paulirish/git-recent">paulirish/git-recent: See your latest local git branches, formatted real fancy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

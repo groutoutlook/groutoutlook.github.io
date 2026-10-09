@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Schematic Editor - Net Classes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Schematic Editor - Net Classes</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-01 10:52:18 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/doc/official">
+                        <span>doc/official</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/drc">
+                        <span>drc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/eeschema">
+                        <span>eeschema</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wiring/net">
+                        <span>wiring/net</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#schematic-netclasses">Schematic Editor - Net Classes</a>
+<ul>
+<li>Recap:
+<ul>
+<li>Recite: Net classes are managed in the Net Classes panel of the Schematic Setup dialog.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#netclass-directive">Graphically assigning net classes in the schematic</a>
+<ul>
+<li>There is a symbol behave kinda like a Label(no net assigning tho) to put on wire,
+which will translate to pads/tracks. Called &quot;Directive Label&quot;</li>
+<li>There is even a &quot;Rule Area&quot; tool for them.</li>
+</ul>
+</li>
+<li>Two ways to #config them (project-specific tho):
+<ol>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#schematic-setup-netclasses">managing net classes in Schematic Setup</a></li>
+</ol>
+<ul>
+<li>Schematic Setup - Project - Net Classes</li>
+<li>Can even #config <a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#bus_alias_definitions">Bus alias definitions</a></li>
+</ul>
+<ol start="2">
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#board-setup-net-classes">pcbnew - Board setup - Design Rules (DRC) - Net Classes section </a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: All that because DRC keep declining</li>
+<li>Related:
+<ul>
+<li>#pcbnew #scripting #python <a href="https://forum.kicad.info/t/assigning-a-netclass-to-a-net-and-persisting-that-change-in-pcbnew-using-python/53675/6?u=golkeda">Assigning a netclass to a net and persisting that change in pcbnew using Python - External Plugins</a>
+<ul>
+<li>Recap: <code>pcbnew</code> assign net classes through <code>ctrl+alt+shift+n</code>. <code>eeschema</code> can.</li>
+<li>Reason: make net have different clearance, e.g Power trace width or high frequency routing.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;comrak&#x60;: CommonMark + GFM compatible Markdown parser and renderer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;comrak&#x60;: CommonMark + GFM compatible Markdown parser and renderer</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-20 11:14:31 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/document">
+                        <span>document</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/html">
+                        <span>html</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/markdown">
+                        <span>markdown</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/parser">
+                        <span>parser</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/kivikakk/comrak"><code>comrak</code>: CommonMark + GFM compatible Markdown parser and renderer</a>
+<ul>
+<li>Recap: convert from a markdown file with the path into HTML in the stdout.
+<ul>
+<li>really similar to a SSG.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">comrak $jtb[&quot;fm&quot;] | b -lhtml # for my profiles... could try a readme for a simpler example.
+# A variable can contain a file handle. with `miniserve` you can update the file....
+# with text editor even.
+comrak $jtb[&quot;fm&quot;] &gt; ($a = ni -p $env:TEMP -n &quot;edgerun.html&quot; -Force); miniserve $a &amp;&amp; rm $a
+# hopefully in the future it could be like this.
+comrak $jtb[&quot;fm&quot;] &gt; ($a = New-TemporaryFile -extension html); msedge $a
+</span></code></pre>
+<ul>
+<li>#cli/option : <code>-o</code> | <code>--output</code> &quot;FILE&quot; will output to a file, thus reduce above kludges.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">comrak ./README.MD -o ./README.html ; msedge $pwd/README.html # notice msedge cant expand the &quot;.&quot; dir.
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2>Resolution:</h2>
+<ul>
+<li>you could pipe to a Temp file and let <code>miniserve</code> serve it.</li>
+<li>#nodejs #cli #pipeline <a href="https://github.com/kessler/node-bcat">node-bcat: A pipe to browser utility</a>
+<ul>
+<li>#alternative : <a href="https://unix.stackexchange.com/questions/271945/how-to-pipe-html-into-lynx">How to pipe html into lynx?</a>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cat ./a-file-ends-with.html | lynx -stdin        
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#powershell: <a href="https://github.com/PowerShell/PowerShell/issues/4215">Add ability to create a temporary file with a specific extension to New-TemporaryFile · Issue #4215 · PowerShell/PowerShell</a></li>
+<li><a href="https://stackoverflow.com/questions/6223996/does-any-web-browser-allow-writing-to-stdout/6263422#6263422">Does any web browser allow writing to stdout?</a></li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/commonmark/cmark"><code>cmark</code> CommonMark parsing and rendering library and program in C</a>
+<ul>
+<li>Recap: to force myself better I shim <code>comrak</code> to <code>cmark</code> —  less syllable to look on.</li>
+<li>Root: <a href="https://soupault.net/"><code>soupault</code></a></li>
+<li><a href="https://tildes.net/~comp/1jq5/are_feeds_like_rss_or_atom_feeds_really_worth_it_for_a_personal_blog">Are Feeds - like RSS or Atom feeds - Really worth it for a personal blog? - ~comp - Tildes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Comparison for or std::for_each</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Comparison for or std::for_each</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-08 12:30:48 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/9994421/preferred-standard-use-range-based-for-or-stdfor-each">Comparison for or std::for_each</a>
+<ul>
+<li>Recap: <code>for_each</code> return functors(state) which is overload inside the loop...</li>
+<li>Root:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#std/doc: <a href="https://cppreference.com/w/cpp/algorithm/ranges/for_each">std::ranges::for_each, std::ranges::for_each_result</a>
+<ul>
+<li><a href="https://www.reddit.com/r/cpp_questions/comments/177r1vn"><code>std::transform</code> vs <code>std::for_each</code> ?</a></li>
+<li>Update 2025-04 : <a href="https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/">Prefer views::meow | Barry's C++ Blog</a>
+<ul>
+<li>Talking about how to use <code>std::view::transform</code>, never use <code>std::ranges::transform_view</code>.</li>
+<li>#til : <code>std::views</code> is an alias of <code>std::ranges::views</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

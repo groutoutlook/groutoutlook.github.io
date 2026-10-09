@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: littletijn/spooky-view: Windows program to make any window transparent</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">littletijn/spooky-view: Windows program to make any window transparent</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-17 02:36:04 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/visual">
+                        <span>visual</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/workflow">
+                        <span>workflow</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/littletijn/spooky-view/">littletijn/spooky-view: Windows program to make any window transparent</a>
+<ul>
+<li>Recap: I shim it to <code>spookyview</code>/<code>spooky</code>. execute this in terminal so that we could change config without touching toolbar.</li>
+<li>Resolution:
+<ul>
+<li>#keybinding: use #powertoys keyboard mapper to map <code>Ctrl+win+alt+, ctrl+win+alt+,</code> to open this up.
+<ul>
+<li>#config: but in config, remember you have to put it when running, start another instance.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>#ahk : have to used it with <code>trawin</code> since you know, I still prefer keybinding.
+<ul>
+<li>and for something like #browser, you better adjust it dynamically</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>this could actually make my experience with light mode better. Sometimes dark mode is not awlways good for the eyes.</li>
+<li>Actually it's the best if browser itself make its framebuffer <code>compositeAlpha</code>-able. Transparent background is much more immersive experience.</li>
+</ul>
+</li>
+<li>Revisit: 2025-05-18 16:48:15 : OTOH I use <code>smartsystemmenu</code> to force click passthrough
+<ul>
+<li>and <code>Hide For Alt+Tab</code>, <code>Send To Bottom</code>, ... It also permit us changes opacity by <code>Ctrl+KP_0</code> -&gt; <code>KP_9</code>
+<ul>
+<li>Could be a decent alternative to <code>trawin</code> since it's only change opacity as simple as that.</li>
+</ul>
+</li>
+<li><a href="https://github.com/littletijn/spooky-view/blob/267862238ee2d2ce5553b93c132186f2a08f2019/SpookyView/CRegistrySettingsManager.cpp"><code>spooky</code> read from registry instead of files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Run &#x60;just&#x60; recipes in current powershell session.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Run &#x60;just&#x60; recipes in current powershell session.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-10 12:44:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/idea">
+                        <span>idea</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just/issues/1957#issuecomment-3146502441">Run <code>just</code> recipes in current powershell session.</a>
+<ul>
+<li>Recap: so basically we wrap <code>just subcommand</code> into <code>Invoke-Expression</code>.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">alias rim := reimport-module
+reimport-module:
+    &#39;gci *psd1 | %{:mo $_}&#39; # just a single quote string.
+</span></code></pre>
+</li>
+<li>Resolution: Then <code>r rim | iex</code>. Literally just that.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/casey/just/issues/2304#issuecomment-2282870811">Solution for <code>zsh</code></a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

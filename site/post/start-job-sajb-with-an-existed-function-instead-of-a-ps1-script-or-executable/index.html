@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Start-Job&#x60; | &#x60;sajb&#x60; with an existed function instead of a .ps1 script or executable</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Start-Job&#x60; | &#x60;sajb&#x60; with an existed function instead of a .ps1 script or executable</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-17 03:15:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/58838581/22954711"><code>Start-Job</code> | <code>sajb</code> with an existed function instead of a .ps1 script or executable</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">Start-Job -ScriptBlock ${function:ss} -ArgumentList &quot;`&quot;--pin:area,100,100,500,600,800,10`&quot;&quot;
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: while trying to pin area with my custom function <code>ss</code>. It's blocking IO by default.</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/a/76847044/22954711">references to <code>$using</code> as well, to access global scope (e.g <code>$function</code> PSDrive/provider) from function scope.</a>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/threadjob/start-threadjob">Start-ThreadJob (ThreadJob)</a>
+<ul>
+<li>More elegant as it's will save us from <code>$global</code> scope AFAICT. Syntax is the same.</li>
+<li>which save one <code>$using</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

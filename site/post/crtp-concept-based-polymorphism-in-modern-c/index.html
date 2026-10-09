@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: CRTP - Concept-based polymorphism in modern C++</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">CRTP - Concept-based polymorphism in modern C++</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-24 03:11:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/type/erasure">
+                        <span>type/erasure</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://gist.github.com/GuillaumeDua/b0f5e3a40ce49468607dd62f7b7809b1#c17--type-erasure-example">CRTP - Concept-based polymorphism in modern C++</a>
+<ul>
+<li>Recap:</li>
+<li>Run: compile time/ static polymorphism. Good dynamic with deducing <code>this</code> which is C++23 up.
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">Base</span></span><span class="meta struct c++"> <span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++"> <span class="storage type c">void</span> <span class="meta function-call c++"><span class="variable function c++">name</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="variable language c++">this</span> <span class="storage type c">auto</span><span class="keyword operator arithmetic c">&amp;&amp;</span> self</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span> self<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">impl</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span> <span class="punctuation section block end c++">}</span></span> </span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">D1</span></span><span class="meta struct c++"> <span class="punctuation separator c++">:</span> <span class="storage modifier c++">public</span> <span class="entity other inherited-class c++">Base</span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++"> <span class="storage type c">void</span> <span class="meta function-call c++"><span class="variable function c++">impl</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="support function C99 c">puts</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>D1::impl()<span class="punctuation definition string end c">&quot;</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span> <span class="punctuation section block end c++">}</span></span> </span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">D2</span></span><span class="meta struct c++"> <span class="punctuation separator c++">:</span> <span class="storage modifier c++">public</span> <span class="entity other inherited-class c++">Base</span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++"> <span class="storage type c">void</span> <span class="meta function-call c++"><span class="variable function c++">impl</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="support function C99 c">puts</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>D2::impl()<span class="punctuation definition string end c">&quot;</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span> <span class="punctuation section block end c++">}</span></span> </span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> now D1 can have its name() method ahead of time due to compiler deducing the name of it.
+</span><span class="meta template c++"><span class="storage type template c++">template</span><span class="punctuation section generic begin c++">&lt;</span></span><span class="meta template c++"><span class="storage type c++">typename</span> Derived</span><span class="meta template c++"><span class="punctuation section generic end c++">&gt;</span></span>
+<span class="storage type c">void</span> <span class="meta function c++"><span class="entity name function c++">print</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">Derived <span class="storage modifier c++">const</span><span class="keyword operator c">&amp;</span> <span class="variable parameter c++">instance</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    instance<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">name</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+main<span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+  <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> quite magical.
+</span>  D1 d1<span class="punctuation terminator c++">;</span> <span class="meta function-call c++"><span class="variable function c++">print</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">d1</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+  D2 d2<span class="punctuation terminator c++">;</span> <span class="meta function-call c++"><span class="variable function c++">print</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">d2</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="punctuation section block end c++">}</span></span>
+</span></code></pre>
+</li>
+<li>Resolution: CRTP is available from C++11 onward. you can try use that.
+<ul>
+<li><a href="https://stackoverflow.com/questions/66668579/is-it-possible-to-access-child-types-in-c-using-crtp">access child types in c++ using CRTP?</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.sandordargo.com/blog/2024/12/04/crtp-vs-concepts">Replace CRTP with concepts? | Sandor Dargo's Blog</a>
+<ul>
+<li>but we can only do that in C++20 up so not a good solution for my embedded code.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;fastfetch&#x60; could also be piped to other programs.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;fastfetch&#x60; could also be piped to other programs.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-13 11:02:53 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/telemetry">
+                        <span>telemetry</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>fastfetch</code> could also be piped to other programs.
+<ul>
+<li>Recap: It's in pure text so you can access data as array of lines.</li>
+<li>Run: super minimal output.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> fastfetch<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span> none<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>OS:Kernel:Shell:WM:Terminal:CPU:Memory:Swap<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">OS:</span></span><span class="meta function-call arguments shell"> Windows 11 Pro Insider Preview (25H2</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">x86_64</span></span>
+<span class="meta function-call shell"><span class="variable function shell">Kernel:</span></span><span class="meta function-call arguments shell"> WIN32_NT 10.0.26300.7674</span>
+<span class="meta function-call shell"><span class="variable function shell">Shell:</span></span><span class="meta function-call arguments shell"> PowerShell 7.6.0</span>
+<span class="meta function-call shell"><span class="variable function shell">WM:</span></span><span class="meta function-call arguments shell"> Desktop Window Manager 10.0.26100.7541</span>
+<span class="meta function-call shell"><span class="variable function shell">Terminal:</span></span><span class="meta function-call arguments shell"> Windows Terminal Preview 1.24.3504.0</span>
+<span class="meta function-call shell"><span class="variable function shell">CPU:</span></span><span class="meta function-call arguments shell"> 12th Gen Intel(R</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">Core</span></span><span class="meta function-call arguments shell">(TM</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">i7-12850HX</span></span><span class="meta function-call arguments shell"> (24</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">@</span></span><span class="meta function-call arguments shell"> 4.80 GHz</span>
+<span class="meta function-call shell"><span class="variable function shell">Memory:</span></span><span class="meta function-call arguments shell"> 16.66 GiB / 31.69 GiB (53<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span>
+<span class="meta function-call shell"><span class="variable function shell">Swap:</span></span><span class="meta function-call arguments shell"> 1.61 GiB / 23.00 GiB (7<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span>   
+</span></code></pre>
+</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>Run: <code>(fastfetch)[19]</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>using ppa of <a href="https://launchpad.net/~zhangsongcui3371/+archive/ubuntu/fastfetch">fastfetch : Carter Li</a>
+<ul>
+<li>#package/manager : <a href="https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them">What are PPAs and how do I use them?</a></li>
+</ul>
+</li>
+<li>this thing can be in <code>lscpu</code> but <a href="https://wikipedia.org/wiki/SSE4">SIMD SSE4.2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

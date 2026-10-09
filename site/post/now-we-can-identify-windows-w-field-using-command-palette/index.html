@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Now we can identify windows (&#x60;-w&#x60; field) using command palette</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Now we can identify windows (&#x60;-w&#x60; field) using command palette</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-25 05:13:57 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Now we can identify windows (<code>-w</code> field) using command palette
+<ul>
+<li>Recap: or I bind it to <code>Ctrl+shift+insert/0_numpad</code>
+<ul>
+<li>Show it in all terminals winthin 5 seconds <code>Ctrl+alt+shift+insert/0_numpad</code>, add an <code>alt</code>.</li>
+<li>windows id is very useful when you want to spawn a terminal pane like...
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wt</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>w</span> 6<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> new-tab<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Developer PowerShell for VS 2022<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+<ul>
+<li>It can also be a text, so try to rename windows as well. Using command palette.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: Expand selection mark mode bind to <code>w</code> to be the same as Vim.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>[2025-05-20 09:31:17] : #browser replace name <code>Alt+shift+space</code> <code>w</code>. A popup <code>Name this window</code> will show up.
+<ul>
+<li>#idea : will help us on specifying <code>--title</code> on <code>smartcontextmenu</code> perhaps.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

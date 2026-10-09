@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;space g c&#x60; open picker which show commits of current file.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;space g c&#x60; open picker which show commits of current file.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-06 10:29:31 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>space g c</code> open picker which show commits of current file.
+<ul>
+<li>Recap:</li>
+<li>Run: <code>space g o</code> open files in remote URL, opened by browsers like <code>gh browse</code></li>
+<li>Resolution:
+<ul>
+<li>#helix #config #keybinding I set <code>space g r</code> to do the same thing as in <code>neovim</code>
+<ul>
+<li>reset git chunks in current lines/cursors. <code>:diffg</code> commands.</li>
+</ul>
+</li>
+<li><code>changed_file_picker</code> has to be remapped to <code>&lt;space&gt;gg</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

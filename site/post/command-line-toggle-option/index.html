@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Command line - &#x60;:toggle-option&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Command line - &#x60;:toggle-option&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-19 12:07:56 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.helix-editor.com/master/command-line.html#exceptions">Command line - <code>:toggle-option</code></a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/helix-editor/helix/pull/4411">feat(commands): allows cycling option values at runtime by alevinval · Pull Request #4411 · helix-editor/helix</a>
+<ul>
+<li>I'm trying to toggle <code>gutters.line-numbers</code>, <a href="https://github.com/helix-editor/helix/issues/2206#issuecomment-2889750224">not doable yet.</a>
+<ul>
+<li>well at least on this current time. It is now on master commit today.</li>
+<li><code>cd misclang repo helix ; cargo build --release ; cp target/</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#keybinding : #web : <del>I dont know what the UI of helix-editor documentation page called.</del>
+<ul>
+<li>it's built from <code>mdbook</code>. <code>s</code> toggle search.
+<ul>
+<li><a href="https://github.com/rust-lang/mdBook/blob/master/src/front-end/searcher/searcher.js#L352">globalKeyHandler of <code>mdbook</code> contains every keybinding</a></li>
+</ul>
+</li>
+<li><a href="https://pagefind.app/">Pagefind | Pagefind — Static low-bandwidth search at scale</a>
+<ul>
+<li>this is also a page search function for SSG.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#neovim : <code>:set nu!</code> hide line numbers.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

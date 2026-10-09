@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;duf&#x60; disk free Utility - a better &#x60;df&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;duf&#x60; disk free Utility - a better &#x60;df&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-30 04:08:18 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/alternative">
+                        <span>alternative</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/disk">
+                        <span>disk</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/successor">
+                        <span>successor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/muesli/duf"><code>duf</code> disk free Utility - a better <code>df</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">duf</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>all</span></span>
+</span></code></pre>
+<ul>
+<li>Also you can always try the #og through <code>busybox df</code> or <code>toybox df</code>.</li>
+<li>Natively in #powershell</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">gdr # as Get-PSDrive
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Groups &amp; filters devices.</li>
+<li>Can conveniently output #json</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: in scoop.</li>
+<li>Con: not very recent updated. See <a href="https://github.com/muesli/duf/issues/289">maintaining <code>duf</code>? · Issue #289</a>
+<ul>
+<li>Quite feature completed to say the least.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: I try to search for a command I can alias to <code>df</code>. This is it.</li>
+<li>Related:</li>
+<li>Revisit: [2025-07-27 16:58:25]:
+<ul>
+<li>because of <code>duf</code> and <code>dust</code> to check chokepoint, I bring down a sub 200GB avail to 400GB.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">╭────────────────────────────────────────────────────────────────────────────╮</span></span>
+<span class="meta function-call shell"><span class="variable function shell">│</span></span><span class="meta function-call arguments shell"> 2 local devices                                                            │</span>
+<span class="meta function-call shell"><span class="variable function shell">├────────────┬────────┬────────┬────────┬────────┬──────┬────────────────────┤</span></span>
+<span class="meta function-call shell"><span class="variable function shell">│</span></span><span class="meta function-call arguments shell"> MOUNTED ON │   SIZE │   USED │  AVAIL │  USE<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span>  │ TYPE │ FILESYSTEM         │</span>
+<span class="meta function-call shell"><span class="variable function shell">├────────────┼────────┼────────┼────────┼────────┼──────┼────────────────────┤</span></span>
+<span class="meta function-call shell"><span class="variable function shell">│</span></span><span class="meta function-call arguments shell"> C:<span class="constant character escape shell">\ </span>       │ 952.9G │ 538.9G │ 414.0G │  56.6<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span> │ NTFS │ <span class="constant character escape shell">\\</span><span class="keyword operator regexp quantifier shell">?</span><span class="constant character escape shell">\V</span>olume<span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>179236a │
+│            │        │        │        │        │      │ a-391c-48e4-8626-0 │
+│            │        │        │        │        │      │ 7aa0477300a<span class="punctuation section expansion brace end shell">}</span></span><span class="constant character escape shell">\ </span>     │</span>
+<span class="meta function-call shell"><span class="variable function shell">│</span></span><span class="meta function-call arguments shell"> D:<span class="constant character escape shell">\ </span>       │   1.6T │ 524.4G │   1.1T │  32.6<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span> │ NTFS │ New Volume         │</span>
+<span class="meta function-call shell"><span class="variable function shell">╰────────────┴────────┴────────┴────────┴────────┴──────┴────────────────────╯</span></span>
+
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: after open a folder with cmakelist.txt, we have to switch to cmake target view.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">after open a folder with cmakelist.txt, we have to switch to cmake target view.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-20 11:41:38 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cmake">
+                        <span>build/cmake</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide">
+                        <span>ide</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vs">
+                        <span>vs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>after open a folder with cmakelist.txt, we have to switch to cmake target view.
+<ul>
+<li>brief: debug config in cmake-only project, in visual studio.</li>
+<li>origin: trying to add <code>args</code> when debug in vs..</li>
+<li>resolution: right click on target -&gt; add debug configuration.
+<ul>
+<li>create <code>launch.vs.json</code> and add more info such as <code>args</code>,<code>currentdir</code> or <code>env</code> variables.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-json"><span class="source json"><span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>env<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
+    <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>path<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>%path%;d:<span class="constant character escape json">\\</span>programdatad<span class="constant character escape json">\\</span>vs<span class="constant character escape json">\\</span>repos<span class="constant character escape json">\\</span>vulkan-samples<span class="constant character escape json">\\</span><span class="punctuation definition string end json">&quot;</span></span>
+  </span><span class="punctuation section dictionary end json">}</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>currentdir<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>d:<span class="constant character escape json">\\</span>programdatad<span class="constant character escape json">\\</span>vs<span class="constant character escape json">\\</span>repos<span class="constant character escape json">\\</span>vulkan-samples<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>args<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="meta structure array json"><span class="punctuation section array begin json">[</span>
+    <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>sample hpp_dynamic_uniform_buffers<span class="punctuation definition string end json">&quot;</span></span>
+  <span class="punctuation section array end json">]</span></span>
+</span><span class="punctuation section dictionary end json">}</span></span>
+</span></code></pre>
+</li>
+<li>related: <a href="https://learn.microsoft.com/en-us/cpp/build/launch-vs-schema-reference-cpp?view=msvc-170">launch.vs.json schema reference (c++) | microsoft learn</a>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/cpp/build/configure-cmake-debugging-sessions?view=msvc-170">configure cmake debugging sessions in visual studio | microsoft learn</a></li>
+<li>revisit 2025-05: still... have to check out this place first.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

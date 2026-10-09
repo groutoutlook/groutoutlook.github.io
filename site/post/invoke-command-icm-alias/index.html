@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Invoke-Command&#x60; | &#x60;icm&#x60; alias</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Invoke-Command&#x60; | &#x60;icm&#x60; alias</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-18 07:46:50 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cmdlet">
+                        <span>cmdlet</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/functional">
+                        <span>functional</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command"><code>Invoke-Command</code> | <code>icm</code> alias</a>
+<ul>
+<li>Recap: safer alternative to <code>iex</code> where you got correctly parsed objects for the typesafety.</li>
+<li>Resolution: It's used an awful lot in <code>PSSession</code> with <code>PSRemote</code>.
+<ul>
+<li><a href="https://adamtheautomator.com/ps-remoting-session/">How to Leverage Reusable PS Remoting Sessions in your Scripts</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: other than support from editor, it's minor convenient compare to  <code>invoke()</code>.</li>
+<li>Con: verbose.
+<ul>
+<li>I use <a href="https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.scriptblock.invokereturnasis?view=powershellsdk-7.4.0"><code>ScriptBlock.InvokeReturnAsIs(Object[])</code></a>
+<ul>
+<li>or  <code>.Invoke()</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://stackoverflow.com/questions/60979858/powershell-invoke-command-with-filepath-on-local-computer-vague-parameters-err">PowerShell Invoke-Command with FilePath on local computer - vague parameters error?</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

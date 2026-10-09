@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;std::span&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;std::span&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-28 07:38:32 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container">
+                        <span>container</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/functional">
+                        <span>functional</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/container/span"><code>std::span</code></a> and <a href="https://cppreference.com/w/cpp/string/basic_string_view">std::string_view</a>
+<ul>
+<li>Recap:  a struct hold pointer and the length.
+<ul>
+<li>which is based on functional programming concepts, utilize <code>&lt;ranges&gt;</code>, <code>&lt;span&gt;</code> and something else.</li>
+</ul>
+</li>
+<li>Run:
+<ul>
+<li><a href="https://cppreference.com/cpp/container/span/at">std::span&lt;T,Extent&gt;::at - bound-checked <code>[]</code> operator.</a></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage type c">int</span> x<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="punctuation section brackets end c++">]</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="constant numeric c++">1</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">2</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">4</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">5</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">5</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">6</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+std<span class="punctuation accessor c++">::</span>span <span class="meta function c++"><span class="entity name function c++">data</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="variable parameter c++">x</span><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> Set element 1
+</span>data<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">at</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="constant numeric c++">1</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">88</span><span class="punctuation terminator c++">;</span>
+
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> Read element 2
+</span>std<span class="punctuation accessor c++">::</span>cout <span class="keyword operator arithmetic c">&lt;&lt;</span> <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>Element at index 2 has value <span class="punctuation definition string end c">&quot;</span></span> <span class="keyword operator arithmetic c">&lt;&lt;</span> data<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">at</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="constant numeric c++">2</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator arithmetic c">&lt;&lt;</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span><span class="constant character escape c">\n</span><span class="punctuation definition string end c">&#39;</span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/65312727/why-in-particular-should-i-rather-pass-a-stdspan-than-a-stdvector-to-a-func">c++ - Why in particular should I rather pass a std::span than a std::vector&amp; to a function?</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/45723819/what-is-a-span-and-when-should-i-use-one">c++ - What is a &quot;span&quot; and when should I use one?</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

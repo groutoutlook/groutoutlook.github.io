@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Using a shared &quot;Anycast&quot; IP for DNS Resolvers on self-hosted NetBird</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Using a shared &quot;Anycast&quot; IP for DNS Resolvers on self-hosted NetBird</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-20 08:38:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vpn">
+                        <span>vpn</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/selfhosted/comments/1kn1fyg">Using a shared &quot;Anycast&quot; IP for DNS Resolvers on self-hosted NetBird</a>
+<ul>
+<li>Recap:</li>
+<li>Run: a kind of load-balancing, but for nearest servers around you.</li>
+<li>Resolution: <a href="https://www.reddit.com/r/networking/comments/1evkcle">Anycast authoritative DNS server network design</a>
+<ul>
+<li>#server <a href="https://github.com/netbirdio/netbird"><code>netbird</code> secure WireGuard®-based overlay network with SSO, MFA and granular access controls.</a>
+<ul>
+<li>there are premium #service. Just like Tailscale !</li>
+</ul>
+</li>
+<li>Root: <a href="https://lobste.rs/s/px0gr0/how_i_use_claude_code_on_my_phone_with">Use Claude Code on My Phone with Termux and Tailscale</a>  - Reason:</li>
+</ul>
+</li>
+<li>Root: <a href="https://www.cloudflare.com/learning/cdn/glossary/anycast-network/">What is Anycast? | How does Anycast work? | Cloudflare</a>
+<ul>
+<li>Critical for any kind of CDN tech, GeoDNS things.
+<ul>
+<li>See: <a href="https://serverfault.com/questions/325076/what-is-the-difference-between-anycast-and-geodns-geoip-wrt-ha#325093">the difference between Anycast and GeoDNS / GeoIP wrt HA? - Server Fault</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#definition #terminology : <a href="https://tailscale.com/kb/1103/exit-nodes">Exit nodes (route all traffic) · Tailscale Docs</a>
+<ul>
+<li>Recite: The exit node feature lets you route all traffic through a specific device
+on your Tailscale network (known as a tailnet). The device routing your traffic is
+called an exit node.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <code>zerotier</code> is the direct one, <code>tailscale</code> is still Layer 3 networking so...</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

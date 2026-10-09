@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;esp-hal&#x60; &#x60;no_std&#x60; Hardware Abstraction Layers for ESP32 microcontrollers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;esp-hal&#x60; &#x60;no_std&#x60; Hardware Abstraction Layers for ESP32 microcontrollers</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-22 03:02:48 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/firmware">
+                        <span>firmware</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/esp-rs/esp-hal"><code>esp-hal</code> <code>no_std</code> Hardware Abstraction Layers for ESP32 microcontrollers</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cargo</span></span><span class="meta function-call arguments shell"> install esp-generate<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>locked</span></span>
+<span class="meta function-call shell"><span class="variable function shell">esp-generate</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>chip</span> esp32c6<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> unstable-hal<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> alloc<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> ble-bleps<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> probe-rs<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> defmt<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> embedded-test<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> helix<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> vscode</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: #blog <a href="https://developer.espressif.com/blog/2025/10/esp-hal-1/">esp-hal 1.0.0 release announcement · Developer Portal</a>
+<ul>
+<li>need <code>esp32c6</code>/<code>riscv32imac</code> target. Potentially ESP32H2 also here. ESP32H4 will be here.</li>
+</ul>
+</li>
+<li>Related: <a href="https://docs.rs/target-lexicon/latest/target_lexicon/enum.Riscv32Architecture.html">Riscv32Architecture in target_lexicon - Rust</a>
+<ul>
+<li>#debug <a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/api-guides/jtag-debugging/configure-builtin-jtag.html">Configure ESP32-C6 Built-in JTAG Interface - ESP32-C6 GPIO12/13</a>
+<ul>
+<li>so with my flocks of Wi-Fi CMSIS-DAP, I think I can wirelessly OTA those ESP32 chips.</li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32s3/api-guides/jtag-debugging/configure-builtin-jtag.html">different pinout with esp32-s3, GPIO19/20</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32c3/api-guides/jtag-debugging/configure-builtin-jtag.html">ESP32-C3, GPIO18/19 is D-/D+</a>
+<ul>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-guides/jtag-debugging/configure-other-jtag.html">Configure Other JTAG Interfaces - ESP32-C3 - — ESP-IDF Programming Guide v6.0 documentation</a>
+<ul>
+<li>here we have external JTAG... but remember we have to config corresponding openocd for that shit.
+MTDO / GPIO7 TDO
+MTDI / GPIO5 TDI
+MTCK / GPIO6 TCK
+MTMS / GPIO4 TMS</li>
+</ul>
+</li>
+<li>#blog <a href="https://mcuoneclipse.com/2019/09/22/eclipse-jtag-debugging-the-esp32-with-a-segger-j-link/">Eclipse JTAG Debugging the ESP32 with a SEGGER J-Link | MCU on Eclipse</a></li>
+</ul>
+</li>
+<li><a href="https://esp32.com/viewtopic.php?t=39164"> PAD_to_JTAG vs. USB_to_JTAG: Advantages and Disadvantages? - ESP32-H2</a>
+<ul>
+<li><a href="https://documentation.espressif.com/esp32-h2_technical_reference_manual_en.pdf#subsubsection.1.10.4">esp32-h2_technical_reference_manual_en.pdf</a></li>
+</ul>
+</li>
+<li>Resolution: <a href="https://docs.espressif.com/projects/esp-iot-solution/en/latest/hw-reference/ESP-Prog_guide.html">Introduction to the ESP-Prog Board - - — ESP-IoT-Solution latest documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

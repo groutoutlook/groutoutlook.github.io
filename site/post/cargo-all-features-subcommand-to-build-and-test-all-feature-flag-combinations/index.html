@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;cargo-all-features&#x60; subcommand to build and test all feature flag combinations.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;cargo-all-features&#x60; subcommand to build and test all feature flag combinations.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-25 12:34:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cargo">
+                        <span>build/cargo</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/frewsxcv/cargo-all-features"><code>cargo-all-features</code> subcommand to build and test all feature flag combinations.</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cargo info (split-path $pwd -leaf) --verbose --frozen # no internet access, show/list features.
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://doc.rust-lang.org/nightly/cargo/commands/cargo-info.html"><code>cargo info</code> - The Cargo Book</a>
+<ul>
+<li><a href="https://github.com/rust-lang/cargo/issues/14810"><code>cargo info</code> reads local crate instead of crates.io while in the crate directory</a>
+#default: check registries in crates.io. have to add <code>--frozen</code> or <code>--offline</code> to it.</li>
+<li><a href="https://github.com/rust-lang/cargo/pull/14141">feat: Add <code>info</code> cargo subcommand</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/59761045/how-to-tell-what-features-are-available-per-crate/77644594#77644594">rust - How to tell what &quot;features&quot; are available per crate?</a></li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/panamax-rs/panamax"><code>panamax</code> Mirror rustup and crates.io repositories, for offline Rust and cargo usage.</a>
+<ul>
+<li><a href="https://lobste.rs/s/jxrtjp/rust_foundation_signs_joint_statement_on">Rust Foundation Signs Joint Statement on Open Source Infrastructure Stewardship</a></li>
+</ul>
+</li>
+<li><a href="https://insta.rs/docs/cli/">Cargo Insta | Insta Snapshots</a>
+<ul>
+<li>Recap: for #test/integration I suppose.</li>
+<li>Root: <code>scooter</code> use insta to store TUI rendered content, you can check those <code>.snap files</code>
+<ul>
+<li>Related: <a href="https://insta.rs/docs/snapshot-types/">Snapshot Types | Insta Snapshots</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

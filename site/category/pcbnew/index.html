@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TILs: pcbnew</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <h1>TILs for pcbnew</h1>
+
+        <hr>
+
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/drawing-zones">Drawing zones </a></h3>
+                <span class="til-date">2026-08-13 10:55:17 AM</span>
+                <a class="til-tag" href="/category/pattern">
+                    <span>pattern</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/routing/zone">
+                    <span>routing/zone</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/length-tuning-editing-tuning-patterns">Length tuning - Editing tuning patterns </a></h3>
+                <span class="til-date">2026-08-13 10:37:27 AM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/routing">
+                    <span>routing</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/layer-pairs-and-set-layer-pairs-in-pcb-editor">Layer Pairs and &#x60;Set Layer Pairs&#x60; in PCB Editor</a></h3>
+                <span class="til-date">2026-07-26 05:41:32 PM</span>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-locking-footprint">PCB Editor - locking footprint</a></h3>
+                <span class="til-date">2026-07-20 03:33:10 PM</span>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-drc-configuration">PCB Editor | DRC configuration</a></h3>
+                <span class="til-date">2026-07-12 01:44:39 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/drc">
+                    <span>drc</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicad-cli-pcb-board-statistic">&#x60;kicad-cli&#x60; PCB board statistic</a></h3>
+                <span class="til-date">2026-06-27 05:00:19 PM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/statistic">
+                    <span>statistic</span>
+                </a>
+                <a class="til-tag" href="/category/telemetry">
+                    <span>telemetry</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-navigating-the-editing-canvas-zoom-to-rectangle-selection-area">PCB Editor | Navigating the editing canvas | Zoom to (Rectangle) selection area</a></h3>
+                <span class="til-date">2026-06-25 03:10:57 PM</span>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-via-protection">PCB Editor | Via protection</a></h3>
+                <span class="til-date">2026-05-26 10:16:52 AM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-text-variables">PCB Editor | Text variables</a></h3>
+                <span class="til-date">2026-05-22 11:19:11 AM</span>
+                <a class="til-tag" href="/category/expression">
+                    <span>expression</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/variable">
+                    <span>variable</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-pin-swaps">PCB Editor Pin swaps </a></h3>
+                <span class="til-date">2026-05-18 11:12:38 AM</span>
+                <a class="til-tag" href="/category/layout/pin">
+                    <span>layout/pin</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/instead-of-change-origin-move-things-around-you-can-literally-resize-the-worksheet-size-to-something-else">instead of change origin, move things around... You can literally resize the worksheet size to something else.</a></h3>
+                <span class="til-date">2026-05-15 06:42:45 PM</span>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/plugin-for-kicad-footprint-wizard-that-generates-ngff-nvme-m-2-footprints">plugin for KiCad Footprint Wizard that generates NGFF/NVME(M.2) footprints</a></h3>
+                <span class="til-date">2026-05-13 09:02:51 AM</span>
+                <a class="til-tag" href="/category/connector">
+                    <span>connector</span>
+                </a>
+                <a class="til-tag" href="/category/layout">
+                    <span>layout</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/plugin">
+                    <span>plugin</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/search-panel">Search Panel</a></h3>
+                <span class="til-date">2026-05-06 12:02:42 PM</span>
+                <a class="til-tag" href="/category/filter">
+                    <span>filter</span>
+                </a>
+                <a class="til-tag" href="/category/operator">
+                    <span>operator</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/search">
+                    <span>search</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/when-you-move-precise-based-on-reference-relative-to-something-shift-p">when you move precise based on reference/relative to something &#x60;shift+p&#x60;..</a></h3>
+                <span class="til-date">2026-05-06 11:46:42 AM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/measurement">
+                    <span>measurement</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/placement">
+                    <span>placement</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/track-corner-mode-curved-fillet-track">Track corner mode - Curved/Fillet track</a></h3>
+                <span class="til-date">2026-05-06 11:34:22 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/routing">
+                    <span>routing</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/select-whole-track-between-pads-vias-nets-in-single-click-layout">Select whole track between pads/vias/nets in single click - Layout</a></h3>
+                <span class="til-date">2026-05-06 10:47:47 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/assign-net-classes-to-power-connections-other-net-in-kicad">assign Net Classes to Power Connections/other net in KiCad</a></h3>
+                <span class="til-date">2026-05-05 01:38:35 PM</span>
+                <a class="til-tag" href="/category/configuration">
+                    <span>configuration</span>
+                </a>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/edit-pad-with-custom-shape-straight-away-by-ctrl-e-on-footprint-ctrl-e-on-pad-inside-footprint-editor">edit pad with custom shape straight away by &#x60;ctrl+e&#x60; on footprint -&gt; &#x60;ctrl+e&#x60; on pad inside Footprint Editor</a></h3>
+                <span class="til-date">2026-05-02 06:43:46 AM</span>
+                <a class="til-tag" href="/category/pad">
+                    <span>pad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/route-differential-pairs-of-traces-for-usb-and-the-likes">Route differential pairs of traces for USB and the likes..</a></h3>
+                <span class="til-date">2026-04-29 09:36:08 AM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/paste-this-to-make-new-files-less-corruptible">Paste this to make new files less corruptible.</a></h3>
+                <span class="til-date">2026-04-25 12:04:06 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/version">
+                    <span>version</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-set-pcb-thickness-before-exporting-from-kicad-layout">How to set PCB thickness before exporting from kiCad? - Layout</a></h3>
+                <span class="til-date">2026-04-16 11:05:07 AM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/viewer/3d">
+                    <span>viewer/3d</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/get-and-move-footprint-t-prompt-you-to-choose-a-footprint-from-a-list-or-by-typing-reference-designator">&#x60;Get and Move Footprint&#x60; &#x3D; &#x60;t&#x60; prompt you to choose a footprint from a list or by typing reference designator</a></h3>
+                <span class="til-date">2026-04-13 03:05:15 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-net-ties">PCB Editor Net ties</a></h3>
+                <span class="til-date">2026-04-13 01:58:44 PM</span>
+                <a class="til-tag" href="/category/netlist">
+                    <span>netlist</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/routing">
+                    <span>routing</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-keep-forgetting-that-drawing-rectangle-is-not-default-to-be-ctrl-shift-r">I keep forgetting that &quot;Drawing Rectangle&quot; is not default to be &#x60;ctrl+shift+r&#x60;</a></h3>
+                <span class="til-date">2026-04-12 10:37:39 AM</span>
+                <a class="til-tag" href="/category/drawing">
+                    <span>drawing</span>
+                </a>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/the-appearance-panel">The appearance panel</a></h3>
+                <span class="til-date">2026-04-11 02:05:05 PM</span>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/visualization">
+                    <span>visualization</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/zone-manager">Zone Manager</a></h3>
+                <span class="til-date">2026-04-11 01:22:00 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/zone">
+                    <span>zone</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/on-edit-edit-text-and-graphic-properties-you-have-to-select-both-sections-of-scope-and-filtered-items">On &#x60;Edit&#x60; -&gt; &#x60;Edit Text and Graphic Properties&#x60;, you have to select both sections of &#x60;Scope&#x60; and &#x60;Filtered Items&#x60;</a></h3>
+                <span class="til-date">2026-04-08 12:32:30 PM</span>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcb/option">
+                    <span>pcb/option</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/you-can-change-grid-origin-s-value-of-placement-so-the-component-and-drilling-placing-is-offset-ed">you can change grid origin&#x27;s value of placement so the component and drilling placing is offset-ed</a></h3>
+                <span class="til-date">2026-04-08 12:29:54 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/schematic-editor-update-schematic-from-pcb-back-annotation">Schematic Editor | Update Schematic from PCB (back annotation)</a></h3>
+                <span class="til-date">2026-03-15 06:43:47 PM</span>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/gui/option">
+                    <span>gui/option</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/texas-instruments-mspm0g1106tptr-symbol-footprint-3d-step-model-ultra-librarian">Texas Instruments MSPM0G1106TPTR symbol, footprint, 3D STEP Model - Ultra Librarian</a></h3>
+                <span class="til-date">2025-11-11 01:13:35 PM</span>
+                <a class="til-tag" href="/category/eda">
+                    <span>eda</span>
+                </a>
+                <a class="til-tag" href="/category/model/3d">
+                    <span>model/3d</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/grid-and-snapping">Grid and snapping</a></h3>
+                <span class="til-date">2025-10-28 06:00:58 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/placing">
+                    <span>placing</span>
+                </a>
+                <a class="til-tag" href="/category/routing">
+                    <span>routing</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicad-pcbnew-placing-and-moving-footprints">Kicad &#x60;pcbnew&#x60; Placing and moving footprints </a></h3>
+                <span class="til-date">2025-10-28 05:22:46 PM</span>
+                <a class="til-tag" href="/category/navigation/moving">
+                    <span>navigation/moving</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicad-pcbnew-add-barcode-qr-code">KiCAD &#x60;pcbnew&#x60; - add barcode, QR code.</a></h3>
+                <span class="til-date">2025-10-28 01:48:04 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/sku">
+                    <span>sku</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicad-command-line-interface-pcb-gerber-export-one-layer-per-file">KiCad Command-Line Interface | PCB Gerber export: one layer per file</a></h3>
+                <span class="til-date">2025-10-22 11:36:05 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/prod">
+                    <span>prod</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-idf-component-outline-tools">PCB Editor | IDF component outline tools</a></h3>
+                <span class="til-date">2025-10-22 11:08:05 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/format/idf">
+                    <span>format/idf</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/turn-a-footprint-to-a-45-degree-angle">turn a footprint to a 45 degree angle?</a></h3>
+                <span class="til-date">2025-10-19 04:27:22 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/arrays-placing-based-on-custom-pitch-grid-or-circular-distance">Arrays placing based on custom pitch, grid or circular distance.</a></h3>
+                <span class="til-date">2025-10-10 09:32:10 PM</span>
+                <a class="til-tag" href="/category/automation">
+                    <span>automation</span>
+                </a>
+                <a class="til-tag" href="/category/batch">
+                    <span>batch</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/dimensions-graphical-objects-kicad">Dimensions graphical objects | KiCad</a></h3>
+                <span class="til-date">2025-10-10 08:24:58 PM</span>
+                <a class="til-tag" href="/category/measurement">
+                    <span>measurement</span>
+                </a>
+                <a class="til-tag" href="/category/pcb/pad">
+                    <span>pcb/pad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/generate-the-bom-and-centroid-component-placement-list-cpl-file-from-kicad">generate the BOM and Centroid / Component placement list (CPL) file from KiCAD</a></h3>
+                <span class="til-date">2025-09-25 10:56:24 AM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/tool-cleanup-track-and-vias-select-delete-redundant-vias-and-delete-tracks-unconnected-at-one-end">&#x60;Tool&#x60; -&gt; &#x60;Cleanup track and vias&#x60;, Select &#x60;Delete Redundant vias&#x60; and &#x60;Delete tracks unconnected at one end.&#x60;</a></h3>
+                <span class="til-date">2025-09-23 10:51:06 AM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/wiring/track">
+                    <span>wiring/track</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-position-parts-relative-to-each-other-in-kicad">How to position parts relative to each other in Kicad?</a></h3>
+                <span class="til-date">2025-09-22 02:28:43 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/inspecting-a-board-with-drc-kicad">Inspecting a board with DRC | KiCad</a></h3>
+                <span class="til-date">2025-09-21 09:32:30 AM</span>
+                <a class="til-tag" href="/category/drc">
+                    <span>drc</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/only-way-to-accept-changes-in-text-while-in-textbox-is-alt-o">Only way to accept changes in text while in textbox, is &#x60;alt+o&#x60;</a></h3>
+                <span class="til-date">2025-09-14 11:47:11 AM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcbnew-rule-areas-keepouts-zone">&#x60;pcbnew&#x60; Rule areas (keepouts zone)</a></h3>
+                <span class="til-date">2025-09-02 03:12:46 PM</span>
+                <a class="til-tag" href="/category/drc">
+                    <span>drc</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/3d-model-exporter-step-glb-brep-xao-ply-stl-stpz">3D model exporter (STEP / GLB / BREP / XAO / PLY / STL / STPZ)</a></h3>
+                <span class="til-date">2025-09-02 02:29:10 PM</span>
+                <a class="til-tag" href="/category/3d/step">
+                    <span>3d/step</span>
+                </a>
+                <a class="til-tag" href="/category/doc/official">
+                    <span>doc/official</span>
+                </a>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/schematic-editor-net-classes">Schematic Editor - Net Classes</a></h3>
+                <span class="til-date">2025-09-01 10:52:18 AM</span>
+                <a class="til-tag" href="/category/doc/official">
+                    <span>doc/official</span>
+                </a>
+                <a class="til-tag" href="/category/drc">
+                    <span>drc</span>
+                </a>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/wiring/net">
+                    <span>wiring/net</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcbnew-have-a-settings-that-restrict-movement-to-h-v-and-45-degreee-turn-that-off-you-will-move-freely-not-just-xy-axes">PCBNew have a settings that restrict movement to H V and 45 degreee... Turn that off you will move freely, not just XY-axes</a></h3>
+                <span class="til-date">2025-09-01 12:45:48 AM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ctrl-d-will-paste-them-pad-footprint-on-spot-not-as-ctrl-v-which-paste-them-somewhere-far">&#x60;Ctrl+d&#x60; will paste them pad/footprint on spot, not as ctrl+v which paste them somewhere far...</a></h3>
+                <span class="til-date">2025-08-31 06:38:21 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcbnew-auto-routing">PCBNew - Auto-routing</a></h3>
+                <span class="til-date">2025-08-30 10:50:05 AM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-editor-net-higlighting">PCB Editor - Net Higlighting</a></h3>
+                <span class="til-date">2025-08-30 08:55:31 AM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/netlist">
+                    <span>netlist</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/help-with-kicad-not-displaying-anything">Help with Kicad not displaying anything</a></h3>
+                <span class="til-date">2025-08-29 07:31:22 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/multiple-pcbs-from-a-single-schematic">Multiple PCBs from a single schematic</a></h3>
+                <span class="til-date">2025-08-29 07:04:00 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/what-is-the-difference-between-blind-and-through-hole-vias-hdi-pcb">What is the difference between blind and through-hole vias? – HDI PCB</a></h3>
+                <span class="til-date">2025-08-29 02:08:23 PM</span>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/via">
+                    <span>via</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-does-solder-mask-layer-work-faq">How does solder mask layer work? - FAQ</a></h3>
+                <span class="til-date">2025-08-23 03:02:29 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/layer">
+                    <span>layer</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pcb-when-is-it-ok-for-connectors-to-be-smt-instead-of-th">pcb - When is it OK for connectors to be SMT instead of TH?</a></h3>
+                <span class="til-date">2025-08-23 03:02:29 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pad">
+                    <span>pad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/usage-pad-type-connector-layout">Usage Pad Type &quot;Connector&quot; - Layout</a></h3>
+                <span class="til-date">2025-08-23 02:41:07 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/what-is-the-adhesive-layer-used-for-in-kicad-pcbs-detailed-explanation-of-the-red-glue-process-in-smt">What is the Adhesive layer used for in KiCad PCBs? Detailed explanation of the red glue process in SMT</a></h3>
+                <span class="til-date">2025-08-20 02:31:21 PM</span>
+                <a class="til-tag" href="/category/layer">
+                    <span>layer</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/make-pads-visible-in-multiple-layer-by-e-on-pad-and-tick-the-layer-checkboxes">Make pads visible in multiple layer by &#x60;E&#x60; __on pad__ and tick the Layer checkboxes</a></h3>
+                <span class="til-date">2025-08-16 06:31:09 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/board-setup-for-drc-and-other-defaults">Board setup for DRC and other defaults</a></h3>
+                <span class="til-date">2025-08-15 11:30:03 AM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/rule/setup">
+                    <span>rule/setup</span>
+                </a>
+                <a class="til-tag" href="/category/test/drc">
+                    <span>test/drc</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/adding-teardrops-in-bulk">Adding teardrops in bulk </a></h3>
+                <span class="til-date">2025-08-14 11:34:01 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/how-to-create-through-holes-layout">How to create through holes? - Layout</a></h3>
+                <span class="til-date">2025-08-13 07:39:56 PM</span>
+                <a class="til-tag" href="/category/component">
+                    <span>component</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/some-basic-on-pcbnew">Some basic on &#x60;pcbnew&#x60;</a></h3>
+                <span class="til-date">2025-08-13 06:56:35 PM</span>
+                <a class="til-tag" href="/category/default">
+                    <span>default</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kiconnect">&#x60;KiConnect&#x60;</a></h3>
+                <span class="til-date">2025-08-11 11:37:15 PM</span>
+                <a class="til-tag" href="/category/freecad">
+                    <span>freecad</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/scripting-pcb-editor-9-0-kicad">Scripting | PCB Editor | 9.0 | KiCad</a></h3>
+                <span class="til-date">2025-07-26 11:23:51 AM</span>
+                <a class="til-tag" href="/category/doc/official">
+                    <span>doc/official</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/python">
+                    <span>python</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/testpoint-small-need-a-schematic-symbol-to-add-your-custom-via-to-the-netlist">&#x60;TestPoint_Small&#x60; need a schematic symbol to add your custom “via” to the netlist.</a></h3>
+                <span class="til-date">2025-05-22 12:30:11 PM</span>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/vias-and-holes-in-kicad-layout">Vias and holes in kicad - Layout</a></h3>
+                <span class="til-date">2025-05-22 12:28:59 PM</span>
+                <a class="til-tag" href="/category/definition">
+                    <span>definition</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/selection-filter-all-items-toggle-all-selection">&#x60;Selection filter&#x60; -&gt; &#x60;All items&#x60; toggle all selection.</a></h3>
+                <span class="til-date">2025-05-22 12:05:55 PM</span>
+                <a class="til-tag" href="/category/filtering">
+                    <span>filtering</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/selection">
+                    <span>selection</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/working-with-zones-kicad">Working with zones | KiCad</a></h3>
+                <span class="til-date">2025-05-22 11:29:06 AM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/x-route-single-tracks-e-properties-m-move">&#x60;x&#x60; route single tracks, &#x60;e&#x60; properties, &#x60;m&#x60; move.</a></h3>
+                <span class="til-date">2025-05-21 10:36:33 PM</span>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/layer-presets">layer presets</a></h3>
+                <span class="til-date">2025-05-21 03:32:03 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/navigation">
+                    <span>navigation</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/visual">
+                    <span>visual</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ctrl-shift-p-in-pcb-editor-is-map-to-plot-which-generate-gbr-gerber-and-drl-files">&#x60;Ctrl+shift+p&#x60; in PCB Editor is map to &#x60;Plot...&#x60; which generate &#x60;gbr&#x60;(gerber) and &#x60;drl&#x60; files</a></h3>
+                <span class="til-date">2025-05-20 03:50:26 PM</span>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/kicanvas-kicad-web-viewer">&#x60;kicanvas&#x60; KiCAD web viewer</a></h3>
+                <span class="til-date">2024-10-18 10:37:12 PM</span>
+                <a class="til-tag" href="/category/browser">
+                    <span>browser</span>
+                </a>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+                <a class="til-tag" href="/category/viewer">
+                    <span>viewer</span>
+                </a>
+                <a class="til-tag" href="/category/web/ui">
+                    <span>web/ui</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/ctrl-shift-p-as-plot">&#x60;Ctrl+shift+p&#x60; as plot.</a></h3>
+                <span class="til-date">2024-10-14 09:24:49 PM</span>
+                <a class="til-tag" href="/category/config">
+                    <span>config</span>
+                </a>
+                <a class="til-tag" href="/category/eeschema">
+                    <span>eeschema</span>
+                </a>
+                <a class="til-tag" href="/category/keybinding">
+                    <span>keybinding</span>
+                </a>
+                <a class="til-tag" href="/category/kicad">
+                    <span>kicad</span>
+                </a>
+                <a class="til-tag" href="/category/pcbnew">
+                    <span>pcbnew</span>
+                </a>
+            </header>
+        </div>
+    </body>
+</html>

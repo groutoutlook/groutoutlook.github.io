@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: To output from &#x60;pwsh&#x60; my commonly used date time format:</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">To output from &#x60;pwsh&#x60; my commonly used date time format:</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-02-10 05:54:15 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cmdlet">
+                        <span>cmdlet</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/date/time">
+                        <span>date/time</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>To output from <code>pwsh</code> my commonly used date time format:
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">Get-Date -Format &#39;yyyy-MM-dd hh:mm:ss tt&#39;
+date -uf &#39;%F %r&#39; 
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>To reformat existed date and time, only <code>biff</code> can be used.
+<ul>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">biff</span></span><span class="meta function-call arguments shell"> time fmt<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>%c<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>2025-03-09T02:30[America/New_York]<span class="punctuation definition string end shell">&#39;</span></span></span>
+</span></code></pre>
+<ul>
+<li>Related: A bit #trivia from the doc itself:
+<ul>
+<li>Find the last Saturday every other month, starting with the current month, for the next year. And format the datetime in your locale:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> $env:BIFF_LOCALE=&#39;en-US&#39;</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">biff</span></span><span class="meta function-call arguments shell"> time seq monthly today<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i2</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>w</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>1-sat</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>until</span> 1y</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">biff</span></span><span class="meta function-call arguments shell"> time fmt<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>%c<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Print all Friday the 13th occurrences for the next 3 years</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">biff</span></span><span class="meta function-call arguments shell"> time seq monthly today<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>until</span> 5y<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>w</span> fri<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span> 13</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: I want to use it within <code>helix</code>. but within helix you have to do
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">date -uf &#39;%%F %%r&#39; # for even easier typing you can do `date -uf %%F`. that will be just the date. Made up the time later.
+</span></code></pre>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: LM358B Dual, 36-V, 1.2-MHz, 3-mV offset voltage operational amplifier with -40°C to 85°C</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">LM358B Dual, 36-V, 1.2-MHz, 3-mV offset voltage operational amplifier with -40°C to 85°C</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-13 01:14:21 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/common">
+                        <span>common</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/opamp">
+                        <span>opamp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/passive">
+                        <span>passive</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/signal/analog">
+                        <span>signal/analog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/voltage">
+                        <span>voltage</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.ti.com/product/LM358B">LM358B Dual, 36-V, 1.2-MHz, 3-mV offset voltage operational amplifier with -40°C to 85°C</a>
+<ul>
+<li>Recap: common components.</li>
+<li>Run: <a href="https://www.ti.com/lit/ds/symlink/lm321.pdf">LM321 SOT-23-5 Low Power Single Operational Amplifier datasheet (Rev. C) - lm321.pdf</a></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: I want to do non-isolated ZCD. which , a comparator is enough. <a href="https://www.ti.com/product/TLV7011">TLV7011 SOT-23-5 and X2SON(0.8*0.8mm)</a>
+<ul>
+<li><a href="https://www.ti.com/lit/ab/snoa999a/snoa999a.pdf">Non-islolated Zero crossing detection using comparator circuit (Rev. A) - snoa999a.pdf</a></li>
+<li>Root: <a href="https://www.ti.com/lit/ab/sbaa542/sbaa542.pdf">Isolated Zero-Cross Detection Circuit - sbaa542.pdf</a></li>
+</ul>
+</li>
+<li>Related: <a href="https://www.ti.com/product/OPA347">OPA347 Single, 5.5-V, 350-kHz, low quiescent current (20-μA), RRIO operational amplifier</a>
+<ul>
+<li>#alternative : <a href="https://www.renesas.com/en/products/isl28213">ISL28213 - Dual General Purpose Micropower, RRIO Operational Amplifier</a></li>
+<li>#voltage/cc : <a href="https://electronics.stackexchange.com/questions/211249/lm317-%C2%B5a-constant-current-source-possibility">voltage regulator - LM317 µA Constant Current source possibility?</a>
+<ul>
+<li>LM317 is kinda an OG for CC power supply...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://www.sg-micro.com/product/SGM321">SGM321-1MHz, Rail-to-Rail I/O CMOS Operational Amplifiers - SGMICRO</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

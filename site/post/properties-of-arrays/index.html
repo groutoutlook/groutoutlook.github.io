@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Properties of arrays</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Properties of arrays</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-17 10:34:45 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/array">
+                        <span>container/array</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays#properties-of-arrays">Properties of arrays</a>
+<ul>
+<li>Recap: <code>.Rank</code>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_assignment_operators#assigning-multiple-variables">Assigning multiple variables</a></li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$a, $b, $c = 1, 2, 3, 4, 5
+$d, $e, $f = $c
+$a = $b = $c = $d = &quot;three&quot; # assign a value to multiple variables by chaining the variables.
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>that's incredibly easy to write comparing to tuple grouping in C++.
+You have a lot of placeholder as well...</li>
+<li></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: super quick for prototyping.</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-Variable&#x60; | &#x60;gv&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-Variable&#x60; | &#x60;gv&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-26 02:24:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/reflection">
+                        <span>reflection</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-variable"><code>Get-Variable</code> | <code>gv</code></a>
+<ul>
+<li>Recap: Runtime reflection in Powershell. Access variable values through string.</li>
+<li>Run: there are also <code>sv</code> | <code>Set-Variable</code> to work with.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$that = @{}
+gv that
+$that -is [hashtable] #true
+</span></code></pre>
+</li>
+<li>Root: trying to understand why powershell for me to tab/ctrl+space before typing the colon.</li>
+<li>Resolution: Core technique to do some convoluted things.
+<ul>
+<li>Type comparison operator (<code>-is</code>,<code>-isnot</code>) also do reflection thing.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#variable/env Dont ever name your variable <code>$this</code> since its an automatic variable.</li>
+<li>#enumeration : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_enum">about_Enum</a>
+<ul>
+<li>dotnet superior to C++ on this. Strong reflection/debugging capabilities.</li>
+<li>#metadata : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_intrinsic_members">about_Intrinsic_Members</a>
+<ul>
+<li>Extra members in class/objects in powershell.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

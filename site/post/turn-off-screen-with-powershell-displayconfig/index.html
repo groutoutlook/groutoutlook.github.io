@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: turn off screen with PowerShell - DisplayConfig</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">turn off screen with PowerShell - DisplayConfig</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-26 04:42:22 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/monitor">
+                        <span>monitor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/1397941/how-to-turn-off-screen-with-powershell/1836047#1836047">turn off screen with PowerShell - DisplayConfig</a>
+<ul>
+<li>Recap: <a href="https://github.com/MartinGC94/DisplayConfig"><code>DisplayConfig</code> PowerShell module for configuring Windows display settings</a></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-DisplayInfo
+Disable-Display 2 # internal one cant be disable
+Enable-Display 2
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li>Pro: switch from multiple screens to single, or 3 to 2 monitors.</li>
+</ul>
+</li>
+<li>Root: turn off screen remotely.</li>
+<li>Related:
+<ul>
+<li><a href="https://superuser.com/questions/1177976/how-can-i-turn-my-laptop-display-off-completely-while-script-is-running/1177991#1177991">windows - How can I turn my laptop display off completely (while script is running)?</a>
+<ul>
+<li>this has to install <code>nircmd</code> which I really dont want</li>
+<li>#cli/option: <a href="https://nircmd.nirsoft.net/monitor.html">NirCmd Command Reference - monitor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

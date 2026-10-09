@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pass arguments to dependency</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pass arguments to dependency</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-24 10:52:08 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/arguments">
+                        <span>arguments</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/runner">
+                        <span>runner</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just#recipe-parameters">pass arguments to dependency</a>
+<ul>
+<li>Recap: <code>build: (conf &quot;args here&quot;)</code></li>
+<li>Root: trying to call a recipe with arguments to dependency.</li>
+<li>Resolution: after recipe name, the construct word behind it would be
+<ul>
+<li>dependency: after colon e.g : <code>build: conf</code></li>
+<li>arguments : before colon as : <code>build *flags:</code>
+<ul>
+<li>it can have a default value as <code>recipe_name arg=declared_var arg2=&quot;string&quot;</code></li>
+<li>the sequence is dependencies then arguments..</li>
+<li>default values may be arbitrary expressions, but which have <code>+, &amp;&amp;, ||, /</code> operators must be parenthesized.
+<ul>
+<li><a href="https://just.systems/man/en/expressions-and-substitutions.html#concatenation">those are builtin operator</a></li>
+</ul>
+</li>
+<li>last parameter may be variadic, start with <code>+</code> or <code>*</code> before the argument name.
+<ul>
+<li>which is normally <code>recipe +files: do_something {{files}}</code>.
+<ul>
+<li><code>+</code> 1 or more args.</li>
+<li><code>*</code> 0 or more args, default to empty string, variadic parameter for <code>just</code>
+<ul>
+<li>one usage is specify flags/options into <code>just</code>'s recipes invocation.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+<li>Revisit: [Fri Jul  3 10:37:17 2026] #constraint <a href="https://github.com/casey/just/issues/3519">Add <code>min</code> and <code>max</code> constraints to variadic <code>arg</code> attributes · Issue #3519 · casey/just</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[arg(&quot;package&quot;, min=2, max=5)]
+publish *package:
+  echo {{package}}
+# just publish core cli server # or anything like that.
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

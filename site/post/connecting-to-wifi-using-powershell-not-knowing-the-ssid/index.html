@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Connecting to WiFi using Powershell NOT knowing the SSID</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Connecting to WiFi using Powershell NOT knowing the SSID</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-29 11:02:20 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lan/wlan">
+                        <span>lan/wlan</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/networking">
+                        <span>networking</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/75797262/connecting-to-wifi-using-powershell-not-knowing-the-ssid/75798323#75798323">Connecting to WiFi using Powershell NOT knowing the SSID</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">netsh wlan show profiles
+netsh wlan connect ssid=&#39;tinhxiaomi&#39; name=&#39;tinhxiaomi&#39;
+netsh wlan connect ssid=&#39;GL-MT3600BE-ace-MLO&#39; name=&#39;GL-MT3600BE-ace-MLO&#39;
+</span></code></pre>
+</li>
+<li>Resolution: it need location info...?</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/32760356/how-to-connect-to-a-wifi-in-powershell-knowing-the-ssid-and-password#57611752">How to connect to a wifi in powershell knowing the SSID and password?</a></li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/jcwalker/WiFiProfileManagement">WiFiProfileManagement: Module used for management of wireless profiles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

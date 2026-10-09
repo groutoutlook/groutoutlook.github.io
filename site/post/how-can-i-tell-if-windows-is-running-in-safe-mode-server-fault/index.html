@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How can I tell if Windows is running in Safe Mode? - Server Fault</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How can I tell if Windows is running in Safe Mode? - Server Fault</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-18 08:34:52 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/bootloader/uefi">
+                        <span>bootloader/uefi</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://serverfault.com/questions/433765/how-can-i-tell-if-windows-is-running-in-safe-mode">How can I tell if Windows is running in Safe Mode? - Server Fault</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">gwmi win32_computersystem | select BootupState # Windows exclusive powershell.exe
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://superuser.com/questions/1788912/enter-safe-mode-on-windows-11-during-pc-boot-without-restarting-from-booted-win">Enter safe mode on Windows 11 during PC boot, without restarting from booted Windows</a>
+<ul>
+<li>Have to go through <code>Shift</code> + click on Restart button. OR <code>shutdown /o</code> or <code>/fw</code> flags..
+<ul>
+<li>Or force crashing 3 times but eh</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://superuser.com/questions/1825264/windows-10-how-to-access-the-advanced-boot-menu-before-booting-which-fails-in?noredirect=1&amp;lq=1">Windows 10: How to access the advanced boot menu before booting (which fails) in order to discard hibernation state and instead boot normally?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

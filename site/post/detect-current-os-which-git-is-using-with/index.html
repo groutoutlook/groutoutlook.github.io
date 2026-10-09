@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: detect Current os which &#x60;git&#x60; is using with</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">detect Current os which &#x60;git&#x60; is using with</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-27 01:23:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/platform/os">
+                        <span>platform/os</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>detect Current os which <code>git</code> is using with
+<ul>
+<li><code>uname -a</code></li>
+<li><code>env | grep OS</code></li>
+</ul>
+</li>
+<li>Reason: good for working with git hooks. Consider you will run tools/scripts based on environments
+<ul>
+<li>this will be a good reason to detect based on the <code>environment</code>
+<ul>
+<li>For example: <code>.gitconfig</code> and <code>git-hooks</code>
+<ul>
+<li>Related: <a href="https://github.com/aitemr/awesome-git-hooks">aitemr/awesome-git-hooks: 😎 A collection of awesome Git Hooks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

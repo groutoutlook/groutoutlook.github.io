@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: you can force adding something into repo by &#x60;git add -f ./.vs/launch.vs.json&#x60;. also a whitelist method...?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">you can force adding something into repo by &#x60;git add -f ./.vs/launch.vs.json&#x60;. also a whitelist method...?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-07 04:13:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>you can force adding something into repo by <code>git add -f ./.vs/launch.vs.json</code>. also a whitelist method...?
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> add<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> of course.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: [2024-03-19 03:24:40 AM] #git
+<ul>
+<li><a href="https://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder">whitelist gitignore</a>
+<ul>
+<li>Resolution: <a href="https://git-scm.com/docs/gitignore#_pattern_format">Git - gitignore Documentation</a></li>
+<li>[2024-07-17 01:28:09 AM] <a href="https://stackoverflow.com/questions/15288712/gitignore-whitelist-on-directory-and-its-contents">git - .gitignore whitelist on directory and its contents - stack overflow</a>
+<ul>
+<li>Recap: add &quot;!&quot; before files/dirs name to whitelist certain .gitignore. check misclang project.</li>
+<li>Resolution:</li>
+<li>Root: try to whitelist in misclang.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

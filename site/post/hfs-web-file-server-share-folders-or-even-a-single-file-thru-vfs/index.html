@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;hfs&#x60; web file server - share folders or even a single file thru vfs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;hfs&#x60; web file server - share folders or even a single file thru vfs</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-29 07:57:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/backend">
+                        <span>backend</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/html">
+                        <span>html</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nas">
+                        <span>nas</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/rejetto/hfs"><code>hfs</code> web file server - share folders or even a single file thru vfs</a>
+<ul>
+<li>Recap: a replacement for <code>scp</code>/<code>sftp</code> I guess.</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason: <del>in #termux I supposed</del> Nope, it doesnt.</li>
+<li>Root: in scoop.</li>
+<li>Related:
+<ul>
+<li>regard #protocol/ftp : <a href="https://github.com/rejetto/hfs/issues/807">FTP protocol support · Issue #807</a></li>
+<li>#blog: <a href="https://fodor.pro/en/2025/02/14/hfs3-on-truenas.html">HTTP File Server on TrueNAS - Tutorial | Fodor Benedek</a></li>
+</ul>
+</li>
+<li>Revisit: #termux #android: <a href="https://github.com/rejetto/hfs/wiki/HFS-on-Android">HFS on Android · rejetto/hfs Wiki</a></li>
+<li>Rival: <a href="https://github.com/crazyscot/qcp"><code>qcp</code> Quick File Copy using QUIC</a>
+<ul>
+<li><code>miniserve</code> still doing good.</li>
+<li><code>dufs</code> is a new contender to <code>hfs</code> though.</li>
+<li>#python <a href="https://github.com/9001/copyparty"><code>copyparty</code> file server with resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++</a>
+<ul>
+<li>Recap: have web/desktop/android clients.</li>
+<li>Run: on NAS and make android clients use the app to upload files.</li>
+<li>Resolution: much more friendly than <code>syncthing</code>/<code>immich</code> and the like...
+<ul>
+<li>those WebDAV and WebRTC things for media playing only, TBF not really needed.</li>
+</ul>
+</li>
+<li>Root: <a href="https://news.ycombinator.com/item?id=44711519">Copyparty – Turn almost any device into a file server</a></li>
+<li>Related: #android/client <a href="https://github.com/9001/party-up"><code>copyparty</code> client for android</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

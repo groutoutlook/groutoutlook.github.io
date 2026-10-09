@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Launch the Windows Settings app - Windows apps</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Launch the Windows Settings app - Windows apps</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-04 02:39:03 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/explorer">
+                        <span>explorer</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/settings">
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings-app">Launch the Windows Settings app - Windows apps</a>
+<ul>
+<li>Recap: use <code>explorer</code> with settings app. and multiple other URI to config settings.
+<ul>
+<li>Or <code>Start &quot;URI://&quot;</code> to handle them.</li>
+</ul>
+</li>
+<li>Run: <a href="https://gist.github.com/dbilanoski/8e931a0072b61ea215996a18fd215fb3">Complete List Of Windows 11 MS-Settings URI Commands</a>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">explorer ms-settings:network-wifisettings
+explorer ms-settings:network-wifi
+
+# et cetera...
+explorer ms-settings:maps
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-default-app">Launch the default Windows app for a URI - Windows apps</a>
+<ul>
+<li>other default URI scheme which can be launched through <code>explorer</code>.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-snipping-tool#examples">Launch Snipping Tool - Windows apps</a>
+<ul>
+<li><code>explorer ms-screenclip:</code>, use ScreenCapture as default knowing invoke default app in terminal.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://superuser.com/questions/1311073/run-command-to-open-network-connections-list-box">windows - Run command to open network connections list box</a></li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/farion1231/cc-switch/blob/main/docs/user-manual/en/5-faq/5.3-deeplink.md"><code>ccswitch</code> Deep Link Protocol (custom URI scheme.)</a>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

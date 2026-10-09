@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;gallery-dl&#x60; download image galleries and collections from several image hosting sites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;gallery-dl&#x60; download image galleries and collections from several image hosting sites</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-06 11:11:02 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/downloader">
+                        <span>downloader</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://codeberg.org/mikf/gallery-dl"><code>gallery-dl</code> download image galleries and collections from several image hosting sites</a>
+<ul>
+<li>Recap: <a href="https://codeberg.org/mikf/gallery-dl/src/branch/master/docs/supportedsites.md">Supported Sites for <code>gdl</code></a>
+<ul>
+<li>that will also list which one that need cookies, which is not.</li>
+</ul>
+</li>
+<li>Run: #nightly and shim to <code>gdl</code>.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain"># it can even resume what is interrupt.
+gdl --cookies &quot;$(zqi sup cook)/x.com_cookies.txt&quot; https://x.com/JohnMax83534007/media   
+gdl (Select-RepoLink (gcb)) #only within my profiles...
+gdl --cookies &quot;$(zqi sup cook)/hiperdex.com_cookies.txt&quot; (Select-RepoLink (gcb)) --chapter-range &#39;73-999&#39; -o headers.x-svc-gate=f5pabmx7sdek
+</span></code></pre>
+<ul>
+<li>Revisit: [Thu Oct  8 17:25:10 SEAST 2026] Cloudflare challenge:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gdl (Select-RepoLink (gcb)) --user-agent browser --cookies-from-browser firefox --cookies &quot;$(zqi sup cook)/hiperdex.com_cookies.txt&quot;
+</span></code></pre>
+<ul>
+<li>Root: <a href="https://codeberg.org/mikf/gallery-dl/issues/486">same with hiperdex but 403 Forbidden Cloudflare Challenge - mikf/gallery-dl - Codeberg.org</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>#config <a href="https://gdl-org.github.io/docs/configuration.html">Configuration</a></li>
+<li><a href="https://github.com/mikf/gallery-dl#oauth"><code>gdl</code> reddit have to do OAuth, yt-dlp by pass this..</a>
+<ul>
+<li>Run: <code>gdl oauth:reddit</code></li>
+<li>well but that keep dir structure so I will keep using <code>gdl</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://news.ycombinator.com/item?id=47656659">Media scraper Gallery-dl is moving to Codeberg after receiving a DMCA notice</a></li>
+<li>Related: <code>yt-dlp</code> is the same thing as this. it's also almost working the same.
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">Supported Sites for <code>yt-dlp</code></a></li>
+<li><a href="https://codeberg.org/mikf/gallery-dl/issues/241">#241 - Cant resolve URI. - mikf/gallery-dl - Codeberg.org</a></li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/RicterZ/doujinshi-dl"><code>doujinshi-dl</code> Doujinshi downloader framework · GitHub</a>
+<ul>
+<li><a href="https://github.com/RicterZ/doujinshi-dl-nhentai"><code>doujinshi-dl-nhentai</code> nhentai plugin for doujinshi-dl</a>
+<ul>
+<li>Run: <code>pip install -e . -e ../doujinshi-dl-nhentai</code></li>
+</ul>
+</li>
+<li><a href="https://github.com/dazedcat19/FMD2"><code>FMD2</code></a>
+<ul>
+<li>have to install lazarus ide... since this is in Pascal</li>
+</ul>
+</li>
+<li>#slop <a href="https://github.com/zzyil/AIO-Webtoon-Downloader"><code>AIO-Webtoon-Downloader</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

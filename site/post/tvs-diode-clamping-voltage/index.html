@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: TVS diode Clamping voltage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">TVS diode Clamping voltage</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-15 02:43:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/diode">
+                        <span>diode</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/power">
+                        <span>power</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/safety/esd">
+                        <span>safety/esd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/401169/tvs-diode-clamping-voltage">TVS diode Clamping voltage</a>
+<ul>
+<li>Recap: Surge / Transient protection.
+<ul>
+<li>Recite: They are basically high-power Zener diodes, and are a specialized form of an avalanche diode.</li>
+</ul>
+</li>
+<li>Run: <a href="https://www.ti.com/lit/sg/sszb130e/sszb130e.pdf">System-Level ESD Protection Guide (Rev. E) - sszb130e.pdf</a></li>
+<li>Resolution:
+<ul>
+<li><a href="https://toshiba.semicon-storage.com/tw/semiconductor/knowledge/faq/diode_tvs-diodes/where-are-tvs-diodes-esd-protection-diodes-used.html">Where are TVS diodes (ESD protection diodes) used? | 臺灣東芝電子零組件股份有限公司 | 台灣</a></li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/-94C6RokXyCBubbJW-6xHw">Guide to ESD Protection for Low-Voltage Comparators/OPAMP</a>
+<ul>
+<li>and quite a lot of domestic components in there.</li>
+<li>#usb <a href="https://mp.weixin.qq.com/s/6X6Qj12ywiorOPQU3M0dBQ">USB4 interface ESD protection solution: Measured impact of ESD junction capacitors on 40Gbps signal integrity</a></li>
+</ul>
+</li>
+<li>#guide : <a href="https://www.ti.com/lit/an/slvae37/slvae37.pdf">How to select a Surge Diode - slvae37.pdf</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/467157/tvs-diodes-in-series">TVS diodes in series</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><a href="https://www.reddit.com/r/PrintedCircuitBoard/comments/1s6odmj">Designing for the real world/When is ESD protection necessary?</a></li>
+</ul>
+</li>
+<li>Root: #taobao <a href="https://item.taobao.com/item.htm?id=652999552289">原装正品 UMW PSM712-LF-T7 SOT-23 TVS瞬态抑制二极管芯片</a>
+<ul>
+<li>this one has 12V and 7V protection.</li>
+<li><a href="https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_smcj_datasheet.pdf?assetguid=37388813-0d6d-4329-969b-1aa8b7614ac1">littelfuse-tvs-smcj-datasheet.pdf</a></li>
+<li><a href="https://item.taobao.com/item.htm?id=666968968133">SMDJ5.0A 贴片TVS瞬态抑制二极管 丝印RDE SMC 3000W功率 5V 单向</a></li>
+<li><a href="https://item.taobao.com/item.htm?id=755463785342">5.0SMDJ5.0A 5RDE SMC DO-214AB 贴片TVS二极管</a>
+<ul>
+<li>those are the TVS diode in FK-A10 the one with RDE silkscreen and SMC footrint.</li>
+<li>#meta #blog <a href="https://mp.weixin.qq.com/s/fqQus9tzcOYTCHU2p1SkiQ">TVS Transient Suppression Diodes from Scratch: Principles, Parameters and Selection</a>
+<ul>
+<li>more about its common dimension, SOD-923 -&gt; 123, SMA-SMC</li>
+<li>Bi|Uni-direction TVS for <em>CAN bus, RS-485, audio signal, AC line</em> | <em>DC power input, GPIO protection</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=661933916145">贴 片SMF5.0CA/6.0/6.5/6.8/8.0/10/12/15/16/18/20/22/36双向TVS</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/299291/signal-tvs-vs-power-tvs">protection - Signal TVS vs Power TVS?</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/461116/how-to-protect-input-against-both-esd-and-reverse-polarity">How to protect input against both ESD and reverse polarity?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

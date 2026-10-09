@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;tap-dance&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;tap-dance&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-01 12:02:29 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kanata">
+                        <span>kanata</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#tap-dance"><code>tap-dance</code></a>
+<ul>
+<li>Recap: the technique which count tap numbers to act accordingly.</li>
+<li>Run: lalt <code>multi</code> select clipboard from ecopaste faster. Make number close as well.
+<ul>
+<li><code>lalt (tap-dance 250 (lalt (multi lctl lalt (layer-while-held numbers))))</code></li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><code>tap-dance-eager</code> will executed actions as soon as it matched the tap.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Recite:
+<pre class="syntax-highlighting"><code class="language-lisp"><span class="source lisp"><span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>defalias
+  td2 <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>tap<span class="keyword operator arithmetic lisp">-</span>dance<span class="keyword operator arithmetic lisp">-</span>eager <span class="constant numeric lisp">500</span> <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>
+    <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>macro a<span class="punctuation definition group end lisp">)</span></span> <span class="comment line semicolon lisp"><span class="punctuation definition comment lisp">;</span>; use macro to prevent auto-repeat of the key
+</span>    <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>macro bspc b b<span class="punctuation definition group end lisp">)</span></span>
+    <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>macro bspc bspc c c c<span class="punctuation definition group end lisp">)</span></span>
+  <span class="punctuation definition group end lisp">)</span></span><span class="punctuation definition group end lisp">)</span></span>
+<span class="punctuation definition group end lisp">)</span></span>
+</span></code></pre>
+</li>
+<li>Root: <a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#tap-hold"><code>tap-hold</code></a>
+<ul>
+<li><code>tap-hold-press</code> can retain repeat key if you quick double tap for example.
+<ul>
+<li>I dont see that documented somewhere.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

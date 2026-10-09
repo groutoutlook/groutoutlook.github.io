@@ -1,6 +1,5 @@
 [CmdletBinding()]
 param(
-    [switch] $NoSync,
     [string] $TillerRoot = 'D:\ProgramDataD\MiscLang\07.02-Rust\nightly\tiller',
     [string] $TillerExecutable
 )
@@ -8,12 +7,11 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$syncScript = Join-Path $PSScriptRoot 'Sync-TilSources.ps1'
 $siteDirectory = Join-Path $repoRoot 'site'
 
-if (-not $NoSync) {
-    & $syncScript
-    if (-not $?) { exit 1 }
+$tilsDirectory = Join-Path $repoRoot 'tils'
+if (-not (Test-Path -LiteralPath $tilsDirectory -PathType Container)) {
+    throw "TIL source directory not found: $tilsDirectory"
 }
 
 if ([string]::IsNullOrWhiteSpace($TillerExecutable)) {

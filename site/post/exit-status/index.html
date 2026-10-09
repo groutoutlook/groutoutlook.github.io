@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;$?&#x60; exit status.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;$?&#x60; exit status.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-14 09:45:34 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_automatic_variables#section-1"><code>$?</code> exit status.</a>
+<ul>
+<li>Recap: in pwsh, <code>$?</code> is only <code>$true</code> while <code>$LASTEXITCODE -eq 0</code> and <code>$false</code> otherwise.</li>
+<li>Root: <a href="https://tecadmin.net/bash-special-variables/">Bash Special Variables ( <code>$0</code>, <code>$?</code>, <code>$#</code>, <code>$@</code>, <code>$$</code>, <code>$*</code>, <code>$-</code>)</a>
+<ul>
+<li><code>$?</code> in #bash is more like <code>$LASTEXITCODE</code> in <code>pwsh</code>.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_automatic_variables#null"><code>$null</code> as placeholder in array or hashtable.</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>#powershell : #scripting : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_keywords#exit"><code>exit $code</code></a>
+<ul>
+<li>builtin <code>powershell</code>'s <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_automatic_variables#lastexitcode">exit status code.</a></li>
+<li>#nushell : same as pwsh, <code>nu</code> also has <a href="https://www.nushell.sh/commands/docs/exit.html"><code>exit</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#nushell : <a href="https://www.nushell.sh/book/stdout_stderr_exit_codes.html#exit-code">Stdout, Stderr, and Exit Codes</a>
+<ul>
+<li>using <a href="https://www.nushell.sh/commands/docs/complete.html">complete</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

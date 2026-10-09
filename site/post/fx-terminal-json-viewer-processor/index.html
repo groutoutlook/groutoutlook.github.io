@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;fx&#x60; terminal json viewer &amp; processor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;fx&#x60; terminal json viewer &amp; processor</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-23 12:44:24 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/yaml">
+                        <span>format/yaml</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tui">
+                        <span>tui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/antonmedv/fx"><code>fx</code> terminal json viewer &amp; processor</a>
+<ul>
+<li>Recap: name is really hard to remember though. it's readonly. And can read YAML/JSON.</li>
+<li>Run: <a href="https://fx.wtf/getting-started#streaming-mode">Getting Started | fx</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> processing of a JSON stream as a single array...</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>{&quot;str&quot;: &quot;Hello&quot;}{&quot;str&quot;: &quot;World!&quot;}<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>slurp</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.map(x =&gt; x.str)<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.join(&quot;, &quot;)<span class="punctuation definition string end shell">&#39;</span></span></span>
+</span></code></pre>
+<ul>
+<li>#faq <a href="https://fx.wtf/how-to/join-two-arrays-by-their-properties"><code>fx</code> join two arrays by properties</a></li>
+<li><code>fx</code> can process TOML easily... #til that put a query on it will dump content to stdout instead of open #TUI app.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="constant character escape shell">\m</span>ouse-around.toml .events <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> dump all events to terminal. No TUI.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or you can just put `.`, it will practically convert toml to json. No adhoc scripts.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://fx.wtf/how-to/viewing-yaml-in-the-terminal-on-linux-with-fx#open-a-yaml-file">Viewing YAML in the Terminal on Linux with fx | fx</a></li>
+<li><a href="https://fx.wtf/advanced-usage">Advanced Usage | fx</a></li>
+<li><code>v</code> to open in <code>$editor</code> this will open in current focused line.
+<ul>
+<li>I have a small patch that ignore executable and enable <code>hx</code> to edit files.</li>
+</ul>
+</li>
+<li><a href="https://github.com/antonmedv/fx/pull/358">feat: yank key and value - <code>y b</code> as keybinding</a>
+<ul>
+<li>there are <code>y p</code>, <code>y k</code>, <code>y v</code> as well. <code>y b</code> is like, yank both.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: in scoop. but It's #nightly now.</li>
+<li>Root: <a href="https://lobste.rs/s/bxgmid"><code>fx</code> json terminal viewer</a></li>
+<li>Related: #cli #python #library
+<ul>
+<li><a href="https://github.com/kellyjonbrazil/jc"><code>jc</code> output cli, file-types, and common strings to json, yaml, or dictionaries</a>
+<ul>
+<li>Recap: <code>jc</code> output famous cli tools to json, both in #windows and #linux.</li>
+<li>Root: <code>fx</code> is actually quite hard to use. in scoop.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://gitlab.com/makapuf/treewalker"><code>treewalker</code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

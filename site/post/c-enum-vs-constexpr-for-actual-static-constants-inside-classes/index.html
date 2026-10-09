@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - enum vs constexpr for actual static constants inside classes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - enum vs constexpr for actual static constants inside classes</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-13 04:54:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/template">
+                        <span>template</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/22867654/enum-vs-constexpr-for-actual-static-constants-inside-classes">c++ - enum vs constexpr for actual static constants inside classes</a>
+<ul>
+<li>Recap: have to use <code>static constexpr</code> inside class.</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/72039558/why-constexpr-stdstring-view-yields-format-not-a-string-literal-warning">c++ - Why constexpr std::string_view yields &quot;format not a string literal&quot; warning?</a></li>
+<li><a href="https://cppreference.com/w/cpp/string/basic_string_view">std::basic_string_view</a>
+<ul>
+<li>use <code>std::string_view.data()</code> to assign value as declared in static constexpr.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

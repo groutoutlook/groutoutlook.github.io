@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Cross-platform native clipboard commands</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Cross-platform native clipboard commands</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-06 06:49:18 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/clipboard">
+                        <span>clipboard</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nushell">
+                        <span>nushell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.nushell.sh/blog/2026-02-28-nushell_v0_111_0.html#cross-platform-native-clipboard-commands">Cross-platform native clipboard commands</a>
+<ul>
+<li>Recap: so nushell have something to compete with <code>gcb</code>/<code>scb</code> in <code>pwsh</code> now.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-nu"><span class="text plain">&quot;data&quot; | clip copy
+&quot;data&quot; | clip copy --show | save out.txt
+clip paste
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#software #windows <code>smartcontextmenu --clearclipboard</code> so I dont accidentally paste anything.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

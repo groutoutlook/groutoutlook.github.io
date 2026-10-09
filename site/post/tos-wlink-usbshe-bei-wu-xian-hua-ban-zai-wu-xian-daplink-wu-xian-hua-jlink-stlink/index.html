@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: TOS-WLink USB设备无线化,板载无线DAPLink，无线化JLink/STLink</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">TOS-WLink USB设备无线化,板载无线DAPLink，无线化JLink/STLink</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-16 04:08:28 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ble">
+                        <span>ble</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/board">
+                        <span>board</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/probe">
+                        <span>probe</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wifi">
+                        <span>wifi</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wireless">
+                        <span>wireless</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://item.taobao.com/item.htm?id=928623916431">TOS-WLink USB设备无线化,板载无线DAPLink，无线化JLink/STLink</a>
+<ul>
+<li>Recap: another wireless daplink.</li>
+<li>Run: shim to <code>wlink</code>... First time connect you have to double click on device entry on the GUI.</li>
+<li>Resolution: It's using the ai-W62-32s as BL616 chip in here... Not esp32c6 or s3 as I thought.
+<ul>
+<li>#doc/official <a href="https://www.e-kom.com/Datasheet/AI-Thinker/AI-M62-32S_Datasheet.pdf">AI-M62-32S_Datasheet</a></li>
+<li>Have to remember MAC... of the BLE, not the wifi when in AP mode though.
+<ul>
+<li>Sometimes you even have to unplug things...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/espressif/esp-idf/issues/9521">Calling esp_wifi_set_country_code(&quot;US&quot;, true) returns ESP_ERR_WIFI_NOT_STARTED · Issue #9521 · espressif/esp-idf</a></li>
+<li>#component/package: smd-38 seems like a convention from ai-thinker, (AI-xinke).</li>
+</ul>
+</li>
+<li>Revisist: <a href="https://item.taobao.com/item.htm?id=1013450293412">TOS-WBox, 无线usb拓展坞,无线JLlink，无线调试器、无线usb hub</a>
+<ul>
+<li>now we have true remote usb.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: advantages of MQTT over TCP/IP? Since MQTT is based on TCP, Why don&#x27;t we use TCP/IP instead of it?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">advantages of MQTT over TCP/IP? Since MQTT is based on TCP, Why don&#x27;t we use TCP/IP instead of it?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-02 09:04:15 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mqtt">
+                        <span>mqtt</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tcpip">
+                        <span>tcpip</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/57388750/what-are-advantages-of-mqtt-over-tcp-ip-since-mqtt-is-based-on-tcp-why-dont-w#57392291">advantages of MQTT over TCP/IP? Since MQTT is based on TCP, Why don't we use TCP/IP instead of it?</a>
+<ul>
+<li>Recap: mqtt is operated on TCP stack. if you want UDP, use MQTT-SN implementation.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#golang <a href="https://github.com/energostack/bisquitt"><code>Bisquitt</code> transparent MQTT-SN gateway</a></li>
+<li>#java <a href="https://github.com/simon622/mqtt-sn"><code>MQTT-SN</code> gateway and client implementations written in Java</a></li>
+<li>#cpp : <a href="https://github.com/commschamp/cc.mqttsn.libs"><code>cc.mqttsn.libs</code> CommsChampion Ecosystem MQTT-SN client / gateway libraries and applications</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.hivemq.com/blog/lorawan-and-mqtt-integrations-for-iot-applications-design/">LoRaWAN and MQTT Integration for IoT Application Design</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

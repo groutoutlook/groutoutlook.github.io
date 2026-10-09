@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: PCB Editor - Net Higlighting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">PCB Editor - Net Higlighting</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-30 08:55:31 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/netlist">
+                        <span>netlist</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#net-highlighting">PCB Editor - Net Higlighting</a>
+<ul>
+<li>Recap: Backtick <code>\`` to highlight a net. </code>~<code>tilde to unhighlight but you can</code>Esc` as well.</li>
+<li>Run: while you select only footprints on selection filter, you cant highlight net.</li>
+<li>Resolution: Last Net highlight I map to <code>Alt+backtick</code> instead.
+<ul>
+<li>Normal mode will highlight  when you select or hover. Priority on the select.</li>
+<li>the last one will only do you what you previously highlighted, either select or hover.
+<ul>
+<li>but dont de-select by <code>esc</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#net-inspector">Net inspector</a></li>
+<li>Related:
+<ul>
+<li>#silkscreen: <a href="https://forum.kicad.info/t/how-to-draw-an-arrow-on-the-silkscreen/62823/3">How to draw an Arrow on the silkscreen - PCBNew</a></li>
+<li>#routing <a href="https://forum.kicad.info/t/unrouted-net-length-v10-0-3/69282/12">Unrouted net length v10.0.3 - Layout</a>
+<ul>
+<li><a href="https://gitlab.com/kicad/code/kicad/-/work_items/25077">Net Inspector: show estimated unrouted (ratsnest) length per net (#25077) · Issue · kicad/code/kicad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

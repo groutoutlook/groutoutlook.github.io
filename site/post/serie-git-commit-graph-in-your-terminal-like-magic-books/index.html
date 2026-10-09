@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;serie&#x60; git commit graph in your terminal, like magic 📚</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;serie&#x60; git commit graph in your terminal, like magic 📚</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-10 08:06:10 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/lusingander/serie"><code>serie</code> git commit graph in your terminal, like magic 📚</a>
+<ul>
+<li>Recap: Better <code>git log</code>. Although in Windows now it's unusable on the graph.</li>
+<li>Resolution: [2025-08-04 09:57:38] run good in <code>wezterm</code> since it's using iterm2 inline image protocol.
+<ul>
+<li>but not <code>sixel</code> so #windows terminal is not able to display anything. that's why I shim it.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #browser/plugin : <a href="https://github.com/NirmalScaria/le-git-graph"><code>le-git-graph</code> Browser extension to add git graph to GitHub website.</a></li>
+<li>Related: #alternative <a href="https://github.com/mlange-42/git-graph"><code>git-graph</code> Command line tool to show clear git graphs arranged for your branching model</a></li>
+<li>Rival: <a href="https://github.com/trasta298/keifu"><code>keifu</code> TUI for navigating commit graphs with color and clarity.</a></li>
+<li>Revisit: [2026-02-03 4:36:46 PM] #nightly cant take it anymore and alias <code>git graph</code> and <code>git bg</code> to <code>serie</code>
+<ul>
+<li>Run: we have to launch a wezterm there so it can display inline properly.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> serie</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> launch a new window for that.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> git b</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I even alias this, so I have to comment out the gitalias.txt&#39;s alias.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Related: I #nightly <code>wezterm</code> again just for this. my shim script for <code>serie</code> invoke <code>wezterm</code> for the image protocol.</li>
+</ul>
+</li>
+<li>Revisit: [Wed Jun 24 17:33:20 2026] <a href="https://stackoverflow.com/questions/34096982/how-can-i-pass-a-string-to-git-log-s-instead-of-just-a-word"><code>git log -S</code> pass a string instead of just a word?</a>
+<ul>
+<li>Root:<a href="https://lobste.rs/s/y4hgjd/please_keep_code_descriptions_simple">Please keep code descriptions simple</a></li>
+<li>Related: #blog <a href="https://blog.danlew.net/2019/02/19/git-log-s/">Adding <code>git log -S</code> to your code detective toolbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

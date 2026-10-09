@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: 无线调试器 仿真器 高速 CMSIS-DAP 串口 Wifi6 5GHz免干扰第二代</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">无线调试器 仿真器 高速 CMSIS-DAP 串口 Wifi6 5GHz免干扰第二代</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-12 02:16:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/probe">
+                        <span>probe</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wifi/5ghz">
+                        <span>wifi/5ghz</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://item.taobao.com/item.htm?id=661712953813">无线调试器 仿真器 高速 CMSIS-DAP 串口 Wifi6 5GHz免干扰第二代</a>
+<ul>
+<li>Recap: from the VLLink - VLLogic guy. Leop0601.</li>
+<li>Run: default <code>AP</code> probe:
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">Mode=wired # to config thru wire.
+Mode=wirelesshost # AP - main one.
+Mode=wirelessdevice # STA
+Wireless_Host_SSID=Vllink-8B0BC7D8766C6C00 # but you should paste them as Wireless_Device
+Wireless_Host_Password=0BFDE3C49F37CBD3
+Wireless_Device_SSID=GL-MT3600BE-ace-MLO # for openwrt connection .wll
+Wireless_Device_Password=owrt2120aA
+</span></code></pre>
+<ul>
+<li>as Wireless_Device config:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">Wireless_Device_SSID=Vllink-8B0BC7D8766C6C00
+Wireless_Device_Password=0BFDE3C49F37CBD3
+</span></code></pre>
+<ul>
+<li>autopair/autolink to my default AP: hold reset 10s. switch to STA and it will autoconnect.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://vllogic.com/software/feature2026">What's New in Vllink Basic2 2026 — Vllogic documentation</a>
+<ul>
+<li>one to many function so I can use one master and control many slaves attached to downstream devices.</li>
+<li>#utils <a href="https://vllogic.com/_static/tools/vllink2026_console/">Vllink WebUSB Console</a>
+<ul>
+<li>currently this is within the web only.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://vllogic.com/software/webusb_protocol">WebUSB Communication Protocol — Vllogic documentation</a></li>
+<li><a href="https://github.com/vllogic/openocd_cmsis-dap_v2">openocd_cmsis-dap_v2: 支持CMSIS-DAP v2接口协议，支持ARM、RISCV、ESP32等目标芯片，详见Wiki及release</a>
+<code>openocd</code> for DAPLink. Well, this and many others.</li>
+<li><a href="https://vllogic.com/example/wireless_icp">Wireless ICP (Programming in Circuit) — Vllogic documentation</a></li>
+<li><a href="https://vllogic.com/example/over_internet#frp">Internet as <code>frpc</code> — VLLOGIC documentation</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2025-10-12 02:47:37 PM] #debugger #wifi <a href="https://item.taobao.com/item.htm?id=661712953813&amp;skuId=5934942416453">Wireless Debugger Emulator High Speed CMSIS-DAP Serial Port Wifi6 5GHz Interference Free 2nd Generation</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

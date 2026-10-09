@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;switch&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;switch&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-03 10:40:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kanata">
+                        <span>kanata</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/switch">
+                        <span>switch</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#switch"><code>switch</code></a>
+<ul>
+<li>Recap: A condition check.</li>
+<li>Run: Have to put extra parens on them because condition is a list of expression.</li>
+<li>Resolution:</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>key-history</code></td>
+<td>Evaluates to true if the key in the recency slot matches <code>$key-name</code>. A <code>$key-recency</code> of 1 is the most recent key pressed according to Kanata processing. The max recency is 8.</td>
+</tr>
+<tr>
+<td><code>key-timing</code></td>
+<td>The valid values for <code>$comparator</code> are <code>less-than</code> and <code>greater-than</code>, with <code>lt</code> and <code>gt</code> as shorthand if desired. This item evaluates to true if the key with the corresponding recency was pressed — for <code>lt</code> MORE recently than, for <code>gt</code> LATER than — the defined <code>$time</code> with unit milliseconds.</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td>Evaluates to true if the <code>$key-name</code> is currently pressed. The <code>$input-type</code> must be either <code>real</code> or <code>virtual</code>. If using <code>real</code>, this will check against the <code>dfsrc-inputs</code>. If using <code>virtual</code>, this will check against virtual key activations.</td>
+</tr>
+<tr>
+<td><code>input-history</code></td>
+<td>Evaluates to true if the input in the <code>$input-recency</code> slot matches <code>$key-name</code>. Two input types use the same history with respect to recency slots. A recency of 1 is the most recent input i.e. the input activating the switch itself. The max recency is 8.</td>
+</tr>
+<tr>
+<td><code>layer</code></td>
+<td>Evaluates to true if the active layer matches <code>$layer-name</code>.</td>
+</tr>
+<tr>
+<td><code>base-layer</code></td>
+<td>Evaluates to true if the most recently switched-to layer from a <code>layer-switch</code> action matches <code>$layer-name</code>.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Reason:</li>
+<li>Recite: <code>switch</code> is similar to <code>fork</code> but more capable and complex.
+<ul>
+<li><code>switch</code> action accepts multiple cases. One case is a triple of:
+<ul>
+<li>logic check</li>
+<li><code>action</code>: to activate if logic check evaluates to true</li>
+<li><code>fallthrough|break</code>: choose to continue vs. stop evaluating cases
+The default use of the logic check behaves similarly to fork.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+<li>Revisit:
+<ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/docs/config.adoc#input"><code>input real</code> and <code>input virtual</code></a>
+<ul>
+<li>which operated based on <strong>real</strong> keys on <code>defsrc</code> or <code>defvirtualkeys</code>.</li>
+<li>normally it's based on output of other keys.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

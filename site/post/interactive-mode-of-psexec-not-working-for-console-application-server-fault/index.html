@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Interactive mode of PSExec not working for console application - Server Fault</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Interactive mode of PSExec not working for console application - Server Fault</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-02 06:43:38 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://serverfault.com/questions/453704/interactive-mode-of-psexec-not-working-for-console-application/1190071#1190071">Interactive mode of PSExec not working for console application - Server Fault</a>
+<ul>
+<li>Recap: remember ID of session.</li>
+<li>Run: Now I have to type invoke-sudopwsh in front of them...
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">psexec -s -i 1 &quot;powershell.exe&quot; # will not detach.
+psexec64 -s -i 1 &#39;powershell.exe&#39; -Command &quot;gci&quot;
+psexec -s -d -i 1 &quot;$HOME\scoop\apps\nircmd\current\nircmd.exe&quot; setcursor 1000 200
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/quser"><code>quser</code></a></li>
+<li>Recite: Arguments to pass (note that file paths must be absolute paths on the target system).
+<ul>
+<li>note that argument is not wrapped inside quotes of binary name/path.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: useful for stopping something like cloudflare or <code>wetype</code> or <code>aliim</code> or <code>alibabaprotectservice</code></li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://serverfault.com/questions/713362/cant-get-psexec-to-work-with-powershell">Can't Get PSExec to work with Powershell - Server Fault</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

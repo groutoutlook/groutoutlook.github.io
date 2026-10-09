@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How do I commit case-sensitive only filename changes in Git?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How do I commit case-sensitive only filename changes in Git?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-03 02:38:10 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/17683458/how-do-i-commit-case-sensitive-only-filename-changes-in-git">How do I commit case-sensitive only filename changes in Git?</a>
+<ul>
+<li>Recap: <code>git mv -f</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">rref &quot;psd1.filesystem.utils&quot; &quot;PSD1.Filesystem.Utils&quot;
+git mv -f .\Psd1.Filesystem.Utils.psm1 .\PSD1.Filesystem.Utils.psm1    
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: just wrote the <code>Rename-AllReferences</code> so I got to put them to extensive tests.
+<ul>
+<li>I happened to tell AI to replace references all the time, should write a script instead.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

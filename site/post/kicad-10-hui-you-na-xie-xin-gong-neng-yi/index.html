@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: KiCad 10 会有哪些新功能（一）？</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">KiCad 10 会有哪些新功能（一）？</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-23 06:13:44 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/annoucement">
+                        <span>annoucement</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/changelog">
+                        <span>changelog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mp.weixin.qq.com/s/DnqKzI9M4UXmLzK8W49OPg">KiCad 10 会有哪些新功能（一）？</a>
+<ul>
+<li>Recap: well even #wechat have a better changelog than other places.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#selection: Lasso selection in schematic / PCB (<code>eeschema</code> and <code>pcbnew</code>)
+<ul>
+<li>#keybinding : map <code>lasso</code> to <code>ctrl+alt+s</code> and <code>rectangle</code> to <code>ctrl+alt+shift+s</code>
+useful for escaping drawing measure or measurement or even drawing rectangle(<code>ctrl+shift+r</code>)
+Or even back to selection after entering add mode (<code>a</code>) or move mode (<code>m</code>).</li>
+</ul>
+</li>
+<li>真实 1：1缩放设置, you can check scaling on Preferences settings(<code>ctrl+,</code>)
+<ul>
+<li>For real life scaling of product right in pcbnew.</li>
+</ul>
+</li>
+<li>Display of line crossings of the schematic diagram.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+<li>Revisit: [2025-11-19 01:02:11 PM] <a href="https://mp.weixin.qq.com/s/VtJShFLUG6pWv2YABYg48A">What's new in KiCad 10 (2)?</a>
+<ul>
+<li>#keybinding #default : <code>Backspace</code> deletes tracks sequentially... in net. no need to fanatically select and delete carefully.</li>
+<li>#component : Added support for jumper symbols and packages i.e. internal connection.
+<ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#fp-pad-connections">Jumper pads</a></li>
+<li><a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#sym-jumper-pins">Jumper pin</a></li>
+<li>So you dont have to bother marking everything the same net(mostly GND) manually.
+It's now a class of its own, internally connection.</li>
+<li>Root: 0R resistors. Other jumpers, tact button, etc...</li>
+<li>Related: <a href="https://forum.kicad.info/t/how-to-mark-pins-as-internally-connected/59955">How to mark pins as internally connected - Schematic</a></li>
+</ul>
+</li>
+<li>#eeschema #schematic #pinout :  Symbol editor export/import pins to CSV.
+<ul>
+<li>Recap: you can use <code>hx</code>/<code>scalc</code>/<code>vd</code> to edit those things from now on. OR a script!</li>
+<li>It doesnt have to be inside KiCAD anymore.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

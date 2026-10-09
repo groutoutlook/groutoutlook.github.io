@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;std::countr_zero&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;std::countr_zero&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-25 10:56:31 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/bitset">
+                        <span>container/bitset</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/integer">
+                        <span>integer</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/numeric/countr_zero"><code>std::countr_zero</code></a>
+<ul>
+<li>Recap: and <a href="https://cppreference.com/w/cpp/numeric/countl_zero"><code>std::countl_zero</code></a></li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/numeric/popcount"><code>std::popcount()</code></a> count <code>1</code> bit in integer.
+<ul>
+<li>Recap: quite clever used of it. really useful for embeddded to read input state of GPIO.</li>
+<li>Related: for <code>bitset</code> it is <a href="https://cppreference.com/w/cpp/utility/bitset/count"><code>std::bitset&lt;N&gt;::count()</code></a></li>
+</ul>
+</li>
+<li><a href="https://cppreference.com/w/cpp/numeric/has_single_bit"><code>std::has_single_bit</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/numeric/countr_one"><code>std::countr_one</code></a> and <a href="https://cppreference.com/w/cpp/numeric/countl_one"><code>std::countl_one</code></a></li>
+<li><a href="https://stackoverflow.com/questions/76729428/how-to-make-a-countl-zero-but-for-any-type">c++ - How to make a countl_zero() but for any type?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: RISC-V PMP and Zephyr RTOS - a new user(space) has entered - BayLibre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">RISC-V PMP and Zephyr RTOS - a new user(space) has entered - BayLibre</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-18 10:53:04 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rtos">
+                        <span>rtos</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/zephyr">
+                        <span>zephyr</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://baylibre.com/risc-v-pmp-and-zephyr-rtos-a-new-userspace-has-entered/">RISC-V PMP and Zephyr RTOS - a new user(space) has entered - BayLibre</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#cli:  <a href="https://docs.zephyrproject.org/latest/samples/arch/mpu/mpu_test/README.html#mpu">Memory Protection Unit (MPU) — Zephyr Project Documentation</a>
+<ul>
+<li>Related: <a href="https://www.crowdsupply.com/baochip/dabao/updates/what-it-is-why-im-doing-it-now-and-how-it-came-about">Dabao Evaluation Board for Baochip-1x - What It Is, Why I'm Doing It Now, and How It Came About | Crowd Supply</a>
+<ul>
+<li>one of the reason MPU will never be as good as MMU.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/45397/does-lack-of-mmu-make-any-difference-for-applications">arm - Does lack of MMU make any difference for applications?</a>
+<ul>
+<li>#rtos <a href="https://github.com/apache/nuttx"><code>NuttX</code> real-time embedded operating system (RTOS)</a>
+<ul>
+<li>POSIX-like RTOS for baremetal. #alternative to VxWorks and BlackBerry's QNX/QOS</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://forum.osdev.org/viewtopic.php?t=37283&amp;sid=23328a2eea77758d095410ac1b410921&amp;start=15">Multi-tasking without MMU: How? - Page 2 - OSDev.org</a></li>
+<li>Related:
+<ul>
+<li>#acronym : MPU is Memory Protecting Unit in STM32H7 and above,
+<ul>
+<li>can be utilized for prmitive MMU functions to provide POSIX-like API/syscall.</li>
+<li>which is a step toward running ELF, easier crosscompiling.</li>
+</ul>
+</li>
+<li>#linux #news : <a href="https://news.ycombinator.com/item?id=42079460">QNX is now free for anything non-commercial, plus there's an RPi image</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=9872640">The most important operation in QNX is MsgSend, which works like an ipc subroutine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

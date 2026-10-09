@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: tls - Where does SSL encryption take place?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">tls - Where does SSL encryption take place?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-08 10:13:50 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ssl">
+                        <span>ssl</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/standard">
+                        <span>standard</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tls">
+                        <span>tls</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://security.stackexchange.com/questions/19681/where-does-ssl-encryption-take-place">tls - Where does SSL encryption take place?</a>
+<ul>
+<li>Recap: OSI layer 6 or layer 5.... not that important.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>Layer 6 Syntax layer or <a href="https://wikipedia.org/wiki/Presentation_layer">Presentation layer</a>
+<ul>
+<li>the most famous one is TLS, MIME in email and PGP.</li>
+</ul>
+</li>
+<li>Layer 5: Session layer.
+<ul>
+<li>most famous one:<a href="https://wikipedia.org/wiki/SOCKS">SOCKS</a>
+<ul>
+<li>and RTP <a href="https://wikipedia.org/wiki/Real-time_Transport_Protocol">Real-time Transport Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro:</li>
+<li>Con: OSI model is overly complex.</li>
+</ul>
+</li>
+<li>Root: [2025-06-16 05:34:48 PM] #infosec
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=44282378">Why SSL was renamed to TLS in late 90s (2014)</a>
+<ul>
+<li>Recap: it's naming, bascially the same</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://wikipedia.org/wiki/Automatic_Certificate_Management_Environment">Automatic Certificate Management Environment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

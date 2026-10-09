@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: networking - What&#x27;s the difference between .local, .home, and .lan?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">networking - What&#x27;s the difference between .local, .home, and .lan?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-10 02:07:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns/mdns">
+                        <span>dns/mdns</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://unix.stackexchange.com/questions/92441/whats-the-difference-between-local-home-and-lan">networking - What's the difference between .local, .home, and .lan?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><code>.lan</code> and <code>.local</code> is actually given by DHCP server on router.
+<ul>
+<li><del>That's why mDNS hostname results into <code>.lan</code>, well, most of the time.</del></li>
+</ul>
+</li>
+<li><a href="https://superuser.com/questions/1481698/dns-suffix-explanation">networking - DNS Suffix Explanation</a></li>
+<li><a href="https://superuser.com/questions/1316459/what-is-connection-specific-dns-suffix">windows - What is Connection-specific DNS Suffix</a>
+<ul>
+<li>check on <code>Get-DnsClient</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/selfhosted/comments/15celc7">Can someone explain to me in layman's terms why using .local is/isn't okay?</a></li>
+<li>Related:
+<ul>
+<li>#blog: <a href="https://miketelahun.wordpress.com/2012/09/16/stop-using-local-as-the-top-level-domain-for-your-lan/">Stop using .local as the top level domain for your LAN | miketelahun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

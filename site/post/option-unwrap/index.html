@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Option &amp; unwrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Option &amp; unwrap</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-07 05:50:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/optional">
+                        <span>optional</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/type/safety">
+                        <span>type/safety</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://doc.rust-lang.org/rust-by-example/error/option_unwrap.html">Option &amp; unwrap</a>
+<ul>
+<li>Recap: for any <code>Option&lt;T&gt;</code> you have to <code>unwrap()</code> or <code>unwrap_or_else()</code></li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#syntax <a href="https://doc.rust-lang.org/reference/expressions/closure-expr.html">Closure expressions/ Lambda in Rust</a>
+<ul>
+<li>most used inside <code>unwrap_or_else</code>/<code>then</code>... many more, <code>||</code> is a lambda which take no argument, no reference in current scope..</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-rust"><span class="source rust"><span class="storage type rust">let</span> <span class="storage modifier rust">mut</span> a <span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">0</span><span class="punctuation terminator rust">;</span>
+<span class="support macro rust">assert!</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="constant language rust">true</span>.<span class="support function rust">ok_or_else</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters begin rust">|</span></span></span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters end rust">|</span></span> </span><span class="meta function closure rust"><span class="meta block rust"><span class="punctuation section block begin rust">{</span> a <span class="keyword operator rust">+</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">1</span><span class="punctuation terminator rust">;</span> </span><span class="meta block rust"><span class="punctuation section block end rust">}</span></span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">is_ok</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
+<span class="support macro rust">assert!</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="constant language rust">false</span>.<span class="support function rust">ok_or_else</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters begin rust">|</span></span></span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters end rust">|</span></span> </span><span class="meta function closure rust"><span class="meta block rust"><span class="punctuation section block begin rust">{</span> a <span class="keyword operator rust">+</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">1</span><span class="punctuation terminator rust">;</span> </span><span class="meta block rust"><span class="punctuation section block end rust">}</span></span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">is_err</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/36362020/what-is-unwrap-in-rust-and-what-is-it-used-for/71231484#71231484">error handling - What is unwrap in Rust, and what is it used for?</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Ctrl+, ctrl+c&#x60; &#x3D;&#x3D;  &#x60;project.configurecache&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Ctrl+, ctrl+c&#x60; &#x3D;&#x3D;  &#x60;project.configurecache&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-06 11:28:32 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vs">
+                        <span>ide/vs</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>Ctrl+, ctrl+c</code> ==  <code>project.configurecache</code>
+<ul>
+<li>recap: for start configure/autoconf-like step in vs cmake project.</li>
+<li>Run:</li>
+<li>resolution: adding a new files and put some implementation on it, either class or functions.
+<ul>
+<li>has to regenerate the cache.</li>
+</ul>
+</li>
+<li>reason:
+<ul>
+<li>there is <code>project.configurecachewithcmakedebugger</code> as well but i dont think much about it.</li>
+</ul>
+</li>
+<li>root: delete and reconfigure cache sometimes doesnt work at all, try in libmagicxx</li>
+<li>related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

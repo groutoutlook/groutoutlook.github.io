@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Since &#x60;winget&#x60; doesnt accept glob or regex in any subcommand, have to use with powershell.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Since &#x60;winget&#x60; doesnt accept glob or regex in any subcommand, have to use with powershell.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-30 04:00:45 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman/winget">
+                        <span>pacman/winget</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Since <code>winget</code> doesnt accept glob or regex in any subcommand, have to use with powershell.
+<ul>
+<li>Recap: <a href="https://github.com/microsoft/winget-cli/tree/8d824c1b14ec2b829a1d637a98cf78d53293d02e/src/PowerShell/Microsoft.WinGet.Client#cmdlets"><code>Microsoft.WinGet.Client</code></a></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;Windows&quot;,&quot;Microsoft&quot;|% {get-wingetpackage -name $_ } |%{Update-WinGetPackage $_}
+Get-WinGetPackage |  where IsUpdateAvailable -eq True |%{winget update $_.id}
+</span></code></pre>
+</li>
+<li>Resolution: or you could always open <code>appwiz.cpl</code></li>
+<li>Reason:</li>
+<li>Root: I  want an equivalent of <code>scoop ua</code>. Turns out none.</li>
+<li>Related: #til : enter mark mode <code>Ctrl+shift+m</code> in #windows/terminal so it can sit still.
+<ul>
+<li>regardless of the running log.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

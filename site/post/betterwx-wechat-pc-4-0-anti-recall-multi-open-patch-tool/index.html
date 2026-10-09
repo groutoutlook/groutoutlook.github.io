@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;BetterWX&#x60;: WeChat PC 4.0 anti-recall/multi-open patch tool</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;BetterWX&#x60;: WeChat PC 4.0 anti-recall/multi-open patch tool</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-10 05:46:17 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/wechat">
+                        <span>wechat</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/zetaloop/BetterWX"><code>BetterWX</code>: WeChat PC 4.0 anti-recall/multi-open patch tool</a>
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-mark"><span class="text plain">revoke.py: Anti-recall silent
+changes all revokemsg recall operation messages to unknown messages, which cannot be successfully recalled and there is no recall prompt.
+
+unmutex.py: Multi-open
+and remove 4.0.3+ Mutex detection, you can start the same WeChat program multiple times. It is not recommended to log in to multiple accounts, and it is easy to crash.
+
+coexist.py: Coexistence Edition Maker
+selects the number ζ=0~9 to create a coexistence version Weixin.exe (up to ten), isolation settings, and automatic login ports.
+All message records in the coexistence version are shared with the original version, and you can log in at will.
+
+sound_extract.py: Extract the prompt
+to extract the prompt to the current directory, the file name is .Sound_编号_十六进制大小.wav
+
+sound_replace.py: Modify the prompt to
+replace the prompt, the new audio must be in WAV format, and the size cannot exceed the original (if it is exceeded, it will be truncated).
+</span></code></pre>
+<ul>
+<li>Reason: better than revokeMsgPatcher
+<ul>
+<li>Only downside is a lot of sudo.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

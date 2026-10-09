@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Tee-Object&#x60; to stdout without &#x60;Out-Host&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Tee-Object&#x60; to stdout without &#x60;Out-Host&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-29 02:34:34 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/stdout">
+                        <span>stdout</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tee">
+                        <span>tee</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/71039495/can-you-redirect-tee-object-to-standard-out"><code>Tee-Object</code> to stdout without <code>Out-Host</code></a>
+<ul>
+<li>Recap: <code>ls|tee \\.\CON|%{&quot;hmmm&quot;}</code> that's the only way now to <code>tee</code> to stdout.
+<ul>
+<li>normally it's <code>ls|tee -variable $a|Out-Host</code> but yeah... this couldnt help me pipe with another <code>ForEach</code> | <code>%</code></li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">fd hex$ -HI | %{cp $_ ($dest = &quot;../built_binary/$current_branch.hex&quot;) -Force &amp;&amp; gci $dest | tee -v path  | oh; $path} | Set-Clipboard
+# find how deep current pwd is relatively to a parent dir, match by its string(regex)
+(pwd) -split &#39;\\&#39; | Tee -var pwds -ob 999 | % { $i = 0 }
+{ if ($_ -match &quot;miscl&quot;) { $pwds.Count - $i; continue} else { $i++ } } |
+% {echo $_}
+</span></code></pre>
+<ul>
+<li>See that I buffering the tee so it can fetch the Split Dir array there? Peak scripting.
+<ul>
+<li>More at <a href="https://github.com/groutoutlook/MiscLang/blob/24771a84131be497ff58febe93a45e24e1aa5206/justfile#L93"><code>just pull-update</code></a></li>
+<li>One important things... you cant just put break into script/recipe like that.
+IT will abrupt the whole script. Not simply local break, but <strong>global break</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/PowerShell/PowerShell/issues/19827"><code>Tee-Object</code> should have a <code>-Console</code> parameter · Issue #19827 · PowerShell/PowerShell</a>
+<ul>
+<li>..which for now I will make a <code>Tee-Host</code> functions</li>
+</ul>
+</li>
+<li><a href="https://github.com/PowerShell/PowerShell/issues/20123"><code>Tee-Object -Process</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: I want to validate results of my command when I'm writing pipelines syntax.
+<ul>
+<li><a href="https://github.com/groutoutlook/RGB_CPP_V2_2024/commit/25d4f9b3a4cac409a10057e6011134b7ca596554">feat: more spicy recipes... load and hex copy. · groutoutlook/RGB_CPP_V2_2024@25d4f9b</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#container : <a href="https://stackoverflow.com/questions/1785474/get-index-of-current-item-in-a-powershell-loop">Get index of current item in a PowerShell loop</a>
+<ul>
+<li>It's like <code>iota</code> in c++ but now it's accessible in pipeline, could access index
+<ul>
+<li>In pipeline now. Handy.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;a&quot;,&quot;b&quot;,&quot;c&quot; | % {$id = 0}{Write-Host $_,$id,&quot; &quot; -nonewline;$id++}
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>So even in pipelines we have the begin-process-end block. <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_methods">about_Functions_Advanced_Methods</a>
+<ul>
+<li><code>end</code> block is like <code>defer</code> in #golang. quite useful.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#alternative: <a href="https://github.com/dEajL3kA/tee-win32">dEajL3kA/tee-win32: Tee for Windows</a>
+<ul>
+<li>which is bundled inside <code>vim</code>. #til.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

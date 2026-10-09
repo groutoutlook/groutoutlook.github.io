@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Powershell - detect whether running in interactive mode or not</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Powershell - detect whether running in interactive mode or not</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-02 02:17:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/1621096/powershell-detect-whether-running-in-interactive-mode-or-not">Powershell - detect whether running in interactive mode or not</a>
+<ul>
+<li>Recap: only way is setting a global variable to escape some scopes.
+<ul>
+<li>and <code>[Environment]::GetCommandLineArgs().Contains('-NonInteractive')</code></li>
+</ul>
+</li>
+<li>Run: <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pwsh#-noninteractive---noni"><code>-NonInteractive</code> | <code>-noni</code></a>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">
+</span></code></pre>
+</li>
+<li>Root: <a href="https://stackoverflow.com/questions/9738535/powershell-test-for-noninteractive-mode">Powershell test for noninteractive mode</a></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pwsh#-outputformat---o---of"><code>-OutputFormat</code> | <code>-of</code></a>
+<ul>
+<li>Resolution: for calling e.g. inside dotnet or C++/Rust application. XML is easier to parse than inconsistent plain text.</li>
+</ul>
+</li>
+<li><code>[-InputFormat</code> | <code>-inp</code> | <code>-if</code>](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pwsh#-inputformat---inp---if)
+<ul>
+<li>this option in pwsh specify input XML or text.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

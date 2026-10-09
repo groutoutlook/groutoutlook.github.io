@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Tee-Object&#x60; | &#x60;tee&#x60; Output processes to a file and to the console</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Tee-Object&#x60; | &#x60;tee&#x60; Output processes to a file and to the console</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-08 01:24:56 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting/tee">
+                        <span>scripting/tee</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/tee-object#example-1-output-processes-to-a-file-and-to-the-console"><code>Tee-Object</code> | <code>tee</code> Output processes to a file and to the console</a>
+<ul>
+<li>Recap: you can <code>| tee -filepath</code> or <code>| tee -variable VariableWithNoDollarSign</code>.
+<ul>
+<li>Alias of arguments is <code>-filepath</code> | <code>-path</code>.</li>
+</ul>
+</li>
+<li>Resolution: $reflection : if you do <code>&quot;result&quot; | tee -variable $var</code>, it will pipe the output to ${$var}.
+<ul>
+<li>is: if $var = &quot;thisVar&quot; -&gt; $thisVar = &quot;result&quot;. Ingenious way to do meta reflection as...
+<ul>
+<li>iterate through a hashtable and assign to variable name, etc...</li>
+</ul>
+</li>
+<li>Test commands recursively with tee like this: <code>split-path $a| tee -Variable a</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#logging : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/tee-object#example-1-output-processes-to-a-file-and-to-the-console">Output system files to two log files</a>
+<ul>
+<li>use <code> | tee -path $file1 | out-file $file2</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

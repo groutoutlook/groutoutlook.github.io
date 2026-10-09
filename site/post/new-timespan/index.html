@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;New-TimeSpan&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;New-TimeSpan&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-23 07:42:20 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/object">
+                        <span>object</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/time">
+                        <span>time</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/type">
+                        <span>type</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/new-timespan"><code>New-TimeSpan</code></a>
+<ul>
+<li>Recap: when you want to do math e.g. between <code>LastWriteTime</code> and <code>Get-Date</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">gci | where { (Get-Date) - $_.LastWriteTime -lt (New-TimeSpan -Days 1) }
+    | sort LastWriteTime
+    | %{write-host $_ -Fore Blue;cd $_; r b; cd ..}
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Other than <code>-d</code>/<code>-h</code>/<code>-mi</code>/<code>-se</code>/<code>-ms</code> we have span as <code>-start</code>/<code>-end</code>.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #AI teach me this.</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

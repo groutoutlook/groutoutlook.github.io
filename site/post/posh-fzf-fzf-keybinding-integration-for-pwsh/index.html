@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;posh-fzf&#x60; : Fzf keybinding integration for &#x60;pwsh&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;posh-fzf&#x60; : Fzf keybinding integration for &#x60;pwsh&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-30 07:16:28 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/fzf">
+                        <span>fzf</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/domsleee/posh-fzf"><code>posh-fzf</code> : Fzf keybinding integration for <code>pwsh</code></a>
+<ul>
+<li>Recap: #nightly.</li>
+<li>Run:</li>
+<li>Resolution: this has to be in my <code>$env:PATH</code>. I <code>cargo install --path .</code> it.</li>
+<li>Reason:
+<ul>
+<li>Pro: super responsive.</li>
+<li>Con: have to be in path. Dont have tab completion as now.
+<ul>
+<li>That's why I havent replaced <code>PSFzf</code> yet.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:
+<ul>
+<li><code>Tab</code> completion in PsFzf keep broken, I have to workaround that either by quit or.
+<ul>
+<li>if the first one made buffer broken, <code>Tab</code> again and <strong>accept</strong> result to align it.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

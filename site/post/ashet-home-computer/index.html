@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Ashet Home Computer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Ashet Home Computer</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-22 06:04:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu/rp2350">
+                        <span>mcu/rp2350</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://ashet.computer/about/#vision">Ashet Home Computer</a>
+<ul>
+<li>Recap: andrewk of #zig work on this.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>#forum <a href="https://www.eevblog.com/forum/microcontrollers/parallax-propeller-2/">Parallax Propeller 2</a></li>
+</ul>
+</li>
+<li>Reason: they have Parallax Propeller 2 - custom SoC which is a DSP + MCU.
+<ul>
+<li>pipelined CORDIC solver : polar to cartesian and vice-versa,...
+<ul>
+<li>Recite: Cogs can start CORDIC operations every 8 clocks and get results 55 clocks later</li>
+</ul>
+</li>
+<li>Pro: highly parallel. Weirdest MCU/SoC I have seen.</li>
+<li>Con: I cant buy it.</li>
+</ul>
+</li>
+<li>Root: <a href="https://www.crowdsupply.com/bitmerse/romu">Romu | Crowd Supply</a>
+<ul>
+<li>super minimal PCB of RP2354 (4Mb Flash 264Kb RAM)</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#sdk #std #library:  <a href="https://github.com/avsa242/p2-spin-standard-library">avsa242/p2-spin-standard-library: A curated collection of essential Spin2 objects</a>
+<ul>
+<li>#doc #doc/ds : <a href="https://cdn.robotshop.com/media/p/plx/rb-plx-379/pdf/parallax-p2-edge-module-datasheet.pdf">Propeller 2 P2X8C4M64P Multicore Microcontroller Datasheet release 2021-05-27</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

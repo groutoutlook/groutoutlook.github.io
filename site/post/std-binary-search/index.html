@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;std::binary_search&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;std::binary_search&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-06 03:08:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/search">
+                        <span>container/search</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/std">
+                        <span>std</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/algorithm/binary_search"><code>std::binary_search</code></a>
+<ul>
+<li>Recap: good with <code>std::span</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.reddit.com/r/cpp/comments/fdj49t"><code>lower_bound</code>, <code>upper_bound</code>, <code>equal_range</code>, and <code>binary_search</code> (and <code>partition_point</code>) are all binary searches.</a>
+<ul>
+<li><a href="https://cppreference.com/w/cpp/algorithm/upper_bound.html"><code>std::upper_bound</code></a></li>
+<li>well practically lower_bound is binary_search.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/68220759/find-vs-binary-search-in-stl#:~:text=When%20you%20are%20not%20sure,you%20should%20use%20binary_search()%20.&amp;text=If%20your%20input%20is%20sorted,take%20O(n)%20time.">c++ - find() vs binary_search() in STL</a></li>
+<li>Related:
+<ul>
+<li>#blog: <a href="https://news.ycombinator.com/item?id=44573409">To be a better programmer, write little proofs in your head</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

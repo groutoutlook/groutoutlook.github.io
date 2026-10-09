@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about_Switch | &#x60;switch -regex&#x60; Microsoft Learn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about_Switch | &#x60;switch -regex&#x60; Microsoft Learn</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-02 12:13:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pattern/matching">
+                        <span>pattern/matching</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_switch#use-break-and-continue-to-control-the-flow">about_Switch | <code>switch -regex</code> Microsoft Learn</a>
+<ul>
+<li>Recap: <code>break</code> and <code>continue</code> can control flow, but the input has to be array type.</li>
+<li>Run: <code>switch -regex</code> you have known, <code>switch -wildcard</code> is glob pattern.
+<ul>
+<li><code>switch -File ./readme.md</code> take files as input instead of variable.
+<ul>
+<li>normally you will see it's used with <code>switch -regex -file</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>you can put expression|<code>ScriptbBlock</code> in the value field, ultimate matching.</li>
+<li>due to strong #reflection ability of #dotnet, it can match <code>[type]</code>.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

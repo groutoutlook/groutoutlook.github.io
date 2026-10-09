@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ruamel.yaml.clib Error · Issue #18293 · termux/termux-packages</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ruamel.yaml.clib Error · Issue #18293 · termux/termux-packages</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-09 07:53:23 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/termux">
+                        <span>termux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/termux/termux-packages/issues/18293">ruamel.yaml.clib Error · Issue #18293 · termux/termux-packages</a>
+<ul>
+<li>Recap: <code>export CFLAGS=&quot;-Wno-incompatible-function-pointer-types&quot;</code></li>
+<li>Root: Trying to install <code>jrnl</code></li>
+<li>Resolution: also need to <code>pkg i python-cryptography</code></li>
+<li>Reason: those are the only way to install jrnl on different mobile.</li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/dev-bittu/cryptography-in-termux">dev-bittu/cryptography-in-termux: This repository contains instructions on how to install Cryptography (python package)in Termux, without root.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

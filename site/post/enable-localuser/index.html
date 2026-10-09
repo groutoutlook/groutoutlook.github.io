@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Enable-LocalUser&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Enable-LocalUser&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-21 01:08:15 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/server">
+                        <span>server</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/enable-localuser"><code>Enable-LocalUser</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">net user &quot;Administrator&quot; /active:yes
+Enable-LocalUser -Name Administrator
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/set-localuser"><code>Set-LocalUser</code></a>
+<ul>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Set-LocalUser -Name RemoteUser -Password (Read-Host -AsSecureString)
+</span></code></pre>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.wsman.management/invoke-wsmanaction#-authentication">Invoke-WSManAction (Microsoft.WSMan.Management)</a>
+<ul>
+<li>and authentication methods</li>
+<li>As now, after I turn on delegating user, it worked with CredSSP</li>
+<li>Recite: Use Credential Security Support Provider (CredSSP) authentication, which
+lets the user delegate credentials. This option is designed for commands that run
+on one remote computer but collect data from or run additional commands on other
+remote computers.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/disable-localuser">Disable-LocalUser</a>
+<ul>
+<li>Reverse role with the Enable-LocalUser.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/remove-localuser">Remove-LocalUser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

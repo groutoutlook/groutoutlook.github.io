@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: instead &#x60;regedit&#x60; try &#x60;Get-ChildItem Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\WSL&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">instead &#x60;regedit&#x60; try &#x60;Get-ChildItem Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\WSL&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-28 11:20:07 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>instead <code>regedit</code> try <code>Get-ChildItem Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\WSL</code>
+<ul>
+<li>Recap: we have a registry provider in windows and powershell. It's called <code>hive</code> or <code>registry hive</code></li>
+<li>Root: <a href="https://learn.microsoft.com/powershell/scripting/samples/working-with-registry-keys">Working with registry keys</a></li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_providers#built-in-providers">about_Providers - Builtin Providers</a>
+<ul>
+<li>all the provider or drive.
+<ul>
+<li><code>c:</code>, <code>d:</code> from Filesystem::</li>
+<li><code>alias:</code>, <code>function:</code>, <code>variable:</code></li>
+<li><code>env:</code></li>
+<li><code>hklm:</code>, <code>hkcu:</code> from Registry::</li>
+<li><code>wsman:</code></li>
+<li><code>cert:</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#basic : <a href="https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives">Registry Hives - Win32 apps</a></li>
+<li><a href="https://learn.microsoft.com/powershell/scripting/samples/working-with-registry-entries">Working with registry entries</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Windows Terminal &#x60;wt&#x60; cli arguments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Windows Terminal &#x60;wt&#x60; cli arguments</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-10 11:47:03 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows">Windows Terminal <code>wt</code> cli arguments</a>
+<ul>
+<li>Recap: <code>-d &quot;$pwd&quot; -p &quot;Developer PowerShell for VS 2022&quot;</code> for example.</li>
+<li>Root: trying to compile tinyfiledialog
+<ul>
+<li>Resolution: For future reference, I should leave this <a href="https://github.com/groutoutlook/tinyfiledialogs/blob/main/justfile#L33">recipe I put it <code>just</code> here</a>.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wt</span></span><span class="meta function-call arguments shell"> new-tab<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">pwd</span></span><span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Developer PowerShell for VS 18<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>tabColor</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>#FFFFFF<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">wt</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>pos</span> 100,100<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>size</span> 10,10<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>f <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> launch a terminal with size in monospace font and pos in absolute screen parameter.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows#tab-color">Tab color format</a></li>
+</ul>
+</li>
+<li>Revisit: [2025-05-20 13:22:51] : you can bring focus back to your main terminal while
+<ul>
+<li>moving to other windows by execute a command in command palette. After it's done..
+It will move back to you.</li>
+<li>[2025-12-30 15:58:40] only way to install <code>pip install opencv-python</code> and <code>numpy</code> is spin up that developer shell so it can link with those headers.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

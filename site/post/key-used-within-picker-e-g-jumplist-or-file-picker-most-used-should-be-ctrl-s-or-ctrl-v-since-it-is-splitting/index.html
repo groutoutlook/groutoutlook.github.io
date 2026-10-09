@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Key used within picker e.g. jumplist or file picker, most used should be &#x60;Ctrl+s&#x60; or &#x60;Ctrl+v&#x60; since it is splitting.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Key used within picker e.g. jumplist or file picker, most used should be &#x60;Ctrl+s&#x60; or &#x60;Ctrl+v&#x60; since it is splitting.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-03 11:39:19 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/Helix">
+                        <span>Helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/picker">
+                        <span>picker</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Key used within picker e.g. jumplist or file picker, most used should be <code>Ctrl+s</code> or <code>Ctrl+v</code> since it is splitting.
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: <code>space f</code> open file picker <strong>from git repo directory</strong>.
+<ul>
+<li><code>space F</code> open file picker <strong>from current invocation directory</strong> i.e open <code>hx</code> in nested dir.</li>
+<li>Remember <code>:pwd</code> to check current working directory and <code>:cd</code> to change it.
+<ul>
+<li>File picker worked based on that.</li>
+</ul>
+</li>
+<li><a href="https://docs.helix-editor.com/master/pickers.html#filtering-picker-results">Pickers filtering syntax</a>
+<ul>
+<li>it's similar to how <code>fzf</code> match, which is there are spaces to separated words.</li>
+<li>Recite:
+<ul>
+<li>If a picker shows multiple columns, you may apply the filter to specific column
+by adding the column name with <code>%</code>. Column names can be shortened to any prefix,
+so <code>%p</code>, <code>%pa</code> or <code>%pat</code> all mean the same as <code>%path</code>.</li>
+<li><code>helix %p .toml !lang</code> in the global search picker search term &quot;helix&quot; within
+files with paths ending in &quot;.toml&quot; but not including &quot;lang&quot;.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Recite: Keybinding first...</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Keybinding</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Shift-Tab</code>, <code>Up</code>, <code>Ctrl+p</code></td>
+<td>Previous entry</td>
+</tr>
+<tr>
+<td><code>Tab</code>, <code>Down</code>, <code>Ctrl+n</code></td>
+<td>Next entry</td>
+</tr>
+<tr>
+<td><code>PageUp</code>, <code>Ctrl+u</code></td>
+<td>Page up</td>
+</tr>
+<tr>
+<td><code>PageDown</code>, <code>Ctrl+d</code></td>
+<td>Page down</td>
+</tr>
+<tr>
+<td><code>Home</code></td>
+<td>Go to first entry</td>
+</tr>
+<tr>
+<td><code>End</code></td>
+<td>Go to last entry</td>
+</tr>
+<tr>
+<td><code>Enter</code></td>
+<td>Open selected</td>
+</tr>
+<tr>
+<td><code>Alt+Enter</code></td>
+<td>Open selected in the background without closing the picker</td>
+</tr>
+<tr>
+<td><code>Ctrl+s</code></td>
+<td>Open split horizontally</td>
+</tr>
+<tr>
+<td><code>Ctrl+v</code></td>
+<td>Open split vertically</td>
+</tr>
+<tr>
+<td><code>Ctrl+t</code></td>
+<td>Toggle preview</td>
+</tr>
+<tr>
+<td><code>Escape</code>, <code>Ctrl+c</code></td>
+<td>Close picker</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

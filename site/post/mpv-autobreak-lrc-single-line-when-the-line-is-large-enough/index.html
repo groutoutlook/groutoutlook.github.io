@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mpv&#x60; autobreak &#x60;.lrc&#x60; single line when the line is large enough.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mpv&#x60; autobreak &#x60;.lrc&#x60; single line when the line is large enough.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-02-13 02:42:54 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mpv">
+                        <span>mpv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/subtitles">
+                        <span>subtitles</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>mpv</code> autobreak <code>.lrc</code> single line when the line is large enough.
+<ul>
+<li>Recap: kludge to have multiline rendering while awaiting the support from some random PR/MR?</li>
+<li>Run:</li>
+<li>Resolution: so just checkout this <a href="https://github.com/groutoutlook/Audio/blob/48e28fa421c4a0d95d4e1a14ae455d1f49411ded/music.playlist.rarely/originalSize/wife-gidle.lrc#L2C16-L2C16">file</a>
+<ul>
+<li>that's the only way to make mpv multi line lyric file of <code>.lrc</code>.</li>
+<li><code>&quot;&quot;</code> will make them kinda sticky, remember to delete it to have true multiple line..
+<ul>
+<li>Resolution: <a href="https://github.com/groutoutlook/Audio/blob/bfb0195426e31686269ad4856ff5f22856a4729b/music.backup.highres/rude-h2h.lrc#L17">rude h2h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

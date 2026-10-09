@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;daplink_cli&#x60; DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;daplink_cli&#x60; DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-10 07:00:51 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/daplink">
+                        <span>daplink</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://gitee.com/jhembed/daplink_cli"><code>daplink_cli</code> DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">daplink</span></span><span class="meta function-call arguments shell"> read<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>addr</span> 08000000<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>size</span> 10000<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> read.bin </span>
+</span></code></pre>
+<ul>
+<li><a href="https://vllogic.com/quick/vllink_2x#tcp-dap">Vllink 2X 快速上手 — Vllogic 文档</a></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">openocd</span></span><span class="meta function-call arguments shell"> dump_image ram.bin 0x20000000 0x10000</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://vllogic.com/example/over_local_area_network">LAN with <strong>2 VLLink Basic2, 1AP and 1STA</strong></a>
+<ul>
+<li>Require: both of them enter the same <code>SSID/Password</code> as(<strong>both put in Wireless_Device</strong>):
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">Wireless_Device_SSID=GL-MT3600BE-ace-MLO
+Wireless_Device_Password=owrt2120aA
+</span></code></pre>
+</li>
+<li>&quot;AP&quot; will need to enable <code>Mode2_STA=enable</code>. Then acquire the &quot;AP&quot; owned IP address.</li>
+<li>&quot;STA&quot; dont need to enable shit, just <code>Mode3_SERVER_IPV4=192.168.8.&lt;&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=909368817574">JLINK离线下载器V2 STM32 NXP N76E GD脱机烧录器编程烧写ARM</a></li>
+<li>Related:
+<ul>
+<li><a href="https://www.vsemec.com/page-87622.html">脱机烧录器_济南禾文智能科技有限公司</a>
+<ul>
+<li><a href="https://www.lanzouu.com/b0kobqich">EasyFlasher-META_V3</a>
+<ul>
+<li>only lanzouu is downloadable for me, baidu cloud is fucked up. pw: <code>5lxi</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#wireless <a href="https://item.taobao.com/item.htm?id=908364998010&amp;skuId=5769057460337">高速无线调试器STM32仿真编程下载器DAP烧录STM32 DAPLink仿真器</a></li>
+<li><a href="https://item.taobao.com/item.htm?id=899653281216">小智AI 外壳 stlink typec口 jtag口 1.54寸tft 0.96oled</a>
+<ul>
+<li>the guy sell the shell separatably as well. I can make something fit this case.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Fri Jul 3 17:16:44 2026] <a href="https://docs.vsemec.com/EasyFlasher-META/">EasyFlasher META Offline Programmer</a></li>
+<li>Revisit: #fpga [Sat Sep 26 10:33:55 2026] #web/ui #debugger
+<ul>
+<li><a href="https://vllogic.com/_static/tools/web_program_hercules/">Web Program Hercules FPGA - 量产工具</a>
+<ul>
+<li>Root: <a href="https://www.mfmic.com.hk/blog/performance-technology.html">Jingwei Qili/hercules FPGA announced the launch of the first domestic 22nm FPGA chip with low power consumption and high performance technology</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

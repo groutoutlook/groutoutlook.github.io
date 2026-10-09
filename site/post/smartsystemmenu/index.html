@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: SmartSystemMenu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">SmartSystemMenu</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-30 12:05:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/AlexanderPro/SmartSystemMenu">SmartSystemMenu</a>
+<ul>
+<li>Recap: Displaying and Manipulating all GUI's window options.</li>
+<li>Resolution: #keybinding <code>Alt+shift+space</code> as <code>Alt+space</code> is the place of #powertoys
+<ul>
+<li>Pro: the only thing which can enable <code>clickthrough</code>(passthrough mouse click) ablities.</li>
+<li>Con: another program to launch...</li>
+</ul>
+</li>
+<li>Revisit: 2025-05-18 02:23:37 : need for <code>clickthrough</code> so bad. Checkout <code>windhawk</code>.
+<ul>
+<li>#keybinding: click through toggle can map into <code>Ctrl+alt+f12</code>
+<ul>
+<li>Can only toggle through keybindings while you open that smart menu the first time.
+<ul>
+<li>Just the keybinding is not enough.</li>
+</ul>
+</li>
+<li>Behaviour is interesting: two windows can pass through each other. if both passthroughs
+<ul>
+<li>then nothing happened.</li>
+<li>It can pass <code>rightClick</code>, Which means I could paste directly on #terminal below.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: <a href="https://github.com/AlexanderPro/SmartContextMenu"><code>SmartContextMenu</code> for all windows in the system</a>
+<ul>
+<li>Resolution: Same functionality but a <code>Ctrl+shift+rightclick</code> away. I actually like this more than the menu.
+<ul>
+<li>Default is actually <code>Ctrl+rightclick</code> but map to this to avoid conflict with <code>trawin</code></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: easier to reach and look at since right under cursor.
+<ul>
+<li>It can modified behaviour of #wechat windows.
+<ul>
+<li>transparency of <code>alt+tab</code> windows switcher system app as well. Opacity can be changed, so cool.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Con: as now you can only toggle <code>click through</code> through cli or <code>Ctrl+shift+rightclick</code>
+<ul>
+<li>First, cant map <code>Ctrl+shift+rightclick</code> to something else yet without mouse click.
+<ul>
+<li>Due to that, once you click through, you cant really do something else other than
+<ul>
+<li>use <code>Alt+shift+space</code> from system menu to turn things back on. This does not count clickthrough state from <code>smartcontextmenu</code> so you have to manually on/off two times.</li>
+<li>or using cli as below.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#cli/option : <a href="https://github.com/AlexanderPro/SmartContextMenu#command-line-interface">all cli options</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">smartcontextmenu</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>title</span> pwsh<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>clickthrough</span> off</span>
+<span class="meta function-call shell"><span class="variable function shell">smartcontextmenu</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>titleContains</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>edge<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>transparency</span> 50 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> adjust opacity of process.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ul>
+<li>Reason: <code>smartcontextmenu --help</code> is so slow.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2>Revisit: [Wed Sep 30 20:08:04 SEAST 2026] <code>ctrl+win+alt+space</code> is how I invoke powertoys Run now.</h2>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;ForEach-Object&#x60; with more than two script blocks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;ForEach-Object&#x60; with more than two script blocks</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-29 06:18:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/foreach-object#example-9-using-foreach-object-with-more-than-two-script-blocks#simplified-syntax"><code>ForEach-Object</code> with more than two script blocks</a>
+<ul>
+<li>Recap: which is implicit <code>-begin</code> <code>-Process</code> and <code>-end</code>.</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_simplified_syntax">about_Simplified_Syntax</a>
+<ul>
+<li>Run: <code>Get-Process | % Description</code>. It needs:
+<ul>
+<li><code>-Property</code> from <code>Where-Object</code>|<code>?</code>,<code>-MemberName</code> from <code>ForEach-Object</code>|<code>%</code> only.</li>
+<li>Argument name can be omitted because it's the first position argument.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

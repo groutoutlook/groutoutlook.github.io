@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Bind &quot;Clear buffer&quot; action to Ctrl+Shift+K by carlos-zamora · Pull Request #18900 · microsoft/terminal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Bind &quot;Clear buffer&quot; action to Ctrl+Shift+K by carlos-zamora · Pull Request #18900 · microsoft/terminal</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-04 03:15:58 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/terminal/pull/18900">Bind &quot;Clear buffer&quot; action to Ctrl+Shift+K by carlos-zamora · Pull Request #18900 · microsoft/terminal</a>
+<ul>
+<li>Recap:  equivalent to <code>Clear-Host</code> in powershell and <code>clear</code> in nushell. except this one work inside application.
+<ul>
+<li>useful if you want to redraw everything in TUI. (except in <code>helix</code> since that is builtin).</li>
+</ul>
+</li>
+<li>Run: try #keybinding <code>Ctrl+shift+k</code> in <code>hx</code> or <code>nvim</code>, or even <code>tmux</code>.
+<ul>
+<li>#keybinding #config : <code>Ctrl+z</code> == <code>:reload-all</code>|<code>:rla</code>, <code>redraw</code> in <code>hx</code>.
+It's really good if you post processed using some linter or codegen tools.
+As what I do with <code>space r</code> <code>just sa</code> there. or <code>space c</code> <code>git rap</code>.
+<ul>
+<li>Reload current file in #ide/vscode <code>workbench.action.files.revert</code> == <code>ctrl+w ctrl+z</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://vi.stackexchange.com/questions/444/how-do-i-reload-the-current-file/44178#44178">reload the current file with <code>:e</code>|<code>:e!</code></a>
+<ul>
+<li>I just happened to reformat + commit changes in neovim, so I would reload a file.
+<ul>
+<li>about <code>set undoreload=0</code> : <a href="https://vi.stackexchange.com/questions/13270/vim-scp-undo-clears-file">Vim scp undo clears file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

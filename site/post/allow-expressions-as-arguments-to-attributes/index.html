@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Allow expressions as arguments to attributes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Allow expressions as arguments to attributes</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-06-17 10:35:13 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/argument">
+                        <span>argument</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just/issues/2521">Allow expressions as arguments to attributes</a>
+<ul>
+<li>Recap:</li>
+<li>Run: each <code>[arg()]</code> define one of such long/short flag. you can use multiple.
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[arg(&quot;bar&quot;, long=&quot;bar&quot;, value=&quot;hello&quot;)]
+foo bar:
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://github.com/casey/just/issues/3065">Allow <code>[arg(..., value=...)]</code> to accept expressions like global vars and <code>env()</code></a>
+<ul>
+<li><a href="https://github.com/casey/just/blob/master/GRAMMAR.md"><code>just</code> GRAMMAR / language syntax.</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2025-08-20 12:22:33] #cli/option
+<ul>
+<li>Set <code>just</code>'s recipe argument with flags: <a href="https://github.com/casey/just/pull/2806">Add support for flags and options</a>
+<ul>
+<li><a href="https://github.com/casey/just#recipe-flags-and-options">Recipe's flag and short/long option.</a></li>
+<li>[Sat Jun 27 09:58:32 2026] now with variadic
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[arg(&#39;file&#39;, long)]
+backup +file:
+  scp {{file}} me@server.com:
+</span></code></pre>
+<ul>
+<li>Invoke:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> just backup<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> FAQ.md<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> GRAMMAR.md</span>
+<span class="meta function-call shell"><span class="variable function shell">scp</span></span><span class="meta function-call arguments shell"> FAQ.md GRAMMAR.md me@server.com:</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

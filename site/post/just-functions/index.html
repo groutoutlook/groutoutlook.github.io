@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Just functions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Just functions</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-23 03:21:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just#functions">Just functions</a>
+<ul>
+<li>Recap: provide basic #filesystem functions. All builtin.
+<ul>
+<li><code>_directory()</code>,<code>arch()</code>,<code>os()</code>,<code>justfile()</code></li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>#string manipulation as:
+<ul>
+<li><code>append()</code>, <code>prepend()</code>, <code>replace()</code>, <code>replace_regex()</code></li>
+<li><code>trim()</code>,<code>trim_end()</code>,<code>trim_start()</code></li>
+<li>Case conversion functions:
+<ul>
+<li><code>capitalize()</code>, <code>lowercaser()</code>, <code>uppercase()</code></li>
+<li><code>kebabcase()</code>,<code>snakecase()</code>,<code>titlecase()</code>,<code>lowercamelcase()</code>,<code>uppercamelcase()</code></li>
+<li><code>shoutykebabcase()</code>,<code>shoutysnakecase()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#path Manipulation
+<ul>
+<li>These functions can fail, for example if a path does not have an extension, which will halt execution.
+<ul>
+<li>absolute_path(path) - Absolute path to relative path in the working directory. absolute_path(&quot;./bar.txt&quot;) in directory /foo is /foo/bar.txt.</li>
+<li>canonicalize(path) - Canonicalize path by resolving symlinks and removing ., .., and extra /s where possible.</li>
+<li>extension(path) - Extension of path. extension(&quot;/foo/bar.txt&quot;) is txt.</li>
+<li>file_name(path) - File name of path with any leading directory components removed. file_name(&quot;/foo/bar.txt&quot;) is bar.txt.</li>
+<li>file_stem(path) - File name of path without extension. file_stem(&quot;/foo/bar.txt&quot;) is bar.</li>
+<li>parent_directory(path) - Parent directory of path. parent_directory(&quot;/foo/bar.txt&quot;) is /foo.</li>
+<li>without_extension(path) - path without extension. without_extension(&quot;/foo/bar.txt&quot;) is /foo/bar.</li>
+</ul>
+</li>
+<li>Infallible ?
+<ul>
+<li><code>clean(path)</code>: Simplify path by removing extra path separators, intermediate . components, and .. where possible. clean(&quot;foo//bar&quot;) is foo/bar, clean(&quot;foo/..&quot;) is ., clean(&quot;foo/./bar&quot;) is foo/bar.</li>
+<li><code>join(a, b…)</code>: This function uses / on Unix and \ on Windows, which can be lead to unwanted behavior. The / operator, e.g., a / b, which always uses /, should be considered as a replacement unless \s are specifically desired on Windows. Join path a with path b. join(&quot;foo/bar&quot;, &quot;baz&quot;) is foo/bar/baz. Accepts two or more arguments.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Random:
+<ul>
+<li><code>choose(n, alphabet)</code> : Generate a string of n randomly selected characters from alphabet, which may not contain repeated characters. For example, choose('64', HEX) will generate a random 64-character lowercase hex string.</li>
+</ul>
+</li>
+<li>Datetime:
+<ul>
+<li><code>datetime(format)</code>: Return local time with format.</li>
+<li><code>datetime_utc(format)</code>: Return UTC time with format.</li>
+</ul>
+</li>
+<li><a href="https://just.systems/man/en/functions.html#invocation-directory">directory related function</a>
+<ul>
+<li>about current working path, the path of justfile on the recipe we invoked.</li>
+<li>by default, without <code>[no-cd]</code>, $pwd is the <code>justfile_directory()</code>, which is normally the root...
+<ul>
+<li>the common place we put <code>justfile</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://just.systems/man/en/functions.html#path-manipulation">Path Manipulation</a>
+<ul>
+<li>as <code>file_name(path)</code> or <code>file_stem(path)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related: #rust #library #filesystem/path <a href="https://github.com/casey/lexiclean"><code>lexiclean</code> library to lexically clean paths</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

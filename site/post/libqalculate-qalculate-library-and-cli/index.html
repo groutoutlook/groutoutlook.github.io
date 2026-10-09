@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;libqalculate&#x60; Qalculate! library and CLI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;libqalculate&#x60; Qalculate! library and CLI</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-13 10:02:52 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/algebra">
+                        <span>algebra</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Qalculate/libqalculate"><code>libqalculate</code> Qalculate! library and CLI</a>
+<ul>
+<li>Recap: remind me of numbat in rust.</li>
+<li>Run: #cli/option <a href="https://qalculate.github.io/manual/qalc.html"><code>qalc</code> man page</a>
+<ul>
+<li><code>qalc</code> is the fastest way to solve any non-trivial equation. sometimes we just need to quickly solve (system of) equation...</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">qalc</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>x^3 + 9 = 0<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> solve quadratic equation/function in CLI. Casio-like experience on desktop.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">qalc</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>16=82/(x/0.82-1)<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> normally used for buck/boost PMIC SoC ...</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution: give immediate results instantly.</li>
+<li>Reason: in scoop and termux as well. That's why I found it.
+<ul>
+<li>Pro: Instant results.</li>
+<li>Con: No general formula. No imaginary in an easy way. use #alternative <code>maxima</code> or <code>octave</code>.
+<ul>
+<li><code>julia</code> various toolkit could also be of used but I havent tried.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://www.wolframalpha.com/input?i=x%5E2%2B%28y-%28x%5E2%29%5E%281%2F3%29%29%5E2+%3D+1"><code>x^2+(y-(x^2)^(1/3))^2 = 1</code> - Wolfram|Alpha</a>
+<ul>
+<li>heart shape equation</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/justin-gill/wa-cli"><code>wa-cli</code>: CLI for Wolfram Alpha API</a>
+<ul>
+<li>solve differentiation integral hopefully.</li>
+</ul>
+</li>
+<li>#blog <a href="https://anarc.at/blog/2025-02-08-qalculate-hacks/#qalc-commandline-primer">Qalculate hacks - anarcat</a></li>
+</ul>
+</li>
+<li>Rival: GNU Octave , <code>maxima</code>.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-Date&#x60; | &#x60;date&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-Date&#x60; | &#x60;date&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-04-04 05:58:02 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/chrono">
+                        <span>chrono</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/time">
+                        <span>time</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-date#example-4-get-the-date-and-time-with-a-uformat-specifier"><code>Get-Date</code> | <code>date</code></a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">(Get-Date 2025-05-23).AddDays(12) #`addMinute()` method as well.
+Get-Date -UFormat &quot;%A %m/%d/%Y %R %Z&quot;
+Get-date -u %s # return unix epoch.    
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-date#example-3-get-the-date-and-time-with-a-net-format-specifier">Get the date and time with a .NET format specifier</a></li>
+<li>add date by <code>Get-Date.AddDays()</code> and many other method help arithmetic with date easier.</li>
+<li>Can Convert, compare, etc... For short, really powerful.</li>
+</ul>
+</li>
+<li>Root: <a href="https://devblogs.microsoft.com/scripting/adding-and-subtracting-dates-with-powershell/">Adding and Subtracting Dates with PowerShell - Scripting Blog</a>
+<ul>
+<li><a href="https://www.sharepointdiary.com/2021/08/powershell-get-date.html#h-how-to-convert-string-to-date-in-powershell">Convert string to date and something related</a></li>
+<li>sometime I want to get unix epoch/timestamps in <code>powershell</code> as well.</li>
+</ul>
+</li>
+<li>Related: <a href="https://stackoverflow.com/questions/74466176/how-can-i-add-minutes-to-a-date-in-powershell/74471842">How can i add minutes to a date in Powershell?</a>
+<ul>
+<li>#misc : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_type_operators#converting-the-datetime-type-is-culture-sensitive">Converting the <code>DateTime</code> type is culture-sensitive</a>
+<ul>
+<li>Run: <code>[cultureinfo]::CurrentCulture = 'vi-VN' &amp;&amp; Get-Date</code>. this will output accordingly locale for you.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Pipe &#x60;|&#x60; and &#x60;!&#x60; in &#x60;hx&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Pipe &#x60;|&#x60; and &#x60;!&#x60; in &#x60;hx&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-31 04:37:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tui">
+                        <span>tui</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.helix-editor.com/master/keymap.html?highlight=pipe#shell">Pipe <code>|</code> and <code>!</code> in <code>hx</code></a>
+<ul>
+<li>Recap: this could pipe selections to e.g. <code>numbat</code> or <code>bc</code> or <code>fend</code>(#default now).</li>
+<li>Run: alternatively it could list directory.. try <code>:pipe</code>  <code>.</code> with <code>ls</code>.</li>
+<li>Resolution: minimal config as possible, since piping is already slow.
+<ul>
+<li>Prefer to use <code>:pipe</code>|<code>|</code> only in selection(s). Other usage are quite noisy.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: other than <code>bc</code> usage to evaluate math expression inside editors:
+<ul>
+<li>I could use with <code>ov</code> or <code>bat</code> pager, press <code>v</code> to enter editor -&gt; <code>%|strip-ansi</code>
+<ul>
+<li>it remove everything annoying about ansi code if you open from bat.</li>
+</ul>
+</li>
+<li>use with <code>sed</code> or <code>awk</code> to manipulate complex #string. <code>scooter</code> hasnt supported piping yet.</li>
+</ul>
+</li>
+<li>Con:
+<ul>
+<li>It couldnt be used with <code>.ps1</code> scripts as long as I havent <code>assoc</code> them. Only <code>.cmd</code>
+<ul>
+<li>mostly because #nushell executed scripts like that.</li>
+<li>which means I sometimes has to keep <code>.cmd</code> in my <code>shims</code> folder.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: need to evaluate math when editting <code>lrc</code> files</li>
+<li>Recite: #doc:
+<ul>
+<li><code>!</code> == <code>shell_insert_output</code> Run shell command, inserting output before each selection</li>
+<li><code>|</code> == <code>shell_pipe</code> pipe into commands.</li>
+<li><code>Alt+!</code>: <code>shell_append_output</code> Run shell command, appending output after each selection</li>
+<li><code>$</code>: <code>shell_keep_pipe</code> Pipe each selection into shell command, keep selections where command returned 0</li>
+</ul>
+</li>
+<li>Related:</li>
+<li>Revisit: [Sat Aug 22 15:08:07 2026] #discussion <a href="https://lobste.rs/s/7v1wvd/reclaim_terminal">Reclaim the terminal</a>
+<ul>
+<li>Recap: unix pipe and <code>$EDITOR</code> relationship is such a toxic one. <code>vipe</code>/<code>vidir</code> introduction..</li>
+<li>Related: <a href="https://www.linusakesson.net/programming/tty/">The TTY demystified</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

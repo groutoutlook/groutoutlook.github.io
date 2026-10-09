@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: if you ever installed &#x60;mpv-git&#x60; in scoop, the directory of config is not in &#x60;$env:appdata/mpv&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">if you ever installed &#x60;mpv-git&#x60; in scoop, the directory of config is not in &#x60;$env:appdata/mpv&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-20 11:34:28 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mpv">
+                        <span>mpv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pacman/scoop">
+                        <span>pacman/scoop</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>if you ever installed <code>mpv-git</code> in scoop, the directory of config is not in <code>$env:appdata/mpv</code>
+<ul>
+<li>Recap: but in <code>$HOME\scoop\persist\mpv-git\portable_config\mpv.conf</code>.</li>
+<li>Resolution: So in my case <code>~~</code> is <code>portable_config</code></li>
+<li>Reason:</li>
+<li>Root: took me literally a year.</li>
+<li>Related:
+<ul>
+<li><a href="https://mpv.io/manual/master/#lua-scripting">lua-scripting</a>. You have to clone to <code>~~/scripts</code>
+<ul>
+<li>And rename main script to <code>main.lua</code> as well.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: CSV parsing using glaze.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">CSV parsing using glaze.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-18 02:29:54 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/csv">
+                        <span>format/csv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/serialize">
+                        <span>serialize</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/ed64d2d3fe163f6087c1c53c0c77205bb6f2a0a9/tests/csv_test/csv_test.cpp#L600">CSV parsing using glaze.</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution: as now we have a minor issue of it saving to csv files.
+<ul>
+<li><code>.float_max_write_precision = float_precision::float64</code> I have to append it to the write function.
+<ul>
+<li>So in my repo I have to roll out my own <code>write_file_csv_f64</code> to do own precision</li>
+</ul>
+</li>
+<li><code>glz::get_member</code> access values by keys(string). but as now it is as efficient as <code>::keys</code> so I dont want to use them.</li>
+<li><code>glz::for_each_field</code> iterate for each field.
+<ul>
+<li>If you want to reach the string presentation of them, do with <code>fmt::format()</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++">std<span class="punctuation accessor c++">::</span>vector<span class="punctuation section generic begin c++">&lt;</span>std<span class="punctuation accessor c++">::</span>string<span class="punctuation section generic end c++">&gt;</span> target_values<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+<span class="meta function c++"><span class="entity name function constructor c++">glz<span class="punctuation accessor c++">::</span>for_each_field</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="variable parameter c++">colorParam</span><span class="punctuation separator c++">,</span> <span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="keyword operator c">&amp;</span>target_values<span class="punctuation section brackets end c++">]</span></span><span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span><span class="keyword operator c">&amp;</span> field<span class="punctuation section group end c++">)</span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+	target_values<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">emplace_back</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="meta function-call c++"><span class="variable function c++">fmt<span class="punctuation accessor c++">::</span></span><span class="variable function c++">format</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>{}<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span>field</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+<span class="punctuation section block end c++">}</span></span><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    ```
+</span></code></pre>
+</li>
+<li><a href="https://stephenberry.github.io/glaze/recorder/">Data Recorder - Glaze Documentation</a>
+<ul>
+<li>to render a csv/json config while adjusting them in runtime. or real world data, etc...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/issues/1305">Request an option of disabling column names of csv output and writing in rowwise structure</a>
+<ul>
+<li>it's because you may want to use <a href="https://github.com/stephenberry/glaze/issues/1436">Non-Vector CSV support · Issue #1436 · stephenberry/glaze</a>
+<ul>
+<li>to write csv into files.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

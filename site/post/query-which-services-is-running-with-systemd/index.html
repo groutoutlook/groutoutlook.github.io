@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: query which services is running with &#x60;systemd&#x60;.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">query which services is running with &#x60;systemd&#x60;.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-17 06:46:40 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/systemd">
+                        <span>systemd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>query which services is running with <code>systemd</code>.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">systemctl</span></span><span class="meta function-call arguments shell"> list-units<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>type</span><span class="keyword operator assignment option shell">=</span>service<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>state</span><span class="keyword operator assignment option shell">=</span>running</span>
+
+<span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> systemctl restart NetworkManager</span>
+</span></code></pre>
+</li>
+<li>Resolution: <a href="https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl">systemd - How to list all enabled services from systemctl?</a></li>
+<li>Reason:</li>
+<li>Root: <a href="https://unix.stackexchange.com/questions/396630/the-proper-way-to-test-if-a-service-is-running-in-a-script#396638">systemd - The &quot;proper&quot; way to test if a service is running in a script</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

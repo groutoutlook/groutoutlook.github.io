@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: glaze/docs/custom-serialization</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">glaze/docs/custom-serialization</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-27 03:55:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/glaze">
+                        <span>glaze</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/serialize">
+                        <span>serialize</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/custom-serialization.md">glaze/docs/custom-serialization</a>
+<ul>
+<li>Recap: custom read/write for specific fields by two lambdas.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">custom_encoding</span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++">
+  <span class="support type stdint c">uint64_t</span> x<span class="punctuation separator c++">,</span>y<span class="punctuation separator c++">,</span>z<span class="punctuation terminator c++">;</span>
+  std<span class="punctuation accessor c++">::</span>string str<span class="punctuation terminator c++">;</span>
+  <span class="storage type c">void</span> <span class="meta method c++"><span class="entity name function c++">read_x</span></span><span class="meta method parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method parameters c++"><span class="meta group c++"><span class="storage modifier c++">const</span> std<span class="punctuation accessor c++">::</span>string<span class="keyword operator c">&amp;</span> <span class="variable parameter c++">s</span><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span><span class="meta method c++"> </span><span class="meta method c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta method c++"><span class="meta block c++">
+     x <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">stoi</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">s</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+  </span></span><span class="meta method c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+  
+  <span class="support type stdint c">uint64_t</span> <span class="meta method c++"><span class="entity name function c++">write_x</span></span><span class="meta method parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method parameters c++"><span class="meta group c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span></span><span class="meta method c++"> </span><span class="meta method c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta method c++"><span class="meta block c++">
+     <span class="keyword control c++">return</span> x<span class="punctuation terminator c++">;</span>
+  </span></span><span class="meta method c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+</span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+<span class="meta template c++"><span class="storage type template c++">template</span> <span class="punctuation section generic begin c++">&lt;</span></span><span class="meta template c++"><span class="punctuation section generic end c++">&gt;</span></span>
+<span class="meta struct c++"><span class="storage type c++">struct</span> <span class="entity name struct c++">glz</span></span><span class="meta struct c++"><span class="punctuation separator c++">:</span>:<span class="entity other inherited-class c++">meta</span><span class="punctuation section generic begin c++">&lt;</span>custom_encoding<span class="punctuation section generic end c++">&gt;</span>
+<span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta struct c++"><span class="meta block c++">
+   <span class="keyword control c++">using</span> T <span class="keyword operator assignment c">=</span> custom_encoding<span class="punctuation terminator c++">;</span>
+   <span class="storage modifier c++">static</span> <span class="storage modifier c++">constexpr</span> <span class="storage type c">auto</span> read_s <span class="keyword operator assignment c">=</span> <span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="punctuation section brackets end c++">]</span></span><span class="meta group c++"><span class="punctuation section group begin c++">(</span>T<span class="keyword operator c">&amp;</span> s<span class="punctuation separator c++">,</span> <span class="storage modifier c++">const</span> std<span class="punctuation accessor c++">::</span>string<span class="keyword operator c">&amp;</span> input<span class="punctuation section group end c++">)</span></span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span> s<span class="punctuation accessor dot c++">.</span><span class="variable other readwrite member c++">str</span> <span class="keyword operator assignment c">=</span> input<span class="punctuation terminator c++">;</span> <span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+   <span class="storage modifier c++">static</span> <span class="storage modifier c++">constexpr</span> <span class="storage type c">auto</span> write_s <span class="keyword operator assignment c">=</span> <span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span><span class="punctuation section brackets end c++">]</span></span><span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span><span class="keyword operator c">&amp;</span> s<span class="punctuation section group end c++">)</span></span> <span class="punctuation accessor arrow c++">-&gt;</span> <span class="variable other readwrite member c++">auto</span><span class="keyword operator c">&amp;</span> <span class="meta block c++"><span class="punctuation section block begin c++">{</span> <span class="keyword control c++">return</span> s<span class="punctuation accessor dot c++">.</span><span class="variable other readwrite member c++">str</span><span class="punctuation terminator c++">;</span> <span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+   <span class="storage modifier c++">static</span> <span class="storage modifier c++">constexpr</span> <span class="storage type c">auto</span> value <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">object</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>x<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> custom<span class="keyword operator comparison c">&lt;</span><span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>read_x<span class="punctuation separator c++">,</span> <span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>write_x<span class="keyword operator comparison c">&gt;</span><span class="punctuation separator c++">,</span> <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span>
+</span>                                        <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>y<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> custom<span class="keyword operator comparison c">&lt;</span><span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>read_y<span class="punctuation separator c++">,</span> <span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>y<span class="keyword operator comparison c">&gt;</span><span class="punctuation separator c++">,</span> <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span>
+</span>                                        <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>z<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> custom<span class="keyword operator comparison c">&lt;</span><span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>z<span class="punctuation separator c++">,</span> <span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>write_z<span class="keyword operator comparison c">&gt;</span>
+                                        <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>s<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span> custom<span class="keyword operator comparison c">&lt;</span><span class="keyword operator c">&amp;</span>T<span class="punctuation accessor c++">::</span>s<span class="punctuation separator c++">,</span>write_s<span class="keyword operator comparison c">&gt;</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></span><span class="meta struct c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>Resolution: very advanced one see Custom Wrappers / Custom Type Parsing instead.
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/custom-wrappers.md#custom-type-parsing">glaze/docs/custom-wrappers</a></li>
+<li><a href="https://github.com/stephenberry/glaze/tree/main#error-handling-with-glzcustom">Error handling with <code>glz::custom</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

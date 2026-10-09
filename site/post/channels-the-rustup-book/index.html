@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Channels - The rustup book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Channels - The rustup book</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-16 05:37:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust/rustup">
+                        <span>rust/rustup</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://rust-lang.github.io/rustup/concepts/channels.html">Channels - The rustup book</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> check <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> fetch information online, not update things</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> show <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> show my installed toolchains. the one in `rust-toolchain.toml` is here.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> update <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> real work, only consider using this on major hyped up update.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> remove 1.93-x86_64-pc-windows-msvc <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> that&#39;s how I roll with uninstalling old stable.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://lobste.rs/s/pmxhem/announcing_rust_1_95_0">Announcing Rust 1.95.0</a>
+<ul>
+<li>we even have a <code>cfg_select!</code> macro which act as a compile time <code>cfg</code>/ swtich case.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>search for the config which meddled with cargo/rustc version.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>1.9[0-9]<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>uuu</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>g</span><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>*.toml<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

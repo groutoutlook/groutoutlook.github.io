@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-Content&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-Content&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-20 01:18:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content"><code>Get-Content</code></a>
+<ul>
+<li>Recap: <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#example-5-get-the-content-of-an-alternate-data-stream">Get the content of an alternate data stream</a></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Content main.log -Wait
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#-wait"><code>gc</code> <code>-Wait</code> flag</a>
+<ul>
+<li>check once per second(1s cycle).</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#-totalcount"><code>-TotalCount</code> flag</a>
+<ul>
+<li>Regimen: <code>-Wait</code> with a specific number of lines. Convenient.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#-readcount"><code>-ReadCount</code> flag</a>
+<ul>
+<li>Regimen: specify amount of lines to pipelines output.</li>
+<li>Run: <code>gc .\MainJournal.md -ReadCount 3 |%{ $_.Length}</code></li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#-stream"><code>-Stream</code> flag</a></li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#example-6-get-raw-content">Get raw content</a></li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#example-8-get-file-contents-as-a-byte-array"><code>-AsByteStream</code> &amp;&amp; <code>-Raw</code> to get file contents as a byte array</a>
+<ul>
+<li>To count how many bytes to it, or to read things as system compiled lang do(C++, Rust,...)
+<ul>
+<li>quite useful e.g. <code>glaze</code> errors can only spit out the position of which token it felt like errors.
+using <code>Get-content -AsByteStream -Raw</code> to get <code>[byte[]]</code> array.
+then use <code>hx</code> to navigate to that exact char by <code>900l</code> or something.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content#-delimiter">custom get-content <code>-Delimiter</code></a>
+<ul>
+<li>not very important</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: Realized I havent got this command an entry.</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/32336756/alternative-to-get-content?noredirect=1&amp;lq=1">powershell - Alternative to Get-Content</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: 3D model exporter (STEP / GLB / BREP / XAO / PLY / STL / STPZ)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">3D model exporter (STEP / GLB / BREP / XAO / PLY / STL / STPZ)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-02 02:29:10 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/3d/step">
+                        <span>3d/step</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/doc/official">
+                        <span>doc/official</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/eeschema">
+                        <span>eeschema</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#_3d-export">3D model exporter (STEP / GLB / BREP / XAO / PLY / STL / STPZ)</a>
+<ul>
+<li>Recap: this is the #GUI guide. There are #cli method to export it as well.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scooter -s .wrl -r .step # just rgr all of them.
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>Remember: <code>${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step</code>
+<ul>
+<li><code>KICAD9_3DMODEL_DIR</code>==<code>~\scoop\apps\kicad-nightly\current\share\kicad\3dmodels\</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: I need this... for <code>glb</code> exporting to do some extra work in other CAD/simulation software.
+<ul>
+<li>Pro: Good automation, CI/CD, visual ad-hoc checking... good overall.
+<ul>
+<li>#simulation #idea: maybe in my own renderer too, thinking of some interesting works there.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: #blog <a href="https://mp.weixin.qq.com/s/FO4PmoJ0_L7fRQYdjIioXg">Detailed Explanation of Document Embedding (1): Embedding 3D models in PCB footprint libraries</a></li>
+<li>Related: <a href="https://www.cnx-software.com/2025/02/21/kicad-9-release/">KiCad 9 released with support for embedded files, tables in schematics, custom ERC/DRC errors, mouse scroll wheel actions, and more - CNX Software</a>
+<ul>
+<li><a href="https://forum.kicad.info/t/embedded-3d-models-in-footprints/62503/2">Embedded 3D models in footprints - Layout / Footprints</a></li>
+<li><a href="https://forum.kicad.info/t/how-to-attach-3d-symbols-to-personal-footprint-libraries-or-other-new-footprints-without-3d-symbols-in-the-kicad-9/63862">How to attach 3d symbols to Personal Footprint Libraries or other new footprints without 3d symbols, in the Kicad 9? - Layout / 3D Models</a></li>
+</ul>
+</li>
+<li>Revisit: [2025-10-28 19:57:05] #til KiCAD Footprint Properties -&gt; 3D models change 3D model.
+<ul>
+<li>#filesystem #convention but it can only take <code>/</code> forward slash... Unix-like path.
+Cant do mixed path <code>\</code> backslash which is prevalent when copy through #cli or explorer.
+<ul>
+<li>Absolute path with fully resolved one worked. I dont know why.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: I ask Copilot how to pop an element in an array.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">I ask Copilot how to pop an element in an array.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-23 10:33:05 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/AI">
+                        <span>AI</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/array">
+                        <span>container/array</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>I ask Copilot how to pop an element in an array.</li>
+</ul>
+<blockquote>
+<p>[!quote]</p>
+<p>Certainly! To remove an item from an array in PowerShell, you have a few options:</p>
+<ol>
+<li>Set the Item to <code>$Null</code>: If you want to remove an item at a specific index, simply assign <code>$Null</code> to that index. For example:</li>
+</ol>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash">	<span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">myArray</span></span></span></span><span class="meta function-call arguments shell"> = <span class="keyword operator regexp quantifier shell">@</span><span class="punctuation section parens begin shell">(</span>1, 2, 3, 4, 5<span class="punctuation section parens end shell">)</span></span>
+	<span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">myArray</span></span>[2]</span></span><span class="meta function-call arguments shell"> = <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">Null</span></span>  <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> This removes the item at index 2</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ol start="2">
+<li>Use Where-Object for Filtering: To remove items based on specific conditions, use Where-Object. For instance:</li>
+</ol>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash">	<span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">filteredArray</span></span></span></span><span class="meta function-call arguments shell"> = <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">myArray</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">Where-Object</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span> -ne 3 <span class="punctuation section expansion brace end shell">}</span></span>  <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Removes all occurrences of 3</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ol start="3">
+<li>ArrayList Approach: You can also use an ArrayList to modify an array more easily:</li>
+</ol>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash">	<span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">myArrayList</span></span></span></span><span class="meta function-call arguments shell"> = <span class="keyword control regexp set begin shell">[</span>System.Collections.ArrayList<span class="keyword control regexp set end shell">]</span><span class="keyword operator regexp quantifier shell">@</span><span class="punctuation section parens begin shell">(</span><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">myArray</span></span><span class="punctuation section parens end shell">)</span></span>
+	<span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">myArrayList</span></span>.Remove</span></span><span class="meta function-call arguments shell">(3</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)  <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Removes the item with value 3</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</blockquote>
+<ul>
+<li>The first method does not work if you concat them. Maybe it will be best fit for <code>select</code>/<code>filter</code>.
+<ul>
+<li>In that case,  recreate a new array. A dirty trick.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

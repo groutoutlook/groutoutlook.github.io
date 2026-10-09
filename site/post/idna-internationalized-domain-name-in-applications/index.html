@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: IDNA : Internationalized domain name *in Applications*</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">IDNA : Internationalized domain name *in Applications*</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-27 12:07:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uri">
+                        <span>uri</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/Internationalized_domain_name">IDNA : Internationalized domain name <em>in Applications</em></a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: <a href="https://github.com/whois-server-list/whois-server-list">whois-server-list for all top level domains.</a></li>
+<li>Reason:
+<ul>
+<li><a href="https://superuser.com/questions/1869878/why-do-certain-tld-do-not-have-support-for-a-whois-query">Why do certain TLD do not have support for a WHOIS query?</a>
+<ul>
+<li>because of <a href="https://wikipedia.org/wiki/Registration_Data_Access_Protocol">RDAP : Registration Data Access Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: #library #rust <a href="https://github.com/ada-url/idna-rust"><code>idna-rust</code> written entirely in Rust</a>
+<ul>
+<li>#cpp #library <a href="https://github.com/ada-url/idna"><code>idna</code> implementing the to_ascii and to_unicode function</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#cli <a href="https://github.com/saidutt46/domain-check"><code>domain-check</code> Rust library &amp; CLI for domain checks using RDAP &amp; WHOIS</a>
+<ul>
+<li>#nightly for this.</li>
+</ul>
+</li>
+<li>#standard : <a href="https://blog.apnic.net/2021/04/02/is-rdap-ready-to-replace-whois/">Is RDAP ready to replace whois? | APNIC Blog</a>
+<ul>
+<li><a href="https://www.ietf.org/archive/id/draft-ymbk-opsawg-rpsl-extref-02.html">Generalized Routing Policy Specification LanguageRPSL:  External Reference</a></li>
+</ul>
+</li>
+<li>#dns <a href="https://github.com/funilrys/PyFunceble"><code>PyFunceble</code> check the availability or syntax of domain, IP or URL.</a>
+<ul>
+<li>well for sanity check of something...? idk. this one is useless in windows tho.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

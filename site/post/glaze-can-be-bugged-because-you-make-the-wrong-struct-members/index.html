@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;glaze&#x60; can be bugged because you make the wrong struct members.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;glaze&#x60; can be bugged because you make the wrong struct members.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-18 06:40:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library/bug">
+                        <span>library/bug</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>glaze</code> can be bugged because you make the wrong struct members.
+<ul>
+<li>Recap: as long as you have more fields than the code written, you will be sucked so hard.</li>
+<li>Root: <a href="https://github.com/stephenberry/glaze/blob/main/docs/partial-read.md">glaze/docs/partial-read.md at main · stephenberry/glaze</a></li>
+<li>Resolution: <code>auto my_opt = glz::opts{.partial_read = true}</code>, call <code>glz::read&lt;my_opt&gt;(obj,buf)</code>
+<ul>
+<li>and not only that, roll your own <code>write_file_json</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>there is <code>.error_on_unknown_keys = false</code> to a more lenient parsing mode.
+<ul>
+<li><code>glz::opts{.error_on_unknown_keys = false, .partial_read = true}</code> will be very easy on errors on JSON files.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

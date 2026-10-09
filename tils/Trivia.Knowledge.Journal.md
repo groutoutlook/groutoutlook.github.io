@@ -1,1 +1,1 @@
-C:/Users/COHOTECH/hw/obs/note_Knowledge/Trivia.Knowledge.Journal.md
+D:/ProgramDataD/Notes/Obsidian/MainVault/note_Knowledge/Trivia.Knowledge.Journal.md

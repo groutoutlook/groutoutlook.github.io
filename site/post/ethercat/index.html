@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: EtherCAT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">EtherCAT</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-08 09:24:01 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/board">
+                        <span>board</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/ethernet">
+                        <span>protocol/ethernet</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
+<ul>
+<li>Recap: seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
+<li>Run:</li>
+<li>Resolution: a #protocol for PLC. every digital servo/robot arm 'll be controlled by this.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/VZ7iMurWvaWd-gsyCqdFeg">It's really open source?! The big god spends 150 yuan, hand rubbing FOC drive! It is also an EtherCAT slave development board......</a></li>
+<li>Related:
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/507197/can-you-use-cat-5-6-ethernet-cable-to-power-devices#507208">Can you use cat 5/6 ethernet cable to power devices?</a>
+<ul>
+<li>I want to PoE without dedicated hardware.</li>
+</ul>
+</li>
+<li><a href="https://www.eevblog.com/forum/beginners/power-over-cat5-what-is-the-max-current/">Power over cat5. What is the max current?</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/113253/voltage-drop-and-safe-current-load-on-cat5-cable">power - Voltage Drop and Safe Current Load on CAT5 Cable</a>
+<ul>
+<li>which you ought to push voltage much further to balance the drop.</li>
+<li>The return path(negative wire on DC, AC dont have that.) also contribute to total voltage drop.</li>
+<li>Resolution: #meta <a href="https://www.rapidtables.com/calc/wire/voltage-drop-calculator.html">Voltage Drop Calculator</a></li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Category_1_cable">Category 1 cable</a>
+<ul>
+<li>this normally appears on probes. good for nothing other than power supplying, telephone lines, etc..</li>
+<li>#meta <a href="https://wikipedia.org/wiki/Structured_cabling">Structured cabling - CAT1 -&gt; CAT8</a></li>
+<li><a href="https://wikipedia.org/wiki/ISO/IEC_11801#Category_8">ISO/IEC 11801 - Defining CAT7 and CAT8 cable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: <a href="https://www.reddit.com/r/PLC/comments/mndwk3">Why Windows on PLCs?</a>
+<ul>
+<li>#blog <a href="https://news.ycombinator.com/item?id=45605556">PoE basics and beyond: What every engineer should know</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

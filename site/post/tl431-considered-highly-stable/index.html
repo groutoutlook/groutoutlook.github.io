@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: TL431 considered highly stable?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">TL431 considered highly stable?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-18 11:36:24 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/passive">
+                        <span>passive</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/voltage/reference">
+                        <span>voltage/reference</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/732495/why-is-the-tl431-considered-highly-stable">TL431 considered highly stable?</a>
+<ul>
+<li>Recap: shunt regulator IC is technically adjustable zener diode...</li>
+<li>Run:</li>
+<li>Resolution: most used for 2.5V reference voltage.
+<ul>
+<li><a href="https://www.chenshuo.com/notes/tl431/">TL431 Analysis and Simulation - Shuo Chen's Notes</a>
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/-WPKY64uDH4COSLnkaq1rA">TL431 typical circuit</a></li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/433388/protect-adc-input-from-over-voltage-with-schottky-diodes">Protect ADC input from over-voltage with Schottky diodes</a>
+<ul>
+<li>Related: <a href="https://electronics.stackexchange.com/questions/445662/analog-input-over-voltage-protection-using-schottky-and-zener-diodes-can-it-wor?noredirect=1&amp;lq=1">Analog input over-voltage protection using Schottky and Zener Diodes. Can it work?</a>
+I always mixed up the symbol of Zener and Schottky. Fuck.
+<ul>
+<li>Zener clamp voltage, hence symbol is the clamp lerp function.
+Schottky just switch faster compare to normal PN diode. It's like comparing MOSFET and BJT</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.ti.com/lit/an/slla618/slla618.pdf">Optimization of a Shunt Reference (mostly TL431) for Flyback Converters</a>
+<ul>
+<li>Recap: Shunt Ref or Zener only needed on SSR Flyback.</li>
+<li>Root: CSC7203 DIP8 circuit.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#comparison <a href="https://www.eevblog.com/forum/projects/voltage-regulator-tubes-vs-zeners-(tubes-has-better-stability)/">Voltage regulator tubes vs zeners (tubes has BETTER stability)</a></li>
+</ul>
+</li>
+<li>Rival: #diode/zener <a href="https://handsontec.com/dataspecs/1N52xx.pdf">1N52xx 0.5W zener diode</a>
+<ul>
+<li>Recap: 1N5231B is the one that clamp voltage at 5.1V , most used one.
+<ul>
+<li>Source from them can only be something smaller than max Izm. which is 89mA in here.</li>
+<li>Lowest from the 1N5 family is 1N5220 which is 2.2V ref.</li>
+<li>1N5242 is 12V.</li>
+</ul>
+</li>
+<li>LM136A is 2.5V zener from TI, to be fair they call them reference diode.</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=858392021627">Voltage Regulator Diode 1N5220B 2.2V 1N5221B 2.4V 1N5222B 2.5V DO-35 0.5W</a></li>
+<li>Related: <a href="https://electronics.stackexchange.com/questions/246223/when-considering-zener-current-is-lower-current-generally-better/246234#246234">When considering Zener current, is lower current generally better?</a>
+<ul>
+<li>#alternative : <a href="https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/1N4933-4937.pdf">1N4933 - 1N4933-4937.pdf</a></li>
+<li>#alternative : <a href="https://components101.com/sites/default/files/component_datasheet/1n4733A%20Datasheet.pdf">1n4733A</a></li>
+</ul>
+</li>
+<li>Revisit: [Fri Aug 14 09:14:35 2026] #alternative to TL432 <a href="https://corebai.com/en/voltage-reference/cbm432-79833.html#">CBM432 Low voltage adjustable precision parallel voltage regulator-Corebai Microelectronics (Beijing) Co., Ltd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

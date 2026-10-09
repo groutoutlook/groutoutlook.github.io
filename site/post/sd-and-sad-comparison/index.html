@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;sd&#x60; and &#x60;sad&#x60; comparison</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;sd&#x60; and &#x60;sad&#x60; comparison</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-23 11:01:33 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/replacement">
+                        <span>replacement</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selection">
+                        <span>selection</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/ms-jpq/sad?#what-about-stdin---stdout"><code>sd</code> and <code>sad</code> comparison</a>
+<ul>
+<li>Recap: A short comparison, not too completed there.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Original pattern that I want to remove.</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> wait = 80</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> </span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> key_press = &quot;Tab&quot;</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> </span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> wait = 80</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> </span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> key_release = &quot;Tab&quot;</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">gci</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Filter</span> <span class="keyword operator regexp quantifier shell">*</span>.toml<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Recurse</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>
+    sd <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>(\r?\n){0,1}\[\[events\]\]\r?\n(?:\r?\n)?wait = 80\r?\n(?:\r?\n)?\[\[events\]\]\r?\n(?:\r?\n)?key_press = &quot;Tab&quot;\r?\n(?:\r?\n)?\[\[events\]\]\r?\n(?:\r?\n)?wait = 80\r?\n(?:\r?\n)?\[\[events\]\]\r?\n(?:\r?\n)?key_release = &quot;Tab&quot;(\r?\n){0,2}<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span><span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="meta function-call shell"><span class="variable function shell">r</span></span><span class="punctuation section group end shell">`</span></span>n<span class="punctuation definition string end shell">&quot;</span></span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>.FullName
+<span class="punctuation section expansion brace end shell">}</span></span>    <span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="punctuation section group end shell">`</span></span><span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span>
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Root:</li>
+<li>Related: <a href="https://github.com/beyondgrep/ack3">beyondgrep/ack3: ack is a grep-like search tool optimized for source code.</a></li>
+<li>Revisit: [2025-12-06 13:23:45] <code>scooter</code> still cant replace multi-line string.
+<ul>
+<li><a href="https://github.com/thomasschafer/scooter/issues/31">Support multi-line replacements · Issue #31 · thomasschafer/scooter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

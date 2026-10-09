@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Oracle Cloud Free Tier actually free tier?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Oracle Cloud Free Tier actually free tier?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-19 08:33:19 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/acronym">
+                        <span>acronym</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cloud">
+                        <span>cloud</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vps">
+                        <span>vps</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/selfhosted/comments/15q1o59">Oracle Cloud Free Tier actually free tier?</a>
+<ul>
+<li>Recap: yeah... Oracle. 4 arm64 vCPU, 24 GB RAM, 200 GB SSD but nowadays doesn’t really matter.</li>
+<li>Run: <a href="https://github.com/oracle/terraform-provider-oci"><code>Terraform</code> OCI : Oracle Cloud Infrastructure provider</a></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://lobste.rs/s/nfqbyh/who_do_you_use_for_hosting_your_personal">Who do you use for hosting your personal domain/mail?</a>
+<ul>
+<li>Recite:
+<ul>
+<li>Registrar: Cloudflare and Aws (1 domain each). Selection process here is “registrars
+with world class security teams”. Was google instead of aws but in an absolutely
+baffling move they just decided to sell that part of their business to squarespace.
+<ul>
+<li>Root: <a href="https://www.reddit.com/r/sysadmin/comments/14fkn6k">Google Domains is going away, now owned by SquareSpace. Well that sucks.</a></li>
+</ul>
+</li>
+<li>DNS: Cloudflare (free tier).</li>
+<li>Caching proxy: Cloudflare (free tier).</li>
+<li>Additional authentication step in front of vaultwarden: Cloudflare (free tier)</li>
+<li>Email: Migadu (paid)</li>
+<li>VPS host: GCP (free tier), running:
+<ul>
+<li>Two small not very public facing websites</li>
+<li>Vaultwarden</li>
+<li>A private yggradsil node letting my computers talk to eachother over a vpn</li>
+<li>A few personal git repos accessed via ssh</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: #blog: <a href="https://lobste.rs/s/9kpcjb/how_much_does_it_cost_run_this_blog">How Much Does It Cost To Run This Blog?</a>
+<ul>
+<li>instead of a conventional VPS, could do <code>netlify</code> because of enourmous free tier.</li>
+<li><a href="https://www.reddit.com/r/selfhosted/comments/1he9p2o">Newbie here, bought a domain using Google Workspace, now how do I access</a>
+<ul>
+<li>Google is no longer a registrar. their section of business is now belong to Squarespace.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: #service : <a href="https://www.mythic-beasts.com/">Mythic Beasts - Mythic Beasts</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

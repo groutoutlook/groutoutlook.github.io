@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: AI help me deduplicate the command entries in powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">AI help me deduplicate the command entries in powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-25 02:44:56 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/AI">
+                        <span>AI</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>AI help me deduplicate the command entries in powershell
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">function Write-UniqueHistory(){
+  $historyPath = (Get-PSReadlineOption).HistorySavePath
+  $history = Get-Content -Path $historyPath
+  $uniqueHistory = [System.Collections.Generic.List[string]]::new()
+  $seen = [System.Collections.Generic.HashSet[string]]::new()
+  # Process lines in reverse to keep the most recent occurrence
+  for ($i = $history.Count - 1; $i -ge 0; $i--) {
+      $line = $history[$i]
+      if ($seen.Add($line)) {
+          $uniqueHistory.Add($line)
+      }
+  }
+  # Reverse back to maintain original order (most recent at the bottom)
+  $uniqueHistory.Reverse()
+  # Save the deduplicated history back to the file
+  $uniqueHistory | Set-Content -Path $historyPath -Force
+  Write-Output &quot;Deduplicated history file. Original lines: $($history.Count), Unique lines: $($uniqueHistory.Count)&quot;
+}
+</span></code></pre>
+<ul>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

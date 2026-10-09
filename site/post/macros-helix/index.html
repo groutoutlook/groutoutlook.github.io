@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Macros | Helix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Macros | Helix</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-08 04:12:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/basic">
+                        <span>basic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/editor">
+                        <span>editor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://helix-editor.vercel.app/usage/macros">Macros | Helix</a>
+<ul>
+<li>Recap: after I learned that <code>C</code>/<code>Shift+c</code> spawn cursor below.. could prefix with number e.g. <code>5C</code>
+<ul>
+<li>You have to be somewhat go back to first row of letter to do this... weaker than both VS and VSCode on that.
+<ul>
+<li><code>Alt+C</code>/<code>Alt+shift+c</code> spawn cursor above.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>Cursors will collide with next one if you move them.
+<ul>
+<li>So to spawn new one, dont hesitate to <code>C</code>. You can always
+<ul>
+<li><code>,</code> to collapse to the latest spawn one. No cursor left.</li>
+<li><code>Alt+,</code> to despawn the latest one.</li>
+<li>go to end of file and collapse them manually by moving.</li>
+<li>press <code>x</code> will <code>match</code> to the end of line. you can enter select mode - <code>s</code>...
+<ul>
+<li>to select wanted characters to spawn cursors in.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>x</code>/<code>X</code> will extend to end of line <strong>without entering select mode</strong>, which can avoid some havocs
+<ul>
+<li>like accidentally insert or change or replace. Those fucked me up a lot.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>When enter select mode, dont try too hard to match new text objects.
+<ul>
+<li>You could  enter insert mode first.</li>
+<li>if you're in select mode/visual mode, <strong>press <code>v</code> to go to normal mode again</strong>.
+<ul>
+<li><code>Esc</code> will collapse all the cursors, which is bad.</li>
+</ul>
+</li>
+<li><code>v$</code> / <code>vgl</code> select to end of line.</li>
+<li><code>vgw</code> will select to words, which is even more brilliant.</li>
+<li><code>vs&lt;query&gt;&lt;prefix&gt;n</code> <strong>immediately spawn prefix number of cursors on next match</strong>.
+<ul>
+<li>which is insanely faster than navigate around honestly.</li>
+<li>You have to remember to quit visual mode on the end by pressing <code>v</code> after done matching.</li>
+<li>Do some quick navigation like <code>vt&lt;query&gt;</code> or <code>vf&lt;query&gt;</code>.</li>
+<li><code>collapse_selection</code>, Sometimes you may forgot that and seeing the highlighting trail.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://helix-editor.vercel.app/usage/text-objects#list-of-text-objects">List of Text Objects</a>
+<ul>
+<li><code>p</code>, <code>w</code>, <code>W</code>: primitive text objects.</li>
+<li><code>(</code>, <code>)</code>, <code>{</code>, <code>}</code>, <code>[</code>, <code>]</code>, <code>&lt;</code>, <code>&gt;</code>, <code>'</code>, <code>&quot;</code>, ```: pair text objects.</li>
+<li><code>g</code>: git hunk.</li>
+<li><code>f</code>, <code>t</code>, <code>a</code>, <code>c</code>, <code>t</code>, <code>g</code>: tree-sitter text objects.</li>
+</ul>
+</li>
+<li>#navigation: do <code>f/F/t/T &lt;query&gt;</code> will select until query, so remember to <code>;;</code>
+<ul>
+<li>since I alias <code>;;</code> into <code>collapse_selection.</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

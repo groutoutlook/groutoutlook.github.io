@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: well now &#x60;I&#x60; &#x3D;&#x3D; &#x60;LinkHints.activateCopyImage&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">well now &#x60;I&#x60; &#x3D;&#x3D; &#x60;LinkHints.activateCopyImage&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-25 03:01:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/browser">
+                        <span>browser</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vimium">
+                        <span>vimium</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>well now <code>I</code> == <code>LinkHints.activateCopyImage</code>
+<ul>
+<li>Recap: It can only detect most of the images on a webpages.</li>
+<li>Root:</li>
+<li>Resolution: <del>The copy form is bmp or png, who cares though.</del> Do not use them a lot anymore.
+<ul>
+<li>By the way <code>alt+w</code> is left hand <code>ctrl+backspace</code> and <code>alt+d</code> is left hand <code>ctrl+delete</code> for #vimium.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+<li>Revisit 2025-05: I map <code>+</code> and <code>=</code> to copy link text/urls as well.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> INFO: FindMode</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> L LinkHints.activateCopyLinkUrl</span>
+<span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> + LinkHints.activateCopyLinkUrl</span>
+<span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> = LinkHints.activateCopyLinkText</span>
+
+<span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> e Vomnibar.activateEditUrlInNewTab</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> INFO: search the term in search engine instead of existed internal search.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> E Vomnibar.activateEditUrlInNewTab keyword=<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>site:<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> p autoOpen</span>
+<span class="meta function-call shell"><span class="variable function shell">map</span></span> <span class="keyword operator logical continue shell">;</span><span class="meta function-call shell"><span class="variable function shell">p</span></span><span class="meta function-call arguments shell"> autoCopy</span>
+<span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> X removeRightTab <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> which remove the tab *BEFORE* it, nifty when you want to hold current tab.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ul>
+<li>
+<p>I kept forgot about how I could copy link texts...</p>
+</li>
+<li>
+<p>Root: Microsoft docs links. sometimes you have to hover into links for it to show up in hint mode as well.</p>
+</li>
+<li>
+<p>Those works pretty well with #taobao and #1688 sites. so I dont have to directly enter links to copy texts.</p>
+</li>
+<li>
+<p><code>Shift+e</code> here will enter hint mode and prompt vomnibar for you to edit.</p>
+</li>
+<li>
+<p>Revisit : 2025-05 : <a href="https://github.com/gdh1995/vimium-c/wiki/Using-Link-Hints#:~:text=If%20you%20use%20filtered%20hints%2C%20you%27ll%20have%20to%20add%20a%20modifier%20(e.g.%20%3Cc%2Dspace%3E).">change stacking order of hints by <code>Ctrl+space</code></a></p>
+<ul>
+<li>I use filtered hints (hint with text) by default so have to use <code>Ctrl+space</code>. <code>space</code> alone toggle the link which contains space itself and/or enter top level hint (hint 1).</li>
+<li>you can <code>space</code> when you are too lazy to press <code>enter</code>... although I doubt you should be that lazy.</li>
+<li>Resolution:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-vsh"><span class="text plain">map d scrollPageDown 
+map D scrollPageUp $else=&quot;goForward&quot;
+map &lt;c-d&gt; scrollPageDown $else=&quot;goBack&quot;
+map &lt;c-s-d&gt; scrollPageUp $else=&quot;goForward&quot;
+</span></code></pre>
+<ul>
+<li><code>Ctrl+d</code> and <code>Ctrl+shift+d</code> could go back hisotry if able/hit top/bottom page.</li>
+</ul>
+</li>
+<li>
+<p><code>P</code> now paste the selection directly from normal mode to new tab.</p>
+<ul>
+<li>the roundabout way is pressing <code>v</code> then <code>p</code>. Or <code>menu</code> -&gt; <code>s</code> as no plugin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-06-21 23:25:16]: <a href="https://github.com/gdh1995/vimium-c/wiki/How-to-...-on-Vomnibar">How to ... on Vomnibar · gdh1995/vimium-c Wiki</a>
+<ul>
+<li>Recite:
+<ul>
+<li>How to switch what to search in when keep Vomnibar showing?</li>
+<li>Vomnibar (and also <code>v</code> mode in browser omnibox) uses a prefix of <code>&quot;:&quot; + a letter + a space</code> to switch to other modes when showing</li>
+<li>For example, <code>Vomnibar.activate</code> searches in all by default, and a query of &quot;<code>:b foo</code>&quot; will only search &quot;<code>foo</code>&quot; in bookmarks</li>
+<li>available letters can be:
+<ul>
+<li><code>o</code>: search in all</li>
+<li><code>b</code>: only bookmarks; <code>h</code>: only history items; <code>t</code>: all tabs; <code>d</code>: only domains; <code>s</code>: only custom search engines</li>
+<li><code>B</code>: like <code>o</code>, while bookmarks have higher scores than those history items which are at least 5 miniutes ago</li>
+<li><code>w</code>: like <code>t</code>, while only search in tabs of a current window</li>
+<li><code>W</code>: like <code>w</code>, while on Firefox it will also show those tabs <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/hide">hidden in the browser level</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

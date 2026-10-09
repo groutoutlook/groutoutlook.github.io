@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;sqlitebrowser&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;sqlitebrowser&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-23 04:06:09 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/database">
+                        <span>database</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/sqlitebrowser/sqlitebrowser"><code>sqlitebrowser</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run: this has to be shimmed since the original name has space :&quot;DB Browser for SQLite&quot;
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> use sqlitebrowser to read sqlite db of Microsoft To Do.    </span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">sqlitebrowser</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">env</span></span>:LocalAppdata<span class="constant character escape shell">\P</span>ackages<span class="constant character escape shell">\M</span>icrosoft.Todos_8wekyb3d8bbwe<span class="constant character escape shell">\L</span>ocalState<span class="constant character escape shell">\A</span>ccountsRoot<span class="constant character escape shell">\3</span>75b856e26c74b1f87afeca8ed19e166<span class="constant character escape shell">\t</span>odosqlite.db</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>In Microsoft to do, tasks is stored at &quot;tasks&quot; table. You can search/filter in any column to check on that task.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #search <a href="https://www.sqlite.org/fts5.html">SQLite FTS5 Extension</a></li>
+<li>Related:
+<ul>
+<li>#alternative: <code>dbeaver</code> which is a bit more modular.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

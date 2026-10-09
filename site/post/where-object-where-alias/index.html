@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Where-Object&#x60; | &#x60;where&#x60; | &#x60;?&#x60; alias</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Where-Object&#x60; | &#x60;where&#x60; | &#x60;?&#x60; alias</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-24 01:58:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dotnet/object">
+                        <span>dotnet/object</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/where-object"><code>Where-Object</code> | <code>where</code> | <code>?</code> alias</a>
+<ul>
+<li>Recap: used with pipeline operator as <code>| ?</code> or <code>|?</code> when you want to type fast.
+<ul>
+<li>Lots of matching paradigms in here.</li>
+<li>or <code>| where</code> could also be used. this is in #nushell as well.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related: <a href="https://stackoverflow.com/questions/64187004/powershell-selecting-noteproperty-type-objects-from-object">pscustomobject - Powershell Selecting NoteProperty Type Objects From Object</a>
+<ul>
+<li><code>NoteProperty</code> as <code>PSObject</code> cant be suggested in <code>Tab</code> or <code>Ctrl+Space</code> suggestion</li>
+</ul>
+</li>
+<li>Revisit: [2025-06-19 14:37:44] : have to ripgrep no regex to here.
+<ul>
+<li>Different from <code>|%{$_}</code> as you dont use <code>$_</code>. A property or NoteProperty is enough.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

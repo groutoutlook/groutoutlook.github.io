@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Out-of-band management</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Out-of-band management</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-13 06:34:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/acronym">
+                        <span>acronym</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>OOB management : <a href="https://wikipedia.org/wiki/Out-of-band_management">Out-of-band management</a>
+<ul>
+<li>Recap: different from #remote/ssh or #remote/vnc or #remote/rdp which is accessible at runtime and is software solution which is builtin.
+<ul>
+<li>situations without accessible of those, which sometimes involve direct contact with devices.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution: KVM-IP, DRAC/iDRAC, Serial port console/terminal server.
+<ul>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/122u3js">Why don't normal Desktop and laptops don't come with IPMI/OOBM like iDrac in dell and iLO in HPE servers</a>
+<ul>
+<li>it has vPro.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: OOB/IPMI is like <del>WoL with steroid</del> network-ed monitor/screen.</li>
+<li>Root: IPMI <a href="https://www.intel.com/content/www/us/en/download/19449/intel-endpoint-management-assistant-intel-ema.html">Intel® Endpoint Management Assistant (Intel® EMA)</a>is <a href="https://wikipedia.org/wiki/Intelligent_Platform_Management_Interface">Intelligent Platform Management Interface</a>
+<ul>
+<li>which is in NUC box, server, motherboard for someone want to build homelab.</li>
+</ul>
+</li>
+<li>Related: #protocol/uart <a href="http://thenetworksherpa.com/using-ipmi-serial-lan-consoles/">Using IPMI Serial-over-LAN for server consoles - NetworkSherpa</a>
+<ul>
+<li>#terminology <a href="https://wikipedia.org/wiki/In-band_signaling">In-band signaling</a>
+sending of control information within the same band or channel used for data.
+<ul>
+<li>Recap: Good term from <a href="https://lobste.rs/s/dpm6uh/til_python_s_splitlines_does_lot_more_than">Python <code>splitlines</code> does a lot more than just newlines</a></li>
+<li>Related: HDMI has I2C interface with monitor/display to control things OOB(side-band).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: <a href="https://wikipedia.org/wiki/Intelligent_Platform_Management_Interface">IPMI: Intelligent Platform Management Interface</a>
+<ul>
+<li>#business <a href="https://www.thomas-krenn.com/en/">Buy servers for companies | Thomas-Krenn.AG</a>
+<ul>
+<li>Root: <a href="https://news.ycombinator.com/item?id=49787436">What Sun Got Wrong</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

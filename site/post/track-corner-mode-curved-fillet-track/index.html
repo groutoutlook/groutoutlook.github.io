@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Track corner mode - Curved/Fillet track</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Track corner mode - Curved/Fillet track</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-06 11:34:22 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/routing">
+                        <span>routing</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#track_corner_mode">Track corner mode - Curved/Fillet track</a>
+<ul>
+<li>Recap: I map it with <code>shift+a</code> since fillet track make corner juction become arc.</li>
+<li>Run: you can batch select track (either thru manual or <code>u</code>) and <code>shift+a</code>. At least 2 tracks need to be selected.
+<ul>
+<li>then enter radius of it.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://gitlab.com/kicad/code/kicad/-/work_items/6544">Dragging of tracks with arcs is not supported (#6544) · Issue · kicad/code/kicad</a>
+<ul>
+<li><a href="https://gitlab.com/kicad/code/kicad/-/work_items/23554">Track corner mode with an arc, can not be dragged to a bigger radius. (#23554) · Issue · kicad/code/kicad</a></li>
+</ul>
+</li>
+<li>Related: <a href="https://forum.kicad.info/t/how-to-edit-fillet/53820">How to edit fillet - Layout</a>
+<ul>
+<li>talk about how you &quot;healed&quot; a fillet tracks/shape.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

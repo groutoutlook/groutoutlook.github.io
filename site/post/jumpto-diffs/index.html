@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: jumpto-diffs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">jumpto-diffs</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-02 01:57:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/diff">
+                        <span>diff</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding/default">
+                        <span>keybinding/default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://neovim.io/doc/user/diff.html#jumpto-diffs">jumpto-diffs</a>
+<ul>
+<li>Recap:</li>
+<li>Root: what you will do when <code>nvim -d</code>, which <code>hx</code> currently <a href="https://github.com/helix-editor/helix/discussions/9235">couldnt done it yet</a></li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code><span class="text plain">  do: get changes from other window into the current window
+  dp: put the changes from current window into the other window
+  ]c: jump to the next change
+  [c: jump to the previous change
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

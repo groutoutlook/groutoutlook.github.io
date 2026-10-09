@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Cant mount drive with read-write permission when the drive is keeping hibernate files from windows.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Cant mount drive with read-write permission when the drive is keeping hibernate files from windows.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-05-01 08:05:03 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/drive">
+                        <span>drive</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mount">
+                        <span>mount</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Cant mount drive with read-write permission when the drive is keeping hibernate files from windows.
+<ul>
+<li>Recap: Which means I have to shut down to switch to the Linux state.</li>
+<li>Root: <a href="https://superuser.com/questions/1010084/windows-is-hibernated-refused-to-mount-but-fast-startup-is-disabled-on-window">Source here</a>
+<ul>
+<li><code>ntfs-3g</code> is convenient. But If I boot linux, I have to make it autorun when boot to mount <code>\media\c</code> and <code>media\d</code></li>
+<li><code>\dev\nvme1n1p3</code> is <code>\c</code></li>
+<li><code>\dev\nvme0n1p3</code> is <code>\d</code></li>
+</ul>
+</li>
+<li>Resolution: Want to unmount? <code>mount</code> and <code>umount</code></li>
+<li>Reason: I dual-boot.</li>
+<li>Related:  found <code>fuzzel</code> which can fuzzy match flatpak software in linux.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

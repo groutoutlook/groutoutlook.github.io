@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Why does git keep telling me it&#x27;s &quot;Auto packing the repository in background for optimum performance&quot;?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Why does git keep telling me it&#x27;s &quot;Auto packing the repository in background for optimum performance&quot;?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-14 02:51:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/28633956/why-does-git-keep-telling-me-its-auto-packing-the-repository-in-background-for">Why does git keep telling me it's &quot;Auto packing the repository in background for optimum performance&quot;?</a>
+<ul>
+<li>Recap: because of dangling reference objects(blobs) retained in git FS.</li>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fsck <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list any blob hanging.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> gc<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>prune</span><span class="keyword operator assignment option shell">=</span>now</span>
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason: try to make things smaller I guess.
+<ul>
+<li>could also try <code>git gc --aggressive</code></li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Component placement (&#x60;.pos&#x60;) need to have correct origin, if not you have to offset it from the top left of the board.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Component placement (&#x60;.pos&#x60;) need to have correct origin, if not you have to offset it from the top left of the board.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-27 03:32:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/prod">
+                        <span>prod</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Component placement (<code>.pos</code>) need to have correct origin, if not you have to offset it from the top left of the board.
+<ul>
+<li>Recap: AD is quite lenient about that,
+for <code>KiCad</code>, you have to move the board all the way up to the top left drawing position.</li>
+<li>Run:
+<ul>
+<li><a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_position_file_export">PCB position file export, <code>.pos</code>, <code>.ptl</code> something</a>
+<ul>
+<li>Plain text or ASCII, those are what make me suffer while doing work with <code>AT32_25</code></li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">kicad-cli</span></span><span class="meta function-call arguments shell"> pcb export pos .<span class="constant character escape shell">\F</span>T32_F6C_26.kicad_pcb<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> .<span class="constant character escape shell">\F</span>T32_F6C_26-prod<span class="constant character escape shell">\F</span>T32_F6C_26.pos</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

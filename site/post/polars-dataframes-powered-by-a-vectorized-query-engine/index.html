@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;polars&#x60; Dataframes powered by a vectorized query engine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;polars&#x60; Dataframes powered by a vectorized query engine</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-20 08:02:54 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/bigdata">
+                        <span>bigdata</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/csv">
+                        <span>format/csv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/pola-rs/polars"><code>polars</code> Dataframes powered by a vectorized query engine</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li>Pro:</li>
+<li>Con: exceedingly slow build time.</li>
+</ul>
+</li>
+<li>Root: <code>tabiew</code></li>
+<li>Related:
+<ul>
+<li>#format : <a href="https://github.com/apache/parquet-java/"><code>parquet-java</code></a>
+<ul>
+<li>which has <code>.parquet</code> file as extension.</li>
+</ul>
+</li>
+<li>#format : <a href="https://github.com/apache/hudi-rs"><code>hudi-rs</code> Hudi, with C++ &amp; Python API bindings.</a>
+<ul>
+<li>which has <a href="https://hudi.apache.org/blog/2024/07/31/hudi-file-formats/">Column File Formats: How Hudi Leverages Parquet and ORC | Apache Hudi</a>
+<ul>
+<li>not sure its extension is.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Thu Oct  8 17:59:44 SEAST 2026] <a href="https://github.com/stephenberry/glaze#json-lines-ndjson-support">JSONL: JSON Line is supported in <code>glaze</code></a>
+<ul>
+<li>Root: <a href="https://jsonltools.com/what-is-jsonl"><code>NDJSON</code> Newline Delimited JSON - One JSON Value Per Line</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Matter is TCPIP alternative, Thread is Zigbee/WiFi/BLE alternative.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Matter is TCPIP alternative, Thread is Zigbee/WiFi/BLE alternative.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-10 01:45:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/matter">
+                        <span>protocol/matter</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/thread">
+                        <span>protocol/thread</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Matter is TCPIP alternative, Thread is Zigbee/WiFi/BLE alternative.
+<ul>
+<li>Recap: Matter is Layer 7. meanwhile Thread is Layer 3-6.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>So the term should be Matter over Thread. not Thread over Matter.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/smarthome/comments/1lee6yc">Zigbee, Matter, Thread — Which Protocol Makes Sense for My Setup?</a></li>
+<li>Recite:
+<ul>
+<li>Zigbee and zwave are 1-7 as they both specify the full stack: physical layer, frame
+, network topology, connection management, encryption, and command/control.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://wikipedia.org/wiki/IEEE_802.15.4">IEEE 802.15.4</a>
+<ul>
+<li>Recap: IEEE 802.15.4 is basis of Thread/Zigbee.. esp32c6 is the first mainstream chip that I know have IP block for them.
+IT's the network layers in OSI model.</li>
+<li>Resolution: #comparison - <a href="https://www.ti.com/lit/ta/sszt716/sszt716.pdf">Thread vs. Zigbee – what’s the difference? - sszt716.pdf</a>
+<ul>
+<li>nRF54L15 is one of those supported chips.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

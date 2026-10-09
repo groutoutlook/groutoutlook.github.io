@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Hichips 10A | VIN 8-100V DC-DC 控制器HI9300</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Hichips 10A | VIN 8-100V DC-DC 控制器HI9300</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-23 01:33:18 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/buck">
+                        <span>buck</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.gs-micro.com/en-us/Hichips/1668_Hi9300.html">Hichips 10A | VIN 8-100V DC-DC 控制器HI9300</a>
+<ul>
+<li>Recap: another buck IC... no loop compensation + internal current sampling, so no R_sense as well.</li>
+<li>Run: ESSOP-10</li>
+<li>Resolution: will need an external MOS for that. mostly for 5V application.</li>
+<li>Reason: solar battery system is oftenly 96VDC...
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/449977/why-are-off-grid-solar-setups-only-12-24-48-vdc">off grid solar setups only 12, 24, 48 VDC?</a></li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related: <a href="https://www.reddit.com/r/ElectricalEngineering/comments/11z1sn3">Why do switches arc when opened under load?</a>
+<ul>
+<li>AC arcs is very different compared to DC arcs</li>
+<li>Resolution: <a href="https://electronics.stackexchange.com/questions/650524/stopping-electric-arcs-between-layers-in-pcb-big-pcb-burn">inverter - Stopping electric arcs between layers in PCB - big PCB burn</a></li>
+<li><a href="https://www.leader-solar.com/product/solar-wire-iec-62930-dc-wire-10mm2-for-solar-panels-connection.html">Solar wire IEC 62930 dc wire 10mm2 for solar panel|Mission</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

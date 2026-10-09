@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Stock</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Stock</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-08-04 02:14:13 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/erp">
+                        <span>erp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/logistic">
+                        <span>logistic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/manual/doc">
+                        <span>manual/doc</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.inventree.org/en/latest/stock/">Stock</a>
+<ul>
+<li>Recap: is location information related to parts.</li>
+<li>Run:
+<ul>
+<li>you will mostly need to care about <a href="http://localhost:7998/web/stock/location/index/stock-items">Stock Items</a>
+<ul>
+<li>Want to record (new part) stocks of a batch of component? There is a drop down menu that reflect the entry in <code>Parts</code>.</li>
+<li>Stock Location is something you only need to modify once per manufacturer switch or so.</li>
+</ul>
+</li>
+<li><a href="https://docs.inventree.org/en/stable/stock/status/">Stock Status</a></li>
+<li>after checking that, do <a href="https://docs.inventree.org/en/latest/stock/adjust/">Stock Adjustments</a>
+<ul>
+<li>there is <code>Count stock</code> to straight up change.</li>
+<li><code>Add stock</code> implying you source extras.
+in which you can add/subtract/merge transaction, lots of wicked shit.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://docs.inventree.org/en/stable/stock/#stock-locations">Stock Location</a></li>
+<li><a href="https://docs.inventree.org/en/stable/stock/status/#stock-status">Stock Status</a>
+<ul>
+<li>as you want to manage stock of them inside PCBA warehouse/multiple labs/workshop/component supplier.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://docs.inventree.org/en/latest/part/#part-stock">Parts stock</a></li>
+<li>Related:
+<ul>
+<li><a href="https://inventree.org/demo.html">InvenTree Demo with login links with role(embedded with username/password)</a></li>
+<li><a href="https://docs.inventree.org/en/stable/part/stocktake/#dashboard-widget">Part Stocktake as a graph of stock amount over time.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

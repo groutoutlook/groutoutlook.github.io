@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Chapter 17. Ncat Reference Guide | Nmap Network Scanning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Chapter 17. Ncat Reference Guide | Nmap Network Scanning</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-19 03:43:17 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://nmap.org/book/ncat-man.html#ncat-man-options-summary">Chapter 17. Ncat Reference Guide | Nmap Network Scanning</a>
+<ul>
+<li>Recap: mostly for documented detailed behaviour not meant to be used as intro.
+<ul>
+<li>...which led me to <a href="https://nmap.org/ncat/guide/index.html">Ncat Users' Guide</a></li>
+</ul>
+</li>
+<li>Run: <a href="https://nmap.org/ncat/guide/ncat-usage.html">Basic usage | Ncat Users' Guide</a>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;test&quot;,1234,&quot;Your string here&quot; |%{$_|nc 192.168.1.42 9001 -w 20s;echo &quot;Done sent $_&quot;} # ncat -l 9001 to hear.
+</span></code></pre>
+</li>
+<li>Resolution: #guide
+<ul>
+<li><code>--lua-exec</code> or <code>--exec</code> | <code>-e</code> :<a href="https://nmap.org/ncat/guide/ncat-exec.html">Command Execution | Ncat Users' Guide</a></li>
+<li><code>--listen</code> | <code>-l</code> will bind <code>ncat</code> to a port and listen in it.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://nmap.org/ncat/guide/ncat-tricks.html">Neat Tricks | Ncat Users' Guide</a></li>
+<li><a href="https://nmap.org/ncat/guide/ncat-simple-services.html">Emulating Diagnostic Services | Ncat Users' Guide</a></li>
+</ul>
+</li>
+<li>Revisit: [2025-07-04 11:34:52] : same with <code>netcat-openbsd</code> which I have to use in #termux
+<ul>
+<li>other options are <code>toybox nc</code> and <code>busybox nc</code>. <code>uutils</code> dont have <code>netcat</code>-like utils.
+<ul>
+<li>with #android you can only use builtin <code>toybox nc</code> with <code>adb</code> accessible.</li>
+</ul>
+</li>
+<li>otherwise same <strong>basic functionality</strong> as <code>ncat</code>, maybe subtract the scripting part.
+<ul>
+<li>#alternative : <code>croc</code> with <a href="https://github.com/schollz/croc#send-text">its own <code>croc send --text</code> funciton</a></li>
+</ul>
+</li>
+<li><a href="https://serverfault.com/questions/512722/how-to-automatically-close-netcat-connection-after-data-is-sent">linux - How to automatically close netcat connection after data is sent?</a>
+<ul>
+<li>in #windows I use <code>ncat</code> which is <code>-w</code>. netcat-openbsd option is <code>-q</code>.
+<ul>
+<li>which is the one I have to append on #termux.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

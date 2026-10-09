@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Selection filter&#x60; -&gt; &#x60;All items&#x60; toggle all selection.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Selection filter&#x60; -&gt; &#x60;All items&#x60; toggle all selection.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-22 12:05:55 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filtering">
+                        <span>filtering</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selection">
+                        <span>selection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>Selection filter</code> -&gt; <code>All items</code> toggle all selection.
+<ul>
+<li>Recap: so you can select all tracks with a mouse selection without fear, quicker.</li>
+<li>Resolution: Right click on a filter will show a menu &quot;only pad&quot; for example.
+<ul>
+<li>This helps copy a pad and throw around easily. Without adding them first to <code>eeschema</code>.
+<ul>
+<li>Can delete/change nets. Although you have to <code>e</code> the pad itself, not the footprint.</li>
+</ul>
+</li>
+<li>#keybinding #config <code>Alt+shift+f</code> == <code>Filter Selected Items</code> based on items type among selections.
+<ul>
+<li>So you could leave selection filter there, and press this to fine-grain results.</li>
+<li>It's having CUA's <code>Alt+letters</code> inside for quicker toggling.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://forum.kicad.info/t/how-to-changes-via-size-of-all-vias-in-my-board/49002">How to changes via size of all vias in my board? - Layout</a></li>
+<li>Related:
+<ul>
+<li>#eeschema <a href="https://docs.kicad.org/master/en/eeschema/eeschema.html#selection">Schematic Editor | 9.0 | Selection Filter</a>
+<ul>
+<li>In case you didnt see it <code>Ctrl+h</code> to toggle that side bar, to see Selection Filter.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

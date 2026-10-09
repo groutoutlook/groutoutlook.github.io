@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Configuration | Starship | modules | git_commit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Configuration | Starship | modules | git_commit</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-07 01:27:31 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/prompt">
+                        <span>prompt</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://starship.rs/config/#git-commit">Configuration | Starship | modules | git_commit</a>
+<ul>
+<li>Recap: #AI figured out how to put a small hash on prompt even when in main branches or tags.</li>
+<li>Root:</li>
+<li>Resolution: useful when I need short hash for other scripting need as open in #github
+<ul>
+<li>since short hash is for human recognization.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> INFO: it&#39;s equivalent to gh browse -c=&quot;$((git rev-parse --short HEAD).Substring(0,5))&quot;</span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> NOTE: but now very cross-platform for scripting needs.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> browse<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span><span class="keyword operator assignment option shell">=</span><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>c4a79<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+<ul>
+<li>Related: <a href="https://github.com/cli/cli/issues/6398#issuecomment-1744842391"><code>gh browse</code> opens the forked repo instead of the fork</a></li>
+<li>Run: <code>gh repo set-default</code> change default browsing one into <code>origin</code> instead of <code>upstream</code>
+<ul>
+<li>also <a href="https://github.com/cli/cli/pull/12377">set remote name e.g <code>gh repo set-default origin</code> instead of the full OWNER/REPO format</a>
+<ul>
+<li>faster to use my already appointed remoted locally.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

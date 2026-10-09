@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: 3D Viewer | PCB Editor | master | English | Documentation | KiCad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">3D Viewer | PCB Editor | master | English | Documentation | KiCad</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-20 04:09:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mouse">
+                        <span>mouse</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/navigation">
+                        <span>navigation</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/id/pcbnew/pcbnew.html#3d_viewer">3D Viewer | PCB Editor | master | English | Documentation | KiCad</a>
+<ul>
+<li>Recap: <code>scroll</code> action to zoom in / zoom out.</li>
+<li>Run: <code>Alt+3</code> open 3D viewer, In that we can <code>pinch</code>/<code>spread</code> to move view port horizontal
+<ul>
+<li>Pan camera by slide two finger Horizontally/vertically.</li>
+<li><code>d</code> <strong>toggle DNP: Do not populate</strong> component model in case you want to look at copper layer underneath</li>
+<li><code>home</code> to the original viewport (x+/y+/z+). Undo every kind of rotation as well.
+Z+ is from screen origin to our eyes.</li>
+<li><code>x</code>/<code>y</code>/<code>z</code> accordingly spin back to that axis.</li>
+<li><code>r</code>/<code>shift+r</code> rotate on z-axis.</li>
+<li>you can toggle Appearance tab in &quot;View&quot; -&gt; &quot;Show Appearance Manager&quot; (<code>alt+v s</code>)</li>
+<li><code>Space</code> Set Pivot point around which the board will be rotated (middle mouse click). UI will show animation of clicking on that point you chose.</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: Important for taking a pose out of it.</li>
+<li>Related: #terminology <a href="https://www.pftrack.com/post/types-of-camera-movement-explained">Types of camera movement explained</a>
+<ul>
+<li>#vocab : <a href="https://english.stackexchange.com/questions/177077/does-pinch-have-an-opposite">antonyms - Does 'pinch' have an opposite?</a>
+<ul>
+<li><code>pinch-out</code> or <code>spread</code> is fine,I'm actually trying to find a standard there.</li>
+</ul>
+</li>
+<li><code>pcbnew</code> equivalent of &quot;setting pivot point&quot; (i.e. more like pan camera to another point as center) is <code>f4</code>
+<ul>
+<li>Root: <a href="https://www.eevblog.com/forum/kicad/one-annoyance-of-kicad-solved-f4-drag/">One annoyance of KiCAD solved - F4 Drag</a></li>
+</ul>
+</li>
+<li>#acronym <a href="https://www.eevblog.com/forum/chat/dnp-vs-dnl/">DNP vs. DNL vs DNI</a>
+<ul>
+<li>all the same thing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Mon Aug 31 09:07:08 2026] #refactor/perf <a href="https://gitlab.com/kicad/code/kicad/-/merge_requests/2755">3D Viewer: async geometry loading in OpenGL renderer</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

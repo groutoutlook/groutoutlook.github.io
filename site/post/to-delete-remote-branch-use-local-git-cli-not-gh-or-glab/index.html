@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: to delete remote branch, use local &#x60;git&#x60; cli, not &#x60;gh&#x60; or &#x60;glab&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">to delete remote branch, use local &#x60;git&#x60; cli, not &#x60;gh&#x60; or &#x60;glab&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-12 07:29:53 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/asset">
+                        <span>asset</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/github">
+                        <span>github</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/production">
+                        <span>production</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>to delete remote branch, use local <code>git</code> cli, not <code>gh</code> or <code>glab</code>
+<ul>
+<li>Recap: quite easy as well... use <code>git push origin --delete branch-name</code></li>
+<li>Run: <code>git push origin tag v0.0.0000</code> and <code>git push origin --delete v0.0.0000</code> to add/delete tags.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git branch -D (tv branch)
+# Deleted branch 1m2.pressed.long.8corner.split.26mm (was c90ef2e).
+git push origin --delete 1m2.pressed.long.8corner.split.26mm
+git sw -c 1m2.pressed.long.8corner.split.26mm # branch from here instead of rebase... much easier.
+# codegen and stuff.
+git puo
+</span></code></pre>
+</li>
+<li>Resolution: could use <code>gitui</code> to delete tag on both local and remote. <code>shift+t</code> over log pane. and <code>D</code></li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>[2025-08-15 12:28:56 AM] #github #cli/option <a href="https://cli.github.com/manual/gh_release_upload"> gh release upload | gh ec </a>
+<ul>
+<li>Recap: literally...</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> release upload <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>25-08-15<span class="punctuation definition string end shell">&quot;</span></span> .<span class="constant character escape shell">\F</span>T32_F8P_25.zip .<span class="constant character escape shell">\F</span>T32_F8P.25.csv <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> alias `gh eu`</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this will parttake after you git push origin tag v1.0.1</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> ec v1.0.1 .<span class="constant character escape shell">\b</span>in<span class="constant character escape shell">\R</span>elease<span class="constant character escape shell">\T</span>abGroupJump.vsix<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>notes</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>self-built vsix<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/64936180/how-to-release-on-github-through-the-command-line-and-to-attach-a-large-file">How to release on GitHub through the command line and to attach a large file?</a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Thu Sep 17 02:24:59 2026] Im doing <code>git repuo</code> which both delete remote and push new now.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: File transfer over UART</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">File transfer over UART</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-26 11:42:49 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>
+<p><a href="https://www.reddit.com/r/embedded/comments/1foc6sp">File transfer over UART</a></p>
+<ul>
+<li>Recap: x-modem, y-modem, z-modem,.. x-modem is the oldest and simplest.</li>
+<li>Run:</li>
+<li>Resolution: at least your MCU has to have a concept of FS in memory first...
+<ul>
+<li>I detest FatFS though. You can try <code>littefs</code>.
+<ul>
+<li>In the mean time ... try using <a href="https://github.com/TuxSH/fatfspp"><code>fatfspp</code> Thin C++14 wrapper around devkitPro's fork of FatFs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#stm32 #board <a href="https://github.com/LONGZR007/IAP-STM32">LONGZR007/IAP-STM32: XMODEM-STM32-IAP和YMODEM传输文件</a>
+<ul>
+<li><a href="http://www.openedv.com/posts/list/11494.htm">STM32 Serial Port IAP Experiment (Battleship STM32 Development Board Experiment)-OpenEdv-Open Source Electronic Network</a></li>
+<li>IAP is In Application Programming.</li>
+</ul>
+</li>
+<li><a href="https://github.com/NCPlyn/ProtogenHelmet-ESP32">ProtogenHelmet-ESP32: Controller &amp; Remote &amp; Animator for Furry Protogen helmet using ESP32-S3 &amp; MAX7219/WS2812</a></li>
+<li><a href="https://github.com/joltwallet/esp_littlefs">esp_littlefs: LittleFS port for ESP-IDF</a>
+<ul>
+<li>work for every esp32 variant possible, p4, c6, s3, h4, etc...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>[2024-09-26 12:46:25 PM] #blog #protocol #digest</p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/embedded/comments/1fowwcu">Designing Reliability into Embedded Electronics</a></p>
+<ul>
+<li>Recap: positive reviews?</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

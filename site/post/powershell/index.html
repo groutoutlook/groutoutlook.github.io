@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;&#x60;&#x60;powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;&#x60;&#x60;powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-03 02:39:10 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">wt x-save git -C (zoxide query obs) rap
+wt x-save git -C &quot;$(zoxide query obs)&quot; rap
+</span></code></pre>
+<ul>
+<li>For first one, This create a block of JSON like this:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-json"><span class="source json"><span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
+    <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>command<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> 
+    <span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
+        <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>action<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>sendInput<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+        <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>input<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>git -C C:<span class="constant character escape json">\\</span>Users<span class="constant character escape json">\\</span>COHOTECH<span class="constant character escape json">\\</span>hw<span class="constant character escape json">\\</span>obs rap<span class="punctuation definition string end json">&quot;</span></span>
+    </span><span class="punctuation section dictionary end json">}</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+    <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>id<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>User.sendInput.3C8C8ECD<span class="punctuation definition string end json">&quot;</span></span>
+</span><span class="punctuation section dictionary end json">}</span></span>, 
+</span></code></pre>
+<ul>
+<li><a href="https://github.com/microsoft/terminal/issues/13000">megathread Snippets · Issue #13000 · microsoft/terminal</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://github.com/microsoft/terminal/pull/17329">Add a spec for &quot;Snippets&quot; by zadjii-msft · Pull Request #17329 · microsoft/terminal</a></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/microsoft/terminal/pull/16513">Add ability to save input action from command line by e82eric · Pull Request #16513 · microsoft/terminal</a></li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

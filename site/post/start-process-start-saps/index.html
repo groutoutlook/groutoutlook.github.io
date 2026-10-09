@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Start-Process&#x60; | &#x60;start&#x60; | &#x60;saps&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Start-Process&#x60; | &#x60;start&#x60; | &#x60;saps&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-08 01:05:58 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/arguments">
+                        <span>arguments</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/process">
+                        <span>process</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/start-process#example-7-specifying-arguments-to-the-process"><code>Start-Process</code> | <code>start</code> | <code>saps</code></a>
+<ul>
+<li>Recap: could use this to feed <code>-ArgumentList</code> using strings. This is clever.</li>
+<li>Root: I use <code>start -wait</code> <a href="https://stackoverflow.com/a/1742758/22954711">force scripts to wait for process's output.</a>
+<ul>
+<li><code>|</code> | pipe could also force them to wait.</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/start-process#-verb"><code>-Verb</code> flags</a>
+<ul>
+<li>which can be used for run as admin.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><code>-Environment</code> will <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/start-process#example-9-overriding-an-environment-variable-for-a-process">override environment variables for a process</a>
+<ul>
+<li>input is hash table.</li>
+</ul>
+</li>
+<li>#linux : <code>start nohup</code> will detach new process <strong>in Linux</strong> only. Windows doesnt need that.</li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/start-process#-usenewenvironment"><code>-UseNewEnvironment</code> will not reuse current session environment. Make a fresh one.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

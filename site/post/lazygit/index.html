@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;lazygit&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;lazygit&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-24 02:52:23 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>gitui</code> choke, <a href="https://github.com/jesseduffield/lazygit"><code>lazygit</code></a> work fine.
+<ul>
+<li>Recap: That lead me to make <code>lazygit</code> #nightly. of course it has <code>scoop</code> port but eh.</li>
+<li>Run: <code>space</code> to checkout. quick ngl.</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li><a href="https://github.com/libgit2/libgit2/issues/5352">reftable support for libgit2 · Issue #5352 · libgit2/libgit2</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> refs migrate<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ref-format</span><span class="keyword operator assignment option shell">=</span>files</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Root: <a href="https://github.com/osori/korean-romanizer"><code>kroman</code></a></li>
+<li>Related: <del><code>gitu</code> probably? this has something good as well</del> to be fair it choked as well due to <code>git2</code>.
+<ul>
+<li><a href="https://stackoverflow.com/questions/20151158/using-git-repository-as-a-database-backend/77836017#77836017">Using git repository as a database backend</a></li>
+</ul>
+</li>
+<li>Revisit: [Thu Oct  8 13:20:08 SEAST 2026] <a href="https://github.com/gold-silver-copper/ghtui"><code>ghtui</code> browse repos, issues, PRs and profiles like the website, and review diffs better than it</a>
+<ul>
+<li>#nightly since it looks quite good.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

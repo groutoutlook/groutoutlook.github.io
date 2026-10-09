@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about Calculated Properties</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about Calculated Properties</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-06 07:44:27 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_calculated_properties#supported-cmdlets">about Calculated Properties</a></li>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_calculated_properties#hashtable-key-definitions">Hashtable key definitions</a></li>
+</ul>
+<blockquote>
+<p>[!abstract] &gt; <code>name/label</code> - Specifies the name of the property being created. You can use name or its alias, label, interchangeably.
+<code>expression</code> - A string or script block used to calculate the value of the new property. If the expression is a string, the value is interpreted as a property name on the input object. This is a shorter option than<code> expression = { $_.&lt;PropertyName&gt; }</code>.
+<code>alignment</code> - Used by cmdlets that produce tabular output to define how the values are displayed in a column. The value must be 'left', 'center', or 'right'.
+<code>formatstring</code> - Specifies a format string that defines how the value is formatted for output. For more information about format strings, see Format types in .NET.
+<code>width</code> - Specifies the maximum width column in a table when the value is displayed. The value must be greater than 0.
+<code>depth</code> - The Depth parameter of Format-Custom specifies the depth of expansion for all properties. The depth key allows you to specify the depth of expansion per property.
+<code>ascending / descending</code> - Allows you to specify the order of sorting for one or more properties. These are boolean values.</p>
+</blockquote>
+<p>You don't need to spell out the hashtable keys as long as the specified name prefix is unambiguous. For example, you can use n instead of Name and e instead of Expression.</p>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

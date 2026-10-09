@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: What is this port labeled &quot;ONT&quot; and what does it do?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">What is this port labeled &quot;ONT&quot; and what does it do?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-22 11:51:46 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/router">
+                        <span>router</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/596558/what-is-this-port-labeled-ont-and-what-does-it-do">What is this port labeled &quot;ONT&quot; and what does it do?</a>
+<ul>
+<li>Recap: ONT : Optical Network Terminal, which is the port ISP physically route to you.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://wikipedia.org/wiki/DSL_modem">DSL :  digital subscriber line modem</a>
+<ul>
+<li>Mostly a legacy, see <a href="https://superuser.com/questions/645365/convert-wireless-adsl-modem-router-into-a-wireless-access-point-possible">Convert Wireless ADSL Modem Router into a Wireless Access Point, possible?</a></li>
+<li>[2024-07-31 11:23:28 AM] #programming DSL is also Domain Specific Language.</li>
+</ul>
+</li>
+<li><a href="https://superuser.com/questions/1643216/understanding-fiber-internet-setup-using-my-wan-port-router">Understanding Fiber Internet Setup - Using my WAN port router</a>
+<ul>
+<li>ONT device isnt needed to be one with router, some ISPs provide them separatedly.</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/GPON">GPON : gigabit-capable passive optical network</a>
+<ul>
+<li>#hardware #pcb/hdi <a href="https://dev.qmaxsys.com/case-studies/high-density-pcb-design-gpon-olt">High-Density PCB Design for a GPON OLT Networking Platform | Case Study</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: it's in VNPT gateway</li>
+<li>Related:
+<ul>
+<li>#server/nas <a href="https://superuser.com/questions/226636/what-is-the-difference-between-dlna-and-upnp">What is the difference between DLNA and UPNP?</a>
+<ul>
+<li>UPnP : Universal Plug and Play and DLNA : Digital Living Network Alliance
+The latter is more of a legacy now, it's pratically the same as the former</li>
+<li>This is more like a feature of a NAS.
+<ul>
+<li><a href="https://www.reddit.com/r/kodi/comments/10wtpvy">SMB vs NFS vs DLNA vs UPNP</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/MediaBrowser/Emby.Releases">Emby.Releases: Contains binary releases</a>
+<ul>
+<li><a href="https://emby.media/truenas-server.html"><code>Emby</code> Server for <code>TrueNAS</code></a></li>
+</ul>
+</li>
+<li><a href="https://github.com/danb35/freenas-iocage-nextcloud"><code>freenas-iocage-nextcloud</code> Script to create an iocage jail on FreeNAS for the latest Nextcloud 28 release, including Caddy, MariaDB or PostgreSQL, and Let's Encrypt</a>
+<ul>
+<li><a href="https://www.truenas.com/blog/truenas-vs-freenas-and-why-you-should-upgrade/">TrueNAS is the successor of FreeNAS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/TR-069">TR-069</a>
+<ul>
+<li>Recite: TR069 is a SOAP-based protocol for communication between an internet
+service provider ACS : auto configuration server and CPE : customer-premises
+equipment.</li>
+<li>It's in the ONT gateway.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

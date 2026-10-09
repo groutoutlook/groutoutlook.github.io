@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Add support for tabbing to embedded hyperlinks by carlos-zamora · Pull Request #18347 · microsoft/terminal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Add support for tabbing to embedded hyperlinks by carlos-zamora · Pull Request #18347 · microsoft/terminal</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-02-25 11:28:08 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/microsoft/terminal/pull/18347">Add support for tabbing to embedded hyperlinks by carlos-zamora · Pull Request #18347 · microsoft/terminal</a>
+<ul>
+<li>Recap:
+<ul>
+<li><a href="https://github.com/microsoft/terminal/issues/15194">Move to OSC 8 hyperlinks with keyboard in mark mode · Issue #15194 · microsoft/terminal</a></li>
+</ul>
+</li>
+<li>Root: many cli utils as fd, rg, yazi and eza use this.</li>
+<li>Resolution: so you can  write anything with OSC 8 to embed a link in text.
+<ul>
+<li>#keybinding : using <code>Shift+tab</code> and <code>tab</code> in mark mode to navigate the existed links in tbe console.
+<ul>
+<li>As today it hasnt come into the releases yet.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: Update 2025-04
+<ul>
+<li>I want to open links on windows terminal with  keyboard.
+<ul>
+<li>Quite easy when this update came, I  <code>Ctrl+shift+m</code> <code>Shift+tab</code> or <code>tab</code>.
+<ul>
+<li>and now I'm in the last link,  <code>Ctrl+enter</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#powershell : I use #AI to write me a simple OSC 8 formatter. It helped a lot for quick navigation within terminals.
+<ul>
+<li>#idea: Use it inside <code>Set-LocationWhere</code>, enter mark mode and quick navigate/<code>Ctrl+click</code>.
+<ul>
+<li>#nushell: For quick prototype <code>echo $&quot;\e]8;;https://example.com\e\\Click here\e]8;;\e\\&quot; | tspin</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#meta : <a href="https://github.com/Alhadis/OSC8-Adoption">Alhadis/OSC8-Adoption: List of terminal emulators that support hyperlinks (OSC 8 escape sequences).</a>
+<ul>
+<li>Along with discussions and other links.</li>
+</ul>
+</li>
+<li>#keybinding: <a href="https://github.com/microsoft/terminal/blob/35bd60782fec6486e6f7fd10ffa4d9c5de70790d/doc/specs/%234993%20-%20Keyboard%20Selection/Keyboard-Selection.md#uiux-design">Mark mode Keybinding</a>
+<ul>
+<li>#config: set <code>switchSelectionEndpoint</code> to <code>Ctrl+m</code> for easier typing.
+<ul>
+<li><code>toggleBlockSelection</code> to <code>Ctrl+alt+shift+b</code> -&gt; map to <code>Ctrl+b</code>.</li>
+<li>Default when enter mark mode is always line mode first.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-08-29 10:47:41]
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/terminal/json-fragment-extensions#distributing-media-resources-with-your-fragment-extension">Windows Terminal JSON Fragment Extensions</a>
+<ul>
+<li>which bundles shaders and icons into some kinds of path. There are extensions as JSON files as well.</li>
+</ul>
+</li>
+<li>#ansi/escape <a href="https://github.com/microsoft/terminal/pull/18826">Implement DECSET 2026 - Synchronized Output by lhecker · Pull Request #18826 · microsoft/terminal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Motor Control MCU with Built-in Predrive CH32M007 - Nanjing Qinheng Microelectronics Co., Ltd</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Motor Control MCU with Built-in Predrive CH32M007 - Nanjing Qinheng Microelectronics Co., Ltd</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-01-22 08:23:46 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ch32">
+                        <span>ch32</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/motor/bldc">
+                        <span>motor/bldc</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.wch.cn/products/CH32M007.html">Motor Control MCU with Built-in Predrive CH32M007 - Nanjing Qinheng Microelectronics Co., Ltd</a>
+<ul>
+<li>Recap: it has a high voltage LDO that takes 48V(CH32M007K8U7) built-in 48V dual-N drive and diode.
+<ul>
+<li>CH32M007E8 6-24V, P+N Drive</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.wch.cn/products/CH32M006.html">5V电机和功率驱动MCU CH32M006 - 南京沁恒微电子股份有限公司</a>
+<ul>
+<li>this has a full-bridge <strong>5V</strong>.</li>
+</ul>
+</li>
+<li>#example/repo: <a href="https://github.com/rmingon/WCH-45A-ESC"><code>WCH-45A-ESC</code> robust 45A ESC: Electronic Speed Controller design featuring WCH CH32M007 RISC-V MCU, optimized for FOC and BLDC motor control applications.</a></li>
+<li>#blog <a href="https://mp.weixin.qq.com/s/HmuaHFWP4TcqWwBM5tpWjg">BLDC introductory basics and CH32M007 inductive protocol</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: 48V LDO, enough said.</li>
+</ul>
+</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=1004122990339">Direct Shot CH32M007 CH32M007G8R6/E8R6/E8U6 Built-in Pre-Drive Motor Control MCU</a>
+<ul>
+<li>cheapest.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#board <a href="https://item.taobao.com/item.htm?">CH32M030评估板CH32M030开发板CH32M030G8R7-PMSM核心板</a>
+<ul>
+<li>CH32M030 4-29V... this is 72Mhz chip. with proper usb host/device.</li>
+<li><a href="https://unitedmotioninc.com/what-is-the-difference-between-bldc-motor-and-pmsm-motor/">What Is the Difference Between BLDC Motor and PMSM Motor?</a></li>
+</ul>
+</li>
+<li>#example/pcb <a href="https://oshwhub.com/temperslee_t/esc_m030">基于CH32M030的无人机电调设计 - 立创开源硬件平台</a>
+<ul>
+<li>Recap: BLDC driver circuits.</li>
+<li>Related: <a href="https://github.com/bird-sanctuary/bluejay">bluejay: :bird: Digital ESC firmware for controlling brushless motors in multirotors</a></li>
+<li>Rival: <a href="https://oshwhub.com/q2h2/ch32m030-140w-typec-dc">网页配置版140W Type-C受电工具（CH32M030版） - 立创开源硬件平台</a></li>
+</ul>
+</li>
+<li>Rival:
+<ul>
+<li>#ldo <a href="https://mp.weixin.qq.com/s/RE-vyr9vzCIigcY4oFEm6Q">50V high-voltage withstand voltage 2uA quiescent current LDO</a>
+<ul>
+<li>so another one can take 48V. 250mA (maximum temperature is 120ᵒC)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

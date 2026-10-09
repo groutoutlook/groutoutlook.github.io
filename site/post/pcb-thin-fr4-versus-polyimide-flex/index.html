@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: pcb - Thin FR4 versus Polyimide Flex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">pcb - Thin FR4 versus Polyimide Flex</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-03 04:10:24 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/material">
+                        <span>material</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcb">
+                        <span>pcb</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/507668/thin-fr4-versus-polyimide-flex">pcb - Thin FR4 versus Polyimide Flex</a>
+<ul>
+<li>Recap: FR4 is rigid (1.2mm-0.6mm) and Polyimide is for FPC (0.12-0.1mm)
+<ul>
+<li>#material <a href="https://wikipedia.org/wiki/Kapton">Kapton</a>
+<ul>
+<li>Related: <a href="https://www.eevblog.com/forum/projects/possibility-of-soldering-qfn-package/">Possibility of Soldering QFN package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution: 0.2mm FR4 can reach 100mm radius, no further than that. too rigid compare to FPC
+<ul>
+<li>which bend radius can be single digit(5-10mm). ( without deformation on components)</li>
+<li><a href="https://resources.altium.com/p/should-you-use-thick-or-thin-fr4-your-pcb-substrate">Should You Use Thick or Thin FR4 for Your PCB Substrate? | PCB Design Blog | Altium Designer</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:  <a href="https://www.flexiblepcbboard.com/flex-pcb-bend-radius/">Flex PCB Bend Radius: How to Calculate and Avoid Design Failures</a></li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://hilelectronic.com/fr5-pcb/">Why FR5 PCB Is Ideal for High-Performance Applications</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/727259/minimum-bend-radius-of-a-fr-4-pcb">damage - Minimum Bend Radius of a FR-4 PCB</a></li>
+<li><a href="https://www.sciencing.com/calculate-microstrain-12006847/">How To Calculate Microstrain</a></li>
+</ul>
+</li>
+<li>#trivia: Electrons don't travel at half the speed of light on FR4; they travel at around 5 to 10 cm per hour. The electromagnetic wave travels at about half the speed of light on an FR4 circuit board.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

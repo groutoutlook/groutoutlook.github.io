@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How do I check if a PowerShell module is installed?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How do I check if a PowerShell module is installed?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-03 06:10:04 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/module">
+                        <span>module</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed">How do I check if a PowerShell module is installed?</a>
+<ul>
+<li>Recap: Since I keep forgot how to check if I installed modules or not.</li>
+<li>Root:</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Module -ListAvailable -Name *excel* # result ImportExcel. Generally.
+Get-Module -ListAvailable -Name Pode #those must have modules on my watch.
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#update : <code>Update-Module *</code> will update literally everything in the existed module list.
+<ul>
+<li>As long as you have their remote available.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

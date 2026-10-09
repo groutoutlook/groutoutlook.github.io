@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: mapping to open Markdown-formatted URL (like Vim&#x27;s &#x60;gx&#x60;)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">mapping to open Markdown-formatted URL (like Vim&#x27;s &#x60;gx&#x60;)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-26 04:35:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/uri">
+                        <span>uri</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/helix-editor/helix/discussions/11155">mapping to open Markdown-formatted URL (like Vim's <code>gx</code>)</a>
+<ul>
+<li>Recap: #default as <code>mimgf</code></li>
+<li>Run: for <code>nvim</code> <code>gx</code> style, do:
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">[keys.normal.g]
+x = [&quot;match_brackets&quot;, &quot;match_brackets&quot;, &quot;move_char_right&quot;, &quot;select_mode&quot;, &quot;match_brackets&quot;, &quot;extend_char_left&quot;, &quot;goto_file&quot;]
+</span></code></pre>
+</li>
+<li>Resolution: only work in markdown links, which is a link wrap in a pair, any pair.
+<ul>
+<li>#config <code>g9</code> and <code>g0</code> to navigate next/prev links.. but only parenthesis <code>()</code> pairs.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

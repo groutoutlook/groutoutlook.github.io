@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;Get-Location&#x60; | &#x60;gl&#x60; | &#x60;pwd&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;Get-Location&#x60; | &#x60;gl&#x60; | &#x60;pwd&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-31 04:31:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-location#example-3-get-locations-using-stacks"><code>Get-Location</code> | <code>gl</code> | <code>pwd</code></a>
+<ul>
+<li>Recap: my <code>cd</code> is <code>zoxide</code> anyway. this is for script or resolving path stack value</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">pushd -Stack 2
+gl -StackName 2
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>You cant use</li>
+<li>#til: paramater/flag in powershell can be match under a good enough match, no need to be exact letter by letter match.</li>
+<li>as <code>-StackName</code> in <code>gl</code> it can be <code>-StackN</code> instead. General principle is approved on all of cmdlets
+<ul>
+<li>e.g. <code>sls -Pattern</code> can be <code>-patt</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://superuser.com/questions/593987/change-directory-to-previous-directory-in-powershell">Change directory to previous directory in Powershell</a></li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-location">Get locations using stacks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

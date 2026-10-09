@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;json-rpc&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;json-rpc&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-17 06:32:37 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/database">
+                        <span>database</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/http">
+                        <span>http</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ipc">
+                        <span>ipc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rpc">
+                        <span>rpc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/serialize">
+                        <span>serialize</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/server">
+                        <span>server</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/json-rpc.md"><code>json-rpc</code></a>
+<ul>
+<li>Recap: For event based system, implement an in-process file watcher to watch a file, treat it as event database.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li>For each event you want to invoke e.g. from <code>hx</code> editor, run recipes that add events into the databases.
+<ul>
+<li>It could be JSON or something <code>glaze</code> could take to invoke new event based on newly appended events there.</li>
+<li><code>glaze</code> also has a simple http server to take event from, so we dont have to implement file watcher,
+just reuse HTTP REST API to trigger event, more than enough.
+<ul>
+<li><code>justfile</code> recipes can <code>iwr</code> or <code>curl</code> or <code>xh</code> to the server. No file-based local dir thing.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stephenberry.github.io/glaze/rpc/jsonrpc-registry/">JSON-RPC 2.0 Registry - Glaze Documentation</a></li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/repe-rpc.md"><code>repe-rpc</code></a>
+<ul>
+<li>A customization things...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Thu Oct  1 13:46:00 SEAST 2026] #ipc on my <code>vulkan-samples</code> is in <code>just rl</code></li>
+<li>Revisit: [Thu Oct  8 18:06:06 SEAST 2026] #cli <a href="https://github.com/sile/jlot"><code>jlot</code> JSON-RPC 2.0 over JSON Lines over TCP.</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;gitui&#x60; keybinding</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;gitui&#x60; keybinding</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-01 07:40:28 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/extrawurst/gitui/blob/master/KEY_CONFIG.md"><code>gitui</code> keybinding</a>
+<ul>
+<li>Recap: I wont use vim-like keybindings. it's worse than default binding as 2024-12-12</li>
+<li>Run: #cli/option
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gitui</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span> ..<span class="constant character escape shell">\c</span>omrak <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> different directory.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution: rather than that, check all possible <a href="https://github.com/gitui-org/gitui/blob/master/src/keys/key_list.rs#L39">KeysList</a>
+<ul>
+<li>[2025-05-23 17:07:32]: <code>3f</code> open files panes and search for files in repo.
+<ul>
+<li><code>b</code> -&gt; <code>tab</code> could check remote branch name (origin/branches)...</li>
+<li><code>Ctrl+d</code> (default <code>n</code>) -&gt; diff_hunk_next which jump to next diff hunk.</li>
+<li><code>Ctrl+u</code> (default <code>p</code>) -&gt; diff_hunk_prev which jump to prev /back diff hunk.</li>
+</ul>
+</li>
+<li>[2025-05-24 06:25:19 PM] #git #command #keybinding
+<ul>
+<li><code>gitui</code>: <code>Shift+d</code> to reset that hunk.
+<ul>
+<li>Recap: very convenient in case you access files in multiple places and save it.</li>
+<li>Resolution: <code>h</code> to open help.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>/</code>(default <code>f</code>) == <code>log_find</code> fuzzy find by commit messages..
+<code>/</code>(default <code>f</code>) == <code>file_find</code> fuzzy find by file -&gt; content.
+<code>/</code>(default <code>f</code>) == <code>branch_find</code> fuzzy find in Branch UI (<code>b</code>) -&gt; then <code>/</code> to find branch from there..</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

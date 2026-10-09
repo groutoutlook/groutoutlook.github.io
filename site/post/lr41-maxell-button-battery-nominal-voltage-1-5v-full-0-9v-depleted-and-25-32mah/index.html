@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: lr41 Maxell button battery. Nominal voltage 1.5V (full) -&gt; 0.9V (depleted.) and 25-32mAh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">lr41 Maxell button battery. Nominal voltage 1.5V (full) -&gt; 0.9V (depleted.) and 25-32mAh</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-11 03:01:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/battery">
+                        <span>battery</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>lr41 Maxell button battery. Nominal voltage 1.5V (full) -&gt; 0.9V (depleted.) and 25-32mAh
+<ul>
+<li>Recap: on some ornaments.</li>
+<li>Run: ehhh.</li>
+<li>Resolution:
+<ul>
+<li><a href="https://wikipedia.org/wiki/Button_cell">Coin/Button cell</a>
+<ul>
+<li>normally you will use L type which is Alkaline based (LR) cell.</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Button_cell#Rechargeable_variants">rechargeable Button cell</a></li>
+<li>For products powered by 1.5V batteries, low-power step-up circuits should be adopted. For example, TI's TPS6030X uses a charge pump structure, adding several external capacitors to ensure 3V or 3.3V regulated output within the 0.9~1.8V input voltage range, with a power consumption of only 65uA. It also has a switch pin EN; when EN is connected to low level, the output is off, and power consumption drops below 1uA.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=738660337863">AAA-BAT-054-K01 CR2032贴片纽扣电池座 PCB固定扣模型焊盘电池盒</a></li>
+<li>Related:
+<ul>
+<li><a href="https://cdn.sparkfun.com/datasheets/Prototyping/LIR2477.pdf">3.7V/160mAh LIR2477</a>
+<ul>
+<li>#component #battery LIR2032 is CR2032 button battery, but rechargable. this link has the recharge part.
+<ul>
+<li>Deeper Root: <a href="https://github.com/nonik0/Light-Rail">nonik0/Light-Rail</a></li>
+<li><a href="https://detail.tmall.com/item.htm?id=609732789351">there is LIR2032H at 3.7V</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Silver_oxide_battery">SR: Silver oxide battery is 1.5V full as well</a>
+<ul>
+<li>for powering <a href="https://www.grepow.com/blog/continuous-glucose-monitors-battery-choose-guide.html">CGM: Continuous Glucose Monitors Battery Choose Guide | Grepow</a></li>
+</ul>
+</li>
+<li>#meta <a href="https://wikipedia.org/wiki/Button_cell#Electrochemical_system">all the common Button cell type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

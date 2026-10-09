@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;-PipelineVariable&#x60; | &#x60;-pv&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;-PipelineVariable&#x60; | &#x60;-pv&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-29 06:00:17 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_commonparameters#-pipelinevariable"><code>-PipelineVariable</code> | <code>-pv</code></a>
+<ul>
+<li>Recap: I love pipelines, so what?</li>
+<li>Run: there are parameter preference for a function to get into pipelines.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">[Parameter(
+    Position=0, Mandatory=$true, 
+    ValueFromPipeline=$true,
+    ValueFromPipelineByPropertyName=$true)
+]
+</span></code></pre>
+</li>
+<li>Resolution: Pay attention to scope.
+<ul>
+<li>This pass a variable which can be accessed through all the after block in pipes.
+The block before it knows nothing, of course.</li>
+</ul>
+</li>
+<li>Reason: better lifetime management, use this to avoid global states.</li>
+<li>Root: <a href="https://fercorrales.com/powershell-practical-use-of-pipelinevariable-common-parameter/"><code>-PipelineVariable</code> usage</a></li>
+<li>Related:
+<ul>
+<li><a href="https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_pipelines#intrinsic-line-continuation">Intrinsic line continuation</a>
+<ul>
+<li>it explains why you can insert line break in middle of the pipeline powershell.</li>
+</ul>
+</li>
+<li><code>PSNativeCommandPreserveBytePipe</code> help on e.g. pipe from <code>(iwr $uri).Content</code> to <code>tar</code>. Or <code>curl</code>.
+<ul>
+<li>Root: <a href="https://stackoverflow.com/questions/76840261/in-powershell-how-can-i-get-stdout-and-stderr-from-a-native-command-interleave">In PowerShell, how can I get stdout and stderr from a native command interleave correctly when redirecting stderr to stdout?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

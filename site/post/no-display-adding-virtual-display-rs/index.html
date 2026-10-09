@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: No display adding &#x60;virtual-display-rs&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">No display adding &#x60;virtual-display-rs&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-26 05:22:40 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/display">
+                        <span>display</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/monitor">
+                        <span>monitor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/virtual">
+                        <span>virtual</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/MolotovCherry/virtual-display-rs/issues/231">No display adding <code>virtual-display-rs</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">virtual-display-driver-cli</span></span><span class="meta function-call arguments shell"> list</span>
+<span class="meta function-call shell"><span class="variable function shell">virtual-display-driver-cli</span></span><span class="meta function-call arguments shell"> add 1920x1080@60</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> best used with DisplayConfig... Or you can use them within its own sub-command.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>Resolution: Have to install everything, from cert to inf
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">certutil -addstore -f root &quot;DriverCertificate.cer&quot;
+certutil -addstore -f TrustedPublisher &quot;DriverCertificate.cer&quot;
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Root: [2024-05-06 10:07:18 PM] first seeing them</li>
+<li>Related:
+<ul>
+<li>#doc/official : <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/display/indirect-display-driver-model-overview">Indirect Display Driver Model Overview - Windows drivers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TILs: justfile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <h1>TILs for justfile</h1>
+
+        <hr>
+
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/timestamp-attributes">timestamp]&#x60; attributes.</a></h3>
+                <span class="til-date">2026-07-26 05:56:53 PM</span>
+                <a class="til-tag" href="/category/chrono">
+                    <span>chrono</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/stdout">
+                    <span>stdout</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/i-have-a-bad-habit-of-running-something-like-cd-obs-r-l-nonstop">I have a bad habit of running something like &#x60;cd obs &amp;&amp; r l&#x60; nonstop.</a></h3>
+                <span class="til-date">2026-07-19 05:14:40 PM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/modules">Modules</a></h3>
+                <span class="til-date">2026-06-24 10:03:09 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/library">
+                    <span>library</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-user-defined-functions">&#x60;just&#x60; User Defined Functions.</a></h3>
+                <span class="til-date">2026-06-22 09:18:54 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/allow-expressions-as-arguments-to-attributes">Allow expressions as arguments to attributes</a></h3>
+                <span class="til-date">2026-06-17 10:35:13 AM</span>
+                <a class="til-tag" href="/category/argument">
+                    <span>argument</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/set-lists-tracking-issue-issue-3377-casey-just">&#x60;set lists&#x60; tracking issue · Issue #3377 · casey/just</a></h3>
+                <span class="til-date">2026-06-15 09:01:58 AM</span>
+                <a class="til-tag" href="/category/argument">
+                    <span>argument</span>
+                </a>
+                <a class="til-tag" href="/category/container/list">
+                    <span>container/list</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/string">
+                    <span>string</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/forward-args-from-recipes-to-recipes">forward &#x60;*args&#x60; from recipes to recipes.</a></h3>
+                <span class="til-date">2026-06-13 08:27:19 AM</span>
+                <a class="til-tag" href="/category/argument">
+                    <span>argument</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-run-markdown-recipes-now-as-long-as-it-s-in-just-codeblock">&#x60;just&#x60; run markdown recipes now, as long as it&#x27;s in &#x60;just&#x60; codeblock.</a></h3>
+                <span class="til-date">2026-06-10 10:27:18 AM</span>
+                <a class="til-tag" href="/category/format/markdown">
+                    <span>format/markdown</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/show-recipes-not-run-in-just">show recipes not run in &#x60;just&#x60;</a></h3>
+                <span class="til-date">2026-04-28 01:26:25 PM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/add-env-attribute-to-set-environment-variables-for-recipes-by-neunenak-pull-request-2957-casey-just">Add env attribute to set environment variables for recipes by neunenak · Pull Request #2957 · casey/just</a></h3>
+                <span class="til-date">2026-03-06 06:58:22 PM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/allow-requiring-arguments-to-match-patterns-by-casey-pull-request-3000-casey-just">Allow requiring arguments to match patterns by casey · Pull Request #3000 · casey/just</a></h3>
+                <span class="til-date">2025-12-11 04:21:34 PM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/metadata-attribute-for-adding-custom-metadata-to-recipes">metadata]&#x60; attribute for adding custom metadata to recipes</a></h3>
+                <span class="til-date">2025-09-04 10:46:59 AM</span>
+                <a class="til-tag" href="/category/attribute">
+                    <span>attribute</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/show-top-10-largest-items-from-git-history">show top 10 largest items from git history</a></h3>
+                <span class="til-date">2025-08-28 02:59:43 PM</span>
+                <a class="til-tag" href="/category/bash">
+                    <span>bash</span>
+                </a>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/git">
+                    <span>git</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/reusing-logic-in-recipes">Reusing logic in recipes</a></h3>
+                <span class="til-date">2025-08-23 09:19:02 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-scripts">&#x60;just&#x60; Scripts</a></h3>
+                <span class="til-date">2025-08-18 09:35:28 AM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/exported-arguments-avoiding-argument-splitting-just-programmer-s-manual">Exported Arguments - Avoiding Argument Splitting - Just Programmer&#x27;s Manual</a></h3>
+                <span class="til-date">2025-06-12 11:35:28 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/fallback-to-parent-justfiles-just-programmer-s-manual">Fallback to parent justfiles - Just Programmer&#x27;s Manual</a></h3>
+                <span class="til-date">2025-06-12 11:32:27 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/library">
+                    <span>library</span>
+                </a>
+                <a class="til-tag" href="/category/module">
+                    <span>module</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/groups-just-programmer-s-manual">Groups - Just Programmer&#x27;s Manual</a></h3>
+                <span class="til-date">2025-06-04 09:43:04 AM</span>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/script-attribute-and-set-script-interpreter">script(…)]&#x60; attribute and &#x60;set script-interpreter&#x60;</a></h3>
+                <span class="til-date">2025-05-24 11:15:07 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/attributes">attributes</a></h3>
+                <span class="til-date">2025-05-09 08:36:24 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/running-recipes-at-the-end-of-a-recipe">Running Recipes at the End of a Recipe</a></h3>
+                <span class="til-date">2025-05-07 01:04:50 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/setting-variables-from-cli">setting variables from cli</a></h3>
+                <span class="til-date">2025-04-24 11:49:03 AM</span>
+                <a class="til-tag" href="/category/arguments">
+                    <span>arguments</span>
+                </a>
+                <a class="til-tag" href="/category/cli/option">
+                    <span>cli/option</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/substitution">substitution</a></h3>
+                <span class="til-date">2025-04-24 11:36:36 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+                <a class="til-tag" href="/category/variable">
+                    <span>variable</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/conditional-if-else-in-recipe">conditional &#x60;if/else&#x60; in recipe</a></h3>
+                <span class="til-date">2025-04-24 11:16:13 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+                <a class="til-tag" href="/category/syntax">
+                    <span>syntax</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/more-about-recipe-dependencies-execution-sequence">more about recipe dependencies&#x27; execution sequence.</a></h3>
+                <span class="til-date">2025-04-24 10:59:51 AM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/scripting">
+                    <span>scripting</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/pass-arguments-to-dependency">pass arguments to dependency</a></h3>
+                <span class="til-date">2025-04-24 10:52:08 AM</span>
+                <a class="til-tag" href="/category/arguments">
+                    <span>arguments</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-functions">Just functions</a></h3>
+                <span class="til-date">2025-04-23 03:21:46 PM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/run-just-recipes-in-current-powershell-session">Run &#x60;just&#x60; recipes in current powershell session.</a></h3>
+                <span class="til-date">2025-04-10 12:44:33 PM</span>
+                <a class="til-tag" href="/category/idea">
+                    <span>idea</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/powershell">
+                    <span>powershell</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/to-pass-arguments-into-commands-through-cli-have-to-pass-the-whole-things-as-a-string-add-double-single-quotes">to pass arguments into commands through cli, have to pass the whole things as a string(add double/single quotes)</a></h3>
+                <span class="til-date">2025-01-10 11:59:52 AM</span>
+                <a class="til-tag" href="/category/cli">
+                    <span>cli</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/run-recipe-in-recipe">run recipe in recipe</a></h3>
+                <span class="til-date">2024-10-13 02:55:21 PM</span>
+                <a class="til-tag" href="/category/filesystem">
+                    <span>filesystem</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-how-i-organize-large-rust-programs">just: how i organize large rust programs</a></h3>
+                <span class="til-date">2024-09-12 03:09:51 PM</span>
+                <a class="til-tag" href="/category/blog">
+                    <span>blog</span>
+                </a>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/rust">
+                    <span>rust</span>
+                </a>
+                <a class="til-tag" href="/category/task">
+                    <span>task</span>
+                </a>
+            </header>
+        </div>
+        <div class="til">
+            <header class="til-header">
+                <h3><a class="til-title" href="/post/just-examples-pre-commit-just-at-master-casey-just">just/examples/pre-commit.just at master · casey/just</a></h3>
+                <span class="til-date">2024-07-29 04:43:17 PM</span>
+                <a class="til-tag" href="/category/justfile">
+                    <span>justfile</span>
+                </a>
+                <a class="til-tag" href="/category/runner">
+                    <span>runner</span>
+                </a>
+                <a class="til-tag" href="/category/utils">
+                    <span>utils</span>
+                </a>
+            </header>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;bind9&#x60; which is &#x60;dig&#x60; and &#x60;nslookup&#x60; source code.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;bind9&#x60; which is &#x60;dig&#x60; and &#x60;nslookup&#x60; source code.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-30 10:03:06 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/libc">
+                        <span>libc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/og">
+                        <span>og</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/http">
+                        <span>protocol/http</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://gitlab.isc.org/isc-projects/bind9"><code>bind9</code> which is <code>dig</code> and <code>nslookup</code> source code.</a>
+<ul>
+<li>Recap: there is <code>libbind</code> as well but do you really need that..?
+<ul>
+<li><code>scoop install bind</code> surprisingly. It's not <code>bind9</code> or anything..</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/93808/dig-vs-nslookup">dns - dig vs nslookup</a>
+<ul>
+<li><code>nslookup</code> is obsoleted. Although it's the only thing come default in #windows.</li>
+</ul>
+</li>
+<li>#comparison <a href="https://techcommunity.microsoft.com/blog/networkingblog/resolve-dnsname-vs-nslookup-in-windows/4483858">Resolve-DnsName vs. nslookup in Windows | Microsoft Community Hub</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: <a href="https://news.ycombinator.com/item?id=43537685">Is BIND9 suitable as a recursive resolver in 2025?</a>
+<ul>
+<li>status quo is still SOTA.... what a sad state of affair.</li>
+</ul>
+</li>
+<li>Con: <code>dig</code> is in #wsl only. see <a href="https://www.reddit.com/r/dns/comments/15tu11f"><code>dig</code> in Windows</a></li>
+</ul>
+</li>
+<li>Root: #AI tell me about this.</li>
+<li>Related: it's not related to <code>chdig</code> which is for Clickhouse analytics database.
+<ul>
+<li><a href="https://github.com/isc-projects/bind9#build">mirror on github</a></li>
+<li>#alternative : #python : <a href="https://github.com/shuque/pydig"><code>pydig</code> DNS query tool</a></li>
+<li>#predecessor : <a href="https://github.com/draios/sysdig"><code>sysdig</code> Linux system exploration and troubleshooting tool with first class support for containers</a></li>
+<li>#powershell : <a href="https://learn.microsoft.com/powershell/module/dnsclient/resolve-dnsname?view=windowsserver2022-ps"><code>Resolve-DnsName</code> (DnsClient)</a>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/dnsclient/resolve-dnsname?view=windowsserver2025-ps#-dnsonly"><code>-dnsonly</code></a>
+<ul>
+<li>most useful since you can check DNS and not NETBIOS or LLMNR</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/module/dnsclient/resolve-dnsname?view=windowsserver2025-ps#-llmnrfallback"><code>-LlmnrFallback</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: I use <del><code>dog</code></del> <code>q</code> for that #crossplatform utils.
+<ul>
+<li>#cli <code>dnsutils</code> is based on <code>bind</code> codebase which have to <code>pacman -S dnsutils</code>
+<ul>
+<li>#pacman/scoop : <code>bind</code> contained all necessary binaries in Windows.</li>
+</ul>
+</li>
+<li><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-and-configuring-a-bind-dns-server_networking-infrastructure-services">Chapter 1. Setting up and configuring a BIND DNS server | Managing networking infrastructure services | Red Hat Enterprise Linux | 9 | Red Hat Documentation</a></li>
+<li><a href="https://computingforgeeks.com/bind-vs-dnsmasq-vs-powerdns-vs-unbound/?__cf_chl_f_tk=VM0l6M3b.ypIA9lBwEAAQxMdlOB3Bj2nat89lOkduYs-1782983895-1.0.1.1-MHBTBUY2sMPRSDS1lU4K4.7DQCzBBSOgwOl1fkE8H3Q">BIND vs Dnsmasq vs PowerDNS vs Unbound [Benchmark]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

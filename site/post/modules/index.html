@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Modules</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Modules</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-06-24 10:03:09 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just#modules">Modules</a>
+<ul>
+<li>Recap: create <code>foo.just</code> -&gt; declare in file <code>mod foo</code>, can be optional by <code>mod?</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">mod bar
+mod? foo &#39;bar.just&#39;
+
+a:
+  @echo A
+# bar.just
+b:
+  @echo B
+</span></code></pre>
+<ul>
+<li>Invoke:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"> bar b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just bar::b -like kinda pathing/namespacing is okay too.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"> foo::b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> okay too...</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/casey/just#aliases">we can do alias on modules now.</a>
+<ul>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">mod bar
+alias f := bar
+</span></code></pre>
+<ul>
+<li>Invoke:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"> f b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just f::b , whatever.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>the only thing which is like <code>mod?</code> is <code>import?</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

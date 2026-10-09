@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Can someone explain like i&#x27;m five why we use Vectors in Rust the way we use Slices in Go?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Can someone explain like i&#x27;m five why we use Vectors in Rust the way we use Slices in Go?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-06 10:16:44 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container">
+                        <span>container</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/golang">
+                        <span>golang</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/rust/comments/vi8zze">Can someone explain like i'm five why we use Vectors in Rust the way we use Slices in Go?</a></li>
+<li>Brief: Go's <code>slice</code> is Rust and C++'s <code>vector</code>.
+<ul>
+<li>but Rust's <code>slice</code> is C++ <code>std::span</code>. <code>std::slice</code> is</li>
+</ul>
+</li>
+<li><a href="https://stackoverflow.com/questions/65312727/why-in-particular-should-i-rather-pass-a-stdspan-than-a-stdvector-to-a-func">C++ <code>std::span</code> instead of <code>std::vector &amp;</code></a></li>
+<li>Origin: finding information about <code>std::slice</code></li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

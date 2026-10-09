@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Why do LEDs require a constant current source and not a constant voltage source as power supplies?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Why do LEDs require a constant current source and not a constant voltage source as power supplies?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-27 10:49:25 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ee">
+                        <span>ee</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://electronics.stackexchange.com/questions/298564/why-do-leds-require-a-constant-current-source-and-not-a-constant-voltage-source">Why do LEDs require a constant current source and not a constant voltage source as power supplies?</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/393903/tl431-constant-sinking-current">TL431 Constant Sinking current circuit</a>
+<ul>
+<li>easier to do with BJT since BJT is current-controlled.</li>
+</ul>
+</li>
+<li><a href="https://www.ti.com/lit/an/snoaa46a/snoaa46a.pdf">Precision Current Sources and Sinks Using Voltage References (Rev. A)</a></li>
+<li>Tbf LED is the only kind of devices that need to be regulated by current I have worked before... Almost no logic device need constant current.
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/298570/why-cant-electronic-systems-use-constant-current-power-source-and-vary-the-volt">Why can't electronic systems use constant current power source and vary the voltage as power consumption varies?</a></li>
+<li>Best explaination is right here: voltage is the cause, and the current is the effect.</li>
+<li>Active transducers generate electric current in response to an external stimulus which serves as the output signal without the need of an additional energy source.
+Such examples are a photodiode, and a piezoelectric sensor, photovoltaic, thermocouple.
+<ul>
+<li>those current can be read and processed by ADC.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/437111/how-do-i-design-a-constant-current-load-circuit">How do I design a constant current load circuit?</a></li>
+<li>Related:
+<ul>
+<li>#blog : <a href="https://mp.weixin.qq.com/s/X3GS3GLbu1QuNLLC1XpBCg">8-channel 16-bit 200mA current source design since DAC cant source that much, add a FET.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

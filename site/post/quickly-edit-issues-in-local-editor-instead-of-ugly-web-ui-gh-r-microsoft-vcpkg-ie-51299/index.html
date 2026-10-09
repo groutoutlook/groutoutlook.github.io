@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Quickly edit issues in local editor instead of ugly web UI. &#x60;gh -R microsoft/vcpkg ie 51299&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Quickly edit issues in local editor instead of ugly web UI. &#x60;gh -R microsoft/vcpkg ie 51299&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-21 04:44:32 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/editor">
+                        <span>editor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/github">
+                        <span>github</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web/ui">
+                        <span>web/ui</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Quickly edit issues in local editor instead of ugly web UI. <code>gh -R microsoft/vcpkg ie 51299</code>
+<ul>
+<li>Recap: <a href="https://cli.github.com/manual/gh_issue_edit">GitHub CLI <code>gh issue edit</code> | <code>gh ie</code></a></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> ie<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>R</span> any/repo</span>
+<span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> ic<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>t</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>anything<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>body-file</span> ./issue-body.md<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>web</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>R</span> any/repo <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> with this you can review what you are about to post as issue</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <code>vcpkg</code> have a pretty neat function, auto construct a legible CLI for user to invoke.
+<ul>
+<li>but it expose my personal info... so I want to replace those strings. Browser builtin editor is so suck for that.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

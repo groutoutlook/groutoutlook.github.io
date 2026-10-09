@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Redirecting output to $null in PowerShell, but ensuring the variable remains set</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Redirecting output to $null in PowerShell, but ensuring the variable remains set</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-07 01:47:36 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/stdout">
+                        <span>stdout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/73620203/22954711">Redirecting output to $null in PowerShell, but ensuring the variable remains set</a>
+<ul>
+<li>Recap:<code>*&gt; $null</code> for all streams or <code>2&gt;$null</code> for stderr stream, not only pipe to <code>Out-Null</code>.</li>
+<li>Root:</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li><code>Out-Null</code> only take stream 1 as normal <code>stdout</code> stream of it. Same as <code>Write-Output</code> streams.
+<ul>
+<li>have to <code>2&gt;&amp;1 | out-null</code> to use with out-null for examples.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#cli should consider using pipelined arguments since, it can be easier to use in editor(e.g. <code>hx</code>).
+<ul>
+<li>my pipe keybinding is the only emthod for me to invoke without pasting arguments selected in clipboard again.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

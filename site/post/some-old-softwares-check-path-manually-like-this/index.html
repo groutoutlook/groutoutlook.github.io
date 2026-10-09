@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Some old softwares check path manually like this.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Some old softwares check path manually like this.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-30 01:05:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/sabrogden/Ditto/blob/1632d1277d46647f89e9bb6b9e1491246857b392/ClipCompare.cpp#L127C1-L128C1">Some old softwares check path manually like this.</a>
+<ul>
+<li>Recap: while I mainly use <code>scoop</code> to install softwares.</li>
+<li>Resolution: making a symlink or junction in the destination</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">Invoke-SudoPwsh &quot;new-item -path WinMerge -ItemType SymbolicLink -Value (gcb)&quot;
+gci -file |%{new-item -path &quot;D:\ProgramDataD\9-ProductionFiles\Firmware-Finished\$($_.Name)&quot; -ItemType SymbolicLink -value (rvpa $_) -force}
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

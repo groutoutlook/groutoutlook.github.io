@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: SWO Single Wire Output with ARM Cortex-M and Eclipse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">SWO Single Wire Output with ARM Cortex-M and Eclipse</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-04 10:26:05 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/acronym">
+                        <span>acronym</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugging/trace">
+                        <span>debugging/trace</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/guide">
+                        <span>guide</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/protocol/swd">
+                        <span>protocol/swd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mcuoneclipse.com/2016/10/17/tutorial-using-single-wire-output-swo-with-arm-cortex-m-and-eclipse/">SWO Single Wire Output with ARM Cortex-M and Eclipse</a>
+<ul>
+<li>Recap: this is available on every ARM chips... for tracing with HIL.</li>
+<li>Run:</li>
+<li>Resolution: #doc: <a href="https://kb.segger.com/SWO">SWO / TPIU</a>
+<ul>
+<li>ITM : Instrumentation Trace Macrocell.</li>
+<li>SWV : Serial Wire Viewer.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: in Keil MDK. Actually, YAM tool guys teach me this.
+<ul>
+<li>#debugger #cli : <a href="https://pyocd.io/docs/swo_swv.html">SWO/SWV in <code>pyOCD</code></a>
+<ul>
+<li>Recap: arm Cortex-M DWT and ITM data packets through SWO.</li>
+<li>For what it's worth, M0/M0+ dont have SWO.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: #blog <a href="https://percepio.com/arm-itm/">ARM ITM: why you need a fast debug probe! - Percepio</a>
+<ul>
+<li>this is about ULINK PRO. Not even JTAG can be this fast.
+<ul>
+<li>#comparison : <a href="https://www.keil.com/arm/ulink/cmp.asp">ULINK Debugger Comparison</a>
+<ul>
+<li>about Ulink2 ulinkpro ulinkproD ulink-me. every one of them is in Keil MDK.</li>
+</ul>
+</li>
+<li>Best one is <a href="https://developer.arm.com/Tools%20and%20Software/ULINKpro">ULINKpro</a> but it's about 12000 rmb... PRO-D is worse one.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: #riscv : <a href="https://kb.segger.com/RISC-V_N-Trace_technical_specification">RISC-V N-Trace technical specification</a>
+<ul>
+<li>okay quite a diffrent tech for tracing chips' output.</li>
+<li>Resolution: #showcase : <a href="https://riscv-europe.org/summit/2025/media/proceedings/2025-05-13-RISC-V-Summit-Europe-14h05-DELEMARRE-slides.pdf">Heterogeneous Multicore Debugging of RISC-V Cores in Complex Chips</a>
+<ul>
+<li>Okay actually it's such a mess, nothing like that has been specs-out.
+<ul>
+<li>See: <a href="https://github.com/riscv/riscv-debug-spec/issues/785">Serial Wire Debug (SWD) · Issue #785 · riscv/riscv-debug-spec</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

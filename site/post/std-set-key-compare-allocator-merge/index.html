@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: std::set&lt;Key,Compare,Allocator&gt;::merge()</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">std::set&lt;Key,Compare,Allocator&gt;::merge()</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-09-01 02:48:42 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container/set">
+                        <span>container/set</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/doc/official">
+                        <span>doc/official</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/container/set/merge">std::set&lt;Key,Compare,Allocator&gt;::merge()</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++">std<span class="punctuation accessor c++">::</span>set<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">char</span><span class="punctuation section generic end c++">&gt;</span> p<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>C<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>B<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>B<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>A<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation section block end c++">}</span></span><span class="punctuation separator c++">,</span>  q<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>E<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>D<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>E<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation separator c++">,</span> <span class="string quoted single c"><span class="punctuation definition string begin c">&#39;</span>C<span class="punctuation definition string end c">&#39;</span></span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+p<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">merge</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"><span class="meta group c++">q</span></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/7089494/how-to-merge-multiple-sets-into-a-single-stdset-set-union/50763830#50763830">merge multiple sets into a single std::set (set union)</a></li>
+<li>Related:
+<ul>
+<li>#sql <a href="https://stackoverflow.com/questions/2533310/remove-duplicates-from-left-outer-join/13825180#13825180">Remove Duplicates from LEFT OUTER JOIN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Arm Compiler for Embedded Reference Guide</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Arm Compiler for Embedded Reference Guide</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-02 10:17:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiler">
+                        <span>compiler</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/software">
+                        <span>software</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://developer.arm.com/documentation/101754/0623/Arm-Compiler-for-Embedded-Tools-Overview/Arm-Compiler-for-Embedded-tool-command-line-syntax">Arm Compiler for Embedded Reference Guide</a>
+<ul>
+<li>Recap: CLI syntax for <code>armclang</code> and pals.</li>
+<li>Root: trying to search for a way to use cpp20 within keil. Currently in v6.23</li>
+<li>Resolution:
+<ul>
+<li><a href="https://developer.arm.com/documentation/101754/0623/armclang-Reference/armclang-Command-line-Options/-std?lang=en"><code>-std</code> - Arm Compiler for Embedded Reference Guide</a>
+<ul>
+<li>Recap: <del>up to c++17</del> you can do up to <code>-std=gnu++2c</code> with AC6 6.24 , <code>-std=gnu+2b</code> with AC6 6.19</li>
+<li>Root: <a href="https://gcc.gnu.org/projects/cxx-status.html#cxx26">C++ Standards Support in GCC - GNU Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+<li>Revisit: [ Monday, March 30, 2026 5:46:04 PM ] <a href="https://developer.arm.com/downloads/view/ACOMPE?revision=r6p24-00rel0&amp;sortBy=availableBy">Downloads - Arm Developer</a>
+<ul>
+<li>Recap: version 6.24</li>
+<li>Run: <a href="https://learn.arm.com/learning-paths/embedded-and-microcontrollers/vcpkg-tool-installation/licenseactivation/">Activate a license | Arm Learning Paths</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">armlm</span></span><span class="meta function-call arguments shell"> activate<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>product</span> KEMDK-COM0<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>server</span> https://mdk-preview.keil.arm.com</span>
+</span></code></pre>
+</li>
+<li>Root: <a href="https://github.com/ARM-software/cmsis-actions"><code>cmsis-actions</code> Custom GitHub actions for MDK / AVH-FVP CI workflows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

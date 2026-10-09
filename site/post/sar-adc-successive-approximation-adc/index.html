@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: SAR ADC : Successive-approximation ADC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">SAR ADC : Successive-approximation ADC</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-17 09:58:45 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/analog">
+                        <span>analog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/module/adc">
+                        <span>module/adc</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/Successive-approximation_ADC">SAR ADC : Successive-approximation ADC</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution: currently several mcu vendor have this SAR ADC block for BLDC (drone motor)...
+<ul>
+<li>#blog #guide <a href="https://gettobyte.com/sar-adc-explained/">SAR ADC Explained! - Get-To-Byte</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #evb <a href="https://item.taobao.com/item.htm?id=952919492094">【Motor Controller】Nanjing Lingou LKS32MC081C8T8 the smallest core board</a>
+<ul>
+<li>Rival: <a href="https://item.taobao.com/item.htm?id=952496958057">Chongqing Artery AT32M412CBT7 Minimum Core Board</a></li>
+<li><a href="https://mp.weixin.qq.com/s/zgm65yM0lekhd9OF6iBKPA">Based on AT32M412 electrolytic capacitor-free FOC variable frequency drive control solution, cost reduction and efficiency improvement are achieved</a>
+<ul>
+<li>very interesting block diagram... this chip can directly sense the VAC.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#esp32 <a href="https://electronics.stackexchange.com/questions/360390/what-is-the-difference-between-mcpwm-and-ledc-pwm">difference between MCPWM and LEDC PWM?</a>[2025-10-17 05:38:48 PM] #misc
+<ul>
+<li>Espressif own's terminology for Motor control PWM.</li>
+</ul>
+</li>
+<li>#soc #adc <a href="https://mp.weixin.qq.com/s/5-ni8iLNwt0AOOYGaAj6PQ">SAA1213: Ultra-small, ultra-low-power, 12-bit 1MSPS SAR ADC</a>
+<ul>
+<li>domestic version of ADS7042, hope it can be used for the same purpose..</li>
+</ul>
+</li>
+<li>#blog <a href="https://www.eevblog.com/forum/projects/limitations-of-fpga-based-adc/">Limitations of FPGA-based ADC</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: To dirty codegen/parse with stringbuilder and regex.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">To dirty codegen/parse with stringbuilder and regex.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-04 01:05:20 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/clipboard">
+                        <span>clipboard</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>To dirty codegen/parse with stringbuilder and regex.
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">function Show-PortGapsWithRenderedLUT {
+    param(
+        [string]$Raw = (Get-Clipboard)
+    )
+    $pattern = &#39;(?s)(Port\d+LUT_RGB)\[\]\s*=\s*\{(.*?)\};&#39;
+    $matches = [regex]::Matches($Raw, $pattern)
+    if ($matches.Count -eq 0) { return }
+
+    $blocks = foreach ($match in $matches) {
+        $label   = $match.Groups[1].Value
+        $values  = $match.Groups[2].Value -split &#39;[^\d]+&#39; | Where-Object { $_ } | ForEach-Object { [int]$_ }
+
+
+        $gaps = New-Object System.Collections.Generic.List[int]
+        for ($i = 0; $i -lt $values.Count - 1; $i++) {
+            if ([math]::Abs($values[$i] - $values[$i + 1]) -gt 1) {
+                $gaps.Add($values[$i + 1])
+                $i++
+            }
+        }
+
+        [pscustomobject]@{
+            Label = $label
+            Gaps  = $gaps
+        }
+    }
+
+    $sb = [System.Text.StringBuilder]::new()
+    foreach ($block in $blocks) {
+        [void]$sb.AppendLine(&quot;            # $($block.Label)&quot;)
+        [void]$sb.AppendLine(&#39;            {&#39;)
+        foreach ($n in $block.Gaps) {
+            [void]$sb.AppendLine(&quot;                $n :0,&quot;)
+        }
+        [void]$sb.AppendLine(&#39;            },&#39;)
+        [void]$sb.AppendLine()
+    }
+
+    $sb.ToString() | Set-Clipboard
+    $sb.ToString()
+}
+
+Show-PortGapsWithRenderedLUT
+</span></code></pre>
+</li>
+<li>Resolution: Checkout <a href="https://github.com/groutoutlook/ParamMetadata/blob/4m0.inox.square.8corner.25/helper-LUT.ps1">ParamMetadata helper-LUT.ps1 at 4m0.inox.square.8corner.25</a></li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

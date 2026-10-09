@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;fselect&#x60; Find files with SQL-like queries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;fselect&#x60; Find files with SQL-like queries</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-21 10:08:58 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/query">
+                        <span>query</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/sql">
+                        <span>sql</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jhspetersson/fselect"><code>fselect</code> Find files with SQL-like queries</a>
+<ul>
+<li>Recap: to do something in place of <code>find</code>/<code>fd</code>. not really interested on it anymore.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fselect</span></span><span class="meta function-call arguments shell"> size, path from <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">pwd</span></span> where size gt 10mb</span>
+<span class="meta function-call shell"><span class="variable function shell">gci</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>recurse</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">where</span></span><span class="meta function-call arguments shell"> Length<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>gt</span> 10mb <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> equivalent in powershell... so `fselect` is kinda useless in Windows.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#syntax <a href="https://github.com/jhspetersson/fselect/blob/master/docs/usage.md#columns-and-fields">Columns and fields - <code>fselect</code></a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: lightweight runtime, almost no dependency, a #linux native tools.</li>
+<li>Con: IT's completedly inferior compare to a whole dotnet runtime in powershell.</li>
+</ul>
+</li>
+<li>Root: in scoop.
+<ul>
+<li>#discussion : <a href="https://lobste.rs/s/dtwy2u/open_file_format_for_storing_information">An Open File Format for storing the information from a forge such as issues, pull/merge requests, milestones</a>
+<ul>
+<li>Recap: <a href="https://code.forgejo.org/f3/gof3">f3/gof3: Read a software project from a forge and convert it into the Friendly Forge Format. Read from the Friendly Forge Format and write to a software project in a forge</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: #git <a href="https://github.com/jhspetersson/git-task"><code>git task</code></a>
+<ul>
+<li>project management software. Like github projects / jira / gitlab. This one is local first.
+<ul>
+<li>This work as a perfect todo management, I don need <code>taskwarrior</code> for this.</li>
+<li>The could one is a huge kanban board. I'm not really into that.</li>
+</ul>
+</li>
+<li>It's like a <code>gh ic</code>, but I dont have to make round trip to browsers.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

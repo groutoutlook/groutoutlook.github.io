@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: builtin input of vertex shader</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">builtin input of vertex shader</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-10 06:49:41 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/glsl">
+                        <span>glsl</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/inout">
+                        <span>inout</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shader">
+                        <span>shader</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.khronos.org/opengl/wiki/vertex_shader#other_inputs">builtin input of vertex shader</a>
+<ul>
+<li>all builtin: vertex shaders have the following built-in input variables.</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-glsl"><span class="text plain">in int gl_vertexid;
+in int gl_instanceid;
+in int gl_drawid; // requires glsl 4.60 or arb_shader_draw_parameters
+in int gl_basevertex; // requires glsl 4.60 or arb_shader_draw_parameters
+in int gl_baseinstance; // requires glsl 4.60 or arb_shader_draw_parameters
+</span></code></pre>
+<ul>
+<li><a href="https://www.khronos.org/opengl/wiki/built-in_variable_%28glsl%29#fragment_shader_inputs">i/o of fragment shader</a>
+<ul>
+<li>notably:</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-glsl"><span class="text plain">in vec4 gl_fragcoord;
+in bool gl_frontfacing;
+in vec2 gl_pointcoord;
+
+layout(origin_upper_left) in vec4 gl_fragcoord;
+# this means that the origin for gl_fragcoord&#39;s window-space will be the upper-left of the screen, rather than the usual lower-left.
+
+layout(pixel_center_integer​) in vec4 gl_fragcoord;
+# opengl window space is defined such that pixel centers are on half-integer boundaries. so the center of the lower-left pixel is (0.5, 0.5). using pixel_center_integer​ ad gl_fragcoord such that whole integer values represent pixel centers.
+
+
+# special extension up to opengl4.0 -&gt; 4.6
+in int gl_sampleid; in vec2 gl_sampleposition; in int gl_samplemaskin[];
+in float gl_clipdistance[]; in int gl_primitiveid;
+in int gl_layer; in int gl_viewportindex;
+</span></code></pre>
+<ul>
+<li><a href="https://stackoverflow.com/questions/51459596/using-gl-fragcolor-vs-out-vec4-color">deprecated <code>gl_fragcolor</code></a>
+<ul>
+<li>but can still use it in many other places. <a href="https://stackoverflow.com/a/51459750/22954711">it now belongs to compatibality profile.</a></li>
+<li><a href="https://www.khronos.org/opengl/wiki/fragment_shader#outputs">later standard in glsl</a></li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-glsl"><span class="text plain">out vec4 gl_fragcolor; #deprecated
+out float gl_fragdepth;
+out int gl_samplemask[];
+</span></code></pre>
+<ul>
+<li><a href="https://www.khronos.org/opengl/wiki/built-in_variable_(glsl)">other builtin i/o of geometry shader, compute shader,</a>
+<ul>
+<li>brief: all needed.</li>
+</ul>
+</li>
+<li><a href="https://www.khronos.org/opengl/wiki/built-in_variable_(glsl)#constants">constants in glsl</a>
+<ul>
+<li>#hlsl also <a href="https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-constants">refer to constant buffers</a>
+<ul>
+<li>also there is texture buffer in the hlsl. in glsl it's called <a href="https://www.khronos.org/opengl/wiki/buffer_texture">buffer texture - opengl wiki</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

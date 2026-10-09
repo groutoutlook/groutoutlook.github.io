@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL:  Configs showcase #518 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title"> Configs showcase #518 </h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-02 05:15:05 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/jtroo/kanata/discussions/518"> Configs showcase #518 </a>
+<ul>
+<li>Recap: also has <code>interception_driver</code> feature I used with <code>capsicain</code>.</li>
+<li>Run: shim <code>kanata</code> as <code>:k</code>. Also built them #nightly.
+<ul>
+<li>I also need to put them in a separated tabs since I'm still new, so much to monitor.
+<ul>
+<li>Nested it in a <code>msmt</code> job, does not work realy well.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li><code>kanata --check</code> will check config to see if any error existed.</li>
+<li>#powertoys/kbm is not working properly so I'm ditching them for <code>:k</code>.</li>
+<li>You have to self build them to get <code>feature = gui</code> though.
+<ul>
+<li><code>r build_release_windows target/release</code></li>
+<li><code>cargo build --release --features cmd,interception_driver,gui,tcp_server,win_sendinput_send_scancodes,zippychord</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#til : <a href="https://github.com/jtroo/kanata/blob/6f097f854a8832a4979fd60ca587a300eac00174/Cargo.toml#L119">kanata/Cargo.toml at 6f097f854a8832a4979fd60ca587a300eac00174 · jtroo/kanata</a>
+<ul>
+<li><code>cargo</code> has feature flags builtin. See <a href="https://doc.rust-lang.org/cargo/reference/features.html#command-line-feature-options">Features - The Cargo Book</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: keys are  so different.
+<ul>
+<li>[2025-05-31 16:13:19]: <code>rmet</code> == <code>RightWin</code>, <code>rctl</code> == <code>RCtrl</code>,<code>rsft</code> == <code>RShift</code> and so on.</li>
+<li>Mapped <code>esc</code> to <code>rmet</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

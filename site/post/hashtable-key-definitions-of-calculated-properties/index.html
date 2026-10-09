@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Hashtable key definitions of Calculated Properties</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Hashtable key definitions of Calculated Properties</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-01 10:18:33 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/parameter">
+                        <span>parameter</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/property">
+                        <span>property</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_calculated_properties#hashtable-key-definitions">Hashtable key definitions of Calculated Properties</a>
+<ul>
+<li>Recap: directly splat a hash table of param to them. IT's the <code>-Property</code> option.
+<ul>
+<li>use in <code>select</code>, <code>sort</code>, <code>gu</code>, <code>group</code>, <code>compare</code>, <code>measure</code>, <code>ft</code>, <code>fw</code>, <code>fc</code>, freccency decreasing.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">(f ^S -td -HI) | % { [pscustomobject]@{Name=$_;Count=(gci $_ -Force).Count} } | ft -Auto
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: scrolling - How do I scroll in tmux?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">scrolling - How do I scroll in tmux?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-22 01:25:03 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/default">
+                        <span>default</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal/mux">
+                        <span>terminal/mux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tmux">
+                        <span>tmux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/209437/how-do-i-scroll-in-tmux">scrolling - How do I scroll in tmux?</a>
+<ul>
+<li>Recap: <code>Ctrl+b</code> <code>PgUp</code>/<code>PgDn</code> enter select mode, #navigate with arrow and navigation keys.
+<ul>
+<li>use <code>Esc</code> to go back into insert/normal mode which you enter text there.</li>
+</ul>
+</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.shellhacks.com/screen-scroll-up-scrollback-buffer/">Screen: Scroll Up - Scrollback Buffer</a>
+<ul>
+<li>I wonder how <a href="https://github.com/microsoft/terminal/issues/15796">why isn't possible to scroll anymore in a linux screen · Issue #15796 · microsoft/terminal</a>
+<ul>
+<li>windows terminal render Alt buffer for <code>nvim</code> and <code>hx</code> separatedly now, so there is nothing to scrollback</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>in #zellij it's <code>Ctrl+s</code> <code>up</code>/<code>down</code>/<code>PgUp</code>/<code>PgDn</code>, any navigation keys.</li>
+<li>#blog : <a href="https://news.ycombinator.com/item?id=44306892">Using Microsoft's New CLI Text Editor on Ubuntu</a>
+<ul>
+<li>A comment show the binding of CUA interface, which result into: terminal compliant binding
+<ul>
+<li>Recite: CUA bindings for Cut, Copy, Paste are actually <code>Shift+Delete</code>, <code>Ctrl+Insert</code>, <code>Shift+Insert</code>.</li>
+</ul>
+</li>
+<li>#definition: CUA is #acronym of <a href="https://wikipedia.org/wiki/IBM_Common_User_Access">IBM Common User Access</a></li>
+<li><code>Ctrl+backspace</code> == <code>Ctrl+w</code> in emacs.</li>
+<li><code>Ctrl+delete</code> == <code>Alt+d</code> in emacs.</li>
+</ul>
+</li>
+<li>#keybinding #terminal : <a href="https://unix.stackexchange.com/questions/60382/how-to-scroll-in-a-terminal-using-keyboard">How to scroll in a terminal using keyboard?</a>
+<ul>
+<li>in short <code>Shift+PgUp</code> and <code>Shift+PgDn</code>.</li>
+</ul>
+</li>
+<li>#terminal : <a href="https://unix.stackexchange.com/questions/145050/what-exactly-is-scrollback-and-scrollback-buffer">shell - What exactly is scrollback and scrollback buffer?</a>
+<ul>
+<li>In windows terminal, alt buffer cant be scroll back e.g. in select mode or using <code>Ctrl+shift+up</code> / <code>down</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-06-24 14:46:57] : <a href="https://jyn.dev/how-i-use-my-terminal/">how i use my terminal</a>
+<ul>
+<li><a href="https://man.openbsd.org/tmux#COMMANDS">tmux(1) all commands - OpenBSD manual pages</a></li>
+<li>Run: <code>tmux ls</code> and <code>tmux kill-session -t 0</code> or <code>tmux kill-session</code>
+<ul>
+<li>which <code>zellij ls</code> and <code>zellij kill-session</code> / <code>zellij kill-all-sessions</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

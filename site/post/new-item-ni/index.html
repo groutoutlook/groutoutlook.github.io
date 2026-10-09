@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;New-Item&#x60; | &#x60;ni&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;New-Item&#x60; | &#x60;ni&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-02-25 09:52:03 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/command">
+                        <span>command</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/new-item"><code>New-Item</code> | <code>ni</code></a>
+<ul>
+<li>Recap: use <code>ni -i d</code> to create new directory instead of <code>md</code> from now on...
+<ul>
+<li>Quote: New-Item can also set the value of the items that it creates.
+<ul>
+<li>when it creates a new file, New-Item can add initial content to the file.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$a = New-Item -Name whoknows.html
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>It output <a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-9.0">System.IO.FileInfo</a></li>
+<li>Or you better alias that <code>md</code>, since using native things are always better for scripting.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: it is critical on creating symlinks.
+<ul>
+<li>since <code>ni</code> can take initial and create lots of thing at ease.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://shellgeek.com/powershell-mkdir-to-create-directory/">PowerShell mkdir to Create Directory - ShellGeek</a>
+<ul>
+<li>You can try <code>(gcm mkdir).definition</code> to look at the full function.</li>
+<li>It's an internal command.</li>
+</ul>
+</li>
+<li>#linux : <a href="https://superuser.com/questions/165157/what-does-the-p-flag-do-in-mkdir-p/1782908#1782908"><code>-p</code> flag in <code>mkdir -p</code></a>
+<ul>
+<li>No error if existing and Make parent directories as needed, recursively ofc...</li>
+<li>Revisit: [ Sunday, April 26, 2026 03:53:57 PM ] that's useless if you happen to do things in <code>nu</code>
+<ul>
+<li><code>mkdir</code> in there dont need to include <code>-p</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

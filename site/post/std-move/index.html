@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: std::move</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">std::move</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-29 01:09:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/std/utils">
+                        <span>std/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/utility/move">std::move</a>
+<ul>
+<li>Recap: <code>move</code> transfer lvalue to new lvalue. It's a kind of <code>static_cast&lt;X&amp;&amp;&gt;</code> and have its own move operator.
+<ul>
+<li><strong>move dont move anything.</strong> it negates the old value so you should not access them again.
+<ul>
+<li>That's the whole meaning of #rust which <strong>move</strong> by default</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution: It's for resources-efficient algorithm. It call destructor to the original <code>value</code>
+<ul>
+<li>A kind of freeing and reinitialize resources.
+<ul>
+<li>Normally appending returned results from a <code>lvalue</code>, after <code>push_back</code> it retained value..
+<ul>
+<li><code>move</code> make the <code>xvalue</code> and kind of emptying <code>lvalue</code> hold.
+<ul>
+<li>Therefore the <code>xvalue</code> are free to do something else.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: the instance is <code>xvalue</code>.
+<ul>
+<li>It's not really a function... More like a glorified <code>&amp;&amp;</code> xvalue instance creation.</li>
+</ul>
+</li>
+<li>Reason: <a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f18-for-will-move-from-parameters-pass-by-x-and-stdmove-the-parameter">Guideline about <code>&amp;&amp;</code> and <code>move</code></a></li>
+<li>Related: <a href="https://stackoverflow.com/questions/28483250/is-an-rvalue-reference-treated-as-an-lvalue-when-used-within-a-function">c++ - Is an rvalue reference treated as an lvalue when used within a function?</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;ssh-add&#x60; is so intricated...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;ssh-add&#x60; is so intricated...</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-16 07:43:29 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/auth">
+                        <span>auth</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/ssh">
+                        <span>remote/ssh</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>ssh-add</code> is so intricated...
+<ul>
+<li>Recap: <a href="https://askubuntu.com/questions/20863/how-do-i-permanently-add-an-identity-for-ssh">How do I permanently add an identity for SSH?</a></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ssh-add</span></span><span class="meta function-call arguments shell"> ./id_ed25519_oppoa9p1 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">private keys. it&#39;s *MANDATORY* to add into ssh-agent</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">ssh-add</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>L <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list all keys visible for ssh-agent. A kind of whoami.</span><span class="comment line number-sign shell">
+</span></span></span><span class="punctuation definition compound begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">ssh-add</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>L</span></span><span class="punctuation definition compound end shell">)</span><span class="meta function-call arguments shell"><span class="keyword control regexp set begin shell">[</span>0<span class="keyword control regexp set end shell">]</span></span><span class="keyword operator logical pipe shell">|</span><span class="meta function-call shell"><span class="variable function shell">scb <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> quick copy ssh public key for less hassle in stdout.</span><span class="comment line number-sign shell">
+</span></span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> requires you&#39;ve `ssh-agent` running as a service, through `sv` or `Start-Service`</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> using different identity at this point... Remember its private key.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"> dell-p7670<span class="constant character escape shell">\c</span>ohotech@dell-p7670.lan <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> for windows intricating namespace.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.mankier.com/1/ssh-add"><code>ssh-add</code> adds private key identities to the OpenSSH authentication agent | openssh-clients Commands</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://www.mankier.com/1/ssh-agent"><code>ssh-agent</code> authentication agent | openssh-clients Commands</a>
+<ul>
+<li>most of those options work in Linux but now Windows.</li>
+</ul>
+</li>
+<li><a href="https://askubuntu.com/questions/490095/i-accidentally-did-ssh-add-d-how-do-i-re-add-my-key-from-authorized-keys">I accidentally did ssh-add -d .. how do I re-add my key from authorized_keys?</a>
+<ul>
+<li><code>ssh-add -d</code> will delete cached identity in <code>ssh-agent</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

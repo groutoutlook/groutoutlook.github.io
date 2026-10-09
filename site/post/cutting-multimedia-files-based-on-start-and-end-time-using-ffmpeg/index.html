@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Cutting multimedia files based on start and end time using ffmpeg</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Cutting multimedia files based on start and end time using ffmpeg</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-21 04:35:40 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ffmpeg">
+                        <span>ffmpeg</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/video">
+                        <span>video</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/18444194/cutting-multimedia-files-based-on-start-and-end-time-using-ffmpeg">Cutting multimedia files based on start and end time using ffmpeg</a>
+<ul>
+<li>Recap: ffmpeg cut videos pretty easy. Can have millisecond resolution.</li>
+<li>Run: <code>-to</code> is length of <strong>result</strong> videos. <code>-end</code> is referring to the timestamp in the <strong>original</strong> video.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 00:00:10.7<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>to</span> 00:02:42<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\M</span>agnetic-choreo.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell">  -</span>c</span> copy .<span class="constant character escape shell">\M</span>agnetic.webm <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> quick but not precise.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 49.678<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>to</span> 04:13.678<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\s</span>b19-dam-backup.webm  .<span class="constant character escape shell">\s</span>b19-dam.webm <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> precise but slow.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell">  -</span>i</span> .<span class="constant character escape shell">\L</span>emonade-Aespa.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell">  -</span>ss</span> 0<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>to</span> 03:07.6<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span> copy .<span class="constant character escape shell">\L</span>emonade-Aespa.mkv<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>y <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> overwrite, position can be whatever.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+<ul>
+<li>this goes both way. Actually I found <code>-to</code> better than <code>end</code> somehow...</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ffmpeg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 00:00:00.52<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> .<span class="constant character escape shell">\p</span>uppetShow-xg.webm<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ss</span> 00:00:00<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.\06 - PUPPET SHOW.flac<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell">   -</span>map</span> 0:v<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>map</span> 1:a<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:v copy<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span>:a flac<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>shortest</span> .<span class="constant character escape shell">\p</span>uppetShow-xg.mkv</span>
+</span></code></pre>
+</li>
+<li>Resolution: if you specify wrong <code>-to</code> or <code>-end</code> duration, it will start at the wrong time.</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

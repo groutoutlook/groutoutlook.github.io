@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Gerber Viewer | master | English | Documentation | KiCad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Gerber Viewer | master | English | Documentation | KiCad</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-07 10:26:13 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gerber">
+                        <span>gerber</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/gerbview/gerbview.html#interface">Gerber Viewer | master | English | Documentation | KiCad</a>
+<ul>
+<li>Recap:  <code>gerbview</code>'s kicad to view gerber files, CAM350 seems kinda awkward to that nowadays.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gerbview</span></span><span class="meta function-call arguments shell"> ./production <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or so I thought.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>Resolution: for production (panelization) reviewing (as what I did with sqpcb):
+<ul>
+<li>File (<code>alt+f</code>) -&gt; Open Autodetected Files (1 or no <code>o</code>) -&gt; <code>Enter</code> -&gt; <code>shift+tab</code> -&gt; <code>ctrl+a</code> -&gt; <code>Enter</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2024-06-07 10:05:37 AM] #pcb #embedded #dfm #software
+<ul>
+<li><a href="https://youtu.be/YBk-YQEcUcw"><code>cam350</code></a>
+<ul>
+<li>Recap: and the <a href="https://youtu.be/YBk-YQEcUcw">download link</a></li>
+<li>Root: #blog <a href="https://mp.weixin.qq.com/s/5YMzANA7mNtn8V6eChem1w">compare the differences with Gerber?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>Panelization is being made as pdf files from CAM350. you can download it from JLCPCB.</li>
+</ul>
+</li>
+<li>Revisit: #format <a href="https://resources.altium.com/p/pcb-production-file-format-wars#gerber-x3">ODB++ vs. Gerber X2/X3 vs. IPC-2581: PCB Production File Format Wars</a>
+<ul>
+<li>#discussion <a href="https://www.eevblog.com/forum/kicad/kicad-output-of-manufacturingtest-data/">KiCAD Output of Manufacturing/Test Data</a></li>
+<li>#comparison <a href="https://www.nexpcb.com/blog/comparing-pcb-file-formats-gerber-vs-ipc-2581">PCB File Formats: Gerber(ASCII) vs IPC-2581(XML-based)</a>
+<ul>
+<li>Recap: IPC2581 is inherently better and may be future proof. KiCAD is supporting them more now.</li>
+<li>Root: <a href="https://www.ipc2581.com/">Home | IPC- 2581 Consortium</a>
+<ul>
+<li>there is a guy (<code>@akhil106</code>) pushing this format a lot in Kicad Issue page.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

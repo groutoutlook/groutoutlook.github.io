@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: reference and ref keyword in powershell</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">reference and ref keyword in powershell</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-25 04:34:59 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_ref">reference and ref keyword in powershell</a>
+<ul>
+<li>Recap: It's kinda implicit, does not work as in C++.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain"># if you pass hashtable on function, it will be default as reference, not a whole copy.
+# case 2:
+$iRef = [ref] 0
+Get-ChildItem -File $setPath |
+    Rename-Item -NewName { &#39;{0} - {1}&#39; -f $iRef.Value++,$_.Name }
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_ref#using-ref-as-a-general-purpose-object-holder">Using <code>[ref]</code> as a general-purpose object Placeholder</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/50917586/can-i-access-an-objects-nested-properties-using-a-variable">nested object and variable name</a></li>
+<li><a href="https://stackoverflow.com/questions/46451994/set-value-of-nested-object-property-by-name-in-powershell">another nested changing properties.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

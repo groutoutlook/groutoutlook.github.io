@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: New-NetFirewallRule (NetSecurity)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">New-NetFirewallRule (NetSecurity)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-20 09:33:45 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network/firewall">
+                        <span>network/firewall</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/netsecurity/new-netfirewallrule?view=windowsserver2025-ps">New-NetFirewallRule (NetSecurity)</a>
+<ul>
+<li>Recap: one cmdlet away from settings firewall rules. #AI touoght me this.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">New-NetFirewallRule -DisplayName &quot;Allow Inbound Telnet&quot; -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line?tabs=powershell">Manage Windows Firewall With the Command Line</a></li>
+<li>Related: [2025-03-20 09:42:03 AM] #network #powershell
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/netsecurity/get-netfirewallportfilter?view=windowsserver2025-ps">Get-NetFirewallPortFilter (NetSecurity)</a>
+<ul>
+<li>Recap: another sudo to get all opened ports.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

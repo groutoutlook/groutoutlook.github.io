@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: abecodes/tabout.nvim: tabout plugin for neovim</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">abecodes/tabout.nvim: tabout plugin for neovim</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-27 02:48:04 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vscode">
+                        <span>ide/vscode</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>editor.smart-tab</code> is like the <a href="https://github.com/abecodes/tabout.nvim">abecodes/tabout.nvim: tabout plugin for neovim</a>
+<ul>
+<li>Recap: <a href="https://docs.helix-editor.com/master/editor.html#editorsmart-tab-section"><code>editor.smart-tab</code> - Editor</a>
+<ul>
+<li><a href="https://github.com/helix-editor/helix/discussions/1209#discussioncomment-1851867">Explaination from discussion</a></li>
+</ul>
+</li>
+<li>Resolution: You have to map <code>Shift+tab</code> in insert mode while using #windows/terminal.
+<ul>
+<li>...since we dont have kitty enhanced keyboard protocol here. Maybe in the future tty can recognize those combos apart.</li>
+<li>You can also set <code>tab</code>/<code>Shift+tab</code> in normal mode and selection mode as well.
+<ul>
+<li><code>Ctrl+w ctrl+t</code> toggle <code>smart-tab</code>. But this couldnt unmap those in normal and selection mode <a href="https://docs.helix-editor.com/master/editor.html#editorsmart-tab-section:~:text=If%20you%20enjoy%20smart%2Dtab%20navigation%20and%20a%20terminal%20that%20supports%20the%20Enhanced%20Keyboard%20protocol%2C%20consider%20setting%20extra%20keybindings%3A">If I have mapped them as in the doc</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/henrikvilhelmberglund/tabout">This is a better <code>tabout</code> which can <code>Shift+tab</code></a></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Synchronous motor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Synchronous motor</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-13 02:00:15 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dc">
+                        <span>dc</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/motor">
+                        <span>motor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://wikipedia.org/wiki/Synchronous_motor">Synchronous motor</a>
+<ul>
+<li>Recap: the most common one is BLDC.</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://mp.weixin.qq.com/s/xCVkcvyy-0D-bfIA7cnXwg">KICA Turbo Fan Disassembly: How can a small body output big wind power?!</a>
+<ul>
+<li>CMS8M3524 as MCU (8051 core btw) and CRMM4606.. (30V P+NMOS 7A max)</li>
+<li>as far as Chinese's cutting cost technique, lithium battery protection PCB is a must.
+<ul>
+<li>main IC for battery protection : <a href="https://superchip.cn/front/product_detailSel?name=FM3450C&amp;&amp;typelink=FM3450C(3%E8%8A%82%E4%B8%B2%E8%81%94%E7%94%A8%E9%94%82%E7%94%B5%E6%B1%A0%E4%BF%9D%E6%8A%A4IC)">FM3450C  - 产品详情</a>
+<ul>
+<li>#example/repo <a href="https://oshwhub.com/qxqpcb/fm3450c-three-series-lithium-battery-charging-protection-module">FM3450C 三节串联锂电池充电保护模块 - 立创开源硬件平台 - 深圳创电优选科技有限公司</a></li>
+<li>Rival: super cheap board at that... <a href="https://item.taobao.com/item.htm?id=819980256083">3串20A锂电池保护板大电流11.1V 12V 12.6V三节18650串联电源模块</a>
+<ul>
+<li>#bmic <a href="https://mp.weixin.qq.com/s/dbl6Bt1jdYOkwRvV-4t2IA">CW5205A - Two-in-one single-cell lithium battery protection chip</a>
+<ul>
+<li>#acronym <a href="https://www.ti.com/product-category/battery-management-ics/overview.html">BMIC Battery management ICs | TI.com</a></li>
+</ul>
+</li>
+<li>Related: <a href="https://mp.weixin.qq.com/s/plifw4CSzZB8g7v6nVcexQ">CW4057 -- 600mA charging chip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#pmic #battery charger IC CN3303 constant current and quasi-constant voltage (VIN 2.75-6.5V / VOUT 12.6V)
+<ul>
+<li>11.1V/12V/12.6V battery system. the one in blog post consist of 3 pcs of that battery... dont let your eyes fool you, the battery pack formed a triangle.
+<ul>
+<li>4 electrodes at B1-,B1+,B2+,B3+ (with 3 battery concatenated, you get 4 contact point).</li>
+</ul>
+</li>
+<li><a href="https://make.net.za/wp-content/datasheets/Consonance%20Elec%20CN3303%20Datasheet%20v2.1.pdf">USB-Compatible Lithium-Ion Battery Charger with Thermal Regulation - Consonance Elec CN3303 Datasheet v2.1.pdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: It&#x27;s so fucking intrigued that somehow this can help me resolve the RSS issue in feeds from SE, especially ESE.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">It&#x27;s so fucking intrigued that somehow this can help me resolve the RSS issue in feeds from SE, especially ESE.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-04 07:08:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/request/http">
+                        <span>request/http</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rss">
+                        <span>rss</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/web/api">
+                        <span>web/api</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>It's so fucking intrigued that somehow this can help me resolve the RSS issue in feeds from SE, especially ESE.
+<ul>
+<li>Recap:</li>
+<li>Run: paste this to mimic a browser.
+<pre class="syntax-highlighting"><code class="language-ini"><span class="text plain">accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8
+accept-language=en-US,en;q=0.5
+cache-control=max-age=0
+dnt=1
+priority=u=0, i
+sec-ch-ua=&quot;Not:A-Brand&quot;;v=&quot;99&quot;, &quot;Brave&quot;;v=&quot;145&quot;, &quot;Chromium&quot;;v=&quot;145&quot;
+sec-ch-ua-mobile=?0
+sec-ch-ua-platform=&quot;Windows&quot;
+sec-fetch-dest=document
+sec-fetch-mode=navigate
+sec-fetch-site=same-origin
+sec-fetch-user=?1
+sec-gpc=1
+upgrade-insecure-requests=1
+user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+</span></code></pre>
+</li>
+<li>Resolution: well you can copy your own using Network tab in DevTool &gt; 'Copy as Powershell' since that one is easiest to modify to something similar to what is above.
+<ul>
+<li><a href="https://rssguard.readthedocs.io/en/stable/features/scraping.html#advanced-feed-options">Scraping Websites — RSS Guard documentation</a>
+<ul>
+<li>from the network tab of an advanced adding feed settings you can set the HTTP Header with cookies info out.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/martinrotter/rssguard/discussions/2129">MDPI Open access journals feeds settings · martinrotter/rssguard · Discussion #2129</a></li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/4423061/how-can-i-view-http-headers-in-google-chrome">How can I view HTTP headers in Google Chrome?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

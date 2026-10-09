@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Paste this to make new files less corruptible.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Paste this to make new files less corruptible.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-25 12:04:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/version">
+                        <span>version</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Paste this to make new files less corruptible.
+<ul>
+<li>Recap:</li>
+<li>Run: basically guess a far away day in the past, a different legit generator_version.
+<ul>
+<li>for <code>pcbnew</code>, paste this into the first 4 lines.
+<pre class="syntax-highlighting"><code class="language-lisp"><span class="source lisp"><span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>kicad_pcb
+  <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>version <span class="constant numeric lisp">20260206</span><span class="punctuation definition group end lisp">)</span></span>
+  <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span><span class="support function lisp">generator</span> <span class="string quoted double lisp"><span class="punctuation definition string begin lisp">&quot;</span>pcbnew<span class="punctuation definition string end lisp">&quot;</span></span><span class="punctuation definition group end lisp">)</span></span>
+  <span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>generator_version <span class="string quoted double lisp"><span class="punctuation definition string begin lisp">&quot;</span>10.0<span class="punctuation definition string end lisp">&quot;</span></span><span class="punctuation definition group end lisp">)</span></span>
+</span></span></code></pre>
+</li>
+<li><code>eeschema</code> will also be like that.
+<pre class="syntax-highlighting"><code class="language-lisp"><span class="source lisp"><span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>kicad_sch
+ 	<span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>version <span class="constant numeric lisp">20260306</span><span class="punctuation definition group end lisp">)</span></span>
+ 	<span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span><span class="support function lisp">generator</span> <span class="string quoted double lisp"><span class="punctuation definition string begin lisp">&quot;</span>eeschema<span class="punctuation definition string end lisp">&quot;</span></span><span class="punctuation definition group end lisp">)</span></span>
+ 	<span class="meta group lisp"><span class="punctuation definition group begin lisp">(</span>generator_version <span class="string quoted double lisp"><span class="punctuation definition string begin lisp">&quot;</span>10.0<span class="punctuation definition string end lisp">&quot;</span></span><span class="punctuation definition group end lisp">)</span></span>
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: how to configure and use &#x60;git send-email&#x60; to work with gmail to email patches to developers - stack overflow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">how to configure and use &#x60;git send-email&#x60; to work with gmail to email patches to developers - stack overflow</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-27 02:05:20 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/email">
+                        <span>email</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/78627242/22954711">how to configure and use <code>git send-email</code> to work with gmail to email patches to developers - stack overflow</a>
+<ul>
+<li>Recap: crazily inferior compare to gitlab's mr/github's pr workflow.
+<ul>
+<li>those are being helped by their own <code>glab</code>/<code>gh</code> cli now.</li>
+</ul>
+</li>
+<li>Resolution: set up <code>sendgmail</code>.  use #gmail service honestly.
+<ul>
+<li><a href="https://github.com/google/gmail-oauth2-tools/tree/master/go/sendgmail">gmail-oauth2-tools/go/sendgmail at master · google/gmail-oauth2-tools</a>
+<ul>
+<li><a href="https://console.cloud.google.com/auth/overview?inv=1&amp;invt=abygmq&amp;project=sendgmail-461111">oauth overview – google auth platform – sendgmail – google cloud console</a></li>
+<li><a href="https://console.cloud.google.com/auth/audience?inv=1&amp;invt=abygmq&amp;project=sendgmail-461111"><code>sendgmail</code> project here.</a></li>
+</ul>
+</li>
+<li>reason for all this bullshit is <code>gmail</code> prohibit plain text password enter.</li>
+</ul>
+</li>
+<li>Reason: i just want to send mail using just terminal in windows. this is seriously extra hard comparing to linux..
+<ul>
+<li>pro: independent of #git/forge. although this seems extra obsoleted anyhow.
+<ul>
+<li>no need for web ui. can be scriptable.</li>
+<li>want to contribute to <code>glibc</code>, <code>linux</code> kernel, <code>buildroot</code> and some whitebeard projects?</li>
+</ul>
+</li>
+<li>con: too much hassle.</li>
+</ul>
+</li>
+<li>Root: <a href="https://news.ycombinator.com/item?id=40959526">git-pr: patch requests over ssh | hacker news</a></li>
+<li>Related:
+<ul>
+<li>#alternative : <a href="https://github.com/paralin/sendgmailapi">paralin/sendgmailapi: git send-email using the gmail api</a>
+<ul>
+<li>havent tried. cant tell.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [Monday, April 6, 2026 9:47:24 AM]<code>neomd</code> also need OAuth2 to work on that</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

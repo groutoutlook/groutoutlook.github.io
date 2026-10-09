@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - Best way to extract a subvector from a vector?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - Best way to extract a subvector from a vector?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-20 03:03:37 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/container">
+                        <span>container</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vector">
+                        <span>vector</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/421573/best-way-to-extract-a-subvector-from-a-vector">c++ - Best way to extract a subvector from a vector?</a>
+<ul>
+<li>Brief: Take a slice of vector, through constructing a new vector or using <code>span</code> as reference.</li>
+<li>Origin: trying to get a subvector...</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> cpp17 and downward
+</span>std<span class="punctuation accessor c++">::</span>vector<span class="punctuation section generic begin c++">&lt;</span>PickingData<span class="punctuation section generic end c++">&gt;</span> subvector<span class="meta block c++"><span class="punctuation section block begin c++">{</span>picked_id<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">begin</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation separator c++">,</span> picked_id<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">begin</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator arithmetic c">+</span> <span class="constant numeric c++">3</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+<span class="comment line double-slash c"><span class="punctuation definition comment c">//</span>using span for cpp20 upward.
+</span><span class="storage type c">auto</span> id_subspan <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">span</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">picked_id</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">subspan</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="constant numeric c++">0</span><span class="punctuation separator c++">,</span> <span class="constant numeric c++">3</span></span></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>Related: <a href="https://stackoverflow.com/a/45591792/22954711">span's modern feature</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/72128648/how-to-create-a-spanstdbyte-from-a-single-generic-object">c++ - How to create a <code>span&lt;std::byte&gt;</code> from a single generic object?</a></li>
+<li><a href="https://stackoverflow.com/questions/63686142/simplest-way-to-assign-stdspan-to-stdvector">c++ - Simplest way to assign std::span to std::vector</a></li>
+<li><a href="https://cppreference.com/w/cpp/container/span">std::span</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

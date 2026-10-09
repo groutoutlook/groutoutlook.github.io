@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Special Variables</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Special Variables</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-26 12:12:44 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/enviroment">
+                        <span>enviroment</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nushell">
+                        <span>nushell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variables">
+                        <span>variables</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.nushell.sh/book/special_variables.html#nu">Special Variables</a>
+<ul>
+<li>Recap: <code>$nu</code> and <code>$env</code>. all can be tab completion.</li>
+<li>Root: <code>$nu.default-config-dir</code> is what I commonly used. <code>$env</code> is mainly used within config.</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#pipeline : <a href="https://www.nushell.sh/book/special_variables.html#in"><code>$in</code> in nushell as <code>$_</code> in pwsh</a>
+<ul>
+<li>Recap: it's quite like #powershell. Except you dont have <code>|%{}</code> sequence.</li>
+<li>Run: <code>1..10| $in.1 * 99 |echo $in</code>
+<ul>
+<li>Notice arithmetic operator has to stay a bit further.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#config: every function put within <code>env.nu</code> has to have env exposed, as <code>def --env &quot;func&quot;</code></li>
+<li>#powershell : <a href="https://github.com/PowerShell/PowerShell/pull/25346">Fix tab completion for env/function variables</a>
+<ul>
+<li>Landed in preview, so glad I have updated. Now I can confidently <code>$env:&lt;Tab&gt;/&lt;Ctrl+Space&gt;</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

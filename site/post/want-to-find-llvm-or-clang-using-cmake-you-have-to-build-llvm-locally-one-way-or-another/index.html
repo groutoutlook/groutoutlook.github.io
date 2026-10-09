@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: want to find llvm or clang using cmake, you have to build llvm locally, one way or another.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">want to find llvm or clang using cmake, you have to build llvm locally, one way or another.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-24 05:21:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build/cmake">
+                        <span>build/cmake</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/clang">
+                        <span>clang</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/llvm">
+                        <span>llvm</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>want to find llvm or clang using cmake, you have to build llvm locally, one way or another.
+<ul>
+<li>Recap: and if possible, assign <code>$env:clang_dir;$env:llvm_dir</code>.</li>
+<li>Root: <a href="https://clang.llvm.org/get_started.html#:~:text=alongside%20visual%20studio-,we%20recommend,-that%20developers%20who">guide</a></li>
+<li>Resolution: you can build with ninja and cmake.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cd llvm-project
+md build
+cd build
+set cc cl
+set cxx cl
+cmake -gninja -dllvm_enable_projects=clang ..\llvm
+ninja clang
+ninja clangtooling # ffs...
+ninja checK-clang # optional
++``
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>+- Re+son:
+-+RELATEd:
+- <code>$home\scoop\apps\llvm\current\lib\clang\20\include</code> is the current <code>libc++</code> in my windows box.
+- #build/cmake : also assign <code>$env:cmake_toolchain_file</code> as environment variable since... literally no one need to specify this other than me.</p>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

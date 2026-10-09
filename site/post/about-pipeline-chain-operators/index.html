@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: about_Pipeline_Chain_Operators</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">about_Pipeline_Chain_Operators</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-22 06:40:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/control/flow">
+                        <span>control/flow</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/operator">
+                        <span>operator</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pipeline">
+                        <span>pipeline</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">about_Pipeline_Chain_Operators</a>
+<ul>
+<li>Recap: chaining operators: <code>&amp;&amp;</code> and <code>||</code> based on <code>$?</code> in <code>pwsh</code>, cut an <code>if</code> for me.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><code>||</code> will execute commands later in chain <strong>if the previous one failed</strong>.</li>
+<li><code>&amp;&amp;</code> will execute if <strong>success</strong> instead. those are reversed.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: <code>||</code> and <code>&amp;&amp;</code> is very useful in one-liner or in <code>justfile</code>.</li>
+</ul>
+</li>
+<li>Root: <a href="https://unix.stackexchange.com/questions/47584/in-a-bash-script-using-the-conditional-or-in-an-if-statement/47585#47585">In a bash script, using the conditional &quot;or&quot; in an &quot;if&quot; statement</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/4510640/what-is-the-purpose-of-in-a-shell-command/30508672#30508672">What is the purpose of &quot;&amp;&amp;&quot; and &quot;||&quot; in a shell command?</a></li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

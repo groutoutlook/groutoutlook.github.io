@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: nvim support for &#x60;Alt+shift&#x60; and &#x60;Ctrl+shift&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">nvim support for &#x60;Alt+shift&#x60; and &#x60;Ctrl+shift&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-24 12:29:34 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/lua">
+                        <span>lua</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/neovim">
+                        <span>neovim</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/a/29547954/22954711">nvim support for <code>Alt+shift</code> and <code>Ctrl+shift</code></a>
+<ul>
+<li>Recap: redirect using third party software.</li>
+<li>Root:</li>
+<li>Resolution: but <code>A-&lt;Shift unicode value&gt;</code> works out of the box. <code>Alt+x</code> and <code>Alt+shift+X</code> is different.
+<ul>
+<li>Worse, even <a href="https://vi.stackexchange.com/questions/38848/how-can-i-map-ctrl-alt-letter-mappings-in-vim">key bindings - How can I map <code>Ctrl+Alt+&lt;letter&gt;</code> mappings in vim?</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related: <a href="https://neovim.discourse.group/t/how-can-i-map-ctrl-shift-f5-ctrl-shift-b-ctrl-and-alt-enter/2133">How can I map Ctrl+Shift+F5, Ctrl+Shift+b, Ctrl+. and Alt+Enter - Neovim Discourse</a>
+<ul>
+<li>which is <code>&lt;cs&gt;</code> but only work in <code>GUI</code>. If used in <code>Windows Terminal</code>, ought to think of other keycode interjection as <code>AHK</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

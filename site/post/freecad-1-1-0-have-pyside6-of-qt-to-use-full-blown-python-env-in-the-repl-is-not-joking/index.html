@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: FreeCAD 1.1.0 have &#x60;pyside6&#x60; of Qt to use. full-blown Python env in the REPL is not joking.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">FreeCAD 1.1.0 have &#x60;pyside6&#x60; of Qt to use. full-blown Python env in the REPL is not joking.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-04 09:26:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/api">
+                        <span>api</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/clipboard">
+                        <span>clipboard</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/freecad">
+                        <span>freecad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/qt">
+                        <span>qt</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>FreeCAD 1.1.0 have <code>pyside6</code> of Qt to use. full-blown Python env in the REPL is not joking.
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span><span class="keyword operator assignment python">=</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">Gui</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">getSelection</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span><span class="punctuation terminator statement python">;</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">len</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation terminator statement python">;</span><span class="meta qualified-name python"><span class="meta generic-name python">ret</span></span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string end python">&#39;</span></span></span>
+<span class="meta statement import python"><span class="keyword control import from python">from</span></span><span class="meta statement import python"><span class="meta import-source python"> <span class="meta import-path python"><span class="meta import-name python">PySide6</span></span> <span class="meta statement import python"><span class="keyword control import python">import</span></span></span></span><span class="meta statement import python"></span><span class="meta statement import python"> <span class="meta generic-name python">QtWidgets</span></span>
+<span class="meta qualified-name python"><span class="meta generic-name python">clipboard</span></span> <span class="keyword operator assignment python">=</span> <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">QtWidgets</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">QApplication</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">clipboard</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span>
+<span class="meta statement for python"><span class="keyword control flow for python">for</span> <span class="meta generic-name python">i</span> <span class="meta statement for python"><span class="keyword control flow for in python">in</span></span></span><span class="meta statement for python"> <span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span><span class="punctuation section block for python">:</span></span> <span class="meta qualified-name python"><span class="meta generic-name python">ret</span></span><span class="keyword operator assignment augmented python">+=</span><span class="meta qualified-name python"><span class="meta generic-name python">i</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Label</span></span><span class="keyword operator arithmetic python">+</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">,<span class="punctuation definition string end python">&#39;</span></span></span><span class="punctuation terminator statement python">;</span>
+<span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> to escape loop sensitive scope, you need this.
+</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">clipboard</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">setText</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">ret</span></span></span><span class="punctuation section arguments end python">)</span></span>
+<span class="meta function python"><span class="storage type function python">def</span> <span class="entity name function python"><span class="meta generic-name python">reselect_aa</span></span></span><span class="meta function parameters python"><span class="punctuation section parameters begin python">(</span></span><span class="meta function parameters python"><span class="punctuation section parameters end python">)</span></span><span class="meta function python"><span class="punctuation section function begin python">:</span></span>
+    <span class="meta statement for python"><span class="keyword control flow for python">for</span> <span class="meta generic-name python">obj</span> <span class="meta statement for python"><span class="keyword control flow for in python">in</span></span></span><span class="meta statement for python"> <span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span><span class="punctuation section block for python">:</span></span>
+        <span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">Gui</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">addSelection</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">obj</span></span></span><span class="punctuation section arguments end python">)</span></span>
+</span></code></pre>
+<ul>
+<li>(only in #python, what a shit language) Second time you run this:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span><span class="keyword operator assignment python">=</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">Gui</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Selection</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">getSelection</span></span><span class="punctuation section arguments begin python">(</span><span class="punctuation section arguments end python">)</span></span><span class="punctuation terminator statement python">;</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="support function builtin python">len</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span></span><span class="punctuation section arguments end python">)</span></span><span class="punctuation terminator statement python">;</span><span class="meta qualified-name python"><span class="meta generic-name python">ret</span></span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string end python">&#39;</span></span></span>
+<span class="meta statement for python"><span class="keyword control flow for python">for</span> <span class="meta generic-name python">i</span> <span class="meta statement for python"><span class="keyword control flow for in python">in</span></span></span><span class="meta statement for python"> <span class="meta qualified-name python"><span class="meta generic-name python">aa</span></span><span class="punctuation section block for python">:</span></span> <span class="meta qualified-name python"><span class="meta generic-name python">ret</span></span><span class="keyword operator assignment augmented python">+=</span><span class="meta qualified-name python"><span class="meta generic-name python">i</span><span class="punctuation accessor dot python">.</span><span class="meta generic-name python">Label</span></span><span class="keyword operator arithmetic python">+</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">,<span class="punctuation definition string end python">&#39;</span></span></span><span class="punctuation terminator statement python">;</span>
+<span class="comment line number-sign python"><span class="punctuation definition comment python">#</span> to escape loop sensitive scope, you need this.
+</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="meta generic-name python">clipboard</span><span class="punctuation accessor dot python">.</span></span><span class="meta qualified-name python"><span class="variable function python">setText</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="meta qualified-name python"><span class="meta generic-name python">ret</span></span></span><span class="punctuation section arguments end python">)</span></span>
+</span></code></pre>
+<ul>
+<li>since you may only need to up arrow from this point, better optimize like this.</li>
+<li>then I do this in <code>pwsh</code> just to get the string...</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain"># (split-batch live in my config.) This may be a recipe instead.
+# prevent an edge case. on just the object which the name is simply &quot;Shape&quot;.
+(gcb) -replace&quot;Shape,&quot;,&#39;0,&#39;-replace&quot;Shape0*&quot;-split&#39;,&#39;|?{$_ -ne &#39;&#39;}|%{$_ -as [int]}|split-batch -s 2|%{$a}{$a+=&quot;[$($_ -join &#39;,&#39;),],&quot;}{$a|tee //./CON|scb;rv a}
+# this is for the case that I want to split it into every port.
+(gcb) -replace&quot;Shape,&quot;,&#39;0,&#39;-replace&quot;Shape0*&quot;-split&#39;,&#39;|?{$_ -ne &#39;&#39;}|%{$_ -as [int]}|split-batch -s 2|%{$a}{$a+=&quot;[[$($_ -join &#39;,&#39;),]],&quot;}{$a|tee //./CON|scb;rv a}
+# or this, due to FreeCAD update somehow this has been the default one.
+(gcb) -replace&quot;Circle0*&quot;-split&#39;,&#39;|?{$_ -ne &#39;&#39;}|%{$_ -as [int]}|split-batch -s 2|%{$a}{$a+=&quot;[$($_ -join &#39;,&#39;),],&quot;}{$a|tee //./CON|scb;rv a}
+</span></code></pre>
+<ul>
+<li>Resolution: sometimes you may need to bring the python console out of the snapped location.
+<ul>
+<li>#idea: you need to select serpertine like kind of routing first, then do those 2 scripts last
+Even have to check dedup points first even.
+At this rate I'm thinking of making autohotkey to control mouse serpentine for me.
+<ul>
+<li>have to sepcify certain line length there.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: processing <code>dxf</code>...
+<ul>
+<li>Related: if you do <code>dxf</code> import, remember internal name cant be changed,
+if you delete any point in the middle of drawing -&gt; export to LibreCAD -&gt; import back.</li>
+</ul>
+</li>
+<li>Related: #navigate #history excuted command by typing initials and pressing <code>Up</code> to check history quicker.
+<ul>
+<li>if you brute-force <code>Up</code> you will scavenger through a forest of <code>#</code> system log.</li>
+<li>#focus: on Python #console when it's snapped in, select the <code>&gt;&gt;&gt;</code> prompt in the final line.
+<ul>
+<li>then <code>right</code>, it will refocus on the input line so you can check history now.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

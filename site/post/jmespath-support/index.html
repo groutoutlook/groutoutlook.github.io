@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: JMESPath Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">JMESPath Support</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-07 02:30:02 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/json">
+                        <span>format/json</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/reflection">
+                        <span>reflection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/JMESPath.md">JMESPath Support</a>
+<ul>
+<li>Recap: for partial reading with JMESPath using <code>glaze</code></li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/skip-keys.md">skip-keys in <code>glaze</code></a>
+<ul>
+<li><code>glz::meta::skip(const std::string_view key, const meta_context&amp; ctx)</code></li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage modifier c++">static</span> <span class="storage modifier c++">constexpr</span> <span class="storage type c">bool</span> <span class="meta function c++"><span class="entity name function c++">skip</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="storage modifier c++">const</span> std<span class="punctuation accessor c++">::</span>string_view <span class="variable parameter c++">key</span><span class="punctuation separator c++">,</span> <span class="storage modifier c++">const</span> meta_context<span class="keyword operator c">&amp;</span> <span class="variable parameter c++">ctx</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+  <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span>return key.starts_with(&quot;temp_&quot;); // Skip keys starting with &quot;temp_&quot;
+</span></span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>        
+</span></code></pre>
+</li>
+<li><code>ctx</code> can be anonymous if you are not using it.</li>
+<li>return true will skip the field. Boolean can be calculated with every method you figured from <code>string_view</code> class.</li>
+</ul>
+</li>
+<li><a href="https://github.com/stephenberry/glaze#hide"><code>hide(&amp;T::&lt;field&gt;)</code> hide something that dont need to be read and write to types/files.</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://jmespath.org/specification.html">JMESPath Specification — JMESPath</a>
+<ul>
+<li><a href="https://goessner.net/articles/JsonPath/">JSONPath - XPath for JSON</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/wrappers.md#append_arrays">append_arrays</a>
+<ul>
+<li>it appends everytime we read new strings(if underlying type is <code>std::vector</code> or alike).</li>
+</ul>
+</li>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/directory-io.md#directory-serialization-and-deserialization">write_directory and read_directory</a>
+<ul>
+<li>Basically map struct into a path.</li>
+</ul>
+</li>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/json-include.md">JSON Include System</a>
+<ul>
+<li>add <code>glz::file_include</code> field will make application parse &quot;include&quot;. helpful to move object definitions into separate files.
+<ul>
+<li>This reduces copying and the need to change inputs across multiple files.</li>
+<li>the path is relative to working directory. Although you can make them absolute.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

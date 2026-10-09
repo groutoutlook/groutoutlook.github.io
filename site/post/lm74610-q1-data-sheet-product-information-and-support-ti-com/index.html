@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: LM74610-Q1 data sheet, product information and support | TI.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">LM74610-Q1 data sheet, product information and support | TI.com</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-08-21 11:56:32 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/diode">
+                        <span>diode</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pmic">
+                        <span>pmic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/voltage/protect">
+                        <span>voltage/protect</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.ti.com/product/LM74610-Q1">LM74610-Q1 data sheet, product information and support | TI.com</a>
+<ul>
+<li>Recap: ideal diode <strong>controller</strong> which that you will need another MOSFET for it.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.ti.com/lit/an/slvae57b/slvae57b.pdf">Basics of Ideal Diodes (Rev. B) - slvae57b.pdf</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #example/pcb #module <a href="https://detail.tmall.com/item.htm?id=921645367315">XL74610L理想二极管模块替代LM74610模拟理想二极管整流器</a>
+<ul>
+<li>Recap: for something serious as 15-30A, you do those kinds of modules as protection unit.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#terminology <a href="https://electronics.stackexchange.com/questions/479685/what-does-zero-iq-means-in-reverse-voltage-protection-ics">zero Iq means in reverse voltage protection ICs</a>
+<ul>
+<li>no ground so... literally no quiescent current.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: CH213K of course.
+<ul>
+<li>or those one with Iq <a href="https://www.ti.com/lit/ds/symlink/lm74700-q1.pdf">LM74700-Q1 Low IQ Reverse Battery Protection Ideal Diode Controller datasheet (Rev. G) - lm74700-q1.pdf</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/53535/is-a-schottky-diode-appropriate-for-reverse-polarity-protection">Is a Schottky diode appropriate for reverse polarity protection?</a>
+<ul>
+<li>before CH213K, ought to have a PMOS or a Schottky diode to prevent reverse voltage. OR a TVS + Fuse.</li>
+<li>Related: <a href="https://electronics.stackexchange.com/questions/430466/will-a-schottky-diode-save-my-leds-against-reversed-voltage">semiconductors - Will a Schottky diode save my LEDs against reversed voltage?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;gitalias&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;gitalias&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-12-13 06:29:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/alias">
+                        <span>alias</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/meta">
+                        <span>meta</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/gitalias/gitalias/#short-aliases"><code>gitalias</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wget</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>O</span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">HOME</span></span>/gitalias.txt<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-check-certificate</span> https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span> include.path <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/gitalias.txt</span>
+</span></code></pre>
+</li>
+<li>Resolution: <code>git al | b</code> to view all this in pager.</li>
+<li>Reason:</li>
+<li>Root: <code>git current-branch</code> is from here.</li>
+<li>Related: <a href="https://github.com/kamranahmedse/git-standup"><code>git-standup</code> Recall what you or your team did on the last working day</a>
+<ul>
+<li><code>wget</code> need <code>cacert</code> so it can work properly.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

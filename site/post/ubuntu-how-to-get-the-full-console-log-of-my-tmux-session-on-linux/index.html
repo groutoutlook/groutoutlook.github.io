@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ubuntu - How to get the full console log of my tmux session on Linux?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ubuntu - How to get the full console log of my tmux session on Linux?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-17 11:38:01 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/logging">
+                        <span>logging</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminal">
+                        <span>terminal</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tmux">
+                        <span>tmux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://unix.stackexchange.com/questions/688216/how-to-get-the-full-console-log-of-my-tmux-session-on-linux/688286#688286">ubuntu - How to get the full console log of my tmux session on Linux?</a>
+<ul>
+<li>Recap: to be fair do we really need to run tmux for those..?</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">tmux</span></span><span class="meta function-call arguments shell"> capture-pane<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>pS</span> - <span class="keyword operator assignment redirection shell">&gt;</span> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/tmux-buffer.txt</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or within session.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">:capture-pane</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>S</span> -</span>
+<span class="meta function-call shell"><span class="variable function shell">:save-buffer</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span>/tmux-buffer.txt</span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

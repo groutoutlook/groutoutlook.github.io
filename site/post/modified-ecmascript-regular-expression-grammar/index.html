@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Modified ECMAScript regular expression grammar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Modified ECMAScript regular expression grammar</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-18 05:15:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>C++ regex syntax based on <a href="https://cppreference.com/w/cpp/regex/ecmascript.html#Sub">Modified ECMAScript regular expression grammar</a>
+<ul>
+<li>
+<p>Recap:</p>
+</li>
+<li>
+<p>Run:</p>
+</li>
+<li>
+<p>Resolution:</p>
+<ul>
+<li>Match results also follow 1-based index with m[0] is the whole match. ($0 in perl)
+<ul>
+<li>m[1..n] is the captured match. as in perl $1..n is matched.</li>
+<li>m.prefix() , m.suffix() is the left, position self-explained.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Recite:</p>
+<ul>
+<li>If the match does not exist, the following expressions involving m (if exists) should yield the specified values:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m.ready()</td>
+<td>true</td>
+</tr>
+<tr>
+<td>m.size()	​</td>
+<td>0​</td>
+</tr>
+<tr>
+<td>m.empty()</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Reason:</p>
+</li>
+<li>
+<p>Root:</p>
+</li>
+<li>
+<p>Related:</p>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;RoughGrep&#x60; brutalist UI on top of RipGrep</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;RoughGrep&#x60; brutalist UI on top of RipGrep</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-07 10:06:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/vivainio/RoughGrep/"><code>RoughGrep</code> brutalist UI on top of RipGrep</a>
+<ul>
+<li>Recap: same as my wrapper <code>:vr</code>, its name is <code>rgg</code> though.</li>
+<li>Root:</li>
+<li>Resolution: <code>Enter</code> in result will open VSCode at the line.</li>
+<li>Reason: better interface than my scripts.
+<ul>
+<li>[[001.005-ripgrep#Utils|Check this for guide.]]</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/konradsz/igrep"><code>igrep</code>: Interactive Grep</a>
+<ul>
+<li>More at <a href="obsidian://open?vault=MainVault&amp;file=note_IDEAndTools%2FDev%2FCLI%2F001.005.003-igrep">vault's note</a></li>
+<li>Open in others <code>$EDITOR</code>
+<ul>
+<li>or you could specify <code>IGREP_EDITOR=&quot;nvim&quot;</code>, better be it though. Check [[001.005.003-igrep|igrep note]]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/acheronfail/repgrep">An interactive replacer for ripgrep that makes it easy to find and replace across files on the command line.</a>
+<ul>
+<li>Better than the old <code>sad</code>. Check[[001.005.002-scooter|repgrep note]]</li>
+</ul>
+</li>
+<li><code>rgr</code> -&gt; <code>Enter</code> -&gt; <code>&lt;Replace tokens&gt;</code> -&gt; <code>Ctrl+s</code>. Done. <code>Esc</code> could be use as <code>undo</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Finally I can access the main account that is linked with outlook.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Finally I can access the main account that is linked with outlook.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-24 05:32:52 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/remote/rdp">
+                        <span>remote/rdp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Finally I can access the main account that is linked with outlook.
+<ul>
+<li>Recap: I thought I could add password or using pin, oh well...</li>
+<li>Run: all the issues lay at Username.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Enter-PSSession DESKTOP-76IDU1D -Credential MicrosoftAccount\christmasstarvc@outlook.com -Authentication Credssp
+New-PSSession DESKTOP-76IDU1D -Credential MicrosoftAccount\christmasstarvc@outlook.com -Authentication Credssp
+New-PSSession DESKTOP-76IDU1D -Credential MicrosoftAccount\chris # also worked.
+# even ssh
+ssh MicrosoftAccount\groutlloyd@outlook.com@Dell-p7670.lan # example NS, real life may need to use IP instead.
+# this log me in as Admin though.
+</span></code></pre>
+<ul>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://superuser.com/questions/1618530/rdp-to-home-pc-with-windows-hello-pin">remote desktop - RDP to home PC with Windows Hello PIN</a></li>
+<li>Related:
+<ul>
+<li><a href="https://superuser.com/questions/32495/whats-the-difference-between-rdp-vs-vnc">networking - What's the difference between RDP vs VNC?</a>
+<ul>
+<li>which is core difference between RDP/ using Remote Desktop Client and TeamViewer.</li>
+</ul>
+</li>
+<li>#host/self : <a href="https://www.reddit.com/r/selfhosted/comments/1klkh4k">Open letter to RustDesk about the Web Client</a></li>
+<li>#remote/desktop : <a href="https://security.stackexchange.com/questions/254906/are-credentials-used-in-rdp-cached-on-client">windows - Are Credentials used in RDP cached on Client?</a>
+<ul>
+<li>RDP also use Credssp.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

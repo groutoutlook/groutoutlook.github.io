@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How do I change the Gutter Width in VS Code?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How do I change the Gutter Width in VS Code?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-29 04:02:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config/gutter">
+                        <span>config/gutter</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vscode">
+                        <span>ide/vscode</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/preference/visual">
+                        <span>preference/visual</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/43957564/how-do-i-change-the-gutter-width-in-vs-code#47491521">How do I change the Gutter Width in VS Code?</a>
+<ul>
+<li>Recap: that left margin is called gutter... true jargon #terminology</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-json"><span class="source json"><span class="comment line double-slash js"><span class="punctuation definition comment json">//</span>&quot;editor.scrollbar.horizontal&quot;: &quot;hidden&quot;,
+</span><span class="comment line double-slash js"><span class="punctuation definition comment json">//</span>&quot;editor.scrollbar.vertical&quot;: &quot;hidden&quot;,
+</span><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>editor.minimap.enabled<span class="punctuation definition string end json">&quot;</span></span>: <span class="constant language json">false</span>,
+<span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>editor.lineDecorationsWidth<span class="punctuation definition string end json">&quot;</span></span>: <span class="constant numeric json">0</span>,
+<span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>editor.lineNumbers<span class="punctuation definition string end json">&quot;</span></span>: <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>off<span class="punctuation definition string end json">&quot;</span></span>,
+<span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>git.decorations.enabled<span class="punctuation definition string end json">&quot;</span></span>: <span class="constant language json">true</span>,
+<span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>editor.glyphMargin<span class="punctuation definition string end json">&quot;</span></span>: <span class="constant language json">false</span>,
+<span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>editor.folding<span class="punctuation definition string end json">&quot;</span></span>: <span class="constant language json">true</span>,
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/VisualStudio/comments/tk28s3">Have a big gap to the left on the line numbers</a></li>
+<li>Related:
+<ul>
+<li>#ide/vs : <a href="https://stackoverflow.com/questions/66035681/how-to-remove-left-margin-of-visual-studio">How to remove left margin/gutter of Visual Studio</a>
+<ul>
+<li>I'm still have to find how to remove that gutter width.</li>
+<li>#plugin : <a href="https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotSettings">Hot Settings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

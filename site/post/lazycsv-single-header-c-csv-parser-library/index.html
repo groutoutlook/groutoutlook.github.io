@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;lazycsv&#x60; single-header C++ csv parser library</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;lazycsv&#x60; single-header C++ csv parser library</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-07 02:30:41 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp/library">
+                        <span>cpp/library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/csv">
+                        <span>format/csv</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/ashtum/lazycsv"><code>lazycsv</code> single-header C++ csv parser library</a>
+<ul>
+<li>Recap: a better alternative than <code>fast-cpp-csv-parser</code>, single header as well..
+<ul>
+<li>moved on from <a href="https://github.com/ben-strasser/fast-cpp-csv-parser"><code>fast-cpp-csv-parser</code></a> to rapidcsv. soon to <code>glaze</code> to merge all file parser backend into this one.
+<ul>
+<li>first one is terrible,  available in C++11 and only desktop environments.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>require something alternative to <code>mmap</code> in Windows...
+<ul>
+<li><a href="https://github.com/vimpunk/mio"><code>mio</code> C++11 header-only library for memory mapped file IO</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/p-ranav/csv2"><code>csv2</code> CSV parser and writer for Modern C++</a>
+<ul>
+<li>have mio included.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li>#json : I mainly used <code>glaze</code> nowadays.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

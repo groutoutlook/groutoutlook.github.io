@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: XpdfReader</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">XpdfReader</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-22 06:12:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/converter">
+                        <span>converter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://forum.xpdfreader.com/viewforum.php?f=1&amp;sid=315052b56629716d15e7723b1228c220">XpdfReader</a>
+<ul>
+<li>Recap: <code>xpdf</code> is super archaic. modern one is <code>mupdf</code> and to an extent, <code>okular</code></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: in scoop.
+<ul>
+<li><a href="https://stackoverflow.com/questions/43085889/how-to-convert-a-pdf-into-jpg-with-command-line-in-linux">Convert a PDF into JPG with cli in Linux?</a></li>
+</ul>
+</li>
+<li>Related: <code>vips</code> from libvips.</li>
+<li>Revisit: [2025-06-02 21:04:01]: <a href="https://gitlab.freedesktop.org/poppler/poppler"><code>poppler</code></a>
+<ul>
+<li>Root: <a href="https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#preprocessor"><code>rg --pre</code> flags</a></li>
+<li>Resolution:</li>
+<li>Recite: Poppler is a fork of the <code>xpdf</code></li>
+<li>Related: <a href="https://nerdpress.org/2025/05/31/yazi-pdf-preview-not-working/#google_vignette">Yazi PDF preview not working | Nerdpress.org</a>
+<ul>
+<li>remove <code>xpdf-tools</code> then install <code>poppler</code> to get correct pdf preview in <code>yazi</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revisit: [2025-07-21 19:15:19]: #til Kobo and Kindle are all eReader with eInk screen.
+<ul>
+<li>#alternative : <a href="https://github.com/koreader/koreader"><code>koreader</code> ebook reader</a></li>
+<li>Resolution: Consider using this for PDF reading in #android.
+<ul>
+<li>Recite: multi-format documents: supports fixed page formats (PDF, DjVu, CBT,
+CBZ) and reflowable e-book formats (EPUB, FB2, Mobi, DOC, RTF, HTML, CHM, TXT).
+Scanned PDF/DjVu documents can also be reflowed with K2pdfopt library.
+ZIP files are also supported for some formats.</li>
+</ul>
+</li>
+<li>Root: <a href="https://www.reddit.com/r/kobo/comments/1ltbh1n">I’ve reached ultimate enlightenment</a></li>
+<li>Related: <a href="https://github.com/koreader/libk2pdfopt"><code>libk2pdfopt</code> k2pdfopt library for koreader</a>
+<ul>
+<li><code>.chm</code> is compiled html. old IE can open it.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

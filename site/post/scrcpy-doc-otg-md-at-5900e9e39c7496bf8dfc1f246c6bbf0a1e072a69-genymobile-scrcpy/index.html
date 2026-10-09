@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: scrcpy/doc/otg.md at 5900e9e39c7496bf8dfc1f246c6bbf0a1e072a69 · Genymobile/scrcpy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">scrcpy/doc/otg.md at 5900e9e39c7496bf8dfc1f246c6bbf0a1e072a69 · Genymobile/scrcpy</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-08 02:28:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scrcpy">
+                        <span>scrcpy</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/Genymobile/scrcpy/blob/5900e9e39c7496bf8dfc1f246c6bbf0a1e072a69/doc/otg.md">scrcpy/doc/otg.md at 5900e9e39c7496bf8dfc1f246c6bbf0a1e072a69 · Genymobile/scrcpy</a>
+<ul>
+<li>Recap: OTG control in adb and scrcpy.</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>Note that the purpose of OTG is to control the device without USB debugging (adb).
+<ul>
+<li>some harden one like OPPO, we will have to enable OTG to use that.</li>
+</ul>
+</li>
+<li>Other method if you already paired and connected <code>adb</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">scrcpy</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-video</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-audio</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>keyboard</span><span class="keyword operator assignment option shell">=</span>uhid<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>mouse</span><span class="keyword operator assignment option shell">=</span>uhid<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>gamepad</span><span class="keyword operator assignment option shell">=</span>uhid</span>
+</span></code></pre>
+</li>
+<li>Reason:
+<ul>
+<li>you can  unlock it with <code>enter</code> -&gt; <code>enter</code> -&gt; <code>password</code>.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/Genymobile/scrcpy/blob/master/doc/develop.md#hack">Hack and debug the server within adb</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

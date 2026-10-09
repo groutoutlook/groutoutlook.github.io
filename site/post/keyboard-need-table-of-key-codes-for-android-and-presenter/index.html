@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: keyboard - Need table of key codes for android and presenter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">keyboard - Need table of key codes for android and presenter</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-19 11:07:50 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/adb">
+                        <span>adb</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/android">
+                        <span>android</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/11768356/need-table-of-key-codes-for-android-and-presenter">keyboard - Need table of key codes for android and presenter</a>
+<ul>
+<li>Recap: <code>KEYCODE_POWER</code> to turn off screen/phones on <code>adb</code>. That's faster on most situations.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input keyevent KEYCODE_POWER</span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell svc wifi enable </span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://stackoverflow.com/questions/10033757/how-to-turn-off-wifi-via-adb/62222926#62222926">android - How to turn off Wifi via ADB?</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: I need to enable hotspot and connect to my phone's wifi without touching phones.</li>
+<li>Related:
+<ul>
+<li>#adb <a href="https://stackoverflow.com/questions/12251101/how-to-enable-adbd-to-listen-to-a-port-at-boot-time-in-android/34219466#34219466">adb - How to enable adbd to listen to a port at boot time in Android?</a>
+<ul>
+<li><code>adb shell setprop service.adb.tcp.port 5555</code></li>
+</ul>
+</li>
+<li>#hotspot #wlan : <a href="https://android.stackexchange.com/questions/173709/how-to-turn-on-the-wi-fi-hotspot-using-adb/173778#173778">How to turn on the Wi-Fi hotspot using ADB?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

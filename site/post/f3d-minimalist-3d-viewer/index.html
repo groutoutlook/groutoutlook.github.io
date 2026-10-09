@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;f3d&#x60; minimalist 3D viewer.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;f3d&#x60; minimalist 3D viewer.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-08 04:17:01 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/CAD">
+                        <span>CAD</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/editor">
+                        <span>editor</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/dxf">
+                        <span>format/dxf</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/stl">
+                        <span>format/stl</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/graphic">
+                        <span>graphic</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/viewer">
+                        <span>viewer</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/f3d-app/f3d"><code>f3d</code> minimalist 3D viewer.</a>
+<ul>
+<li>Recap: not only gltf, now STEP, STL and GLB files. DXF is acceptable...</li>
+<li>Run: #keybinding #default : <a href="https://mwestphal.github.io/f3d/doc/user/INTERACTIONS.html"><code>f3d</code> Interactions</a>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">f3d (gcb)
+# for example, 3d model output from FreeCad/ Kicad library.
+f3d Connector_USB.3dshapes\USB_A_CNCTech_1001-011-01101_Horizontal.step    
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#cli/option <a href="https://mwestphal.github.io/f3d/doc/user/OPTIONS.html#application-options"><code>f3d</code> Flags</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: fast, easy to use. It's my #default assoc to open those files.</li>
+</ul>
+</li>
+<li>Root: in scoop
+<ul>
+<li>people send me <code>.dxf</code>, need a basic viewer to preview them.. Not open <code>freecad</code> everytime.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#alternative: <a href="https://github.com/fougue/mayo">there is <code>mayo</code> to view and convert as well</a></li>
+<li>#github can also preview <code>.stl</code> files. See <a href="https://github.com/HWXLR8/3DPD/blob/master/mini-pc-housing/mini-pc-housing.stl">mini-pc-housing.stl</a>
+<ul>
+<li>which means #openscad can be easily evaluated.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

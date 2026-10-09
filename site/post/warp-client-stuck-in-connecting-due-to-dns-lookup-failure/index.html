@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Warp client stuck in connecting due to DNS lookup failure</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Warp client stuck in connecting due to DNS lookup failure</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-19 11:12:22 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dns">
+                        <span>dns</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/software">
+                        <span>software</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.reddit.com/r/CloudFlare/comments/12yrbkz">Warp client stuck in connecting due to DNS lookup failure</a>
+<ul>
+<li>Recap:</li>
+<li>Run: from <a href="https://learn.microsoft.com/en-us/answers/questions/5587447/how-to-resolve-dns-issues-on-windows-11-that-began">How to resolve DNS issues on Windows 11 that began after an update - Microsoft Q&amp;A</a>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">netsh int ip reset
+netsh winsock reset
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
+netsh interface ip delete arpcache
+</span></code></pre>
+</li>
+<li>Resolution: this also resolved my issues with those self-hosted services.</li>
+<li>Reason:</li>
+<li>Root: all because of trying to run <code>warp-cli connect</code>.
+<ul>
+<li>you can reset PC or not. it's all because of arpcache.</li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

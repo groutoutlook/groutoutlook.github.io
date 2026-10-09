@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Use the right type of breakpoint - Visual Studio (Windows)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Use the right type of breakpoint - Visual Studio (Windows)</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-07 07:44:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debugger">
+                        <span>debugger</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vs">
+                        <span>vs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>[Use the right type of breakpoint - Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2022&amp;pivo
+<ul>
+<li>Recap: stop when a variable assigned/changed to a certain value.</li>
+<li>Run:</li>
+<li>Resolution: different from conditional breakpoint, which stop at certain line when value is met with condition.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/621535/what-are-data-breakpoints">c++ - What are data breakpoints?</a>
+<ul>
+<li>I badly need this to monitor when did my value changed.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>[Set data breakpoints (.NET Core 3.x or .NET 5+)](https://learn.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2022&amp;pivo
+<ul>
+<li>It's called Break When value changed now,
+not really sure why Data Breakpoint isnt activatable in the debug menu(<code>Alt+F9</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

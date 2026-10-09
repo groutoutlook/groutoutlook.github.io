@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Memory chips have risen more than gold, but I found an undervalued domestic chip</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Memory chips have risen more than gold, but I found an undervalued domestic chip</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-18 09:31:56 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/blog">
+                        <span>blog</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/flash">
+                        <span>flash</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/memory">
+                        <span>memory</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://mp.weixin.qq.com/s/gCSxZL1IDLGsGeVakwGSwg">Memory chips have risen more than gold, but I found an undervalued domestic chip</a>
+<ul>
+<li>Recap: CSNP4G seems like NAND flash is really cheaper than QSPI/OSPI NOR flash.</li>
+<li>Run:</li>
+<li>Resolution: using SD2.0 so #protocol/sdio is needed
+<ul>
+<li><a href="https://cdn-shop.adafruit.com/product-files/4899/2005251034_XTX-XTSD04GLGEAG_C558839(2).pdf">XTSD01G (1Gb-8Gb) 3.6V max LGA8 8*6mm pitch 1.27mm</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://electronics.stackexchange.com/questions/269389/emmc-vc-mmc-storage/269448#269448">sdcard - eMMC vc MMC storage</a>
+<ul>
+<li>you have to do dedicated SDIO 4bit bus and above for (e)MMC chips/cards.</li>
+</ul>
+</li>
+<li>Related: eMMC nand flash is for Linux chip. typically BGA153 and 16-32Gb.
+<ul>
+<li><a href="https://datasheet.lcsc.com/datasheet/pdf/34f23a6c47b42806ec4ca7f6b9a5e567.pdf?productCode=C37842209">HSEMTCY2S2B32GG eMMC5.1 count 32 GB 0x3a3e000</a></li>
+</ul>
+</li>
+<li>Rival: pin compatible <a href="http://zettadevice.com/uploads/files/1-4%20%20SD%20NAND%20%E4%B8%89%E8%A7%92PIN/512MB%20SD%20NAND/1711509303141cd4469b02f0df.pdf">zq nand sdio 0.5gb-4gb</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

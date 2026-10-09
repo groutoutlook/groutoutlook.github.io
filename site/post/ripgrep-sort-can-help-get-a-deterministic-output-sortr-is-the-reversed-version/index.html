@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ripgrep &#x60;--sort&#x60; can help get a deterministic output. &#x60;--sortr&#x60; is the reversed version.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ripgrep &#x60;--sort&#x60; can help get a deterministic output. &#x60;--sortr&#x60; is the reversed version.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-02 10:55:51 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grep">
+                        <span>grep</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>ripgrep <code>--sort</code> can help get a deterministic output. <code>--sortr</code> is the reversed version.
+<ul>
+<li>Recap:</li>
+<li>Run: <code>rg --sort path</code> or <code>rg --sort=modified</code></li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Recite:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="variable other readwrite assignment shell">--sort</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell">SORTBY</span>
+    <span class="meta function-call shell"><span class="variable function shell">This</span></span><span class="meta function-call arguments shell"> flag enables sorting of results in ascending order. The possible</span>
+    <span class="meta function-call shell"><span class="variable function shell">values</span></span><span class="meta function-call arguments shell"> for this flag are:</span>
+
+    <span class="meta function-call shell"><span class="variable function shell">none:</span></span><span class="meta function-call arguments shell"> (Default</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">Do</span></span><span class="meta function-call arguments shell"> not sort results. Fastest. Can be multi-threaded.</span>
+
+    <span class="meta function-call shell"><span class="variable function shell">path:</span></span><span class="meta function-call arguments shell"> Sort by file path. Always single-threaded. The order is</span>
+    <span class="meta function-call shell"><span class="variable function shell">determined</span></span><span class="meta function-call arguments shell"> by sorting files in each directory entry during traversal.</span>
+    <span class="meta function-call shell"><span class="variable function shell">This</span></span><span class="meta function-call arguments shell"> means that given the files a/b and a+, the latter will sort after</span>
+    <span class="meta function-call shell"><span class="variable function shell">the</span></span><span class="meta function-call arguments shell"> former even though + would normally sort before /.</span>
+
+    <span class="meta function-call shell"><span class="variable function shell">modified:</span></span><span class="meta function-call arguments shell"> Sort by the last modified time on a file. Always</span>
+    <span class="meta function-call shell"><span class="variable function shell">single-threaded.</span></span>
+
+    <span class="meta function-call shell"><span class="variable function shell">accessed:</span></span><span class="meta function-call arguments shell"> Sort by the last accessed time on a file. Always</span>
+    <span class="meta function-call shell"><span class="variable function shell">single-threaded.</span></span>
+
+    <span class="meta function-call shell"><span class="variable function shell">created:</span></span><span class="meta function-call arguments shell"> Sort by the creation time on a file. Always single-threaded.</span>
+
+    <span class="meta function-call shell"><span class="variable function shell">If</span></span><span class="meta function-call arguments shell"> the chosen (manually or by-default</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">sorting</span></span><span class="meta function-call arguments shell"> criteria isn<span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>t available
+    on your system (for example, creation time is not available on ext4
+    file systems), then ripgrep will attempt to detect this, print an error
+    and exit without searching.
+
+    To sort results in reverse or descending order, use the --sortr flag.
+    Also, this flag overrides --sortr.
+
+    Note that sorting results currently always forces ripgrep to abandon
+    parallelism and run in a single thread.
+</span></span></span></code></pre>
+</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

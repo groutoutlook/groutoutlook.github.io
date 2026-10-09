@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: 其他芯片 - 南京沁恒微电子股份有限公司</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">其他芯片 - 南京沁恒微电子股份有限公司</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-22 09:54:27 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/multiplexer">
+                        <span>multiplexer</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/switch">
+                        <span>switch</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.wch.cn/products/productsCenter/otherChip?categoryId=69&amp;tName=%E6%A8%A1%E6%8B%9F%E5%BC%80%E5%85%B3">其他芯片 - 南京沁恒微电子股份有限公司</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.wch.cn/products/CH440.html">CH44X - 低阻模拟开关芯片 CH440/2/3/4/8/5/9 - 南京沁恒微电子股份有限公司</a></li>
+<li><a href="https://www.wch.cn/downloads/CH440DS1_PDF.html">CH448 DPOT double pole Octa throw </a>
+<ul>
+<li>CH448F which has both XEN and YEN. if XEN == YEN == 1, all off.
+<ul>
+<li>XEN == YEN, throw both AX and AY at once.
+XEN != YEN, you short AX, AY and then signal route with 16(2^4) bits(X,S2,S1,S0)...
+<ul>
+<li>Order is A0X,A1X-&gt;A6Y,A7Y.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>for SWD/SWC switching work CH448F QFN24 seems like a saner use than CH449X. cheaper as well(1.3/pc)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: [2025-07-30 04:02:57 PM] #i2c #routing #prototype #wch #analog
+<ul>
+<li><a href="https://www.wch-ic.com/downloads/CH449DS1.PDF.html?type=en">CH449DS1 - Nanjing Qinheng Microelectronics Co., Ltd.</a>
+<ul>
+<li>Recap: Dual 4×4 matrix analog switch chip, supports I2C communication, 1.8V to 5V wide voltage.
+<ul>
+<li>R_on is about 5Ω. CH449 supports switch of 4 inputs and 4 outputs differential signals
+or 2 groups of independent 4 inputs and 4 outputs single-ended signals.</li>
+</ul>
+</li>
+<li>Resolution: this is not an active component though, we still need a separated MCU.</li>
+<li>Root: <a href="https://item.taobao.com/item.htm?id=671502081635">CH449F/X CH448F单双刀十六掷差分通道八掷5V低阻模拟开关芯片4x4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: [2026-05-22 12:36:37 PM] #protocol/swd
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/102239/how-to-daisy-chain-swd-debug-port/680448#680448">daisy chain SWD Debug port</a>
+<ul>
+<li>Recap: no you cant if your chip doesnt do SWDv2.</li>
+<li>Run: 74LVC1G18 or 74LVC1G19 for clock/SWCLK, and DG4157E for SWDIO. (Data requires an analog switch because it is bi-directional.)
+<ul>
+<li>so SWD can be wired to CH448F. CLK can be switched by whatever digital multiplexer you have.</li>
+</ul>
+</li>
+<li>Related: JTAG can do it but many chips doesnt have it. (FT32, PY32, CW32, HK32). higher end as AT32F4xx have that.</li>
+</ul>
+</li>
+<li>#discussion <a href="https://www.reddit.com/r/embedded/comments/lulhck">Thoughts on programming multiple boards &quot;simultaneously&quot; over JTAG or SWD.</a></li>
+</ul>
+</li>
+<li>Rival: <a href="https://www.ti.com/product/SN74CB3Q3251">SN74CB3Q3251 3.3-V, 8:1, 1-channel general-purpose FET bus switch/analog multiplexer</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

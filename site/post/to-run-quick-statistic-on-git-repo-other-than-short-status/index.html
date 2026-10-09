@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: To run quick statistic on git repo, other than short status...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">To run quick statistic on git repo, other than short status...</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-12-10 02:52:46 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>To run quick statistic on git repo, other than short status...
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> count-objects<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>vH</span> </span>
+</span></code></pre>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://github.com/jj-vcs/jj/discussions/8204">General slowness and watchman · jj-vcs/jj · Discussion #8204</a></li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/2108405/branch-descriptions-in-git/79716313#79716313">Branch descriptions in Git&quot;&quot;</a>
+<ul>
+<li>Run:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>add</span> alias.about <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>!describe() { git config branch.&quot;$(git symbolic-ref --short -q HEAD)&quot;.description; }; describe<span class="punctuation definition string end shell">&#39;</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or you push a git notes       </span><span class="comment line number-sign shell">
+</span></span></code></pre>
+<ul>
+<li>Root: <a href="https://github.com/helix-editor/helix/pull/14903">Added <code>.git/EDIT_DESCRIPTION</code> to <code>git-notes</code> language file-types by kpbaks · Pull Request #14903 · helix-editor/helix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

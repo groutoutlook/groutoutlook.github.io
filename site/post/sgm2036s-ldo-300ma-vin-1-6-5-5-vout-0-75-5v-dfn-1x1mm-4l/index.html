@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: SGM2036S LDO 300mA | VIN 1.6-5.5 | VOUT 0.75-5V DFN 1x1mm 4L</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">SGM2036S LDO 300mA | VIN 1.6-5.5 | VOUT 0.75-5V DFN 1x1mm 4L</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-25 09:43:00 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ldo">
+                        <span>ldo</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/power">
+                        <span>power</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.sg-micro.com/product/SGM2036S">SGM2036S LDO 300mA | VIN 1.6-5.5 | VOUT 0.75-5V DFN 1x1mm 4L</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://www.sg-micro.com/product/SGM2212">SGM2212-ADJ LDO 800mA | VIN 2.7-20V | VOUT 1.25-15V DFN 3×3mm 8L</a>
+<ul>
+<li>really close with AMS1117-ADJ one.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://vllogic.com/hardware/vllink_basic2_vref">VRef Port Instructions — Vllogic documentation</a></li>
+<li>Related:
+<ul>
+<li>#ldo <a href="https://product.torexsemi.com/system/files/series/xc6206.pdf">xc6206 enough to tank esp32, 200mAh, non-adj SOT-23-3</a></li>
+<li>#ldo <a href="https://www.sg-micro.com/rect/assets/7da5804a-f54d-4ca1-8da5-7edb5881f7ad/SGM2019.pdf">SGM2019 for RF chips, max 250mAh, adjustable SOT-23-5</a></li>
+<li>SGM6603 is the boost chip. that is pretty common.</li>
+</ul>
+</li>
+<li>Revisit: [ Monday, June 15, 2026 08:54:44 AM ] #blog <a href="https://mp.weixin.qq.com/s/SK29MfdgcyG6T-JBHxhvKg">What is the series resistance between the LDO input and output pins? This seemingly counterintuitive design actually holds a lot of hidden meaning</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

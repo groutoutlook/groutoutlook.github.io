@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: compress everything which only have images, no videos files. archived is put next to the directory.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">compress everything which only have images, no videos files. archived is put next to the directory.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-04-17 03:40:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/archive">
+                        <span>archive</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>compress everything which only have images, no videos files. archived is put next to the directory.
+<ul>
+<li>Recap:</li>
+<li>Run: More <a href="https://github.com/groutoutlook/MyThings">at this justfile, maybe a psm1/psd1.</a>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain"># Run from the root where you want to search (or set $root)
+$root = Get-Location
+
+Get-ChildItem -Path $root -Recurse -File -Include *.jpg,*.jpeg,*.png,*.webp,*.jxl,*.gif,*.mp4,*.webm |
+  Group-Object DirectoryName |
+  Where-Object {
+    $exts = ($_.Group.Extension | ForEach-Object { $_.ToLowerInvariant() })
+    # has JPG|JPEG|PNG|WEBP|JXL, and does NOT contain gif/mp4/webm
+    (($exts -contains &#39;.jpg&#39; -or $exts -contains &#39;.jpeg&#39; -or $exts -contains &#39;.png&#39; -or $exts -contains &#39;.webp&#39; -or $exts -contains &#39;.jxl&#39;) -and
+    -not ($exts -contains &#39;.gif&#39; -or $exts -contains &#39;.mp4&#39; -or $exts -contains &#39;.webm&#39;))
+  } |
+  ForEach-Object {
+    $dirPath = $_.Name
+    $zipName = &quot;{0}.zip&quot; -f (Split-Path $dirPath -Leaf)
+    $zipPath = Join-Path -Path (Split-Path $dirPath -Parent) -ChildPath $zipName
+
+    if (Test-Path -Path $zipPath -PathType Leaf) {
+        Write-Output &quot;ZIP already exists - skipping: $zipPath&quot;
+        return  # skip this directory
+    }
+
+    Compress-Archive -Path (Join-Path $dirPath &#39;*&#39;) -DestinationPath $zipPath -Force
+    Write-Output &quot;Created: $zipPath&quot;
+  }
+</span></code></pre>
+</li>
+<li>Resolution: and more at here <a href="https://github.com/groutoutlook/MyThings/blob/main/ImagesZip.ps1">ImagesZip.ps1</a>
+<ul>
+<li>that archive only images files in those folders which has images, videos are being left alone.</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: 教程：AT32F435 QSPI 读写W25Q256</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">教程：AT32F435 QSPI 读写W25Q256</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-11-25 05:47:54 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/flash">
+                        <span>flash</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/memory">
+                        <span>memory</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/spi/qspi">
+                        <span>spi/qspi</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://blog.csdn.net/liliquan2/article/details/130697268">教程：AT32F435 QSPI 读写W25Q256</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://blog.csdn.net/weixin_38933763/article/details/130941048">AT32F435/F437 QSPI Driver Winbond/Hengshuo NAND FLASH (W25N01G/ZB35Q01A) No Output Signal</a></li>
+<li>#firmware #libc <a href="https://github.com/libdriver/w25qxx"><code>w25qxx</code> W25QXX(W25Q10, W25Q20, W25Q40, W25Q80, W25Q16, W25Q32, W25Q64, W25Q128, W25Q256, W25Q512, W25Q01, W25Q02) full-featured driver library for general-purpose MCU and Linux.</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://zhuanlan.zhihu.com/p/461163682">SPIM and QSPI functions of AT32 - Zhihu</a>
+<ul>
+<li>only on those weaker one as 403A and the like. F435_437 straight up using QSPI only.</li>
+<li>SPIM is SPI coupled with DMA to take stream to memory directly.
+<ul>
+<li>Root: #nordic nrf54L15 have that functionality. Under the name EasyDMA.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://bbs.21ic.com/forum.php?mod=viewthread&amp;tid=3387824">ICP Tool Adds QSPI Download Function - AT32 MCU AT32 MCU Official Technical Support Forum for AT32 MCU</a></li>
+<li>#api <a href="https://github.com/ArteryTek/sdk-csp-at32f4/blob/535245f3b5155c18a4998cc7b1a33478604828a9/libraries/f435_437/drivers/src/at32f435_437_qspi.c#L72">sdk-csp-at32f4/libraries/f435_437/drivers/src/at32f435_437_qspi.c at 535245f3b5155c18a4998cc7b1a33478604828a9 · ArteryTek/sdk-csp-at32f4</a></li>
+<li><a href="https://github.com/ArteryTek/AT32F435_437_Firmware_Library/blob/master/project/at_surf_f437/examples/qspi_flash/src/main.c">AT32F435_437_Firmware_Library examples qspi_flash</a>
+<ul>
+<li>If enable QSPI XIP, has to enable qspi_xip_cache_bypass_set(QSPIx， TRUE),</li>
+<li>Root: it's from their FAQ0130.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

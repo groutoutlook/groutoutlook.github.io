@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;hyperfine&#x60;: A command-line benchmarking tool</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;hyperfine&#x60;: A command-line benchmarking tool</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-22 02:54:30 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/benchmark">
+                        <span>benchmark</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/sharkdp/hyperfine#intermediate-shell"><code>hyperfine</code>: A command-line benchmarking tool</a>
+<ul>
+<li>Recap:</li>
+<li>Resolution: dont try to run benchmarking binaries with cmdlets in  <code>pwsh</code>. Shell startup time is 1min.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">hyperfine</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>S</span><span class="keyword operator assignment option shell">=</span>pwsh <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>eza<span class="punctuation definition string end shell">&quot;</span></span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>gci<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>show-output</span>  </span>
+<span class="meta function-call shell"><span class="variable function shell">hyperfine</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Spwsh</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>eza<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>L</span> list_function gci ls <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>{list_function}<span class="punctuation definition string end shell">&quot;</span></span></span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Or faster, run this.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">hyperfine</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>runs</span> 2 <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>eza -T<span class="punctuation definition string end shell">&quot;</span></span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>tree<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+<ul>
+<li><code>--show-output</code> self-explained.</li>
+<li><code>--parameter-scan</code> | <code>-P</code> will <a href="https://github.com/sharkdp/hyperfine#parameterized-benchmarks">Parameterized benchmarks with numeral inputs</a>
+<ul>
+<li>use with <code>--parameter-step-size</code> | <code>-D</code> will lerp the range of two numbers.</li>
+<li><code>--parameter-list</code> | <code>-L</code> will be used for strings.</li>
+</ul>
+</li>
+<li><code>--runs</code> specify exact amount of times running.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Pro: compare function within my shell vs dedicated program in <code>$PATH</code> or relative to <code>$pwd</code>.</li>
+<li>Cons: super slow, it's calibrating for shell startup time as well...
+<ul>
+<li>To run without intermediate shell <code>-N</code> need to be added.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: I'm still looking for a way to diff command output without saving them to files.</li>
+<li>Related:</li>
+<li>Revisit: [ Saturday, June 20, 2026 02:09:13 PM ] recently I consider using <code>hyperfine</code> again... Have to evaluate AI code so we could force them to try using hyperfine to compare.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

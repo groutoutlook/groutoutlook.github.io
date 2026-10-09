@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;espeak-ng&#x60; speech synthesizer that supports more than hundred languages and accents.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;espeak-ng&#x60; speech synthesizer that supports more than hundred languages and accents.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-20 02:07:29 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nlp">
+                        <span>nlp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/tts">
+                        <span>tts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/espeak-ng/espeak-ng"><code>espeak-ng</code> speech synthesizer that supports more than hundred languages and accents.</a>
+<ul>
+<li>Recap: on #wsl it works much better than in #windows.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">espeak</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>v</span> en-us+f3<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> 150 <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Hello world<span class="punctuation definition string end shell">&quot;</span></span></span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>If you really have to test in native Windows
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$env:ESPEAK_DATA_PATH = &quot;$(rvpa (split-path -par (scoop which espeak-ng)))\espeak-ng-data\&quot;
+espeak-ng -v en-us+f3 -s 150 &quot;Hello world&quot; #this is in scoop btw
+</span></code></pre>
+</li>
+<li><a href="https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/CLI.md#raw-phonemes">get Raw Phonemes with <code>espeak</code></a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">espeak-ng</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>v</span> en-us<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ipa</span><span class="keyword operator assignment option shell">=</span>3<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>q</span> batman</span>
+</span></code></pre>
+</li>
+<li><a href="https://github.com/espeak-ng/espeak-ng/blob/master/docs/mbrola.md"><code>espeak-ng</code> and <code>mbrola</code> integration</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <code>piper-tts</code>.</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/OHF-Voice/intents"><code>intents</code> used with Home Assistant</a></li>
+<li>#ml : <a href="https://github.com/Picovoice/rhino"><code>rhino</code> On-device Speech-to-Intent engine</a>
+<ul>
+<li>Root: <a href="https://picovoice.ai/blog/ai-agents-at-the-edge/">AI Agents at the Edge: On-Device Intelligence - Picovoice</a></li>
+</ul>
+</li>
+<li>#hardware <a href="https://github.com/sipeed/picoclaw"><code>picoclaw</code> on LicheeRV-Nano</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

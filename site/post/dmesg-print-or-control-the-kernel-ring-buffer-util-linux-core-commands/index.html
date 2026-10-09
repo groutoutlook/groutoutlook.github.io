@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;dmesg&#x60; print or control the kernel ring buffer | util-linux-core Commands</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;dmesg&#x60; print or control the kernel ring buffer | util-linux-core Commands</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-15 04:26:06 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/linux">
+                        <span>linux</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.mankier.com/1/dmesg"><code>dmesg</code> print or control the kernel ring buffer | util-linux-core Commands</a>
+<ul>
+<li>Recap:</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Show UART information, incl. baudrate, for /dev/ttyS* devices.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">dmesg</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">grep</span></span><span class="meta function-call arguments shell"> ttyS</span>
+
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Show UART information, incl. baudrate, for /dev/ttyUSB* devices.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">dmesg</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">grep</span></span><span class="meta function-call arguments shell"> ttyUSB</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>#comparison : <a href="https://www.reddit.com/r/redhat/comments/n3b278">Can someone briefly explain the major differences between dmesg, journald and syslog? Thanks!</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

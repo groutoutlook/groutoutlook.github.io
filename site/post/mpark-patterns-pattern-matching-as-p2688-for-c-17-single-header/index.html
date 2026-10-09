@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: mpark/patterns: pattern matching as P2688, for c++17, single header</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">mpark/patterns: pattern matching as P2688, for c++17, single header</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-30 09:10:17 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/mpark/patterns">mpark/patterns: pattern matching as P2688, for c++17, single header</a>
+<ul>
+<li>Recap:</li>
+<li>Root:</li>
+<li>Resolution: <code>match(expression)(pattern(&lt;pattern&gt;) = &lt;lambda&gt;,...);</code>
+<ul>
+<li>Expression Pattern:
+<ul>
+<li>matching some condition range, or null or placeholders, in the style of case as tuples.</li>
+</ul>
+</li>
+<li>Arg Pattern: <code>arg</code>
+<ul>
+<li>also match <code>any</code>, but also bind args to lambda during pattern declaration.</li>
+</ul>
+</li>
+<li>Wildcard: <code>_</code>
+<ul>
+<li>match <code>any</code>, but <code>move</code> values from arg to the lambda.</li>
+</ul>
+</li>
+<li>Identifier: work by names, matching by comparing with pattern name.</li>
+<li>Destructure: <code>ds(&lt;pattern&gt;,...)</code> it's like matching a tuple by structured binding.</li>
+<li>Optional: <code>some(&lt;pattern&gt;)</code> | <code>none</code>
+<ul>
+<li>to match optional or pointer, any of which can be deref.</li>
+</ul>
+</li>
+<li>As: <code>as&lt;typename&gt;(&lt;pattern&gt;)</code>
+<ul>
+<li>this could mainly be used to match the typename itself.</li>
+</ul>
+</li>
+<li>Visit: <code>vis(&lt;pattern&gt;)</code></li>
+<li>Alternation: <code>anyof(&lt;pattern&gt;)</code></li>
+<li>Variadic: <code>variadic(&lt;pattern&gt;)</code>
+<ul>
+<li>which can only be used along with the variadic lambda.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: more expressive code, not necessary faster though.
+<ul>
+<li>Some clauses to help on match:
+<ul>
+<li><code>WHEN(boolean expression)</code> will help better on negating unwanted match(es).</li>
+</ul>
+</li>
+<li>Pattern statements:
+<ul>
+<li><code>if_let</code> match  one pattern, other execution paths left uncalculated.</li>
+<li><code>for_let</code> match one pattern, and loop over ranges.</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/BowenFu/matchit.cpp">BowenFu/matchit.cpp: match(it): A lightweight single-header pattern-matching library for C++17 with macro-free APIs.</a></li>
+<li><a href="https://github.com/jbandela/simple_match/">jbandela/simple_match: Simple header only pattern matching for c++14</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

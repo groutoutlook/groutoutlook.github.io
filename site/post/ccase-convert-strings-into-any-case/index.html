@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;ccase&#x60; convert strings into any case.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;ccase&#x60; convert strings into any case.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-24 01:02:39 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/rutrum/ccase"><code>ccase</code> convert strings into any case.</a>
+<ul>
+<li>Recap: <code>ccase</code> convert string in any case you want, instead of hackable script like i did.</li>
+<li>Resolution: check out [[001.014-cli ccase]]</li>
+<li>Reason: conversion easier to many case: with just <code>ccase --to kebab this_var_name</code></li>
+</ul>
+</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash">            <span class="meta function-call shell"><span class="variable function shell">upper</span></span><span class="meta function-call arguments shell">  upper case</span>
+            <span class="meta function-call shell"><span class="variable function shell">lower</span></span><span class="meta function-call arguments shell">  lower case</span>
+            <span class="meta function-call shell"><span class="variable function shell">title</span></span><span class="meta function-call arguments shell">  title case</span>
+           <span class="meta function-call shell"><span class="variable function shell">toggle</span></span><span class="meta function-call arguments shell">  toggle case</span>
+            <span class="meta function-call shell"><span class="variable function shell">camel</span></span><span class="meta function-call arguments shell">  camelcase</span>
+           <span class="meta function-call shell"><span class="variable function shell">pascal</span></span><span class="meta function-call arguments shell">  pascalcase</span>
+       <span class="meta function-call shell"><span class="variable function shell">uppercamel</span></span><span class="meta function-call arguments shell">  uppercamelcase</span>
+            <span class="meta function-call shell"><span class="variable function shell">snake</span></span><span class="meta function-call arguments shell">  snake_case</span>
+       <span class="meta function-call shell"><span class="variable function shell">uppersnake</span></span><span class="meta function-call arguments shell">  upper_snake_case</span>
+   <span class="meta function-call shell"><span class="variable function shell">screamingsnake</span></span><span class="meta function-call arguments shell">  screaming_snake_case</span>
+            <span class="meta function-call shell"><span class="variable function shell">kebab</span></span><span class="meta function-call arguments shell">  kebab-case</span>
+            <span class="meta function-call shell"><span class="variable function shell">cobol</span></span><span class="meta function-call arguments shell">  cobol-case</span>
+       <span class="meta function-call shell"><span class="variable function shell">upperkebab</span></span><span class="meta function-call arguments shell">  upper-kebab-case</span>
+            <span class="meta function-call shell"><span class="variable function shell">train</span></span><span class="meta function-call arguments shell">  train-case</span>
+             <span class="meta function-call shell"><span class="variable function shell">flat</span></span><span class="meta function-call arguments shell">  flatcase</span>
+        <span class="meta function-call shell"><span class="variable function shell">upperflat</span></span><span class="meta function-call arguments shell">  upperflatcase</span>
+      <span class="meta function-call shell"><span class="variable function shell">alternating</span></span><span class="meta function-call arguments shell">  alternating case</span>
+           <span class="meta function-call shell"><span class="variable function shell">random</span></span><span class="meta function-call arguments shell">  random case</span>
+     <span class="meta function-call shell"><span class="variable function shell">pseudorandom</span></span><span class="meta function-call arguments shell">  pseudo random case</span>
+</span></code></pre>
+<ul>
+<li>Root: try to convert case for searching code by using <code>rg</code>.
+<ul>
+<li><a href="https://stackoverflow.com/questions/17326185/what-are-the-different-kinds-of-cases#54330161">What are the different kinds of cases?</a></li>
+</ul>
+</li>
+<li>Related:</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

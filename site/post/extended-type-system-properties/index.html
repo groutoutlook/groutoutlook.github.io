@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Extended Type System properties</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Extended Type System properties</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-27 11:03:51 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/dotnet">
+                        <span>dotnet</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <p><a href="https://learn.microsoft.com/powershell/scripting/developer/ets/properties">Extended Type System properties</a>-</p>
+<ul>
+<li>Recap: About PSObject properties.</li>
+<li>Run:</li>
+<li>Resolution:
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/scripting/developer/ets/methods">Extended Type System class methods</a>
+<ul>
+<li>about its method as <code>Invoke()</code></li>
+<li>Append <code>psobject.methods</code> behind any invokable object you can think of.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/powershell/scripting/developer/ets/typeconverters">Extended Type System type converters</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>many quick and useful methods for simple #string manipulation as:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">(gcm :m).Definition|%{gcm $_.Trim()}|%{ $_.Definition} # trim tab, space, newline, all whitespace.
+</span></code></pre>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

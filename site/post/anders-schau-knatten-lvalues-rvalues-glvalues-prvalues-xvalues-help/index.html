@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Anders Schau Knatten: lvalues, rvalues, glvalues, prvalues, xvalues, help!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Anders Schau Knatten: lvalues, rvalues, glvalues, prvalues, xvalues, help!</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-29 01:09:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/reference">
+                        <span>reference</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/std">
+                        <span>std</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/variable">
+                        <span>variable</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/video">
+                        <span>video</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://youtu.be/hkyZ8L343cU">Anders Schau Knatten: lvalues, rvalues, glvalues, prvalues, xvalues, help!</a>
+<ul>
+<li>Recap: very comprehensive explaination.</li>
+<li>Run:</li>
+<li>Resolution: <code>lvalue</code> have a name and cannot be moved? when needed, make an <code>xvalue</code> out of it.
+<ul>
+<li><code>rvalue</code> is  instantiated value with no name</li>
+</ul>
+</li>
+<li>Reason: <code>&amp;&amp;</code> or double ampersand is rvalue reference.
+<ul>
+<li><code>&amp;</code> or single ampersand is lvalue reference, much preferred <code>std::ref</code> nowadays.</li>
+</ul>
+</li>
+<li>Root: #blog <a href="https://www.reddit.com/r/cpp/comments/1olgcsv">A prvalue is not a temporary</a></li>
+<li>Related: - <a href="https://cppreference.com/w/cpp/language/value_category">Value categories</a> - <a href="https://cppreference.com/w/cpp/language/reference">Reference declaration</a> - <a href="https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues">c++ - What are rvalues, lvalues, xvalues, glvalues, and prvalues?</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

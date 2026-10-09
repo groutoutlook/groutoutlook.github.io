@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Both &#x60;scooter&#x60; | &#x60;rgr&#x60; and &#x60;rg&#x60; use &#x60;regex&#x60; crates so it share the quirky named capturing group.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Both &#x60;scooter&#x60; | &#x60;rgr&#x60; and &#x60;rg&#x60; use &#x60;regex&#x60; crates so it share the quirky named capturing group.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-18 04:02:24 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/grep">
+                        <span>grep</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/regex">
+                        <span>regex</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/rust">
+                        <span>rust</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Both <code>scooter</code> | <code>rgr</code> and <code>rg</code> use <code>regex</code> crates so it share the quirky named capturing group.
+<ul>
+<li>Recap: <a href="https://docs.rs/regex/latest/regex/">regex - Rust</a></li>
+<li>Run:
+<ul>
+<li>Recite: To include a pure dollar sign in a regex replacement string, escape it by using two dollar signs ($$).</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scooter -s &quot;\&#39;\`$HOME(.*)&quot; -r &quot;`&quot;`$`$HOME`$1`&quot;&quot; # for various linting in app shim.
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li>
+<p>#rust: <a href="https://docs.rs/regex/latest/regex/#grouping-and-flags">Grouping</a></p>
+<table>
+<thead>
+<tr>
+<th>Capture Grouping</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(exp)</code></td>
+<td>numbered capture group (indexed by opening parenthesis)</td>
+</tr>
+<tr>
+<td><code>(?P&lt;name&gt;exp)</code></td>
+<td>named (also numbered) capture group (names must be alpha-numeric)</td>
+</tr>
+<tr>
+<td><code>(?&lt;name&gt;exp)</code></td>
+<td>named (also numbered) capture group (names must be alpha-numeric)</td>
+</tr>
+<tr>
+<td><code>(?:exp)</code></td>
+<td>non-capturing group</td>
+</tr>
+<tr>
+<td><code>(?flags)</code></td>
+<td>set flags within current group</td>
+</tr>
+<tr>
+<td><code>(?flags:exp)</code></td>
+<td>set flags for exp (non-capturing)</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><a href="https://docs.rs/regex/latest/regex/#escape-sequences">Escape sequences</a></p>
+</li>
+<li>
+<p>Sub-expression according to Perl <code>'$0'</code> is the whole match. $1,$2,...$n is the one in array.</p>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://stackoverflow.com/questions/74240592/regex-with-named-capture-group">Regex with Named Capture Group</a>
+<ul>
+<li>which <code>(?&lt;</code> is enough instead of <code>(?P&lt;</code></li>
+<li>It's <code>'?P&lt;named&gt;'</code> - <code>'$named'</code> for <code>scooter</code>, <code>fd</code> and <code>rg</code>.
+<ul>
+<li>It's because of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape">Unicode character class escape: \p{...}, \P{...} - JavaScript | MDN</a>
+<ul>
+<li>I hope so... it seems much more than that but anyway.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recite: <code>ripgrep</code> Capturing groups can also be named, which is sometimes more convenient than using the indices.</li>
+<li>Related:
+<ul>
+<li>#sql <a href="https://devblogs.microsoft.com/azure-sql/unlocking-the-power-of-regex-in-sql-server/">Unlocking the Power of Regex in SQL Server - Azure SQL Devs’ Corner</a>
+<ul>
+<li><a href="https://www.postgresql.org/docs/current/functions-matching.html">PostgreSQL: Documentation: 17: 9.7. Pattern Matching</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

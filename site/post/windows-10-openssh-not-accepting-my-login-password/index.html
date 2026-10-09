@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: windows 10 - OpenSSH not accepting my login password</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">windows 10 - OpenSSH not accepting my login password</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-03-28 12:47:57 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/1522466/openssh-not-accepting-my-login-password">windows 10 - OpenSSH not accepting my login password</a>
+<ul>
+<li>Recap: ssh problem? Wrong default shell, mostly.</li>
+<li>Root:</li>
+<li>Resolution:
+<ul>
+<li>Current username: <code>[System.Security.Principal.WindowsIdentity]::GetCurrent().Name</code></li>
+<li>or just <code>hostname</code> or <code>$env:computername</code></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

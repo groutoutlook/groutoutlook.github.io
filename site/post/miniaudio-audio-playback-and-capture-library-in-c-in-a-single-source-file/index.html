@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;miniaudio&#x60; Audio playback and capture library in C, in a single source file.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;miniaudio&#x60; Audio playback and capture library in C, in a single source file.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-01-18 06:28:25 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/framework">
+                        <span>framework</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/mackron/miniaudio"><code>miniaudio</code> Audio playback and capture library in C, in a single source file.</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://github.com/raysan5/raylib/blob/0275d13aa84f8a464b5246abbef9205b94c73c5e/src/raudio.c#L339"><code>raylib</code> use miniaudio as reference to develop their own.</a></li>
+<li>Resolution:
+<ul>
+<li><a href="https://miniaud.io/docs/manual/index.html">miniaudio documentation.</a></li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>Some good recommendation about it as simple and quick dirty.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/mpv-player/mpv/blob/ca211b5b8830a74fecae115ba18b62878348342c/audio/out/ao_pcm.c#L56">mpv also have their own PCM output engine</a></li>
+<li><a href="https://github.com/SFML/SFML/blob/62a2a39650e29c16bb5b3878a133c28584508cf9/src/SFML/Audio/SoundStream.cpp#L85">SFML is more C++ based.</a></li>
+<li><a href="https://github.com/libsdl-org/SDL/blob/842f6dc40227c8b7aa5b92084b60b257690a9e90/src/audio/SDL_wave.c#L85">SDL do their own audio as well.</a></li>
+<li>GLFW dont do audio.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

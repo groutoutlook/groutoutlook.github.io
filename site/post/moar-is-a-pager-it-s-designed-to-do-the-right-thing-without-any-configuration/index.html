@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;moar&#x60; is a pager. It&#x27;s designed to  do the right thing without any configuration.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;moar&#x60; is a pager. It&#x27;s designed to  do the right thing without any configuration.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-16 10:10:00 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/crossplatform">
+                        <span>crossplatform</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pager">
+                        <span>pager</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/walles/moar"><code>moar</code> is a pager. It's designed to  do the right thing without any configuration.</a>
+<ul>
+<li>Recap: better than <code>less</code> could ever be. Although it couldnt config keys.</li>
+<li>Root:</li>
+<li>Resolution: if you use <code>moar</code> as pager for <code>bat</code>
+<ul>
+<li><del>$env:PAGER = &quot;$HOME/scoop/apps/moar/current/moar.exe&quot;</del>. Or #powertoys.
+<ul>
+<li>remember it's <code>/</code> forward slash.</li>
+<li>same with $env:EDITOR = &quot;$HOME/scoop/apps/helix/current/hx.exe&quot;
+<ul>
+<li>it's the reason <code>gh</code> read $env:EDITOR but couldnt figure out.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason: in scoop.</li>
+<li>Related:</li>
+<li>Revisit: 2025-05-17 13:03:17. My default pager has changed.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: What is HTTP &quot;Host&quot; header?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">What is HTTP &quot;Host&quot; header?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-15 08:26:10 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ip/port">
+                        <span>ip/port</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/network">
+                        <span>network</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/43156023/what-is-http-host-header">What is HTTP &quot;Host&quot; header?</a>
+<ul>
+<li>Recap: host header is for specifying host + port.</li>
+<li>Run:</li>
+<li>Resolution: when you dont have too many IP for many websites. This muxes for you.</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/dotnet/comments/wilzd0">Are you using IIS on your production server?</a>
+<ul>
+<li><a href="https://zamkblog.wordpress.com/2024/08/20/cgi-with-powershell-scripts-on-iis/">CGI with PowerShell Scripts on IIS – Zam Tech Blog</a></li>
+</ul>
+</li>
+<li>Related: #blog : <a href="https://simonh.uk/2023/08/19/why-cgi-programming-is-still-useful-in-2023/">simonh.uk :: Why CGI Programming is Still Useful in 2023</a>
+<ul>
+<li>CGI or even FastCGI is considering obsoleted nowadays.
+<ul>
+<li>#rust #blog <a href="https://jacob.gold/posts/serving-half-billion-requests-with-rust-cgi/">Serving a half billion requests per day with Rust + CGI | Jake Gold</a></li>
+</ul>
+</li>
+<li>#nginx : <a href="https://news.ycombinator.com/item?id=45070602">Nginx-CGI brings support for CGI to <code>nginx</code> and <code>angie</code></a>
+<ul>
+<li>#competitor is <a href="https://github.com/openresty/openresty"><code>openresty</code> Web Platform Based on Nginx and LuaJIT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: #acronym <a href="https://wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI : Web Server Gateway Interface</a>
+<ul>
+<li>Resolution: #python <a href="https://github.com/pallets/werkzeug"><code>werkzeug</code> WSGI web application library.</a>
+<ul>
+<li>#rust: <a href="https://github.com/emmett-framework/granian"><code>granian</code> Rust HTTP server for Python applications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

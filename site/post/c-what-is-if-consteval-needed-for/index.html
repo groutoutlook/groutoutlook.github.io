@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - What is &#x60;if consteval&#x60; needed for?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - What is &#x60;if consteval&#x60; needed for?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-18 08:50:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiletime">
+                        <span>compiletime</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/68213012/what-is-if-consteval-needed-for">c++ - What is <code>if consteval</code> needed for?</a>
+<ul>
+<li>Recap:</li>
+<li>Root:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/language/consteval">consteval specifier (since C++20)</a></li>
+</ul>
+</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Related: <a href="https://stackoverflow.com/questions/64395622/consteval-vs-constexpr-on-variables">c++ - consteval vs constexpr on variables and functions</a>
+<ul>
+<li>basically  use consteval on constexpr function if it only need to be called in compiletime.</li>
+<li>constexpr function can be evaluated at both runtime and compiletime. It's the default of lambda after all.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

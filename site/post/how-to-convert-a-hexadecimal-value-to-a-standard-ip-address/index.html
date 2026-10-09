@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How to convert a hexadecimal value to a &quot;standard&quot; ip address?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How to convert a hexadecimal value to a &quot;standard&quot; ip address?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-21 11:57:59 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ip/address">
+                        <span>ip/address</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://superuser.com/questions/1104234/how-to-convert-a-hexadecimal-value-to-a-standard-ip-address">How to convert a hexadecimal value to a &quot;standard&quot; ip address?</a>
+<ul>
+<li>Recap:</li>
+<li>Run: #AI taught me this. Convert int -&gt; hex -&gt; transform each octet into a IP address.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$timeout = 300
+$arpTable = @()
+foreach ( $index in 1..255){
+    $dns = [System.Net.Dns]::GetHostEntryAsync(&quot;192.168.110.$index&quot;)
+    $dns.Wait($timeout) | Out-Null
+    if ($dns.IsCompleted) {
+        if ($dns.Status -ne &quot;Faulted&quot;){
+            $arpTable += $dns.Result
+        }
+    } else { Write-Error &quot;DNS query timed out&quot; }
+}
+$arpTable
+
+(tohex $arpTable[0].AddressList[0].Address) -split &#39;(.{2})&#39; -ne &#39;&#39;| % {[System.Convert]::ToInt32($_,16)} -ob 3| tee -Variable resolvedIP
+$resolvedIP -join &quot;.&quot;
+</span></code></pre>
+</li>
+<li>Resolution: lots of regex magic... the world will be a better place if using members.
+<ul>
+<li>You could quickly make mock variable by:
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$arpTable = @(@{ AddressList = @(@{ Address = $null }, @{ Address = $null }) })
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://stackoverflow.com/questions/38567479/hex-to-decimal-conversion-powershell-5">Hex to Decimal Conversion - PowerShell 5</a>
+<ul>
+<li>cast to <code>uint32</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

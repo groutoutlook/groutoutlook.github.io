@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: ripgrep-all:&#x60;rga&#x60; search in PDFs, E-Books, Office documents, zip, tar.gz, etc.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">ripgrep-all:&#x60;rga&#x60; search in PDFs, E-Books, Office documents, zip, tar.gz, etc.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-12 02:11:08 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/phiresky/ripgrep-all">ripgrep-all:<code>rga</code> search in PDFs, E-Books, Office documents, zip, tar.gz, etc.</a>
+<ul>
+<li>Recap: mostly useful but remember to check out the adapters.
+<ul>
+<li>It's OOTB <code>rg</code> with more <code>--pre</code> flags baked in.</li>
+</ul>
+</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="support function cd shell">cd</span></span><span class="meta function-call arguments shell"> fmd doc</span>
+<span class="meta function-call shell"><span class="variable function shell">rga</span></span><span class="meta function-call arguments shell"> led<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>g</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>*.pdf<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span></span> <span class="keyword operator logical pipe shell">|</span><span class="meta function-call shell"><span class="variable function shell">b</span></span>
+</span></code></pre>
+</li>
+<li>Resolution: Find strings in other obscure file extensions. like <code>xlsx</code> and <code>mp4</code>,
+<ul>
+<li>which mean we could search metadata as well.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><a href="https://github.com/phiresky/ripgrep-all/discussions/273">XLSX files adapter · phiresky/ripgrep-all · Discussion #273</a></li>
+</ul>
+</li>
+<li>Root: wandering around <code>scoop</code>.</li>
+<li>Related:</li>
+<li>Revisit: [2025-06-02 21:17:51] because of <code>rg --pre</code> is cumbersome to use.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

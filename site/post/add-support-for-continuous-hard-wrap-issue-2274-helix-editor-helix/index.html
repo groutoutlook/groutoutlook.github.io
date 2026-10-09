@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: add support for continuous hard wrap · Issue #2274 · helix-editor/helix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">add support for continuous hard wrap · Issue #2274 · helix-editor/helix</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-16 04:24:49 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/formatting">
+                        <span>formatting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/helix">
+                        <span>helix</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ide/vscode">
+                        <span>ide/vscode</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/helix-editor/helix/issues/2274">add support for continuous hard wrap · Issue #2274 · helix-editor/helix</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://github.com/helix-editor/helix/discussions/13094">Is it possible to split long line into multiple like in VIM/nvim <code>gql</code>? · helix-editor/helix · Discussion #13094</a>
+<ul>
+<li>Root : Deeper is some <a href="https://news.ycombinator.com/item?id=41797271">Lessons from Plain Text</a>
+<ul>
+<li>Mostly discuss some nonsense about how many characters per line is optimal.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolution: <code>Ctrl+w ctrl+e</code> as <code>:reflow</code> commands. you normally will have to match
+either by selection mode or match with <code>x</code>/<code>X</code> or some other, then you wrap words.
+<ul>
+<li>You can try make a new line and put a delimiter(e.g. &quot;.&quot;) in the final to prevent <code>hx</code>
+trim that from you, reflow will take care of auto-indent with that.</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><code>editor.action.toggleWordWrap</code> == <code>Ctrl+w ctrl+e</code> as well. Same in #ide/vs.</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#config: <a href="https://github.com/helix-editor/helix/blob/master/book/src/editor.md#editorsoft-wrap-section"><code>editor.soft-wrap</code></a>
+<ul>
+<li>It make links somewhat unusable though.</li>
+</ul>
+</li>
+<li>for #windows/terminal: no gutters + break mid word could help terminal find links easier
+<ul>
+<li>Run: <code>Ctrl+w ctrl+e</code> -&gt; <code>Ctrl+w ctrl+n</code> -&gt; <code>Ctrl+shift+m</code> -&gt; <code>tab</code>. IT could find links.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/helix-editor/helix/wiki/Terminal-Support#enhanced-keyboard-protocol">Terminal Support · helix-editor/helix Wiki</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

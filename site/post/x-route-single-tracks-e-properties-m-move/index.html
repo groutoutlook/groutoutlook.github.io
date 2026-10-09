@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;x&#x60; route single tracks, &#x60;e&#x60; properties, &#x60;m&#x60; move.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;x&#x60; route single tracks, &#x60;e&#x60; properties, &#x60;m&#x60; move.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-21 10:36:33 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pcbnew">
+                        <span>pcbnew</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><code>x</code> route single tracks, <code>e</code> properties, <code>m</code> move.
+<ul>
+<li>Recap: <code>w</code> <code>e</code> edit track custom width regardless of default.
+<ul>
+<li><code>a</code> will select all while popped up.</li>
+<li>while clicking, <code>1</code>,<code>2</code> to choose. Hold <code>Shift</code> choose extra.</li>
+</ul>
+</li>
+<li>Run:
+<ul>
+<li>In route mode, <code>v</code> spawn via and continue route in the bottom layer, <code>Enter</code> to confirm via position.
+<ul>
+<li>but <code>v</code> in normal mode alternate between b.Cu and f.Cu <strong>when you are not actively routing</strong></li>
+<li><code>ctrl+e</code>  route from the other end, if you have multiple ends then it will pick the one you hover.</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+<li>Resolution: when select you better choose layers first. Too many things are elide on the screen...
+<ul>
+<li>especially true if you have too many interconnect between layers.</li>
+<li>Quickest way to get dimension of PCB is select <code>Edge.Cuts</code> and <code>e</code>.</li>
+<li>while routing and want to pin/static the track direction, <code>Enter</code> quicker than double click.
+<ul>
+<li>same apply with Measure Tool/Ruler. static the ruler by <code>Enter</code>. Better than double click.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li>I kept mistaking tracks with vias...</li>
+</ul>
+</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li>#eeschema <code>w</code> is wiring/routing in schematic editor... btw <code>/</code> will switch segment postures.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

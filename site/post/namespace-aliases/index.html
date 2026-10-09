@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Namespace aliases</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Namespace aliases</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-10 05:44:07 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/alias">
+                        <span>alias</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/type/trait">
+                        <span>type/trait</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/language/namespace_alias">Namespace aliases</a>
+<ul>
+<li>Recap: alias for namespaces.</li>
+<li>Root:</li>
+<li>Resolution:
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta namespace c++"><span class="keyword control c++">namespace</span> </span><span class="meta namespace c++"><span class="entity name namespace c++">fbz</span></span><span class="meta namespace c++"> <span class="keyword operator alias c++">=</span> foo<span class="punctuation accessor c++">::</span>bar<span class="punctuation accessor c++">::</span>baz</span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/language/typedef">typedef specifier</a>
+<ul>
+<li><code>using</code> is <a href="https://cppreference.com/w/cpp/language/type_alias">Type alias, alias template (since C++11)</a>
+<ul>
+<li>which is also used for namespace.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#rust : <a href="https://doc.rust-lang.org/reference/items/type-aliases.html">Type aliases - The Rust Reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

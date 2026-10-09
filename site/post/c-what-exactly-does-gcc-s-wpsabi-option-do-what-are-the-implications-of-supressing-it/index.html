@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: c++ - What exactly does GCC&#x27;s -Wpsabi option do? What are the implications of supressing it?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">c++ - What exactly does GCC&#x27;s -Wpsabi option do? What are the implications of supressing it?</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-11-14 04:28:53 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compiler">
+                        <span>compiler</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/compsci">
+                        <span>compsci</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/52020305/what-exactly-does-gccs-wpsabi-option-do-what-are-the-implications-of-supressi">c++ - What exactly does GCC's -Wpsabi option do? What are the implications of supressing it?</a>
+<ul>
+<li>Recap:</li>
+<li>Root: <a href="https://github.com/riscv-non-isa/riscv-elf-psabi-doc">riscv-non-isa/riscv-elf-psabi-doc: A RISC-V ELF psABI Document</a></li>
+<li>Resolution:
+<ul>
+<li>ABI is for specifying calling conventions, mostly needed when you write a compiler.
+<ul>
+<li><a href="https://softwareengineering.stackexchange.com/questions/165543/how-to-write-a-very-basic-compiler">c - How to write a very basic compiler</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Related:
+<ul>
+<li><a href="https://courses.cs.washington.edu/courses/cse481a/20sp/notes/psabi.pdf">Basic on ABI</a></li>
+<li><a href="https://github.com/ARM-software/abi-aa">ARM-software/abi-aa: Application Binary Interface for the Arm® Architecture</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: std::basic_string_view&lt;CharT,Traits&gt;::find_first_of</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">std::basic_string_view&lt;CharT,Traits&gt;::find_first_of</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-14 10:30:24 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/search">
+                        <span>search</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/string">
+                        <span>string</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://cppreference.com/w/cpp/string/basic_string_view/find_first_of">std::basic_string_view&lt;CharT,Traits&gt;::find_first_of</a>
+<ul>
+<li>Recap: <code>find_first_of</code> has the same arguments as <code>find</code>, except it's for any of <strong>character</strong> in the provided view.</li>
+<li>Run:</li>
+<li>Resolution: categoried as operator method.
+<ul>
+<li><a href="https://cppreference.com/w/cpp/string/basic_string_view/find">std::basic_string_view&lt;CharT,Traits&gt;::find</a>
+<ul>
+<li><code>find</code> return first occurence of a view/substring.
+<ul>
+<li>there can be pos, count as extra arguments to find.
+<ul>
+<li><code>count</code> is the length of substring that needed to be search.</li>
+<li><code>pos</code> is the start index of target string.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://cppreference.com/w/cpp/string/basic_string_view/rfind">std::basic_string_view&lt;CharT,Traits&gt;::rfind</a>
+<ul>
+<li>there are also <code>rfind</code> which find the last occurence.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://cppreference.com/w/cpp/string/basic_string_view/npos">std::basic_string_view&lt;CharT,Traits&gt;::npos</a>
+<ul>
+<li><code>npos</code> is pointer to the end of a view/vector/string, normally returned by <code>find</code>
+<ul>
+<li>or <code>contains</code> as well.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

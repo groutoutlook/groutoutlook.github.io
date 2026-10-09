@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mergiraf&#x60; A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mergiraf&#x60; A syntax-aware git merge driver for a growing collection of programming languages and file formats.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-02 04:58:23 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/diff">
+                        <span>diff</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://codeberg.org/mergiraf/mergiraf"><code>mergiraf</code> A syntax-aware git merge driver for a growing collection of programming languages and file formats.</a>
+<ul>
+<li>Recap: not only #nightly, I have to link it into <code>~/.local/bin</code> or <code>git</code> couldnt find it.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> pull origin_sample main</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> merge origin_sample/main</span>
+</span></code></pre>
+</li>
+<li>Resolution:
+<ul>
+<li><a href="https://mergiraf.org/usage.html#registration-as-a-git-merge-driver">Usage - Mergiraf</a>
+<ul>
+<li>#til about <code>.gitattributes</code> and the global one....</li>
+</ul>
+</li>
+<li><a href="https://mergiraf.org/usage.html#interactive-use-after-encountering-a-merge-conflict">Interactive use after encountering a merge conflict - <code>mergiraf solve conflict.cpp</code></a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://lobste.rs/s/1qmcac/tools_built_on_tree_sitter_s_concrete">Tools built on tree-sitter's concrete syntax trees</a></li>
+<li>Related:
+<ul>
+<li><a href="https://repo.jellyfin.org/?path=/server/windows/latest-preview/amd64">Nightlies Jellyfin Repository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

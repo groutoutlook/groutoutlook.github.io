@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-16 08:05:04 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mcu/wch">
+                        <span>mcu/wch</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/usb/pd">
+                        <span>usb/pd</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.wch-ic.com/products/CH32X035.html">USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</a>
+<ul>
+<li>Recap: CH32X035F8U6 QFN20 and G8U8 QFN28. CH32X033F8P6 is TSSOP20. CH32X035D8U6 is QFN12 2*2 P0.4mm (this is new on [Thursday, May 7, 2026 06:02:50 PM])</li>
+<li>Run: this is the crsytal-less USB MCU. which can invoke USB-PD as well.</li>
+<li>Resolution: also have <code>PIO</code> like block. it's called <code>PIOC</code> with an embedded eMCU (RISC8B ISA).
+<ul>
+<li>main chip is <code>RISCV4C</code> which I honestly cant remember the triplet.</li>
+<li>#ota #mcu/boot <a href="https://www.eevblog.com/forum/microcontrollers/bootloaders-and-cheap-risc-v-(ch32x035-and-ch32v003)/">Bootloaders and cheap RISC-V (CH32X035 and CH32V003)</a></li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: <a href="https://community.st.com/t5/stm32-mcus-products/achieving-usb-pd-communication-via-bit-banging-on-stm32l562cet6/td-p/699037">Solved: Achieving USB PD Communication via Bit Banging on ...</a>
+<ul>
+<li><a href="https://hackaday.com/2025/01/10/bit-banging-the-usb-pd-protocol/">Bit-Banging The USB-PD Protocol | Hackaday</a></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li>#usb/pd/pps <a href="https://github.com/wagiminator/CH32X035-USB-PD-Adapter#building-instructions">Portable Programmable Power Supply with CH32X035 USB-PD PPS</a>
+<ul>
+<li>since my Beryl 7 PSU do have PPS support, I am wondering.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,2 +1,2 @@
 base_url = "/"
-exclude_tags = ["adult"]
+exclude_tags = ["adult","personal"]

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;mpv --force-window&#x60; - change background when playing audio files? / Applications &amp; Desktop Environments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;mpv --force-window&#x60; - change background when playing audio files? / Applications &amp; Desktop Environments</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-05-08 02:51:43 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/mpv">
+                        <span>mpv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/software">
+                        <span>software</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://bbs.archlinux.org/viewtopic.php?pid=2297426#p2297426"><code>mpv --force-window</code> - change background when playing audio files? / Applications &amp; Desktop Environments</a>
+<ul>
+<li>Recap:</li>
+<li>Run: since <code>mpv</code> capture stdin so it'll never let anything after that run, need to run postprocessing scripts in delayed background jobs
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">Start-Job</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>ScriptBlock</span> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>
+    Start-Sleep -Seconds 2
+    &amp; <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>smartcontextmenu<span class="punctuation definition string end shell">&#39;</span></span> --titleEnds <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>mpv<span class="punctuation definition string end shell">&#39;</span></span> --transparency 20 --alwaysontop on --hidealttab on --clickthrough on --priority realtime
+<span class="punctuation section expansion brace end shell">}</span></span></span>
+<span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>playlist</span><span class="keyword operator assignment option shell">=</span><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">playlistDir</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>loop-playlist</span><span class="keyword operator assignment option shell">=</span>1<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>panscan</span><span class="keyword operator assignment option shell">=</span>1.0<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>profile</span><span class="keyword operator assignment option shell">=</span>fast<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>sub-pos</span><span class="keyword operator assignment option shell">=</span>20<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>sub-color</span><span class="keyword operator assignment option shell">=</span>1.0/0.0/0.0/0.75<span class="variable parameter option shell"><span class="punctuation definition parameter shell">  --</span>lavfi-complex</span><span class="keyword operator assignment option shell">=</span><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>[aid1] asplit [ao] [v] ; [v] showwaves=mode=line:split_channels=1 [vo]<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>force-window</span></span>
+</span></code></pre>
+<ul>
+<li>hidealttab, part of it is to make the instance of them appear in every desktop.</li>
+</ul>
+</li>
+<li>Resolution: weirdly enough after doing all that atrocious shit, I can still run <code>add-track</code> <code>add-lyric</code> things.
+so windows handle are still there.
+<ul>
+<li>you can also access it under <code>mpv</code> in explorer ribbon taskbar... but once you do that it will show in <code>alt+tab</code> again.
+<ul>
+<li>also a good way to clear that state but eh...</li>
+</ul>
+</li>
+<li>with Windows PowerToys you can pin that more consistently. <code>ctrl+win+alt+t</code> == Always on top.
+<ul>
+<li><code>ctrl+win+=</code>/<code>ctrl+win+-</code> to increase/decrease opacity. will beep to hint operation success.</li>
+<li><code>smartcontextmenu --titleContains &quot;edge&quot; --alwaysontop on</code> will prioritize over PowerToys' Always on Top.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root:</li>
+<li>Related:
+<ul>
+<li><a href="https://mpv.io/manual/master/#audio-filters"><code>--af</code>/<code>--vf</code> audio filter and video filter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

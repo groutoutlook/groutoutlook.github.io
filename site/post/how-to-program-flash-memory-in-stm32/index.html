@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: How to Program Flash memory in STM32</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">How to Program Flash memory in STM32</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-12-28 05:13:23 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/flash">
+                        <span>flash</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/memory">
+                        <span>memory</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://controllerstech.com/flash-programming-in-stm32/">How to Program Flash memory in STM32</a>
+<ul>
+<li>Recap: also check out ft32f0xx_flash.h</li>
+<li>Resolution: we have <a href="https://github.com/controllerstech/STM32/tree/master/FLASH_PROGRAM/F1%20SERIES">STM32/FLASH_PROGRAM/F1 SERIES at master · controllerstech/STM32</a>
+<ul>
+<li>make a separate one to implement for specific MCU as AT32 and FT32.</li>
+<li>There are also bootloader area in case you want to use as... auxillary memory.
+<ul>
+<li>FT32's is in <code>0x1FFFE800~0x1FFFF7FF</code> sector.</li>
+<li>AT32...</li>
+<li>Or you could load a separate projects into the bootloader sector...
+<ul>
+<li>Remember to change your linker script(.sct files). AND/OR change your target...</li>
+<li>if you do something like OTA update, and do not hardwired your BOOT0 into GND.</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/654907/how-to-write-the-scatter-file-for-keil-uvision-to-force-linker-to-allocate-varia">stm32 - How to write the scatter file for Keil uVision to force linker to allocate variables in SRAM?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:</li>
+<li>Root: #blog <a href="https://mp.weixin.qq.com/s/s1vLJ611r93T4j2eAiAICg">A must-see for embedded engineers! Keil MDK-ARM .sct file is fully parsed, and it is up to it to control the memory layout</a>
+<ul>
+<li>there are writeup on <code>.stack</code> and <code>.heap</code> as well, <code>extab</code>/<code>exidx</code>, <code>.fini_array</code>/<code>.init_array</code></li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><a href="https://github.com/controllerstech/STM32/tree/master/FLASH_PROGRAM/H7%20SERIES">FLASH_PROGRAM/H7 SERIES · controllerstech/STM32</a>
+<ul>
+<li>H7 can directly use those.</li>
+</ul>
+</li>
+<li><a href="https://programmerah.com/solved-keil-compile-error-error-l6220e-load-region-lr_irom1-size-65552-bytes-exceeds-limit-65536-bytes-53203/">Solved | KEIL Compile Error: Error: L6220E: Load region LR_IROM1 size (65552 bytes) exceeds limit (65536 bytes)…… | ProgrammerAH</a></li>
+<li><a href="https://community.st.com/stm32-mcus-products-25/stm32-memory-out-and-how-avoid-that-4253">STM32 memory out and how avoid that | Community</a>
+<ul>
+<li>Recap: you can try <code>-O2</code>/<code>-O3</code> instead of default <code>-Ofast</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;imageflow&#x60; image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;imageflow&#x60; image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-07-26 10:11:33 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/png">
+                        <span>format/png</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/image">
+                        <span>image</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/toolkit">
+                        <span>toolkit</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/imazen/imageflow"><code>imageflow</code> image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow</a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:
+<ul>
+<li>Pro:
+<ul>
+<li>Recite: <code>Imageflow.Server</code> is cross-platform and can manipulate images in-flight
+as <code>/bucket/img.jpg?w=200</code> for direct use from HTML. Source images can reside
+in blob storage, on another server, or on the filesystem. It's a production ready
+server with excellent hybrid disk caching, support for Azure and Amazon blob
+storage, and can be easily customized. You can deploy it easily via Docker, on a
+VM, or via any cloud host. It's also backwards compatible with the ImageResizer
+API - which is useful, as ImageResizer as been integrated into more than a thousand
+different CMSes and applications in the last decade.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root: quite frustrated about quality of <code>magick</code></li>
+<li>Related:</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>
