@@ -49,3 +49,37 @@ function sortCount() {
     const list = ul.querySelectorAll("li");
     ul.append(...sortListTopicCount(list));
 }
+
+function sortChronological() {
+    const ul = document.querySelector(".topic-list");
+    const list = [...ul.querySelectorAll("li")];
+    list.sort((a, b) => Date.parse(b.dataset.sortDate) - Date.parse(a.dataset.sortDate));
+    ul.append(...list);
+}
+
+function shuffleTags() {
+    const ul = document.querySelector(".topic-list");
+    const list = [...ul.querySelectorAll("li")];
+    for (let i = list.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [list[i], list[j]] = [list[j], list[i]];
+    }
+    ul.append(...list);
+}
+
+function showRandomEntries() {
+    const source = [...document.querySelectorAll("#random-source a")];
+    const results = document.querySelector("#random-results");
+    if (!results || !source.length) return;
+    for (let i = source.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [source[i], source[j]] = [source[j], source[i]];
+    }
+    results.replaceChildren(...source.slice(0, 5).map(link => {
+        const item = document.createElement("a");
+        item.href = link.href;
+        item.className = "random-entry";
+        item.textContent = link.textContent;
+        return item;
+    }));
+}

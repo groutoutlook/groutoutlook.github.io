@@ -143,6 +143,25 @@ blockquote {
 .pagination [aria-disabled] { color: var(--muted); }
 .by-topic { margin: 2em 0; }
 .by-topic summary { font-weight: 600; font-size: 18px; cursor: pointer; padding: 0.5em 0; }
+.random-button { margin: 0.25em 0 0.75em; }
+.random-results { display: flex; flex-wrap: wrap; gap: 0.5em; margin-bottom: 0.75em; }
+.random-entry { padding: 0.45em 0.7em; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); }
+.til-content ul { padding-left: 1.25em; }
+.til-content .journal-field-label {
+    display: inline-block;
+    color: var(--accent);
+    margin-right: 0.35em;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+}
+.til-content li:has(.journal-field-label) {
+    list-style: none;
+    margin: 0.55em 0 0.55em -1.25em;
+    padding: 0.45em 0.7em;
+    border-left: 4px solid var(--accent);
+    background: var(--surface);
+}
+.til-content li:has(.journal-field-label) > ul { margin-left: 0.8em; }
 
 @media (max-width: 540px) {
     .recent-til { grid-template-columns: minmax(0, 1fr); gap: 0.4em; }

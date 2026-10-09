@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;uv&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;uv&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-10-04 02:31:38 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/genesis">
+                        <span>genesis</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/libman/uv">
+                        <span>libman/uv</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/python">
+                        <span>python</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/astral-sh/uv"><code>uv</code></a>
+<ul>
+<li>Recap:</li>
+<li>Run:</li>
+<li>Resolution:</li>
+<li>Reason:</li>
+<li>Root: <a href="https://www.reddit.com/r/programming/comments/1dpr61b">Never thought I'd be saying this but switching over to uv from pip was worth it</a></li>
+<li>Related: #blog <a href="https://lobste.rs/s/fluuv7/uv_is_best_thing_happen_python_ecosystem">uv is the best thing to happen to the Python ecosystem in a decade</a>
+<ul>
+<li>Recap: introduce me to something like <code>uv sync</code>. Lots of good practice in here.</li>
+<li>Run:
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> run pytest <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or `uv run pytest -p no:cov` if you feel like it.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> run<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>with</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>rich&lt;12<span class="punctuation definition string end shell">&#39;</span></span> python main.py <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> constraining import module inside the main.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> run python<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>from PySide6 import QtWidgets; print(&#39;hehe&#39;)<span class="punctuation definition string end shell">&quot;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> one line.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li>[2025-09-13 09:40:37 AM] #cpp #python <a href="https://github.com/mamba-org/micromamba-releases">micromamba-releases executables mirrored from conda-forge as Github releases</a>
+<ul>
+<li>Root: <a href="https://www.reddit.com/r/cpp/comments/1nf1lga">I want something like Python's uv for c++</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rival: <a href="https://github.com/prefix-dev/pixi"><code>pixi</code> Package management made easy</a>
+<ul>
+<li><code>conda</code> and <code>mamba</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

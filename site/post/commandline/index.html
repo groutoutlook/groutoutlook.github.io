@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: commandline</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">commandline</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-04-26 09:47:51 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/buffer/line">
+                        <span>buffer/line</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/nushell">
+                        <span>nushell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/prompt">
+                        <span>prompt</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/stirng">
+                        <span>stirng</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.nushell.sh/commands/docs/commandline.html">commandline</a>
+<ul>
+<li>Recap: which is the commands for editing current buffer, can
+<ul>
+<li><code>commandline edit -a</code>, <code>-i</code>, <code>-r</code></li>
+<li><code>commandline get-cursor</code> and <code>commandline set-cursor</code> (<code>-e</code> will move to the end)</li>
+</ul>
+</li>
+<li>Root: <a href="https://www.nushell.sh/book/line_editor.html#send-type">Send Type, Edits Type, Until Type </a>
+<ul>
+<li>all kind of events in <code>keybindings list</code> , you can filter with <code> | where type == send</code></li>
+</ul>
+</li>
+<li>Resolution:
+<ul>
+<li>if you  type <code>commandline</code>, it will return full line buffer values,
+<ul>
+<li>you can assign this to a string-type variable and meddle with it.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reason:
+<ul>
+<li><a href="https://github.com/nushell/nushell/pull/15092">feat: immediately accept by mrdgo · Pull Request #15092 · nushell/nushell</a>
+<ul>
+<li>same as <code>zle accept-line</code>, this is needed for run string output of <code>ExecuteHostCommand</code>.</li>
+<li>if this is not merged, we have to use <code>edit</code> only, since the execution of <code>send</code> event
+<ul>
+<li>block all the edit after it.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related:
+<ul>
+<li><code>Ctrl+o</code> will open editor in nushell. like <code>Ctrl+x ctrl+e</code> does in powershell</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

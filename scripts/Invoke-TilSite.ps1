@@ -15,7 +15,7 @@ if (-not (Test-Path -LiteralPath $tilsDirectory -PathType Container)) {
 }
 
 if ([string]::IsNullOrWhiteSpace($TillerExecutable)) {
-    $TillerExecutable = Join-Path $TillerRoot 'target\debug\tiller.exe'
+    $TillerExecutable = Join-Path $TillerRoot 'target\release\tiller.exe'
 }
 
 if (-not (Test-Path -LiteralPath $TillerExecutable -PathType Leaf)) {
@@ -26,9 +26,6 @@ if (-not (Test-Path -LiteralPath (Join-Path $TillerRoot 'Cargo.toml'))) {
     throw "Tiller checkout not found: $TillerRoot"
 }
 
-if (Test-Path -LiteralPath $siteDirectory) {
-    Remove-Item -LiteralPath $siteDirectory -Recurse -Force
-}
 New-Item -ItemType Directory -Path $siteDirectory -Force | Out-Null
 & $TillerExecutable `
     --indir $repoRoot `
