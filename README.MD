@@ -3,7 +3,4 @@
   - Reason: It fits my terminal.
 
 ## TILs
-- TODO: make `jrnl --format yaml` and `tiller` play nicely with others.
-  - Touch `jrnl` yaml engine so it can emit something as conformance yaml.
-  - Make `tiller` read some other fields.
-
+- Done.
