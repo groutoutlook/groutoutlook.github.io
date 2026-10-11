@@ -47,22 +47,22 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/write-output"><code>Write-Output</code> | <code>write</code> | <code>echo</code></a>
 <ul>
-<li>Recap: to pass output to another cmdlet in pipeline. Not for write-host as I normally do.</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to pass output to another cmdlet in pipeline. Not for write-host as I normally do.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Write-Output 1,2,3 -NoEnumerate |%{ $_.Length}` output 3 # pass the whole array of `1,2,3`. Dont have to use `-ob` as well.
 $a=&#39;&#39;;34,169,208,276,363 |%{$a+=&quot;[$_,],&quot;};$a # dont even need write-host, shorter.
 34,169,208,276,363 |%{$a}{$a+=&quot;[$_,],&quot;}{$a;rv a} #begin-process-end pipeline loop. neater
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/write-output#example-3-suppress-enumeration-in-output"><code>Write-Output</code> with <code>-NoEnumerate</code> | <code>-n</code> Suppress enumeration in output</a></li>
 <li>This could reduce my excessive use of <code>select</code> and <code>where</code>.</li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

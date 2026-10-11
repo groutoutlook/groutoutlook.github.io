@@ -42,8 +42,8 @@
             <ul>
 <li><a href="https://www.reddit.com/r/CloudFlare/comments/12yrbkz">Warp client stuck in connecting due to DNS lookup failure</a>
 <ul>
-<li>Recap:</li>
-<li>Run: from <a href="https://learn.microsoft.com/en-us/answers/questions/5587447/how-to-resolve-dns-issues-on-windows-11-that-began">How to resolve DNS issues on Windows 11 that began after an update - Microsoft Q&amp;A</a>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> from <a href="https://learn.microsoft.com/en-us/answers/questions/5587447/how-to-resolve-dns-issues-on-windows-11-that-began">How to resolve DNS issues on Windows 11 that began after an update - Microsoft Q&amp;A</a>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">netsh int ip reset
 netsh winsock reset
 ipconfig /flushdns
@@ -52,14 +52,14 @@ ipconfig /renew
 netsh interface ip delete arpcache
 </span></code></pre>
 </li>
-<li>Resolution: this also resolved my issues with those self-hosted services.</li>
-<li>Reason:</li>
-<li>Root: all because of trying to run <code>warp-cli connect</code>.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> this also resolved my issues with those self-hosted services.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> all because of trying to run <code>warp-cli connect</code>.
 <ul>
 <li>you can reset PC or not. it's all because of arpcache.</li>
 </ul>
 </li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

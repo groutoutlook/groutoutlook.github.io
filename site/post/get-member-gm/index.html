@@ -52,12 +52,12 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-member"><code>Get-Member</code> | <code>gm</code></a>
 <ul>
-<li>Recap: get-member and TypeName of a variable or anything it being piped.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> get-member and TypeName of a variable or anything it being piped.
 <ul>
 <li>You have to use <code>Get-Member</code> with <code>-inp</code> | <code>-InputObject</code> or used in pipelines.</li>
 </ul>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Service -Name sshd | gm
 Get-Member -inp (Get-Service -Name sshd)    
 # or for a very fast preview
@@ -65,18 +65,18 @@ Get-Service -Name sshd | ConvertTo-Json
 gbp | gm # Instead of using ConvertTo-Json to see all the field.
 </span></code></pre>
 </li>
-<li>Resolution: Use that when write-format is not enough to show useful information.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Use that when write-format is not enough to show useful information.
 <ul>
 <li>Explore type properties and preparing for a good filtering scripts.</li>
 </ul>
 </li>
-<li>Reason: I dont want to search for the typeinfo every time, So I make a small alias.
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I dont want to search for the typeinfo every time, So I make a small alias.
 <ul>
 <li>#config <code>gti</code> to <code>Get-Member -Inp</code>. Left to Right expression.</li>
 </ul>
 </li>
-<li>Root: #alternative is <code>Get-TypeData</code>, but this is more ergonomic.</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #alternative is <code>Get-TypeData</code>, but this is more ergonomic.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

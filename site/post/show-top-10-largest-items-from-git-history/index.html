@@ -62,15 +62,15 @@
             <ul>
 <li><a href="https://askubuntu.com/questions/1259129/how-to-show-top-10-largest-items-from-git-history/1259248#1259248">show top 10 largest items from git history</a>
 <ul>
-<li>Recap:</li>
-<li>Run: #idea : in the mean time I do something like porting every bash script into powershell
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #idea : in the mean time I do something like porting every bash script into powershell
 I could also put those small snippets into a recipe and run them like this.
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[script(&quot;C://Program Files//Git//bin//bash.exe&quot;,&quot;-eu&quot;)]
 show-big-object:
     git ls-tree  -rl HEAD | sort -k4 -n | tail | awk &#39;{print $4, $5}&#39; | numfmt --to=iec-i
 </span></code></pre>
 </li>
-<li>Resolution: there's better way to do, an example is in this <code>obsidian</code> vault justfile.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> there's better way to do, an example is in this <code>obsidian</code> vault justfile.
 <ul>
 <li>Workaround for <code>bash</code>/<code>bash.exe</code> issue is shim <code>bash.exe</code> to <code>sh.exe</code> in <code>~/.local/bin</code>
 So that <code>just</code> or <code>helix</code> can find the binary and act as normal...
@@ -80,9 +80,9 @@ So that <code>just</code> or <code>helix</code> can find the binary and act as n
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://github.com/casey/just/issues/2671">Cross-platform <code>sh</code> via <code>deno</code> or <code>busybox</code></a></li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/casey/just/issues/2671">Cross-platform <code>sh</code> via <code>deno</code> or <code>busybox</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

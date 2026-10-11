@@ -47,21 +47,21 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-variable"><code>Get-Variable</code> | <code>gv</code></a>
 <ul>
-<li>Recap: Runtime reflection in Powershell. Access variable values through string.</li>
-<li>Run: there are also <code>sv</code> | <code>Set-Variable</code> to work with.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Runtime reflection in Powershell. Access variable values through string.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> there are also <code>sv</code> | <code>Set-Variable</code> to work with.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$that = @{}
 gv that
 $that -is [hashtable] #true
 </span></code></pre>
 </li>
-<li>Root: trying to understand why powershell for me to tab/ctrl+space before typing the colon.</li>
-<li>Resolution: Core technique to do some convoluted things.
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> trying to understand why powershell for me to tab/ctrl+space before typing the colon.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Core technique to do some convoluted things.
 <ul>
 <li>Type comparison operator (<code>-is</code>,<code>-isnot</code>) also do reflection thing.</li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#variable/env Dont ever name your variable <code>$this</code> since its an automatic variable.</li>
 <li>#enumeration : <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_enum">about_Enum</a>

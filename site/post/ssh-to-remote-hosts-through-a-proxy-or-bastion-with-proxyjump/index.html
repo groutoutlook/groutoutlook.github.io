@@ -42,13 +42,13 @@
             <ul>
 <li><a href="https://www.redhat.com/en/blog/ssh-proxy-bastion-proxyjump">SSH to remote hosts through a proxy or bastion with ProxyJump</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>J</span> user@<span class="keyword operator assignment redirection shell">&lt;</span>bastion:port<span class="keyword operator assignment redirection shell">&gt;</span> user@<span class="keyword operator assignment redirection shell">&lt;</span>remote:port<span class="keyword operator assignment redirection shell">&gt;</span> # specific user in bastion.</span>
 <span class="meta function-call shell"><span class="variable function shell">ssh</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>J</span> <span class="keyword operator assignment redirection shell">&lt;</span>bastion<span class="constant numeric integer decimal file-descriptor shell">1</span><span class="keyword operator assignment redirection shell">&gt;</span>,<span class="keyword operator assignment redirection shell">&lt;</span>bastion<span class="constant numeric integer decimal file-descriptor shell">2</span><span class="keyword operator assignment redirection shell">&gt;</span> <span class="keyword operator assignment redirection shell">&lt;</span>remote<span class="keyword operator assignment redirection shell">&gt;</span> # multiple proxy </span>
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li>Hard-coding proxy hosts in <code>~/.ssh/config</code></li>
 <li>#alternative: Forwarding stdin and stdout by <code>ssh -W</code>.
@@ -71,18 +71,18 @@
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: #discussion <a href="https://lobste.rs/s/7oqiqi/ssh_has_no_host_header">SSH has no Host header</a>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #discussion <a href="https://lobste.rs/s/7oqiqi/ssh_has_no_host_header">SSH has no Host header</a>
 <ul>
-<li>Recap: bring up <code>ProxyJump</code>, <code>ssh.exe</code>, <code>pico.sh</code> and pal.</li>
-<li>Resolution: so you use <code>-J</code> and <code>ProxyJump</code> to make 3rd party EC2/VM a relay/bastion host.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> bring up <code>ProxyJump</code>, <code>ssh.exe</code>, <code>pico.sh</code> and pal.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> so you use <code>-J</code> and <code>ProxyJump</code> to make 3rd party EC2/VM a relay/bastion host.
 <ul>
 <li>in case you really dont want to keep data there.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Related:
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://wikipedia.org/wiki/Bastion_host">Bastion host</a></li>
 <li><a href="https://stackoverflow.com/questions/22635613/what-is-the-difference-between-ssh-proxycommand-w-nc-exec-nc">What is the difference between ssh proxycommand -W, nc, exec nc</a></li>

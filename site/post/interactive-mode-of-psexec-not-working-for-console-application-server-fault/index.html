@@ -42,26 +42,26 @@
             <ul>
 <li><a href="https://serverfault.com/questions/453704/interactive-mode-of-psexec-not-working-for-console-application/1190071#1190071">Interactive mode of PSExec not working for console application - Server Fault</a>
 <ul>
-<li>Recap: remember ID of session.</li>
-<li>Run: Now I have to type invoke-sudopwsh in front of them...
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> remember ID of session.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Now I have to type invoke-sudopwsh in front of them...
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">psexec -s -i 1 &quot;powershell.exe&quot; # will not detach.
 psexec64 -s -i 1 &#39;powershell.exe&#39; -Command &quot;gci&quot;
 psexec -s -d -i 1 &quot;$HOME\scoop\apps\nircmd\current\nircmd.exe&quot; setcursor 1000 200
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/quser"><code>quser</code></a></li>
-<li>Recite: Arguments to pass (note that file paths must be absolute paths on the target system).
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> Arguments to pass (note that file paths must be absolute paths on the target system).
 <ul>
 <li>note that argument is not wrapped inside quotes of binary name/path.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Reason: useful for stopping something like cloudflare or <code>wetype</code> or <code>aliim</code> or <code>alibabaprotectservice</code></li>
-<li>Root:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> useful for stopping something like cloudflare or <code>wetype</code> or <code>aliim</code> or <code>alibabaprotectservice</code></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://serverfault.com/questions/713362/cant-get-psexec-to-work-with-powershell">Can't Get PSExec to work with Powershell - Server Fault</a></li>
 </ul>

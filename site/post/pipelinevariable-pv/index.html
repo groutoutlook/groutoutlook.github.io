@@ -47,8 +47,8 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_commonparameters#-pipelinevariable"><code>-PipelineVariable</code> | <code>-pv</code></a>
 <ul>
-<li>Recap: I love pipelines, so what?</li>
-<li>Run: there are parameter preference for a function to get into pipelines.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I love pipelines, so what?</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> there are parameter preference for a function to get into pipelines.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">[Parameter(
     Position=0, Mandatory=$true, 
     ValueFromPipeline=$true,
@@ -56,15 +56,15 @@
 ]
 </span></code></pre>
 </li>
-<li>Resolution: Pay attention to scope.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Pay attention to scope.
 <ul>
 <li>This pass a variable which can be accessed through all the after block in pipes.
 The block before it knows nothing, of course.</li>
 </ul>
 </li>
-<li>Reason: better lifetime management, use this to avoid global states.</li>
-<li>Root: <a href="https://fercorrales.com/powershell-practical-use-of-pipelinevariable-common-parameter/"><code>-PipelineVariable</code> usage</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> better lifetime management, use this to avoid global states.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://fercorrales.com/powershell-practical-use-of-pipelinevariable-common-parameter/"><code>-PipelineVariable</code> usage</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_pipelines#intrinsic-line-continuation">Intrinsic line continuation</a>
 <ul>
@@ -73,7 +73,7 @@ The block before it knows nothing, of course.</li>
 </li>
 <li><code>PSNativeCommandPreserveBytePipe</code> help on e.g. pipe from <code>(iwr $uri).Content</code> to <code>tar</code>. Or <code>curl</code>.
 <ul>
-<li>Root: <a href="https://stackoverflow.com/questions/76840261/in-powershell-how-can-i-get-stdout-and-stderr-from-a-native-command-interleave">In PowerShell, how can I get stdout and stderr from a native command interleave correctly when redirecting stderr to stdout?</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/76840261/in-powershell-how-can-i-get-stdout-and-stderr-from-a-native-command-interleave">In PowerShell, how can I get stdout and stderr from a native command interleave correctly when redirecting stderr to stdout?</a></li>
 </ul>
 </li>
 </ul>

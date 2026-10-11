@@ -47,8 +47,8 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/76250070/how-to-read-write-to-a-usb-serial-com-port-using-powershell">Read/write USB Serial COM port using powershell</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$mydevs = (Get-PnPDevice | Where-Object{$_.PNPClass -in  &quot;WPD&quot;,&quot;AndroidUsbDeviceClass&quot;,&quot;Modem&quot;,&quot;Ports&quot; } | 
     Where-Object{$_.Present -in &quot;True&quot;} | 
     Select-Object Name,Description,Manufacturer,PNPClass,Service,Present,Status,DeviceID | 
@@ -60,16 +60,16 @@ $mydevs | Format-Table Description, Manufacturer, PNPClass, Service,
     Present, Status    
 </span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://stackoverflow.com/questions/24307507/powershell-list-serial-ports-description">Powershell List Serial Ports + description</a>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/24307507/powershell-list-serial-ports-description">Powershell List Serial Ports + description</a>
 <ul>
 <li>how to list all COM ports in powershell.</li>
 <li>You can also use <code>usbipd list</code> to check for COM port numbers.</li>
 </ul>
 </li>
-<li>Related:</li>
-<li>Revisit: <a href="https://stackoverflow.com/questions/31297365/how-to-continuously-read-serial-com-port-in-powershell-and-occasionally-write-to">How to continuously read Serial COM port in Powershell and occasionally write to COM port</a>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/31297365/how-to-continuously-read-serial-com-port-in-powershell-and-occasionally-write-to">How to continuously read Serial COM port in Powershell and occasionally write to COM port</a>
 <ul>
 <li>I hope it is as simple as <code>getty</code> in #linux but yeah. You can use <code>plink</code> instead.</li>
 <li><a href="https://stackoverflow.com/questions/79220211/is-there-a-way-to-send-character-strings-between-2-powershell-terminal-windows">Is there a way to send character strings between 2 powershell terminal windows?</a>

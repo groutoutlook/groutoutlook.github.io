@@ -42,29 +42,29 @@
             <ul>
 <li>Other than <code>measure-command</code> or <code>hyperfine</code>, we can measure time within powershell easily.
 <ul>
-<li>Recap: with <code>GetTimeStamp()</code>,
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> with <code>GetTimeStamp()</code>,
 <ul>
 <li>high-resolution timestamp in ticks (100 nanoseconds per tick). Multiply by 100 to convert to nanoseconds.</li>
 </ul>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$time = [System.Diagnostics.Stopwatch]::GetTimestamp();
 Invoke-SudoPwsh &quot;netstat -anb | sls :80&quot;;
 [System.Diagnostics.Stopwatch]::GetTimestamp() - $time
 </span></code></pre>
 </li>
-<li>Resolution: this is the most convenient way to benchmark a command.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> this is the most convenient way to benchmark a command.
 <ul>
 <li>#doc/official <a href="https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.stopwatch?view=net-9.0">Stopwatch Class (System.Diagnostics)</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: I'm trying to find a way of doing math with get-date
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm trying to find a way of doing math with get-date
 <ul>
 <li>I'm benchmarking a command within <code>powershell</code>.</li>
 </ul>
 </li>
-<li>Related:
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.diagnostics/get-counter"><code>Get-Counter</code></a>
 <ul>

@@ -47,12 +47,12 @@
             <ul>
 <li><a href="https://github.com/pamburus/termframe"><code>termframe</code> output/stdout capturing SVG Terminal screenshot</a>
 <ul>
-<li>Recap: #nightly this one. I shim <code>termshot</code> to this as well. Terminal shoot, screenshot or so.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly this one. I shim <code>termshot</code> to this as well. Terminal shoot, screenshot or so.
 <ul>
 <li>to compile this one, not only full rust but <code>gcc</code> in #windows as well. I got it from <code>scoop</code>.</li>
 </ul>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">bat &quot;$(zqi nightly termframe)\assets\test\input\sample.ansi&quot; | termframe &gt; ./ansi.svg &amp;&amp; msedge file://$pwd/ansi.svg
 tree --color=always *&gt;&amp;1 | termframe &gt; tree-l1.svg &amp;&amp; msedge file://$pwd/tree-l1.svg # `eza` trim color in pipe by default.
 r l *&gt;&amp;1 | termframe &gt; ./just-lint.svg
@@ -66,9 +66,9 @@ r l *&gt;&amp;1 | termframe &gt; ./just-lint.svg
 </li>
 </ul>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
-<li>Recite: Use auto-sizing to determine optimal dimensions based on command output.
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> Use auto-sizing to determine optimal dimensions based on command output.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Auto-detect both width and height</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">termframe</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>width</span> auto<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>height</span> auto<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> output.svg<span class="keyword operator end-of-options shell"> --</span></span><span class="meta function-call arguments shell"> command</span>
 
@@ -82,13 +82,13 @@ r l *&gt;&amp;1 | termframe &gt; ./just-lint.svg
 </li>
 </ul>
 </li>
-<li>Reason: for troubleshoot/reporting issues to code authors. Even peers.</li>
-<li>Root: <a href="https://github.com/homeport/termshot"><code>termshot</code> screenshots based on terminal command output</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> for troubleshoot/reporting issues to code authors. Even peers.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/homeport/termshot"><code>termshot</code> screenshots based on terminal command output</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#test/integration <code>.\assets\test\input</code> have many <code>.ansi</code> file which can use to test ANSI-compatible of terminal.
 <ul>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">bat</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span><span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">zoxide</span></span><span class="meta function-call arguments shell"> query termframe</span><span class="punctuation section parens end shell">)</span></span>\assets\test\input\lsd.ansi<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>P <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `-P` disable pager option in `bat`</span><span class="comment line number-sign shell">
 </span></span></span></span></code></pre>
 </li>

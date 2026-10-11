@@ -52,9 +52,9 @@
             <ul>
 <li><a href="https://github.com/thomasschafer/scooter/#pre-populating-search-fields"><code>scooter</code> Pre-populating search fields</a>
 <ul>
-<li>Recap: as now you can do <code>scooter --search-text a --replace-text b</code></li>
-<li>Run: <code>rgr -s search_term</code> most of the time, dont use <code>-R</code> and <code>-S</code> except in script.</li>
-<li>Resolution: I alias <code>scooter</code> | <code>rgr</code> so... Also I will cover short version only.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> as now you can do <code>scooter --search-text a --replace-text b</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>rgr -s search_term</code> most of the time, dont use <code>-R</code> and <code>-S</code> except in script.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I alias <code>scooter</code> | <code>rgr</code> so... Also I will cover short version only.
 <ul>
 <li><code>-s</code> search text, <code>-r</code> replace text, <code>-w</code> whole word. <code>-i</code> case insensitive.</li>
 <li><code>-f</code> | <code>--fixed-strings</code> self-explained.</li>
@@ -70,13 +70,13 @@
 <li><code>scooter</code> can use capture syntax, e.g. <code>\s([A-Z]+).*\.</code> : <code>$1</code> that will return only Full Capitalize phrase, i.e the acronym.</li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#cli: <a href="https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#replacements">show only captured match</a>
 <ul>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this only show acronym of two or more characters in current dir.</span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> better do it in single quote</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>\s([A-Z]{2,}).*\.<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>or</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>$1<span class="punctuation definition string end shell">&#39;</span></span></span>

@@ -47,23 +47,23 @@
             <ul>
 <li><a href="https://github.com/ouch-org/ouch"><code>ouch</code> Painless compression and decompression in the terminal</a>
 <ul>
-<li>Recap: #nightly yeah. I shim it to <code>zip</code>.</li>
-<li>Run: so useful for case that you want to quickly peek into compressed files.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly yeah. I shim it to <code>zip</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> so useful for case that you want to quickly peek into compressed files.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">ouch</span></span><span class="meta function-call arguments shell"> l .<span class="constant character escape shell">\a</span>ny.zip<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>t <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> tree like render to terminal. list items in archives..</span><span class="comment line number-sign shell">
 </span></span></span><span class="meta function-call shell"><span class="variable function shell">ouch</span></span><span class="meta function-call arguments shell"> c ./<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">source</span></span> ./<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">dest</span></span>.zip</span>
 <span class="punctuation definition compound begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">f</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>td</span></span><span class="punctuation definition compound end shell">)</span> <span class="keyword operator logical pipe shell">|</span><span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span>{<span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>-replace<span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>\\<span class="punctuation definition string end shell">&#39;</span></span></span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">}</span><span class="keyword operator logical pipe shell">|</span><span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span>{ouch</span></span><span class="meta function-call arguments shell"> c <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span>.zip<span class="punctuation definition string end shell">&quot;</span></span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">} <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> a bit more advance could be using ouch with `fd`</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">gci</span></span> <span class="keyword operator logical pipe shell">|</span><span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span>{ouch</span></span><span class="meta function-call arguments shell"> d <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable language shell">_</span></span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">} <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> much faster than Explorer&#39;s `Extract All...` (T2)</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>Resolution: <code>ouch</code> correctly display unicode name of certain things, unlike <code>tar tf</code>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>ouch</code> correctly display unicode name of certain things, unlike <code>tar tf</code>
 <ul>
 <li><code>ouch</code> avoid much edge case that <code>Compress-Archive</code> stuck at
 e.g. <code>[].png</code> bracket in the end of name  kind of stuck... Unicode, much more.</li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

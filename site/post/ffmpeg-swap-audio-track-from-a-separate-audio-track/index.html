@@ -47,8 +47,8 @@
             <ul>
 <li><code>ffmpeg</code> swap audio track, from a separate audio track.
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> thatsANoNo-Itzy (gcb</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="variable other readwrite assignment shell">--cookies-from-browser</span><span class="keyword operator assignment shell">=</span><span class="string unquoted shell">firefox</span> <span class="meta function-call shell"><span class="variable function shell">--no-playlist</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>audio-format</span> opus<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> https://youtu.be/5egJjtkj_Gc&amp;list [... 0 more matches]</span><span class="comment line number-sign shell">
 </span></span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> yt-dlp download only audio with format of something like opus/mp3</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>x</span> (gcb</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">) <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> https://youtu.be/r_dVIEF1Sq4 </span><span class="comment line number-sign shell">
@@ -60,13 +60,13 @@
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ffmpeg -ss 00:00 -i .\VeryVeryVery-IOI.webm -ss 00:00.3 -i &quot;D:\ProgramDataD\3-Audio\proj\downloads\I.O.I - Very Very Very.flac&quot; -map 0:v:0 -map 1:a:0 -map 0:a:0 -c:v copy -c:a copy -disposition:a:0 default -disposition:a:1 0 .\VeryVeryVery-IOI.mkv -y
 </span></code></pre>
 <ul>
-<li>Related: <code>#</code> == <code>SHARP cycle audio</code> to check on real sound.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>#</code> == <code>SHARP cycle audio</code> to check on real sound.</li>
 <li>ffmpeg delay audio of the first audio track, not touch second audio track at all.</li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ffmpeg -i .\SHEESH-BabyMonster.mkv -filter_complex &quot;[0:a:0]adelay=200|200[a0]&quot; -map 0:v -map &quot;[a0]&quot; -map 0:a:1 -c:v copy -c:a:1 copy -c:a:0 aac .\SHEESH-BabyMonster-.mkv -y
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><code>mpv</code> have a command with a #keybinding #default as:
 <ul>
@@ -76,10 +76,10 @@
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
-<li>Revisit: [Sun Jul 19 18:01:34 2026] suddenly my cookies doesnt work anymore
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Jul 19 18:01:34 2026] suddenly my cookies doesnt work anymore
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">yt-dlp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>vU</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> LemonTang-h2h (gcb</span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span> <span class="meta function-call shell"><span class="variable function shell">--no-playlist</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>write-subs</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>sub-lang</span> en<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>sub-format</span> vtt<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>force-ipv4</span>   </span>
 </span></code></pre>
 </li>

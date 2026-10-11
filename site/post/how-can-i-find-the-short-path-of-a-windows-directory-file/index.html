@@ -47,16 +47,16 @@
             <ul>
 <li><a href="https://superuser.com/questions/348079/how-can-i-find-the-short-path-of-a-windows-directory-file">How can I find the short path of a Windows directory/file?</a>
 <ul>
-<li>Recap: short path with no space, for example <code>PROGRA~1</code>. Use <code>cmd /c dir /x</code></li>
-<li>Run: for #powershell
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> short path with no space, for example <code>PROGRA~1</code>. Use <code>cmd /c dir /x</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> for #powershell
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">(New-Object -ComObject Scripting.FileSystemObject).GetFolder(&quot;$pwd&quot;).ShortPath
 # To get short path of some item.
 gci|%{(New-Object -ComObject Scripting.FileSystemObject).GetFolder(&quot;$_&quot;).ShortPath}
 </span></code></pre>
 </li>
-<li>Reason: sometimes you want this for consistent path in #scripting</li>
-<li>Root: old DOS convention.</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> sometimes you want this for consistent path in #scripting</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> old DOS convention.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

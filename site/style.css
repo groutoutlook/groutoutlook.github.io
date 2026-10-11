@@ -153,6 +153,18 @@ blockquote {
     margin-right: 0.35em;
     letter-spacing: 0.01em;
     font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+}
+.til-content .journal-field-label:hover {
+    color: inherit;
+    background: transparent;
+    border-bottom-style: solid;
+}
+.til-content li:has(.journal-field-label) { scroll-margin-top: 1em; }
+.til-content li:has(.journal-field-label):target {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 .til-content li:has(.journal-field-label) {
     list-style: none;

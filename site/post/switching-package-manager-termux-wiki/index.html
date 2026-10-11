@@ -42,8 +42,8 @@
             <ul>
 <li><a href="https://wiki.termux.com/wiki/Switching_package_manager">Switching package manager - Termux Wiki</a>
 <ul>
-<li>Recap:  do as the step, it will be all correct.</li>
-<li>Resolution: <a href="https://github.com/termux-pacman/termux-packages/releases">Releases · pacman - termux-packages</a>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  do as the step, it will be all correct.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/termux-pacman/termux-packages/releases">Releases · pacman - termux-packages</a>
 <ul>
 <li>rebase <code>apt</code> to <code>pacman</code>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> ssh to the machine. Remember install openssh first and passwd then sshd</span><span class="comment line number-sign shell">
@@ -67,8 +67,8 @@
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#ssh : <code>sh</code> then <code>eval &quot;$(ssh-agent -s)&quot; &amp;&amp; ssh-add</code> to add identity from your newly created <code>ssh-keygen</code></li>
 <li>#documentation : <a href="https://wiki.archlinux.org/title/Pacman">pacman - ArchWiki</a>
@@ -79,25 +79,25 @@
 <li>#linux/arch: <code>sh -c &quot;$(curl -L https://groutoutlook.github.io/bootstrap_arch.sh)&quot;</code></li>
 </ul>
 </li>
-<li>Root: <a href="https://wiki.termux.com/wiki/AUR">AUR - Termux Wiki</a>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wiki.termux.com/wiki/AUR">AUR - Termux Wiki</a>
 <ul>
 <li>I want to use pacman on termux.</li>
 </ul>
 </li>
-<li>Revisit: [ Friday, June 12, 2026 09:55:38 AM ] #infosec <a href="https://lobste.rs/s/ta0sem">Hundreds of AUR packages attacked by infostealer</a></li>
-<li>Revisit: [ Saturday, April 18, 2026 04:58:16 PM ] #wsl : have to change to normal user anyway, then you can use <code>makepkg</code>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Friday, June 12, 2026 09:55:38 AM ] #infosec <a href="https://lobste.rs/s/ta0sem">Hundreds of AUR packages attacked by infostealer</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Saturday, April 18, 2026 04:58:16 PM ] #wsl : have to change to normal user anyway, then you can use <code>makepkg</code>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wsl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>manage</span> archlinux<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>set-default-user</span> golk</span>
 <span class="meta function-call shell"><span class="variable function shell">wsl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>d</span> archlinux<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>shutdown</span></span>
 </span></code></pre>
 <ul>
-<li>Recap: <a href="https://wiki.archlinux.org/title/Makepkg"><code>makepkg</code> - ArchWiki</a></li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://wiki.archlinux.org/title/Makepkg"><code>makepkg</code> - ArchWiki</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">pacman</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>S</span> base-devel <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this first.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> clone https://aur.archlinux.org/ov.git</span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="support function cd shell">cd</span></span><span class="meta function-call arguments shell"> ov</span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="variable function shell">makepkg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>si</span></span>
 <span class="meta function-call shell"><span class="variable function shell">makepkg</span></span> <span class="keyword operator logical and shell">&amp;&amp;</span> <span class="meta function-call shell"><span class="variable function shell">pacman</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>U</span> ./<span class="keyword operator regexp quantifier shell">*</span>zst <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> this install the binary into `$PATH`.</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>Root: <a href="https://bbs.archlinux.org/viewtopic.php?id=295827">Why does makepkg config now have debug enabled? / Pacman &amp; Package Upgrade Issues / Arch Linux Forums</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://bbs.archlinux.org/viewtopic.php?id=295827">Why does makepkg config now have debug enabled? / Pacman &amp; Package Upgrade Issues / Arch Linux Forums</a></li>
 </ul>
 </li>
 </ul>

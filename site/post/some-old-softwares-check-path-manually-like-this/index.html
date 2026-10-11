@@ -52,9 +52,9 @@
             <ul>
 <li><a href="https://github.com/sabrogden/Ditto/blob/1632d1277d46647f89e9bb6b9e1491246857b392/ClipCompare.cpp#L127C1-L128C1">Some old softwares check path manually like this.</a>
 <ul>
-<li>Recap: while I mainly use <code>scoop</code> to install softwares.</li>
-<li>Resolution: making a symlink or junction in the destination</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> while I mainly use <code>scoop</code> to install softwares.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> making a symlink or junction in the destination</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">Invoke-SudoPwsh &quot;new-item -path WinMerge -ItemType SymbolicLink -Value (gcb)&quot;
 gci -file |%{new-item -path &quot;D:\ProgramDataD\9-ProductionFiles\Firmware-Finished\$($_.Name)&quot; -ItemType SymbolicLink -value (rvpa $_) -force}
 </span></code></pre>

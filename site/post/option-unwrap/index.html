@@ -47,14 +47,14 @@
             <ul>
 <li><a href="https://doc.rust-lang.org/rust-by-example/error/option_unwrap.html">Option &amp; unwrap</a>
 <ul>
-<li>Recap: for any <code>Option&lt;T&gt;</code> you have to <code>unwrap()</code> or <code>unwrap_or_else()</code></li>
-<li>Run:</li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> for any <code>Option&lt;T&gt;</code> you have to <code>unwrap()</code> or <code>unwrap_or_else()</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li>#syntax <a href="https://doc.rust-lang.org/reference/expressions/closure-expr.html">Closure expressions/ Lambda in Rust</a>
 <ul>
 <li>most used inside <code>unwrap_or_else</code>/<code>then</code>... many more, <code>||</code> is a lambda which take no argument, no reference in current scope..</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-rust"><span class="source rust"><span class="storage type rust">let</span> <span class="storage modifier rust">mut</span> a <span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">0</span><span class="punctuation terminator rust">;</span>
 <span class="support macro rust">assert!</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="constant language rust">true</span>.<span class="support function rust">ok_or_else</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters begin rust">|</span></span></span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters end rust">|</span></span> </span><span class="meta function closure rust"><span class="meta block rust"><span class="punctuation section block begin rust">{</span> a <span class="keyword operator rust">+</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">1</span><span class="punctuation terminator rust">;</span> </span><span class="meta block rust"><span class="punctuation section block end rust">}</span></span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">is_ok</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
 <span class="support macro rust">assert!</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="constant language rust">false</span>.<span class="support function rust">ok_or_else</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters begin rust">|</span></span></span><span class="meta function closure rust"><span class="meta function parameters rust"><span class="punctuation section parameters end rust">|</span></span> </span><span class="meta function closure rust"><span class="meta block rust"><span class="punctuation section block begin rust">{</span> a <span class="keyword operator rust">+</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">1</span><span class="punctuation terminator rust">;</span> </span><span class="meta block rust"><span class="punctuation section block end rust">}</span></span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">is_err</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
@@ -64,9 +64,9 @@
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://stackoverflow.com/questions/36362020/what-is-unwrap-in-rust-and-what-is-it-used-for/71231484#71231484">error handling - What is unwrap in Rust, and what is it used for?</a></li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/36362020/what-is-unwrap-in-rust-and-what-is-it-used-for/71231484#71231484">error handling - What is unwrap in Rust, and what is it used for?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

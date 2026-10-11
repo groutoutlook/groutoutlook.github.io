@@ -37,18 +37,18 @@
             <ul>
 <li><code>docker exec</code> is a huge pain.
 <ul>
-<li>Recap:</li>
-<li>Root:</li>
-<li>Resolution: Find existed runningID of <strong>running</strong> images.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Find existed runningID of <strong>running</strong> images.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">runningID</span></span></span></span><span class="meta function-call arguments shell"> = (docker ps<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>format</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>{{json .}}<span class="punctuation definition string end shell">&quot;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">ConvertFrom-Json</span></span><span class="meta function-call shell"></span><span class="meta post-cmd shell">)</span><span class="meta function-call shell"><span class="variable function shell">[0].ID</span></span><span class="meta function-call arguments shell">    </span>
 <span class="meta function-call shell"><span class="variable function shell">docker</span></span><span class="meta function-call arguments shell"> exec<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">runningID</span></span>  bash<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>find /bin/m*<span class="punctuation definition string end shell">&quot;</span></span></span>
 </span></code></pre>
 </li>
-<li>Reason: For piping files from host machine to <strong>running</strong> images, we have to do that roundabout.
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> For piping files from host machine to <strong>running</strong> images, we have to do that roundabout.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cat</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\m</span>y_example.cpp</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">docker</span></span><span class="meta function-call arguments shell"> exec<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">runningID</span></span> sh<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>cat &gt; /my_example.cpp<span class="punctuation definition string end shell">&quot;</span></span></span>
 </span></code></pre>
 </li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

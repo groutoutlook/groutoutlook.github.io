@@ -57,19 +57,19 @@
             <ul>
 <li>Nested adding files inside a git repo to parent git repo.
 <ul>
-<li>Recap:</li>
-<li>Run: to run <code>git cifm-parent &quot;07.02-Rust/nightly/kanata/justfile&quot; &quot;Add kanata justfile&quot;</code>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to run <code>git cifm-parent &quot;07.02-Rust/nightly/kanata/justfile&quot; &quot;Add kanata justfile&quot;</code>
 <pre class="syntax-highlighting"><code class="language-gitconfig"><span class="text plain">cifm-parent = &quot;!f() { root=$(git rev-parse --show-toplevel) || return 1; cd \&quot;$root\&quot; || return 1; path=$1; shift; message=$*; [ -n \&quot;$path\&quot; ] &amp;&amp; [ -n \&quot;$message\&quot; ] || { echo &#39;usage: git cifm-parent &lt;path&gt; &lt;message&gt;&#39;; return 2; }; blob=$(git hash-object -w -- \&quot;$path\&quot;) || return 1; git update-index --add --cacheinfo \&quot;100644,$blob,$path\&quot; || return 1; git commit --only -m \&quot;$message\&quot; -- \&quot;$path\&quot; &amp;&amp; git puf; }; f&quot;
 </span></code></pre>
 </li>
-<li>Resolution: I dont even know what can this be used for, honestly, other than my <code>MiscLang</code> repo
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I dont even know what can this be used for, honestly, other than my <code>MiscLang</code> repo
 <ul>
 <li>with this I can <code>git rhh</code> on the root repo to manipulate multiple child repos at once, while not dealing with submodules.</li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: asking <code>codex</code>.</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> asking <code>codex</code>.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

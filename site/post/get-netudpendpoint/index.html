@@ -47,16 +47,16 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/nettcpip/get-netudpendpoint?view=windowsserver2025-ps"><code>Get-NetUDPEndpoint</code></a>
 <ul>
-<li>Recap:</li>
-<li>Run: get what's running on 5353. Normally mDNS resolver.</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> get what's running on 5353. Normally mDNS resolver.</li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-NetUDPEndpoint -LocalPort 5353 | Select-Object LocalAddress,LocalPort,OwningProcess,@{ Name=&quot;ProcessName&quot;; Expression={((Get-Process -Id $_.OwningProcess).Name )} }
 </span></code></pre>
 <ul>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/nettcpip/get-nettcpconnection?view=windowsserver2025-ps"><code>Get-NetTCPConnection</code></a>
 <ul>

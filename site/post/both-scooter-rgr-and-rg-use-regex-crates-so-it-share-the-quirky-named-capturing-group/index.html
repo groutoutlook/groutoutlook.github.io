@@ -52,15 +52,15 @@
             <ul>
 <li>Both <code>scooter</code> | <code>rgr</code> and <code>rg</code> use <code>regex</code> crates so it share the quirky named capturing group.
 <ul>
-<li>Recap: <a href="https://docs.rs/regex/latest/regex/">regex - Rust</a></li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://docs.rs/regex/latest/regex/">regex - Rust</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <ul>
-<li>Recite: To include a pure dollar sign in a regex replacement string, escape it by using two dollar signs ($$).</li>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> To include a pure dollar sign in a regex replacement string, escape it by using two dollar signs ($$).</li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scooter -s &quot;\&#39;\`$HOME(.*)&quot; -r &quot;`&quot;`$`$HOME`$1`&quot;&quot; # for various linting in app shim.
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>#rust: <a href="https://docs.rs/regex/latest/regex/#grouping-and-flags">Grouping</a></p>
@@ -107,8 +107,8 @@
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://stackoverflow.com/questions/74240592/regex-with-named-capture-group">Regex with Named Capture Group</a>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/74240592/regex-with-named-capture-group">Regex with Named Capture Group</a>
 <ul>
 <li>which <code>(?&lt;</code> is enough instead of <code>(?P&lt;</code></li>
 <li>It's <code>'?P&lt;named&gt;'</code> - <code>'$named'</code> for <code>scooter</code>, <code>fd</code> and <code>rg</code>.
@@ -122,8 +122,8 @@
 </li>
 </ul>
 </li>
-<li>Recite: <code>ripgrep</code> Capturing groups can also be named, which is sometimes more convenient than using the indices.</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> <code>ripgrep</code> Capturing groups can also be named, which is sometimes more convenient than using the indices.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#sql <a href="https://devblogs.microsoft.com/azure-sql/unlocking-the-power-of-regex-in-sql-server/">Unlocking the Power of Regex in SQL Server - Azure SQL Devs’ Corner</a>
 <ul>

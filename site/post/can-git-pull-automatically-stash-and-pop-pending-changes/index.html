@@ -42,19 +42,19 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/30208928/can-git-pull-automatically-stash-and-pop-pending-changes">Can &quot;git pull&quot; automatically stash and pop pending changes?</a>
 <ul>
-<li>Recap: <code>rebase.autostash</code> options.</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>rebase.autostash</code> options.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> rbi <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> my alias in ~/gitalias.txt</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: all because <code>git rebase -i</code> is so intricated.</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> all because <code>git rebase -i</code> is so intricated.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#cli/option <a href="https://stackoverflow.com/questions/89332/how-do-i-recover-a-dropped-stash-in-git/91795#91795">How do I recover a dropped stash in Git?</a>
 <ul>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fsck<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-reflog</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">awk</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>/dangling commit/ {print $NF}<span class="punctuation definition string end shell">&#39;</span></span></span>
 <span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash apply <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">stash_hash</span></span></span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or if you fancy good old gitk</span><span class="comment line number-sign shell">

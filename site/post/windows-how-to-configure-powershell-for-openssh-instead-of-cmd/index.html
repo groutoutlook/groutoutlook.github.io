@@ -47,8 +47,8 @@
             <ul>
 <li><a href="https://superuser.com/questions/1799896/how-to-configure-powershell-for-openssh-instead-of-cmd">windows - How to configure powershell for OpenSSH instead of cmd</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Invoke-SudoPwsh &quot;Add-MpPreference -ExclusionPath $pwd&quot; # bypass crazy Defender which keep deleting binary exe.
 New-ItemProperty -Path &quot;HKLM:\SOFTWARE\OpenSSH&quot; `
                 -Name DefaultShell `
@@ -57,19 +57,19 @@ New-ItemProperty -Path &quot;HKLM:\SOFTWARE\OpenSSH&quot; `
                 -Force
 </span></code></pre>
 </li>
-<li>Resolution: <a href="https://learn.microsoft.com/powershell/module/defender/?view=windowsserver2025-ps"><code>Defender</code> Module</a>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/defender/?view=windowsserver2025-ps"><code>Defender</code> Module</a>
 <ul>
 <li><code>Add-MpPreference</code> and <code>Remove-MpPreference</code> to add directory into Defender exclusion.</li>
 <li><a href="https://learn.microsoft.com/powershell/module/defender/start-mpscan?view=windowsserver2025-ps">Start-MpScan (Defender)</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://learn.microsoft.com/en-us/windows-server/administration/OpenSSH/openssh-server-configuration#configuring-the-default-shell-for-openssh-in-windows">OpenSSH Server configuration for Windows</a>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/en-us/windows-server/administration/OpenSSH/openssh-server-configuration#configuring-the-default-shell-for-openssh-in-windows">OpenSSH Server configuration for Windows</a>
 <ul>
 <li><code>frp</code>/<code>easyflasher</code> , all have to go throught this lately.</li>
 </ul>
 </li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

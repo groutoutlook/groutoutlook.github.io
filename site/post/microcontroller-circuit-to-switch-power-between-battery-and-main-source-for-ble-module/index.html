@@ -52,19 +52,19 @@
             <ul>
 <li><a href="https://electronics.stackexchange.com/questions/276152/circuit-to-switch-power-between-battery-and-main-source-for-ble-module">microcontroller - Circuit to switch power between Battery and main Source for BLE Module</a>
 <ul>
-<li>Recap: crittical if you want hybrid BLE capable MCU + RTC with VBAT connect to button cell as CR2032</li>
-<li>Run: may have to use ST17H66B2 now, due to its characteristic with deep sleep
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> crittical if you want hybrid BLE capable MCU + RTC with VBAT connect to button cell as CR2032</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> may have to use ST17H66B2 now, due to its characteristic with deep sleep
 <ul>
 <li>with 1ua Sleep mode, 32 Khz RTC ; 4uA if you keep RAM.</li>
 </ul>
 </li>
-<li>Resolution: power selection circuitry as LTC4412.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> power selection circuitry as LTC4412.
 <ul>
 <li><a href="https://www.ti.com/lit/ug/tidue50/tidue50.pdf">Seamless Switchover for Backup Power Reference Design - tidue50.pdf</a></li>
 <li><a href="https://ohm.bu.edu/~pbohn/__Engineering_Reference/slyt259.pdf">Selecting the correct IC for power-supply applications - slyt259.pdf</a></li>
 </ul>
 </li>
-<li>Reason:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
 <ul>
 <li>Con: ST17 internal 32KHz RC OSC is super low accuracy at 500ppm error. normal RTC are 3-5ppm.</li>
 <li>Pro: you can slap primary/backup power chip on just this one alone. <strong>no RTC module/chip</strong> need, yet.
@@ -75,13 +75,13 @@
 </li>
 </ul>
 </li>
-<li>Root: <a href="https://electronics.stackexchange.com/questions/655020/is-it-a-good-idea-to-use-the-internal-rtc-of-a-microcontroller-or-is-it-better-t/655025#655025">good idea to use the internal RTC of a microcontroller or is it better to use an external one?</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/655020/is-it-a-good-idea-to-use-the-internal-rtc-of-a-microcontroller-or-is-it-better-t/655025#655025">good idea to use the internal RTC of a microcontroller or is it better to use an external one?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://github.com/BasedHardware/omi/issues/3976">Support RTC and time sync over BLE · Issue #3976 · BasedHardware/omi</a></li>
 </ul>
 </li>
-<li>Rival: or use CW32R, which has simpler WAKEIO wake up scheme. Check file CW32_BatteryBackupWithCW32_CN_V1.0.pdf</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> or use CW32R, which has simpler WAKEIO wake up scheme. Check file CW32_BatteryBackupWithCW32_CN_V1.0.pdf</li>
 </ul>
 </li>
 </ul>

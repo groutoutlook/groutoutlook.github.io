@@ -52,19 +52,19 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/4567904/how-to-start-an-application-using-android-adb-tools">How to start an application using Android ADB tools</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell am start<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>n</span> com.termux/.app.TermuxActivity</span>
 <span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input text <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>sshd<span class="punctuation definition string end shell">&quot;</span></span></span>
 <span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input keyevent KEYCODE_ENTER</span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> &quot;input keyevent KEYCODE_ENTER &amp;&amp; input keyevent KEYCODE_HOME&quot; # can chain POWER in here.</span><span class="comment line number-sign shell">
 </span></span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://stackoverflow.com/questions/4094109/android-how-to-get-a-list-of-all-available-intent-filters">Android: How to get a list of all available intent filters?</a>
 <ul>
-<li>Run: #AI help me rewrite the regex.
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #AI help me rewrite the regex.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell dumpsys package r</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">b</span></span>
 <span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell dumpsys activity broadcasts</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>.+\.[0-9A-Z_\-]+:\s*$<span class="punctuation definition string end shell">&quot;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">sort</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">b</span></span>
 </span></code></pre>
@@ -73,9 +73,9 @@
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

@@ -47,16 +47,16 @@
             <ul>
 <li>Since <code>winget</code> doesnt accept glob or regex in any subcommand, have to use with powershell.
 <ul>
-<li>Recap: <a href="https://github.com/microsoft/winget-cli/tree/8d824c1b14ec2b829a1d637a98cf78d53293d02e/src/PowerShell/Microsoft.WinGet.Client#cmdlets"><code>Microsoft.WinGet.Client</code></a></li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/microsoft/winget-cli/tree/8d824c1b14ec2b829a1d637a98cf78d53293d02e/src/PowerShell/Microsoft.WinGet.Client#cmdlets"><code>Microsoft.WinGet.Client</code></a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;Windows&quot;,&quot;Microsoft&quot;|% {get-wingetpackage -name $_ } |%{Update-WinGetPackage $_}
 Get-WinGetPackage |  where IsUpdateAvailable -eq True |%{winget update $_.id}
 </span></code></pre>
 </li>
-<li>Resolution: or you could always open <code>appwiz.cpl</code></li>
-<li>Reason:</li>
-<li>Root: I  want an equivalent of <code>scoop ua</code>. Turns out none.</li>
-<li>Related: #til : enter mark mode <code>Ctrl+shift+m</code> in #windows/terminal so it can sit still.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> or you could always open <code>appwiz.cpl</code></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I  want an equivalent of <code>scoop ua</code>. Turns out none.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #til : enter mark mode <code>Ctrl+shift+m</code> in #windows/terminal so it can sit still.
 <ul>
 <li>regardless of the running log.</li>
 </ul>

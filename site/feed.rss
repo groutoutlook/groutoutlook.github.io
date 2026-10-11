@@ -1,227 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`tw` view query tabular data file: CSV, JSONL, Sqlite, FWF, Parquet, Arrow, Logfmt, XLSX.</title><category>rust</category><pubDate>2026-10-08 06:39:36 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/shshemi/tabiew"><code>tw</code> view query tabular data file: CSV, JSONL, Sqlite, FWF, Parquet, Arrow, Logfmt, XLSX.</a>
 <ul>
-<li>Recap: beautiful UI for a TUI app. Just super slow compile time. Not as fast as well...</li>
-<li>Run:</li>
-<li>Resolution: <a href="https://github.com/shshemi/tabiew/wiki#importing">import file to sql backend <code>tw</code> Wiki</a>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> beautiful UI for a TUI app. Just super slow compile time. Not as fast as well...</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/shshemi/tabiew/wiki#importing">import file to sql backend <code>tw</code> Wiki</a>
 <ul>
 <li><a href="https://github.com/shshemi/tabiew/wiki#editing-in-an-external-editor"> Editing in an External Editor </a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: back then TUI are all the rage.</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> back then TUI are all the rage.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Github actions - how to deploy to remote server using SSH</title><category>cicd</category><category>github</category><pubDate>2026-10-08 05:13:12 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/60477061/github-actions-how-to-deploy-to-remote-server-using-ssh/77991534#77991534">Github actions - how to deploy to remote server using SSH</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>`pcbnew` IDFv3 exporter `.emn`/`.emp` files.</title><category>3d/model</category><category>format/idf</category><pubDate>2026-10-08 02:47:42 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#idf-exporter"><code>pcbnew</code> IDFv3 exporter <code>.emn</code>/<code>.emp</code> files.</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://forum.kicad.info/t/post-v10-new-features-and-development-news/66611/38">placeholder height for idf exporting.</a></li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.kicad.info/t/post-v10-new-features-and-development-news/66611/38">placeholder height for idf exporting.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>A new benchmark for energy conservation! How the GD3300 redefines LED driver power</title><category>pmic</category><category>psu/led/driver</category><pubDate>2026-10-08 02:21:07 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/Rk3WDJXwqEOjWtYP8NHPrQ">A new benchmark for energy conservation! How the GD3300 redefines LED driver power</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Blog | OpenAI Developers</title><category>blog</category><category>harness</category><category>meta</category><pubDate>2026-10-08 01:41:42 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://developers.openai.com/blog">Blog | OpenAI Developers</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://news.ycombinator.com/item?id=50002008">“Math 2.0” will need to value mathematical progress more holistically</a></li>
-<li>Related: <a href="https://news.ycombinator.com/item?id=49997718">The Mathocalypse</a></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50002008">“Math 2.0” will need to value mathematical progress more holistically</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49997718">The Mathocalypse</a></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>`filepack` content-addressed packages</title><category>binary</category><category>distribution</category><category>http</category><category>rust</category><pubDate>2026-10-08 12:56:22 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/casey/filepack"><code>filepack</code> content-addressed packages</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Austerity</title><category>english</category><pubDate>2026-10-08 12:43:54 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Austerity">Austerity</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://ascii.rest/split-flap/">split-flap · ascii.rest</a>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://ascii.rest/split-flap/">split-flap · ascii.rest</a>
 <ul>
-<li>Recap: affectation of technical austerity, i.e. you’re borrowing the credibility of a constrained medium
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> affectation of technical austerity, i.e. you’re borrowing the credibility of a constrained medium
 without embracing its constraints.</li>
 </ul>
 </li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Sharing AI progress in mathematics</title><category>ai</category><category>fiction</category><category>technologia</category><pubDate>2026-10-08 11:49:40 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=49984923">Sharing AI progress in mathematics</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason: Recite:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> Recite:
 <ul>
 <li>In the Culture series, the hyperintelligent Minds that run civilization are described as keeping human
 citizens happy as a competition with eachother, where they compare their approval rates. One character
 likens it to people keeping a beloved aquarium .</li>
 </ul>
 </li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>DMA Arbiter • Scalable Scatter-Gather DMA FPGA IP User Guide • Altera Documentation and Resources Center</title><category>silicon/ip</category><category>terminology</category><category>vlsi</category><pubDate>2026-10-08 11:23:04 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://docs.altera.com/r/docs/823097/25.1.1/scalable-scatter-gather-dma-fpga-ip-user-guide/dma-arbiter">DMA Arbiter • Scalable Scatter-Gather DMA FPGA IP User Guide • Altera Documentation and Resources Center</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:<a href="https://github.com/alexforencich/verilog-axi">Verilog AXI components for FPGA implementation</a>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --><a href="https://github.com/alexforencich/verilog-axi">Verilog AXI components for FPGA implementation</a>
 <ul>
-<li>Root: it's all in the FT32F405 Reference Manual DMA section that I saw the Arbiter.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> it's all in the FT32F405 Reference Manual DMA section that I saw the Arbiter.</li>
 </ul>
 </li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Development Boards · XBF Board Lab</title><category>sbc</category><pubDate>2026-10-08 10:46:21 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://findboard.cn/en/">Development Boards · XBF Board Lab</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://mp.weixin.qq.com/s/cXxsBewtOzKElUMb_uOZqw">Orange Pie Zero4, the true upgraded version of Orange Pie Zero3</a></li>
-<li>Related: <a href="https://mp.weixin.qq.com/s/EONy26FY7f_bRiEHS5Ux4A">Microduck can't wait to ship, so let's all make one by hand! Recreating the open-source Hachimo Dock machine, small screens transform with AI | DF Maker Weekly (Issue 188)</a></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/cXxsBewtOzKElUMb_uOZqw">Orange Pie Zero4, the true upgraded version of Orange Pie Zero3</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/EONy26FY7f_bRiEHS5Ux4A">Microduck can't wait to ship, so let's all make one by hand! Recreating the open-source Hachimo Dock machine, small screens transform with AI | DF Maker Weekly (Issue 188)</a></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>have to keep my Settings &gt; Update always open or my windows insider upgrade will not completed and keep stucking at some weird 64-bit hex errors.</title><category>settings</category><category>update</category><category>windows</category><pubDate>2026-10-08 10:40:53 AM</pubDate><content:encoded><![CDATA[<ul>
 <li>have to keep my Settings &gt; Update always open or my windows insider upgrade will not completed and keep stucking at some weird 64-bit hex errors.
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>`grok` Keyboard Shortcuts | SpaceXAI Docs</title><category>harness</category><category>keybinding</category><category>tui</category><pubDate>2026-10-08 09:37:49 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://docs.x.ai/build/keyboard-shortcuts"><code>grok</code> Keyboard Shortcuts | SpaceXAI Docs</a>
 <ul>
-<li>Recap: <code>ctrl+enter</code> is steering. Normal <code>enter</code> is queuing.</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>ctrl+enter</code> is steering. Normal <code>enter</code> is queuing.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>How to decode &amp; analyze Extended UART in PicoScope 7</title><category>uart</category><pubDate>2026-10-08 09:17:01 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.picotech.com/library/knowledge-bases/oscilloscopes/extended-uart">How to decode &amp; analyze Extended UART in PicoScope 7</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>isoSPI serial protocol decoding | Pico Knowledge Base</title><category>spi</category><pubDate>2026-10-08 09:04:52 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.picotech.com/library/knowledge-bases/oscilloscopes/isospi-serial-protocol-decoding">isoSPI serial protocol decoding | Pico Knowledge Base</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://www.analog.com/en/products/ltc6820.html">LTC6820 isoSPI Isolated Communications Interface </a></li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.analog.com/en/products/ltc6820.html">LTC6820 isoSPI Isolated Communications Interface </a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Turn off Apple Intelligence on macOS 27 and get its disk space back</title><category>ai</category><category>macos</category><category>misc</category><pubDate>2026-10-05 03:41:07 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=49957116">Turn off Apple Intelligence on macOS 27 and get its disk space back</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Triple Sec – Simple Digital Security Scheme</title><category>methodology</category><pubDate>2026-10-05 02:10:15 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://nau.github.io/triplesec/">Triple Sec – Simple Digital Security Scheme</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Zarf Updates: Infidel goes wild</title><category>game/rpg</category><category>misc</category><pubDate>2026-10-05 01:47:54 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://blog.zarfhome.com/2026/10/infidel-goes-wild">Zarf Updates: Infidel goes wild</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution: those kind of games are called infocom.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> those kind of games are called infocom.
 <ul>
 <li>#og <a href="https://i7-dungeon.sourceforge.net/source_1.html">Zork - Source Text</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://www.reddit.com/r/CRPG/comments/1q18gyw">What are some good text-based RPGs to try out? Can be old, new, indie etc.</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/CRPG/comments/1q18gyw">What are some good text-based RPGs to try out? Can be old, new, indie etc.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://github.com/DexterHuang/CyberCodeOnline">DexterHuang/CyberCodeOnline: Cyberpunk Text MMO RPG, built with React.js &amp; Typescript</a></li>
 </ul>
@@ -232,36 +232,36 @@ likens it to people keeping a beloved aquarium .</li>
 ]]></content:encoded></item><item><title>Rhythm</title><category>definition</category><category>music</category><pubDate>2026-10-05 01:44:51 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Rhythm">Rhythm</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>God has given everything to meet your need, not your greed</title><category>religion</category><pubDate>2026-10-05 01:43:48 PM</pubDate><content:encoded><![CDATA[<ul>
 <li>God has given everything to meet your need, not your greed
 <ul>
-<li>Recap: well it rhythm. so.</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://news.ycombinator.com/item?id=49960901">Replacement of Petroleum Based Products with Plant-Based Materials</a></li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well it rhythm. so.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49960901">Replacement of Petroleum Based Products with Plant-Based Materials</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
 ]]></content:encoded></item><item><title>Take My Breath Away - Berlin (Acoustic Cover) - YouTube</title><category>ballad</category><category>cover</category><category>music</category><category>usuk</category><pubDate>2026-10-05 12:23:01 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.youtube.com/watch?v=WSfIdFI2Sx8&amp;list=RD0FiismjW6Tg&amp;index=3">Take My Breath Away - Berlin (Acoustic Cover) - YouTube</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://www.youtube.com/watch?v=b_Z_X2JOo7w&amp;list=RD0FiismjW6Tg&amp;index=2">Night Changes - One Direction (Cover by Jonah Baker and Madilyn Bailey) - YouTube</a></li>
-<li>Related: <a href="https://www.youtube.com/watch?v=X1Za4CZVDQg&amp;list=RD0FiismjW6Tg&amp;index=5">Right Here Waiting - Music Travel Love (Cover) - YouTube</a></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.youtube.com/watch?v=b_Z_X2JOo7w&amp;list=RD0FiismjW6Tg&amp;index=2">Night Changes - One Direction (Cover by Jonah Baker and Madilyn Bailey) - YouTube</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.youtube.com/watch?v=X1Za4CZVDQg&amp;list=RD0FiismjW6Tg&amp;index=5">Right Here Waiting - Music Travel Love (Cover) - YouTube</a></li>
 </ul>
 </li>
 </ul>

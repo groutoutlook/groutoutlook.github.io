@@ -47,27 +47,27 @@
             <ul>
 <li><a href="https://github.com/firejox/WinSocat"><code>winsocat</code> socat-like windows-specific program</a>
 <ul>
-<li>Recap:</li>
-<li>Run:</li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://github.com/firejox/WinSocat#interact-with-wslwindows-subsystem-for-linux">interact with <code>wsl</code> sockets</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Recite:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Windows named pipe forwarding to WSL Unix Socket</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">winsocat</span></span><span class="meta function-call arguments shell"> NPIPE-LISTEN:fooPipe WSL:<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>socat STDIO unix-connect:foo.sock<span class="punctuation definition string end shell">&quot;</span></span></span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> WSL Unix Socket forwarding to Windows named pipe</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">socat</span></span><span class="meta function-call arguments shell"> unix-listen:foo.sock,fork EXEC:<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>/path/to/winsocat.exe STDIO NPIPE:fooPipe<span class="punctuation definition string end shell">&quot;</span></span></span>
 </span></code></pre>
 </li>
-<li>Root: <a href="https://github.com/jtroo/kanata/pull/780#issue-2152990168"><code>setmouse</code> action through tcp</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/jtroo/kanata/pull/780#issue-2152990168"><code>setmouse</code> action through tcp</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#rust #library #ipc <a href="https://github.com/servo/ipc-channel">ipc-channel: A multiprocess drop-in replacement for Rust channels</a>
 <ul>
-<li>Root:<a href="https://github.com/jtroo/kanata/issues/1078"><code>kanata</code> support platform-specific IPC which has greater convenience than TCP · Issue #1078 · jtroo/kanata</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --><a href="https://github.com/jtroo/kanata/issues/1078"><code>kanata</code> support platform-specific IPC which has greater convenience than TCP · Issue #1078 · jtroo/kanata</a></li>
 </ul>
 </li>
 </ul>

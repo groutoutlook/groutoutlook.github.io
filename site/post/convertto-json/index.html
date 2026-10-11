@@ -42,18 +42,18 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertto-json"><code>ConvertTo-Json</code></a>
 <ul>
-<li>Recap: to convert variables/output of cmdlets to something comprehensible.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to convert variables/output of cmdlets to something comprehensible.
 <ul>
 <li>Since <code>Format-Table</code> can only display a limited amount of objects.</li>
 </ul>
 </li>
-<li>Run: Used in pipe
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Used in pipe
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Service -Name sshd | ConvertTo-Json | fx # `fx` go along with this pretty well.
 Get-Service -Name term* | ConvertTo-Json -Depth 4 | bat -ljson # or advanced pager like bat. This is more colorful though.
 gsv proton* |convertto-json |bat -ljson
 </span></code></pre>
 </li>
-<li>Resolution: could also be used to assign hashtable with <code>-AsHashtable</code>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> could also be used to assign hashtable with <code>-AsHashtable</code>
 <ul>
 <li>you have to cast keys into <code>[String]</code>
 <ul>
@@ -67,21 +67,21 @@ gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
 </li>
 </ul>
 </li>
-<li>Reason: My favorite JSON engine.
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> My favorite JSON engine.
 <code>pwsh</code> eat everything JSON, even JSONC (which has trailing comma, comments and other stuff.)</li>
-<li>Root: <a href="https://stackoverflow.com/questions/40495248/create-hashtable-from-json">powershell - Create Hashtable from JSON</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/40495248/create-hashtable-from-json">powershell - Create Hashtable from JSON</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json"><code>ConvertFrom-Json</code></a>
 <ul>
-<li>Run: to consume what is json before...</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to consume what is json before...</li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">uni i k -aj | ConvertFrom-Json
 </span></code></pre>
 </li>
 <li>#decoder <a href="https://github.com/powershell/textutility#convertfrom-base64"><code>ConvertFrom-Base64</code></a>
 <ul>
-<li>Root: <a href="https://news.ycombinator.com/item?id=45948792">How Your Brain Creates 'Aha' Moments and Why They Stick</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45948792">How Your Brain Creates 'Aha' Moments and Why They Stick</a></li>
 </ul>
 </li>
 </ul>

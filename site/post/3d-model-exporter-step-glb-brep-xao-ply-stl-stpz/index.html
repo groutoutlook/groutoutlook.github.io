@@ -57,21 +57,21 @@
             <ul>
 <li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#_3d-export">3D model exporter (STEP / GLB / BREP / XAO / PLY / STL / STPZ)</a>
 <ul>
-<li>Recap: this is the #GUI guide. There are #cli method to export it as well.</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this is the #GUI guide. There are #cli method to export it as well.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scooter -s .wrl -r .step # just rgr all of them.
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
-<li>Remember: <code>${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step</code>
+<li><!-- raw HTML omitted -->Remember:<!-- raw HTML omitted --> <code>${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step</code>
 <ul>
 <li><code>KICAD9_3DMODEL_DIR</code>==<code>~\scoop\apps\kicad-nightly\current\share\kicad\3dmodels\</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Reason: I need this... for <code>glb</code> exporting to do some extra work in other CAD/simulation software.
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I need this... for <code>glb</code> exporting to do some extra work in other CAD/simulation software.
 <ul>
 <li>Pro: Good automation, CI/CD, visual ad-hoc checking... good overall.
 <ul>
@@ -80,14 +80,14 @@
 </li>
 </ul>
 </li>
-<li>Root: #blog <a href="https://mp.weixin.qq.com/s/FO4PmoJ0_L7fRQYdjIioXg">Detailed Explanation of Document Embedding (1): Embedding 3D models in PCB footprint libraries</a></li>
-<li>Related: <a href="https://www.cnx-software.com/2025/02/21/kicad-9-release/">KiCad 9 released with support for embedded files, tables in schematics, custom ERC/DRC errors, mouse scroll wheel actions, and more - CNX Software</a>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog <a href="https://mp.weixin.qq.com/s/FO4PmoJ0_L7fRQYdjIioXg">Detailed Explanation of Document Embedding (1): Embedding 3D models in PCB footprint libraries</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.cnx-software.com/2025/02/21/kicad-9-release/">KiCad 9 released with support for embedded files, tables in schematics, custom ERC/DRC errors, mouse scroll wheel actions, and more - CNX Software</a>
 <ul>
 <li><a href="https://forum.kicad.info/t/embedded-3d-models-in-footprints/62503/2">Embedded 3D models in footprints - Layout / Footprints</a></li>
 <li><a href="https://forum.kicad.info/t/how-to-attach-3d-symbols-to-personal-footprint-libraries-or-other-new-footprints-without-3d-symbols-in-the-kicad-9/63862">How to attach 3d symbols to Personal Footprint Libraries or other new footprints without 3d symbols, in the Kicad 9? - Layout / 3D Models</a></li>
 </ul>
 </li>
-<li>Revisit: [2025-10-28 19:57:05] #til KiCAD Footprint Properties -&gt; 3D models change 3D model.
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-10-28 19:57:05] #til KiCAD Footprint Properties -&gt; 3D models change 3D model.
 <ul>
 <li>#filesystem #convention but it can only take <code>/</code> forward slash... Unix-like path.
 Cant do mixed path <code>\</code> backslash which is prevalent when copy through #cli or explorer.

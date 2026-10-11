@@ -42,8 +42,8 @@
             <ul>
 <li><code>probe-rs</code>'s cli is not very good at detecting which probe is connect to which.
 <ul>
-<li>Recap: have to use <code>pyocd</code> as well. Shim #nightly to <code>pro</code> for ease of typing.</li>
-<li>Run: 2 liner which directly iterate through every probe.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have to use <code>pyocd</code> as well. Shim #nightly to <code>pro</code> for ease of typing.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> 2 liner which directly iterate through every probe.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$text=(pro list);[string[]]$pr = (sls -InputObject $text -Pattern &#39;(?&lt;=--\s)[0-9A-Fa-f]{4}:[0-9A-Fa-f]{4}:[^\s)]+&#39; -AllMatches).Matches|% { $_.Value }; $pr
 $pr | % { Write-Warning &quot;$_ finding...&quot;; pyocd cmd -u (($_ -split &#39;:&#39;)[-1]) -c reset }
 </span></code></pre>
@@ -54,10 +54,10 @@ $pr | % { Write-Warning &quot;$_ finding...&quot;; pyocd cmd -u (($_ -split &#39
 </li>
 </ul>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

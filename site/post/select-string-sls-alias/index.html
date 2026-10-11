@@ -47,13 +47,13 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/select-string#outputs"><code>Select-String</code> | <code>sls</code> alias</a>
 <ul>
-<li>Recap: you cant specify input like, find match in string as <code>-match</code> either,.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you cant specify input like, find match in string as <code>-match</code> either,.
 <ul>
 <li>except using <code>-inp</code> | <code>-InputObject</code></li>
 <li>Return types: <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.matchinfo?view=powershellsdk-7.4.0">MatchInfo</a></li>
 </ul>
 </li>
-<li>Run: you cant directly replace strings with <code>sls</code> either
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> you cant directly replace strings with <code>sls</code> either
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;a string&quot; | Select-String -Pattern &quot;str&quot; | % { $_.Line.Replace($_.Matches.Value, &quot;g&quot;) }
 
 # extracting hexadecimal like string in clipboard.
@@ -66,14 +66,14 @@ rgj le sserafim 3 |sls &quot;http.*\)&quot;|%{$_.Matches.Value -replace &#39;\)&
 while(ps -name mpv){Sleep -Sec 5;Write-Host &quot;INFO: [$(Get-Date)] mpv running&quot;} ; cd rare audio &amp;&amp; rr
 </span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/select-string#-allmatches"><code>-all</code> | <code>-AllMatches</code> option will make <code>sls</code> return more than the first match.</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://stackoverflow.com/questions/24287537/how-to-replace-literal-strings-in-powershell">How to replace literal strings in Powershell?</a>
 <ul>

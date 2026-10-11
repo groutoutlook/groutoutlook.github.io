@@ -52,19 +52,19 @@
             <ul>
 <li><a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_gerber_export_one_layer_per_file">KiCad Command-Line Interface | PCB Gerber export: one layer per file</a>
 <ul>
-<li>Recap:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_drill_file_export">PCB drill file export (<code>excellon</code> default.)</a></li>
 </ul>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">kicad-cli</span></span><span class="meta function-call arguments shell"> pcb export gerbers .<span class="constant character escape shell">\F</span>T32_F6C_26.kicad_pcb<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> .<span class="constant character escape shell">\F</span>T32_F6C_26-prod<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span> F.Cu<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-protel-ext <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> no final flags, it will output to `.gtl`.</span><span class="comment line number-sign shell">
 </span></span></span><span class="meta function-call shell"><span class="variable function shell">kicad-cli</span></span><span class="meta function-call arguments shell"> pcb export drill .<span class="constant character escape shell">\F</span>T32_F6C_26.kicad_pcb<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> .<span class="constant character escape shell">\F</span>T32_F6C_26-prod</span>
 <span class="meta function-call shell"><span class="variable function shell">kicad-cli</span></span><span class="meta function-call arguments shell"> pcb export glb .<span class="constant character escape shell">\F</span>T32_F6C_26.kicad_pcb<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>o</span> .<span class="constant character escape shell">\F</span>T32_F6C_26-prod<span class="constant character escape shell">\F</span>T32_F6C_26-prod.glb <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> export to binary gltf.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">f3d</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\F</span>T32_F6C_26-prod<span class="constant character escape shell">\F</span>T32_F6C_26-prod.glb <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> use `f3d` to open glb files easily.</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_render">PCB render image</a>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">$pcbName = (rvpa .\*.kicad_pcb)
@@ -74,10 +74,10 @@ kicad-cli pcb render $pcbName -o &quot;.\production\$artifactName&quot; --zoom 1
 <ul>
 <li>#alternative <a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#generating_images_with_the_3d_viewer"><code>pcbnew</code> 3D viewer.</a>
 <ul>
-<li>Recite: Current 3D view can be saved to an image with File → Export Current View as PNG…​ or Export Current View as JPG…​, depending on the desired image format.
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> Current 3D view can be saved to an image with File → Export Current View as PNG…​ or Export Current View as JPG…​, depending on the desired image format.
 Current view can also be copied to the clipboard using <code>copy</code> button, or Edit → Copy 3D Image.
 bind <code>ctrl+alt+shift+c</code> &quot;Copy the current 3D image to clipboard&quot;. Combined with <code>x</code>/<code>y</code>/<code>z</code> viewport is pretty good.</li>
-<li>Reason: This is the only solution to also render an image which has <code>User.Drawing</code>.
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> This is the only solution to also render an image which has <code>User.Drawing</code>.
 <ul>
 <li>Pro: or additional layer toggling, color, etc... without meddle with cli. Flexible.
 <ul>
@@ -101,30 +101,30 @@ bind <code>ctrl+alt+shift+c</code> &quot;Copy the current 3D image to clipboard&
 </li>
 <li><a href="https://docs.kicad.org/master/en/cli/cli.html#schematic_pdf_export">Schematic PDF export</a>
 <ul>
-<li>Run: <code>kicad-cli sch export pdf</code> of course.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>kicad-cli sch export pdf</code> of course.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Reason: All that for automating purpose. CI/CD, AOI auto checking scripts.</li>
-<li>Root:</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> All that for automating purpose. CI/CD, AOI auto checking scripts.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://gitlab.com/kicad/code/kicad/-/issues/4439">3d viewer export as 3D PDF option (#4439) · Issue · kicad/code/kicad</a>
 <ul>
-<li>Recap: 3dpdf? first time hearing that. Only <code>acro</code> from adobe implement the viewer.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 3dpdf? first time hearing that. Only <code>acro</code> from adobe implement the viewer.
 <ul>
 <li><code>foxit</code> is very finnickly.</li>
 <li>Meant to be used inside SolidWork.</li>
 </ul>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">acro</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\p</span>roduction<span class="constant character escape shell">\*</span>.3d.pdf</span>
 </span></code></pre>
 </li>
-<li>Root: <a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_3d_pdf_export"><code>kicad-cli</code> 3D PDF export</a></li>
-<li>Related: <a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_u3d_export">PCB U3D export</a></li>
-<li>Rival: <code>mupdf</code> and <code>okular</code> both cant render 3d pdf yet. Even <code>f3d</code> is not yet implementing them...
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_3d_pdf_export"><code>kicad-cli</code> 3D PDF export</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://docs.kicad.org/master/en/cli/cli.html#pcb_u3d_export">PCB U3D export</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>mupdf</code> and <code>okular</code> both cant render 3d pdf yet. Even <code>f3d</code> is not yet implementing them...
 <ul>
 <li>A small thing... I dont know why but <code>acro</code> can directly resolve the path which has <code>*</code> from powershell.
 and those two FOSS cant do it.</li>

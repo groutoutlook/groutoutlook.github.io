@@ -37,8 +37,8 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest"><code>Invoke-WebRequest</code> | <code>iwr</code></a>
 <ul>
-<li>Recap: <code>-OutFile</code> as <a href="https://unix.stackexchange.com/questions/642479/what-is-curl-o"><code>curl -O</code>/<code>-o</code> or <code>curl -o-</code></a></li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>-OutFile</code> as <a href="https://unix.stackexchange.com/questions/642479/what-is-curl-o"><code>curl -O</code>/<code>-o</code> or <code>curl -o-</code></a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest#example-5-submit-a-multipart-form-data-file">Submit a multipart/form-data file</a></li>
 </ul>
@@ -60,19 +60,19 @@ $MultipartContent.Add($FileContent)
 $Response = Invoke-WebRequest -Body $MultipartContent -method Post -uri https://127.0.0.1:8000    
 </span></code></pre>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain"># convenient way to download files + overwrite from powershell. Wget can also do this but kinda convoluted.
 iwr (gcb) -OutFile .\mousemaster.exe
 </span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: sometimes I want to curl/wget but I'm in powershell, do not want to touch wget/curl binaries.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> sometimes I want to curl/wget but I'm in powershell, do not want to touch wget/curl binaries.
 <ul>
 <li>For examples, manual download some scoop packages which has been abandoned.</li>
 </ul>
 </li>
-<li>Related:
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#doc/official :<a href="https://www.mankier.com/1/curl"><code>curl</code> transfer a URL | curl Commands</a></li>
 <li>#linux/utils : <a href="https://cheat.sh/curl">curl options</a>

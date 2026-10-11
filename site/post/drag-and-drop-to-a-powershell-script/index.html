@@ -42,16 +42,16 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/2819908/drag-and-drop-to-a-powershell-script/79545393#79545393">Drag and Drop to a Powershell script</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-Powershell"><span class="text plain">regedit ./ps1-drag-n-drop.reg # this will append my registry
 </span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: all because <code>mpv</code> required me to drag and drop if you want to stuff local subtitles track on it.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> all because <code>mpv</code> required me to drag and drop if you want to stuff local subtitles track on it.
 <ul>
-<li>Recap:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">cd 3-audio &amp;&amp; fd taje -elrc | % {:s mpv;expl $_} &amp;&amp; cd - # :s mpv to ensure mpv windows is there to drag
 # now you can do my `$PROFILE` commands. A bit keyboard injecting tho.
 Add-LyricFile Rude
@@ -60,7 +60,7 @@ Track &#39;https://youtu.be/d1BG-5F9wo8?t=34s&amp;end=4m47s&#39; # it&#39;s poss
 Lyric tententen # quick add.
 </span></code></pre>
 </li>
-<li>Related: another interaction between <code>explorer</code> the Window Manager and <code>mpv</code> is <code>clickthrough</code>'s through <code>smartcontextmenu</code> or any other mean..
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> another interaction between <code>explorer</code> the Window Manager and <code>mpv</code> is <code>clickthrough</code>'s through <code>smartcontextmenu</code> or any other mean..
 You dont need to <code>Alt+Tab</code> all the way to other application while a process have acquire the full screen.
 <ul>
 <li>Can just drag and drop directly to the area of toolbar and it is counted as dragging file to the other app.</li>
@@ -69,10 +69,10 @@ You dont need to <code>Alt+Tab</code> all the way to other application while a p
 <li>you can reset the clickthrough states by <code>Restart-Explorer</code>. Vanilla way.
 <ul>
 <li>well sometimes <code>p</code> key stuck by some reason... you can also do <code>Restart-Explorer</code>.</li>
-<li>Revisit: [ Friday, June 5, 2026 06:29:35 PM ] right now it took a while to unheld/unacquired the key.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Friday, June 5, 2026 06:29:35 PM ] right now it took a while to unheld/unacquired the key.</li>
 </ul>
 </li>
-<li>Run: I did this wile <code>FPilot</code> windows showing files and drop lyric files straight to toolbar.
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> I did this wile <code>FPilot</code> windows showing files and drop lyric files straight to toolbar.
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">smartcontextmenu --handle &#39;0x402A2&#39; --transparency 20 # adjust opacity of process.
 smartcontextmenu --titleContains &quot;Switching&quot; -i # show information of the `alt+tab` process.
 smartcontextmenu --titleContains &quot;Task Switching&quot; --transparency 40 # alt tab transparent adjustment.
@@ -81,7 +81,7 @@ smartcontextmenu --handle (Find-ExplorerShell) --transparency 60 --clickthrough 
 </li>
 </ul>
 </li>
-<li>Related:
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://stackoverflow.com/questions/17947686/setting-document-as-windows-explorer-drop-target-with-additional-arguments/17976000#17976000">registry - Setting document as windows explorer drop target with additional arguments</a></li>
 <li><a href="https://www.reddit.com/r/linux4noobs/comments/56mkwf">Why doesn't Linux need a registry? What are the pros and cons of this way of doing things?</a>
@@ -91,7 +91,7 @@ smartcontextmenu --handle (Find-ExplorerShell) --transparency 60 --clickthrough 
 </li>
 <li><a href="https://github.com/mpv-player/mpv/issues/4674#issuecomment-318322742">how to queue (enqueue) media (adding videos to playlist)</a>
 <ul>
-<li>Resolution: within filesystem or some, <code>Shift</code> + Drag and drop, will add songs to next in playlist.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> within filesystem or some, <code>Shift</code> + Drag and drop, will add songs to next in playlist.
 <ul>
 <li>suboptimal... you can reach out to IPC.</li>
 </ul>

@@ -42,22 +42,22 @@
             <ul>
 <li><a href="https://rust-lang.github.io/rustup/concepts/channels.html">Channels - The rustup book</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> check <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> fetch information online, not update things</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> show <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> show my installed toolchains. the one in `rust-toolchain.toml` is here.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> update <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> real work, only consider using this on major hyped up update.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">rustup</span></span><span class="meta function-call arguments shell"> remove 1.93-x86_64-pc-windows-msvc <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> that&#39;s how I roll with uninstalling old stable.</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: <a href="https://lobste.rs/s/pmxhem/announcing_rust_1_95_0">Announcing Rust 1.95.0</a>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/pmxhem/announcing_rust_1_95_0">Announcing Rust 1.95.0</a>
 <ul>
 <li>we even have a <code>cfg_select!</code> macro which act as a compile time <code>cfg</code>/ swtich case.</li>
 </ul>
 </li>
-<li>Related:
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>search for the config which meddled with cargo/rustc version.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rg</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>1.9[0-9]<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>uuu</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>g</span><span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>*.toml<span class="punctuation definition string end shell">&quot;</span></span></span>

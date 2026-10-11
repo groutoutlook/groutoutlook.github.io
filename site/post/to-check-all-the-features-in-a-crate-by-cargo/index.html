@@ -52,18 +52,18 @@
             <ul>
 <li>To check all the features in a crate by <code>cargo</code>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cargo</span></span><span class="meta function-call arguments shell"> read-manifest</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span>
 <span class="meta function-call shell"><span class="variable function shell">cargo</span></span><span class="meta function-call arguments shell"> metadata<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>format-cargo</span> metadata<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>format-version</span> 1</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>x =&gt; x.packages.find(p =&gt; p.name === &quot;biff-datetime-cli&quot;).features<span class="punctuation definition string end shell">&#39;</span></span> Object.keysversion 1</span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">yq</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.packages[] | select(.name==&quot;THE_CRATE_NAME_HERE&quot;) | .features | keys[]<span class="punctuation definition string end shell">&#39;</span></span></span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> then </span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">cargo</span></span><span class="meta function-call arguments shell"> build<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>features</span> locale <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">or straight up using all: cargo build --release --workspace --all-features</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

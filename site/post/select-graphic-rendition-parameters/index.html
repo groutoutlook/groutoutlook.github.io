@@ -47,9 +47,9 @@
             <ul>
 <li><a href="https://wikipedia.org/wiki/ANSI_escape_code#Select_Graphic_Rendition_parameters">Select Graphic Rendition parameters</a>
 <ul>
-<li>Recap: 38 is foreground color (text color), 48 is background color, <code>:5:x</code> is 256 color mode, <code>:2:r:g:b</code> is 24-bit color mode.</li>
-<li>Root:</li>
-<li>Resolution: Powerful oneliner to test. this is the 8-bit color test.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 38 is foreground color (text color), 48 is background color, <code>:5:x</code> is 256 color mode, <code>:2:r:g:b</code> is 24-bit color mode.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Powerful oneliner to test. this is the 8-bit color test.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$esc_bg_val = 48
 $esc_fg_val = 38
 0..255 |%{write-host &quot;`e[$esc_bg_val`:5:$_`m`e[$esc_fg_val`:5:$($_-1)`m 1&quot; -N}
@@ -63,8 +63,8 @@ $esc_fg_val = 38
   write-host &quot;`e[$esc_bg_val`m`e[$esc_fg_val`m 1&quot; -N}
 </span></code></pre>
 </li>
-<li>Reason:</li>
-<li>Related: this is mostly for #formatter  in CLI.
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> this is mostly for #formatter  in CLI.
 <ul>
 <li>#nushell : <a href="https://www.nushell.sh/commands/docs/ansi.html">ansi</a>
 <ul>

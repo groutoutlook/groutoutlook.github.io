@@ -42,20 +42,20 @@
             <ul>
 <li><a href="https://spin.atomicobject.com/bit-banding/#:%7E:text=How%20Bit-banding%20Works.%20Bit-banding%20is%20a%20term%20that,Region%29.%20The%20benefit%20of%20Bit-banding%20is%20that%20">Bit-banding – An Elegant Approach to Setting &amp; Clearing Bits</a>
 <ul>
-<li>Recap: almost every M3/M4 chip have this bit band alias region.</li>
-<li>Run: alias each bit in a register to a whole byte. so you can loop and read/write to each bit. No Read Modify Write.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> almost every M3/M4 chip have this bit band alias region.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> alias each bit in a register to a whole byte. so you can loop and read/write to each bit. No Read Modify Write.
 <ul>
 <li>doesn't have a benefit when you are writing GPIOB-&gt;ODR = 0x00000002 or GPIOB-&gt;BSRR = 0x00000002 since those are already atomic.</li>
 </ul>
 </li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://developer.arm.com/documentation/ddi0439/b/Programmers-Model/Bit-banding">Cortex-M4 Technical Reference Manual r0p0</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://electronics.stackexchange.com/questions/535547/stm32f10xxx-odr-register-atomic-write">STM32F10xxx ODR register atomic write</a></li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/535547/stm32f10xxx-odr-register-atomic-write">STM32F10xxx ODR register atomic write</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

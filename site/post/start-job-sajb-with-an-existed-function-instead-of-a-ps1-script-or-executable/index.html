@@ -42,15 +42,15 @@
             <ul>
 <li><a href="https://stackoverflow.com/a/58838581/22954711"><code>Start-Job</code> | <code>sajb</code> with an existed function instead of a .ps1 script or executable</a>
 <ul>
-<li>Recap:</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">Start-Job -ScriptBlock ${function:ss} -ArgumentList &quot;`&quot;--pin:area,100,100,500,600,800,10`&quot;&quot;
 </span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason:</li>
-<li>Root: while trying to pin area with my custom function <code>ss</code>. It's blocking IO by default.</li>
-<li>Related:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> while trying to pin area with my custom function <code>ss</code>. It's blocking IO by default.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://stackoverflow.com/a/76847044/22954711">references to <code>$using</code> as well, to access global scope (e.g <code>$function</code> PSDrive/provider) from function scope.</a>
 <ul>

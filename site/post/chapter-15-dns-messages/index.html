@@ -42,22 +42,22 @@
             <ul>
 <li><a href="https://www.zytrax.com/books/dns/ch15/#answer">Chapter 15 DNS Messages</a>
 <ul>
-<li>Recap: <code>dig</code> ANSWER SECTION information.</li>
-<li>Run:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>dig</code> ANSWER SECTION information.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">dig</span></span><span class="meta function-call arguments shell"> +short google.com <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> show just the IP.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">dig</span></span><span class="meta function-call arguments shell"> +noall +answer google.de <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> show type of entry as well.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">dig</span></span><span class="meta function-call arguments shell"> @192.168.110.1 redmi-note-13-pro.lan</span>
 </span></code></pre>
 <ul>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://serverfault.com/questions/431080/dig-show-only-answer">dig show only answer</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://stackoverflow.com/questions/20297531/meaning-of-the-five-fields-of-the-answer-section-in-dig-query">dns - Meaning of the five fields of the ANSWER SECTION in dig query</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/20297531/meaning-of-the-five-fields-of-the-answer-section-in-dig-query">dns - Meaning of the five fields of the ANSWER SECTION in dig query</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://droptips.com/using-dig-to-query-a-specific-dns-server-name-server-directly-linux-bsd-osx/">Using dig to Query a Specific DNS Server (Name Server) Directly (Linux, BSD, OSX) - droptips.com</a>
 <ul>
@@ -66,9 +66,9 @@
 </li>
 <li><a href="https://stackoverflow.com/questions/16072817/what-does-the-authority-section-mean-in-dig-results">dns - What does the <code>AUTHORITY SECTION</code> mean in dig results?</a>
 <ul>
-<li>Recite: cached records coming from the old servers. Cloudflare has 1-day TTLs on the NS records, so that indicates that your resolver cached them about 18 hours ago, and they should go away in 6 hours.</li>
-<li>Related: <a href="https://serverfault.com/questions/1088257/why-does-dig-not-show-the-authority-section-and-how-to-make-it-show-the-authorit">linux - Why does dig not show the authority section and how to make it show the authoritative name servers that hold the DNS query`s answer?</a></li>
-<li>Run:</li>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> cached records coming from the old servers. Cloudflare has 1-day TTLs on the NS records, so that indicates that your resolver cached them about 18 hours ago, and they should go away in 6 hours.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://serverfault.com/questions/1088257/why-does-dig-not-show-the-authority-section-and-how-to-make-it-show-the-authorit">linux - Why does dig not show the authority section and how to make it show the authoritative name servers that hold the DNS query`s answer?</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">dig</span></span><span class="meta function-call arguments shell"> Dell-P7670.local <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">mDNS, show authorative answer.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">dig</span></span><span class="meta function-call arguments shell"> 1.0.0.1 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> querying CF&#39;s DNS, ofc they will give you cached/authorative response.</span><span class="comment line number-sign shell">

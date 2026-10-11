@@ -47,7 +47,7 @@
             <ul>
 <li><a href="https://cppreference.com/w/cpp/utility/move">std::move</a>
 <ul>
-<li>Recap: <code>move</code> transfer lvalue to new lvalue. It's a kind of <code>static_cast&lt;X&amp;&amp;&gt;</code> and have its own move operator.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>move</code> transfer lvalue to new lvalue. It's a kind of <code>static_cast&lt;X&amp;&amp;&gt;</code> and have its own move operator.
 <ul>
 <li><strong>move dont move anything.</strong> it negates the old value so you should not access them again.
 <ul>
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </li>
-<li>Resolution: It's for resources-efficient algorithm. It call destructor to the original <code>value</code>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> It's for resources-efficient algorithm. It call destructor to the original <code>value</code>
 <ul>
 <li>A kind of freeing and reinitialize resources.
 <ul>
@@ -73,13 +73,13 @@
 </li>
 </ul>
 </li>
-<li>Root: the instance is <code>xvalue</code>.
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> the instance is <code>xvalue</code>.
 <ul>
 <li>It's not really a function... More like a glorified <code>&amp;&amp;</code> xvalue instance creation.</li>
 </ul>
 </li>
-<li>Reason: <a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f18-for-will-move-from-parameters-pass-by-x-and-stdmove-the-parameter">Guideline about <code>&amp;&amp;</code> and <code>move</code></a></li>
-<li>Related: <a href="https://stackoverflow.com/questions/28483250/is-an-rvalue-reference-treated-as-an-lvalue-when-used-within-a-function">c++ - Is an rvalue reference treated as an lvalue when used within a function?</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f18-for-will-move-from-parameters-pass-by-x-and-stdmove-the-parameter">Guideline about <code>&amp;&amp;</code> and <code>move</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/28483250/is-an-rvalue-reference-treated-as-an-lvalue-when-used-within-a-function">c++ - Is an rvalue reference treated as an lvalue when used within a function?</a></li>
 </ul>
 </li>
 </ul>

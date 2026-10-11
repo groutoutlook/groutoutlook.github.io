@@ -42,21 +42,21 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/28633956/why-does-git-keep-telling-me-its-auto-packing-the-repository-in-background-for">Why does git keep telling me it's &quot;Auto packing the repository in background for optimum performance&quot;?</a>
 <ul>
-<li>Recap: because of dangling reference objects(blobs) retained in git FS.</li>
-<li>Run:</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> because of dangling reference objects(blobs) retained in git FS.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 </ul>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> fsck <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> list any blob hanging.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> gc<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>prune</span><span class="keyword operator assignment option shell">=</span>now</span>
 </span></code></pre>
 <ul>
-<li>Resolution:</li>
-<li>Reason: try to make things smaller I guess.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> try to make things smaller I guess.
 <ul>
 <li>could also try <code>git gc --aggressive</code></li>
 </ul>
 </li>
-<li>Root:</li>
-<li>Related:</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

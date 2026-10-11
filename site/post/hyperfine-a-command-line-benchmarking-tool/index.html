@@ -42,8 +42,8 @@
             <ul>
 <li><a href="https://github.com/sharkdp/hyperfine#intermediate-shell"><code>hyperfine</code>: A command-line benchmarking tool</a>
 <ul>
-<li>Recap:</li>
-<li>Resolution: dont try to run benchmarking binaries with cmdlets in  <code>pwsh</code>. Shell startup time is 1min.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> dont try to run benchmarking binaries with cmdlets in  <code>pwsh</code>. Shell startup time is 1min.
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">hyperfine</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>S</span><span class="keyword operator assignment option shell">=</span>pwsh <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>eza<span class="punctuation definition string end shell">&quot;</span></span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>gci<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>show-output</span>  </span>
 <span class="meta function-call shell"><span class="variable function shell">hyperfine</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Spwsh</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>eza<span class="punctuation definition string end shell">&quot;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>L</span> list_function gci ls <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>{list_function}<span class="punctuation definition string end shell">&quot;</span></span></span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Or faster, run this.</span><span class="comment line number-sign shell">
@@ -60,7 +60,7 @@
 <li><code>--runs</code> specify exact amount of times running.</li>
 </ul>
 </li>
-<li>Reason:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
 <ul>
 <li>Pro: compare function within my shell vs dedicated program in <code>$PATH</code> or relative to <code>$pwd</code>.</li>
 <li>Cons: super slow, it's calibrating for shell startup time as well...
@@ -70,9 +70,9 @@
 </li>
 </ul>
 </li>
-<li>Root: I'm still looking for a way to diff command output without saving them to files.</li>
-<li>Related:</li>
-<li>Revisit: [ Saturday, June 20, 2026 02:09:13 PM ] recently I consider using <code>hyperfine</code> again... Have to evaluate AI code so we could force them to try using hyperfine to compare.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm still looking for a way to diff command output without saving them to files.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Saturday, June 20, 2026 02:09:13 PM ] recently I consider using <code>hyperfine</code> again... Have to evaluate AI code so we could force them to try using hyperfine to compare.</li>
 </ul>
 </li>
 </ul>

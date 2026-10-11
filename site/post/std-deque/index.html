@@ -37,18 +37,18 @@
             <ul>
 <li><a href="https://cppreference.com/w/cpp/container/deque"><code>std::deque</code></a>
 <ul>
-<li>Recap: use <code>deque</code> when you access through push_front/push_back/pop_front/pop_back.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use <code>deque</code> when you access through push_front/push_back/pop_front/pop_back.
 <ul>
 <li>or <a href="https://cppreference.com/w/cpp/container/deque/emplace_back">std::deque&lt;T,Allocator&gt;::emplace_back</a></li>
-<li>Recite: <code>std::deque</code> is used to avoid the cost of reallocating when a <code>std::vector</code> would grow, and typically a recorder is used in cases when the length is unknown.
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> <code>std::deque</code> is used to avoid the cost of reallocating when a <code>std::vector</code> would grow, and typically a recorder is used in cases when the length is unknown.
 <ul>
-<li>Root: thru <code>glz::recorder</code>. I do think I need this one on my chip.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> thru <code>glz::recorder</code>. I do think I need this one on my chip.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Run:</li>
-<li>Resolution:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://cppreference.com/w/cpp/container/deque/insert">std::deque&lt;T,Allocator&gt;::insert</a>
 <ul>
@@ -71,9 +71,9 @@
 <li>unique to <code>deque</code>, we have <a href="https://cppreference.com/w/cpp/container/deque/prepend_range">std::deque&lt;T,Allocator&gt;::prepend_range</a></li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://cppreference.com/w/cpp/container/queue">std::queue</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cppreference.com/w/cpp/container/queue">std::queue</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><code>emplace_back</code>/<code>emplace_front</code> dont move, it constructs the element on the spot. <code>push_back</code>/<code>push_front</code> move things which cost some CPU cycles.</li>
 </ul>

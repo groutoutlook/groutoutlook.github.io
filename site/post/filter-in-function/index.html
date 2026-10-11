@@ -47,26 +47,26 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions#filters"><code>filter</code> in function</a>
 <ul>
-<li>Recap: (Prefix) a type of function that runs on each object in the pipeline.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> (Prefix) a type of function that runs on each object in the pipeline.
 <ul>
 <li>A filter resembles a function with all its statements in a process block.</li>
 </ul>
 </li>
-<li>Run:
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">function Add-One { process { 1 + $_ } }
 filter Add-Two { 2 + $_ }
 3 | add-one | add-two
 </span></code></pre>
 </li>
-<li>Resolution:</li>
-<li>Reason: Quick to write a pipeline function which use the <code>$_</code> auto var.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> Quick to write a pipeline function which use the <code>$_</code> auto var.
 <ul>
 <li>Pro: short</li>
 <li>Con: not an usual use. get familiar with function ... process instead. They also get you a <code>$_</code> to use.</li>
 </ul>
 </li>
-<li>Root: <a href="https://stackoverflow.com/questions/56446577/what-does-the-filter-keyword-do-in-powershell/69215694#69215694">What does the filter keyword do in PowerShell?</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/56446577/what-does-the-filter-keyword-do-in-powershell/69215694#69215694">What does the filter keyword do in PowerShell?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#polymorphism #operator <a href="https://stackoverflow.com/questions/59290037/overloading-operator-in-powershell-classes">Overloading Operator % in PowerShell Classes</a></li>
 </ul>

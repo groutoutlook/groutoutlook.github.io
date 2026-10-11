@@ -52,15 +52,15 @@
             <ul>
 <li><a href="https://github.com/casey/just#conditional-expressions">conditional <code>if/else</code> in recipe</a>
 <ul>
-<li>Recap: only for variables.</li>
-<li>Run:
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> only for variables.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain">foo := if &quot;hello&quot; =~ &#39;hello&#39; { &quot;match&quot; } else { &quot;mismatch&quot; }
 </span></code></pre>
 <ul>
 <li><code>!=</code> operator in justfile do exact match comparison, matching regex we use <code>=~</code>.</li>
 </ul>
 </li>
-<li>Resolution: you can put variable inside of them. no closure.
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can put variable inside of them. no closure.
 <ul>
 <li>or even output from backtick expression:
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain">bar := &quot;this is bar.&quot;
@@ -69,9 +69,9 @@ foo := if env_var(&quot;release&quot;) == &quot;true&quot; { `get-something-from
 </li>
 </ul>
 </li>
-<li>Reason:</li>
-<li>Root: <a href="https://github.com/casey/just#setting-variables-in-a-recipe">setting variable inside recipes</a></li>
-<li>Related:
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#setting-variables-in-a-recipe">setting variable inside recipes</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>you can write them multiline inside recipe, lifetime is of course limited within recipe.</li>
 </ul>
