@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>What&apos;s your favorite type of polarized connector for light duty internal use?</title><category>cable</category><category>connector</category><category>power</category><pubDate>2026-10-11 09:44:18 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`ConvertTo-Json`</title><category>powershell</category><category>serialize</category><pubDate>2026-10-11 10:50:44 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertto-json"><code>ConvertTo-Json</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to convert variables/output of cmdlets to something comprehensible.
+<ul>
+<li>Since <code>Format-Table</code> can only display a limited amount of objects.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Used in pipe
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Service -Name sshd | ConvertTo-Json | fx # `fx` go along with this pretty well.
+Get-Service -Name term* | ConvertTo-Json -Depth 4 | bat -ljson # or advanced pager like bat. This is more colorful though.
+gsv proton* |convertto-json |bat -ljson
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> could also be used to assign hashtable with <code>-AsHashtable</code>
+<ul>
+<li>you have to cast keys into <code>[String]</code>
+<ul>
+<li>access by index into <code>.keys</code> of <code>HashTable</code> by cast <code>$table.keys</code> into <code>[Array]</code>.</li>
+<li>An example of removing ununsed buckets.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$b = scoop list | Select Source -Unique
+gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> My favorite JSON engine.
+<code>pwsh</code> eat everything JSON, even JSONC (which has trailing comma, comments and other stuff.)</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/40495248/create-hashtable-from-json">powershell - Create Hashtable from JSON</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json"><code>ConvertFrom-Json</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to consume what is json before...</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">uni i k -aj | ConvertFrom-Json
+</span></code></pre>
+</li>
+<li>#decoder <a href="https://github.com/powershell/textutility#convertfrom-base64"><code>ConvertFrom-Base64</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45948792">How Your Brain Creates 'Aha' Moments and Why They Stick</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 10:50:44 SEAST 2026] #anatomy #nervous <a href="https://news.ycombinator.com/item?id=50029830">Food processing influences metabolism and brain activity | Hacker News</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>HTML &amp; CSS Deep Dive Part 2: Turing Completeness of HTML and CSS | Aditya Bhattacharya | Blogs Website</title><category>basic</category><category>misc</category><pubDate>2026-10-11 10:46:48 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://blogs.adityabh.is-a.dev/posts/html-css-part-2/">HTML &amp; CSS Deep Dive Part 2: Turing Completeness of HTML and CSS | Aditya Bhattacharya | Blogs Website</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> rule 110 cellular automaton.
+<ul>
+<li><a href="https://wikipedia.org/wiki/Cellular_automaton">Cellular automata is same thing</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cs.stackexchange.com/questions/60168/can-the-human-brain-be-considered-turing-complete">Can the human brain be considered Turing complete?</a>
+<ul>
+<li>for such a ridiculous question existed.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> turing machine is an algorithm take an input and spit out an output, given a set of rule/instruction inside it.
+<ul>
+<li>Turing complete is a machine that can do any kind of algorithm said above.</li>
+<li>Turing equivalence is the comparison between those machines. P can do Q and Q can do P.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://cs.stackexchange.com/questions/42311/how-is-the-computational-power-of-a-human-brain-comparing-to-a-turing-machine">computational power of a human brain comparing to a turing machine?</a>
+<ul>
+<li>moot...</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://brainmade.org/index.html#about">The Brainmade Mark</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 10:46:48 SEAST 2026] <a href="https://en.wikipedia.org/wiki/Connectivism">Connectivism - Wikipedia</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Connectionism">Connectionism - Wikipedia</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50039128">Brain does not process information and it is not a computer (2016) | Hacker News</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What&apos;s your favorite type of polarized connector for light duty internal use?</title><category>cable</category><category>connector</category><category>power</category><pubDate>2026-10-11 09:44:18 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.reddit.com/r/AskElectronics/comments/tau0xp">What's your favorite type of polarized connector for light duty internal use?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -438,81 +533,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> back then TUI are all the rage.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>China Compulsory Certificate</title><category>commercial</category><category>logistic</category><category>manu/cert</category><category>standard</category><pubDate>2026-10-08 06:30:27 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/China_Compulsory_Certificate">China Compulsory Certificate</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> CCC standard or could also be called 3C certificate...</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Sometimes displayed itslef on 1688 or other B2B websites.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#standard <a href="https://wikipedia.org/wiki/T%C3%9CV">TÜV</a>
-<ul>
-<li>QNX and high quality products also has this corp tested and certified by them.</li>
-<li>even some Chinese one making RFID products. as <a href="https://wikipedia.org/wiki/T%C3%9CV#T.C3.9CV_Rheinland">TÜV Rheinland</a>
-<ul>
-<li>#nfc #rf <a href="https://detail.1688.com/offer/960551367905.html">Music New NFC Tag Chip Album Cover Photo Electronic Tag Android Inductive Read and Write Music Patch</a>
-<ul>
-<li><a href="https://quankatong.1688.com/">Factory homepage</a>
-MAking things as RFID card/ RFID blocking sleeve as well.</li>
-<li>#alternative: <a href="https://detail.1688.com/offer/780849396834.html">厂家现货NFC213音乐墙贴纸NFC215背胶音乐标签nfc音乐墙贴纸</a>
-<ul>
-<li>This has extra technical details about dimension and NFC213/215 standard.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 18:30:27 2026] <a href="https://item.taobao.com/item.htm?id=1053223544978">ATID-102 125KHz low-frequency RFID card reader module, keyboard output, TTL serial port, EM4100/4102 - Taobao</a>
-<ul>
-<li>UART interface.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`json-rpc`</title><category>database</category><category>http</category><category>ipc</category><category>rpc</category><category>serialize</category><category>server</category><pubDate>2026-10-08 06:06:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/json-rpc.md"><code>json-rpc</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> For event based system, implement an in-process file watcher to watch a file, treat it as event database.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>For each event you want to invoke e.g. from <code>hx</code> editor, run recipes that add events into the databases.
-<ul>
-<li>It could be JSON or something <code>glaze</code> could take to invoke new event based on newly appended events there.</li>
-<li><code>glaze</code> also has a simple http server to take event from, so we dont have to implement file watcher,
-just reuse HTTP REST API to trigger event, more than enough.
-<ul>
-<li><code>justfile</code> recipes can <code>iwr</code> or <code>curl</code> or <code>xh</code> to the server. No file-based local dir thing.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stephenberry.github.io/glaze/rpc/jsonrpc-registry/">JSON-RPC 2.0 Registry - Glaze Documentation</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/repe-rpc.md"><code>repe-rpc</code></a>
-<ul>
-<li>A customization things...</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  1 13:46:00 2026] #ipc on my <code>vulkan-samples</code> is in <code>just rl</code></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 18:06:06 2026] #cli <a href="https://github.com/sile/jlot"><code>jlot</code> JSON-RPC 2.0 over JSON Lines over TCP.</a></li>
 </ul>
 </li>
 </ul>

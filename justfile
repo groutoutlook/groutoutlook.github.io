@@ -18,7 +18,8 @@ alias rb := rebuild
 build:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1"
 
-rebuild: build
+rebuild:
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1" -Force
 
 dev port="1337": build
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Start-TilPreview.ps1" -Port {{port}}

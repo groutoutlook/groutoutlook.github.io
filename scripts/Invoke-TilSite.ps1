@@ -1,34 +1,33 @@
 [CmdletBinding()]
 param(
-    [string] $TillerRoot = 'D:\ProgramDataD\MiscLang\07.02-Rust\nightly\tiller',
-    [string] $TillerExecutable
+    [string]$TillerRoot = 'D:\ProgramDataD\MiscLang\07.02-Rust\nightly\tiller',
+    [string]$TillerExecutable,
+    [switch]$Force
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$repoRoot = Split-Path -Parent $PSScriptRoot
-$siteDirectory = Join-Path $repoRoot 'site'
+$root = Split-Path -Parent $PSScriptRoot
+$site = Join-Path $root 'site'
+$cache = Join-Path $root '.tiller-build.sha256'
+if (!(Test-Path (Join-Path $root 'tils') -PathType Container)) { throw 'TIL source directory not found.' }
+if ([string]::IsNullOrWhiteSpace($TillerExecutable)) { $TillerExecutable = Join-Path $TillerRoot 'target\release\tiller.exe' }
+if (!(Test-Path $TillerExecutable -PathType Leaf)) { throw "Tiller executable not found: $TillerExecutable" }
 
-$tilsDirectory = Join-Path $repoRoot 'tils'
-if (-not (Test-Path -LiteralPath $tilsDirectory -PathType Container)) {
-    throw "TIL source directory not found: $tilsDirectory"
+$manifest = [Text.StringBuilder]::new()
+[void]$manifest.AppendLine((Get-FileHash $TillerExecutable).Hash)
+Get-ChildItem $root -File -Recurse | Where-Object {
+    $_.FullName -notlike "$site\*" -and $_.FullName -notlike "$root\.git\*" -and $_.FullName -ne $cache
+} | Sort-Object FullName | ForEach-Object {
+    [void]$manifest.AppendLine("$([IO.Path]::GetRelativePath($root, $_.FullName))=$((Get-FileHash $_.FullName).Hash)")
+}
+$fingerprint = [Convert]::ToHexString(([Security.Cryptography.SHA256]::HashData([Text.Encoding]::UTF8.GetBytes($manifest.ToString()))))
+if (!$Force -and (Test-Path $cache) -and (Test-Path (Join-Path $site 'index.html')) -and (Get-Content $cache -Raw).Trim() -eq $fingerprint) {
+    Write-Host 'Site is up to date; skipping build.'
+    exit 0
 }
 
-if ([string]::IsNullOrWhiteSpace($TillerExecutable)) {
-    $TillerExecutable = Join-Path $TillerRoot 'target\release\tiller.exe'
-}
-
-if (-not (Test-Path -LiteralPath $TillerExecutable -PathType Leaf)) {
-    throw "Tiller executable not found: $TillerExecutable. Build it once in '$TillerRoot' or pass -TillerExecutable."
-}
-
-if (-not (Test-Path -LiteralPath (Join-Path $TillerRoot 'Cargo.toml'))) {
-    throw "Tiller checkout not found: $TillerRoot"
-}
-
-New-Item -ItemType Directory -Path $siteDirectory -Force | Out-Null
-& $TillerExecutable `
-    --indir $repoRoot `
-    --outdir $siteDirectory `
-    --dev
-exit $LASTEXITCODE
+New-Item $site -ItemType Directory -Force | Out-Null
+& $TillerExecutable --indir $root --outdir $site --dev
+if ($LASTEXITCODE) { exit $LASTEXITCODE }
+Set-Content -LiteralPath $cache -Value $fingerprint -NoNewline
