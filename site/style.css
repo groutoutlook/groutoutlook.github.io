@@ -87,6 +87,10 @@ a:hover.til-tag { color: var(--page-bg); background-color: var(--accent-hover); 
 
 header.til-header, div.til-subheader { display: flex; align-items: center; gap: 0.5em; }
 .til-date { font-style: italic; color: var(--muted); }
+.til-date .updated-at { color: var(--accent); font-weight: 600; }
+.til-subtags { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4em; margin-top: 0.45em; }
+.til-subtags-label { color: var(--muted); font-size: small; font-weight: 600; }
+.in-topic-tag { border-color: var(--accent-hover); background-color: var(--code-bg); }
 
 button.sort {
     color: var(--text);

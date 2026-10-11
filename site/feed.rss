@@ -1,4 +1,431 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`tw` view query tabular data file: CSV, JSONL, Sqlite, FWF, Parquet, Arrow, Logfmt, XLSX.</title><category>rust</category><pubDate>2026-10-08 06:39:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>What&apos;s your favorite type of polarized connector for light duty internal use?</title><category>cable</category><category>connector</category><category>power</category><pubDate>2026-10-11 09:44:18 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/AskElectronics/comments/tau0xp">What's your favorite type of polarized connector for light duty internal use?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/720906/reverse-polarity-protection-on-a-5-v-led-strip-supply">mosfet - Reverse polarity protection on a 5 V LED strip supply</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/Lgeqd4wiAl4byQHjYgd7qg">Does the anti-reverse MOSFET get hot as soon as it powers on? Don't blame the on-resistance for now; the body diode might be connected in the wrong direction</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/665044/which-reverse-polarity-protection-is-better-and-why">diodes - Which reverse polarity protection is better and why?</a>
+<ul>
+<li>which introduce me to a crowbar configuration.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 09:44:18 2026] #blog <a href="https://mp.weixin.qq.com/s/lkNrtIh-YKrlQOdTOFtpAg">reverse connection protection circuit should not just be connected with a single diode? These four commonly used schemes are explained in one go</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The Brutalist Programming Manifesto</title><category>compsci</category><category>manifesto</category><category>motto</category><pubDate>2026-10-11 07:30:52 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="http://www.call-with-current-continuation.org/articles/brutalist-manifesto.txt">The Brutalist Programming Manifesto</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> hackernews...?</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 07:30:52 2026] <a href="https://lobste.rs/s/ily7as/programming_isn_t_special">Programming Isn’t Special</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Window Context Menu could be trigger by `Alt+space`, but I used #powertoys run heavily.</title><category>gui</category><category>menu</category><category>windows</category><pubDate>2026-10-10 01:27:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Window Context Menu could be trigger by <code>Alt+space</code>, but I used #powertoys run heavily.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> mouse to right-click at title bar. but I avoid using mouse.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> unless specified, <code>Alt+shift+space</code> or <code>Win+alt+space</code> can also open that menu, in any app.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> windows terminal since it eats that key too, not really sure why and how to fix.
+<ul>
+<li>...other terms also suffer.</li>
+<li>In most other apps, <code>Ctrl+alt+space</code> is also eaten. And I map it with suggest only directory ni #powershell.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 13:27:05 2026] <code>ctrl+space</code>/<code>ctrl+alt+space</code> now also invoke fzf if there are too much of it.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Github Copilot Features Config</title><category>config</category><category>github</category><pubDate>2026-10-10 11:56:08 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/settings/copilot/features">Github Copilot Features Config</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> look at the web portal here.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/github/github-mcp-server#remote-github-mcp-server"><code>github-mcp-server</code> GitHub's official MCP Server</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#command <a href="https://docs.github.com/en/copilot/reference/cheat-sheet?tool=vscode">GitHub Copilot Chat cheat sheet - GitHub Docs</a>
+<ul>
+<li>you have to <code>/clear</code>.</li>
+</ul>
+</li>
+<li><a href="https://news.ycombinator.com/item?id=49131438">Stateless MCP has recaptured my interest</a>
+<ul>
+<li>btw MCP is having many criticism now.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  1 14:00:21 2026] <a href="https://news.ycombinator.com/item?id=49906637">You Said No MCP</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:56:08 2026] <a href="https://git.b4mad.industries/agentic-forges/forgejo-mcp"><code>forgejo-mcp</code> MCP server for Forgejo</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> migrated from <code>codeberg</code> on 2026-07-29 - #B4mad Forge.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`fx` terminal json viewer &amp; processor</title><category>cli/option</category><category>format/json</category><category>format/yaml</category><category>keybinding</category><category>tui</category><category>utils</category><pubDate>2026-10-10 11:31:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/antonmedv/fx"><code>fx</code> terminal json viewer &amp; processor</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> name is really hard to remember though. it's readonly. And can read YAML/JSON.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://fx.wtf/getting-started#streaming-mode">Getting Started | fx</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> processing of a JSON stream as a single array...</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>{&quot;str&quot;: &quot;Hello&quot;}{&quot;str&quot;: &quot;World!&quot;}<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>slurp</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.map(x =&gt; x.str)<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.join(&quot;, &quot;)<span class="punctuation definition string end shell">&#39;</span></span></span>
+</span></code></pre>
+<ul>
+<li>#faq <a href="https://fx.wtf/how-to/join-two-arrays-by-their-properties"><code>fx</code> join two arrays by properties</a></li>
+<li><code>fx</code> can process TOML easily... #til that put a query on it will dump content to stdout instead of open #TUI app.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="constant character escape shell">\m</span>ouse-around.toml .events <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> dump all events to terminal. No TUI.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or you can just put `.`, it will practically convert toml to json. No adhoc scripts.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://fx.wtf/how-to/viewing-yaml-in-the-terminal-on-linux-with-fx#open-a-yaml-file">Viewing YAML in the Terminal on Linux with fx | fx</a></li>
+<li><a href="https://fx.wtf/advanced-usage">Advanced Usage | fx</a></li>
+<li><code>v</code> to open in <code>$editor</code> this will open in current focused line.
+<ul>
+<li>I have a small patch that ignore executable and enable <code>hx</code> to edit files.</li>
+</ul>
+</li>
+<li><a href="https://github.com/antonmedv/fx/pull/358">feat: yank key and value - <code>y b</code> as keybinding</a>
+<ul>
+<li>there are <code>y p</code>, <code>y k</code>, <code>y v</code> as well. <code>y b</code> is like, yank both.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop. but It's #nightly now.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bxgmid"><code>fx</code> json terminal viewer</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #cli #python #library
+<ul>
+<li><a href="https://github.com/kellyjonbrazil/jc"><code>jc</code> output cli, file-types, and common strings to json, yaml, or dictionaries</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>jc</code> output famous cli tools to json, both in #windows and #linux.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>fx</code> is actually quite hard to use. in scoop.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://gitlab.com/makapuf/treewalker"><code>treewalker</code></a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:31:46 2026] <code>fx</code> add XML, HTML, EDN, MAML support..</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>USB Protocol Analyzer 480M USB Sniffer Full Open Source WireShark FPGA</title><category>analyzer</category><category>fpga</category><category>software</category><category>usb</category><pubDate>2026-10-10 11:26:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://item.taobao.com/item.htm?id=976511561630&amp;skuId=6095751234279">USB Protocol Analyzer 480M USB Sniffer Full Open Source WireShark FPGA</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I own this <a href="https://vllogic.com/quick/usb_sniffer_2">USB Sniffer 2 快速上手 now...</a>
+<ul>
+<li><a href="https://www.jlc-jdgf.com/machine-detail/621858041681838082">USB3.0协议分析仪外壳-嘉立创FA机械电气零部件商城-嘉立创机电工坊</a></li>
+<li><a href="https://github.com/vllogic/usb_sniffer.extcap">usb_sniffer.extcap</a></li>
+<li>#documentation <a href="https://wiki.wireshark.org/CaptureSetup/USB">CaptureSetup/USB - Wireshark Wiki</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/ataradov/edbg"><code>edbg</code> Simple utility for programming MCUs and FPGAs though CMSIS-DAP protocol. Works on Linux, MAC and Windows.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#meta #pcb <a href="https://oshpark.com/shared_projects">OSH Park ~ Shared Projects</a>
+<ul>
+<li>for very low quantity prototype boards which people already made.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:26:10 2026] #gui <a href="https://www.usbpacketviewer.com/download/">下载 – USB Packet Viewer</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> usb sniffer 2 support this now. shim to <code>usbpv</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>创龙安路DR1M90工业开发板 国产ARM+FPGA SoC 升级ZYNQ 飞龙</title><category>cpu</category><category>fpga</category><category>linux/embedded</category><pubDate>2026-10-09 11:05:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://detail.tmall.com/item.htm?id=943629754007">创龙安路DR1M90工业开发板 国产ARM+FPGA SoC 升级ZYNQ 飞龙</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/ItycHI30QixeXFbGTIeJ7w">The domestic ARM + FPGA SoC broke through, and the clarion call was officially blown by &quot;Anlu&quot;</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#cpu/arch/arm <a href="https://mp.weixin.qq.com/s/HyRKtMvE8cvdIl5ICu8dTg">Madden! 99 yuan = 4 cores 1.6GHz + 3 Gigabit network + dual CAN FD, Allwinner T153 industrial core board shocking release!</a></li>
+<li><a href="https://www.allwinnertech.com/index.php?c=product&amp;a=index&amp;id=139&amp;solveid=34">A733</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 23:05:43 2026] <a href="https://whycan.com/">a forum for embedded maker, whycan</a>
+<ul>
+<li><a href="https://bbs.aw-ol.com/">allwinner maker forum.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CamelCase vs underscores: Scientific showdown (2011)</title><category>blog</category><category>convention</category><category>naming</category><category>programming</category><pubDate>2026-10-09 05:16:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=40425315">CamelCase vs underscores: Scientific showdown (2011)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I personally like dot case. people  prefer <code>train-case</code>/<code>kebab-case</code>.
+<ul>
+<li>those are patterns often seen in URLs.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#powershell : <a href="https://stackoverflow.com/questions/4857792/powershell-reference-a-property-that-contains-a-space">csv - Powershell: Reference a property that contains a space</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> comments on this. variable dispatch on double quotes or braces, handles spaces nicely.
+<ul>
+<li>even some extra nasty delimiters.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> FYI, <code>pwsh</code> couldnt take anything other than <code>_</code> in normal variable name.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> so in <code>pwsh</code>,  camelCase for normal variables, methods or functions.
+<ul>
+<li>PascalCase for class. snake_case for something else e.g. ScriptBlock.</li>
+<li>Settled with dot case.
+<ul>
+<li>Pro: it's delimiter in #imgui itself. any delimiter like <code>-</code>/<code>_</code> is not usable for file names.
+<ul>
+<li>other options as <code>,</code> or <code>/</code>,.. are  horrible in any kind of shell.</li>
+<li>True representation is <code>Space</code> but it's obviously impossible to parse without braces.</li>
+</ul>
+</li>
+<li>Con: no one preferably use it. Any mainstream programming language use <code>.</code> either as operator or access method to members or objects/classes/structs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I want to search for a frequently used case within #filesystem.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#filesystem: <code>kebab-case</code> is how <code>gh</code> translated <code>space</code> on my path. To <code>hyphen</code>.</li>
+<li>#blog : <a href="https://lobste.rs/s/ilmbgu/microfeatures_i_d_like_see_more_languages">Microfeatures I'd like to see in more languages</a>
+<ul>
+<li>another <code>kebab-case</code> echo chamber.</li>
+</ul>
+</li>
+<li>#medical : <a href="https://www.reddit.com/r/RSI/comments/1j9uzgs">25M dealing with RSI in both hands</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/Repetitive_strain_injury">RSI Repetitive strain injury</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://rdrama.net/h/slackernews/post/809987">annual programming thread</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 17:16:33 2026] <a href="http://xahlee.info/kbd/sticky_key.html">Sticky Keys for RSI people</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Once again: If you carry a sensor of any kind, you must assume it to be active and collecting data, you can’t trust pinky promises – Falkvinge on Liberty</title><category>social</category><pubDate>2026-10-09 04:24:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://falkvinge.net/2017/12/06/carry-sensor-must-assume-active-collecting-data/">Once again: If you carry a sensor of any kind, you must assume it to be active and collecting data, you can’t trust pinky promises – Falkvinge on Liberty</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #misc very tangential but <a href="http://xahlee.info/emacs/emacs/emacs_pinky.html">How to Avoid Emacs Pinky</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 16:24:18 2026] <a href="https://www.reddit.com/r/emacs/comments/w34fc5">Emacs pinky - what's physiologically happening? (And a couple other questions.)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`fizzy`: Pixel art editor made with Zig</title><category>editor/pixel</category><category>image</category><category>zig</category><pubDate>2026-10-09 03:09:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/fizzyedit/fizzy"><code>fizzy</code>: Pixel art editor made with Zig</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also shim to <code>pixed</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/foxnne/pixi/"><code>pixi</code> Pixel art editor made with Zig.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#blog <a href="https://news.ycombinator.com/item?id=46004326">Pixel Art Tips for Programmers</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 15:09:53 2026] <a href="https://news.ycombinator.com/item?id=49986882">I hired an illustrator to draw my house. Now it's my Home Assistant dashboard</a>
+<ul>
+<li>and some about smart home stuff as well.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Shift+Insert` is paste of course, but #til `LShift+RShift+KP_0` == `Shift+Insert` ...</title><category>default</category><category>keybinding</category><category>windows</category><pubDate>2026-10-09 03:05:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><code>Shift+Insert</code> is paste of course, but #til <code>LShift+RShift+KP_0</code> == <code>Shift+Insert</code> ...
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> dont have to reach too far for <code>insert</code> keys on my laptop sometimes.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>Ctrl+insert</code> is copy in case you have <code>Ctrl+c</code> occupied.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 15:05:23 2026] <a href="https://github.com/openai/codex/issues/2730">Hint showing you can now paste images with Ctrl+V · Issue #2730 · openai/codex</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the only way to paste image to codex is this not <code>shit+insert</code></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> map <code>lsft+kp0</code> -&gt; <code>shift+insert</code>. in #kanata.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>ASR : Automatic Speech Recognition - Hugging Face</title><category>acronym</category><category>ml</category><pubDate>2026-10-09 03:02:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://huggingface.co/tasks/automatic-speech-recognition">ASR : Automatic Speech Recognition - Hugging Face</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/leon-ai/leon"><code>leon</code> open-source personal assistant.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> To synthesis TTS(Text-to-speech), STT(speech-to-text) with ASR.
+<ul>
+<li>#cpp : <a href="https://github.com/OHF-Voice/piper1-gpl"><code>piper-tts</code> neural text-to-speech engine</a></li>
+<li>#python : <a href="https://github.com/espnet/espnet"><code>espnet</code> End-to-End Speech Processing Toolkit</a></li>
+<li>#python : <a href="https://github.com/PaddlePaddle/PaddleSpeech"><code>PaddleSpeech</code> Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 15:02:03 2026] #stt #llm <a href="https://news.ycombinator.com/item?id=50008427">Whistle: Speech to Text in 16.9 MB</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`tiller` Tiller Tills TILs</title><category>frontend</category><category>genesis/til</category><category>highlighted</category><category>meta</category><category>ssg</category><pubDate>2026-10-08 08:04:14 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/woodruffw/tiller"><code>tiller</code> Tiller Tills TILs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> quite meta, a way to manage til site...</li>
+<li><!-- raw HTML omitted -->Require:<!-- raw HTML omitted --> a pretty formal journal layout.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> might be the actual reason I could publish my knowledge to the world.
+<ul>
+<li><code>jrnl</code> is kinda not enough of a tool to make #ssg.</li>
+<li><code>mdbook</code> is for markdown book, it's not even a proper documentation system.</li>
+<li><code>hugo</code> and the likes have too many features I dont want.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://yossarian.net/til/">TILs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> most of the SSG on the market , I fear. this bespoke SSG is among them.</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Roadmap:<!-- raw HTML omitted -->
+<ul>
+<li>make <code>jrnl --format yaml</code> and <code>tiller</code> play nicely with others.
+<ul>
+<li>Touch <code>jrnl</code> yaml engine so it can emit something as conformance yaml.</li>
+<li>Make <code>tiller</code> read some other fields.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  7 20:04:14 2026] to add the genesis.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 20:04:14 2026] there could be infinite of them <code>- Revisit:</code> here.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>You can have a sim duplicate which phone calls can be redirected to both phones.</title><category>hardware</category><category>mobile</category><pubDate>2026-10-08 07:57:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>You can have a sim duplicate which phone calls can be redirected to both phones.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=46467057">Clicks Communicator</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:57:52 2026] <a href="https://support.apple.com/en-us/127274">Set up iPhone Handoff - Apple Support</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>hexspeak</title><category>comedy</category><category>programming</category><category>trivia</category><pubDate>2026-10-08 07:53:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/hexspeak">hexspeak</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=41231141"> 0xcafebabe &amp; 0xfeedface </a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>VID:PID of VSEMEC's EasyFlasher-META : CMSIS-DAP -- dead:c0de:045A5A1A5E40
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/72685/how-do-i-find-the-serial-number-of-a-usb-drive#72692">find the Serial Number of a USB Drive?</a>
+<ul>
+<li>#esp32 <a href="https://github.com/espressif/usb-pids"><code>usb-pids</code> Customer-allocated USB PIDs under the Espressif VID</a></li>
+<li>#cli <a href="https://github.com/sh1ftd/vid-pid-rs"><code>vid-pid-rs</code> command-line utility to list USB HID devices with their vendor IDs, product IDs, and other details.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:53:47 2026] #rust #library <a href="https://github.com/woodruffw/usb-ids.rs">usb-ids.rs Rust wrappers for the USB ID Repository</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`maturin` build/publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages</title><category>build</category><category>crossplatform</category><category>python</category><category>rust</category><pubDate>2026-10-08 07:52:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/PyO3/maturin"><code>maturin</code> build/publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>uv tool install maturin</code>, use with <code>uv publish</code> to publish packages.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which can be used to build executable instead of using <code>pex</code> or <code>nuikta</code></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #library #rust <a href="https://github.com/pemistahl/lingua-rs">Lingua-rs natural language detection library</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:52:44 2026] #process #rust <a href="https://github.com/woodruffw/procmaps.py"><code>procmaps.py</code> Python bindings for procmaps.rs</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Solved: Question about CAN connection without transceiver - NXP Community</title><category>protocol/can</category><category>transceiver</category><pubDate>2026-10-08 07:43:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://community.nxp.com/t5/Other-NXP-Products/Question-about-CAN-connection-without-transceiver/m-p/1367881?profile.language=en">Solved: Question about CAN connection without transceiver - NXP Community</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #til [Tue Sep 29 14:24:01 2026] you can connect CAN-FD without a transceiver!</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.nxp.com/products/TJA144x">Next-Gen CAN FD Transceivers for Safer Autonomous Cars | NXP Semiconductors</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well it's not a can fd controller <strong>but the PHY layer</strong>, most MCU has them builtin.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://community.nxp.com/t5/S32K/CAN-Communication-without-transceiver-using-s32k144-and-another/m-p/2109452">CAN Communication without transceiver using s32k144 and another controller - NXP Community</a></li>
+<li><a href="https://community.nxp.com/t5/S32K/One-Wire-Communication-with-S32k146/m-p/1838993">One Wire Communication with S32k146</a></li>
+<li><a href="https://www.eevblog.com/forum/microcontrollers/canbus-on-board-without-transceivers/">CANbus on board without transceivers</a></li>
+<li><a href="https://www.mikrocontroller.net/attachment/28831/siemens_AP2921.pdf">siemens_AP2921.pdf</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/326021/mixing-can-nodes-with-and-without-transceivers-on-one-bus">digital communications - Mixing CAN nodes with and without transceivers on one bus?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:43:09 2026] <a href="https://electronics.stackexchange.com/questions/715397/uart-communications-using-can-bus-differential-signalling">UART communications using CAN bus differential signalling</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`tw` view query tabular data file: CSV, JSONL, Sqlite, FWF, Parquet, Arrow, Logfmt, XLSX.</title><category>rust</category><pubDate>2026-10-08 06:39:36 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/shshemi/tabiew"><code>tw</code> view query tabular data file: CSV, JSONL, Sqlite, FWF, Parquet, Arrow, Logfmt, XLSX.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> beautiful UI for a TUI app. Just super slow compile time. Not as fast as well...</li>
@@ -14,254 +441,78 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Github actions - how to deploy to remote server using SSH</title><category>cicd</category><category>github</category><pubDate>2026-10-08 05:13:12 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/60477061/github-actions-how-to-deploy-to-remote-server-using-ssh/77991534#77991534">Github actions - how to deploy to remote server using SSH</a>
+]]></content:encoded></item><item><title>China Compulsory Certificate</title><category>commercial</category><category>logistic</category><category>manu/cert</category><category>standard</category><pubDate>2026-10-08 06:30:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/China_Compulsory_Certificate">China Compulsory Certificate</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> CCC standard or could also be called 3C certificate...</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`pcbnew` IDFv3 exporter `.emn`/`.emp` files.</title><category>3d/model</category><category>format/idf</category><pubDate>2026-10-08 02:47:42 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://docs.kicad.org/master/en/pcbnew/pcbnew.html#idf-exporter"><code>pcbnew</code> IDFv3 exporter <code>.emn</code>/<code>.emp</code> files.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.kicad.info/t/post-v10-new-features-and-development-news/66611/38">placeholder height for idf exporting.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>A new benchmark for energy conservation! How the GD3300 redefines LED driver power</title><category>pmic</category><category>psu/led/driver</category><pubDate>2026-10-08 02:21:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/Rk3WDJXwqEOjWtYP8NHPrQ">A new benchmark for energy conservation! How the GD3300 redefines LED driver power</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Blog | OpenAI Developers</title><category>blog</category><category>harness</category><category>meta</category><pubDate>2026-10-08 01:41:42 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://developers.openai.com/blog">Blog | OpenAI Developers</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50002008">“Math 2.0” will need to value mathematical progress more holistically</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49997718">The Mathocalypse</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`filepack` content-addressed packages</title><category>binary</category><category>distribution</category><category>http</category><category>rust</category><pubDate>2026-10-08 12:56:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/casey/filepack"><code>filepack</code> content-addressed packages</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Austerity</title><category>english</category><pubDate>2026-10-08 12:43:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Austerity">Austerity</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://ascii.rest/split-flap/">split-flap · ascii.rest</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> affectation of technical austerity, i.e. you’re borrowing the credibility of a constrained medium
-without embracing its constraints.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Sharing AI progress in mathematics</title><category>ai</category><category>fiction</category><category>technologia</category><pubDate>2026-10-08 11:49:40 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=49984923">Sharing AI progress in mathematics</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> Recite:
-<ul>
-<li>In the Culture series, the hyperintelligent Minds that run civilization are described as keeping human
-citizens happy as a competition with eachother, where they compare their approval rates. One character
-likens it to people keeping a beloved aquarium .</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>DMA Arbiter • Scalable Scatter-Gather DMA FPGA IP User Guide • Altera Documentation and Resources Center</title><category>silicon/ip</category><category>terminology</category><category>vlsi</category><pubDate>2026-10-08 11:23:04 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://docs.altera.com/r/docs/823097/25.1.1/scalable-scatter-gather-dma-fpga-ip-user-guide/dma-arbiter">DMA Arbiter • Scalable Scatter-Gather DMA FPGA IP User Guide • Altera Documentation and Resources Center</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --><a href="https://github.com/alexforencich/verilog-axi">Verilog AXI components for FPGA implementation</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> it's all in the FT32F405 Reference Manual DMA section that I saw the Arbiter.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Development Boards · XBF Board Lab</title><category>sbc</category><pubDate>2026-10-08 10:46:21 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://findboard.cn/en/">Development Boards · XBF Board Lab</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/cXxsBewtOzKElUMb_uOZqw">Orange Pie Zero4, the true upgraded version of Orange Pie Zero3</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/EONy26FY7f_bRiEHS5Ux4A">Microduck can't wait to ship, so let's all make one by hand! Recreating the open-source Hachimo Dock machine, small screens transform with AI | DF Maker Weekly (Issue 188)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>have to keep my Settings &gt; Update always open or my windows insider upgrade will not completed and keep stucking at some weird 64-bit hex errors.</title><category>settings</category><category>update</category><category>windows</category><pubDate>2026-10-08 10:40:53 AM</pubDate><content:encoded><![CDATA[<ul>
-<li>have to keep my Settings &gt; Update always open or my windows insider upgrade will not completed and keep stucking at some weird 64-bit hex errors.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`grok` Keyboard Shortcuts | SpaceXAI Docs</title><category>harness</category><category>keybinding</category><category>tui</category><pubDate>2026-10-08 09:37:49 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://docs.x.ai/build/keyboard-shortcuts"><code>grok</code> Keyboard Shortcuts | SpaceXAI Docs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>ctrl+enter</code> is steering. Normal <code>enter</code> is queuing.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How to decode &amp; analyze Extended UART in PicoScope 7</title><category>uart</category><pubDate>2026-10-08 09:17:01 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.picotech.com/library/knowledge-bases/oscilloscopes/extended-uart">How to decode &amp; analyze Extended UART in PicoScope 7</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>isoSPI serial protocol decoding | Pico Knowledge Base</title><category>spi</category><pubDate>2026-10-08 09:04:52 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.picotech.com/library/knowledge-bases/oscilloscopes/isospi-serial-protocol-decoding">isoSPI serial protocol decoding | Pico Knowledge Base</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.analog.com/en/products/ltc6820.html">LTC6820 isoSPI Isolated Communications Interface </a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Turn off Apple Intelligence on macOS 27 and get its disk space back</title><category>ai</category><category>macos</category><category>misc</category><pubDate>2026-10-05 03:41:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=49957116">Turn off Apple Intelligence on macOS 27 and get its disk space back</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Triple Sec – Simple Digital Security Scheme</title><category>methodology</category><pubDate>2026-10-05 02:10:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://nau.github.io/triplesec/">Triple Sec – Simple Digital Security Scheme</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Zarf Updates: Infidel goes wild</title><category>game/rpg</category><category>misc</category><pubDate>2026-10-05 01:47:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://blog.zarfhome.com/2026/10/infidel-goes-wild">Zarf Updates: Infidel goes wild</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> those kind of games are called infocom.
-<ul>
-<li>#og <a href="https://i7-dungeon.sourceforge.net/source_1.html">Zork - Source Text</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/CRPG/comments/1q18gyw">What are some good text-based RPGs to try out? Can be old, new, indie etc.</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Sometimes displayed itslef on 1688 or other B2B websites.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
-<li><a href="https://github.com/DexterHuang/CyberCodeOnline">DexterHuang/CyberCodeOnline: Cyberpunk Text MMO RPG, built with React.js &amp; Typescript</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Rhythm</title><category>definition</category><category>music</category><pubDate>2026-10-05 01:44:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Rhythm">Rhythm</a>
+<li>#standard <a href="https://wikipedia.org/wiki/T%C3%9CV">TÜV</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>QNX and high quality products also has this corp tested and certified by them.</li>
+<li>even some Chinese one making RFID products. as <a href="https://wikipedia.org/wiki/T%C3%9CV#T.C3.9CV_Rheinland">TÜV Rheinland</a>
+<ul>
+<li>#nfc #rf <a href="https://detail.1688.com/offer/960551367905.html">Music New NFC Tag Chip Album Cover Photo Electronic Tag Android Inductive Read and Write Music Patch</a>
+<ul>
+<li><a href="https://quankatong.1688.com/">Factory homepage</a>
+MAking things as RFID card/ RFID blocking sleeve as well.</li>
+<li>#alternative: <a href="https://detail.1688.com/offer/780849396834.html">厂家现货NFC213音乐墙贴纸NFC215背胶音乐标签nfc音乐墙贴纸</a>
+<ul>
+<li>This has extra technical details about dimension and NFC213/215 standard.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>God has given everything to meet your need, not your greed</title><category>religion</category><pubDate>2026-10-05 01:43:48 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>God has given everything to meet your need, not your greed
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well it rhythm. so.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49960901">Replacement of Petroleum Based Products with Plant-Based Materials</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Take My Breath Away - Berlin (Acoustic Cover) - YouTube</title><category>ballad</category><category>cover</category><category>music</category><category>usuk</category><pubDate>2026-10-05 12:23:01 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.youtube.com/watch?v=WSfIdFI2Sx8&amp;list=RD0FiismjW6Tg&amp;index=3">Take My Breath Away - Berlin (Acoustic Cover) - YouTube</a>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 18:30:27 2026] <a href="https://item.taobao.com/item.htm?id=1053223544978">ATID-102 125KHz low-frequency RFID card reader module, keyboard output, TTL serial port, EM4100/4102 - Taobao</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li>UART interface.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`json-rpc`</title><category>database</category><category>http</category><category>ipc</category><category>rpc</category><category>serialize</category><category>server</category><pubDate>2026-10-08 06:06:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/json-rpc.md"><code>json-rpc</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> For event based system, implement an in-process file watcher to watch a file, treat it as event database.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>For each event you want to invoke e.g. from <code>hx</code> editor, run recipes that add events into the databases.
+<ul>
+<li>It could be JSON or something <code>glaze</code> could take to invoke new event based on newly appended events there.</li>
+<li><code>glaze</code> also has a simple http server to take event from, so we dont have to implement file watcher,
+just reuse HTTP REST API to trigger event, more than enough.
+<ul>
+<li><code>justfile</code> recipes can <code>iwr</code> or <code>curl</code> or <code>xh</code> to the server. No file-based local dir thing.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.youtube.com/watch?v=b_Z_X2JOo7w&amp;list=RD0FiismjW6Tg&amp;index=2">Night Changes - One Direction (Cover by Jonah Baker and Madilyn Bailey) - YouTube</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.youtube.com/watch?v=X1Za4CZVDQg&amp;list=RD0FiismjW6Tg&amp;index=5">Right Here Waiting - Music Travel Love (Cover) - YouTube</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stephenberry.github.io/glaze/rpc/jsonrpc-registry/">JSON-RPC 2.0 Registry - Glaze Documentation</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/repe-rpc.md"><code>repe-rpc</code></a>
+<ul>
+<li>A customization things...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  1 13:46:00 2026] #ipc on my <code>vulkan-samples</code> is in <code>just rl</code></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 18:06:06 2026] #cli <a href="https://github.com/sile/jlot"><code>jlot</code> JSON-RPC 2.0 over JSON Lines over TCP.</a></li>
 </ul>
 </li>
 </ul>
