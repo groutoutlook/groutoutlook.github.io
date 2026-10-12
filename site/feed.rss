@@ -1,4 +1,303 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Teardown Report: UGREEN 160W Instant Display Charging 4C1A GaN Charger</title><category>charger</category><category>teardown</category><pubDate>2026-10-12 08:49:33 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Delegating execution work from Codex to DeepSeek (with Opus second opinions)</title><category>ai/harness</category><pubDate>2026-10-12 10:51:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/codex/comments/1u6zdwi">Delegating execution work from Codex to DeepSeek (with Opus second opinions)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://learn.chatgpt.com/docs/prompting?site_locale=en#cloud-delegation-ide--cloud">Cloud delegation | Prompting | ChatGPT Learn</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Launch the Windows Settings app - Windows apps</title><category>explorer</category><category>settings</category><category>windows</category><pubDate>2026-10-12 10:01:25 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings-app">Launch the Windows Settings app - Windows apps</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use <code>explorer</code> with settings app. and multiple other URI to config settings.
+<ul>
+<li>Or <code>Start &quot;URI://&quot;</code> to handle them.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://gist.github.com/dbilanoski/8e931a0072b61ea215996a18fd215fb3">Complete List Of Windows 11 MS-Settings URI Commands</a>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">explorer ms-settings:network-wifisettings
+explorer ms-settings:network-wifi
+
+# et cetera...
+explorer ms-settings:maps
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-default-app">Launch the default Windows app for a URI - Windows apps</a>
+<ul>
+<li>other default URI scheme which can be launched through <code>explorer</code>.</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-snipping-tool#examples">Launch Snipping Tool - Windows apps</a>
+<ul>
+<li><code>explorer ms-screenclip:</code>, use ScreenCapture as default knowing invoke default app in terminal.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1311073/run-command-to-open-network-connections-list-box">windows - Run command to open network connections list box</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/farion1231/cc-switch/blob/main/docs/user-manual/en/5-faq/5.3-deeplink.md"><code>ccswitch</code> Deep Link Protocol (custom URI scheme.)</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 22:01:25 SEAST 2026] <a href="https://learn.chatgpt.com/docs/reference/commands#deep-links"><code>codex</code> Deep links is a registered URI schemes..</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>[2024-07-31 11:12:29 AM]</title><category>infosec</category><category>manager/password</category><pubDate>2026-10-12 06:17:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/bitwarden/server"><code>bitwarden</code> infrastructure/backend (API, database, Docker, etc).</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: on scoop.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Free alternative of <code>1password</code>.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#client/gui: <a href="https://github.com/bitwarden/clients">bitwarden/clients: Bitwarden client apps (web, browser extension, desktop, and cli).</a>
+<ul>
+<li>also on Android as well.</li>
+<li>#discussion <a href="https://news.ycombinator.com/item?id=44041892">Authy corrupted my 2FA backup and all I got was this lousy blogpost</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=43983159">The cryptography behind passkeys</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/dani-garcia/vaultwarden"><code>vaultwarden</code> Unofficial Bitwarden compatible server, formerly known as bitwarden_rs</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #hardware #eda #usb <a href="https://youtu.be/3Avji06DCk8">DIY Safe USB Passkey - YouTube</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct  5 14:23:42 2026] <a href="https://bitwarden.com/help/emergency-access/">About Emergency Access | Bitwarden</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about leaving your digital legacy for families.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="http://www.taobackup.com/index.html">The Tao Of Backup</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 18:17:03 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50048312">Passkeys are a trap</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Postgres isn&apos;t slow, your storage is</title><category>database</category><pubDate>2026-10-12 06:12:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50052163">Postgres isn't slow, your storage is</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Gall&apos;s Law - Laws of Software</title><category>meta</category><category>programming</category><category>software</category><pubDate>2026-10-12 05:38:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.laws-of-software.com/laws/gall/">Gall's Law - Laws of Software</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> very meta page, store all the so-called &quot;law&quot; of system engineering in general.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/lin8d0/self_reliant_programmer_manifesto">self-reliant programmer manifesto</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/rhoktj/ansigpt_c89_implementation_microgpt">ansigpt: c89 implementation of microgpt</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#misc #community/law : <a href="https://wikipedia.org/wiki/Linus%27s_law">Linus's law</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 17:38:36 SEAST 2026] <a href="https://www.laws-of-software.com/laws/kernighan/">Kernighan's Law - Laws of Software</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`sqlitebrowser`</title><category>database</category><category>gui</category><pubDate>2026-10-12 03:52:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/sqlitebrowser/sqlitebrowser"><code>sqlitebrowser</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> this has to be shimmed since the original name has space :&quot;DB Browser for SQLite&quot;
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> use sqlitebrowser to read sqlite db of Microsoft To Do.    </span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">sqlitebrowser</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">env</span></span>:LocalAppdata<span class="constant character escape shell">\P</span>ackages<span class="constant character escape shell">\M</span>icrosoft.Todos_8wekyb3d8bbwe<span class="constant character escape shell">\L</span>ocalState<span class="constant character escape shell">\A</span>ccountsRoot<span class="constant character escape shell">\3</span>75b856e26c74b1f87afeca8ed19e166<span class="constant character escape shell">\t</span>odosqlite.db</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>In Microsoft to do, tasks is stored at &quot;tasks&quot; table. You can search/filter in any column to check on that task.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #search <a href="https://www.sqlite.org/fts5.html">SQLite FTS5 Extension</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#alternative: <code>dbeaver</code> which is a bit more modular.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 15:52:54 SEAST 2026] #python <a href="https://news.ycombinator.com/item?id=50045273"><code>apsw</code> Another Python SQLite Wrapper</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`takumi` JSX → Image. Alternative to satori + resvg plus variable fonts, RTL, inline layout, WOFF2, WebP output support.</title><category>library</category><category>rust</category><category>typesetting</category><pubDate>2026-10-12 03:50:02 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/kane50613/takumi"><code>takumi</code> JSX → Image. Alternative to satori + resvg plus variable fonts, RTL, inline layout, WOFF2, WebP output support.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> good for designing a font perhaps? As it said, image rendering engine.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/googlefonts/fontc"><code>fontc</code> fontmake.</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/googlefonts/fontations"><code>fontations</code>: Reading and writing font files</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 15:50:02 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50021989">I guess I'm using WebP now?</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>I&apos;m still around.. I&apos;m just not writing here</title><category>discussion</category><pubDate>2026-10-12 03:29:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/4ehrkn/i_m_still_around_i_m_just_not_writing_here">I'm still around.. I'm just not writing here</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I saw someone explicitly stated that &quot;[Lobsters] is a link aggregator forum-like website&quot;</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #forum <a href="https://awful.systems/">awful.systems - the jank is a feature</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://mastodon.social/@zzt@mas.to">admin is in here with <code>@zzt@mas.to</code> handle</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>i&apos;m very impressed by the c/c++ interop! surprisingly easy to use c++ with zig</title><category>build/zig</category><category>compiler/zig</category><category>cpp</category><category>programming</category><pubDate>2026-10-12 02:48:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/zig/comments/1ct0y9h">i'm very impressed by the c/c++ interop! surprisingly easy to use c++ with zig</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> zig is trying to replace <code>clang</code> to compile <code>Ctrl+</code>.
+<ul>
+<li>basically it's trying to replcae <code>cmake</code>/<code>meson</code> + <code>ninja</code>.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=37082231">also see: make zig your c/c++ build system <a href="https://zig.news/kristoff/make-zig-yo">https://zig.news/kristoff/make-zig-yo</a>... | hacker news</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=37222668">extend a c/c++ project with zig (2021) | hacker news</a></li>
+<li><a href="https://www.reddit.com/r/zig/comments/1bovvjw">can i use zig build as a replacement for cmake?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=36149462">zig is hard but worth it | hacker news</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://ziglang.org/learn/why_zig_rust_d_cpp/">why zig when there is already c++, d, and rust? ⚡ zig programming language</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 14:48:19 SEAST 2026] #blog <a href="https://gamesbymason.com/blog/2024/6-years-in-rust-ama/#what-made-you-decide-to-use-rust">Highlights from &quot;I spent 6 years developing a game in Rust and it just shipped, AMA&quot; - Games by Mason</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Electronic Frontier Foundation | Defending your rights in the digital world</title><category>article</category><category>blog</category><category>meta</category><pubDate>2026-10-12 02:29:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.eff.org/">Electronic Frontier Foundation | Defending your rights in the digital world</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45162803">demo scene is dying, but that's alright</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://datagubbe.se/scenegui/">User Interfaces of the Demo Scene | datagubbe.se</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 14:29:10 SEAST 2026] <a href="https://coveryourtracks.eff.org/">https://coveryourtracks.eff.org/</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Metastasis</title><category>terminology</category><pubDate>2026-10-12 02:25:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Metastasis">Metastasis</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> di căn/biến chứng.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50048642">Fingerprints are the new cookies</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Open chrome in windows from the command line in a new window</title><category>chrome</category><category>cli</category><category>msedge</category><pubDate>2026-10-12 02:07:14 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/23160472/open-chrome-in-windows-from-the-command-line-in-a-new-window">Open chrome in windows from the command line in a new window</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">chrome --new-window # or even --incognito can work.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`mustache` {{official}} website</title><category>template</category><pubDate>2026-10-12 02:01:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/mustache/mustache.github.com"><code>mustache</code> {{official}} website</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/stephenberry/glaze/blob/main/docs/stencil.md">stencil.md - glaze</a>
+<ul>
+<li>and some other place, but now <code>glaze</code> officially supported it.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/networking/tls-support.md">networking with <code>glaze</code> and <code>openssl</code></a></li>
+<li>#linux <a href="https://stackoverflow.com/questions/27014955/socket-connect-vs-bind">c - socket connect() vs bind()</a>
+<ul>
+<li>basic networking API in internal OS API, generally Windows and Linux agree with paradigm</li>
+</ul>
+</li>
+<li>#powershell <a href="https://github.com/splumhoff/PSMustache">PSMustache implementation of the Mustache template system</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 14:01:13 SEAST 2026] #discussion #zig <a href="https://news.ycombinator.com/item?id=50051573">Type-safe HTML templating in Zig</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Maxwell&apos;s equations</title><category>ee</category><pubDate>2026-10-12 01:49:16 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Maxwell&#x27;s_equations">Maxwell's equations</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
+<ul>
+<li>#quote : complex/imaginary numbers are just a tool to avoid differential equations amd integrals;
+they sort of make calculus into algebra.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/ECE/comments/wm0xu">Complex Numbers and their relationship with Electrical Engineering (x-post with ELI5)</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #ee <a href="https://electronics.stackexchange.com/questions/598535/is-ohms-law-valid-in-ac-circuits">Ohm's law valid in AC circuits?</a>
+<ul>
+<li>basically we have a phasor analysis form of imaginary number.
+<ul>
+<li>That's what I had been taught to calculate the new amplitude + phase of a juction in AC circuit.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 13:49:16 SEAST 2026] #terminology <a href="https://wikipedia.org/wiki/Phasor">Phasor</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> actually phaser but <a href="https://news.ycombinator.com/item?id=50049411">Whatever became of holography? (2011)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Teardown Report: UGREEN 160W Instant Display Charging 4C1A GaN Charger</title><category>charger</category><category>teardown</category><pubDate>2026-10-12 08:49:33 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/HmLDsOp5eoasUcOncOoqvQ">Teardown Report: UGREEN 160W Instant Display Charging 4C1A GaN Charger</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> again lots of module board. PFC boost , Diode bridge (TBMR810 )</li>
@@ -157,374 +456,6 @@ gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> hackernews...?</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 07:30:52 2026] <a href="https://lobste.rs/s/ily7as/programming_isn_t_special">Programming Isn’t Special</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Window Context Menu could be trigger by `Alt+space`, but I used #powertoys run heavily.</title><category>gui</category><category>menu</category><category>windows</category><pubDate>2026-10-10 01:27:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Window Context Menu could be trigger by <code>Alt+space</code>, but I used #powertoys run heavily.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> mouse to right-click at title bar. but I avoid using mouse.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> unless specified, <code>Alt+shift+space</code> or <code>Win+alt+space</code> can also open that menu, in any app.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> windows terminal since it eats that key too, not really sure why and how to fix.
-<ul>
-<li>...other terms also suffer.</li>
-<li>In most other apps, <code>Ctrl+alt+space</code> is also eaten. And I map it with suggest only directory ni #powershell.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 13:27:05 2026] <code>ctrl+space</code>/<code>ctrl+alt+space</code> now also invoke fzf if there are too much of it.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Github Copilot Features Config</title><category>config</category><category>github</category><pubDate>2026-10-10 11:56:08 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/settings/copilot/features">Github Copilot Features Config</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> look at the web portal here.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/github/github-mcp-server#remote-github-mcp-server"><code>github-mcp-server</code> GitHub's official MCP Server</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#command <a href="https://docs.github.com/en/copilot/reference/cheat-sheet?tool=vscode">GitHub Copilot Chat cheat sheet - GitHub Docs</a>
-<ul>
-<li>you have to <code>/clear</code>.</li>
-</ul>
-</li>
-<li><a href="https://news.ycombinator.com/item?id=49131438">Stateless MCP has recaptured my interest</a>
-<ul>
-<li>btw MCP is having many criticism now.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  1 14:00:21 2026] <a href="https://news.ycombinator.com/item?id=49906637">You Said No MCP</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:56:08 2026] <a href="https://git.b4mad.industries/agentic-forges/forgejo-mcp"><code>forgejo-mcp</code> MCP server for Forgejo</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> migrated from <code>codeberg</code> on 2026-07-29 - #B4mad Forge.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`fx` terminal json viewer &amp; processor</title><category>cli/option</category><category>format/json</category><category>format/yaml</category><category>keybinding</category><category>tui</category><category>utils</category><pubDate>2026-10-10 11:31:46 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/antonmedv/fx"><code>fx</code> terminal json viewer &amp; processor</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> name is really hard to remember though. it's readonly. And can read YAML/JSON.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://fx.wtf/getting-started#streaming-mode">Getting Started | fx</a>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> processing of a JSON stream as a single array...</span><span class="comment line number-sign shell">
-</span><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>{&quot;str&quot;: &quot;Hello&quot;}{&quot;str&quot;: &quot;World!&quot;}<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>slurp</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.map(x =&gt; x.str)<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.join(&quot;, &quot;)<span class="punctuation definition string end shell">&#39;</span></span></span>
-</span></code></pre>
-<ul>
-<li>#faq <a href="https://fx.wtf/how-to/join-two-arrays-by-their-properties"><code>fx</code> join two arrays by properties</a></li>
-<li><code>fx</code> can process TOML easily... #til that put a query on it will dump content to stdout instead of open #TUI app.
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="constant character escape shell">\m</span>ouse-around.toml .events <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> dump all events to terminal. No TUI.</span><span class="comment line number-sign shell">
-</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or you can just put `.`, it will practically convert toml to json. No adhoc scripts.</span><span class="comment line number-sign shell">
-</span></span></code></pre>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://fx.wtf/how-to/viewing-yaml-in-the-terminal-on-linux-with-fx#open-a-yaml-file">Viewing YAML in the Terminal on Linux with fx | fx</a></li>
-<li><a href="https://fx.wtf/advanced-usage">Advanced Usage | fx</a></li>
-<li><code>v</code> to open in <code>$editor</code> this will open in current focused line.
-<ul>
-<li>I have a small patch that ignore executable and enable <code>hx</code> to edit files.</li>
-</ul>
-</li>
-<li><a href="https://github.com/antonmedv/fx/pull/358">feat: yank key and value - <code>y b</code> as keybinding</a>
-<ul>
-<li>there are <code>y p</code>, <code>y k</code>, <code>y v</code> as well. <code>y b</code> is like, yank both.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop. but It's #nightly now.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bxgmid"><code>fx</code> json terminal viewer</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #cli #python #library
-<ul>
-<li><a href="https://github.com/kellyjonbrazil/jc"><code>jc</code> output cli, file-types, and common strings to json, yaml, or dictionaries</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>jc</code> output famous cli tools to json, both in #windows and #linux.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>fx</code> is actually quite hard to use. in scoop.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://gitlab.com/makapuf/treewalker"><code>treewalker</code></a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:31:46 2026] <code>fx</code> add XML, HTML, EDN, MAML support..</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>USB Protocol Analyzer 480M USB Sniffer Full Open Source WireShark FPGA</title><category>analyzer</category><category>fpga</category><category>software</category><category>usb</category><pubDate>2026-10-10 11:26:10 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://item.taobao.com/item.htm?id=976511561630&amp;skuId=6095751234279">USB Protocol Analyzer 480M USB Sniffer Full Open Source WireShark FPGA</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I own this <a href="https://vllogic.com/quick/usb_sniffer_2">USB Sniffer 2 快速上手 now...</a>
-<ul>
-<li><a href="https://www.jlc-jdgf.com/machine-detail/621858041681838082">USB3.0协议分析仪外壳-嘉立创FA机械电气零部件商城-嘉立创机电工坊</a></li>
-<li><a href="https://github.com/vllogic/usb_sniffer.extcap">usb_sniffer.extcap</a></li>
-<li>#documentation <a href="https://wiki.wireshark.org/CaptureSetup/USB">CaptureSetup/USB - Wireshark Wiki</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/ataradov/edbg"><code>edbg</code> Simple utility for programming MCUs and FPGAs though CMSIS-DAP protocol. Works on Linux, MAC and Windows.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#meta #pcb <a href="https://oshpark.com/shared_projects">OSH Park ~ Shared Projects</a>
-<ul>
-<li>for very low quantity prototype boards which people already made.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:26:10 2026] #gui <a href="https://www.usbpacketviewer.com/download/">下载 – USB Packet Viewer</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> usb sniffer 2 support this now. shim to <code>usbpv</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>创龙安路DR1M90工业开发板 国产ARM+FPGA SoC 升级ZYNQ 飞龙</title><category>cpu</category><category>fpga</category><category>linux/embedded</category><pubDate>2026-10-09 11:05:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://detail.tmall.com/item.htm?id=943629754007">创龙安路DR1M90工业开发板 国产ARM+FPGA SoC 升级ZYNQ 飞龙</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://mp.weixin.qq.com/s/ItycHI30QixeXFbGTIeJ7w">The domestic ARM + FPGA SoC broke through, and the clarion call was officially blown by &quot;Anlu&quot;</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#cpu/arch/arm <a href="https://mp.weixin.qq.com/s/HyRKtMvE8cvdIl5ICu8dTg">Madden! 99 yuan = 4 cores 1.6GHz + 3 Gigabit network + dual CAN FD, Allwinner T153 industrial core board shocking release!</a></li>
-<li><a href="https://www.allwinnertech.com/index.php?c=product&amp;a=index&amp;id=139&amp;solveid=34">A733</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 23:05:43 2026] <a href="https://whycan.com/">a forum for embedded maker, whycan</a>
-<ul>
-<li><a href="https://bbs.aw-ol.com/">allwinner maker forum.</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CamelCase vs underscores: Scientific showdown (2011)</title><category>blog</category><category>convention</category><category>naming</category><category>programming</category><pubDate>2026-10-09 05:16:33 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=40425315">CamelCase vs underscores: Scientific showdown (2011)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I personally like dot case. people  prefer <code>train-case</code>/<code>kebab-case</code>.
-<ul>
-<li>those are patterns often seen in URLs.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#powershell : <a href="https://stackoverflow.com/questions/4857792/powershell-reference-a-property-that-contains-a-space">csv - Powershell: Reference a property that contains a space</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> comments on this. variable dispatch on double quotes or braces, handles spaces nicely.
-<ul>
-<li>even some extra nasty delimiters.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> FYI, <code>pwsh</code> couldnt take anything other than <code>_</code> in normal variable name.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> so in <code>pwsh</code>,  camelCase for normal variables, methods or functions.
-<ul>
-<li>PascalCase for class. snake_case for something else e.g. ScriptBlock.</li>
-<li>Settled with dot case.
-<ul>
-<li>Pro: it's delimiter in #imgui itself. any delimiter like <code>-</code>/<code>_</code> is not usable for file names.
-<ul>
-<li>other options as <code>,</code> or <code>/</code>,.. are  horrible in any kind of shell.</li>
-<li>True representation is <code>Space</code> but it's obviously impossible to parse without braces.</li>
-</ul>
-</li>
-<li>Con: no one preferably use it. Any mainstream programming language use <code>.</code> either as operator or access method to members or objects/classes/structs.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I want to search for a frequently used case within #filesystem.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#filesystem: <code>kebab-case</code> is how <code>gh</code> translated <code>space</code> on my path. To <code>hyphen</code>.</li>
-<li>#blog : <a href="https://lobste.rs/s/ilmbgu/microfeatures_i_d_like_see_more_languages">Microfeatures I'd like to see in more languages</a>
-<ul>
-<li>another <code>kebab-case</code> echo chamber.</li>
-</ul>
-</li>
-<li>#medical : <a href="https://www.reddit.com/r/RSI/comments/1j9uzgs">25M dealing with RSI in both hands</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/Repetitive_strain_injury">RSI Repetitive strain injury</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://rdrama.net/h/slackernews/post/809987">annual programming thread</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 17:16:33 2026] <a href="http://xahlee.info/kbd/sticky_key.html">Sticky Keys for RSI people</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Once again: If you carry a sensor of any kind, you must assume it to be active and collecting data, you can’t trust pinky promises – Falkvinge on Liberty</title><category>social</category><pubDate>2026-10-09 04:24:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://falkvinge.net/2017/12/06/carry-sensor-must-assume-active-collecting-data/">Once again: If you carry a sensor of any kind, you must assume it to be active and collecting data, you can’t trust pinky promises – Falkvinge on Liberty</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #misc very tangential but <a href="http://xahlee.info/emacs/emacs/emacs_pinky.html">How to Avoid Emacs Pinky</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 16:24:18 2026] <a href="https://www.reddit.com/r/emacs/comments/w34fc5">Emacs pinky - what's physiologically happening? (And a couple other questions.)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`fizzy`: Pixel art editor made with Zig</title><category>editor/pixel</category><category>image</category><category>zig</category><pubDate>2026-10-09 03:09:53 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/fizzyedit/fizzy"><code>fizzy</code>: Pixel art editor made with Zig</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also shim to <code>pixed</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/foxnne/pixi/"><code>pixi</code> Pixel art editor made with Zig.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#blog <a href="https://news.ycombinator.com/item?id=46004326">Pixel Art Tips for Programmers</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 15:09:53 2026] <a href="https://news.ycombinator.com/item?id=49986882">I hired an illustrator to draw my house. Now it's my Home Assistant dashboard</a>
-<ul>
-<li>and some about smart home stuff as well.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Shift+Insert` is paste of course, but #til `LShift+RShift+KP_0` == `Shift+Insert` ...</title><category>default</category><category>keybinding</category><category>windows</category><pubDate>2026-10-09 03:05:23 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><code>Shift+Insert</code> is paste of course, but #til <code>LShift+RShift+KP_0</code> == <code>Shift+Insert</code> ...
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> dont have to reach too far for <code>insert</code> keys on my laptop sometimes.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>Ctrl+insert</code> is copy in case you have <code>Ctrl+c</code> occupied.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 15:05:23 2026] <a href="https://github.com/openai/codex/issues/2730">Hint showing you can now paste images with Ctrl+V · Issue #2730 · openai/codex</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the only way to paste image to codex is this not <code>shit+insert</code></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> map <code>lsft+kp0</code> -&gt; <code>shift+insert</code>. in #kanata.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ASR : Automatic Speech Recognition - Hugging Face</title><category>acronym</category><category>ml</category><pubDate>2026-10-09 03:02:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://huggingface.co/tasks/automatic-speech-recognition">ASR : Automatic Speech Recognition - Hugging Face</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/leon-ai/leon"><code>leon</code> open-source personal assistant.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> To synthesis TTS(Text-to-speech), STT(speech-to-text) with ASR.
-<ul>
-<li>#cpp : <a href="https://github.com/OHF-Voice/piper1-gpl"><code>piper-tts</code> neural text-to-speech engine</a></li>
-<li>#python : <a href="https://github.com/espnet/espnet"><code>espnet</code> End-to-End Speech Processing Toolkit</a></li>
-<li>#python : <a href="https://github.com/PaddlePaddle/PaddleSpeech"><code>PaddleSpeech</code> Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct  9 15:02:03 2026] #stt #llm <a href="https://news.ycombinator.com/item?id=50008427">Whistle: Speech to Text in 16.9 MB</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`tiller` Tiller Tills TILs</title><category>frontend</category><category>genesis/til</category><category>highlighted</category><category>meta</category><category>ssg</category><pubDate>2026-10-08 08:04:14 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/woodruffw/tiller"><code>tiller</code> Tiller Tills TILs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> quite meta, a way to manage til site...</li>
-<li><!-- raw HTML omitted -->Require:<!-- raw HTML omitted --> a pretty formal journal layout.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> might be the actual reason I could publish my knowledge to the world.
-<ul>
-<li><code>jrnl</code> is kinda not enough of a tool to make #ssg.</li>
-<li><code>mdbook</code> is for markdown book, it's not even a proper documentation system.</li>
-<li><code>hugo</code> and the likes have too many features I dont want.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://yossarian.net/til/">TILs</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> most of the SSG on the market , I fear. this bespoke SSG is among them.</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Roadmap:<!-- raw HTML omitted -->
-<ul>
-<li>make <code>jrnl --format yaml</code> and <code>tiller</code> play nicely with others.
-<ul>
-<li>Touch <code>jrnl</code> yaml engine so it can emit something as conformance yaml.</li>
-<li>Make <code>tiller</code> read some other fields.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  7 20:04:14 2026] to add the genesis.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 20:04:14 2026] there could be infinite of them <code>- Revisit:</code> here.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>You can have a sim duplicate which phone calls can be redirected to both phones.</title><category>hardware</category><category>mobile</category><pubDate>2026-10-08 07:57:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>You can have a sim duplicate which phone calls can be redirected to both phones.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=46467057">Clicks Communicator</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:57:52 2026] <a href="https://support.apple.com/en-us/127274">Set up iPhone Handoff - Apple Support</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>hexspeak</title><category>comedy</category><category>programming</category><category>trivia</category><pubDate>2026-10-08 07:53:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/hexspeak">hexspeak</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=41231141"> 0xcafebabe &amp; 0xfeedface </a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>VID:PID of VSEMEC's EasyFlasher-META : CMSIS-DAP -- dead:c0de:045A5A1A5E40
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/72685/how-do-i-find-the-serial-number-of-a-usb-drive#72692">find the Serial Number of a USB Drive?</a>
-<ul>
-<li>#esp32 <a href="https://github.com/espressif/usb-pids"><code>usb-pids</code> Customer-allocated USB PIDs under the Espressif VID</a></li>
-<li>#cli <a href="https://github.com/sh1ftd/vid-pid-rs"><code>vid-pid-rs</code> command-line utility to list USB HID devices with their vendor IDs, product IDs, and other details.</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:53:47 2026] #rust #library <a href="https://github.com/woodruffw/usb-ids.rs">usb-ids.rs Rust wrappers for the USB ID Repository</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`maturin` build/publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages</title><category>build</category><category>crossplatform</category><category>python</category><category>rust</category><pubDate>2026-10-08 07:52:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/PyO3/maturin"><code>maturin</code> build/publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>uv tool install maturin</code>, use with <code>uv publish</code> to publish packages.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which can be used to build executable instead of using <code>pex</code> or <code>nuikta</code></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #library #rust <a href="https://github.com/pemistahl/lingua-rs">Lingua-rs natural language detection library</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 19:52:44 2026] #process #rust <a href="https://github.com/woodruffw/procmaps.py"><code>procmaps.py</code> Python bindings for procmaps.rs</a></li>
 </ul>
 </li>
 </ul>

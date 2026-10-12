@@ -29,6 +29,11 @@
                     </a>
                 </li>
                 <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/options">
+                        <span>cli/options</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
                     <a class="til-tag" href="/category/git">
                         <span>git</span>
                     </a>
@@ -58,7 +63,8 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> quite easy as well... use <code>git push origin --delete branch-name</code></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>git push origin tag v0.0.0000</code> and <code>git push origin --delete v0.0.0000</code> to add/delete tags.
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git branch -D (tv branch)
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git branch -m # move/rename, `-M` **force**, painfully simple yet the shorthand is incomprehensible.
+git branch -D (tv branch)
 # Deleted branch 1m2.pressed.long.8corner.split.26mm (was c90ef2e).
 git push origin --delete 1m2.pressed.long.8corner.split.26mm
 git sw -c 1m2.pressed.long.8corner.split.26mm # branch from here instead of rebase... much easier.
