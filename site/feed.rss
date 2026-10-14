@@ -1,4 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>LibreOffice Draw `sdraw` Features</title><category>format/pdf</category><category>libreoffice/draw</category><category>office</category><category>printer</category><pubDate>2026-10-14 01:47:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>PathAndLine quick copy</title><category>extension</category><category>keybinding</category><category>vs</category><pubDate>2026-10-14 06:13:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/groutoutlook/PathAndLine">PathAndLine quick copy</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Markdown link format enabled so AI can understand quicker.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">EditorContextMenus.CodeWindow.Copyfullpathandlinenumber</span></span><span class="meta function-call arguments shell">  == <span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="meta function-call shell"><span class="variable function shell">ctrl+w</span></span><span class="meta function-call arguments shell"> ctrl+p</span><span class="punctuation section group end shell">`</span></span></span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://marketplace.visualstudio.com/items?itemName=NickHarrington.CopyPathAndLine">Copy Path and Line - Visual Studio Marketplace</a>
+<ul>
+<li><a href="https://github.com/nickjharr/CopyPathAndLine"><code>CopyPathAndLine</code> Visual Studio extension for easily copying file paths and line numbers.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 18:13:38 SEAST 2026] <a href="https://github.com/groutoutlook/copyPath"><code>copyPath</code>, and Line, in VScode</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to produce something like <code>d:/ProgramDataD/MiscLang/24.01-PowerShell/proj/powershellConfig/Microsoft.PowerShell_profile.ps1:296:32-307:1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Cancel CMake Cache Generation by `ctrl+q` -&gt; type your needed query changes in here.</title><category>build/cmake</category><category>vs</category><pubDate>2026-10-14 05:09:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Cancel CMake Cache Generation by <code>ctrl+q</code> -&gt; type your needed query changes in here.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> my vulkan work reach a record high 1012s CMake cache gen time..</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>TXS0108E data sheet, product information and support | TI.com</title><category>analog</category><category>signal/ttl</category><pubDate>2026-10-14 04:29:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.ti.com/product/TXS0108E">TXS0108E data sheet, product information and support | TI.com</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/3VqMd7gsMR-yQkgDbE9vEw">TXS/TXB电平转换器最容易踩的坑：负载太重</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>powershell `yaml` module</title><category>module</category><category>powershell</category><category>yaml</category><pubDate>2026-10-14 03:32:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/cloudbase/powershell-yaml">powershell <code>yaml</code> module</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/a/72219236/22954711">guide to use it properly</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> alias <code>cfy</code>/<code>cty</code>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$os_list = (convertfrom-yaml -yaml (get-content -raw ~/.config/jrnl/jrnl.yaml))
+$os_list = convertto-yaml $os_list -jsoncompatible
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:32:46 SEAST 2026] I also alias <code>ConvertFrom-Json</code>/<code>ConvertTo-Json</code> to <code>cfj</code>/<code>ctj</code></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The United Kingdom generates less electricity per person than in the 1970s</title><category>news/uk</category><category>social</category><pubDate>2026-10-14 03:23:04 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50072994">The United Kingdom generates less electricity per person than in the 1970s</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Jevons_paradox">Jevons paradox</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>IDNA : Internationalized domain name *in Applications*</title><category>dns</category><category>network</category><category>uri</category><pubDate>2026-10-14 03:08:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Internationalized_domain_name">IDNA : Internationalized domain name <em>in Applications</em></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/whois-server-list/whois-server-list">whois-server-list for all top level domains.</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://superuser.com/questions/1869878/why-do-certain-tld-do-not-have-support-for-a-whois-query">Why do certain TLD do not have support for a WHOIS query?</a>
+<ul>
+<li>because of <a href="https://wikipedia.org/wiki/Registration_Data_Access_Protocol">RDAP : Registration Data Access Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #library #rust <a href="https://github.com/ada-url/idna-rust"><code>idna-rust</code> written entirely in Rust</a>
+<ul>
+<li>#cpp #library <a href="https://github.com/ada-url/idna"><code>idna</code> implementing the to_ascii and to_unicode function</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#cli <a href="https://github.com/saidutt46/domain-check"><code>domain-check</code> Rust library &amp; CLI for domain checks using RDAP &amp; WHOIS</a>
+<ul>
+<li>#nightly for this.</li>
+</ul>
+</li>
+<li>#standard : <a href="https://blog.apnic.net/2021/04/02/is-rdap-ready-to-replace-whois/">Is RDAP ready to replace whois? | APNIC Blog</a>
+<ul>
+<li><a href="https://www.ietf.org/archive/id/draft-ymbk-opsawg-rpsl-extref-02.html">Generalized Routing Policy Specification LanguageRPSL:  External Reference</a></li>
+</ul>
+</li>
+<li>#dns <a href="https://github.com/funilrys/PyFunceble"><code>PyFunceble</code> check the availability or syntax of domain, IP or URL.</a>
+<ul>
+<li>well for sanity check of something...? idk. this one is useless in windows tho.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:08:43 SEAST 2026] #meta <a href="https://wikipedia.org/wiki/List_of_Internet_top-level_domains">List of Internet top-level domains</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What is HTTP &quot;Host&quot; header?</title><category>ip/port</category><category>network</category><pubDate>2026-10-14 03:03:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/43156023/what-is-http-host-header">What is HTTP &quot;Host&quot; header?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> host header is for specifying host + port.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> when you dont have too many IP for many websites. This muxes for you.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/dotnet/comments/wilzd0">Are you using IIS on your production server?</a>
+<ul>
+<li><a href="https://zamkblog.wordpress.com/2024/08/20/cgi-with-powershell-scripts-on-iis/">CGI with PowerShell Scripts on IIS – Zam Tech Blog</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog : <a href="https://simonh.uk/2023/08/19/why-cgi-programming-is-still-useful-in-2023/">simonh.uk :: Why CGI Programming is Still Useful in 2023</a>
+<ul>
+<li>CGI or even FastCGI is considering obsoleted nowadays.
+<ul>
+<li>#rust #blog <a href="https://jacob.gold/posts/serving-half-billion-requests-with-rust-cgi/">Serving a half billion requests per day with Rust + CGI | Jake Gold</a></li>
+</ul>
+</li>
+<li>#nginx : <a href="https://news.ycombinator.com/item?id=45070602">Nginx-CGI brings support for CGI to <code>nginx</code> and <code>angie</code></a>
+<ul>
+<li>#competitor is <a href="https://github.com/openresty/openresty"><code>openresty</code> Web Platform Based on Nginx and LuaJIT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI : Web Server Gateway Interface</a>
+<ul>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #python <a href="https://github.com/pallets/werkzeug"><code>werkzeug</code> WSGI web application library.</a>
+<ul>
+<li>#rust: <a href="https://github.com/emmett-framework/granian"><code>granian</code> Rust HTTP server for Python applications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 18:13:06 SEAST 2026] <a href="https://turbo.readthedocs.io/en/latest/">Introduction <code>Turbo.lua</code> 2.1.2 documentation</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=50058528">A Modern Web App in C</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:03:56 SEAST 2026] #cpp #library <a href="https://news.ycombinator.com/item?id=50063104"><code>Kcgi</code> – minimal CGI and FastCGI library for C/C++</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>LibreOffice Draw `sdraw` Features</title><category>format/pdf</category><category>libreoffice/draw</category><category>office</category><category>printer</category><pubDate>2026-10-14 01:47:24 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://help.libreoffice.org/latest/en-US/text/sdraw/main0503.html?DbPAR=DRAW&amp;System=WIN">LibreOffice Draw <code>sdraw</code> Features</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> especially useful if you want to do quick dirty edit just to print something.</li>
@@ -266,191 +426,6 @@ sleep 2; Write-Output &quot;`e]777;notify;Hello;This is a notification`a&quot;
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> ultra-fast. #gamedev things.</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>P4 Apps | Perforce Software</title><category>git</category><category>pacman/scoop</category><category>programming</category><pubDate>2026-10-13 07:30:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.perforce.com/products/p4/p4-tools">P4 Apps | Perforce Software</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">p4 
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/GameDevelopment/comments/1qpywsf">what do you guys think of perforce compared to git?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #nas <a href="https://github.com/FrozenStormInteractive/Perforce-Synology">Perforce-Synology</a>
-<ul>
-<li><a href="https://stevehanov.ca/blog/why-perforce-is-more-scalable-than-git">Why Perforce is more scalable than Git | Steve Hanov's Blog</a></li>
-<li>#blog <a href="https://lobste.rs/s/5ucftp/redesigning_source_control_at_anthropic">Redesigning source control at Anthropic</a>
-<ul>
-<li>potential #alternative in here</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>git</code>, <code>hg</code>, <code>jj</code> ,<code>svn</code> of course.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`thorvg` C++ vector graphics engine supporting SVG and Lottie formats, featuring advanced rendering backends such as WebGPU for high-performance graphics.</title><category>cpp</category><category>graphic</category><category>svg</category><pubDate>2026-10-13 07:07:37 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/thorvg/thorvg"><code>thorvg</code> C++ vector graphics engine supporting SVG and Lottie formats, featuring advanced rendering backends such as WebGPU for high-performance graphics.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #gui #cpp #nightly #example/repo <a href="https://github.com/xland/ScreenWatermark"><code>ScreenWatermark</code> <em>live</em> screen watermarking tool</a>
-<ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> fonts in Windows are in <code>C:/Windows/Fonts</code>
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ScreenWatermark Hello Arial 16 26 -30 66 166 188 1 255 122 0 80
-# even something as absurd as this.
-ScreenWatermark &quot;$(Get-Date -UFormat &quot;%R&quot;)&quot; IosevkaNerdFontMono-Medium 16 26 -30 0 255 120 1 120 255 0 40
-</span></code></pre>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/SVG_animation">SVG animation</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/tavianator/bfs"><code>bfs</code> breadth-first version of the UNIX find command</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 19:07:37 SEAST 2026] #scripting #ffmpeg <a href="https://stackoverflow.com/questions/10918907/how-to-add-transparent-watermark-in-center-of-a-video-with-ffmpeg#10920872">How to add transparent watermark in center of a video with ffmpeg?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and <a href="https://stackoverflow.com/questions/38726370/ffmpeg-text-watermark-bottom-left"> ffmpeg text watermark bottom left</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> bottom left. with text.
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ffmpeg -i input.mp4 -i watermark.png -filter_complex &quot;overlay=5:H-h-5:format=auto,format=yuv420p&quot; -c:a copy output.mp4
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What is HTTP &quot;Host&quot; header?</title><category>ip/port</category><category>network</category><pubDate>2026-10-13 06:13:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/43156023/what-is-http-host-header">What is HTTP &quot;Host&quot; header?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> host header is for specifying host + port.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> when you dont have too many IP for many websites. This muxes for you.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/dotnet/comments/wilzd0">Are you using IIS on your production server?</a>
-<ul>
-<li><a href="https://zamkblog.wordpress.com/2024/08/20/cgi-with-powershell-scripts-on-iis/">CGI with PowerShell Scripts on IIS – Zam Tech Blog</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog : <a href="https://simonh.uk/2023/08/19/why-cgi-programming-is-still-useful-in-2023/">simonh.uk :: Why CGI Programming is Still Useful in 2023</a>
-<ul>
-<li>CGI or even FastCGI is considering obsoleted nowadays.
-<ul>
-<li>#rust #blog <a href="https://jacob.gold/posts/serving-half-billion-requests-with-rust-cgi/">Serving a half billion requests per day with Rust + CGI | Jake Gold</a></li>
-</ul>
-</li>
-<li>#nginx : <a href="https://news.ycombinator.com/item?id=45070602">Nginx-CGI brings support for CGI to <code>nginx</code> and <code>angie</code></a>
-<ul>
-<li>#competitor is <a href="https://github.com/openresty/openresty"><code>openresty</code> Web Platform Based on Nginx and LuaJIT</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI : Web Server Gateway Interface</a>
-<ul>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #python <a href="https://github.com/pallets/werkzeug"><code>werkzeug</code> WSGI web application library.</a>
-<ul>
-<li>#rust: <a href="https://github.com/emmett-framework/granian"><code>granian</code> Rust HTTP server for Python applications</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 18:13:06 SEAST 2026] <a href="https://turbo.readthedocs.io/en/latest/">Introduction <code>Turbo.lua</code> 2.1.2 documentation</a>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=50058528">A Modern Web App in C</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>High-Side Current Sensing | Analog Devices</title><category>blog</category><category>current</category><pubDate>2026-10-13 06:07:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.analog.com/en/resources/analog-dialogue/raqs/raq-issue-151.html">High-Side Current Sensing | Analog Devices</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 100Ω resistor on GATE of PMOS?</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/678606/how-to-make-a-pmos-work-as-a-constant-current-source/678610#678610">nmos - How to make a PMOS work as a constant current source?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>iSpy - Best Video Surveillance and Security Camera Software for Motion Detection and Remote Monitoring</title><category>device/dvr</category><pubDate>2026-10-13 05:53:26 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.ispyconnect.com/">iSpy - Best Video Surveillance and Security Camera Software for Motion Detection and Remote Monitoring</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/intelnuc/comments/vr3boi">Intel NUC as NVR</a></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/ispysoftware/iSpy"><code>iSpy</code> Open source surveillance software</a>
-<ul>
-<li>seems stagnant as now.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/nightflyza/WolfRecorder"><code>WolfRecorder</code> self-hosted open-source NVR/DVR/CCTV system for capturing and storing video from IP cameras</a></li>
-<li><a href="https://github.com/John0n1/CamSniff"><code>CamSniff</code> Automated IP Camera &amp; Network Video Stream Reconnaissance Toolkit</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#news #technologia <a href="https://news.ycombinator.com/item?id=46920315">WiFi could become an invisible mass surveillance system</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> unlikely. this is magic-like kind of field.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 17:53:26 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50063365">Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X</a>
-<ul>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> it's just mention Intel, GPU and CCTV in one place. so.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ESD sensitivity of components</title><category>diode</category><category>mcu</category><category>protection/esd</category><pubDate>2026-10-13 05:46:27 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.electrostatics.net/ESD_Guide/technical/ESD_sensitivity.htm">ESD sensitivity of components</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.ti.com/lit/an/ssya010a/ssya010a.pdf">Electrostatic Discharge (ESD) terminology</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym common value for HBM: Human Body Model is 3000V, CDM: Charged Device Model is 2000V</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> that's from the HK32F001 datasheet I got.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> LU 100mA is normally latched up : <a href="https://www.esdunlimited.com/testing.html">ESD and Latch-Up Stress Testing and Qualification Details</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`vimium-c` keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar</title><category>chrome</category><category>fork</category><category>plugin</category><pubDate>2026-10-13 05:12:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/TobinCavanaugh/vimium-c"><code>vimium-c</code> keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> since vimium C has been dead for so long.</li>
-<li><!-- raw HTML omitted -->Require:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">r</span></span><span class="meta function-call arguments shell"> b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> npm install &amp;&amp; npm run build</span><span class="comment line number-sign shell">
-</span></span></span></code></pre>
-<ul>
-<li>then you load unpacked. That very thing is in <code>dist</code> dir (where lib/env.js in and normally that's what you
-zip to distribute as final extension.)</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> finally I can start hacking on vimium C. unmaintainance is something crazy for what I use daily</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
