@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>How to draw an arrow in `inkscape`</title><category>default</category><category>format</category><category>image</category><category>inkscape</category><category>keybinding</category><category>svg</category><pubDate>2026-10-13 09:37:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>LibreOffice Draw `sdraw` Features</title><category>format/pdf</category><category>libreoffice/draw</category><category>office</category><category>printer</category><pubDate>2026-10-14 01:47:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://help.libreoffice.org/latest/en-US/text/sdraw/main0503.html?DbPAR=DRAW&amp;System=WIN">LibreOffice Draw <code>sdraw</code> Features</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> especially useful if you want to do quick dirty edit just to print something.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>ctrl+shift+-</code> put things to bottom of display z-depth.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`lean4` lean 4 programming language and theorem prover</title><category>compsci</category><category>functional</category><category>language</category><pubDate>2026-10-14 12:51:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/leanprover/lean4"><code>lean4</code> lean 4 programming language and theorem prover</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-10-08 12:23:11 AM] #compsci #meta
+<ul>
+<li><a href="https://proofassistants.stackexchange.com/questions/4274/reduce-type-name-in-lean">lean4 - reduce type name in lean - proof assistants stack exchange</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> cateogory some hyper compsci things.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#blog <a href="https://lean-lang.org/talks/from_z3_to_lean.pdf">z3 to lean</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted -->
+<ul>
+<li>#discussion <a href="https://lobste.rs/s/dixmkp/proof_oriented_programming_f">Proof-oriented Programming in F*</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:51:09 SEAST 2026] #rust #blog <a href="https://lobste.rs/s/6tbd2o/creusot_0_14_0_release_contracts_for_rust">Creusot 0.14.0 release - Contracts for Rust, formally proved</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Ad hominem</title><category>debate</category><pubDate>2026-10-14 12:49:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Ad_hominem">Ad hominem</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> attack the person who makes claim rather than the claim</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which is hillariously common in rap music
+<ul>
+<li>#meta: <a href="https://wikipedia.org/wiki/List_of_fallacies">List of fallacies</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/philosophy/comments/j38d2r">How ad hominem arguments can demolish appeals to authority</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://wikipedia.org/wiki/Tu_quoque">Tu quoque</a></li>
+<li>#video <a href="https://youtu.be/xuaHRN7UhRo">Thank You for Smoking (3/5) Movie CLIP - Ice Cream Politics (2005) HD - YouTube</a>
+<ul>
+<li>vanilla or chocolate ice cream scene is this one.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:49:39 SEAST 2026] #linux #nix <a href="https://lix.systems/blog/2026-10-13-lix-2.96-release/">Lix | Announcing Lix 2.96 “Bingsu”</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Ledger confirms spy chip implant behind wallet crypto thefts</title><category>cryptocurrency</category><category>news</category><category>technologia</category><pubDate>2026-10-14 12:48:16 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50054092">Ledger confirms spy chip implant behind wallet crypto thefts</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`KiPI` power integrity analysis</title><category>simulation</category><pubDate>2026-10-14 12:45:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/drewsum/KiPI"><code>KiPI</code> power integrity analysis</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/PCB/comments/1x3q658">KiPI: KiCad PI Solver Plugin</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Ente Locker - Safe space for your most important documents</title><category>document</category><category>storage</category><category>web/service</category><pubDate>2026-10-14 12:42:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://ente.com/locker/">Ente Locker - Safe space for your most important documents</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> dropbox but for confidential.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/uiulqe/did_ente_locker_copy_my_code_without">Did Ente Locker copy my code without attribution?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`nuitka` Python compiler written in Python</title><category>build/uv</category><category>compiler</category><category>python</category><pubDate>2026-10-14 12:34:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Nuitka/Nuitka"><code>nuitka</code> Python compiler written in Python</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> compile scripts into a single executable to <code>shim</code> to PATH as common tools. E.g: <code>ninjatracing</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<ul>
+<li>method 1: <code>venv</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> venv</span>
+<span class="meta function-call shell"><span class="variable function shell">.<span class="constant character escape shell">\.</span>venv<span class="constant character escape shell">\s</span>cripts<span class="constant character escape shell">\a</span>ctivate</span></span>
+<span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> pip install nuitka</span>
+<span class="meta function-call shell"><span class="variable function shell">python</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> nuitka<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>onefile</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>standalone</span> ./ninjatracing.py</span>
+</span></code></pre>
+<ul>
+<li>method 2: direct <code>add</code></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> add<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dev</span> nuitka <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> if you havent added it to `uv.lock`, otherwise  `uv run`</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> run python<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> nuitka<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>standalone</span> ./ninjatracing.py</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>Soon we will move to <code>uv build</code> based compiler.</li>
+<li>I settled on <code>nuitka</code>+<code>uv</code> for this time.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/astral-sh/uv/issues/5802">Suggestion: <code>uv bundle</code>, <code>uv build --release</code> or similar to create a contained executable a la pyinstaller, py2exe · Issue #5802 · astral-sh/uv</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/astral-sh/uv/issues/7957"><code>uv</code> havent added support for cross-platform environments · Issue #7957 · astral-sh/uv</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:34:38 SEAST 2026] #blog <a href="https://lobste.rs/s/73ssw1/plea_not_use_uv_build">A plea not to use uv-build</a>
+<ul>
+<li>but from gentoo #linux which to be fair are already falling into esoteric realm.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>How to draw an arrow in `inkscape`</title><category>default</category><category>format</category><category>image</category><category>inkscape</category><category>keybinding</category><category>svg</category><pubDate>2026-10-13 09:37:47 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://graphicdesign.stackexchange.com/questions/54517/how-to-draw-an-arrow-in-inkscape/142578#142578">How to draw an arrow in <code>inkscape</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>shift+f6</code> line tools -&gt; <code>ctrl+shift+f</code> to change styling, as arrow head, dashed lines.
@@ -139,8 +283,14 @@ sleep 2; Write-Output &quot;`e]777;notify;Hello;This is a notification`a&quot;
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #nas <a href="https://github.com/FrozenStormInteractive/Perforce-Synology">Perforce-Synology</a>
 <ul>
 <li><a href="https://stevehanov.ca/blog/why-perforce-is-more-scalable-than-git">Why Perforce is more scalable than Git | Steve Hanov's Blog</a></li>
+<li>#blog <a href="https://lobste.rs/s/5ucftp/redesigning_source_control_at_anthropic">Redesigning source control at Anthropic</a>
+<ul>
+<li>potential #alternative in here</li>
 </ul>
 </li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>git</code>, <code>hg</code>, <code>jj</code> ,<code>svn</code> of course.</li>
 </ul>
 </li>
 </ul>
@@ -298,128 +448,6 @@ zip to distribute as final extension.)</li>
 </li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> finally I can start hacking on vimium C. unmaintainance is something crazy for what I use daily</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How can I search for regular expressions within webpages using Google Chrome or IE?</title><category>browser</category><category>chrome</category><category>javascript</category><category>msedge</category><category>regex</category><category>scripting</category><category>search</category><pubDate>2026-10-13 05:06:30 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://superuser.com/questions/417875/how-can-i-search-for-regular-expressions-within-webpages-using-google-chrome-or">How can I search for regular expressions within webpages using Google Chrome or IE?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#plugin : <a href="https://github.com/zou8944/find-lite"><code>find-lite</code></a>
-<ul>
-<li>Which I have my own <a href="https://github.com/groutoutlook/find-lite-extension/"><code>find-lite-extension</code></a> for #nightly
-and load them unpacked so I can reload everytime I do some changes to codebase.</li>
-<li>#keybinding :<code>Shift+?</code> for what its worth, since I disable them if i'm in textbox.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/2321469/when-do-i-need-to-specify-the-javascript-protocol">correctness - When do I need to specify the JavaScript protocol?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>Also you could perform deep search by open <code>DevTools</code> and <code>Ctrl+shift+f</code>.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 17:06:30 SEAST 2026] <a href="https://stackoverflow.com/questions/10269002/where-does-google-chrome-store-unpacked-extensions/48530390#48530390">load unpacked directory</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Living in the Weimar era of Ruby</title><category>llm</category><category>ruby</category><pubDate>2026-10-13 04:54:31 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/lfen2h/living_weimar_era_ruby">Living in the Weimar era of Ruby</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> #quote : &quot;debugging sometimes is less boring than writing.&quot;</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>gsm/gms: Grammage</title><category>material</category><category>typesetting</category><category>unit</category><pubDate>2026-10-13 04:45:11 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Grammage">gsm/gms: Grammage</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in printed paper. as glossy (couche) paper(160 g/m²).</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>MMBT3646 - NPN Switching Transistor - MMBT3646-D.pdf</title><category>bjt</category><category>transistor</category><pubDate>2026-10-13 03:55:56 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.onsemi.com/download/data-sheet/pdf/mmbt3646-d.pdf">MMBT3646 - NPN Switching Transistor - MMBT3646-D.pdf</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/arduino/comments/11xv05u">anyone know what this component is? it's a sot-23-3 with &quot;23&quot; silkscreen.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.onsemi.com/pdf/datasheet/mmbt5551-d.pdf">MMBT5551 - NPN General-Purpose Amplifier - MMBT5551-D.PDF</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 15:55:56 SEAST 2026] #meta <a href="https://www.838dz.com/">838 Electronics - Surface Mount Electronic Component Screen Printing Query - Circuit Diagram - Technical Documentation Download - Basics - Principles - Maintenance - Parameters</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>about_Pipelines</title><category>powershell</category><pubDate>2026-10-13 03:24:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines#accepts-pipeline-input">about_Pipelines</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/75822891/detect-last-cmdlet-in-a-powershell-pipeline/75826625#75826625">Detect last cmdlet in a powershell pipeline</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">about_Pipeline_Chain_Operators</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`workbench.action.moveEditorLeftInGroup` == `Ctrl+shift+PageUp` which is move tabs in VSCode.</title><category>ide/vscode</category><category>keybinding</category><pubDate>2026-10-13 03:12:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><code>workbench.action.moveEditorLeftInGroup</code> == <code>Ctrl+shift+PageUp</code> which is move tabs in VSCode.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> ehh. all json so...</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><code>workbench.view.explorer</code> == <code>Ctrl+shift+e</code> toggle file explorer. In VS it only open not toggle.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/56643404/visual-studio-2019-move-tab-via-keyboard">Visual Studio 2019 - Move tab via keyboard</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#ide/vs : <a href="https://superuser.com/questions/321858/assign-a-shortcut-for-next-tab-in-visual-studio">Assign a shortcut for &quot;Next tab&quot; in Visual Studio</a>
-<ul>
-<li><code>Window.NextDocumentWindow</code> == <code>Ctrl+f6</code>, prev == <code>Ctrl+shift+f6</code>.
-This switch focus between groups as <code>Ctrl+w ctrl+w</code> in helix/neovim and modified version of my vscode config.</li>
-<li><code>Window.ActiveDocumentWindow</code> == <code>Alt+0</code>, useful when your focus is in other panes/windows. e.g. Solution Explorer.
-normally I <code>Shift+Esc</code>.</li>
-<li>Have to use #plugin since this cycles between tabs in document Group as well.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/23381874/how-can-i-switch-to-a-different-tab-group-using-the-keyboard-in-visual-studio-20">How can I switch to a different tab group using the keyboard in visual studio 2013</a></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which forced me to rejuvenate the Extension.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 15:12:52 SEAST 2026] #windows #filesystem #keybinding <code>ctrl+shift+e</code> reveal file in explorer in #powertoys run as well.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>4pcs of Xilinx VU13P for 40G direct processing high-speed signal 4×QFSP28 + 16×100G optical</title><category>pcb</category><category>showcase</category><pubDate>2026-10-13 02:35:37 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/1QLyrkrmwc310pYautGrgQ">4pcs of Xilinx VU13P for 40G direct processing high-speed signal 4×QFSP28 + 16×100G optical</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
