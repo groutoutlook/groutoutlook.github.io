@@ -39,6 +39,11 @@
                     </a>
                 </li>
                 <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ripgrep">
+                        <span>ripgrep</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
                     <a class="til-tag" href="/category/search">
                         <span>search</span>
                     </a>
@@ -63,13 +68,22 @@
 <li>with <code>rg</code> I only need 2 backticks.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try <code>rgj -w ````si</code> and <code>rg -w ``si</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">rgj osc [7]\s # search for number while not want to accidentally indicate max distance.
+</span></code></pre>
+</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>-w</code> flags can be append. try <code>rg rgj -w</code> or <code>rgj &quot;rgj -w&quot; -w</code>
 <ul>
 <li>So recursive....</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: structurized yet flexible when needed.</li>
+<li>Con: only work for my kind of brain.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try <code>rgj -w ````si</code> and <code>rg -w ``si</code></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#regex #cli/option <a href="https://stackoverflow.com/questions/67713798/ripgrep-to-find-files-which-contain-multiple-words-possibly-on-different-lines/70899464#70899464">ripgrep to find files which contain multiple words, possibly on different lines?</a>

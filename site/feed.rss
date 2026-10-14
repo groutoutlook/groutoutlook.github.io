@@ -1,95 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Delegating execution work from Codex to DeepSeek (with Opus second opinions)</title><category>ai/harness</category><pubDate>2026-10-12 10:51:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/codex/comments/1u6zdwi">Delegating execution work from Codex to DeepSeek (with Opus second opinions)</a>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>How to draw an arrow in `inkscape`</title><category>default</category><category>format</category><category>image</category><category>inkscape</category><category>keybinding</category><category>svg</category><pubDate>2026-10-13 09:37:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://graphicdesign.stackexchange.com/questions/54517/how-to-draw-an-arrow-in-inkscape/142578#142578">How to draw an arrow in <code>inkscape</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>shift+f6</code> line tools -&gt; <code>ctrl+shift+f</code> to change styling, as arrow head, dashed lines.
+<ul>
+<li>that same sidecar can change stroke color for the line tools, color for text as <code>Fill color</code></li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://learn.chatgpt.com/docs/prompting?site_locale=en#cloud-delegation-ide--cloud">Cloud delegation | Prompting | ChatGPT Learn</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Launch the Windows Settings app - Windows apps</title><category>explorer</category><category>settings</category><category>windows</category><pubDate>2026-10-12 10:01:25 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings-app">Launch the Windows Settings app - Windows apps</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use <code>explorer</code> with settings app. and multiple other URI to config settings.
-<ul>
-<li>Or <code>Start &quot;URI://&quot;</code> to handle them.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://gist.github.com/dbilanoski/8e931a0072b61ea215996a18fd215fb3">Complete List Of Windows 11 MS-Settings URI Commands</a>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">explorer ms-settings:network-wifisettings
-explorer ms-settings:network-wifi
-
-# et cetera...
-explorer ms-settings:maps
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-default-app">Launch the default Windows app for a URI - Windows apps</a>
-<ul>
-<li>other default URI scheme which can be launched through <code>explorer</code>.</li>
-</ul>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-snipping-tool#examples">Launch Snipping Tool - Windows apps</a>
-<ul>
-<li><code>explorer ms-screenclip:</code>, use ScreenCapture as default knowing invoke default app in terminal.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1311073/run-command-to-open-network-connections-list-box">windows - Run command to open network connections list box</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/farion1231/cc-switch/blob/main/docs/user-manual/en/5-faq/5.3-deeplink.md"><code>ccswitch</code> Deep Link Protocol (custom URI scheme.)</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 22:01:25 SEAST 2026] <a href="https://learn.chatgpt.com/docs/reference/commands#deep-links"><code>codex</code> Deep links is a registered URI schemes..</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>[2024-07-31 11:12:29 AM]</title><category>infosec</category><category>manager/password</category><pubDate>2026-10-12 06:17:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/bitwarden/server"><code>bitwarden</code> infrastructure/backend (API, database, Docker, etc).</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
 <ul>
-<li>Pro: on scoop.</li>
+<li>Pro: more styling effects for arrows in pdf/dxf.</li>
+<li>Con: slower than just use screenshot tools(e.g. <code>ScreenCapture</code>) to draw.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Free alternative of <code>1password</code>.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 21:37:47 SEAST 2026] <code>ctrl+shift+d</code> resize canvas size. to something smaller/larger.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Want to copy path of a file/folder? `Resolve-Path ./$filesname | Set-Clipboard`</title><category>powershell</category><pubDate>2026-10-13 09:25:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Want to copy path of a file/folder? <code>Resolve-Path ./$filesname | Set-Clipboard</code>
 <ul>
-<li>#client/gui: <a href="https://github.com/bitwarden/clients">bitwarden/clients: Bitwarden client apps (web, browser extension, desktop, and cli).</a>
-<ul>
-<li>also on Android as well.</li>
-<li>#discussion <a href="https://news.ycombinator.com/item?id=44041892">Authy corrupted my 2FA backup and all I got was this lousy blogpost</a>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=43983159">The cryptography behind passkeys</a></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #windows #keybinding is <code>ctrl+shift+c</code></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 21:25:23 SEAST 2026] also the default to copy as path in File Pilot <code>fpilot</code>.</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/dani-garcia/vaultwarden"><code>vaultwarden</code> Unofficial Bitwarden compatible server, formerly known as bitwarden_rs</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #hardware #eda #usb <a href="https://youtu.be/3Avji06DCk8">DIY Safe USB Passkey - YouTube</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct  5 14:23:42 2026] <a href="https://bitwarden.com/help/emergency-access/">About Emergency Access | Bitwarden</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about leaving your digital legacy for families.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="http://www.taobackup.com/index.html">The Tao Of Backup</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 18:17:03 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50048312">Passkeys are a trap</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Postgres isn&apos;t slow, your storage is</title><category>database</category><pubDate>2026-10-12 06:12:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50052163">Postgres isn't slow, your storage is</a>
+]]></content:encoded></item><item><title>Floor and ceiling functions</title><category>basic</category><category>compsci</category><category>math/discrete</category><pubDate>2026-10-13 09:08:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Floor_and_ceiling_functions">Floor and ceiling functions</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
@@ -100,139 +44,309 @@ explorer ms-settings:maps
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Gall&apos;s Law - Laws of Software</title><category>meta</category><category>programming</category><category>software</category><pubDate>2026-10-12 05:38:36 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.laws-of-software.com/laws/gall/">Gall's Law - Laws of Software</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> very meta page, store all the so-called &quot;law&quot; of system engineering in general.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/lin8d0/self_reliant_programmer_manifesto">self-reliant programmer manifesto</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/rhoktj/ansigpt_c89_implementation_microgpt">ansigpt: c89 implementation of microgpt</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#misc #community/law : <a href="https://wikipedia.org/wiki/Linus%27s_law">Linus's law</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 17:38:36 SEAST 2026] <a href="https://www.laws-of-software.com/laws/kernighan/">Kernighan's Law - Laws of Software</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`sqlitebrowser`</title><category>database</category><category>gui</category><pubDate>2026-10-12 03:52:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/sqlitebrowser/sqlitebrowser"><code>sqlitebrowser</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> this has to be shimmed since the original name has space :&quot;DB Browser for SQLite&quot;
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> use sqlitebrowser to read sqlite db of Microsoft To Do.    </span><span class="comment line number-sign shell">
-</span><span class="meta function-call shell"><span class="variable function shell">sqlitebrowser</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">env</span></span>:LocalAppdata<span class="constant character escape shell">\P</span>ackages<span class="constant character escape shell">\M</span>icrosoft.Todos_8wekyb3d8bbwe<span class="constant character escape shell">\L</span>ocalState<span class="constant character escape shell">\A</span>ccountsRoot<span class="constant character escape shell">\3</span>75b856e26c74b1f87afeca8ed19e166<span class="constant character escape shell">\t</span>odosqlite.db</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>In Microsoft to do, tasks is stored at &quot;tasks&quot; table. You can search/filter in any column to check on that task.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #search <a href="https://www.sqlite.org/fts5.html">SQLite FTS5 Extension</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#alternative: <code>dbeaver</code> which is a bit more modular.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 15:52:54 SEAST 2026] #python <a href="https://news.ycombinator.com/item?id=50045273"><code>apsw</code> Another Python SQLite Wrapper</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`takumi` JSX → Image. Alternative to satori + resvg plus variable fonts, RTL, inline layout, WOFF2, WebP output support.</title><category>library</category><category>rust</category><category>typesetting</category><pubDate>2026-10-12 03:50:02 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/kane50613/takumi"><code>takumi</code> JSX → Image. Alternative to satori + resvg plus variable fonts, RTL, inline layout, WOFF2, WebP output support.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> good for designing a font perhaps? As it said, image rendering engine.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/googlefonts/fontc"><code>fontc</code> fontmake.</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/googlefonts/fontations"><code>fontations</code>: Reading and writing font files</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 15:50:02 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50021989">I guess I'm using WebP now?</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>I&apos;m still around.. I&apos;m just not writing here</title><category>discussion</category><pubDate>2026-10-12 03:29:28 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/4ehrkn/i_m_still_around_i_m_just_not_writing_here">I'm still around.. I'm just not writing here</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I saw someone explicitly stated that &quot;[Lobsters] is a link aggregator forum-like website&quot;</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #forum <a href="https://awful.systems/">awful.systems - the jank is a feature</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://mastodon.social/@zzt@mas.to">admin is in here with <code>@zzt@mas.to</code> handle</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>i&apos;m very impressed by the c/c++ interop! surprisingly easy to use c++ with zig</title><category>build/zig</category><category>compiler/zig</category><category>cpp</category><category>programming</category><pubDate>2026-10-12 02:48:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/zig/comments/1ct0y9h">i'm very impressed by the c/c++ interop! surprisingly easy to use c++ with zig</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> zig is trying to replace <code>clang</code> to compile <code>Ctrl+</code>.
-<ul>
-<li>basically it's trying to replcae <code>cmake</code>/<code>meson</code> + <code>ninja</code>.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=37082231">also see: make zig your c/c++ build system <a href="https://zig.news/kristoff/make-zig-yo">https://zig.news/kristoff/make-zig-yo</a>... | hacker news</a>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=37222668">extend a c/c++ project with zig (2021) | hacker news</a></li>
-<li><a href="https://www.reddit.com/r/zig/comments/1bovvjw">can i use zig build as a replacement for cmake?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=36149462">zig is hard but worth it | hacker news</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://ziglang.org/learn/why_zig_rust_d_cpp/">why zig when there is already c++, d, and rust? ⚡ zig programming language</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 14:48:19 SEAST 2026] #blog <a href="https://gamesbymason.com/blog/2024/6-years-in-rust-ama/#what-made-you-decide-to-use-rust">Highlights from &quot;I spent 6 years developing a game in Rust and it just shipped, AMA&quot; - Games by Mason</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Electronic Frontier Foundation | Defending your rights in the digital world</title><category>article</category><category>blog</category><category>meta</category><pubDate>2026-10-12 02:29:10 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.eff.org/">Electronic Frontier Foundation | Defending your rights in the digital world</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45162803">demo scene is dying, but that's alright</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://datagubbe.se/scenegui/">User Interfaces of the Demo Scene | datagubbe.se</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 14:29:10 SEAST 2026] <a href="https://coveryourtracks.eff.org/">https://coveryourtracks.eff.org/</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Metastasis</title><category>terminology</category><pubDate>2026-10-12 02:25:28 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Metastasis">Metastasis</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> di căn/biến chứng.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50048642">Fingerprints are the new cookies</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Open chrome in windows from the command line in a new window</title><category>chrome</category><category>cli</category><category>msedge</category><pubDate>2026-10-12 02:07:14 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/23160472/open-chrome-in-windows-from-the-command-line-in-a-new-window">Open chrome in windows from the command line in a new window</a>
+]]></content:encoded></item><item><title>Add toast notification infrastructure for OSC 777</title><category>ansi/vt</category><category>notification</category><category>windows/terminal</category><pubDate>2026-10-13 07:52:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/microsoft/terminal/pull/20010">Add toast notification infrastructure for OSC 777</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">chrome --new-window # or even --incognito can work.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain"># in PowerShell. Terminal should not be focused.
+sleep 2; Write-Output &quot;`e]777;notify;Hello;This is a notification`a&quot;
 </span></code></pre>
 </li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #keybinding <code>Ctrl+Win+Alt+r</code> now is toggle pane's read only mode.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>To update Windows Terminal through `winget`.</title><category>pacman/winget</category><pubDate>2026-10-13 07:45:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>To update Windows Terminal through <code>winget</code>.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">Get-WinGetPackage terminal |%{winget update $_.id}
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you run <code>wt</code> (default Windows Terminal) from <code>win+r</code>. your Terminal Preview will reset to be updated easily.
+<ul>
+<li>same logic applying for powershell, you have <code>powershell</code> and <code>pwsh</code> preview for that.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> try to wrestle with the machine about that.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`libvips` image processing library</title><category>cpp</category><category>image</category><category>libc</category><pubDate>2026-10-13 07:31:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/libvips/libvips"><code>libvips</code> image processing library</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> alternative to openCV for image processing task.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> it has <code>tiff</code> and PPM / PGM / PFM, those esoteric format. Even <code>openslide</code></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://stackoverflow.com/questions/43085889/how-to-convert-a-pdf-into-jpg-with-command-line-in-linux/62247720#62247720"><code>vips</code> convert a PDF into JPG in shell.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#alternative <a href="https://github.com/libgd/libgd"><code>libgd</code> GD Graphics Library</a>
+<ul>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> it abstract over a lot of other libs (libpng) as the same as <code>vips</code>.
+<ul>
+<li><a href="https://github.com/libgd/libgd/blob/master/examples/crop.c">crop png</a></li>
+<li><a href="https://github.com/libgd/libgd/blob/master/examples/gif.c">gif creation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-22 06:18:04 PM] #ocr #libc #cpp
+<ul>
+<li>in scoop as well.</li>
+<li><a href="https://github.com/ImageOptim/libimagequant"><code>libimagequant</code> Palette quantization library that powers pngquant and other PNG optimizers</a>
+<ul>
+<li><a href="https://github.com/kornelski/pngquant"><code>pngquant</code> Lossy PNG compressor — pngquant command based on libimagequant library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Tuesday, June 9, 2026 04:47:03 PM ] #discussion <a href="https://news.ycombinator.com/item?id=48421858">OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 19:31:36 SEAST 2026] #gui <a href="https://github.com/libvips/nip4"><code>nip4</code>: image processing spreadsheet</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://www.libvips.org/2025/03/20/introduction-to-nip4.html">Introduction to nip4</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> ultra-fast. #gamedev things.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>P4 Apps | Perforce Software</title><category>git</category><category>pacman/scoop</category><category>programming</category><pubDate>2026-10-13 07:30:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.perforce.com/products/p4/p4-tools">P4 Apps | Perforce Software</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">p4 
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/GameDevelopment/comments/1qpywsf">what do you guys think of perforce compared to git?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #nas <a href="https://github.com/FrozenStormInteractive/Perforce-Synology">Perforce-Synology</a>
+<ul>
+<li><a href="https://stevehanov.ca/blog/why-perforce-is-more-scalable-than-git">Why Perforce is more scalable than Git | Steve Hanov's Blog</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`thorvg` C++ vector graphics engine supporting SVG and Lottie formats, featuring advanced rendering backends such as WebGPU for high-performance graphics.</title><category>cpp</category><category>graphic</category><category>svg</category><pubDate>2026-10-13 07:07:37 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/thorvg/thorvg"><code>thorvg</code> C++ vector graphics engine supporting SVG and Lottie formats, featuring advanced rendering backends such as WebGPU for high-performance graphics.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #gui #cpp #nightly #example/repo <a href="https://github.com/xland/ScreenWatermark"><code>ScreenWatermark</code> <em>live</em> screen watermarking tool</a>
+<ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> fonts in Windows are in <code>C:/Windows/Fonts</code>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ScreenWatermark Hello Arial 16 26 -30 66 166 188 1 255 122 0 80
+# even something as absurd as this.
+ScreenWatermark &quot;$(Get-Date -UFormat &quot;%R&quot;)&quot; IosevkaNerdFontMono-Medium 16 26 -30 0 255 120 1 120 255 0 40
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/SVG_animation">SVG animation</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/tavianator/bfs"><code>bfs</code> breadth-first version of the UNIX find command</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 19:07:37 SEAST 2026] #scripting #ffmpeg <a href="https://stackoverflow.com/questions/10918907/how-to-add-transparent-watermark-in-center-of-a-video-with-ffmpeg#10920872">How to add transparent watermark in center of a video with ffmpeg?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and <a href="https://stackoverflow.com/questions/38726370/ffmpeg-text-watermark-bottom-left"> ffmpeg text watermark bottom left</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> bottom left. with text.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ffmpeg -i input.mp4 -i watermark.png -filter_complex &quot;overlay=5:H-h-5:format=auto,format=yuv420p&quot; -c:a copy output.mp4
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What is HTTP &quot;Host&quot; header?</title><category>ip/port</category><category>network</category><pubDate>2026-10-13 06:13:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/43156023/what-is-http-host-header">What is HTTP &quot;Host&quot; header?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> host header is for specifying host + port.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> when you dont have too many IP for many websites. This muxes for you.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/dotnet/comments/wilzd0">Are you using IIS on your production server?</a>
+<ul>
+<li><a href="https://zamkblog.wordpress.com/2024/08/20/cgi-with-powershell-scripts-on-iis/">CGI with PowerShell Scripts on IIS – Zam Tech Blog</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog : <a href="https://simonh.uk/2023/08/19/why-cgi-programming-is-still-useful-in-2023/">simonh.uk :: Why CGI Programming is Still Useful in 2023</a>
+<ul>
+<li>CGI or even FastCGI is considering obsoleted nowadays.
+<ul>
+<li>#rust #blog <a href="https://jacob.gold/posts/serving-half-billion-requests-with-rust-cgi/">Serving a half billion requests per day with Rust + CGI | Jake Gold</a></li>
+</ul>
+</li>
+<li>#nginx : <a href="https://news.ycombinator.com/item?id=45070602">Nginx-CGI brings support for CGI to <code>nginx</code> and <code>angie</code></a>
+<ul>
+<li>#competitor is <a href="https://github.com/openresty/openresty"><code>openresty</code> Web Platform Based on Nginx and LuaJIT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI : Web Server Gateway Interface</a>
+<ul>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #python <a href="https://github.com/pallets/werkzeug"><code>werkzeug</code> WSGI web application library.</a>
+<ul>
+<li>#rust: <a href="https://github.com/emmett-framework/granian"><code>granian</code> Rust HTTP server for Python applications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 18:13:06 SEAST 2026] <a href="https://turbo.readthedocs.io/en/latest/">Introduction <code>Turbo.lua</code> 2.1.2 documentation</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=50058528">A Modern Web App in C</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>High-Side Current Sensing | Analog Devices</title><category>blog</category><category>current</category><pubDate>2026-10-13 06:07:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.analog.com/en/resources/analog-dialogue/raqs/raq-issue-151.html">High-Side Current Sensing | Analog Devices</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 100Ω resistor on GATE of PMOS?</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/678606/how-to-make-a-pmos-work-as-a-constant-current-source/678610#678610">nmos - How to make a PMOS work as a constant current source?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>iSpy - Best Video Surveillance and Security Camera Software for Motion Detection and Remote Monitoring</title><category>device/dvr</category><pubDate>2026-10-13 05:53:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.ispyconnect.com/">iSpy - Best Video Surveillance and Security Camera Software for Motion Detection and Remote Monitoring</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/intelnuc/comments/vr3boi">Intel NUC as NVR</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/ispysoftware/iSpy"><code>iSpy</code> Open source surveillance software</a>
+<ul>
+<li>seems stagnant as now.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/nightflyza/WolfRecorder"><code>WolfRecorder</code> self-hosted open-source NVR/DVR/CCTV system for capturing and storing video from IP cameras</a></li>
+<li><a href="https://github.com/John0n1/CamSniff"><code>CamSniff</code> Automated IP Camera &amp; Network Video Stream Reconnaissance Toolkit</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#news #technologia <a href="https://news.ycombinator.com/item?id=46920315">WiFi could become an invisible mass surveillance system</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> unlikely. this is magic-like kind of field.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 17:53:26 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50063365">Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X</a>
+<ul>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> it's just mention Intel, GPU and CCTV in one place. so.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>ESD sensitivity of components</title><category>diode</category><category>mcu</category><category>protection/esd</category><pubDate>2026-10-13 05:46:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.electrostatics.net/ESD_Guide/technical/ESD_sensitivity.htm">ESD sensitivity of components</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.ti.com/lit/an/ssya010a/ssya010a.pdf">Electrostatic Discharge (ESD) terminology</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym common value for HBM: Human Body Model is 3000V, CDM: Charged Device Model is 2000V</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> that's from the HK32F001 datasheet I got.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> LU 100mA is normally latched up : <a href="https://www.esdunlimited.com/testing.html">ESD and Latch-Up Stress Testing and Qualification Details</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`vimium-c` keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar</title><category>chrome</category><category>fork</category><category>plugin</category><pubDate>2026-10-13 05:12:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/TobinCavanaugh/vimium-c"><code>vimium-c</code> keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> since vimium C has been dead for so long.</li>
+<li><!-- raw HTML omitted -->Require:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">r</span></span><span class="meta function-call arguments shell"> b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> npm install &amp;&amp; npm run build</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+<ul>
+<li>then you load unpacked. That very thing is in <code>dist</code> dir (where lib/env.js in and normally that's what you
+zip to distribute as final extension.)</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> finally I can start hacking on vimium C. unmaintainance is something crazy for what I use daily</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>How can I search for regular expressions within webpages using Google Chrome or IE?</title><category>browser</category><category>chrome</category><category>javascript</category><category>msedge</category><category>regex</category><category>scripting</category><category>search</category><pubDate>2026-10-13 05:06:30 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://superuser.com/questions/417875/how-can-i-search-for-regular-expressions-within-webpages-using-google-chrome-or">How can I search for regular expressions within webpages using Google Chrome or IE?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#plugin : <a href="https://github.com/zou8944/find-lite"><code>find-lite</code></a>
+<ul>
+<li>Which I have my own <a href="https://github.com/groutoutlook/find-lite-extension/"><code>find-lite-extension</code></a> for #nightly
+and load them unpacked so I can reload everytime I do some changes to codebase.</li>
+<li>#keybinding :<code>Shift+?</code> for what its worth, since I disable them if i'm in textbox.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/2321469/when-do-i-need-to-specify-the-javascript-protocol">correctness - When do I need to specify the JavaScript protocol?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>Also you could perform deep search by open <code>DevTools</code> and <code>Ctrl+shift+f</code>.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 17:06:30 SEAST 2026] <a href="https://stackoverflow.com/questions/10269002/where-does-google-chrome-store-unpacked-extensions/48530390#48530390">load unpacked directory</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Living in the Weimar era of Ruby</title><category>llm</category><category>ruby</category><pubDate>2026-10-13 04:54:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/lfen2h/living_weimar_era_ruby">Living in the Weimar era of Ruby</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> #quote : &quot;debugging sometimes is less boring than writing.&quot;</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>gsm/gms: Grammage</title><category>material</category><category>typesetting</category><category>unit</category><pubDate>2026-10-13 04:45:11 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Grammage">gsm/gms: Grammage</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in printed paper. as glossy (couche) paper(160 g/m²).</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
@@ -240,222 +354,75 @@ explorer ms-settings:maps
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`mustache` {{official}} website</title><category>template</category><pubDate>2026-10-12 02:01:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/mustache/mustache.github.com"><code>mustache</code> {{official}} website</a>
+]]></content:encoded></item><item><title>MMBT3646 - NPN Switching Transistor - MMBT3646-D.pdf</title><category>bjt</category><category>transistor</category><pubDate>2026-10-13 03:55:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.onsemi.com/download/data-sheet/pdf/mmbt3646-d.pdf">MMBT3646 - NPN Switching Transistor - MMBT3646-D.pdf</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/stephenberry/glaze/blob/main/docs/stencil.md">stencil.md - glaze</a>
-<ul>
-<li>and some other place, but now <code>glaze</code> officially supported it.</li>
-</ul>
-</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/arduino/comments/11xv05u">anyone know what this component is? it's a sot-23-3 with &quot;23&quot; silkscreen.</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
-<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/networking/tls-support.md">networking with <code>glaze</code> and <code>openssl</code></a></li>
-<li>#linux <a href="https://stackoverflow.com/questions/27014955/socket-connect-vs-bind">c - socket connect() vs bind()</a>
-<ul>
-<li>basic networking API in internal OS API, generally Windows and Linux agree with paradigm</li>
+<li><a href="https://www.onsemi.com/pdf/datasheet/mmbt5551-d.pdf">MMBT5551 - NPN General-Purpose Amplifier - MMBT5551-D.PDF</a></li>
 </ul>
 </li>
-<li>#powershell <a href="https://github.com/splumhoff/PSMustache">PSMustache implementation of the Mustache template system</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 14:01:13 SEAST 2026] #discussion #zig <a href="https://news.ycombinator.com/item?id=50051573">Type-safe HTML templating in Zig</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 15:55:56 SEAST 2026] #meta <a href="https://www.838dz.com/">838 Electronics - Surface Mount Electronic Component Screen Printing Query - Circuit Diagram - Technical Documentation Download - Basics - Principles - Maintenance - Parameters</a></li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Maxwell&apos;s equations</title><category>ee</category><pubDate>2026-10-12 01:49:16 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Maxwell&#x27;s_equations">Maxwell's equations</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
-<ul>
-<li>#quote : complex/imaginary numbers are just a tool to avoid differential equations amd integrals;
-they sort of make calculus into algebra.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/ECE/comments/wm0xu">Complex Numbers and their relationship with Electrical Engineering (x-post with ELI5)</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #ee <a href="https://electronics.stackexchange.com/questions/598535/is-ohms-law-valid-in-ac-circuits">Ohm's law valid in AC circuits?</a>
-<ul>
-<li>basically we have a phasor analysis form of imaginary number.
-<ul>
-<li>That's what I had been taught to calculate the new amplitude + phase of a juction in AC circuit.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 13:49:16 SEAST 2026] #terminology <a href="https://wikipedia.org/wiki/Phasor">Phasor</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> actually phaser but <a href="https://news.ycombinator.com/item?id=50049411">Whatever became of holography? (2011)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Teardown Report: UGREEN 160W Instant Display Charging 4C1A GaN Charger</title><category>charger</category><category>teardown</category><pubDate>2026-10-12 08:49:33 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/HmLDsOp5eoasUcOncOoqvQ">Teardown Report: UGREEN 160W Instant Display Charging 4C1A GaN Charger</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> again lots of module board. PFC boost , Diode bridge (TBMR810 )</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/266043/is-hot-melt-glue-suitable-as-potting-compound">connector - Is hot melt glue suitable as potting compound?</a>
-<ul>
-<li>the thermal potting glue/clay in there is...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #adc #mcu <a href="https://www.ti.com/lit/an/sbaa338a/sbaa338a.pdf">Monitoring NTC Thermistor Circuit With Single-Ended ADC (Rev. A) - sbaa338a.pdf</a>
-<ul>
-<li><a href="https://www.changpuak.ch/electronics/NTC-1.php">NTC • Basics</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 12 08:49:33 SEAST 2026] #blog <a href="https://mp.weixin.qq.com/s/xfRKS1MM1wRmnLOODen_oA">How to objectively view whether developers are suitable for using module boards in product development and mass production. (Part 2)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Existentialism</title><category>psychology</category><category>soulseek</category><pubDate>2026-10-11 11:17:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Existentialism">Existentialism</a>
+]]></content:encoded></item><item><title>about_Pipelines</title><category>powershell</category><pubDate>2026-10-13 03:24:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines#accepts-pipeline-input">about_Pipelines</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #quote <a href="https://wikipedia.org/wiki/Pascal&#x27;s_wager">Pascal's wager</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #llm #news <a href="https://news.ycombinator.com/item?id=50038383">Anthropic Bans Cruelty to Claude, Still Won't Say What It Protects</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/75822891/detect-last-cmdlet-in-a-powershell-pipeline/75826625#75826625">Detect last cmdlet in a powershell pipeline</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">about_Pipeline_Chain_Operators</a></li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`ConvertTo-Json`</title><category>powershell</category><category>serialize</category><pubDate>2026-10-11 10:50:44 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertto-json"><code>ConvertTo-Json</code></a>
+]]></content:encoded></item><item><title>`workbench.action.moveEditorLeftInGroup` == `Ctrl+shift+PageUp` which is move tabs in VSCode.</title><category>ide/vscode</category><category>keybinding</category><pubDate>2026-10-13 03:12:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><code>workbench.action.moveEditorLeftInGroup</code> == <code>Ctrl+shift+PageUp</code> which is move tabs in VSCode.
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to convert variables/output of cmdlets to something comprehensible.
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> ehh. all json so...</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
-<li>Since <code>Format-Table</code> can only display a limited amount of objects.</li>
+<li><code>workbench.view.explorer</code> == <code>Ctrl+shift+e</code> toggle file explorer. In VS it only open not toggle.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Used in pipe
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Service -Name sshd | ConvertTo-Json | fx # `fx` go along with this pretty well.
-Get-Service -Name term* | ConvertTo-Json -Depth 4 | bat -ljson # or advanced pager like bat. This is more colorful though.
-gsv proton* |convertto-json |bat -ljson
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> could also be used to assign hashtable with <code>-AsHashtable</code>
-<ul>
-<li>you have to cast keys into <code>[String]</code>
-<ul>
-<li>access by index into <code>.keys</code> of <code>HashTable</code> by cast <code>$table.keys</code> into <code>[Array]</code>.</li>
-<li>An example of removing ununsed buckets.
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$b = scoop list | Select Source -Unique
-gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> My favorite JSON engine.
-<code>pwsh</code> eat everything JSON, even JSONC (which has trailing comma, comments and other stuff.)</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/40495248/create-hashtable-from-json">powershell - Create Hashtable from JSON</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/56643404/visual-studio-2019-move-tab-via-keyboard">Visual Studio 2019 - Move tab via keyboard</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json"><code>ConvertFrom-Json</code></a>
+<li>#ide/vs : <a href="https://superuser.com/questions/321858/assign-a-shortcut-for-next-tab-in-visual-studio">Assign a shortcut for &quot;Next tab&quot; in Visual Studio</a>
 <ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to consume what is json before...</li>
+<li><code>Window.NextDocumentWindow</code> == <code>Ctrl+f6</code>, prev == <code>Ctrl+shift+f6</code>.
+This switch focus between groups as <code>Ctrl+w ctrl+w</code> in helix/neovim and modified version of my vscode config.</li>
+<li><code>Window.ActiveDocumentWindow</code> == <code>Alt+0</code>, useful when your focus is in other panes/windows. e.g. Solution Explorer.
+normally I <code>Shift+Esc</code>.</li>
+<li>Have to use #plugin since this cycles between tabs in document Group as well.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/23381874/how-can-i-switch-to-a-different-tab-group-using-the-keyboard-in-visual-studio-20">How can I switch to a different tab group using the keyboard in visual studio 2013</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which forced me to rejuvenate the Extension.</li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">uni i k -aj | ConvertFrom-Json
-</span></code></pre>
 </li>
-<li>#decoder <a href="https://github.com/powershell/textutility#convertfrom-base64"><code>ConvertFrom-Base64</code></a>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 15:12:52 SEAST 2026] #windows #filesystem #keybinding <code>ctrl+shift+e</code> reveal file in explorer in #powertoys run as well.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>4pcs of Xilinx VU13P for 40G direct processing high-speed signal 4×QFSP28 + 16×100G optical</title><category>pcb</category><category>showcase</category><pubDate>2026-10-13 02:35:37 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/1QLyrkrmwc310pYautGrgQ">4pcs of Xilinx VU13P for 40G direct processing high-speed signal 4×QFSP28 + 16×100G optical</a>
 <ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45948792">How Your Brain Creates 'Aha' Moments and Why They Stick</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 10:50:44 SEAST 2026] #anatomy #nervous <a href="https://news.ycombinator.com/item?id=50029830">Food processing influences metabolism and brain activity</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>HTML &amp; CSS Deep Dive Part 2: Turing Completeness of HTML and CSS | Aditya Bhattacharya | Blogs Website</title><category>basic</category><category>misc</category><pubDate>2026-10-11 10:46:48 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://blogs.adityabh.is-a.dev/posts/html-css-part-2/">HTML &amp; CSS Deep Dive Part 2: Turing Completeness of HTML and CSS | Aditya Bhattacharya | Blogs Website</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> rule 110 cellular automaton.
-<ul>
-<li><a href="https://wikipedia.org/wiki/Cellular_automaton">Cellular automata is same thing</a></li>
-</ul>
-</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cs.stackexchange.com/questions/60168/can-the-human-brain-be-considered-turing-complete">Can the human brain be considered Turing complete?</a>
-<ul>
-<li>for such a ridiculous question existed.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> turing machine is an algorithm take an input and spit out an output, given a set of rule/instruction inside it.
-<ul>
-<li>Turing complete is a machine that can do any kind of algorithm said above.</li>
-<li>Turing equivalence is the comparison between those machines. P can do Q and Q can do P.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://cs.stackexchange.com/questions/42311/how-is-the-computational-power-of-a-human-brain-comparing-to-a-turing-machine">computational power of a human brain comparing to a turing machine?</a>
-<ul>
-<li>moot...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://brainmade.org/index.html#about">The Brainmade Mark</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 10:46:48 SEAST 2026] <a href="https://wikipedia.org/wiki/Connectivism">Connectivism</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/Connectionism">Connectionism</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50039128">Brain does not process information and it is not a computer (2016)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What&apos;s your favorite type of polarized connector for light duty internal use?</title><category>cable</category><category>connector</category><category>power</category><pubDate>2026-10-11 09:44:18 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/AskElectronics/comments/tau0xp">What's your favorite type of polarized connector for light duty internal use?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/720906/reverse-polarity-protection-on-a-5-v-led-strip-supply">mosfet - Reverse polarity protection on a 5 V LED strip supply</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#blog <a href="https://mp.weixin.qq.com/s/Lgeqd4wiAl4byQHjYgd7qg">Does the anti-reverse MOSFET get hot as soon as it powers on? Don't blame the on-resistance for now; the body diode might be connected in the wrong direction</a></li>
-<li><a href="https://electronics.stackexchange.com/questions/665044/which-reverse-polarity-protection-is-better-and-why">diodes - Which reverse polarity protection is better and why?</a>
-<ul>
-<li>which introduce me to a crowbar configuration.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 09:44:18 2026] #blog <a href="https://mp.weixin.qq.com/s/lkNrtIh-YKrlQOdTOFtpAg">reverse connection protection circuit should not just be connected with a single diode? These four commonly used schemes are explained in one go</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>The Brutalist Programming Manifesto</title><category>compsci</category><category>manifesto</category><category>motto</category><pubDate>2026-10-11 07:30:52 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="http://www.call-with-current-continuation.org/articles/brutalist-manifesto.txt">The Brutalist Programming Manifesto</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> hackernews...?</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 07:30:52 2026] <a href="https://lobste.rs/s/ily7as/programming_isn_t_special">Programming Isn’t Special</a></li>
 </ul>
 </li>
 </ul>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>TIL: Command line</title>
+        <title>TIL: Command Line</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/syntect.css">
         <link rel="stylesheet" href="/style.css">
@@ -17,62 +17,67 @@
         </nav>
 
         <header class="til-header">
-            <h1 class="til-title">Command line</h1>
+            <h1 class="til-title">Command Line</h1>
         </header>
 
         <div class="til-subheader">
-            <span class="til-date">2026-01-07 01:59:13 PM</span>
+            <span class="til-date">2025-08-23 09:41:36 AM</span>
             <ul class="topic-list">
                 <li class="topic-list-tag">
-                    <a class="til-tag" href="/category/git">
-                        <span>git</span>
-                    </a>
-                </li>
-                <li class="topic-list-tag">
-                    <a class="til-tag" href="/category/helix">
-                        <span>helix</span>
-                    </a>
-                </li>
-                <li class="topic-list-tag">
-                    <a class="til-tag" href="/category/keybinding">
-                        <span>keybinding</span>
-                    </a>
-                </li>
-                <li class="topic-list-tag">
-                    <a class="til-tag" href="/category/scripting">
-                        <span>scripting</span>
+                    <a class="til-tag" href="/category/cli/option">
+                        <span>cli/option</span>
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/cli">#cli</a>
+            <a class="til-tag in-topic-tag" href="/subtag/debugger">#debugger</a>
+            <a class="til-tag in-topic-tag" href="/subtag/gui">#gui</a>
+            <a class="til-tag in-topic-tag" href="/subtag/syntax">#syntax</a>
         </div>
 
         <hr>
 
         <div class="til-content">
             <ul>
-<li><a href="https://docs.helix-editor.com/command-line.html?highlight=git#expansions">Command line</a>
+<li><a href="https://maxima.common-lisp.dev/docs/Command-Line.html">Command Line</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> one of the common usage of binding a command to a keybinding in <code>hx</code> is to show status.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> OR in my case, it's to use <code>bc</code>/<code>fend</code> to calculate things on place..
-<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">[keys.normal]
-# Print the current line&#39;s git blame information to the statusline.
-space.B = &quot;:echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}&quot;
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
+<ul>
+<li>Most important one : <a href="https://maxima.common-lisp.dev/docs/Command-Line.html#index-quit">exit <code>quit();</code></a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-octave"><span class="text plain">/* you have to launch the maxima REPL either way. */
+solve (asin (cos (3*x))*(f(x) - 1), x);
+solve([3*x + y = 120, y^2 + 2*x*y = 123], [x, y]); /* solving system of equation */
 </span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
-<li>there is <code>%sh</code>, <code>%u</code> to unicode and <code>%reg</code> to expand register</li>
-<li>Basic variable (context) available for those expansion is <code>cursor_line</code>, <code>cursor_column</code>, <code>buffer_name</code>
+<li>#syntax : <a href="https://maxima.common-lisp.dev/docs/Equations.html#solve">Equations - <code>solve()</code></a>
 <ul>
-<li><code>current_working_directory</code>,<code>workspace_directory</code>,</li>
-<li><code>selection</code>,<code>selection_line_start</code>,<code>selection_line_end</code>.</li>
+<li>open <code>maxima</code> and directly use this to solve quadratic equations/functions in #cli.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: <code>maxima</code> has a <code>lisp</code> #debugger to catch on some values.</li>
+<li>Con: well it is not as fast to operate on simple expression like <code>qalc</code> did.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://feb.kuleuven.be/public/u0003131/wbt23/wxmaxima/wxm_intro/solve_for_systems_of_equations.html"><code>solve()</code> for systems of equations | Introduction to (wx)Maxima</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/Qalculate/libqalculate/issues/740">Solve linear inequality or linear programming problems</a></li>
+<li><a href="https://maxima.common-lisp.dev/docs/Equations.html#Examples-for-algsys-1">Examples for algsys </a></li>
+<li>#gui : <a href="https://github.com/wxMaxima-developers/wxmaxima"><code>wxmaxima</code> Maxima built with wxWidgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

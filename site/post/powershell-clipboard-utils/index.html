@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: powershell clipboard utils</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">powershell clipboard utils</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-03-10 01:04:31 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/clipboard/managing">
+                        <span>clipboard/managing</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/image">
+                        <span>image</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/workflow">
+                        <span>workflow</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/linux">#linux</a>
+            <a class="til-tag in-topic-tag" href="/subtag/rust">#rust</a>
+            <a class="til-tag in-topic-tag" href="/subtag/software">#software</a>
+            <a class="til-tag in-topic-tag" href="/subtag/wayland">#wayland</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/groutoutlook/powershell-clipboard">powershell clipboard utils</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> work with image <code>imgcat</code>/<code>catimg</code>. shim <code>imgcat output.png</code> to <code>imgcato</code>/<code>catimgo</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<ul>
+<li><code>Get-ClipHistory -All</code> | <code>gcbh</code> | <code>lcb</code> show everything I copied. there is an <code>-Index</code> option.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gcbh
+scbh -i 4 # make the 4th entry(5th in natural number indexing) to become current clipboard
+</span></code></pre>
+</li>
+<li><code>Set-FileClipboard</code> | <code>scbf</code> as name, default is the path in clipboard.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scbf ./anykindofpath
+</span></code></pre>
+</li>
+<li>now my <code>cpcb</code> also paste from files handle to <code>$pwd</code>.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust #wayland #software <a href="https://github.com/Rolv-Apneseth/clipvault"><code>clipvault</code> Clipboard history manager for Wayland, inspired by cliphist</a>
+<ul>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [2025-06-10 09:54:34 AM] #clipboard/managing #linux
+<ul>
+<li><a href="https://github.com/SUPERCILEX/clipboard-history">clipboard-history: Ringboard—the clipboard manager for Linux</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>
