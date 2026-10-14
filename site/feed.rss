@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>PathAndLine quick copy</title><category>extension</category><category>keybinding</category><category>vs</category><pubDate>2026-10-14 06:13:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>better install fonts through scoop</title><category>typography</category><pubDate>2026-10-14 07:25:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://scoop.sh/#/apps?q=iosevka">better install fonts through scoop</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Just like this.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://typeof.net/Iosevka/customizer#:~:text=%E2%88%91-,03,-Ligations">Iosevka Customizer</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: take less space than normal for me. I really like narrow fonts.</li>
+<li>Con: idk. weird display visual glitch maybe, #tui app normally target cascadia code/consolas since they are normally everywhere.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>scoop</code> , just wander around the nerd font repo.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 19:25:39 SEAST 2026] #discussion <a href="https://news.ycombinator.com/item?id=50084240">Iosevka is an open-source, sans-serif and slab-serif, monospace font</a>
+<ul>
+<li>Iosevka has been my main font since forever actually.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`kicad-template`</title><category>cicd</category><category>kicad</category><category>template</category><pubDate>2026-10-14 06:52:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Ihysol/kicad-template"><code>kicad-template</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I have roll my own template though.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain"># for Windows
+cp ./KiCad-Template ~\OneDrive\Documents\KiCad\9.99\template -Recurse -Force
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/nguyen-v/KDT_Hierarchical_KiBot"><code>KDT_Hierarchical_KiBot</code> CI/CD automated workflow template for KiCad</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/Squantor/templates_kicad">Kicad templates that I use regularly</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 18:52:17 SEAST 2026] <a href="https://github.com/INTI-CMNB/KiBot"><code>KiBot</code>: KiCad automation utility</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.scd31.com/posts/automating-my-hardware-workflow">Improving My Hardware Workflow With CI and Nix | The Cat House</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Electrolysis</title><category>ee</category><pubDate>2026-10-14 06:49:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Electrolysis">Electrolysis</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.scd31.com/posts/diy-hair-electrolysis-machine">I Built My Own Hair Electrolysis Machine | The Cat House</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What I&apos;ve been seeing lately • mei&amp;.puppycat.house</title><category>llm</category><category>programming</category><pubDate>2026-10-14 06:46:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mei.puppycat.house/w/seeing-261010">What I've been seeing lately • mei&amp;.puppycat.house</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#service <a href="https://fluxer.app/blog/roadmap-2026">Roadmap 2026 | Fluxer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Homoiconicity</title><category>methodology</category><pubDate>2026-10-14 06:30:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Homoiconicity">Homoiconicity</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/4jfegi/nixpkgs_for_frontend_impaired">Nixpkgs for the frontend impaired</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>PathAndLine quick copy</title><category>extension</category><category>keybinding</category><category>vs</category><pubDate>2026-10-14 06:13:38 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/groutoutlook/PathAndLine">PathAndLine quick copy</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Markdown link format enabled so AI can understand quicker.</li>
@@ -221,7 +307,11 @@ $os_list = convertto-yaml $os_list -jsoncompatible
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:49:39 SEAST 2026] #linux #nix <a href="https://lix.systems/blog/2026-10-13-lix-2.96-release/">Lix | Announcing Lix 2.96 “Bingsu”</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:49:39 SEAST 2026] #linux #nix <a href="https://lix.systems/blog/2026-10-13-lix-2.96-release/">Lix | Announcing Lix 2.96 “Bingsu”</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #food <a href="https://wikipedia.org/wiki/Sundae">Sundae is the original version of #korean's Bingsoo</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -321,111 +411,6 @@ $os_list = convertto-yaml $os_list -jsoncompatible
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 21:37:47 SEAST 2026] <code>ctrl+shift+d</code> resize canvas size. to something smaller/larger.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Want to copy path of a file/folder? `Resolve-Path ./$filesname | Set-Clipboard`</title><category>powershell</category><pubDate>2026-10-13 09:25:23 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Want to copy path of a file/folder? <code>Resolve-Path ./$filesname | Set-Clipboard</code>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #windows #keybinding is <code>ctrl+shift+c</code></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 21:25:23 SEAST 2026] also the default to copy as path in File Pilot <code>fpilot</code>.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Floor and ceiling functions</title><category>basic</category><category>compsci</category><category>math/discrete</category><pubDate>2026-10-13 09:08:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Floor_and_ceiling_functions">Floor and ceiling functions</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Add toast notification infrastructure for OSC 777</title><category>ansi/vt</category><category>notification</category><category>windows/terminal</category><pubDate>2026-10-13 07:52:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/microsoft/terminal/pull/20010">Add toast notification infrastructure for OSC 777</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain"># in PowerShell. Terminal should not be focused.
-sleep 2; Write-Output &quot;`e]777;notify;Hello;This is a notification`a&quot;
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #keybinding <code>Ctrl+Win+Alt+r</code> now is toggle pane's read only mode.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>To update Windows Terminal through `winget`.</title><category>pacman/winget</category><pubDate>2026-10-13 07:45:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>To update Windows Terminal through <code>winget</code>.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">Get-WinGetPackage terminal |%{winget update $_.id}
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you run <code>wt</code> (default Windows Terminal) from <code>win+r</code>. your Terminal Preview will reset to be updated easily.
-<ul>
-<li>same logic applying for powershell, you have <code>powershell</code> and <code>pwsh</code> preview for that.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> try to wrestle with the machine about that.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`libvips` image processing library</title><category>cpp</category><category>image</category><category>libc</category><pubDate>2026-10-13 07:31:36 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/libvips/libvips"><code>libvips</code> image processing library</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> alternative to openCV for image processing task.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> it has <code>tiff</code> and PPM / PGM / PFM, those esoteric format. Even <code>openslide</code></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://stackoverflow.com/questions/43085889/how-to-convert-a-pdf-into-jpg-with-command-line-in-linux/62247720#62247720"><code>vips</code> convert a PDF into JPG in shell.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#alternative <a href="https://github.com/libgd/libgd"><code>libgd</code> GD Graphics Library</a>
-<ul>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> it abstract over a lot of other libs (libpng) as the same as <code>vips</code>.
-<ul>
-<li><a href="https://github.com/libgd/libgd/blob/master/examples/crop.c">crop png</a></li>
-<li><a href="https://github.com/libgd/libgd/blob/master/examples/gif.c">gif creation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-22 06:18:04 PM] #ocr #libc #cpp
-<ul>
-<li>in scoop as well.</li>
-<li><a href="https://github.com/ImageOptim/libimagequant"><code>libimagequant</code> Palette quantization library that powers pngquant and other PNG optimizers</a>
-<ul>
-<li><a href="https://github.com/kornelski/pngquant"><code>pngquant</code> Lossy PNG compressor — pngquant command based on libimagequant library</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Tuesday, June 9, 2026 04:47:03 PM ] #discussion <a href="https://news.ycombinator.com/item?id=48421858">OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 19:31:36 SEAST 2026] #gui <a href="https://github.com/libvips/nip4"><code>nip4</code>: image processing spreadsheet</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://www.libvips.org/2025/03/20/introduction-to-nip4.html">Introduction to nip4</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> ultra-fast. #gamedev things.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
