@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`transputer` Transputer T805 emulator, assembler, Pascal compiler, operating system, and K&amp;R C compiler.</title><category>compsci</category><category>esoteric</category><category>isa</category><category>retro</category><pubDate>2026-10-15 05:30:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Bru` Send and read SMS from the browser</title><category>browser</category><category>protocol/sms</category><category>retro</category><pubDate>2026-10-15 06:45:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/a0jmkh/bru_send_read_sms_from_browser"><code>Bru</code> Send and read SMS from the browser</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ssg <a href="https://github.com/getzola/zola"><code>zola</code> fast static site generator in a single binary with everything built-in</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sverre.me/projects/this-site/">This very website</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #accord <a href="https://sverre.me/projects/ebike/">My dumb e-bike</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`lazygit`</title><category>git</category><category>keybinding</category><category>swt</category><pubDate>2026-10-15 06:35:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><code>gitui</code> choke, <a href="https://github.com/jesseduffield/lazygit"><code>lazygit</code></a> work fine.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> That lead me to make <code>lazygit</code> #nightly. of course it has <code>scoop</code> port but eh.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>space</code> to checkout. quick ngl.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/libgit2/libgit2/issues/5352">reftable support for libgit2 · Issue #5352 · libgit2/libgit2</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> refs migrate<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ref-format</span><span class="keyword operator assignment option shell">=</span>files</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/osori/korean-romanizer"><code>kroman</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <del><code>gitu</code> probably? this has something good as well</del> to be fair it choked as well due to <code>git2</code>.
+<ul>
+<li><a href="https://stackoverflow.com/questions/20151158/using-git-repository-as-a-database-backend/77836017#77836017">Using git repository as a database backend</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 13:20:08 2026] <a href="https://github.com/gold-silver-copper/ghtui"><code>ghtui</code> browse repos, issues, PRs and profiles like the website, and review diffs better than it</a>
+<ul>
+<li>#nightly since it looks quite good.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 18:35:51 SEAST 2026] #database #code/forge <a href="https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong">Everyone is doing Git on EC2/S3 wrong · Enroute</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  could be tip for your self host git forge.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> lobsters, also their <a href="https://enroute.sh/thesis">Thesis · Enroute</a> although I kinda feel a conflict of interests here.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`prjcombine` FPGA reverse engineering and documentation project</title><category>arch</category><category>cpld</category><category>meta</category><category>rust</category><category>xilinx</category><pubDate>2026-10-15 06:19:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://codeberg.org/prjunnamed/prjcombine"><code>prjcombine</code> FPGA reverse engineering and documentation project</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and lots of other mumbo jumbo. there are ECP2/ECP4 here.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://prjunnamed.github.io/prjcombine/xc9500/">XC9500 AMD/Xilinx CPLD</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>A UAF turned RCE</title><category>acronym</category><category>cve</category><category>discussion</category><category>infosec</category><pubDate>2026-10-15 06:15:57 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/g46xkj/uaf_turned_rce">A UAF turned RCE</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> UAF is use after free.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>아름다워 - areumdalwo == 여푸 - yeopu == beautiful/pretty</title><category>korean</category><category>misc</category><category>vocab</category><pubDate>2026-10-15 06:04:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>아름다워 - areumdalwo == 여푸 - yeopu == beautiful/pretty
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>ito - build terminal ui in lua</title><category>api</category><category>library</category><category>lua</category><category>tui</category><pubDate>2026-10-15 05:37:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/9lqyul/ito_build_terminal_ui_lua">ito - build terminal ui in lua</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Cross platform html-rendering framework.</title><category>graph</category><category>gui</category><category>linux</category><category>macos</category><category>render/html</category><category>rust</category><category>web/ui</category><category>windows</category><pubDate>2026-10-15 05:31:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/tauri-apps/wry#platform-specific-notes">Cross platform html-rendering framework.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> using this instead of going for blink/webview2/webkitgtk/webkit.
+<ul>
+<li>Modern solution, and that use rust...
+<ul>
+<li>Instead of too many c++ as others offer.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#linux : <a href="https://webkitgtk.org/">WebKitGTK Project</a></li>
+<li>#windows : <a href="https://github.com/MicrosoftEdge/WebView2Samples">MicrosoftEdge/WebView2Samples: Microsoft Edge WebView2 samples</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 17:31:52 SEAST 2026] <a href="https://lobste.rs/s/dyypvf/apple_switch_safari_from_chrome">Apple: Switch to Safari (from Chrome)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`transputer` Transputer T805 emulator, assembler, Pascal compiler, operating system, and K&amp;R C compiler.</title><category>compsci</category><category>esoteric</category><category>isa</category><category>retro</category><pubDate>2026-10-15 05:30:38 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/nanochess/transputer"><code>transputer</code> Transputer T805 emulator, assembler, Pascal compiler, operating system, and K&amp;R C compiler.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -265,137 +388,6 @@ Support for ch570, ch572, ch571, ch573, ch581, ch582, ch583, ch584, ch585 and ch
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #meta #blog <a href="https://wiki.roshangeorge.dev/w/Category:Blog">Category:Blog - Rest of What I Know</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Gerontocracy</title><category>goverment</category><category>media</category><pubDate>2026-10-15 11:57:21 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Gerontocracy">Gerontocracy</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> political entity is ruled by leaders who are substantially older than most of the population.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which is vietnam situation.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/taiwan/comments/1th9937">Why do Westerners seem more pessimistic about AI compared to Taiwanese (or East Asians)?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 11:57:21 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50098570">One in ten people are older than 65. Three in four live under a leader who is</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`lev` Jolt implementation of Laya non-autoregressive System 1 decision engine</title><category>lang</category><category>misc</category><category>scheme</category><pubDate>2026-10-15 11:54:46 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/jlt-commons/lev"><code>lev</code> Jolt implementation of Laya non-autoregressive System 1 decision engine</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50095353">Jev PSA in HN</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`JumperlessV5` The next generation jumperless breadboard</title><category>board/rp2350</category><category>multiplex</category><category>pcba</category><category>prototype</category><category>switch</category><pubDate>2026-10-15 11:46:59 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Architeuthis-Flux/JumperlessV5"><code>JumperlessV5</code> The next generation jumperless breadboard</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#multiplex: <a href="https://akizukidenshi.com/goodsaffix/CH446.pdf">8x16 Analog Switch Array Chip CH446Q and 5x24 Analog Switch Array Chip CH446X</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 128 analog switches in intersection point of 5x24 matrix consisting of 24 X ports and 5 Y ports,
-allowing any X port and any Y port to conduct or disconnect/ <strong>2 X ports</strong> to conduct to <strong>1 Y port</strong>
-enabling indirect conduction between any two X ports or any two Y ports (CH446X has only 120 analog switches)</li>
-<li>It's even a #wch #mcu. Clone of MT8816.
-3dB rolloff (1/2 the passband) is 50MHz. Which can be considered bandwidth.</li>
-<li>#board : <a href="https://item.taobao.com/item.htm?id=924718314512">8x16模拟开关阵列可级联XY脚双向导通自动接线CH446Q接自动化方案</a>
-<ul>
-<li><a href="https://www.cnblogs.com/Tuple-Joe/p/13529488.html">Hardware Drivers | 5x24 Analog Switch Array CH446X - Tuple - Blog Garden</a></li>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Bitbanging the CH446X itself.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="https://www.globalspec.com/learnmore/semiconductors/analog_mixed_signals/amplifier_linear_devices/analog_crosspoint_switches">IC Analog Crosspoint Switches Selection Guide: Types, Features, Applications | GlobalSpec</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://modwiggler.com/forum/viewtopic.php?t=276128">I made a thing that might be useful for some of you folks: a jumperless (solderless) breadboard - MOD WIGGLER</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=844546662859">Jumperless V5 The next generation jumperless breadboard</a>
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/25525/are-there-any-analog-fpgas">Are there any Analog FPGAs?</a></li>
-<li>#linux #container <a href="https://github.com/detiber/k8s-jumperless"><code>k8s-jumperless</code></a></li>
-<li>3db is coming from this <a href="https://wikipedia.org/wiki/Cutoff_frequency">Cutoff frequency</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sometimes the f_cutoff just mean  maximum usable frequency.</li>
-<li>#til: Double Pole: both the signal wires will be thrown at once. Single pole: only throw one at a time.</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://www.belling.com.cn/product_info.html?id=761">BL1522 - DPQT double pole quad throw Shanghai Belling Co., Ltd</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #definition #acronym <a href="https://www.e-switch.com/news-events/blog/switches-simplified/what-does-make-before-break-mean-shorting-vs-non-shorting/">MBB Make-Before-Break Mean vs BBM: Break-Before-Make?</a></li>
-</ul>
-</li>
-<li><a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FTuDo-Makerspace%2FMIDI-Breakouts%2Fblob%2Fb9dfe038f9741ef2019afd47008d8c9093785a86%2FMIDI_OUT%2FMIDI_OUT.kicad_sch%23L818">DPDT switch for voltage mode selection.</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #i2c <a href="https://canaduino.com/downloads/ch423.pdf">CH423 Datasheet - ch423.pdf</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> GPIO expander. IO0-IO7 is bidirectional while OC0-OC15 is push-pull output pin.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> so 8*16 is 128 monochrome LED in a matrix, or just 24 LED separatedly.
-Could be a 7-segment LED/LCD display or something.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <strong>can not</strong> be an alternative for analog signal/bidirectional signal.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 11:46:59 SEAST 2026] #fpga <a href="https://github.com/smunaut/ttsky-mini-mosbius/blob/main/docs/info.md">ttsky-mini-mosbius ASIC analog switch with MOS</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/google/skywater-pdk">Open source process design kit for usage with SkyWater Technology Foundry's 130nm node.</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Finalist` Final List app you&apos;ll ever need.</title><category>android</category><category>crossplatform</category><category>ruby/rails</category><category>web/app/spa</category><category>wprog</category><pubDate>2026-10-15 11:37:30 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/nathanvy/finalist-rails"><code>Finalist</code> Final List app you'll ever need.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`singlebook` ebook and its editor in a standalone html file</title><category>book</category><category>html</category><category>uiweb</category><pubDate>2026-10-15 11:34:13 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/nathanvy/singlebook"><code>singlebook</code> ebook and its editor in a standalone html file</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> writing in general.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50096142">Tiny Little Office</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>USB to PoE - Coolgear</title><category>ethernet</category><category>hard</category><category>poe</category><category>power</category><category>usb</category><pubDate>2026-10-15 11:10:10 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.coolgear.com/usb-to-poe">USB to PoE - Coolgear</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.murata.com/en-global/products/power/isolated-dc-dc-converter/poe">Isolated DC-DC converters for PoE | Isolated DC-DC converter module | Murata Manufacturing Co., Ltd.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.analog.com/en/resources/reference-designs/maxrefdes128.html">MAXREFDES128 | Reference Design | Analog Devices</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>support.freedomscientific.com/support/technicalsupport/bulletin/32</title><category>a11y</category><category>misc</category><category>programming</category><category>terminal</category><pubDate>2026-10-15 11:05:40 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://support.freedomscientific.com/support/technicalsupport/bulletin/32">support.freedomscientific.com/support/technicalsupport/bulletin/32</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50094994">OpenCode 2.0</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
