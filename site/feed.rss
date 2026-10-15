@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>better install fonts through scoop</title><category>typography</category><pubDate>2026-10-14 07:25:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</title><category>rust</category><category>tauri</category><category>web/app</category><pubDate>2026-10-14 08:29:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Uninen/tauri-vue-template">tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 20:29:51 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50060606">FCSS 2: Utility CSS that reads like CSS</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What agents mean for Rust (and vice versa)</title><category>ai</category><category>rust</category><pubDate>2026-10-14 08:28:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50084416">What agents mean for Rust (and vice versa)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>better install fonts through scoop</title><category>typography</category><pubDate>2026-10-14 07:25:39 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://scoop.sh/#/apps?q=iosevka">better install fonts through scoop</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Just like this.</li>
@@ -348,69 +373,6 @@ $os_list = convertto-yaml $os_list -jsoncompatible
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/uiulqe/did_ente_locker_copy_my_code_without">Did Ente Locker copy my code without attribution?</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`nuitka` Python compiler written in Python</title><category>build/uv</category><category>compiler</category><category>python</category><pubDate>2026-10-14 12:34:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Nuitka/Nuitka"><code>nuitka</code> Python compiler written in Python</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> compile scripts into a single executable to <code>shim</code> to PATH as common tools. E.g: <code>ninjatracing</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<ul>
-<li>method 1: <code>venv</code></li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> venv</span>
-<span class="meta function-call shell"><span class="variable function shell">.<span class="constant character escape shell">\.</span>venv<span class="constant character escape shell">\s</span>cripts<span class="constant character escape shell">\a</span>ctivate</span></span>
-<span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> pip install nuitka</span>
-<span class="meta function-call shell"><span class="variable function shell">python</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> nuitka<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>onefile</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>standalone</span> ./ninjatracing.py</span>
-</span></code></pre>
-<ul>
-<li>method 2: direct <code>add</code></li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> add<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>dev</span> nuitka <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> if you havent added it to `uv.lock`, otherwise  `uv run`</span><span class="comment line number-sign shell">
-</span></span><span class="meta function-call shell"><span class="variable function shell">uv</span></span><span class="meta function-call arguments shell"> run python<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> nuitka<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>standalone</span> ./ninjatracing.py</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>Soon we will move to <code>uv build</code> based compiler.</li>
-<li>I settled on <code>nuitka</code>+<code>uv</code> for this time.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/astral-sh/uv/issues/5802">Suggestion: <code>uv bundle</code>, <code>uv build --release</code> or similar to create a contained executable a la pyinstaller, py2exe · Issue #5802 · astral-sh/uv</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/astral-sh/uv/issues/7957"><code>uv</code> havent added support for cross-platform environments · Issue #7957 · astral-sh/uv</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:34:38 SEAST 2026] #blog <a href="https://lobste.rs/s/73ssw1/plea_not_use_uv_build">A plea not to use uv-build</a>
-<ul>
-<li>but from gentoo #linux which to be fair are already falling into esoteric realm.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How to draw an arrow in `inkscape`</title><category>default</category><category>format</category><category>image</category><category>inkscape</category><category>keybinding</category><category>svg</category><pubDate>2026-10-13 09:37:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://graphicdesign.stackexchange.com/questions/54517/how-to-draw-an-arrow-in-inkscape/142578#142578">How to draw an arrow in <code>inkscape</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>shift+f6</code> line tools -&gt; <code>ctrl+shift+f</code> to change styling, as arrow head, dashed lines.
-<ul>
-<li>that same sidecar can change stroke color for the line tools, color for text as <code>Fill color</code></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: more styling effects for arrows in pdf/dxf.</li>
-<li>Con: slower than just use screenshot tools(e.g. <code>ScreenCapture</code>) to draw.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 21:37:47 SEAST 2026] <code>ctrl+shift+d</code> resize canvas size. to something smaller/larger.</li>
 </ul>
 </li>
 </ul>
