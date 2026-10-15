@@ -20,7 +20,8 @@ try {
     & git push origin main
     if ($LASTEXITCODE) { throw 'Could not push generated site' }
 
-    Write-Host 'Published site source; the push-triggered Pages deployment will run automatically.'
+    Write-Host 'Published site source; wait about 30s-50s for deployment'
+    Write-Host -Foreground Green "https://$(spa((git remote  get-url origin)-replace'.git$') -leaf )"
 } finally {
     Pop-Location
 }
