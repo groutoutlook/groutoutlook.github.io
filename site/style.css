@@ -89,6 +89,29 @@ a.til-tag.master-tag {
     border-color: #b48a15;
 }
 
+a.til-tag.parent-tag {
+    color: #064f52;
+    background-color: #a8e4d2;
+    border-color: #279c91;
+    font-weight: 700;
+}
+
+a:hover.til-tag.parent-tag {
+    color: #eafff8;
+    background-color: #167b78;
+}
+
+html[data-theme="dark"] a.til-tag.parent-tag {
+    color: #a9f2dc;
+    background-color: #174c4b;
+    border-color: #54c7b0;
+}
+
+html[data-theme="dark"] a:hover.til-tag.parent-tag {
+    color: #082d2c;
+    background-color: #73dfc2;
+}
+
 a:hover.til-tag.master-tag {
     color: #fff9dc;
     background-color: #9a7410;

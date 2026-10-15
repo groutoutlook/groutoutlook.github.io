@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`scroll` i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</title><category>gui</category><category>linux</category><category>wayland/compositor</category><pubDate>2026-10-15 01:26:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`scroll` i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</title><category>gui</category><category>linux</category><category>wayland/compositor</category><category>windows</category><pubDate>2026-10-15 01:26:41 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/dawsers/scroll"><code>scroll</code> i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -10,7 +10,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>n-tier/Multitier architecture</title><category>definition</category><category>networking</category><pubDate>2026-10-15 12:16:05 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>n-tier/Multitier architecture</title><category>csci</category><category>definition</category><category>networking</category><pubDate>2026-10-15 12:16:05 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Multitier_architecture">n-tier/Multitier architecture</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -22,7 +22,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`wasm2go` Wasm to Go translator</title><category>golang</category><category>sdk</category><category>wasm</category><pubDate>2026-10-15 12:14:56 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`wasm2go` Wasm to Go translator</title><category>golang</category><category>lang</category><category>sdk</category><category>wasm</category><pubDate>2026-10-15 12:14:56 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/ncruces/wasm2go"><code>wasm2go</code> Wasm to Go translator</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -55,7 +55,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`selfauth` self-hosted auth_endpoint using simple login mechanism · GitHub</title><category>auth</category><category>host/self</category><pubDate>2026-10-15 12:08:12 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`selfauth` self-hosted auth_endpoint using simple login mechanism · GitHub</title><category>auth</category><category>host/self</category><category>infosec</category><pubDate>2026-10-15 12:08:12 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/Inklings-io/selfauth"><code>selfauth</code> self-hosted auth_endpoint using simple login mechanism · GitHub</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -67,7 +67,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Social contract</title><category>politic</category><category>social</category><category>us</category><pubDate>2026-10-15 11:59:34 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Social contract</title><category>politic</category><category>social</category><category>society</category><category>us</category><pubDate>2026-10-15 11:59:34 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Social_contract">Social contract</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -94,13 +94,14 @@
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 11:59:34 SEAST 2026] #news #discussion <a href="https://news.ycombinator.com/item?id=50089921">Americans' social activity has steeply declined in the past 30 years</a>
 <ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [Thu Oct 15 14:11:45 SEAST 2026] <a href="https://news.ycombinator.com/item?id=49891295">Everybody’s home. No one’s coming over</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #meta #blog <a href="https://wiki.roshangeorge.dev/w/Category:Blog">Category:Blog - Rest of What I Know</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Gerontocracy</title><category>goverment</category><pubDate>2026-10-15 11:57:21 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Gerontocracy</title><category>goverment</category><category>media</category><pubDate>2026-10-15 11:57:21 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Gerontocracy">Gerontocracy</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> political entity is ruled by leaders who are substantially older than most of the population.</li>
@@ -113,7 +114,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`lev` Jolt implementation of Laya non-autoregressive System 1 decision engine</title><category>misc</category><category>scheme</category><pubDate>2026-10-15 11:54:46 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`lev` Jolt implementation of Laya non-autoregressive System 1 decision engine</title><category>lang</category><category>misc</category><category>scheme</category><pubDate>2026-10-15 11:54:46 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/jlt-commons/lev"><code>lev</code> Jolt implementation of Laya non-autoregressive System 1 decision engine</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -125,7 +126,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`JumperlessV5` The next generation jumperless breadboard</title><category>board/rp2350</category><category>multiplex</category><category>prototype</category><category>switch</category><pubDate>2026-10-15 11:46:59 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`JumperlessV5` The next generation jumperless breadboard</title><category>board/rp2350</category><category>multiplex</category><category>pcba</category><category>prototype</category><category>switch</category><pubDate>2026-10-15 11:46:59 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/Architeuthis-Flux/JumperlessV5"><code>JumperlessV5</code> The next generation jumperless breadboard</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -183,7 +184,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`Finalist` Final List app you&apos;ll ever need.</title><category>android</category><category>crossplatform</category><category>ruby/rails</category><category>web/app/spa</category><pubDate>2026-10-15 11:37:30 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`Finalist` Final List app you&apos;ll ever need.</title><category>android</category><category>crossplatform</category><category>ruby/rails</category><category>web/app/spa</category><category>wprog</category><pubDate>2026-10-15 11:37:30 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/nathanvy/finalist-rails"><code>Finalist</code> Final List app you'll ever need.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -195,7 +196,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`singlebook` ebook and its editor in a standalone html file</title><category>book</category><category>html</category><pubDate>2026-10-15 11:34:13 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`singlebook` ebook and its editor in a standalone html file</title><category>book</category><category>html</category><category>uiweb</category><pubDate>2026-10-15 11:34:13 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/nathanvy/singlebook"><code>singlebook</code> ebook and its editor in a standalone html file</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> writing in general.</li>
@@ -207,7 +208,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>USB to PoE - Coolgear</title><category>ethernet</category><category>poe</category><category>power</category><category>usb</category><pubDate>2026-10-15 11:10:10 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>USB to PoE - Coolgear</title><category>ethernet</category><category>hard</category><category>poe</category><category>power</category><category>usb</category><pubDate>2026-10-15 11:10:10 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.coolgear.com/usb-to-poe">USB to PoE - Coolgear</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -219,7 +220,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>support.freedomscientific.com/support/technicalsupport/bulletin/32</title><category>a11y</category><category>programming</category><category>terminal</category><pubDate>2026-10-15 11:05:40 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>support.freedomscientific.com/support/technicalsupport/bulletin/32</title><category>a11y</category><category>misc</category><category>programming</category><category>terminal</category><pubDate>2026-10-15 11:05:40 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://support.freedomscientific.com/support/technicalsupport/bulletin/32">support.freedomscientific.com/support/technicalsupport/bulletin/32</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -231,7 +232,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`glider` forward proxy, dns/dhcp server with ipset management features</title><category>dns</category><category>proxy/forward</category><pubDate>2026-10-15 10:50:54 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`glider` forward proxy, dns/dhcp server with ipset management features</title><category>dns</category><category>netw</category><category>proxy/forward</category><pubDate>2026-10-15 10:50:54 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/nadoo/glider"><code>glider</code> forward proxy, dns/dhcp server with ipset management features</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -281,7 +282,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>FQDN: Fully qualified domain name</title><category>acronym</category><category>definition</category><category>dns</category><pubDate>2026-10-15 10:48:57 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>FQDN: Fully qualified domain name</title><category>acronym</category><category>definition</category><category>dns</category><category>netw</category><pubDate>2026-10-15 10:48:57 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Fully_qualified_domain_name">FQDN: Fully qualified domain name</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -293,7 +294,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`rk3326_core_builds` Script for building various cores and emulators for rk3326 devices</title><category>firmware</category><category>linux</category><category>sbc</category><pubDate>2026-10-15 10:46:18 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`rk3326_core_builds` Script for building various cores and emulators for rk3326 devices</title><category>board</category><category>firmware</category><category>linux</category><category>sbc</category><pubDate>2026-10-15 10:46:18 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/christianhaitian/rk3326_core_builds"><code>rk3326_core_builds</code> Script for building various cores and emulators for rk3326 devices</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -319,7 +320,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>China’s 985, 211 &amp; Double First-Class Universities (2026 List)</title><category>china</category><category>meta</category><pubDate>2026-10-15 10:21:01 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>China’s 985, 211 &amp; Double First-Class Universities (2026 List)</title><category>china</category><category>meta</category><category>society</category><pubDate>2026-10-15 10:21:01 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://olachina.org/chinas-985-and-211-universities/">China’s 985, 211 &amp; Double First-Class Universities (2026 List)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -335,7 +336,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`FreeCoAP` CoAP client, CoAP server and HTTP/CoAP proxy with full DTLS support.</title><category>infosec</category><category>libc</category><category>library</category><category>zephyr</category><pubDate>2026-10-15 10:15:17 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`FreeCoAP` CoAP client, CoAP server and HTTP/CoAP proxy with full DTLS support.</title><category>embed</category><category>infosec</category><category>libc</category><category>library</category><category>zephyr</category><pubDate>2026-10-15 10:15:17 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/keith-cullen/FreeCoAP"><code>FreeCoAP</code> CoAP client, CoAP server and HTTP/CoAP proxy with full DTLS support.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -347,7 +348,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>GATT Server API - ESP32-C6 - — ESP-IDF Programming Guide v5.5.1 documentation</title><category>ble</category><category>esp32c6</category><category>esp32s3</category><category>sdk</category><pubDate>2026-10-15 10:14:12 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>GATT Server API - ESP32-C6 - — ESP-IDF Programming Guide v5.5.1 documentation</title><category>ble</category><category>esp32c6</category><category>esp32s3</category><category>proto</category><category>sdk</category><pubDate>2026-10-15 10:14:12 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://docs.espressif.com/projects/esp-idf/en/v5.5.1/esp32c6/api-reference/bluetooth/esp_gatts.html">GATT Server API - ESP32-C6 - — ESP-IDF Programming Guide v5.5.1 documentation</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> those API is identical between these 2 chips.</li>
@@ -368,7 +369,7 @@ Could be a 7-segment LED/LCD display or something.</li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Workload mTLS with ACME &amp; Go</title><category>acronym</category><category>golang</category><category>infosec</category><category>proxy</category><pubDate>2026-10-15 10:13:21 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Workload mTLS with ACME &amp; Go</title><category>acronym</category><category>golang</category><category>infosec</category><category>proxy</category><category>wprog</category><pubDate>2026-10-15 10:13:21 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://blog.daknob.net/workload-mtls-with-acme/">Workload mTLS with ACME &amp; Go</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
