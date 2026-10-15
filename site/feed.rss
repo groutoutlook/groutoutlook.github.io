@@ -5,7 +5,11 @@
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
-<li>#powershell <a href="https://healthchecks.io/docs/powershell/">Monitor PowerShell Scripts with Healthchecks.io</a></li>
+<li>#powershell <a href="https://healthchecks.io/docs/powershell/">Monitor PowerShell Scripts with Healthchecks.io</a>
+<ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>iwr &lt;https://hc-ping.com/0d88e09f-c06f-4f1a-91f5-b97a10d38bb1</code>&gt;</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
@@ -15,22 +19,6 @@
 <li><a href="https://docs.arduino.cc/libraries/wifinina/">WiFiNINA | Arduino Documentation</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>well with `qrtool` I can decode something like this on the fly.</title><category>code/golf</category><category>format/qr</category><category>image</category><category>powershell</category><category>snippet</category><pubDate>2026-10-15 07:02:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>well with <code>qrtool</code> I can decode something like this on the fly.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gcbh -ima 0 | qrtool decode #or as exotic as this.
-036208006791||Ngô Minh Tân|19032008|Nam|Xóm 6, Xuân Tiến, Xuân Trường, Nam Định|05092022
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
@@ -390,6 +378,27 @@ Support for ch570, ch572, ch571, ch573, ch581, ch582, ch583, ch584, ch585 and ch
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Route differential pairs of traces for USB and the likes..</title><category>kicad</category><category>pcbnew</category><pubDate>2026-10-15 12:12:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Route differential pairs of traces for USB and the likes..
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you need to assign netclass properly of course. Often raw dog the trace width making me forget this.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #video <a href="https://youtu.be/ABJs4LKFSbA?t=59s">design 90 ohm differential traces for USB signals in KiCad. - YouTube</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://youtu.be/pXSK9KlNsW4?t=738s">Do Differential Pairs Need Ground? Are you sure? | Explained by Eric Bogatin - YouTube</a>
+<ul>
+<li>and almost every other kinds of differential impedance (diff/common impedance, odd/even mode).</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 12:12:41 SEAST 2026] <a href="https://resources.altium.com/p/transmission-line-impedance-measurement-even-vs-odd-mode">Transmission Line Impedance Measurement: Even vs. Odd Mode | Signal Integrity</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.testandmeasurementtips.com/how-physics-relates-signal-integrity-power-integrity-and-emc/">How physics relates signal integrity, power integrity, and EMC</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
