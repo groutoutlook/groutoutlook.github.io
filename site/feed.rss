@@ -1,4 +1,325 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>China’s 985, 211 &amp; Double First-Class Universities (2026 List)</title><category>china</category><category>meta</category><pubDate>2026-10-15 10:21:01 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`scroll` i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</title><category>gui</category><category>linux</category><category>wayland/compositor</category><pubDate>2026-10-15 01:26:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/dawsers/scroll"><code>scroll</code> i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>n-tier/Multitier architecture</title><category>definition</category><category>networking</category><pubDate>2026-10-15 12:16:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Multitier_architecture">n-tier/Multitier architecture</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`wasm2go` Wasm to Go translator</title><category>golang</category><category>sdk</category><category>wasm</category><pubDate>2026-10-15 12:14:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/ncruces/wasm2go"><code>wasm2go</code> Wasm to Go translator</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Route differential pairs of traces for USB and the likes..</title><category>kicad</category><category>pcbnew</category><pubDate>2026-10-15 12:12:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Route differential pairs of traces for USB and the likes..
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you need to assign netclass properly of course. Often raw dog the trace width making me forget this.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #video <a href="https://youtu.be/ABJs4LKFSbA?t=59s">design 90 ohm differential traces for USB signals in KiCad. - YouTube</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://youtu.be/pXSK9KlNsW4?t=738s">Do Differential Pairs Need Ground? Are you sure? | Explained by Eric Bogatin - YouTube</a>
+<ul>
+<li>and almost every other kinds of differential impedance (diff/common impedance, odd/even mode).</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 12:12:41 SEAST 2026] <a href="https://resources.altium.com/p/transmission-line-impedance-measurement-even-vs-odd-mode">Transmission Line Impedance Measurement: Even vs. Odd Mode | Signal Integrity</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.testandmeasurementtips.com/how-physics-relates-signal-integrity-power-integrity-and-emc/">How physics relates signal integrity, power integrity, and EMC</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`selfauth` self-hosted auth_endpoint using simple login mechanism · GitHub</title><category>auth</category><category>host/self</category><pubDate>2026-10-15 12:08:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Inklings-io/selfauth"><code>selfauth</code> self-hosted auth_endpoint using simple login mechanism · GitHub</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://indieweb.org/authorization-endpoint">authorization-endpoint - IndieWeb</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Social contract</title><category>politic</category><category>social</category><category>us</category><pubDate>2026-10-15 11:59:34 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Social_contract">Social contract</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#psychology : <a href="https://wikipedia.org/wiki/Decorum#Social_decorum">Decorum</a>
+<ul>
+<li>social gesture, the norm, virtue, proper and baseline of ethical value in a society.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mlnvoy/it_s_rude_show_ai_output_people#c_wyknju">It's rude to show AI output to people</a>
+<ul>
+<li>#discussion for read.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#misc <a href="https://www.reddit.com/r/Millennials/comments/18iiqo2">Social Contract is Dead in America - Is it ever coming back?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 11:59:34 SEAST 2026] #news #discussion <a href="https://news.ycombinator.com/item?id=50089921">Americans' social activity has steeply declined in the past 30 years</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #meta #blog <a href="https://wiki.roshangeorge.dev/w/Category:Blog">Category:Blog - Rest of What I Know</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Gerontocracy</title><category>goverment</category><pubDate>2026-10-15 11:57:21 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Gerontocracy">Gerontocracy</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> political entity is ruled by leaders who are substantially older than most of the population.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which is vietnam situation.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/taiwan/comments/1th9937">Why do Westerners seem more pessimistic about AI compared to Taiwanese (or East Asians)?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 11:57:21 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50098570">One in ten people are older than 65. Three in four live under a leader who is</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`lev` Jolt implementation of Laya non-autoregressive System 1 decision engine</title><category>misc</category><category>scheme</category><pubDate>2026-10-15 11:54:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/jlt-commons/lev"><code>lev</code> Jolt implementation of Laya non-autoregressive System 1 decision engine</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50095353">Jev PSA in HN</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`JumperlessV5` The next generation jumperless breadboard</title><category>board/rp2350</category><category>multiplex</category><category>prototype</category><category>switch</category><pubDate>2026-10-15 11:46:59 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Architeuthis-Flux/JumperlessV5"><code>JumperlessV5</code> The next generation jumperless breadboard</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#multiplex: <a href="https://akizukidenshi.com/goodsaffix/CH446.pdf">8x16 Analog Switch Array Chip CH446Q and 5x24 Analog Switch Array Chip CH446X</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 128 analog switches in intersection point of 5x24 matrix consisting of 24 X ports and 5 Y ports,
+allowing any X port and any Y port to conduct or disconnect/ <strong>2 X ports</strong> to conduct to <strong>1 Y port</strong>
+enabling indirect conduction between any two X ports or any two Y ports (CH446X has only 120 analog switches)</li>
+<li>It's even a #wch #mcu. Clone of MT8816.
+3dB rolloff (1/2 the passband) is 50MHz. Which can be considered bandwidth.</li>
+<li>#board : <a href="https://item.taobao.com/item.htm?id=924718314512">8x16模拟开关阵列可级联XY脚双向导通自动接线CH446Q接自动化方案</a>
+<ul>
+<li><a href="https://www.cnblogs.com/Tuple-Joe/p/13529488.html">Hardware Drivers | 5x24 Analog Switch Array CH446X - Tuple - Blog Garden</a></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Bitbanging the CH446X itself.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.globalspec.com/learnmore/semiconductors/analog_mixed_signals/amplifier_linear_devices/analog_crosspoint_switches">IC Analog Crosspoint Switches Selection Guide: Types, Features, Applications | GlobalSpec</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://modwiggler.com/forum/viewtopic.php?t=276128">I made a thing that might be useful for some of you folks: a jumperless (solderless) breadboard - MOD WIGGLER</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=844546662859">Jumperless V5 The next generation jumperless breadboard</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/25525/are-there-any-analog-fpgas">Are there any Analog FPGAs?</a></li>
+<li>#linux #container <a href="https://github.com/detiber/k8s-jumperless"><code>k8s-jumperless</code></a></li>
+<li>3db is coming from this <a href="https://wikipedia.org/wiki/Cutoff_frequency">Cutoff frequency</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sometimes the f_cutoff just mean  maximum usable frequency.</li>
+<li>#til: Double Pole: both the signal wires will be thrown at once. Single pole: only throw one at a time.</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://www.belling.com.cn/product_info.html?id=761">BL1522 - DPQT double pole quad throw Shanghai Belling Co., Ltd</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #definition #acronym <a href="https://www.e-switch.com/news-events/blog/switches-simplified/what-does-make-before-break-mean-shorting-vs-non-shorting/">MBB Make-Before-Break Mean vs BBM: Break-Before-Make?</a></li>
+</ul>
+</li>
+<li><a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FTuDo-Makerspace%2FMIDI-Breakouts%2Fblob%2Fb9dfe038f9741ef2019afd47008d8c9093785a86%2FMIDI_OUT%2FMIDI_OUT.kicad_sch%23L818">DPDT switch for voltage mode selection.</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #i2c <a href="https://canaduino.com/downloads/ch423.pdf">CH423 Datasheet - ch423.pdf</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> GPIO expander. IO0-IO7 is bidirectional while OC0-OC15 is push-pull output pin.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> so 8*16 is 128 monochrome LED in a matrix, or just 24 LED separatedly.
+Could be a 7-segment LED/LCD display or something.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <strong>can not</strong> be an alternative for analog signal/bidirectional signal.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 11:46:59 SEAST 2026] #fpga <a href="https://github.com/smunaut/ttsky-mini-mosbius/blob/main/docs/info.md">ttsky-mini-mosbius ASIC analog switch with MOS</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/google/skywater-pdk">Open source process design kit for usage with SkyWater Technology Foundry's 130nm node.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Finalist` Final List app you&apos;ll ever need.</title><category>android</category><category>crossplatform</category><category>ruby/rails</category><category>web/app/spa</category><pubDate>2026-10-15 11:37:30 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nathanvy/finalist-rails"><code>Finalist</code> Final List app you'll ever need.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`singlebook` ebook and its editor in a standalone html file</title><category>book</category><category>html</category><pubDate>2026-10-15 11:34:13 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nathanvy/singlebook"><code>singlebook</code> ebook and its editor in a standalone html file</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> writing in general.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50096142">Tiny Little Office</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>USB to PoE - Coolgear</title><category>ethernet</category><category>poe</category><category>power</category><category>usb</category><pubDate>2026-10-15 11:10:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.coolgear.com/usb-to-poe">USB to PoE - Coolgear</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.murata.com/en-global/products/power/isolated-dc-dc-converter/poe">Isolated DC-DC converters for PoE | Isolated DC-DC converter module | Murata Manufacturing Co., Ltd.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.analog.com/en/resources/reference-designs/maxrefdes128.html">MAXREFDES128 | Reference Design | Analog Devices</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>support.freedomscientific.com/support/technicalsupport/bulletin/32</title><category>a11y</category><category>programming</category><category>terminal</category><pubDate>2026-10-15 11:05:40 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://support.freedomscientific.com/support/technicalsupport/bulletin/32">support.freedomscientific.com/support/technicalsupport/bulletin/32</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50094994">OpenCode 2.0</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`glider` forward proxy, dns/dhcp server with ipset management features</title><category>dns</category><category>proxy/forward</category><pubDate>2026-10-15 10:50:54 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nadoo/glider"><code>glider</code> forward proxy, dns/dhcp server with ipset management features</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/compsci/comments/ewkeyy">ELI5: What is the difference between a forward and backwards proxy?</a>
+<ul>
+<li>Forward proxy is client proxy, reverse proxy is server proxy.
+<ul>
+<li>Forward proxy is for blocking, filtering, timing content for client machine. Servers dont care about that.</li>
+<li>Reverse proxy is for load balancing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/saucelabs/forwarder/"><code>forwarder</code> MITM proxy with PAC support. It's suitable for debugging, intercepting and manipulating HTTP traffic. It's used as a core component of Sauce Labs Sauce Connect Proxy.</a>
+<ul>
+<li>which is a forward proxy by definition.</li>
+</ul>
+</li>
+<li><a href="https://github.com/StalkR/dns-reverse-proxy">StalkR/dns-reverse-proxy: DNS Reverse Proxy</a>
+<ul>
+<li>which route <strong>human readable URL</strong> into IP address of what you specified. normally it would be from URL to whatever default is.</li>
+<li>Common name:<a href="https://wikipedia.org/wiki/Reverse_DNS_lookup">Reverse DNS lookup</a>
+<ul>
+<li><a href="https://serverfault.com/questions/41064/whats-the-command-line-utility-in-windows-to-do-a-reverse-dns-look-up">domain name system - What's the command-line utility in Windows to do a reverse DNS look-up?</a>
+<ul>
+<li>lots of them <code>dig</code>, <code>nslookup</code>,..</li>
+</ul>
+</li>
+<li><a href="https://unix.stackexchange.com/questions/327165/is-dig-ptr-a-valid-way-to-perform-a-reverse-dns-query#327236">Is <code>dig ptr</code> a valid way to perform a reverse DNS query?</a></li>
+<li>it's <code>dig -x</code> to make a reverse DNS query.</li>
+</ul>
+</li>
+<li><a href="https://wpvip.com/blog/dns-reverse-proxy/">Pointing DNS Directly vs. Reverse Proxy | WordPress VIP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/jay7x/etc-hosts-proxy">Stop changing <code>/etc/hosts</code> file, Use <code>etc-hosts-proxy</code></a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:50:54 SEAST 2026] <a href="https://serverfault.com/questions/624670/redirect-dns-requests-with-openwrt">Redirect DNS requests with OpenWrt - Server Fault</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>FQDN: Fully qualified domain name</title><category>acronym</category><category>definition</category><category>dns</category><pubDate>2026-10-15 10:48:57 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Fully_qualified_domain_name">FQDN: Fully qualified domain name</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`rk3326_core_builds` Script for building various cores and emulators for rk3326 devices</title><category>firmware</category><category>linux</category><category>sbc</category><pubDate>2026-10-15 10:46:18 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/christianhaitian/rk3326_core_builds"><code>rk3326_core_builds</code> Script for building various cores and emulators for rk3326 devices</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/radxa-build/rock-pi-s">ROCK Pi S RK3308</a>
+<ul>
+<li><a href="https://radxa.com/products/rockpi/pis">Radxa ROCK Pi S</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/pollen-robotics/microduck"><code>microduck</code> Tiny biped duck robot 🦆</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> 299/pc : <a href="https://docs.radxa.com/en/zero/zero3?model=zero-3w">Radxa ZERO 3W | Radxa Docs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://radxa.com/products/zeros/zero3w">Radxa ZERO 3W and ZERO 3E (PoE hat needed)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:46:18 SEAST 2026] #cicd #sbc <a href="https://docs.radxa.com/en/zero/zero3/apps-deployment/opencv"><code>OpenCV</code> | Radxa Docs</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>China’s 985, 211 &amp; Double First-Class Universities (2026 List)</title><category>china</category><category>meta</category><pubDate>2026-10-15 10:21:01 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://olachina.org/chinas-985-and-211-universities/">China’s 985, 211 &amp; Double First-Class Universities (2026 List)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -66,346 +387,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:13:21 SEAST 2026] <a href="https://community.cisco.com/t5/network-security/access-control-list-to-block-ip-cameras/td-p/2610346">Access Control List to block IP cameras - Cisco Community</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`typst`</title><category>cli</category><category>editor</category><category>nightly</category><category>typesetting</category><pubDate>2026-10-15 09:57:07 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/typst/typst"><code>typst</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#wasm #math/formula <a href="https://github.com/mitex-rs/mitex"><code>mitex</code> LaTeX support for Typst, powered by Rust and WASM</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog: <a href="https://lobste.rs/s/ea6dik/typst_0_14_now_accessible">Typst 0.14: Now accessible</a></li>
-</ul>
-</li>
-<li><a href="https://lobste.rs/s/fkoa80/typst_0_15_contains_multitudes">Typst 0.15 contains multitudes</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: modern and fast.</li>
-<li>Con: not really related to my field. Unless I work on LaTeX?</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  <a href="https://news.ycombinator.com/item?id=38354422"><code>typst</code>, modern alternative of <code>LaTeX</code></a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/fenjalien/obsidian-typst">the obsidian plugin.</a>
-<ul>
-<li>#affiliate <a href="https://github.com/qjcg/awesome-typst">some other affiliated program.</a></li>
-<li>#ide #cli <a href="https://github.com/quarto-dev/quarto-cli"><code>quarto-cli</code>, which help make publishing paper integrated with <code>pandoc</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Using <code>markdown</code> and can be mixed with <code>typst</code> to create papers.</li>
-</ul>
-</li>
-<li>#blog: <a href="https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/">1.5+ million PDFs in 25 minutes - Zerodha Tech Blog</a>
-<ul>
-<li>inspire people to make invoice/contract automation pipeline = <code>tasqueue</code> -&gt; <code>typst</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-22 06:59:14 PM] #format/svg #graphic
-<ul>
-<li><a href="https://github.com/typst/svg2pdf"><code>svg2pdf</code> Converts SVG files to PDF.</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/LegNeato/mdbook-typst">mdbook-typst mdBook backend to output Typst markup, pdf, png, or svg</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>resvg</code> and <code>cairosvg</code></li>
-</ul>
-</li>
-<li>#blog <a href="https://lobste.rs/s/1iwyg7/til_helix_typst_are_match_made_heaven">TIL that Helix and Typst are a match made in heaven</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Sep 19 15:52:18 2026] <a href="https://lobste.rs/s/j4oyxa/typst_makes_big_strides">Typst makes big strides</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>quarkdown</code></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 09:57:07 SEAST 2026] #typst <a href="https://github.com/woodruffw/github-universe-2026">Presentation Slides for GitHub Universe 2026</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Opencode` AI coding agent, built for the terminal</title><category>AI</category><category>cli</category><category>programming</category><pubDate>2026-10-15 08:18:57 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=44482504"><code>Opencode</code> AI coding agent, built for the terminal</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>aider</code> alternative.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2026-01-18 09:17:24 AM] <a href="https://github.blog/changelog/2026-01-16-github-copilot-now-supports-opencode/">GitHub Copilot now supports OpenCode - GitHub Changelog</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#news <a href="https://news.ycombinator.com/item?id=46013935">Agent design is still hard</a>
-<ul>
-<li>Consensus right now is SOTA will shift things again.. dont try to minmax things right now.</li>
-<li>#technologia kind of shit.</li>
-</ul>
-</li>
-<li>#blog <a href="https://news.ycombinator.com/item?id=46933223">Eight more months of agents</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://one.google.com/ai?g1_landing_page=70">Google One Plans</a>
-<ul>
-<li>time to jumpship? it's 147k/mo (7usd/mo). Pro is 21usd/mo.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 08:18:57 SEAST 2026] #discussion #annoucement <a href="https://news.ycombinator.com/item?id=50094994">OpenCode 2.0</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`sops` managing secrets</title><category>auth/pgp</category><category>backend</category><category>cicd</category><category>cloud</category><category>format/json</category><pubDate>2026-10-15 07:27:00 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/getsops/sops"><code>sops</code> managing secrets</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Mic92/sops-nix#use-with-gpg-instead-of-ssh-keys">sops-nix secret provisioning for NixOS based on sops</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://boranuzun.github.io/homelab-docs/encryption/how-to-use-sops-age/">How to use <code>SOPS</code> + <code>age</code> | homelab-docs</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-17 09:10:53]: I need to edit pgp/gpg files. Can use this with pgp.
-<ul>
-<li><code>gpg</code> is in scoop. it's also embedded in msys and git bash, etc...</li>
-<li>#mail : <a href="https://proton.me/support/pgp-key-management">Key management | Proton</a>
-<ul>
-<li>with PGP keys.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #encode #filesystem : <a href="https://github.com/FiloSottile/age"><code>age</code> encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://getsops.io/docs/usage/identities/age/"><code>Age</code> | SOPS: Secrets OPerationS</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 07:27:00 SEAST 2026] <a href="https://github.com/str4d/rage"><code>rage</code> simple, secure and modern file encryption tool (and Rust library) with small explicit keys, no config options, and UNIX-style composability.</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust #python/wrapper : <a href="https://github.com/woodruffw/pyrage"><code>pyrage</code>: Python bindings for rage (<code>age</code> in Rust)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</title><category>rust</category><category>tauri</category><category>web/app</category><pubDate>2026-10-14 08:29:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Uninen/tauri-vue-template">tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 20:29:51 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50060606">FCSS 2: Utility CSS that reads like CSS</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What agents mean for Rust (and vice versa)</title><category>ai</category><category>rust</category><pubDate>2026-10-14 08:28:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50084416">What agents mean for Rust (and vice versa)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>better install fonts through scoop</title><category>typography</category><pubDate>2026-10-14 07:25:39 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://scoop.sh/#/apps?q=iosevka">better install fonts through scoop</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Just like this.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://typeof.net/Iosevka/customizer#:~:text=%E2%88%91-,03,-Ligations">Iosevka Customizer</a></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: take less space than normal for me. I really like narrow fonts.</li>
-<li>Con: idk. weird display visual glitch maybe, #tui app normally target cascadia code/consolas since they are normally everywhere.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>scoop</code> , just wander around the nerd font repo.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 19:25:39 SEAST 2026] #discussion <a href="https://news.ycombinator.com/item?id=50084240">Iosevka is an open-source, sans-serif and slab-serif, monospace font</a>
-<ul>
-<li>Iosevka has been my main font since forever actually.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`kicad-template`</title><category>cicd</category><category>kicad</category><category>template</category><pubDate>2026-10-14 06:52:17 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Ihysol/kicad-template"><code>kicad-template</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I have roll my own template though.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain"># for Windows
-cp ./KiCad-Template ~\OneDrive\Documents\KiCad\9.99\template -Recurse -Force
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/nguyen-v/KDT_Hierarchical_KiBot"><code>KDT_Hierarchical_KiBot</code> CI/CD automated workflow template for KiCad</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/Squantor/templates_kicad">Kicad templates that I use regularly</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 18:52:17 SEAST 2026] <a href="https://github.com/INTI-CMNB/KiBot"><code>KiBot</code>: KiCad automation utility</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.scd31.com/posts/automating-my-hardware-workflow">Improving My Hardware Workflow With CI and Nix | The Cat House</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Electrolysis</title><category>ee</category><pubDate>2026-10-14 06:49:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Electrolysis">Electrolysis</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.scd31.com/posts/diy-hair-electrolysis-machine">I Built My Own Hair Electrolysis Machine | The Cat House</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What I&apos;ve been seeing lately • mei&amp;.puppycat.house</title><category>llm</category><category>programming</category><pubDate>2026-10-14 06:46:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mei.puppycat.house/w/seeing-261010">What I've been seeing lately • mei&amp;.puppycat.house</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#service <a href="https://fluxer.app/blog/roadmap-2026">Roadmap 2026 | Fluxer</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Homoiconicity</title><category>methodology</category><pubDate>2026-10-14 06:30:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Homoiconicity">Homoiconicity</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/4jfegi/nixpkgs_for_frontend_impaired">Nixpkgs for the frontend impaired</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>PathAndLine quick copy</title><category>extension</category><category>keybinding</category><category>vs</category><pubDate>2026-10-14 06:13:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/groutoutlook/PathAndLine">PathAndLine quick copy</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Markdown link format enabled so AI can understand quicker.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">EditorContextMenus.CodeWindow.Copyfullpathandlinenumber</span></span><span class="meta function-call arguments shell">  == <span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="meta function-call shell"><span class="variable function shell">ctrl+w</span></span><span class="meta function-call arguments shell"> ctrl+p</span><span class="punctuation section group end shell">`</span></span></span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://marketplace.visualstudio.com/items?itemName=NickHarrington.CopyPathAndLine">Copy Path and Line - Visual Studio Marketplace</a>
-<ul>
-<li><a href="https://github.com/nickjharr/CopyPathAndLine"><code>CopyPathAndLine</code> Visual Studio extension for easily copying file paths and line numbers.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 18:13:38 SEAST 2026] <a href="https://github.com/groutoutlook/copyPath"><code>copyPath</code>, and Line, in VScode</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to produce something like <code>d:/ProgramDataD/MiscLang/24.01-PowerShell/proj/powershellConfig/Microsoft.PowerShell_profile.ps1:296:32-307:1</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Cancel CMake Cache Generation by `ctrl+q` -&gt; type your needed query changes in here.</title><category>build/cmake</category><category>vs</category><pubDate>2026-10-14 05:09:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Cancel CMake Cache Generation by <code>ctrl+q</code> -&gt; type your needed query changes in here.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> my vulkan work reach a record high 1012s CMake cache gen time..</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>TXS0108E data sheet, product information and support | TI.com</title><category>analog</category><category>signal/ttl</category><pubDate>2026-10-14 04:29:50 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.ti.com/product/TXS0108E">TXS0108E data sheet, product information and support | TI.com</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/3VqMd7gsMR-yQkgDbE9vEw">TXS/TXB电平转换器最容易踩的坑：负载太重</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>powershell `yaml` module</title><category>module</category><category>powershell</category><category>yaml</category><pubDate>2026-10-14 03:32:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/cloudbase/powershell-yaml">powershell <code>yaml</code> module</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/a/72219236/22954711">guide to use it properly</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> alias <code>cfy</code>/<code>cty</code>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$os_list = (convertfrom-yaml -yaml (get-content -raw ~/.config/jrnl/jrnl.yaml))
-$os_list = convertto-yaml $os_list -jsoncompatible
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:32:46 SEAST 2026] I also alias <code>ConvertFrom-Json</code>/<code>ConvertTo-Json</code> to <code>cfj</code>/<code>ctj</code></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>The United Kingdom generates less electricity per person than in the 1970s</title><category>news/uk</category><category>social</category><pubDate>2026-10-14 03:23:04 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50072994">The United Kingdom generates less electricity per person than in the 1970s</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Jevons_paradox">Jevons paradox</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>IDNA : Internationalized domain name *in Applications*</title><category>dns</category><category>network</category><category>uri</category><pubDate>2026-10-14 03:08:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Internationalized_domain_name">IDNA : Internationalized domain name <em>in Applications</em></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/whois-server-list/whois-server-list">whois-server-list for all top level domains.</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://superuser.com/questions/1869878/why-do-certain-tld-do-not-have-support-for-a-whois-query">Why do certain TLD do not have support for a WHOIS query?</a>
-<ul>
-<li>because of <a href="https://wikipedia.org/wiki/Registration_Data_Access_Protocol">RDAP : Registration Data Access Protocol</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #library #rust <a href="https://github.com/ada-url/idna-rust"><code>idna-rust</code> written entirely in Rust</a>
-<ul>
-<li>#cpp #library <a href="https://github.com/ada-url/idna"><code>idna</code> implementing the to_ascii and to_unicode function</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#cli <a href="https://github.com/saidutt46/domain-check"><code>domain-check</code> Rust library &amp; CLI for domain checks using RDAP &amp; WHOIS</a>
-<ul>
-<li>#nightly for this.</li>
-</ul>
-</li>
-<li>#standard : <a href="https://blog.apnic.net/2021/04/02/is-rdap-ready-to-replace-whois/">Is RDAP ready to replace whois? | APNIC Blog</a>
-<ul>
-<li><a href="https://www.ietf.org/archive/id/draft-ymbk-opsawg-rpsl-extref-02.html">Generalized Routing Policy Specification LanguageRPSL:  External Reference</a></li>
-</ul>
-</li>
-<li>#dns <a href="https://github.com/funilrys/PyFunceble"><code>PyFunceble</code> check the availability or syntax of domain, IP or URL.</a>
-<ul>
-<li>well for sanity check of something...? idk. this one is useless in windows tho.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:08:43 SEAST 2026] #meta <a href="https://wikipedia.org/wiki/List_of_Internet_top-level_domains">List of Internet top-level domains</a></li>
 </ul>
 </li>
 </ul>
