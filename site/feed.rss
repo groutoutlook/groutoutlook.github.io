@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>FOTA updates on nRF54L Series devices</title><category>embed</category><category>mcu/nordic</category><category>nrf54</category><category>prod/update/ota</category><category>sdk</category><pubDate>2026-10-15 07:35:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Splunk On-Call | Splunk</title><category>devop</category><category>netw</category><category>notification</category><category>sysadmin</category><pubDate>2026-10-15 08:05:58 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.splunk.com/en_us/products/on-call.html">Splunk On-Call | Splunk</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> customer service for software related issues. the job for this is called  SRE: Site Reliability Engineering</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/sysadmin/comments/vr9hsm">What's important to you to have in an on call policy?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> I think I myself do oncall a whole lot. for this fucking startup mom-and-pop kind of work.
+<ul>
+<li>#discussion <a href="https://www.reddit.com/r/sysadmin/comments/l0l88f">On-call burns me out more than my actual job</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/PagerDuty">PagerDuty</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Dead man switch which prompt me a disarm code every 3 weeks...</title><category>idea</category><category>programming</category><category>psychology</category><category>social</category><category>topic</category><pubDate>2026-10-15 07:58:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Dead man switch which prompt me a disarm code every 3 weeks...
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> at which point the sleep timer is reset until the next &quot;arming&quot;. There are reminders at 50%, 25%, and 10% time remaining.
+If I fail to disarm it in time, it will run an external script.
+In my specific external script, it sends out &quot;last words of love&quot; via SMTP and my FastMail account to people I care most about.
+It also sets up some emergency access to my hosts for a friend of mine who has the technical knowledge
+and who I would trust to &quot;handle my digital remains&quot;.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> one of that is <a href="https://demumu.io/">Demumu — Daily Check-Ins &amp; Dead Man's Switch for Living Alone</a>
+<ul>
+<li>or <a href="https://www.snugsafe.com/all-posts/snug-is-a-dead-man-switch-app">Snug is a Dead Man Switch app — Snug Safety</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> suddenly it give me good inspiration.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://tildes.net/~comp/1ty3/what_programming_technical_projects_have_you_been_working_on">What programming/technical projects have you been working on? - ~comp - Tildes</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.cyberciti.biz/security/how-to-unlock-luks-using-dropbear-ssh-keys-remotely-in-linux/">unlock LUKS using Dropbear SSH keys remotely in Linux - nixCraft</a></li>
+<li><a href="https://discourse.ubuntu.com/t/transition-from-dropbear-initramfs-to-dracut-crypt-ssh/78276">replace dropbear to dracut-crypt</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 19:58:39 SEAST 2026] <a href="https://healthchecks.io/about/">About Healthchecks.io, also a deadman switch service</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>FOTA updates on nRF54L Series devices</title><category>embed</category><category>mcu/nordic</category><category>nrf54</category><category>prod/update/ota</category><category>sdk</category><pubDate>2026-10-15 07:35:34 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html">FOTA updates on nRF54L Series devices</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -394,30 +437,6 @@ Support for ch570, ch572, ch571, ch573, ch581, ch582, ch583, ch584, ch585 and ch
 </ul>
 ]]></content:encoded></item><item><title>`scroll` i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</title><category>gui</category><category>linux</category><category>wayland/compositor</category><category>windows</category><pubDate>2026-10-15 01:26:41 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/dawsers/scroll"><code>scroll</code> i3 compatible Wayland compositor (sway) with a PaperWM layout like niri or hyprscroller</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>n-tier/Multitier architecture</title><category>csci</category><category>definition</category><category>networking</category><pubDate>2026-10-15 12:16:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Multitier_architecture">n-tier/Multitier architecture</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`wasm2go` Wasm to Go translator</title><category>golang</category><category>lang</category><category>sdk</category><category>wasm</category><pubDate>2026-10-15 12:14:56 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/ncruces/wasm2go"><code>wasm2go</code> Wasm to Go translator</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
