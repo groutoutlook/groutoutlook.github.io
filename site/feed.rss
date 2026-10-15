@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Management API v3 - Healthchecks.io</title><category>curl</category><category>http</category><category>wapi</category><category>web/service</category><pubDate>2026-10-15 07:07:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>FOTA updates on nRF54L Series devices</title><category>embed</category><category>mcu/nordic</category><category>nrf54</category><category>prod/update/ota</category><category>sdk</category><pubDate>2026-10-15 07:35:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html">FOTA updates on nRF54L Series devices</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#doc/official : <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_basics.html">Introduction to KMU key provisioning</a>
+<ul>
+<li>#acronym Hardware KMU : Key Management Unit. This is the act of ID-ing IC and MCU.
+<ul>
+<li>#infosec purpose mainly</li>
+</ul>
+</li>
+<li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html">Performing KMU provisioning</a></li>
+</ul>
+</li>
+<li>#acronym #bootloader <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/dfu_config.html">Configuring DFU: Device Firmware Update and MCUboot</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> serious contender to Espressif chips due to sheer enormous amount of software stack.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#pcb for nRF54H20 : <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54h/ug_nrf54h20_custom_pcb.html">Configuring your application for a custom PCB</a>
+<ul>
+<li>#blob #config <a href="https://devzone.nordicsemi.com/f/nordic-q-a/124647/bicr-file-for-custom-boards">BICR file for custom boards - Nordic Q&amp;A - Nordic DevZone - Nordic DevZone</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> hardware config to interacts with board: power schemes, oscillators, GPIO drive, etc...</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a JSON file... which consumed by Nordic's IDE/SDK utils.
+<ul>
+<li>similar to User Option bytes in other ARM chips, but more flexible and wider scope.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 19:35:34 SEAST 2026] #web/service #monitor <a href="https://healthchecks.io/docs/autoprovisioning/">Auto Provisioning - Healthchecks.io</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Management API v3 - Healthchecks.io</title><category>curl</category><category>http</category><category>wapi</category><category>web/service</category><pubDate>2026-10-15 07:07:05 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://healthchecks.io/docs/api/">Management API v3 - Healthchecks.io</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -7,7 +51,10 @@
 <ul>
 <li>#powershell <a href="https://healthchecks.io/docs/powershell/">Monitor PowerShell Scripts with Healthchecks.io</a>
 <ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>iwr &lt;https://hc-ping.com/0d88e09f-c06f-4f1a-91f5-b97a10d38bb1</code>&gt;</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">iwr https://hc-ping.com/0d88e09f-c06f-4f1a-91f5-b97a10d38bb1
+</span></code></pre>
+</li>
 </ul>
 </li>
 </ul>
@@ -378,27 +425,6 @@ Support for ch570, ch572, ch571, ch573, ch581, ch582, ch583, ch584, ch585 and ch
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Route differential pairs of traces for USB and the likes..</title><category>kicad</category><category>pcbnew</category><pubDate>2026-10-15 12:12:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Route differential pairs of traces for USB and the likes..
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you need to assign netclass properly of course. Often raw dog the trace width making me forget this.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #video <a href="https://youtu.be/ABJs4LKFSbA?t=59s">design 90 ohm differential traces for USB signals in KiCad. - YouTube</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://youtu.be/pXSK9KlNsW4?t=738s">Do Differential Pairs Need Ground? Are you sure? | Explained by Eric Bogatin - YouTube</a>
-<ul>
-<li>and almost every other kinds of differential impedance (diff/common impedance, odd/even mode).</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 12:12:41 SEAST 2026] <a href="https://resources.altium.com/p/transmission-line-impedance-measurement-even-vs-odd-mode">Transmission Line Impedance Measurement: Even vs. Odd Mode | Signal Integrity</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.testandmeasurementtips.com/how-physics-relates-signal-integrity-power-integrity-and-emc/">How physics relates signal integrity, power integrity, and EMC</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
