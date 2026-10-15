@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>TIL: Console.ReadKey Method (System)</title>
+        <title>TIL: &#x60;Console.ReadKey&#x60; Method (System)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/syntect.css">
         <link rel="stylesheet" href="/style.css">
@@ -17,12 +17,17 @@
         </nav>
 
         <header class="til-header">
-            <h1 class="til-title">Console.ReadKey Method (System)</h1>
+            <h1 class="til-title">&#x60;Console.ReadKey&#x60; Method (System)</h1>
         </header>
 
         <div class="til-subheader">
             <span class="til-date">2024-09-12 06:28:17 PM</span>
             <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/config">
+                        <span>config</span>
+                    </a>
+                </li>
                 <li class="topic-list-tag">
                     <a class="til-tag" href="/category/csharp">
                         <span>csharp</span>
@@ -31,6 +36,21 @@
                 <li class="topic-list-tag">
                     <a class="til-tag" href="/category/dotnet">
                         <span>dotnet</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/powershell">
+                        <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/scripting">
+                        <span>scripting</span>
                     </a>
                 </li>
                 <li class="topic-list-tag">
@@ -49,13 +69,32 @@
 
         <div class="til-content">
             <ul>
-<li><a href="https://learn.microsoft.com/en-us/dotnet/api/system.console.readkey?view=net-8.0">Console.ReadKey Method (System)</a>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/api/system.console.readkey?view=net-8.0"><code>Console.ReadKey</code> Method (System)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->
-<ul>
-<li>#powershell : <a href="https://github.com/PowerShell/PSReadLine/issues/906#issuecomment-1409151597">this issue of binding <code>Ctrl+[</code></a></li>
-</ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> use <code>Oem[0-9]</code> code instead.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">$SquareBracketsParameter = @{
+    # PSReadLine identifies Ctrl+[ as Ctrl+Oem4 on Windows consoles.
+    Key              = &#39;Ctrl+Oem4&#39;
+    BriefDescription = &#39;brackets the selection or nearest token&#39;
+    LongDescription  = &#39;`ctrl+[` Wraps selected text in square brackets; if no selection, wraps the token nearest to the cursor. Cursor is placed after the closing bracket.&#39;
+    ScriptBlock      = {
+        param($key, $arg)
+        Invoke-PSReadLineWrapToken -Open &#39;[&#39; -Close &#39;]&#39;
+    }
+}
+
+$BacktickParameter = @{
+    # PSReadLine read this as Ctrl+shift+`
+    Key              = &#39;Ctrl+Shift+Oem3&#39;
+    BriefDescription = &#39;backtick the selection or nearest token&#39;
+    LongDescription  = &#39;`Ctrl+shift+backtick` Wraps selected text in backticks; if no selection, wraps the token nearest to the cursor. Cursor is placed after the closing backtick.&#39;
+    ScriptBlock      = {
+        param($key, $arg)
+        Invoke-PSReadLineWrapToken -Open &#39;`&#39; -Close &#39;`&#39;
+    }
+}
+</span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
@@ -64,6 +103,7 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #powershell : <a href="https://github.com/PowerShell/PSReadLine/issues/906#issuecomment-1409151597">this issue of binding <code>Ctrl+[</code></a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>

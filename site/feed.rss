@@ -1,4 +1,188 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</title><category>rust</category><category>tauri</category><category>web/app</category><pubDate>2026-10-14 08:29:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>China’s 985, 211 &amp; Double First-Class Universities (2026 List)</title><category>china</category><category>meta</category><pubDate>2026-10-15 10:21:01 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://olachina.org/chinas-985-and-211-universities/">China’s 985, 211 &amp; Double First-Class Universities (2026 List)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/kKmA3ezhoBI0ynLfkyXa9g">Weixin Official Accounts Platform</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Sun_Yat-sen">Sun Yat-sen</a>
+<ul>
+<li>and SYSU is the most famous one in Guangdong.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`FreeCoAP` CoAP client, CoAP server and HTTP/CoAP proxy with full DTLS support.</title><category>infosec</category><category>libc</category><category>library</category><category>zephyr</category><pubDate>2026-10-15 10:15:17 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/keith-cullen/FreeCoAP"><code>FreeCoAP</code> CoAP client, CoAP server and HTTP/CoAP proxy with full DTLS support.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.zephyrproject.org/latest/services/connectivity/networking/api/coap_client.html">CoAP client — Zephyr Project Documentation</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>GATT Server API - ESP32-C6 - — ESP-IDF Programming Guide v5.5.1 documentation</title><category>ble</category><category>esp32c6</category><category>esp32s3</category><category>sdk</category><pubDate>2026-10-15 10:14:12 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/v5.5.1/esp32c6/api-reference/bluetooth/esp_gatts.html">GATT Server API - ESP32-C6 - — ESP-IDF Programming Guide v5.5.1 documentation</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> those API is identical between these 2 chips.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/espressif/esp-idf/blob/master/examples/bluetooth/bluedroid/ble/ble_spp_client/README.md">ESP32 SPP GATT CLIENT demo</a>
+<ul>
+<li>#firmware #mqtt <a href="https://github.com/shmuelzon/esp32-ble2mqtt"><code>esp32-ble2mqtt</code> BLE GATT to MQTT bridge on ESP32</a>  - Reason:</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://bluekitchen-gmbh.com/simplifying-gatt-client-implementations/">Simplifying GATT Client Implementations – BlueKitchen</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/522100/latency-of-ble-gatt-read-value-operation">bluetooth low energy - Latency of BLE GATT Read Value Operation</a></li>
+<li><a href="https://github.com/moschiel/esp_mesh_iot">Mesh network of multiple ESP32 devices with ESP-IDF for local server use.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:14:12 SEAST 2026] #firmware #library <a href="https://github.com/golioth/pouch"><code>pouch</code> non-IP protocol for communication between devices and cloud services</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Workload mTLS with ACME &amp; Go</title><category>acronym</category><category>golang</category><category>infosec</category><category>proxy</category><pubDate>2026-10-15 10:13:21 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://blog.daknob.net/workload-mtls-with-acme/">Workload mTLS with ACME &amp; Go</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> operating a PKI (WebPKI) for ACL.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45559857">Wireguard FPGA</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#hardware : <a href="https://www.yubico.com/products/yubikey-5-overview/">Discover YubiKey 5 | Authentication for Secure Login | Yubico</a></li>
+<li><a href="https://github.com/golioth/signy"><code>signy</code> Signed URLs for small devices.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> a guy said MQTT + mTLS for fleet IoT, yeah.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:13:21 SEAST 2026] <a href="https://community.cisco.com/t5/network-security/access-control-list-to-block-ip-cameras/td-p/2610346">Access Control List to block IP cameras - Cisco Community</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`typst`</title><category>cli</category><category>editor</category><category>nightly</category><category>typesetting</category><pubDate>2026-10-15 09:57:07 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/typst/typst"><code>typst</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#wasm #math/formula <a href="https://github.com/mitex-rs/mitex"><code>mitex</code> LaTeX support for Typst, powered by Rust and WASM</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog: <a href="https://lobste.rs/s/ea6dik/typst_0_14_now_accessible">Typst 0.14: Now accessible</a></li>
+</ul>
+</li>
+<li><a href="https://lobste.rs/s/fkoa80/typst_0_15_contains_multitudes">Typst 0.15 contains multitudes</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: modern and fast.</li>
+<li>Con: not really related to my field. Unless I work on LaTeX?</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  <a href="https://news.ycombinator.com/item?id=38354422"><code>typst</code>, modern alternative of <code>LaTeX</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/fenjalien/obsidian-typst">the obsidian plugin.</a>
+<ul>
+<li>#affiliate <a href="https://github.com/qjcg/awesome-typst">some other affiliated program.</a></li>
+<li>#ide #cli <a href="https://github.com/quarto-dev/quarto-cli"><code>quarto-cli</code>, which help make publishing paper integrated with <code>pandoc</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Using <code>markdown</code> and can be mixed with <code>typst</code> to create papers.</li>
+</ul>
+</li>
+<li>#blog: <a href="https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/">1.5+ million PDFs in 25 minutes - Zerodha Tech Blog</a>
+<ul>
+<li>inspire people to make invoice/contract automation pipeline = <code>tasqueue</code> -&gt; <code>typst</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-22 06:59:14 PM] #format/svg #graphic
+<ul>
+<li><a href="https://github.com/typst/svg2pdf"><code>svg2pdf</code> Converts SVG files to PDF.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/LegNeato/mdbook-typst">mdbook-typst mdBook backend to output Typst markup, pdf, png, or svg</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>resvg</code> and <code>cairosvg</code></li>
+</ul>
+</li>
+<li>#blog <a href="https://lobste.rs/s/1iwyg7/til_helix_typst_are_match_made_heaven">TIL that Helix and Typst are a match made in heaven</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Sep 19 15:52:18 2026] <a href="https://lobste.rs/s/j4oyxa/typst_makes_big_strides">Typst makes big strides</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>quarkdown</code></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 09:57:07 SEAST 2026] #typst <a href="https://github.com/woodruffw/github-universe-2026">Presentation Slides for GitHub Universe 2026</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Opencode` AI coding agent, built for the terminal</title><category>AI</category><category>cli</category><category>programming</category><pubDate>2026-10-15 08:18:57 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=44482504"><code>Opencode</code> AI coding agent, built for the terminal</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>aider</code> alternative.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2026-01-18 09:17:24 AM] <a href="https://github.blog/changelog/2026-01-16-github-copilot-now-supports-opencode/">GitHub Copilot now supports OpenCode - GitHub Changelog</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#news <a href="https://news.ycombinator.com/item?id=46013935">Agent design is still hard</a>
+<ul>
+<li>Consensus right now is SOTA will shift things again.. dont try to minmax things right now.</li>
+<li>#technologia kind of shit.</li>
+</ul>
+</li>
+<li>#blog <a href="https://news.ycombinator.com/item?id=46933223">Eight more months of agents</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://one.google.com/ai?g1_landing_page=70">Google One Plans</a>
+<ul>
+<li>time to jumpship? it's 147k/mo (7usd/mo). Pro is 21usd/mo.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 08:18:57 SEAST 2026] #discussion #annoucement <a href="https://news.ycombinator.com/item?id=50094994">OpenCode 2.0</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`sops` managing secrets</title><category>auth/pgp</category><category>backend</category><category>cicd</category><category>cloud</category><category>format/json</category><pubDate>2026-10-15 07:27:00 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/getsops/sops"><code>sops</code> managing secrets</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Mic92/sops-nix#use-with-gpg-instead-of-ssh-keys">sops-nix secret provisioning for NixOS based on sops</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://boranuzun.github.io/homelab-docs/encryption/how-to-use-sops-age/">How to use <code>SOPS</code> + <code>age</code> | homelab-docs</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-17 09:10:53]: I need to edit pgp/gpg files. Can use this with pgp.
+<ul>
+<li><code>gpg</code> is in scoop. it's also embedded in msys and git bash, etc...</li>
+<li>#mail : <a href="https://proton.me/support/pgp-key-management">Key management | Proton</a>
+<ul>
+<li>with PGP keys.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #encode #filesystem : <a href="https://github.com/FiloSottile/age"><code>age</code> encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://getsops.io/docs/usage/identities/age/"><code>Age</code> | SOPS: Secrets OPerationS</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 07:27:00 SEAST 2026] <a href="https://github.com/str4d/rage"><code>rage</code> simple, secure and modern file encryption tool (and Rust library) with small explicit keys, no config options, and UNIX-style composability.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust #python/wrapper : <a href="https://github.com/woodruffw/pyrage"><code>pyrage</code>: Python bindings for rage (<code>age</code> in Rust)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</title><category>rust</category><category>tauri</category><category>web/app</category><pubDate>2026-10-14 08:29:51 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/Uninen/tauri-vue-template">tauri-vue-template: Tauri 2 + Vue (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -222,157 +406,6 @@ $os_list = convertto-yaml $os_list -jsoncompatible
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:08:43 SEAST 2026] #meta <a href="https://wikipedia.org/wiki/List_of_Internet_top-level_domains">List of Internet top-level domains</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What is HTTP &quot;Host&quot; header?</title><category>ip/port</category><category>network</category><pubDate>2026-10-14 03:03:56 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/43156023/what-is-http-host-header">What is HTTP &quot;Host&quot; header?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> host header is for specifying host + port.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> when you dont have too many IP for many websites. This muxes for you.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/dotnet/comments/wilzd0">Are you using IIS on your production server?</a>
-<ul>
-<li><a href="https://zamkblog.wordpress.com/2024/08/20/cgi-with-powershell-scripts-on-iis/">CGI with PowerShell Scripts on IIS – Zam Tech Blog</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog : <a href="https://simonh.uk/2023/08/19/why-cgi-programming-is-still-useful-in-2023/">simonh.uk :: Why CGI Programming is Still Useful in 2023</a>
-<ul>
-<li>CGI or even FastCGI is considering obsoleted nowadays.
-<ul>
-<li>#rust #blog <a href="https://jacob.gold/posts/serving-half-billion-requests-with-rust-cgi/">Serving a half billion requests per day with Rust + CGI | Jake Gold</a></li>
-</ul>
-</li>
-<li>#nginx : <a href="https://news.ycombinator.com/item?id=45070602">Nginx-CGI brings support for CGI to <code>nginx</code> and <code>angie</code></a>
-<ul>
-<li>#competitor is <a href="https://github.com/openresty/openresty"><code>openresty</code> Web Platform Based on Nginx and LuaJIT</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI : Web Server Gateway Interface</a>
-<ul>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #python <a href="https://github.com/pallets/werkzeug"><code>werkzeug</code> WSGI web application library.</a>
-<ul>
-<li>#rust: <a href="https://github.com/emmett-framework/granian"><code>granian</code> Rust HTTP server for Python applications</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 13 18:13:06 SEAST 2026] <a href="https://turbo.readthedocs.io/en/latest/">Introduction <code>Turbo.lua</code> 2.1.2 documentation</a>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=50058528">A Modern Web App in C</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 15:03:56 SEAST 2026] #cpp #library <a href="https://news.ycombinator.com/item?id=50063104"><code>Kcgi</code> – minimal CGI and FastCGI library for C/C++</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>LibreOffice Draw `sdraw` Features</title><category>format/pdf</category><category>libreoffice/draw</category><category>office</category><category>printer</category><pubDate>2026-10-14 01:47:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://help.libreoffice.org/latest/en-US/text/sdraw/main0503.html?DbPAR=DRAW&amp;System=WIN">LibreOffice Draw <code>sdraw</code> Features</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> especially useful if you want to do quick dirty edit just to print something.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>ctrl+shift+-</code> put things to bottom of display z-depth.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`lean4` lean 4 programming language and theorem prover</title><category>compsci</category><category>functional</category><category>language</category><pubDate>2026-10-14 12:51:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/leanprover/lean4"><code>lean4</code> lean 4 programming language and theorem prover</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-10-08 12:23:11 AM] #compsci #meta
-<ul>
-<li><a href="https://proofassistants.stackexchange.com/questions/4274/reduce-type-name-in-lean">lean4 - reduce type name in lean - proof assistants stack exchange</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> cateogory some hyper compsci things.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#blog <a href="https://lean-lang.org/talks/from_z3_to_lean.pdf">z3 to lean</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted -->
-<ul>
-<li>#discussion <a href="https://lobste.rs/s/dixmkp/proof_oriented_programming_f">Proof-oriented Programming in F*</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:51:09 SEAST 2026] #rust #blog <a href="https://lobste.rs/s/6tbd2o/creusot_0_14_0_release_contracts_for_rust">Creusot 0.14.0 release - Contracts for Rust, formally proved</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Ad hominem</title><category>debate</category><pubDate>2026-10-14 12:49:39 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Ad_hominem">Ad hominem</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> attack the person who makes claim rather than the claim</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which is hillariously common in rap music
-<ul>
-<li>#meta: <a href="https://wikipedia.org/wiki/List_of_fallacies">List of fallacies</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/philosophy/comments/j38d2r">How ad hominem arguments can demolish appeals to authority</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://wikipedia.org/wiki/Tu_quoque">Tu quoque</a></li>
-<li>#video <a href="https://youtu.be/xuaHRN7UhRo">Thank You for Smoking (3/5) Movie CLIP - Ice Cream Politics (2005) HD - YouTube</a>
-<ul>
-<li>vanilla or chocolate ice cream scene is this one.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:49:39 SEAST 2026] #linux #nix <a href="https://lix.systems/blog/2026-10-13-lix-2.96-release/">Lix | Announcing Lix 2.96 “Bingsu”</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #food <a href="https://wikipedia.org/wiki/Sundae">Sundae is the original version of #korean's Bingsoo</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Ledger confirms spy chip implant behind wallet crypto thefts</title><category>cryptocurrency</category><category>news</category><category>technologia</category><pubDate>2026-10-14 12:48:16 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50054092">Ledger confirms spy chip implant behind wallet crypto thefts</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`KiPI` power integrity analysis</title><category>simulation</category><pubDate>2026-10-14 12:45:26 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/drewsum/KiPI"><code>KiPI</code> power integrity analysis</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/PCB/comments/1x3q658">KiPI: KiCad PI Solver Plugin</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Ente Locker - Safe space for your most important documents</title><category>document</category><category>storage</category><category>web/service</category><pubDate>2026-10-14 12:42:53 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://ente.com/locker/">Ente Locker - Safe space for your most important documents</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> dropbox but for confidential.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/uiulqe/did_ente_locker_copy_my_code_without">Did Ente Locker copy my code without attribution?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
