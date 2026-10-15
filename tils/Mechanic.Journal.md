@@ -1,1 +1,0 @@
-D:/ProgramDataD/Notes/Obsidian/MainVault/note_algo_lang/Mechanic.Journal.md

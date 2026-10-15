@@ -1,1 +1,0 @@
-D:/ProgramDataD/Notes/Obsidian/MainVault/note_os_windows/WinProgJournal.md

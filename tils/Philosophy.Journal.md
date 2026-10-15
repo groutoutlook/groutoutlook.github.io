@@ -1,1 +1,0 @@
-D:/ProgramDataD/Notes/Obsidian/MainVault/note_Knowledge/Philosophy.Journal.md

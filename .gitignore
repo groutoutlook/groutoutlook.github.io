@@ -1,2 +1,5 @@
 book
 .tiller-build.sha256
+
+# Journal inputs are local links into the Obsidian vault.
+tils/

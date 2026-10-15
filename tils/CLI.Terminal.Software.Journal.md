@@ -1,1 +1,0 @@
-D:/ProgramDataD/Notes/Obsidian/MainVault/note_software/CLI.Terminal.Software.Journal.md
