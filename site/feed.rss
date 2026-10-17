@@ -1,4 +1,239 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`WinUSB_DMA_MJPEG_Camera` WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</title><category>dma</category><category>usb</category><category>windows</category><pubDate>2026-10-17 09:08:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Altruism</title><category>misc</category><category>philosophy</category><pubDate>2026-10-18 12:31:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Altruism">Altruism</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> concern for the well-being, the life, of others, independently of personal benefit or reciprocity.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> FTX's SBF.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.benkuhn.net/downgrading-confidence-earning-give/">Downgrading confidence in earning to give | benkuhn.net</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 00:31:10 2026] <a href="https://news.ycombinator.com/item?id=50132278">Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>GLP-1 may slow biological aging</title><category>ana</category><category>anatomy</category><pubDate>2026-10-18 12:29:00 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50132328">GLP-1 may slow biological aging</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>want to find llvm or clang using cmake, you have to build llvm locally, one way or another.</title><category>build/cmake</category><category>clang</category><category>library</category><category>llvm</category><category>prog</category><pubDate>2026-10-17 11:06:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>want to find llvm or clang using cmake, you have to build llvm locally, one way or another.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and if possible, assign <code>$env:clang_dir;$env:llvm_dir</code>.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can build with ninja and cmake.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cd llvm-project
+md build
+cd build
+set cc cl
+set cxx cl
+cmake -gninja -dllvm_enable_projects=clang ..\llvm
+ninja clang
+ninja clangtooling # ffs...
+ninja checK-clang # optional
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://clang.llvm.org/get_started.html#:~:text=alongside%20visual%20studio-,we%20recommend,-that%20developers%20who">guide</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><code>$home\scoop\apps\llvm\current\lib\clang\20\include</code> is the current <code>libc++</code> in my windows box.</li>
+<li>#build/cmake : also assign <code>$env:cmake_toolchain_file</code> as environment variable since... literally no one need to specify this other than me.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 23:06:19 2026] #ide/vs #cmake <a href="https://learn.microsoft.com/en-us/cpp/build/clang-support-cmake">Clang/LLVM support in Visual Studio CMake projects</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>MSVC compatibility - `Clang-cl`</title><category>buildsystem</category><category>compiler/clang</category><category>cpp</category><pubDate>2026-10-17 11:02:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://clang.llvm.org/docs/MSVCCompatibility.html">MSVC compatibility - <code>Clang-cl</code> </a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">clang-cl /? | bat -lhelp
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Leap second</title><category>chrono</category><category>csci</category><pubDate>2026-10-17 12:30:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Leap_second">Leap second</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #cpp <a href="https://cppreference.com/cpp/chrono/leap_second">std::chrono::leap_second</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`d2` modern diagram scripting language that turns text to diagrams.</title><category>diagram</category><category>golang</category><category>visualize</category><category>web</category><pubDate>2026-10-17 10:52:02 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/terrastruct/d2"><code>d2</code> modern diagram scripting language that turns text to diagrams.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> simpler than <code>mermaid</code>, alternative to every kind of UML. #nightly.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44954524">D2 (text to diagram tool) now supports ASCII renders</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#format : <a href="https://github.com/eclipse-elk/elk"><code>elk</code> Eclipse Layout Kernel - Automatic layout for Java applications.</a>
+<ul>
+<li>... which is used in <code>d2</code> as one of the engine, especially for ASCII diagramming.
+<ul>
+<li>See <a href="https://d2lang.com/blog/ascii/#limitations">ASCII output | D2 Documentation</a></li>
+</ul>
+</li>
+<li>#alternative: <a href="https://github.com/terrastruct/tala#installation"><code>TALA</code> A diagram layout engine designed specifically for software architecture diagrams</a></li>
+</ul>
+</li>
+<li>[2025-06-02 14:50:24] : <a href="https://github.com/danieleades/mdbook-d2"><code>mdbook-d2</code> D2 diagram generator plugin for MdBook</a>
+<ul>
+<li>use with <code>mdbook watch</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:52:02 2026] #blog #introduction <a href="https://shom.dev/posts/20260919_d2-diagramming/">D2 diagramming | shom.dev</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Linus Torvalds and the Supposedly “Garbage Code”</title><category>gossip</category><category>misc</category><category>programming</category><pubDate>2026-10-17 10:48:28 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/0xkiib/linus_torvalds_supposedly_garbage_code">Linus Torvalds and the Supposedly “Garbage Code”</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sashiko.dev/#/stats">Sashiko</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/pb6d8m/linus_torvalds_on_llm_usage_kernel">Linus Torvalds on LLM usage in kernel development</a>
+<ul>
+<li>seems like he does have some changes of hearts then.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#video <a href="https://youtu.be/rH1NTvhvs2w?t=1s">ER2026 Linux and cameras: past, present and future (Laurent Pinchart) - YouTube</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> V4L2 camera input stream processing.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> the guy is an EE + CS engineer... very impressive work.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:48:28 2026] #llm <a href="https://lobste.rs/s/xiq59t/linus_torvalds_on_ai_assisted_kernel">Linus Torvalds on AI-assisted kernel contributions</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`mise` dev tools, env vars, task runner</title><category>cli</category><category>frontend</category><category>manager</category><category>web/dev</category><category>wsdk</category><pubDate>2026-10-17 10:40:53 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/jdx/mise"><code>mise</code> dev tools, env vars, task runner</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Mise</code> can install binaries from github, gitlab, uv, npm, and many more.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> TOML syntax in place of Makefile-like syntax from <code>just</code>.
+<ul>
+<li><code>terraform</code>, <code>docker</code>, ... various of support for webdev, both #backend and frontend.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> some dotfiles guy.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>Managing multiple versions of <code>Python, Ruby, JS/Node, PHP, Golang</code> + a task runner.
+<ul>
+<li>Not really needed for me since I use <code>justfile</code>, but <a href="https://github.com/jdx/mise/issues/3062">someone did migrate.</a></li>
+</ul>
+</li>
+<li>#comparison : there are some similar between <code>mise</code> and <code>just</code>:
+<ul>
+<li>Env vars manage.</li>
+<li>Runner commands/tasks.</li>
+<li>All the similarities end there.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-justfile"><span class="text plain">set dotenv-command := &#39;mise env&#39;
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:40:53 2026] <a href="https://github.com/casey/just#integrating-with-mise"> Integrating with mise </a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`comrak`: CommonMark + GFM compatible Markdown parser and renderer</title><category>cli</category><category>document</category><category>file</category><category>html</category><category>library</category><category>markdown</category><category>parser</category><category>rust</category><pubDate>2026-10-17 10:13:29 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/kivikakk/comrak"><code>comrak</code>: CommonMark + GFM compatible Markdown parser and renderer</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> convert from a markdown file with the path into HTML in the stdout.
+<ul>
+<li>really similar to a SSG.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">comrak $jtb[&quot;fm&quot;] | bat -lhtml # for my profiles... could try a readme for a simpler example.
+# A variable can contain a file handle. with `miniserve` you can update the file....
+# with text editor even.
+comrak $jtb[&quot;fm&quot;] &gt; ($a = ni -p $env:TEMP -n &quot;edgerun.html&quot; -Force); miniserve $a &amp;&amp; rm $a
+# hopefully in the future it could be like this.
+comrak $jtb[&quot;fm&quot;] &gt; ($a = New-TemporaryFile -extension html); msedge $a
+</span></code></pre>
+<ul>
+<li>#cli/option : <code>-o</code> | <code>--output</code> &quot;FILE&quot; will output to a file, thus reduce above kludges.
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">comrak ./README.MD -o ./README.html ; msedge $pwd/README.html # notice msedge cant expand the &quot;.&quot; dir.
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></h2>
+<ul>
+<li>you could pipe to a Temp file and let <code>miniserve</code> serve it.</li>
+<li>#nodejs #cli #pipeline <a href="https://github.com/kessler/node-bcat">node-bcat: A pipe to browser utility</a>
+<ul>
+<li>#alternative : <a href="https://unix.stackexchange.com/questions/271945/how-to-pipe-html-into-lynx">How to pipe html into lynx?</a>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cat ./a-file-ends-with.html | lynx -stdin        
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#powershell: <a href="https://github.com/PowerShell/PowerShell/issues/4215">Add ability to create a temporary file with a specific extension to New-TemporaryFile · Issue #4215 · PowerShell/PowerShell</a></li>
+<li><a href="https://stackoverflow.com/questions/6223996/does-any-web-browser-allow-writing-to-stdout/6263422#6263422">Does any web browser allow writing to stdout?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/commonmark/cmark"><code>cmark</code> CommonMark parsing and rendering library and program in C</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to force myself better I shim <code>comrak</code> to <code>cmark</code> —  less syllable to look on.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://soupault.net/"><code>soupault</code></a></li>
+<li><a href="https://tildes.net/~comp/1jq5/are_feeds_like_rss_or_atom_feeds_really_worth_it_for_a_personal_blog">Are Feeds - like RSS or Atom feeds - Really worth it for a personal blog? - ~comp - Tildes</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:13:29 2026] #scripting  <code>termi</code>/<code>mdpng</code> now make my clipboard into image.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`WinUSB_DMA_MJPEG_Camera` WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</title><category>dma</category><category>usb</category><category>windows</category><pubDate>2026-10-17 09:08:51 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/rajhlinux/WinUSB_DMA_MJPEG_Camera"><code>WinUSB_DMA_MJPEG_Camera</code> WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -201,167 +436,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.slrphotographyguide.com/pixel-peeping-why-you-shouldnt-do-it/">Pixel Peeping – Why You Shouldn’t Do It – SLR Photography Guide</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`homarr` modern and easy to use dashboard. 14+ integrations. 10K+ icons built in</title><category>backend</category><category>telemetry</category><pubDate>2026-10-16 09:45:04 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/homarr-labs/homarr"><code>homarr</code> modern and easy to use dashboard. 14+ integrations. 10K+ icons built in</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/selfhosted/comments/1kuzfpf">What useful utils do you self host?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/j4tlzg/what_i_self_host">What I Self-Host</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #opinion about uptime-kuma. and #web/service <a href="https://uptimerobot.com/"><code>UptimeRobot</code> Free Website Monitoring Service</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:45:04 2026] #meta #ansible #docker <a href="https://github.com/mother-of-all-self-hosting/mash-playbook">MASH: Ansible playbook which helps you host various FOSS services as Docker containers on your own server</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>URI fragment</title><category>infosec</category><category>telemetry</category><category>uri</category><category>wprog</category><pubDate>2026-10-16 09:43:23 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/URI_fragment">URI fragment</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/UTM_parameters">UTM parameters in URI fragments</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> lots of utm_source and utm_content things...</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> this is from Google Analytics.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#library/js: <a href="https://github.com/sindresorhus/query-string">sindresorhus/query-string: Parse and stringify URL query strings</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/Query_string">Query string</a>
-<ul>
-<li><code>?highlight=shadow</code> is one kind of this. For now I'm not sure where this came from.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:43:23 2026] <a href="https://www.uxwizz.com/">UXWizz - Self-hosted Web Analytics</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`jellyfin` plugin lrclib</title><category>format/lrc</category><category>jellyfin</category><category>soft</category><pubDate>2026-10-16 09:27:52 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/jellyfin/jellyfin-plugin-lrclib"><code>jellyfin</code> plugin lrclib</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I tried to embed lrc files in jellyfin.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.jellyfin.org/t-lrc-support-coming-soong">.lrc support coming soong?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/morpheus65535/bazarr"><code>Bazarr</code> companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 08:36:22 2026] <a href="https://github.com/TRaSH-Guides/Guides">TRaSH-Guides comprehensive collection of guides for Radarr, Sonarr, and related media management applications.</a>
-<ul>
-<li><a href="https://github.com/Prowlarr/Prowlarr"><code>Prowlarr</code> indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps, supporting management of both Torrent Trackers and Usenet Indexers.</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Jackett/Jackett"><code>Jackett</code> API Support for your favorite torrent trackers</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:27:52 2026] <a href="https://github.com/seerr-team/seerr">seerr-team/seerr: Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Jotform`: Free Online Form Builder | Create Forms in Seconds</title><category>crm</category><category>document</category><category>form</category><category>web</category><category>web/service</category><pubDate>2026-10-16 09:17:36 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.jotform.com/"><code>Jotform</code>: Free Online Form Builder | Create Forms in Seconds</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://form.jotform.com/233105358823151">OpenCV Cool Stuff Submission Form</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Gastrointestinal tract</title><category>ana</category><category>digestive</category><pubDate>2026-10-16 08:58:24 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Gastrointestinal_tract">Gastrointestinal tract</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well, bowel movement, coffee kick this shit up a lot.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>TUI: `Ctrl+L` clears the `Ctrl+T` transcript until switching away and back</title><category>codex</category><category>keybinding</category><category>swt</category><pubDate>2026-10-16 08:20:23 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/openai/codex/issues/43392">TUI: <code>Ctrl+L</code> clears the <code>Ctrl+T</code> transcript until switching away and back</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> if you just mis-<code>ctrl+l</code> something, you can <code>codex resume --last</code> to see contents of it again.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</title><category>debugging</category><category>hard</category><category>optic</category><category>probe</category><category>thermal</category><pubDate>2026-10-16 07:21:44 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://resources.altium.com/p/using-thermal-camera-pcb-diagnostics">Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I may have to reside to a thermal camera nowadays..</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/AskElectronics/comments/1oh4kz9">How to locate a short circuit on a PCB</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #video #review <a href="https://www.youtube.com/watch?v=OivS8pxigNw">Thermal Master P3 USB-C Camera Review - YouTube</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 07:21:44 2026] <a href="https://item.taobao.com/item.htm?id=921791272515">【正品保障】艾睿天眼P2pro热成像P3手机外接摄像头工业热成像</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Show HN: Unfenced – Land for sale that borders public land</title><category>culture</category><category>misc</category><category>realestate</category><category>us</category><pubDate>2026-10-15 11:41:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50102247">Show HN: Unfenced – Land for sale that borders public land</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How can I tell if Windows is running in Safe Mode? - Server Fault</title><category>bootloader/uefi</category><category>windows</category><pubDate>2026-10-15 11:40:58 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://serverfault.com/questions/433765/how-can-i-tell-if-windows-is-running-in-safe-mode">How can I tell if Windows is running in Safe Mode? - Server Fault</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">gwmi win32_computersystem | select BootupState # Windows exclusive powershell.exe
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1788912/enter-safe-mode-on-windows-11-during-pc-boot-without-restarting-from-booted-win">Enter safe mode on Windows 11 during PC boot, without restarting from booted Windows</a>
-<ul>
-<li>Have to go through <code>Shift</code> + click on Restart button. OR <code>shutdown /o</code> or <code>/fw</code> flags..
-<ul>
-<li>Or force crashing 3 times but eh</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://superuser.com/questions/1825264/windows-10-how-to-access-the-advanced-boot-menu-before-booting-which-fails-in?noredirect=1&amp;lq=1">Windows 10: How to access the advanced boot menu before booting (which fails) in order to discard hibernation state and instead boot normally?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 23:40:58 2026] <a href="https://news.ycombinator.com/item?id=50102923">Libreboot 26.10 &quot;Ominous Olive&quot; released with UEFI, Chromebook support</a></li>
 </ul>
 </li>
 </ul>

@@ -59,7 +59,7 @@
             <ul>
 <li><a href="https://docs.kicad.org/master/en/gerbview/gerbview.html#interface">Gerber Viewer | master | English | Documentation | KiCad</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  <code>gerbview</code>'s kicad to view gerber files, CAM350 seems kinda awkward to that nowadays.</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gerbview</code>'s kicad to view gerber files, CAM350 seems kinda awkward to that nowadays.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gerbview</span></span><span class="meta function-call arguments shell"> ./production <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or so I thought.</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
@@ -67,6 +67,8 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> for production (panelization) reviewing (as what I did with sqpcb):
 <ul>
 <li>File (<code>alt+f</code>) -&gt; Open Autodetected Files (1 or no <code>o</code>) -&gt; <code>Enter</code> -&gt; <code>shift+tab</code> -&gt; <code>ctrl+a</code> -&gt; <code>Enter</code></li>
+<li><code>gerber</code> can import excellon files but you have to &quot;Open Excellon Drill File(s)&quot; separatedly.</li>
+<li>&quot;Clear Selected Layer&quot; will mean you prune that layer out of layers Manager even.</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
@@ -75,6 +77,11 @@
 <li><a href="https://youtu.be/YBk-YQEcUcw"><code>cam350</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and the <a href="https://youtu.be/YBk-YQEcUcw">download link</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> use its Autoimport to import <code>.tap</code> file and other intrinsic weird pcb file format.
+<ul>
+<li>and <code>export</code> -&gt; &quot;Drill Data&quot; so you can have Excellon Drill.</li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog <a href="https://mp.weixin.qq.com/s/5YMzANA7mNtn8V6eChem1w">compare the differences with Gerber?</a></li>
 </ul>
 </li>

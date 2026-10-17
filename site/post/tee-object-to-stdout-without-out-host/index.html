@@ -87,6 +87,12 @@ IT will abrupt the whole script. Not simply local break, but <strong>global brea
 <li><a href="https://github.com/PowerShell/PowerShell/issues/19827"><code>Tee-Object</code> should have a <code>-Console</code> parameter · Issue #19827 · PowerShell/PowerShell</a>
 <ul>
 <li>..which for now I will make a <code>Tee-Host</code> functions</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 12:01:06 2026]
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">function Set-PathClipboard{ # which I alias to `pwc` as well.
+    pwd | tee-host {&quot;set-clipboard to $(Convert-PathToOsc8 $_)&quot;}| scb
+}
+</span></code></pre>
+</li>
 </ul>
 </li>
 <li><a href="https://github.com/PowerShell/PowerShell/issues/20123"><code>Tee-Object -Process</code></a></li>
