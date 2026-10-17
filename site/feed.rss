@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`radare2` UNIX-like reverse engineering framework and command-line toolset</title><category>cli</category><category>csci</category><category>infosec</category><category>re</category><pubDate>2026-10-16 08:22:48 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`WinUSB_DMA_MJPEG_Camera` WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</title><category>dma</category><category>usb</category><category>windows</category><pubDate>2026-10-17 09:08:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/rajhlinux/WinUSB_DMA_MJPEG_Camera"><code>WinUSB_DMA_MJPEG_Camera</code> WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> trying to find how to simulate MCU's DMA within Windows/Linux environment.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/YuzukiHD/YuzukiLOHCC-PRO">YuzukiLOHCC-PRO: Low cost USB3.2Gen1 HDMI-USB Video Acquisition With Loop Out (Loop Out HDMI Capture Card) base on MS2130 &amp; MS9332</a>
+<ul>
+<li>all for a HDMI -&gt; USB usage.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#android #cpp <a href="https://github.com/Peter-St/Android-UVC-Camera">Android-UVC-Camera</a></li>
+<li>#android #cpp <a href="https://github.com/shiyinghan/UVCAndroid">UVCAndroid</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 14:42:24 2026] <a href="https://mp.weixin.qq.com/s/T-yCrwDE9bOZb3eJHWzLuw">IT66326 Technical Analysis: The audio and video processing and integration architecture of HDMI 2.1 switches</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 09:08:51 2026] #camera <a href="https://www.kernel.org/doc/html/v4.9/media/v4l-drivers/uvcvideo.html">28. The Linux USB Video Class (UVC) driver — The Linux Kernel documentation</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>【Domestic】Anlu EF2L45LG144 FPGA Development Board/Core Board Alternative EP4CE10E22C8N</title><category>cpld</category><category>evb</category><category>fpga/anlogic</category><pubDate>2026-10-17 08:40:28 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://item.taobao.com/item.htm?id=626069149429">【Domestic】Anlu EF2L45LG144 FPGA Development Board/Core Board Alternative EP4CE10E22C8N</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://shop66526602.world.taobao.com">小梅哥FPGA企业店</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://shop576825558.taobao.com/">芯创客</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=770236074212">紫光FPGA开发板 compa系列 国产FPGA 立创逻辑派Z1 PGC4KD/PGC7KD</a>
+<ul>
+<li>Pango FPGA brand.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 08:40:28 2026] <a href="https://item.taobao.com/item.htm?id=776516984361&amp;item_type=ad">FPGA开发板 20K 图像处理开发板 RISC-V开发板</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`radare2` UNIX-like reverse engineering framework and command-line toolset</title><category>cli</category><category>csci</category><category>infosec</category><category>re</category><pubDate>2026-10-16 08:22:48 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/radareorg/radare2"><code>radare2</code> UNIX-like reverse engineering framework and command-line toolset</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -16,7 +60,7 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 20:22:48 SEAST 2026] #discussion <a href="https://lobste.rs/s/kaerns/sunsetting_decomp_dev">Sunsetting decomp.dev</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 20:22:48 2026] #discussion <a href="https://lobste.rs/s/kaerns/sunsetting_decomp_dev">Sunsetting decomp.dev</a></li>
 </ul>
 </li>
 </ul>
@@ -33,7 +77,7 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50017247">Nix wrote half of my debugger</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 11:59:25 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50087616">Non-Determinism Doesn't Matter</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 11:59:25 2026] <a href="https://news.ycombinator.com/item?id=50087616">Non-Determinism Doesn't Matter</a></li>
 </ul>
 </li>
 </ul>
@@ -152,7 +196,7 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:58:41 SEAST 2026] <a href="https://lobste.rs/s/uejdwj/jpeg_xl_vs_avif_for_web_use_cases">JPEG XL vs AVIF for web use-cases</a>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:58:41 2026] <a href="https://lobste.rs/s/uejdwj/jpeg_xl_vs_avif_for_web_use_cases">JPEG XL vs AVIF for web use-cases</a>
 <ul>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.slrphotographyguide.com/pixel-peeping-why-you-shouldnt-do-it/">Pixel Peeping – Why You Shouldn’t Do It – SLR Photography Guide</a></li>
 </ul>
@@ -173,7 +217,7 @@
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #opinion about uptime-kuma. and #web/service <a href="https://uptimerobot.com/"><code>UptimeRobot</code> Free Website Monitoring Service</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:45:04 SEAST 2026] #meta #ansible #docker <a href="https://github.com/mother-of-all-self-hosting/mash-playbook">MASH: Ansible playbook which helps you host various FOSS services as Docker containers on your own server</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:45:04 2026] #meta #ansible #docker <a href="https://github.com/mother-of-all-self-hosting/mash-playbook">MASH: Ansible playbook which helps you host various FOSS services as Docker containers on your own server</a></li>
 </ul>
 </li>
 </ul>
@@ -202,7 +246,7 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:43:23 SEAST 2026] <a href="https://www.uxwizz.com/">UXWizz - Self-hosted Web Analytics</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:43:23 2026] <a href="https://www.uxwizz.com/">UXWizz - Self-hosted Web Analytics</a></li>
 </ul>
 </li>
 </ul>
@@ -219,7 +263,7 @@
 <li><a href="https://github.com/morpheus65535/bazarr"><code>Bazarr</code> companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 08:36:22 SEAST 2026] <a href="https://github.com/TRaSH-Guides/Guides">TRaSH-Guides comprehensive collection of guides for Radarr, Sonarr, and related media management applications.</a>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 08:36:22 2026] <a href="https://github.com/TRaSH-Guides/Guides">TRaSH-Guides comprehensive collection of guides for Radarr, Sonarr, and related media management applications.</a>
 <ul>
 <li><a href="https://github.com/Prowlarr/Prowlarr"><code>Prowlarr</code> indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps, supporting management of both Torrent Trackers and Usenet Indexers.</a>
 <ul>
@@ -228,7 +272,7 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:27:52 SEAST 2026] <a href="https://github.com/seerr-team/seerr">seerr-team/seerr: Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:27:52 2026] <a href="https://github.com/seerr-team/seerr">seerr-team/seerr: Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</a></li>
 </ul>
 </li>
 </ul>
@@ -277,7 +321,7 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/AskElectronics/comments/1oh4kz9">How to locate a short circuit on a PCB</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #video #review <a href="https://www.youtube.com/watch?v=OivS8pxigNw">Thermal Master P3 USB-C Camera Review - YouTube</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 07:21:44 SEAST 2026] <a href="https://item.taobao.com/item.htm?id=921791272515">【正品保障】艾睿天眼P2pro热成像P3手机外接摄像头工业热成像</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 07:21:44 2026] <a href="https://item.taobao.com/item.htm?id=921791272515">【正品保障】艾睿天眼P2pro热成像P3手机外接摄像头工业热成像</a></li>
 </ul>
 </li>
 </ul>
@@ -317,50 +361,7 @@
 <li><a href="https://superuser.com/questions/1825264/windows-10-how-to-access-the-advanced-boot-menu-before-booting-which-fails-in?noredirect=1&amp;lq=1">Windows 10: How to access the advanced boot menu before booting (which fails) in order to discard hibernation state and instead boot normally?</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 23:40:58 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50102923">Libreboot 26.10 &quot;Ominous Olive&quot; released with UEFI, Chromebook support</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Contract assertions (since C++26)</title><category>contract</category><category>cpp</category><category>lang</category><category>syntax</category><pubDate>2026-10-15 11:39:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://cppreference.com/w/cpp/language/contracts">Contract assertions (since C++26)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>pre()</code> <code>post()</code> <code>contract_assert()</code> keywords.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> contracts are enforced, mostly in compiletime. in runtime this concept is exception.
-<ul>
-<li>#compsci #definition <a href="https://wikipedia.org/wiki/Design_by_contract">Design by contract</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://critical.eschertech.com/2025/09/09/contracts-have-arrived-in-c/">Contracts arrive in C++26 ! | David Crocker's Verification Blog</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://tech.jocodoma.com/2019/02/25/Lambdas-as-First-Class-Citizens-in-CPP/">Lambdas as First-Class Citizens in C++ | Jocodoma</a>
-<ul>
-<li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p2900r14.pdf">P2900R14</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Jul 30 12:46:19 2026] <a href="https://mropert.github.io/2025/12/03/enum_class_error_codes_part3/">C++ Enum Class and Error Codes and contracts in action.</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 23:39:24 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50103164">C++26 Contracts: Introduction to Preconditions and Postconditions</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Splunk On-Call | Splunk</title><category>devop</category><category>netw</category><category>notification</category><category>sysadmin</category><pubDate>2026-10-15 08:05:58 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.splunk.com/en_us/products/on-call.html">Splunk On-Call | Splunk</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> customer service for software related issues. the job for this is called  SRE: Site Reliability Engineering</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/sysadmin/comments/vr9hsm">What's important to you to have in an on call policy?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> I think I myself do oncall a whole lot. for this fucking startup mom-and-pop kind of work.
-<ul>
-<li>#discussion <a href="https://www.reddit.com/r/sysadmin/comments/l0l88f">On-call burns me out more than my actual job</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/PagerDuty">PagerDuty</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 23:40:58 2026] <a href="https://news.ycombinator.com/item?id=50102923">Libreboot 26.10 &quot;Ominous Olive&quot; released with UEFI, Chromebook support</a></li>
 </ul>
 </li>
 </ul>
