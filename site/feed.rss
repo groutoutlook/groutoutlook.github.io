@@ -1,4 +1,287 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Show HN: Unfenced – Land for sale that borders public land</title><category>culture</category><category>misc</category><category>realestate</category><category>us</category><pubDate>2026-10-15 11:41:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`radare2` UNIX-like reverse engineering framework and command-line toolset</title><category>cli</category><category>csci</category><category>infosec</category><category>re</category><pubDate>2026-10-16 08:22:48 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/radareorg/radare2"><code>radare2</code> UNIX-like reverse engineering framework and command-line toolset</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Some decompiler tools</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> all them in scoop.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://book.rada.re/">Book of radare</a>
+<ul>
+<li>#alternative: <a href="https://cutter.re/">cutter</a></li>
+<li>#alternative/successor: <a href="https://github.com/NationalSecurityAgency/ghidra"><code>Ghidra</code> software reverse engineering (SRE) framework</a></li>
+<li>#alternative/license: <a href="https://binary.ninja/free/">Binary Ninja - Try Binary Ninja</a>
+<ul>
+<li>but also have a free version.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 20:22:48 SEAST 2026] #discussion <a href="https://lobste.rs/s/kaerns/sunsetting_decomp_dev">Sunsetting decomp.dev</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>language agnostic - What is an idempotent operation?</title><category>csci</category><category>vocabulary</category><pubDate>2026-10-16 11:59:25 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation">language agnostic - What is an idempotent operation?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Idempotence">Idempotence</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #llm <a href="https://lukechampine.com/repligraphs/">Repligraphs</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50017247">Nix wrote half of my debugger</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 11:59:25 SEAST 2026] <a href="https://news.ycombinator.com/item?id=50087616">Non-Determinism Doesn't Matter</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Skeuomorph</title><category>design/art</category><category>retro</category><category>style</category><category>terminology</category><pubDate>2026-10-16 11:57:29 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Skeuomorph">Skeuomorph</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50103338">Wayland desktop for Linux with skeuomorphic design</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Apple routed a graphite pipe through the iPhone Duo&apos;s hinge to dissipate heat</title><category>discussion</category><category>hardware</category><category>misc</category><category>news</category><category>thermal</category><pubDate>2026-10-16 11:16:25 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50068203">Apple routed a graphite pipe through the iPhone Duo's hinge to dissipate heat</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> gossip at this point</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #english <a href="https://www.reddit.com/r/UnsentLetters/comments/1txbsqb">Headcase basically mean unstable (person)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`sill` window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys</title><category>ios</category><category>macos</category><category>mobile</category><category>remote</category><category>swgui</category><category>vnc</category><pubDate>2026-10-16 11:03:07 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Saffsanity/sill"><code>sill</code> window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in HN, but <a href="https://lowtechguys.com/">The low-tech guys</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Remote control animal</title><category>anim</category><category>animal</category><pubDate>2026-10-16 10:18:22 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Remote_control_animal">Remote control animal</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I suddenly have a thought, isnt using animal much better method to doing things in extreme weather condition?
+<ul>
+<li>space, weather, temperature, economic constraint.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: inexpensive, organic substitutes.</li>
+<li>Con: neural stuff, #nervous system kind of things.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> moral value? Idgaf.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Start a side chat with `/side`|`/btw` command</title><category>ai/harness</category><category>soft</category><pubDate>2026-10-16 10:07:54 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-start-a-side-chat-with-side"> Start a side chat with <code>/side</code>|<code>/btw</code> command</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>/side</code> is unavailable inside another side chat and during review mode.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Subagents | ChatGPT Learn</title><category>ai/harness</category><category>codex</category><category>soft</category><pubDate>2026-10-16 10:06:23 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.chatgpt.com/docs/agent-configuration/subagents?surface=app">Subagents | ChatGPT Learn</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`tacentview` image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</title><category>file</category><category>format/ktx</category><category>viewer</category><pubDate>2026-10-16 09:58:41 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/bluescan/tacentview"><code>tacentview</code> image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly since quite usable and fucking faster than <code>imageglass</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://bluescan.github.io/tacentview/cli.html">CLI | Tacent View</a></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">tacentview</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>op</span> flip</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> hold/drag <code>RightClick</code> to pan viewport.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try to remove default image viewer of #windows, come up with imageglass first then this.
+<ul>
+<li>#crossplatform of course.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>currently cant handle <code>jxl</code>.</li>
+<li>[2026-02-15 11:24:23 AM] #tui only <code>yazi</code> can kinda preview it.
+<ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">zz</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\D</span>ownloads<span class="constant character escape shell">\s</span>hark_hashquine.jxl</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or with chrome canary:</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">chrome</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\D</span>ownloads<span class="constant character escape shell">\s</span>hark_hashquine.jxl</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> sometimes you have to accept using browser as glorify editor/viewer for some ubiquotous files format.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:58:41 SEAST 2026] <a href="https://lobste.rs/s/uejdwj/jpeg_xl_vs_avif_for_web_use_cases">JPEG XL vs AVIF for web use-cases</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.slrphotographyguide.com/pixel-peeping-why-you-shouldnt-do-it/">Pixel Peeping – Why You Shouldn’t Do It – SLR Photography Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`homarr` modern and easy to use dashboard. 14+ integrations. 10K+ icons built in</title><category>backend</category><category>telemetry</category><pubDate>2026-10-16 09:45:04 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/homarr-labs/homarr"><code>homarr</code> modern and easy to use dashboard. 14+ integrations. 10K+ icons built in</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/selfhosted/comments/1kuzfpf">What useful utils do you self host?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/j4tlzg/what_i_self_host">What I Self-Host</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #opinion about uptime-kuma. and #web/service <a href="https://uptimerobot.com/"><code>UptimeRobot</code> Free Website Monitoring Service</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:45:04 SEAST 2026] #meta #ansible #docker <a href="https://github.com/mother-of-all-self-hosting/mash-playbook">MASH: Ansible playbook which helps you host various FOSS services as Docker containers on your own server</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>URI fragment</title><category>infosec</category><category>telemetry</category><category>uri</category><category>wprog</category><pubDate>2026-10-16 09:43:23 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/URI_fragment">URI fragment</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/UTM_parameters">UTM parameters in URI fragments</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> lots of utm_source and utm_content things...</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> this is from Google Analytics.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#library/js: <a href="https://github.com/sindresorhus/query-string">sindresorhus/query-string: Parse and stringify URL query strings</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/Query_string">Query string</a>
+<ul>
+<li><code>?highlight=shadow</code> is one kind of this. For now I'm not sure where this came from.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:43:23 SEAST 2026] <a href="https://www.uxwizz.com/">UXWizz - Self-hosted Web Analytics</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`jellyfin` plugin lrclib</title><category>format/lrc</category><category>jellyfin</category><category>soft</category><pubDate>2026-10-16 09:27:52 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-plugin-lrclib"><code>jellyfin</code> plugin lrclib</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I tried to embed lrc files in jellyfin.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.jellyfin.org/t-lrc-support-coming-soong">.lrc support coming soong?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/morpheus65535/bazarr"><code>Bazarr</code> companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 08:36:22 SEAST 2026] <a href="https://github.com/TRaSH-Guides/Guides">TRaSH-Guides comprehensive collection of guides for Radarr, Sonarr, and related media management applications.</a>
+<ul>
+<li><a href="https://github.com/Prowlarr/Prowlarr"><code>Prowlarr</code> indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps, supporting management of both Torrent Trackers and Usenet Indexers.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Jackett/Jackett"><code>Jackett</code> API Support for your favorite torrent trackers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:27:52 SEAST 2026] <a href="https://github.com/seerr-team/seerr">seerr-team/seerr: Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Jotform`: Free Online Form Builder | Create Forms in Seconds</title><category>crm</category><category>document</category><category>form</category><category>web</category><category>web/service</category><pubDate>2026-10-16 09:17:36 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.jotform.com/"><code>Jotform</code>: Free Online Form Builder | Create Forms in Seconds</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://form.jotform.com/233105358823151">OpenCV Cool Stuff Submission Form</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Gastrointestinal tract</title><category>ana</category><category>digestive</category><pubDate>2026-10-16 08:58:24 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Gastrointestinal_tract">Gastrointestinal tract</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well, bowel movement, coffee kick this shit up a lot.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>TUI: `Ctrl+L` clears the `Ctrl+T` transcript until switching away and back</title><category>codex</category><category>keybinding</category><category>swt</category><pubDate>2026-10-16 08:20:23 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/openai/codex/issues/43392">TUI: <code>Ctrl+L</code> clears the <code>Ctrl+T</code> transcript until switching away and back</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> if you just mis-<code>ctrl+l</code> something, you can <code>codex resume --last</code> to see contents of it again.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</title><category>debugging</category><category>hard</category><category>optic</category><category>probe</category><category>thermal</category><pubDate>2026-10-16 07:21:44 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://resources.altium.com/p/using-thermal-camera-pcb-diagnostics">Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I may have to reside to a thermal camera nowadays..</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/AskElectronics/comments/1oh4kz9">How to locate a short circuit on a PCB</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #video #review <a href="https://www.youtube.com/watch?v=OivS8pxigNw">Thermal Master P3 USB-C Camera Review - YouTube</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 07:21:44 SEAST 2026] <a href="https://item.taobao.com/item.htm?id=921791272515">【正品保障】艾睿天眼P2pro热成像P3手机外接摄像头工业热成像</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Show HN: Unfenced – Land for sale that borders public land</title><category>culture</category><category>misc</category><category>realestate</category><category>us</category><pubDate>2026-10-15 11:41:43 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50102247">Show HN: Unfenced – Land for sale that borders public land</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -78,356 +361,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/PagerDuty">PagerDuty</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Dead man switch which prompt me a disarm code every 3 weeks...</title><category>idea</category><category>programming</category><category>psychology</category><category>social</category><category>topic</category><pubDate>2026-10-15 07:58:39 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Dead man switch which prompt me a disarm code every 3 weeks...
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> at which point the sleep timer is reset until the next &quot;arming&quot;. There are reminders at 50%, 25%, and 10% time remaining.
-If I fail to disarm it in time, it will run an external script.
-In my specific external script, it sends out &quot;last words of love&quot; via SMTP and my FastMail account to people I care most about.
-It also sets up some emergency access to my hosts for a friend of mine who has the technical knowledge
-and who I would trust to &quot;handle my digital remains&quot;.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> one of that is <a href="https://demumu.io/">Demumu — Daily Check-Ins &amp; Dead Man's Switch for Living Alone</a>
-<ul>
-<li>or <a href="https://www.snugsafe.com/all-posts/snug-is-a-dead-man-switch-app">Snug is a Dead Man Switch app — Snug Safety</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> suddenly it give me good inspiration.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://tildes.net/~comp/1ty3/what_programming_technical_projects_have_you_been_working_on">What programming/technical projects have you been working on? - ~comp - Tildes</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.cyberciti.biz/security/how-to-unlock-luks-using-dropbear-ssh-keys-remotely-in-linux/">unlock LUKS using Dropbear SSH keys remotely in Linux - nixCraft</a></li>
-<li><a href="https://discourse.ubuntu.com/t/transition-from-dropbear-initramfs-to-dracut-crypt-ssh/78276">replace dropbear to dracut-crypt</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 19:58:39 SEAST 2026] <a href="https://healthchecks.io/about/">About Healthchecks.io, also a deadman switch service</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>FOTA updates on nRF54L Series devices</title><category>embed</category><category>mcu/nordic</category><category>nrf54</category><category>prod/update/ota</category><category>sdk</category><pubDate>2026-10-15 07:35:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html">FOTA updates on nRF54L Series devices</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#doc/official : <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_basics.html">Introduction to KMU key provisioning</a>
-<ul>
-<li>#acronym Hardware KMU : Key Management Unit. This is the act of ID-ing IC and MCU.
-<ul>
-<li>#infosec purpose mainly</li>
-</ul>
-</li>
-<li><a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html">Performing KMU provisioning</a></li>
-</ul>
-</li>
-<li>#acronym #bootloader <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/dfu_config.html">Configuring DFU: Device Firmware Update and MCUboot</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> serious contender to Espressif chips due to sheer enormous amount of software stack.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#pcb for nRF54H20 : <a href="https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54h/ug_nrf54h20_custom_pcb.html">Configuring your application for a custom PCB</a>
-<ul>
-<li>#blob #config <a href="https://devzone.nordicsemi.com/f/nordic-q-a/124647/bicr-file-for-custom-boards">BICR file for custom boards - Nordic Q&amp;A - Nordic DevZone - Nordic DevZone</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> hardware config to interacts with board: power schemes, oscillators, GPIO drive, etc...</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a JSON file... which consumed by Nordic's IDE/SDK utils.
-<ul>
-<li>similar to User Option bytes in other ARM chips, but more flexible and wider scope.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 19:35:34 SEAST 2026] #web/service #monitor <a href="https://healthchecks.io/docs/autoprovisioning/">Auto Provisioning - Healthchecks.io</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Management API v3 - Healthchecks.io</title><category>curl</category><category>http</category><category>wapi</category><category>web/service</category><pubDate>2026-10-15 07:07:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://healthchecks.io/docs/api/">Management API v3 - Healthchecks.io</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#powershell <a href="https://healthchecks.io/docs/powershell/">Monitor PowerShell Scripts with Healthchecks.io</a>
-<ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">iwr https://hc-ping.com/0d88e09f-c06f-4f1a-91f5-b97a10d38bb1
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.healthchecks.io/">Healthchecks.io Blog – The Joy of Building a Cron Monitoring Service</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.twilio.com/en-us">Conversational AI and APIs for SMS, Email, Voice | Twilio</a>
-<ul>
-<li><a href="https://docs.arduino.cc/libraries/wifinina/">WiFiNINA | Arduino Documentation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Uptime monitoring CLI tool with alerting and advanced settings</title><category>cli</category><category>dashboard</category><category>server</category><category>telemetry</category><category>web</category><pubDate>2026-10-15 06:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Owloops/updo">Uptime monitoring CLI tool with alerting and advanced settings</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>updo</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in <code>scoop</code>
-<ul>
-<li>looking at Uptime Kuma, I was finding something ready which is not a docker image.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#powershell also have a very convenient cmdlet : <code>Get-Uptime</code>/<code>uptime</code>.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-uptime"><code>Get-Uptime</code></a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> can even get the bootup time as well.
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">Get-Uptime -Since
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 18:56:43 SEAST 2026] #web/service <a href="https://healthchecks.io/">Healthchecks.io: Cron Job Monitoring</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> probe your selfhost uptime (kuma) monitoring to here (or any cloud-based one). Act as dead man switch for you.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Bru` Send and read SMS from the browser</title><category>browser</category><category>protocol/sms</category><category>retro</category><pubDate>2026-10-15 06:45:31 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/a0jmkh/bru_send_read_sms_from_browser"><code>Bru</code> Send and read SMS from the browser</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ssg <a href="https://github.com/getzola/zola"><code>zola</code> fast static site generator in a single binary with everything built-in</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sverre.me/projects/this-site/">This very website</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #accord <a href="https://sverre.me/projects/ebike/">My dumb e-bike</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`lazygit`</title><category>git</category><category>keybinding</category><category>swt</category><pubDate>2026-10-15 06:35:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><code>gitui</code> choke, <a href="https://github.com/jesseduffield/lazygit"><code>lazygit</code></a> work fine.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> That lead me to make <code>lazygit</code> #nightly. of course it has <code>scoop</code> port but eh.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>space</code> to checkout. quick ngl.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/libgit2/libgit2/issues/5352">reftable support for libgit2 · Issue #5352 · libgit2/libgit2</a>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> refs migrate<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ref-format</span><span class="keyword operator assignment option shell">=</span>files</span>
-</span></code></pre>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/osori/korean-romanizer"><code>kroman</code></a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <del><code>gitu</code> probably? this has something good as well</del> to be fair it choked as well due to <code>git2</code>.
-<ul>
-<li><a href="https://stackoverflow.com/questions/20151158/using-git-repository-as-a-database-backend/77836017#77836017">Using git repository as a database backend</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 13:20:08 2026] <a href="https://github.com/gold-silver-copper/ghtui"><code>ghtui</code> browse repos, issues, PRs and profiles like the website, and review diffs better than it</a>
-<ul>
-<li>#nightly since it looks quite good.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 18:35:51 SEAST 2026] #database #code/forge <a href="https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong">Everyone is doing Git on EC2/S3 wrong · Enroute</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  could be tip for your self host git forge.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> lobsters, also their <a href="https://enroute.sh/thesis">Thesis · Enroute</a> although I kinda feel a conflict of interests here.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`prjcombine` FPGA reverse engineering and documentation project</title><category>arch</category><category>cpld</category><category>meta</category><category>rust</category><category>xilinx</category><pubDate>2026-10-15 06:19:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://codeberg.org/prjunnamed/prjcombine"><code>prjcombine</code> FPGA reverse engineering and documentation project</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and lots of other mumbo jumbo. there are ECP2/ECP4 here.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://prjunnamed.github.io/prjcombine/xc9500/">XC9500 AMD/Xilinx CPLD</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>A UAF turned RCE</title><category>acronym</category><category>cve</category><category>discussion</category><category>infosec</category><pubDate>2026-10-15 06:15:57 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/g46xkj/uaf_turned_rce">A UAF turned RCE</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> UAF is use after free.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>아름다워 - areumdalwo == 여푸 - yeopu == beautiful/pretty</title><category>korean</category><category>misc</category><category>vocab</category><pubDate>2026-10-15 06:04:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>아름다워 - areumdalwo == 여푸 - yeopu == beautiful/pretty
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ito - build terminal ui in lua</title><category>api</category><category>library</category><category>lua</category><category>tui</category><pubDate>2026-10-15 05:37:08 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/9lqyul/ito_build_terminal_ui_lua">ito - build terminal ui in lua</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Cross platform html-rendering framework.</title><category>graph</category><category>gui</category><category>linux</category><category>macos</category><category>render/html</category><category>rust</category><category>web/ui</category><category>windows</category><pubDate>2026-10-15 05:31:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/tauri-apps/wry#platform-specific-notes">Cross platform html-rendering framework.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> using this instead of going for blink/webview2/webkitgtk/webkit.
-<ul>
-<li>Modern solution, and that use rust...
-<ul>
-<li>Instead of too many c++ as others offer.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#linux : <a href="https://webkitgtk.org/">WebKitGTK Project</a></li>
-<li>#windows : <a href="https://github.com/MicrosoftEdge/WebView2Samples">MicrosoftEdge/WebView2Samples: Microsoft Edge WebView2 samples</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 17:31:52 SEAST 2026] <a href="https://lobste.rs/s/dyypvf/apple_switch_safari_from_chrome">Apple: Switch to Safari (from Chrome)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`transputer` Transputer T805 emulator, assembler, Pascal compiler, operating system, and K&amp;R C compiler.</title><category>compsci</category><category>esoteric</category><category>isa</category><category>retro</category><pubDate>2026-10-15 05:30:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/nanochess/transputer"><code>transputer</code> Transputer T805 emulator, assembler, Pascal compiler, operating system, and K&amp;R C compiler.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Transputer">Transputer</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>IDL Attributes (C++ COM)</title><category>buildsystem</category><category>cpp</category><category>format/idl</category><category>interface</category><pubDate>2026-10-15 05:18:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/en-us/cpp/windows/attributes/idl-attributes?view=msvc-170">IDL Attributes (C++ COM)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/en-us/uwp/midl-3/intro">Introduction to Microsoft Interface Definition Language 3.0 - Windows UWP applications</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #web <a href="https://github.com/whatwg/webidl">webidl: Web IDL Standard</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>My Fingerprint- Am I Unique ?</title><category>browser</category><category>security</category><category>telemetry</category><category>web</category><pubDate>2026-10-15 05:14:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://amiunique.org/fingerprint">My Fingerprint- Am I Unique ?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can return to this every 4 months.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> you can learn a lot about yourself here, some #a11y as well.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=42377159">Firefox removes &quot;do not track&quot; feature support</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#plugin : <a href="https://chromewebstore.google.com/detail/amiunique/pigjfndpomdldkmoaiiigpbncemhjeca">plugin to check fingerprint timeline</a></li>
-<li><a href="https://news.ycombinator.com/item?id=44972000">Don't pick weird subnets for embedded networks, use VRFs</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Accept-Language">Accept-Language header - HTTP | MDN</a>
-<ul>
-<li>en-US,en;q=0.9</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://ippure.com/">IP Information and Purity Detection | IPPure</a>
-<ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">curl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>L</span> https://my.ippure.com/v1/info</span>
-</span></code></pre>
-<ul>
-<li>or</li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">curl -L https://my.ippure.com/v1/info | convertfrom-json
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Ecopaste user group...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-09-03 09:40:18] <a href="https://news.ycombinator.com/item?id=44772177">HTML-in-Canvas</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #html #graphic <a href="https://github.com/WICG/html-in-canvas">WICG/html-in-canvas</a></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> canvas is even more convoluted.. Fingerprinting using canvas/webgl surface...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 17:14:52 SEAST 2026] <a href="https://lobste.rs/s/zitobg/fancy_curl_sites">Fancy Curl Sites</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>MagicDNS and FQDN · Tailscale Docs</title><category>dns</category><category>netw</category><category>tailscale</category><pubDate>2026-10-15 05:09:42 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://tailscale.com/docs/features/magicdns">MagicDNS and FQDN · Tailscale Docs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> machineName + tailnetName  == FQDN.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>UPS: Uninterruptible power supply</title><category>misc</category><category>power</category><pubDate>2026-10-15 04:47:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Uninterruptible_power_supply">UPS: Uninterruptible power supply</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.datacenterknowledge.com/energy-power-supply/current-debate-will-the-data-center-of-the-future-be-ac-or-dc">Current Debate: Will the Data Center of the Future Be AC or DC?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.everexceed.com/blog/why-dc-power-systems-are-essential-in-modern-data-centers_b789">Why DC Power Systems Are Essential in Modern Data Centers？</a>
-<ul>
-<li>400-800VDC power application...</li>
-<li><a href="https://mp.weixin.qq.com/s/6X3uwuzT2yhlqXBxcpilvA">UPS power monitoring adapter internal view</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 16:47:18 SEAST 2026] <a href="https://mp.weixin.qq.com/s/MaZMBh_ZC6ikHglpjGYFqQ">He used two pieces of 4-layer PCB to make a UPS power supply like this......</a></li>
 </ul>
 </li>
 </ul>
