@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>lobster as hackernews alternative</title><category>forum</category><category>list</category><category>meta</category><category>news</category><category>programming</category><category>technology</category><pubDate>2026-10-19 05:04:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>How to Program Flash memory in STM32</title><category>embed</category><category>flash</category><category>iap</category><category>libc</category><category>memory</category><pubDate>2026-10-19 05:38:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://controllerstech.com/flash-programming-in-stm32/">How to Program Flash memory in STM32</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also check out ft32f0xx_flash.h</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> we have <a href="https://github.com/controllerstech/STM32/tree/master/FLASH_PROGRAM/F1%20SERIES">STM32/FLASH_PROGRAM/F1 SERIES at master · controllerstech/STM32</a>
+<ul>
+<li>make a separate one to implement for specific MCU as AT32 and FT32.</li>
+<li>There are also bootloader area in case you want to use as... auxillary memory.
+<ul>
+<li>FT32's is in <code>0x1FFFE800~0x1FFFF7FF</code> sector.</li>
+<li>AT32...</li>
+<li>Or you could load a separate projects into the bootloader sector...
+<ul>
+<li>Remember to change your linker script(.sct files). AND/OR change your target...</li>
+<li>if you do something like OTA update, and do not hardwired your BOOT0 into GND.</li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/654907/how-to-write-the-scatter-file-for-keil-uvision-to-force-linker-to-allocate-varia">stm32 - How to write the scatter file for Keil uVision to force linker to allocate variables in SRAM?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog <a href="https://mp.weixin.qq.com/s/s1vLJ611r93T4j2eAiAICg">A must-see for embedded engineers! Keil MDK-ARM .sct file is fully parsed, and it is up to it to control the memory layout</a>
+<ul>
+<li>there are writeup on <code>.stack</code> and <code>.heap</code> as well, <code>extab</code>/<code>exidx</code>, <code>.fini_array</code>/<code>.init_array</code></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/controllerstech/STM32/tree/master/FLASH_PROGRAM/H7%20SERIES">FLASH_PROGRAM/H7 SERIES · controllerstech/STM32</a>
+<ul>
+<li>H7 can directly use those.</li>
+</ul>
+</li>
+<li><a href="https://programmerah.com/solved-keil-compile-error-error-l6220e-load-region-lr_irom1-size-65552-bytes-exceeds-limit-65536-bytes-53203/">Solved | KEIL Compile Error: Error: L6220E: Load region LR_IROM1 size (65552 bytes) exceeds limit (65536 bytes)…… | ProgrammerAH</a></li>
+<li><a href="https://community.st.com/stm32-mcus-products-25/stm32-memory-out-and-how-avoid-that-4253">STM32 memory out and how avoid that | Community</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you can try <code>-O2</code>/<code>-O3</code> instead of default <code>-Ofast</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 17:38:10 2026] <a href="https://github.com/IOsetting/py32f0-template/issues/36">Unlocking and erasing protected flash on PY32 chips · Issue #36 · IOsetting/py32f0-template</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I have to think of a way to write FLASH in runtime, or I cant run UART config like those VLLink probe do.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>lobster as hackernews alternative</title><category>forum</category><category>list</category><category>meta</category><category>news</category><category>programming</category><category>technology</category><pubDate>2026-10-19 05:04:07 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/">lobster as hackernews alternative</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Sometimes I  feel bored watching hackernews.</li>
@@ -397,42 +450,6 @@ ninja checK-clang # optional
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:48:28 2026] #llm <a href="https://lobste.rs/s/xiq59t/linus_torvalds_on_ai_assisted_kernel">Linus Torvalds on AI-assisted kernel contributions</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`mise` dev tools, env vars, task runner</title><category>cli</category><category>frontend</category><category>manager</category><category>web/dev</category><category>wsdk</category><pubDate>2026-10-17 10:40:53 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/jdx/mise"><code>mise</code> dev tools, env vars, task runner</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Mise</code> can install binaries from github, gitlab, uv, npm, and many more.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> TOML syntax in place of Makefile-like syntax from <code>just</code>.
-<ul>
-<li><code>terraform</code>, <code>docker</code>, ... various of support for webdev, both #backend and frontend.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> some dotfiles guy.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>Managing multiple versions of <code>Python, Ruby, JS/Node, PHP, Golang</code> + a task runner.
-<ul>
-<li>Not really needed for me since I use <code>justfile</code>, but <a href="https://github.com/jdx/mise/issues/3062">someone did migrate.</a></li>
-</ul>
-</li>
-<li>#comparison : there are some similar between <code>mise</code> and <code>just</code>:
-<ul>
-<li>Env vars manage.</li>
-<li>Runner commands/tasks.</li>
-<li>All the similarities end there.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-justfile"><span class="text plain">set dotenv-command := &#39;mise env&#39;
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:40:53 2026] <a href="https://github.com/casey/just#integrating-with-mise"> Integrating with mise </a></li>
 </ul>
 </li>
 </ul>
