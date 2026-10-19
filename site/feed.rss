@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`ImGuizmo` Immediate mode 3D gizmo for scene editing and other controls based on `Imgui`</title><category>api</category><category>camera</category><category>cpp</category><category>graphic</category><category>viewport</category><pubDate>2026-10-19 06:23:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Ship of Theseus</title><category>philo</category><category>psychology</category><pubDate>2026-10-19 07:33:48 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Ship_of_Theseus">Ship of Theseus</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a very common thought experiment. like such common, it's entry level now.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://maevyn.codes/decoherence">The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise | maevyn.codes</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>pbm and ppm image format</title><category>acronym</category><category>file</category><category>image</category><category>typesetting</category><pubDate>2026-10-19 06:58:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Netpbm">pbm and ppm image format</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> plain text image format. I kept typing bpm instead of pbm.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #library #cpp: <a href="https://github.com/ToruNiina/pnm"><code>pnm</code> pbm, pgm, ppm image IO for modern C++ (single header only library)</a>
+<ul>
+<li>#library #java: <a href="https://github.com/haraldk/TwelveMonkeys/wiki/PNM-Plugin">PNM Plugin · TwelveMonkeys Wiki</a>
+<ul>
+<li>Read support for the following file types:
+<ul>
+<li>PBM in P1 (ASCII) and P4 (binary) formats, 1 bit per pixel</li>
+<li>PGM in P2 (ASCII) and P5 (binary) formats, up to 16/32 bits per pixel</li>
+<li>PPM in P3 (ASCII) and P6 (binary) formats, up to 16/32 bits per pixel component</li>
+<li>PAM in P7 (binary) format up to 32 bits per pixel component</li>
+<li>Limited support for PFM in Pf (gray) and PF (RGB) formats, 32 bits floating point</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --><a href="https://askubuntu.com/questions/911541/what-programs-support-pam-image-format">What programs support PAM image format?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#libc <a href="https://github.com/jasper-software/jasper"><code>jasper</code> Image Coding Toolkit</a></li>
+<li><a href="https://github.com/pnggroup/libpng"><code>libpng</code> official libpng repository</a></li>
+<li>#format psf1 and psf2 files is <a href="https://wiki.osdev.org/PC_Screen_Font">PC Screen Font - OSDev Wiki</a></li>
+<li>#alternative #cpp #library: <a href="https://github.com/giovanni-iannaccone/eikon#-usage"><code>eikon</code> image processing library</a>
+<ul>
+<li>make it easier to draw some shapes on here.</li>
+</ul>
+</li>
+<li>#library #csharp <a href="https://github.com/dbrant/imageformats"><code>imageformats</code> Library for decoding obscure graphics formats, such as Targa (.TGA), Sun raster (.RAS, .SUN), ZSoft (.PCX), Netpbm (.PPM, .PGM, .PBM, .PNM), Amiga (LBM, PIC), SGI, MacPaint, AOL .ART, PSP, and DICOM.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 18:58:43 2026] <a href="https://github.com/groutoutlook/pnm">I forgot I called it <code>pnm++</code> in my own cmakelist</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about to touch it again.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`ImGuizmo` Immediate mode 3D gizmo for scene editing and other controls based on `Imgui`</title><category>api</category><category>camera</category><category>cpp</category><category>graphic</category><category>viewport</category><pubDate>2026-10-19 06:23:05 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/CedricGuillemet/ImGuizmo"><code>ImGuizmo</code> Immediate mode 3D gizmo for scene editing and other controls based on <code>Imgui</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -396,49 +453,6 @@ This is also mentioned, it's more like</li>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>want to find llvm or clang using cmake, you have to build llvm locally, one way or another.</title><category>build/cmake</category><category>clang</category><category>library</category><category>llvm</category><category>prog</category><pubDate>2026-10-17 11:06:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>want to find llvm or clang using cmake, you have to build llvm locally, one way or another.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and if possible, assign <code>$env:clang_dir;$env:llvm_dir</code>.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can build with ninja and cmake.
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cd llvm-project
-md build
-cd build
-set cc cl
-set cxx cl
-cmake -gninja -dllvm_enable_projects=clang ..\llvm
-ninja clang
-ninja clangtooling # ffs...
-ninja checK-clang # optional
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://clang.llvm.org/get_started.html#:~:text=alongside%20visual%20studio-,we%20recommend,-that%20developers%20who">guide</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><code>$home\scoop\apps\llvm\current\lib\clang\20\include</code> is the current <code>libc++</code> in my windows box.</li>
-<li>#build/cmake : also assign <code>$env:cmake_toolchain_file</code> as environment variable since... literally no one need to specify this other than me.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 23:06:19 2026] #ide/vs #cmake <a href="https://learn.microsoft.com/en-us/cpp/build/clang-support-cmake">Clang/LLVM support in Visual Studio CMake projects</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>MSVC compatibility - `Clang-cl`</title><category>buildsystem</category><category>compiler/clang</category><category>cpp</category><pubDate>2026-10-17 11:02:21 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://clang.llvm.org/docs/MSVCCompatibility.html">MSVC compatibility - <code>Clang-cl</code> </a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">clang-cl /? | bat -lhelp
-</span></code></pre>
-</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
