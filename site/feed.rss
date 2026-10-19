@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Interactive refactoring in gopls</title><category>golang</category><category>ide</category><pubDate>2026-10-18 03:30:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`arp` - Linux manual page</title><category>address/mac</category><category>cli</category><category>documentation</category><category>netw</category><pubDate>2026-10-19 01:11:55 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.man7.org/linux/man-pages/man8/arp.8.html"><code>arp</code> - Linux manual page</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this is #crossplatform. Every windows distribution has one copy of this.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">arp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a</span> 192.168.1.42 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Wi-Fi - WLAN</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">arp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a</span> 192.168.1.62 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Ethernet - LAN</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>arp -a</code> show MAC address according to IP address of connected network, either LAN or WLAN.
+<ul>
+<li>#powershell : <a href="https://learn.microsoft.com/powershell/module/nettcpip/get-netneighbor?view=windowsserver2025-ps"><code>Get-NetNeighbor</code> (NetTCPIP)</a>
+<ul>
+<li>this is #windows alternative to <code>arp-scan</code> above</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/41785413/use-powershell-to-get-device-names-and-their-ipaddress-on-a-home-network">Use powershell to get device names and their ipaddress on a home network</a>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/netadapter/get-netadapter?view=windowsserver2022-ps"><code>Get-NetAdapter</code> (NetAdapter)</a>
+This is also mentioned, it's more like</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> it resolves MAC address with simple output.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#utils: <a href="https://github.com/royhills/arp-scan"><code>arp-scan</code> ARP Scanner</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #linux exclusive.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself">ARP! Tell your network to explain itself</a></li>
+</ul>
+</li>
+<li>#misc: <a href="https://github.com/kognise/arpchat"><code>arpchat</code> what if you wanted to text your friends using only ARP?</a></li>
+<li>#linux <a href="https://www.man7.org/linux/man-pages/man8/rarp.8.html"><code>rarp</code></a></li>
+<li>#windows : <a href="https://serverfault.com/questions/26564/how-to-check-if-a-port-is-blocked-on-a-windows-machine">networking - How to check if a port is blocked on a Windows machine?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #ip/address: <a href="https://www.reddit.com/r/ipv6/comments/w37g8d">If you can't/shouldn't split up a /64, why is it so big?</a>
+<ul>
+<li>#mac : <a href="https://networkengineering.stackexchange.com/questions/23566/what-are-eui-48-and-eui-64">ethernet - What are EUI-48 and EUI-64?</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/MAC_address">MAC address is 48 bits.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:11:55 2026] #ipv6 <a href="https://wikipedia.org/wiki/Neighbor_Discovery_Protocol">NDP: Neighbor Discovery Protocol is Ipv6 version of <code>arp</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself">ARP! Tell your network to explain itself</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>UML Sequence Diagram Online Tool</title><category>browser</category><category>diagram</category><category>format/text</category><category>prog</category><pubDate>2026-10-19 11:56:42 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://sequencediagram.org/">UML Sequence Diagram Online Tool</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's really clever tool. you can click on graph text in gui itself to change. and many others.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://xosh.org/text-to-diagram/">Online text to diagram tools | XOSH.ORG</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://flowchart.fun/">Flowchart Fun — Fast, Free Online Flowchart Maker</a>
+<ul>
+<li>this make indentation text to graph. Just like YAML.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 11:56:42 2026] but  currently I have no such interests for those things anymore</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Monodraw for macOS — Helftone</title><category>diagram</category><category>format</category><category>prog</category><pubDate>2026-10-19 11:55:35 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://monodraw.helftone.com/">Monodraw for macOS — Helftone</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/kognise/rust-monodraw">Rust parser and renderer for Monodraw files</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Open new terminal tab in same directory as existing tab (OSC 7?) · Issue #3158 · microsoft/terminal</title><category>signal/ansi</category><category>soft</category><category>windows/terminal</category><pubDate>2026-10-19 08:46:08 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/microsoft/terminal/issues/3158">Open new terminal tab in same directory as existing tab (OSC 7?) · Issue #3158 · microsoft/terminal</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/microsoft/terminal/pull/20019">Implement OSC 7 for setting the CWD</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><code>OSC 7</code> : Escape sequences to advise the terminal of the working directory.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wezterm.org/shell-integration.html">Shell Integration for wezterm</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#blog : <a href="https://www.ethanheilman.com/x/28/index.html">The Terminal Escape Sequences Ocean is Deep and Dark: Debugging a Virtual Terminal</a></li>
+<li>#alternative <a href="https://github.com/contour-terminal/contour/"><code>contour</code> C++ Terminal Emulator</a>
+<ul>
+<li>Most notable feature: <a href="https://contour-terminal.org/vt-extensions/color-palette-update-notifications/">Dark and Light Mode detection - Contour Terminal Emulator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 08:46:08 2026] #powershell <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_update_notifications">about_Update_Notifications</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/PowerShell/PowerShell/discussions/27060">Removing the PowerShell Update Notification · PowerShell/PowerShell · Discussion #27060</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Interactive refactoring in gopls</title><category>golang</category><category>ide</category><pubDate>2026-10-18 03:30:08 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/wn293o/interactive_refactoring_gopls">Interactive refactoring in gopls</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -137,7 +253,7 @@ ninja checK-clang # optional
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`d2` modern diagram scripting language that turns text to diagrams.</title><category>diagram</category><category>golang</category><category>visualize</category><category>web</category><pubDate>2026-10-17 10:52:02 AM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`d2` modern diagram scripting language that turns text to diagrams.</title><category>diagram</category><category>golang</category><category>prog</category><category>visualize</category><pubDate>2026-10-17 10:52:02 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/terrastruct/d2"><code>d2</code> modern diagram scripting language that turns text to diagrams.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> simpler than <code>mermaid</code>, alternative to every kind of UML. #nightly.</li>
@@ -355,59 +471,6 @@ comrak $jtb[&quot;fm&quot;] &gt; ($a = New-TemporaryFile -extension html); msedg
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 20:22:48 2026] #discussion <a href="https://lobste.rs/s/kaerns/sunsetting_decomp_dev">Sunsetting decomp.dev</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>language agnostic - What is an idempotent operation?</title><category>csci</category><category>vocabulary</category><pubDate>2026-10-16 11:59:25 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation">language agnostic - What is an idempotent operation?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Idempotence">Idempotence</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #llm <a href="https://lukechampine.com/repligraphs/">Repligraphs</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50017247">Nix wrote half of my debugger</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 11:59:25 2026] <a href="https://news.ycombinator.com/item?id=50087616">Non-Determinism Doesn't Matter</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Skeuomorph</title><category>design/art</category><category>retro</category><category>style</category><category>terminology</category><pubDate>2026-10-16 11:57:29 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Skeuomorph">Skeuomorph</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50103338">Wayland desktop for Linux with skeuomorphic design</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Apple routed a graphite pipe through the iPhone Duo&apos;s hinge to dissipate heat</title><category>discussion</category><category>hardware</category><category>misc</category><category>news</category><category>thermal</category><pubDate>2026-10-16 11:16:25 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50068203">Apple routed a graphite pipe through the iPhone Duo's hinge to dissipate heat</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> gossip at this point</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #english <a href="https://www.reddit.com/r/UnsentLetters/comments/1txbsqb">Headcase basically mean unstable (person)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`sill` window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys</title><category>ios</category><category>macos</category><category>mobile</category><category>remote</category><category>swgui</category><category>vnc</category><pubDate>2026-10-16 11:03:07 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Saffsanity/sill"><code>sill</code> window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in HN, but <a href="https://lowtechguys.com/">The low-tech guys</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
