@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>The History of Thon, the Forgotten Gender-Neutral Pronoun</title><category>pronoun</category><category>vocab</category><pubDate>2026-10-19 06:04:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`ImGuizmo` Immediate mode 3D gizmo for scene editing and other controls based on `Imgui`</title><category>api</category><category>camera</category><category>cpp</category><category>graphic</category><category>viewport</category><pubDate>2026-10-19 06:23:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/CedricGuillemet/ImGuizmo"><code>ImGuizmo</code> Immediate mode 3D gizmo for scene editing and other controls based on <code>Imgui</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Imperative mood</title><category>english</category><category>grammar</category><category>vocab</category><pubDate>2026-10-19 06:14:45 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Imperative_mood">Imperative mood</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> imperative present tense</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which is, start with a verb. Conjugate that with the s/es...
+<ul>
+<li><a href="https://wikipedia.org/wiki/Inflection">Inflection</a></li>
+<li>this Imperative present tense is super useful for searching issues.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/jtroo/kanata/pull/1031">Show layer icon near mouse pointer (win-tray) by eugenesvk · Pull Request #1031 · jtroo/kanata</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#linux : #crossplatform : <a href="https://github.com/rszyma/kanata-tray">kanata-tray: Tray Icon for Kanata</a>
+<ul>
+<li><a href="https://github.com/jtroo/kanata/blob/main/cfg_samples/tray-icon/tray-icon.kbd">Specified tray-icon explicitly by <code>deflayer</code></a></li>
+<li>My config enable implicitly <code>icon-match-layer-name yes</code>. Can always specififed a different name.</li>
+</ul>
+</li>
+<li><a href="https://lobste.rs/s/s8awlf">Programming is Dead: The Future of Software Engineering</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> inflection point is like the start of spearheading, no?</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Inflection_point">Inflection point</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 18:14:45 2026] #discussion <a href="https://lobste.rs/s/wtobpt/my_obituary_for_programming">My obituary for programming</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about is it really dead or not, computer science.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The History of Thon, the Forgotten Gender-Neutral Pronoun</title><category>pronoun</category><category>vocab</category><pubDate>2026-10-19 06:04:39 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.merriam-webster.com/wordplay/third-person-gender-neutral-pronoun-thon">The History of Thon, the Forgotten Gender-Neutral Pronoun</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Kinda hillarious isn it. I change my pronoun to thine/thon.</li>
@@ -394,51 +443,6 @@ ninja checK-clang # optional
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Leap second</title><category>chrono</category><category>csci</category><pubDate>2026-10-17 12:30:53 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Leap_second">Leap second</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #cpp <a href="https://cppreference.com/cpp/chrono/leap_second">std::chrono::leap_second</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`d2` modern diagram scripting language that turns text to diagrams.</title><category>diagram</category><category>golang</category><category>prog</category><category>visualize</category><pubDate>2026-10-17 10:52:02 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/terrastruct/d2"><code>d2</code> modern diagram scripting language that turns text to diagrams.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> simpler than <code>mermaid</code>, alternative to every kind of UML. #nightly.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44954524">D2 (text to diagram tool) now supports ASCII renders</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#format : <a href="https://github.com/eclipse-elk/elk"><code>elk</code> Eclipse Layout Kernel - Automatic layout for Java applications.</a>
-<ul>
-<li>... which is used in <code>d2</code> as one of the engine, especially for ASCII diagramming.
-<ul>
-<li>See <a href="https://d2lang.com/blog/ascii/#limitations">ASCII output | D2 Documentation</a></li>
-</ul>
-</li>
-<li>#alternative: <a href="https://github.com/terrastruct/tala#installation"><code>TALA</code> A diagram layout engine designed specifically for software architecture diagrams</a></li>
-</ul>
-</li>
-<li>[2025-06-02 14:50:24] : <a href="https://github.com/danieleades/mdbook-d2"><code>mdbook-d2</code> D2 diagram generator plugin for MdBook</a>
-<ul>
-<li>use with <code>mdbook watch</code>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:52:02 2026] #blog #introduction <a href="https://shom.dev/posts/20260919_d2-diagramming/">D2 diagramming | shom.dev</a></li>
 </ul>
 </li>
 </ul>
