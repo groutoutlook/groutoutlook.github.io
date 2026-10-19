@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Premium apps hosting that just works | Ultra.cc</title><category>host</category><category>web</category><pubDate>2026-10-19 01:23:45 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>lobster as hackernews alternative</title><category>forum</category><category>list</category><category>meta</category><category>news</category><category>programming</category><category>technology</category><pubDate>2026-10-19 05:04:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/">lobster as hackernews alternative</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Sometimes I  feel bored watching hackernews.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> although account making is through an invitation system.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/lobsters/lobsters"><code>lobsters</code> community link aggregation and discussion</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 17:04:07 2026] #meta #discussion <a href="https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from">It's enough - vibecoding tag crossed from useless to harmful</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> quality of every forum is degraded everywhere at once.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Set up and update your System2 boards from one screen | MegaConsole - YouTube</title><category>can</category><category>hard</category><category>mqtt</category><category>wifi</category><pubDate>2026-10-19 04:20:57 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.youtube.com/watch?v=DPKIyIzHdEw">Set up and update your System2 boards from one screen | MegaConsole - YouTube</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Horse horse horse</title><category>comedy</category><category>humor</category><category>music</category><category>pop/korean</category><pubDate>2026-10-19 03:42:04 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/crappymusic/comments/1py7jiz">Horse horse horse</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> terrible lyric dear chin🦆</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/kpoopheads/comments/16e7jzt">I need therapy lalalalala therapy</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://youtu.be/b08SIott4eI">the absolute worst (but most iconic) lyrics in k-pop</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/crappymusic/comments/1iaq5b1">Saw a therapist after this</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> galactivated.</li>
+</ul>
+</li>
+<li><a href="https://www.reddit.com/r/CringeTikToks/comments/1khncjc">Happy Mental Awareness Month. I hope you are doing well</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #quote &quot;I care for everyone's happiness but forget about my own&quot; are always the least selfless people.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 15:42:04 2026] epic flute: <a href="https://www.youtube.com/watch?v=1oYWnbTSang&amp;list=RD1oYWnbTSang&amp;start_radio=1">NCT 127 엔시티 127 'Sticker' MV - YouTube</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Premium apps hosting that just works | Ultra.cc</title><category>host</category><category>web</category><pubDate>2026-10-19 01:23:45 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://ultra.cc/">Premium apps hosting that just works | Ultra.cc</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #til seedbox is file torrent server.</li>
@@ -377,106 +433,6 @@ ninja checK-clang # optional
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:40:53 2026] <a href="https://github.com/casey/just#integrating-with-mise"> Integrating with mise </a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`comrak`: CommonMark + GFM compatible Markdown parser and renderer</title><category>cli</category><category>document</category><category>file</category><category>html</category><category>library</category><category>markdown</category><category>parser</category><category>rust</category><pubDate>2026-10-17 10:13:29 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/kivikakk/comrak"><code>comrak</code>: CommonMark + GFM compatible Markdown parser and renderer</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> convert from a markdown file with the path into HTML in the stdout.
-<ul>
-<li>really similar to a SSG.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">comrak $jtb[&quot;fm&quot;] | bat -lhtml # for my profiles... could try a readme for a simpler example.
-# A variable can contain a file handle. with `miniserve` you can update the file....
-# with text editor even.
-comrak $jtb[&quot;fm&quot;] &gt; ($a = ni -p $env:TEMP -n &quot;edgerun.html&quot; -Force); miniserve $a &amp;&amp; rm $a
-# hopefully in the future it could be like this.
-comrak $jtb[&quot;fm&quot;] &gt; ($a = New-TemporaryFile -extension html); msedge $a
-</span></code></pre>
-<ul>
-<li>#cli/option : <code>-o</code> | <code>--output</code> &quot;FILE&quot; will output to a file, thus reduce above kludges.
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">comrak ./README.MD -o ./README.html ; msedge $pwd/README.html # notice msedge cant expand the &quot;.&quot; dir.
-</span></code></pre>
-</li>
-</ul>
-</li>
-<li>
-<h2><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></h2>
-<ul>
-<li>you could pipe to a Temp file and let <code>miniserve</code> serve it.</li>
-<li>#nodejs #cli #pipeline <a href="https://github.com/kessler/node-bcat">node-bcat: A pipe to browser utility</a>
-<ul>
-<li>#alternative : <a href="https://unix.stackexchange.com/questions/271945/how-to-pipe-html-into-lynx">How to pipe html into lynx?</a>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">cat ./a-file-ends-with.html | lynx -stdin        
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#powershell: <a href="https://github.com/PowerShell/PowerShell/issues/4215">Add ability to create a temporary file with a specific extension to New-TemporaryFile · Issue #4215 · PowerShell/PowerShell</a></li>
-<li><a href="https://stackoverflow.com/questions/6223996/does-any-web-browser-allow-writing-to-stdout/6263422#6263422">Does any web browser allow writing to stdout?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/commonmark/cmark"><code>cmark</code> CommonMark parsing and rendering library and program in C</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to force myself better I shim <code>comrak</code> to <code>cmark</code> —  less syllable to look on.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://soupault.net/"><code>soupault</code></a></li>
-<li><a href="https://tildes.net/~comp/1jq5/are_feeds_like_rss_or_atom_feeds_really_worth_it_for_a_personal_blog">Are Feeds - like RSS or Atom feeds - Really worth it for a personal blog? - ~comp - Tildes</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 10:13:29 2026] #scripting  <code>termi</code>/<code>mdpng</code> now make my clipboard into image.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`WinUSB_DMA_MJPEG_Camera` WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</title><category>dma</category><category>usb</category><category>windows</category><pubDate>2026-10-17 09:08:51 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/rajhlinux/WinUSB_DMA_MJPEG_Camera"><code>WinUSB_DMA_MJPEG_Camera</code> WinUSB driver, project for real-time, low-latency, which extracts, parses and displays MJPEG streams from arbitrary UVC USB cameras on Windows 10 using WinUSB.sys driver and WinUSB API. The project main focus was to utilize DMA (Direct Memory Access) from USB Host controller.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> trying to find how to simulate MCU's DMA within Windows/Linux environment.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/YuzukiHD/YuzukiLOHCC-PRO">YuzukiLOHCC-PRO: Low cost USB3.2Gen1 HDMI-USB Video Acquisition With Loop Out (Loop Out HDMI Capture Card) base on MS2130 &amp; MS9332</a>
-<ul>
-<li>all for a HDMI -&gt; USB usage.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#android #cpp <a href="https://github.com/Peter-St/Android-UVC-Camera">Android-UVC-Camera</a></li>
-<li>#android #cpp <a href="https://github.com/shiyinghan/UVCAndroid">UVCAndroid</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 14:42:24 2026] <a href="https://mp.weixin.qq.com/s/T-yCrwDE9bOZb3eJHWzLuw">IT66326 Technical Analysis: The audio and video processing and integration architecture of HDMI 2.1 switches</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 09:08:51 2026] #camera <a href="https://www.kernel.org/doc/html/v4.9/media/v4l-drivers/uvcvideo.html">28. The Linux USB Video Class (UVC) driver — The Linux Kernel documentation</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>【Domestic】Anlu EF2L45LG144 FPGA Development Board/Core Board Alternative EP4CE10E22C8N</title><category>cpld</category><category>evb</category><category>fpga/anlogic</category><pubDate>2026-10-17 08:40:28 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://item.taobao.com/item.htm?id=626069149429">【Domestic】Anlu EF2L45LG144 FPGA Development Board/Core Board Alternative EP4CE10E22C8N</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://shop66526602.world.taobao.com">小梅哥FPGA企业店</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://shop576825558.taobao.com/">芯创客</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://item.taobao.com/item.htm?id=770236074212">紫光FPGA开发板 compa系列 国产FPGA 立创逻辑派Z1 PGC4KD/PGC7KD</a>
-<ul>
-<li>Pango FPGA brand.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 08:40:28 2026] <a href="https://item.taobao.com/item.htm?id=776516984361&amp;item_type=ad">FPGA开发板 20K 图像处理开发板 RISC-V开发板</a></li>
 </ul>
 </li>
 </ul>
