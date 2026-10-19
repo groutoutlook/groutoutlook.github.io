@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Altruism</title><category>misc</category><category>philosophy</category><pubDate>2026-10-18 12:31:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Interactive refactoring in gopls</title><category>golang</category><category>ide</category><pubDate>2026-10-18 03:30:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/wn293o/interactive_refactoring_gopls">Interactive refactoring in gopls</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Making Hybrid Images (2014)</title><category>art</category><category>graphic</category><category>prog</category><pubDate>2026-10-18 03:29:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/16tsvr/making_hybrid_images_2014">Making Hybrid Images (2014)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.jeremykun.com/">jeremykun.com</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`qsort`, `qsort_s`</title><category>algorithm/sort</category><category>lang</category><category>libc</category><category>std</category><pubDate>2026-10-18 02:55:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://cppreference.com/w/c/algorithm/qsort"><code>qsort</code>, <code>qsort_s</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> kinda. surprising to see there is a custom sort in C.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://thephd.dev/the-cost-of-a-closure-in-c-c2y">The Cost Of a Closure in C | The Pasture</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #compsci <a href="https://wikipedia.org/wiki/Man_or_boy_test">Man or boy test</a>
+<ul>
+<li><a href="https://stackoverflow.com/questions/1746931/how-does-the-man-or-boy-knuth-test-work">algol - How does the &quot;Man Or Boy&quot; Knuth test work?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 14:55:51 2026] <a href="https://news.ycombinator.com/item?id=50106792">Fun Extending the C Preprocessor</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Mullable Type for `glaze`</title><category>api</category><category>cpp</category><category>serialize</category><pubDate>2026-10-18 12:22:01 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/df40e7482b4354b0dd00f1b738ed7be85aee0840/docs/nullable-types.md">Mullable Type for <code>glaze</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm worrying we cant null for glaze, Reading CSV is harsh.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://stackoverflow.com/questions/14337551/why-is-the-default-value-of-the-string-type-null-instead-of-an-empty-string">c# - Why is the default value of the string type null instead of an empty string?</a></li>
+<li><a href="https://softwareengineering.stackexchange.com/questions/413149/if-null-is-a-billion-dollar-mistake-what-is-the-solution-to-represent-a-non-ini">programming languages - If null is a billion dollar mistake, what is the solution to represent a non-initialized object?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 12:22:01 2026] <a href="https://wikipedia.org/wiki/Null_sign">Null sign</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Altruism</title><category>misc</category><category>philosophy</category><pubDate>2026-10-18 12:31:10 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Altruism">Altruism</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> concern for the well-being, the life, of others, independently of personal benefit or reciprocity.</li>
@@ -349,93 +408,6 @@ comrak $jtb[&quot;fm&quot;] &gt; ($a = New-TemporaryFile -extension html); msedg
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in HN, but <a href="https://lowtechguys.com/">The low-tech guys</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Remote control animal</title><category>anim</category><category>animal</category><pubDate>2026-10-16 10:18:22 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Remote_control_animal">Remote control animal</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I suddenly have a thought, isnt using animal much better method to doing things in extreme weather condition?
-<ul>
-<li>space, weather, temperature, economic constraint.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: inexpensive, organic substitutes.</li>
-<li>Con: neural stuff, #nervous system kind of things.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> moral value? Idgaf.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Start a side chat with `/side`|`/btw` command</title><category>ai/harness</category><category>soft</category><pubDate>2026-10-16 10:07:54 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-start-a-side-chat-with-side"> Start a side chat with <code>/side</code>|<code>/btw</code> command</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>/side</code> is unavailable inside another side chat and during review mode.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Subagents | ChatGPT Learn</title><category>ai/harness</category><category>codex</category><category>soft</category><pubDate>2026-10-16 10:06:23 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.chatgpt.com/docs/agent-configuration/subagents?surface=app">Subagents | ChatGPT Learn</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`tacentview` image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</title><category>file</category><category>format/ktx</category><category>viewer</category><pubDate>2026-10-16 09:58:41 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/bluescan/tacentview"><code>tacentview</code> image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly since quite usable and fucking faster than <code>imageglass</code>.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://bluescan.github.io/tacentview/cli.html">CLI | Tacent View</a></li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">tacentview</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>op</span> flip</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> hold/drag <code>RightClick</code> to pan viewport.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try to remove default image viewer of #windows, come up with imageglass first then this.
-<ul>
-<li>#crossplatform of course.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>currently cant handle <code>jxl</code>.</li>
-<li>[2026-02-15 11:24:23 AM] #tui only <code>yazi</code> can kinda preview it.
-<ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">zz</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\D</span>ownloads<span class="constant character escape shell">\s</span>hark_hashquine.jxl</span>
-<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or with chrome canary:</span><span class="comment line number-sign shell">
-</span><span class="meta function-call shell"><span class="variable function shell">chrome</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\D</span>ownloads<span class="constant character escape shell">\s</span>hark_hashquine.jxl</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> sometimes you have to accept using browser as glorify editor/viewer for some ubiquotous files format.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:58:41 2026] <a href="https://lobste.rs/s/uejdwj/jpeg_xl_vs_avif_for_web_use_cases">JPEG XL vs AVIF for web use-cases</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.slrphotographyguide.com/pixel-peeping-why-you-shouldnt-do-it/">Pixel Peeping – Why You Shouldn’t Do It – SLR Photography Guide</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
