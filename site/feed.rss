@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`arp` - Linux manual page</title><category>address/mac</category><category>cli</category><category>documentation</category><category>netw</category><pubDate>2026-10-19 01:11:55 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Premium apps hosting that just works | Ultra.cc</title><category>host</category><category>web</category><pubDate>2026-10-19 01:23:45 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://ultra.cc/">Premium apps hosting that just works | Ultra.cc</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #til seedbox is file torrent server.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/seedboxes/comments/wi4m4e">Ultra.cc &amp; syncthing</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/seedboxes/comments/qm0nal">Review: Whatbox.ca , 2 years later.</a></li>
+<li>#alternative : <a href="https://cyberduck.io/">Cyberduck | Libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &amp; OneDrive, Google Drive and Dropbox</a>
+<ul>
+<li>this is more #selfhost version of those services.</li>
+</ul>
+</li>
+<li>#cli : <a href="https://github.com/lavv17/lftp"><code>lftp</code> cli file transfer (ftp, http, sftp, fish, torrent...)</a>
+<ul>
+<li>on Linux or WSL only..</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #doc: <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ftp-remotehelp_1">ftp remotehelp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:23:45 2026] #code/forge <a href="https://tonym.us/move-github-repos-to-google-drive.html">Move GitHub Private Repos to Google Drive in Minutes // Tony Metzidis</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`arp` - Linux manual page</title><category>address/mac</category><category>cli</category><category>documentation</category><category>netw</category><pubDate>2026-10-19 01:11:55 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.man7.org/linux/man-pages/man8/arp.8.html"><code>arp</code> - Linux manual page</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this is #crossplatform. Every windows distribution has one copy of this.</li>
@@ -449,28 +477,6 @@ comrak $jtb[&quot;fm&quot;] &gt; ($a = New-TemporaryFile -extension html); msedg
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 08:40:28 2026] <a href="https://item.taobao.com/item.htm?id=776516984361&amp;item_type=ad">FPGA开发板 20K 图像处理开发板 RISC-V开发板</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`radare2` UNIX-like reverse engineering framework and command-line toolset</title><category>cli</category><category>csci</category><category>infosec</category><category>re</category><pubDate>2026-10-16 08:22:48 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/radareorg/radare2"><code>radare2</code> UNIX-like reverse engineering framework and command-line toolset</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Some decompiler tools</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> all them in scoop.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://book.rada.re/">Book of radare</a>
-<ul>
-<li>#alternative: <a href="https://cutter.re/">cutter</a></li>
-<li>#alternative/successor: <a href="https://github.com/NationalSecurityAgency/ghidra"><code>Ghidra</code> software reverse engineering (SRE) framework</a></li>
-<li>#alternative/license: <a href="https://binary.ninja/free/">Binary Ninja - Try Binary Ninja</a>
-<ul>
-<li>but also have a free version.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 20:22:48 2026] #discussion <a href="https://lobste.rs/s/kaerns/sunsetting_decomp_dev">Sunsetting decomp.dev</a></li>
 </ul>
 </li>
 </ul>
