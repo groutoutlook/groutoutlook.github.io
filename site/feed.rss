@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Ship of Theseus</title><category>philo</category><category>psychology</category><pubDate>2026-10-19 07:33:48 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`maddy` ✉️ Composable all-in-one mail server.</title><category>mail</category><category>netw</category><category>smtp</category><pubDate>2026-10-20 12:06:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/foxcpp/maddy"><code>maddy</code> ✉️ Composable all-in-one mail server.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/qmvgke/opensmtpd_is_mail_server_for_future">OpenSMTPD Is The Mail Server For The Future</a>
+<ul>
+<li>it's not... just the tendency of openbsd crowd to make something old relevant.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/mjl-/mox"><code>mox</code> secure mail server for low-maintenance self-hosted email</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/stalwartlabs/stalwart"><code>stalwart</code> JMAP Mail &amp; Collaboration server</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> [Sun Jul 26 17:02:44 2026] <del>no update lately so...</del> Suddenly revived?</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> JMAP mail and calendar server. it's the first one I ever see support JMAP as first class.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 20 12:06:36 2026] <a href="https://lobste.rs/s/sqdhu7/openbsd_8_0">OpenBSD 8.0</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SPI data storage devices (micro)SD card, DataFlash, or serial EEPROM?</title><category>memory</category><category>module</category><category>spi</category><pubDate>2026-10-20 11:15:17 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://electronics.stackexchange.com/questions/242995/spi-data-storage-devices-microsd-card-dataflash-or-serial-eeprom">SPI data storage devices (micro)SD card, DataFlash, or serial EEPROM?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.fmsh.com/nvm/FM24C512D_ds_eng.pdf">FM24C512D ds eng</a>
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=869798602223">Fudan Micro FM24C512D/128D/64D/04D-DN-T-G Memory Chip DFN-8</a></li>
+<li><a href="https://www.fmsh.com/nvm/FM24C04D_ds_eng.pdf">FM24C04D ds eng 4096 bits eeprom... wtf</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>[sdcard - Is it true that a SD/MMC Card does wear levelling with its own controller?](https://electronics.stackexchange.com/questions/27619/is-it-true-that-a-sd-mmc-card-does-wear-levelling-with-its-own-controller</li>
+<li><a href="https://electronics.stackexchange.com/questions/744004/use-of-eeprom-in-automotive-microcontroller-when-there-is-flash-memory/744007#744007">Use of EEPROM in automotive microcontroller when there is flash memory?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> external EEPROM can do byte-level addressable access. Flash can only do pages by pages.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 20 11:15:17 2026] <a href="https://electronics.stackexchange.com/questions/278437/stm32f74x-flash-page-size-and-sectors">stm32 - STM32F74x Flash page size and sectors</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/241542/flash-memory-what-are-blocks-and-pages-from-a-physical-standpoint">Flash memory: What are blocks and pages from a physical standpoint?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>天线 is antenna</title><category>ee</category><category>efid</category><category>vocab</category><pubDate>2026-10-20 10:27:04 AM</pubDate><content:encoded><![CDATA[<ul>
+<li>天线 is antenna
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1016470318700">MIKROE-4003 MIKROE-4004 天线 Circular NFC R25 Antenna</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#bridge #i2c #uart <a href="https://www.mikroe.com/blog/uart-to-i2c-click?srsltid=AU7gw4WkgmMxAHv3giOXgOF0Gw5vKgyN3QybbM1n12lC3YFvlEbRfSeB">UART to I2C Click: Bridge Legacy Interfaces to Modern Buses</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 20 10:27:04 2026] #pcb <a href="https://www.mikroe.com/mikrobus">mikroBUS extension pinout</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Ship of Theseus</title><category>philo</category><category>psychology</category><pubDate>2026-10-19 07:33:48 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Ship_of_Theseus">Ship of Theseus</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a very common thought experiment. like such common, it's entry level now.</li>
@@ -414,49 +489,6 @@ This is also mentioned, it's more like</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 14:55:51 2026] <a href="https://news.ycombinator.com/item?id=50106792">Fun Extending the C Preprocessor</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Mullable Type for `glaze`</title><category>api</category><category>cpp</category><category>serialize</category><pubDate>2026-10-18 12:22:01 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/stephenberry/glaze/blob/df40e7482b4354b0dd00f1b738ed7be85aee0840/docs/nullable-types.md">Mullable Type for <code>glaze</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm worrying we cant null for glaze, Reading CSV is harsh.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://stackoverflow.com/questions/14337551/why-is-the-default-value-of-the-string-type-null-instead-of-an-empty-string">c# - Why is the default value of the string type null instead of an empty string?</a></li>
-<li><a href="https://softwareengineering.stackexchange.com/questions/413149/if-null-is-a-billion-dollar-mistake-what-is-the-solution-to-represent-a-non-ini">programming languages - If null is a billion dollar mistake, what is the solution to represent a non-initialized object?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 12:22:01 2026] <a href="https://wikipedia.org/wiki/Null_sign">Null sign</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Altruism</title><category>misc</category><category>philosophy</category><pubDate>2026-10-18 12:31:10 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Altruism">Altruism</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> concern for the well-being, the life, of others, independently of personal benefit or reciprocity.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> FTX's SBF.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.benkuhn.net/downgrading-confidence-earning-give/">Downgrading confidence in earning to give | benkuhn.net</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 00:31:10 2026] <a href="https://news.ycombinator.com/item?id=50132278">Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>GLP-1 may slow biological aging</title><category>ana</category><category>anatomy</category><pubDate>2026-10-18 12:29:00 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50132328">GLP-1 may slow biological aging</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
