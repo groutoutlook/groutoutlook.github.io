@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>再见Xshell！一款万能通用的终端工具，用完爱不释手！</title><category>cloud</category><category>container</category><category>dashboard</category><category>manager</category><category>selfhost</category><category>wprog</category><pubDate>2026-10-21 08:40:30 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>SM2082G</title><category>LED</category><category>driver</category><category>module</category><category>power/AC</category><pubDate>2026-10-21 09:10:50 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.linkage.cn/uploads/allimg/20231205/2-231205142639346.pdf">SM2082G</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 220VAC -&gt; diode bridge -&gt; LED driver. Use in cheap bulb. There are several of them in the journal but I happen to forget where they are.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/YdhKqNCGam-G4CAfs85g9g">220V40WLED灯主板及工作原理图</a>
+<ul>
+<li>basic schematic are in here in case you are aspiring to make one on your own.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.pcbway.com/pcb_prototype/General_introduction_of_Aluminum_PCB.html">Aluminum PCB Stackup - PCB Prototype the Easy Way - PCBWay</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 21 09:10:50 2026] #pmic <a href="https://mp.weixin.qq.com/s/reu91nG5H8ocFO-apEpFfQ">External OTP low-harmonic linear solution</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> from the YD925 guys.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>再见Xshell！一款万能通用的终端工具，用完爱不释手！</title><category>cloud</category><category>container</category><category>dashboard</category><category>manager</category><category>selfhost</category><category>wprog</category><pubDate>2026-10-21 08:40:30 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/e5rbsncPQ6P1QNHcQqT_mQ">再见Xshell！一款万能通用的终端工具，用完爱不释手！</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to termius.</li>
@@ -491,18 +512,6 @@ This is also mentioned, it's more like</li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/PowerShell/PowerShell/discussions/27060">Removing the PowerShell Update Notification · PowerShell/PowerShell · Discussion #27060</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Interactive refactoring in gopls</title><category>golang</category><category>ide</category><pubDate>2026-10-18 03:30:08 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/wn293o/interactive_refactoring_gopls">Interactive refactoring in gopls</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
