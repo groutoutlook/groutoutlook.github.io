@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`maddy` ✉️ Composable all-in-one mail server.</title><category>mail</category><category>netw</category><category>smtp</category><pubDate>2026-10-20 12:06:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>再见Xshell！一款万能通用的终端工具，用完爱不释手！</title><category>cloud</category><category>container</category><category>dashboard</category><category>manager</category><category>selfhost</category><category>wprog</category><pubDate>2026-10-21 08:40:30 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/e5rbsncPQ6P1QNHcQqT_mQ">再见Xshell！一款万能通用的终端工具，用完爱不释手！</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to termius.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#linux/nixos : <a href="https://github.com/xpipe-io/nixpkg">xpipe-io/nixpkg</a>
+<ul>
+<li>could be useful since I want to move all my infra to NixOS somehow.(update 2025-05)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop, probably</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/xpipe-io/xpipe"><code>xpipe</code> Access your entire server infrastructure from your local desktop</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#discussion/reddit : [promotion]](https://www.reddit.com/r/selfhosted/comments/1eigxzw)
+<ul>
+<li>#alternative : <a href="https://www.vandyke.com/products/securecrt/">SecureCRT - The rock-solid Telnet and SSH client for Windows, macOS, and Linux</a></li>
+<li><a href="https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf?permalink_comment_id=5877110">Native Secure Enclaved backed ssh keys on MacOS</a></li>
+<li><a href="https://lobste.rs/s/9ipypq/updates_full_disk_access_macos">Updates to Full Disk Access in macOS</a></li>
+</ul>
+</li>
+<li><a href="https://devenv.sh/blog/2026/06/26/making-devenv-start-fast-and-the-whole-nixpkgs-with-it/">Making devenv start fast, and the whole nixpkgs with it - devenv</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 21 08:40:30 2026] <a href="https://lobste.rs/s/d7m5j1/setting_up_ssh_keys_on_macos_with_touch_id">Setting up SSH keys on macOS with Touch ID</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>One Hash Bloom Filters - Jim Calabro</title><category>algorithm</category><category>csci</category><category>network</category><pubDate>2026-10-20 02:29:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.calabro.io/ohbf">One Hash Bloom Filters - Jim Calabro</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`maddy` ✉️ Composable all-in-one mail server.</title><category>mail</category><category>netw</category><category>smtp</category><pubDate>2026-10-20 12:06:36 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/foxcpp/maddy"><code>maddy</code> ✉️ Composable all-in-one mail server.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -460,35 +503,6 @@ This is also mentioned, it's more like</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Making Hybrid Images (2014)</title><category>art</category><category>graphic</category><category>prog</category><pubDate>2026-10-18 03:29:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/16tsvr/making_hybrid_images_2014">Making Hybrid Images (2014)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.jeremykun.com/">jeremykun.com</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`qsort`, `qsort_s`</title><category>algorithm/sort</category><category>lang</category><category>libc</category><category>std</category><pubDate>2026-10-18 02:55:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://cppreference.com/w/c/algorithm/qsort"><code>qsort</code>, <code>qsort_s</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> kinda. surprising to see there is a custom sort in C.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://thephd.dev/the-cost-of-a-closure-in-c-c2y">The Cost Of a Closure in C | The Pasture</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #compsci <a href="https://wikipedia.org/wiki/Man_or_boy_test">Man or boy test</a>
-<ul>
-<li><a href="https://stackoverflow.com/questions/1746931/how-does-the-man-or-boy-knuth-test-work">algol - How does the &quot;Man Or Boy&quot; Knuth test work?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 18 14:55:51 2026] <a href="https://news.ycombinator.com/item?id=50106792">Fun Extending the C Preprocessor</a></li>
 </ul>
 </li>
 </ul>
