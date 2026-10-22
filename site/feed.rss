@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>SM2082G</title><category>LED</category><category>driver</category><category>module</category><category>power/AC</category><pubDate>2026-10-21 09:10:50 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Fátima, Portugal</title><category>catholic</category><category>geology</category><category>place</category><pubDate>2026-10-22 12:36:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/F%C3%A1tima,_Portugal">Fátima, Portugal</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.astralcodexten.com/p/the-fatima-sun-miracle-much-more">The Fatima Sun Miracle: Much More Than You Wanted To Know</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Most advice is right for the person giving it</title><category>discussion</category><category>quote</category><pubDate>2026-10-21 09:39:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50180444">Most advice is right for the person giving it</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Good type against all odds</title><category>file</category><category>typesetting</category><pubDate>2026-10-21 09:27:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50175059">Good type against all odds</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Drop-in Gateway - GL.iNet Router Docs 4</title><category>config</category><category>netw</category><category>openwrt</category><pubDate>2026-10-21 09:22:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://docs.gl-inet.com/router/en/4/interface_guide/drop-in_gateway/">Drop-in Gateway - GL.iNet Router Docs 4</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://forum.openwrt.org/t/dual-lan-gateway-for-vpn/205705">Dual LAN gateway for VPN - Installing and Using OpenWrt</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.gl-inet.com/t/drop-in-gateway-application-scenarios-and-configuration-tutorial/35792">Drop-in Gateway Application Scenarios and Configuration Tutorial - Router / VPN, DNS</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://forum.openwrt.org/t/the-cheapest-yet-most-powerful-network-ive-been-able-to-build-thanks-to-openwrt/253086/31">cheapest yet most powerful network I've been able to build, thanks to OpenWrt - Installing and Using OpenWrt</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 21 21:22:23 2026] #infosec <a href="https://lobste.rs/s/s3w7hd/tor_vpn_beta_what_we_ve_learned_building">Tor VPN Beta: What we've learned building our own VPN for Android from scratch</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Making a VGA Driver in SystemVerilog</title><category>cpld</category><category>display</category><category>protocol/vga</category><pubDate>2026-10-21 07:49:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/mngelc/making_vga_driver_systemverilog">Making a VGA Driver in SystemVerilog</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Feds suspect ransom negotiator ran ShinyHunters extortion site</title><category>federal</category><category>infosec</category><category>society</category><category>us</category><pubDate>2026-10-21 07:41:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50173487">Feds suspect ransom negotiator ran ShinyHunters extortion site</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> hostage negotiator.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SM2082G</title><category>LED</category><category>driver</category><category>module</category><category>power/AC</category><pubDate>2026-10-21 09:10:50 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.linkage.cn/uploads/allimg/20231205/2-231205142639346.pdf">SM2082G</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 220VAC -&gt; diode bridge -&gt; LED driver. Use in cheap bulb. There are several of them in the journal but I happen to forget where they are.</li>
@@ -338,180 +415,6 @@ Neat!</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Horse horse horse</title><category>comedy</category><category>humor</category><category>music</category><category>pop/korean</category><pubDate>2026-10-19 03:42:04 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/crappymusic/comments/1py7jiz">Horse horse horse</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> terrible lyric dear chin🦆</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/kpoopheads/comments/16e7jzt">I need therapy lalalalala therapy</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://youtu.be/b08SIott4eI">the absolute worst (but most iconic) lyrics in k-pop</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/crappymusic/comments/1iaq5b1">Saw a therapist after this</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> galactivated.</li>
-</ul>
-</li>
-<li><a href="https://www.reddit.com/r/CringeTikToks/comments/1khncjc">Happy Mental Awareness Month. I hope you are doing well</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #quote &quot;I care for everyone's happiness but forget about my own&quot; are always the least selfless people.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 15:42:04 2026] epic flute: <a href="https://www.youtube.com/watch?v=1oYWnbTSang&amp;list=RD1oYWnbTSang&amp;start_radio=1">NCT 127 엔시티 127 'Sticker' MV - YouTube</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Premium apps hosting that just works | Ultra.cc</title><category>host</category><category>web</category><pubDate>2026-10-19 01:23:45 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://ultra.cc/">Premium apps hosting that just works | Ultra.cc</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #til seedbox is file torrent server.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/seedboxes/comments/wi4m4e">Ultra.cc &amp; syncthing</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/seedboxes/comments/qm0nal">Review: Whatbox.ca , 2 years later.</a></li>
-<li>#alternative : <a href="https://cyberduck.io/">Cyberduck | Libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &amp; OneDrive, Google Drive and Dropbox</a>
-<ul>
-<li>this is more #selfhost version of those services.</li>
-</ul>
-</li>
-<li>#cli : <a href="https://github.com/lavv17/lftp"><code>lftp</code> cli file transfer (ftp, http, sftp, fish, torrent...)</a>
-<ul>
-<li>on Linux or WSL only..</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #doc: <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ftp-remotehelp_1">ftp remotehelp</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:23:45 2026] #code/forge <a href="https://tonym.us/move-github-repos-to-google-drive.html">Move GitHub Private Repos to Google Drive in Minutes // Tony Metzidis</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`arp` - Linux manual page</title><category>address/mac</category><category>cli</category><category>documentation</category><category>netw</category><pubDate>2026-10-19 01:11:55 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.man7.org/linux/man-pages/man8/arp.8.html"><code>arp</code> - Linux manual page</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this is #crossplatform. Every windows distribution has one copy of this.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">arp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a</span> 192.168.1.42 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Wi-Fi - WLAN</span><span class="comment line number-sign shell">
-</span></span><span class="meta function-call shell"><span class="variable function shell">arp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a</span> 192.168.1.62 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Ethernet - LAN</span><span class="comment line number-sign shell">
-</span></span></span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>arp -a</code> show MAC address according to IP address of connected network, either LAN or WLAN.
-<ul>
-<li>#powershell : <a href="https://learn.microsoft.com/powershell/module/nettcpip/get-netneighbor?view=windowsserver2025-ps"><code>Get-NetNeighbor</code> (NetTCPIP)</a>
-<ul>
-<li>this is #windows alternative to <code>arp-scan</code> above</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/41785413/use-powershell-to-get-device-names-and-their-ipaddress-on-a-home-network">Use powershell to get device names and their ipaddress on a home network</a>
-<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/netadapter/get-netadapter?view=windowsserver2022-ps"><code>Get-NetAdapter</code> (NetAdapter)</a>
-This is also mentioned, it's more like</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> it resolves MAC address with simple output.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#utils: <a href="https://github.com/royhills/arp-scan"><code>arp-scan</code> ARP Scanner</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #linux exclusive.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself">ARP! Tell your network to explain itself</a></li>
-</ul>
-</li>
-<li>#misc: <a href="https://github.com/kognise/arpchat"><code>arpchat</code> what if you wanted to text your friends using only ARP?</a></li>
-<li>#linux <a href="https://www.man7.org/linux/man-pages/man8/rarp.8.html"><code>rarp</code></a></li>
-<li>#windows : <a href="https://serverfault.com/questions/26564/how-to-check-if-a-port-is-blocked-on-a-windows-machine">networking - How to check if a port is blocked on a Windows machine?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #ip/address: <a href="https://www.reddit.com/r/ipv6/comments/w37g8d">If you can't/shouldn't split up a /64, why is it so big?</a>
-<ul>
-<li>#mac : <a href="https://networkengineering.stackexchange.com/questions/23566/what-are-eui-48-and-eui-64">ethernet - What are EUI-48 and EUI-64?</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/MAC_address">MAC address is 48 bits.</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:11:55 2026] #ipv6 <a href="https://wikipedia.org/wiki/Neighbor_Discovery_Protocol">NDP: Neighbor Discovery Protocol is Ipv6 version of <code>arp</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself">ARP! Tell your network to explain itself</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>UML Sequence Diagram Online Tool</title><category>browser</category><category>diagram</category><category>format/text</category><category>prog</category><pubDate>2026-10-19 11:56:42 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://sequencediagram.org/">UML Sequence Diagram Online Tool</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's really clever tool. you can click on graph text in gui itself to change. and many others.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://xosh.org/text-to-diagram/">Online text to diagram tools | XOSH.ORG</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://flowchart.fun/">Flowchart Fun — Fast, Free Online Flowchart Maker</a>
-<ul>
-<li>this make indentation text to graph. Just like YAML.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 11:56:42 2026] but  currently I have no such interests for those things anymore</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Monodraw for macOS — Helftone</title><category>diagram</category><category>format</category><category>prog</category><pubDate>2026-10-19 11:55:35 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://monodraw.helftone.com/">Monodraw for macOS — Helftone</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/kognise/rust-monodraw">Rust parser and renderer for Monodraw files</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Open new terminal tab in same directory as existing tab (OSC 7?) · Issue #3158 · microsoft/terminal</title><category>signal/ansi</category><category>soft</category><category>windows/terminal</category><pubDate>2026-10-19 08:46:08 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/microsoft/terminal/issues/3158">Open new terminal tab in same directory as existing tab (OSC 7?) · Issue #3158 · microsoft/terminal</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/microsoft/terminal/pull/20019">Implement OSC 7 for setting the CWD</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><code>OSC 7</code> : Escape sequences to advise the terminal of the working directory.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wezterm.org/shell-integration.html">Shell Integration for wezterm</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#blog : <a href="https://www.ethanheilman.com/x/28/index.html">The Terminal Escape Sequences Ocean is Deep and Dark: Debugging a Virtual Terminal</a></li>
-<li>#alternative <a href="https://github.com/contour-terminal/contour/"><code>contour</code> C++ Terminal Emulator</a>
-<ul>
-<li>Most notable feature: <a href="https://contour-terminal.org/vt-extensions/color-palette-update-notifications/">Dark and Light Mode detection - Contour Terminal Emulator</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 08:46:08 2026] #powershell <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_update_notifications">about_Update_Notifications</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/PowerShell/PowerShell/discussions/27060">Removing the PowerShell Update Notification · PowerShell/PowerShell · Discussion #27060</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
