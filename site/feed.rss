@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Fátima, Portugal</title><category>catholic</category><category>geology</category><category>place</category><pubDate>2026-10-22 12:36:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Get-Tpm` (TrustedPlatformModule)</title><category>infosec</category><category>module/tpm</category><category>powershell</category><category>soc</category><category>windows</category><pubDate>2026-10-22 01:33:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=windowsserver2025-ps"><code>Get-Tpm</code> (TrustedPlatformModule)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=42570988">The GPU, not the TPM, is the root of hardware DRM</a>
+<ul>
+<li>#acronym <a href="https://wikipedia.org/wiki/Digital_rights_management">DRM : Digital rights management</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Widevine">Widevine is a big DRM org.</a></li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/pluton/pluton-as-tpm">Microsoft Pluton as Trusted Platform Module (TPM 2.0)</a>
+<ul>
+<li>this has #rust firmware.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#module: <a href="https://www.st.com/content/st_com/en/campaigns/tpm-update.html">TPM update - STMicroelectronics</a>
+<ul>
+<li>which is in my machine right now.</li>
+</ul>
+</li>
+<li>#board <a href="https://www.infineon.com/evaluation-board/OPTIGA-TPM-SLI9670-A-TPM#specification">OPTIGA-TPM-SLI9670-A-TPM - Evaluation Boards | Infineon Technologies</a></li>
+<li>#ic <a href="https://www.microchip.com/en-us/products/security/security-ics/tpm">Trusted Platform Module TPM | Microchip Technology</a></li>
+<li>#guide <a href="https://next.redhat.com/2021/05/13/what-can-you-do-with-a-tpm/">What Can You Do with a TPM? - Red Hat Emerging Technologies</a></li>
+<li>#taobao : <a href="https://item.taobao.com/item.htm?id=835905920665">TPM Security Module, TPM2.0 Module, Trusted Computing, Applicable to ASUS, MSI, Gigabyte, ASRock, Supermicro-Taobao</a></li>
+<li>#android: <a href="https://security.stackexchange.com/questions/102815/is-there-any-mechanism-available-in-android-platform-for-remote-attestation#102821">any mechanism available in Android platform for remote attestation?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 22 13:33:33 2026] #infosec #discussion <a href="https://lobste.rs/s/cdnepk/passkeys_attestation_trap">Passkeys Attestation Trap</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/YubiKey">YubiKey is using FIDO2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`pcre2`: PCRE2 development is based here.</title><category>api</category><category>libc</category><category>regex</category><pubDate>2026-10-22 01:29:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/PCRE2Project/pcre2"><code>pcre2</code>: PCRE2 development is based here.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://www.pcre.org/current/doc/html/pcre2syntax.html#SEC30">pcre2syntax specification</a>
+<ul>
+<li>#doc/official : <a href="https://pcre2project.github.io/pcre2/doc/pcre2syntax/">pcre2syntax <code>PCRE2</code> - Perl-Compatible Regular Expressions</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>rg</code> of course.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> pcre on moderatedly complex work is useful. (as in extracting things from HTML.)
+<ul>
+<li>#til that <code>?</code> is not available in default regex. <code>rg</code> made that available in default tho.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 22 13:29:33 2026] #library #regex <a href="https://lobste.rs/s/dldfel/cve_2026_107891_musl_libc_multiple"><code>musl</code> libc: multiple integer overflow in regcomp, possibly leading to incorrect allocation sizes and out-of-bounds heap writes</a>
+<ul>
+<li>so <code>libc</code> have <code>regex</code>, very surpising to me.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Fátima, Portugal</title><category>catholic</category><category>geology</category><category>place</category><pubDate>2026-10-22 12:36:56 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/F%C3%A1tima,_Portugal">Fátima, Portugal</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -389,32 +457,6 @@ Neat!</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>lobster as hackernews alternative</title><category>forum</category><category>list</category><category>meta</category><category>news</category><category>programming</category><category>technology</category><pubDate>2026-10-19 05:04:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/">lobster as hackernews alternative</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Sometimes I  feel bored watching hackernews.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> although account making is through an invitation system.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/lobsters/lobsters"><code>lobsters</code> community link aggregation and discussion</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 17:04:07 2026] #meta #discussion <a href="https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from">It's enough - vibecoding tag crossed from useless to harmful</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> quality of every forum is degraded everywhere at once.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Set up and update your System2 boards from one screen | MegaConsole - YouTube</title><category>can</category><category>hard</category><category>mqtt</category><category>wifi</category><pubDate>2026-10-19 04:20:57 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.youtube.com/watch?v=DPKIyIzHdEw">Set up and update your System2 boards from one screen | MegaConsole - YouTube</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
