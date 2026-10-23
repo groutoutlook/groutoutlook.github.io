@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Get-Tpm` (TrustedPlatformModule)</title><category>infosec</category><category>module/tpm</category><category>powershell</category><category>soc</category><category>windows</category><pubDate>2026-10-22 01:33:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Tutorial Watchdog Timer on OTP MCU</title><category>mcu</category><category>otp</category><pubDate>2026-10-23 11:29:22 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://free-pdk.github.io/tutorial#watchdog-timer">Tutorial Watchdog Timer on OTP MCU</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> ILRC is integrated low-speed RC oscillator ofc. 8-256K.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>gitzip for github</title><category>browser</category><category>plugin</category><category>soft</category><pubDate>2026-10-22 08:14:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn">gitzip for github</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> It can make the sub-directories and files of github repository as zip and download it.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> have to tick it.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  search github on chrome webstore.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#image : <a href="https://chromewebstore.google.com/detail/material-icons-for-github/bggfcpfjbdkhfhfmkjpbhnkhnpjjeomc">material icon for github</a>
+<ul>
+<li><a href="https://github.com/material-extensions/material-icons-browser-extension">Material Design icons for GitHub client in web browsers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-07-18 14:17:19] I dont use that anymore. Load time is important.
+<ul>
+<li>I only use material icon now since it sparks my curiosity.</li>
+<li>#ide/vscode : <a href="https://github.com/material-extensions/vscode-material-icon-theme">Material Design icons for VS Code</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 22 20:14:10 2026] #discussion <a href="https://news.ycombinator.com/item?id=50161346">No more icons in every menu by default</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Pucca</title><category>korean</category><category>society</category><pubDate>2026-10-22 03:59:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Pucca">Pucca</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a kind of chibi character? same thing as Labubu.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Hello_Kitty">Hello Kitty</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Get-Tpm` (TrustedPlatformModule)</title><category>infosec</category><category>module/tpm</category><category>powershell</category><category>soc</category><category>windows</category><pubDate>2026-10-22 01:33:33 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://learn.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=windowsserver2025-ps"><code>Get-Tpm</code> (TrustedPlatformModule)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -348,115 +398,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Imperative mood</title><category>english</category><category>grammar</category><category>vocab</category><pubDate>2026-10-19 06:14:45 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Imperative_mood">Imperative mood</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> imperative present tense</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> which is, start with a verb. Conjugate that with the s/es...
-<ul>
-<li><a href="https://wikipedia.org/wiki/Inflection">Inflection</a></li>
-<li>this Imperative present tense is super useful for searching issues.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/jtroo/kanata/pull/1031">Show layer icon near mouse pointer (win-tray) by eugenesvk · Pull Request #1031 · jtroo/kanata</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#linux : #crossplatform : <a href="https://github.com/rszyma/kanata-tray">kanata-tray: Tray Icon for Kanata</a>
-<ul>
-<li><a href="https://github.com/jtroo/kanata/blob/main/cfg_samples/tray-icon/tray-icon.kbd">Specified tray-icon explicitly by <code>deflayer</code></a></li>
-<li>My config enable implicitly <code>icon-match-layer-name yes</code>. Can always specififed a different name.</li>
-</ul>
-</li>
-<li><a href="https://lobste.rs/s/s8awlf">Programming is Dead: The Future of Software Engineering</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> inflection point is like the start of spearheading, no?</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Inflection_point">Inflection point</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 18:14:45 2026] #discussion <a href="https://lobste.rs/s/wtobpt/my_obituary_for_programming">My obituary for programming</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about is it really dead or not, computer science.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>The History of Thon, the Forgotten Gender-Neutral Pronoun</title><category>pronoun</category><category>vocab</category><pubDate>2026-10-19 06:04:39 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.merriam-webster.com/wordplay/third-person-gender-neutral-pronoun-thon">The History of Thon, the Forgotten Gender-Neutral Pronoun</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Kinda hillarious isn it. I change my pronoun to thine/thon.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog <a href="https://lobste.rs/s/4nqzhv/unicode_17_0_release_announcement">Unicode 17.0 Release Announcement</a>
-<ul>
-<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> 她 (女 woman + 也) to differentiate “he” and “she” and now 他 is stuck in that awkward “‘he’
-is the default pronoun” kind of space. I almost wish that activists had tried to instead push 男也
-(男 man + 也) as a differentiated written pronoun for men so that 他 could regain its gender-neutral
-connotation. Wiktionary lists it as a rare variant used by a single poet but it’s not included in
-Unicode, likely because it’s too rare. EDIT: see runxiyu’s reply, looks like Unicode 17 has that too!
-Neat!</li>
-<li>#terminology : <a href="https://www.accessibilitychecker.org/blog/a11y/">A Guide to A11y: What It Is and Why It Matters</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 18:04:39 2026] <a href="https://fireborn.mataroa.blog/blog/outside-the-scope-of-our-support/">Outside the Scope of Our Support — fireborn</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How to Program Flash memory in STM32</title><category>embed</category><category>flash</category><category>iap</category><category>libc</category><category>memory</category><pubDate>2026-10-19 05:38:10 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://controllerstech.com/flash-programming-in-stm32/">How to Program Flash memory in STM32</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also check out ft32f0xx_flash.h</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> we have <a href="https://github.com/controllerstech/STM32/tree/master/FLASH_PROGRAM/F1%20SERIES">STM32/FLASH_PROGRAM/F1 SERIES at master · controllerstech/STM32</a>
-<ul>
-<li>make a separate one to implement for specific MCU as AT32 and FT32.</li>
-<li>There are also bootloader area in case you want to use as... auxillary memory.
-<ul>
-<li>FT32's is in <code>0x1FFFE800~0x1FFFF7FF</code> sector.</li>
-<li>AT32...</li>
-<li>Or you could load a separate projects into the bootloader sector...
-<ul>
-<li>Remember to change your linker script(.sct files). AND/OR change your target...</li>
-<li>if you do something like OTA update, and do not hardwired your BOOT0 into GND.</li>
-</ul>
-</li>
-<li><a href="https://electronics.stackexchange.com/questions/654907/how-to-write-the-scatter-file-for-keil-uvision-to-force-linker-to-allocate-varia">stm32 - How to write the scatter file for Keil uVision to force linker to allocate variables in SRAM?</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog <a href="https://mp.weixin.qq.com/s/s1vLJ611r93T4j2eAiAICg">A must-see for embedded engineers! Keil MDK-ARM .sct file is fully parsed, and it is up to it to control the memory layout</a>
-<ul>
-<li>there are writeup on <code>.stack</code> and <code>.heap</code> as well, <code>extab</code>/<code>exidx</code>, <code>.fini_array</code>/<code>.init_array</code></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/controllerstech/STM32/tree/master/FLASH_PROGRAM/H7%20SERIES">FLASH_PROGRAM/H7 SERIES · controllerstech/STM32</a>
-<ul>
-<li>H7 can directly use those.</li>
-</ul>
-</li>
-<li><a href="https://programmerah.com/solved-keil-compile-error-error-l6220e-load-region-lr_irom1-size-65552-bytes-exceeds-limit-65536-bytes-53203/">Solved | KEIL Compile Error: Error: L6220E: Load region LR_IROM1 size (65552 bytes) exceeds limit (65536 bytes)…… | ProgrammerAH</a></li>
-<li><a href="https://community.st.com/stm32-mcus-products-25/stm32-memory-out-and-how-avoid-that-4253">STM32 memory out and how avoid that | Community</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you can try <code>-O2</code>/<code>-O3</code> instead of default <code>-Ofast</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 17:38:10 2026] <a href="https://github.com/IOsetting/py32f0-template/issues/36">Unlocking and erasing protected flash on PY32 chips · Issue #36 · IOsetting/py32f0-template</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I have to think of a way to write FLASH in runtime, or I cant run UART config like those VLLink probe do.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
