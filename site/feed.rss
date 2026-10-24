@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`zizmor` Static analysis for GitHub Actions</title><category>cicd</category><category>rust</category><category>wprog</category><pubDate>2026-10-24 02:29:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Software is slow because of bad design, not slow languages</title><category>programming</category><category>topic</category><pubDate>2026-10-24 03:26:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/hd72yt/software_is_slow_because_bad_design_not">Software is slow because of bad design, not slow languages</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> yeah.. that kind of talk again.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`zizmor` Static analysis for GitHub Actions</title><category>cicd</category><category>rust</category><category>wprog</category><pubDate>2026-10-24 02:29:27 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/zizmorcore/zizmor"><code>zizmor</code> Static analysis for GitHub Actions</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -381,18 +393,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 22 20:14:10 2026] #discussion <a href="https://news.ycombinator.com/item?id=50161346">No more icons in every menu by default</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Pucca</title><category>korean</category><category>society</category><pubDate>2026-10-22 03:59:31 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Pucca">Pucca</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a kind of chibi character? same thing as Labubu.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Hello_Kitty">Hello Kitty</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
