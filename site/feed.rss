@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Restart-Service` (Microsoft.PowerShell.Management)</title><category>background</category><category>lang</category><category>powershell</category><category>service</category><pubDate>2026-10-24 02:13:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`zizmor` Static analysis for GitHub Actions</title><category>cicd</category><category>rust</category><category>wprog</category><pubDate>2026-10-24 02:29:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/zizmorcore/zizmor"><code>zizmor</code> Static analysis for GitHub Actions</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --><a href="https://docs.zizmor.sh/usage/#auto-fixing-results">Usage - zizmor</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #vocabulary <a href="https://en.wiktionary.org/wiki/stopgap">stopgap - Wiktionary, the free dictionary</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Restart-Service` (Microsoft.PowerShell.Management)</title><category>background</category><category>lang</category><category>powershell</category><category>service</category><pubDate>2026-10-24 02:13:32 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/restart-service"><code>Restart-Service</code> (Microsoft.PowerShell.Management)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -44,7 +56,7 @@
 <ul>
 <li>#gui of tailscale is <code>tailscale-ipn</code> <a href="https://pkg.go.dev/tailscale.com/ipn">ipn package - tailscale.com/ipn - Go Packages</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> but that thing ensure my LAN access over wire or something, <code>tailscale-ipn</code>, so I shim it.</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> but that thing ensure my LAN access over wire or sum, <code>tailscale-ipn</code>, so I shim to <code>tailgui</code></li>
 </ul>
 </li>
 </ul>
@@ -381,49 +393,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Hello_Kitty">Hello Kitty</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Get-Tpm` (TrustedPlatformModule)</title><category>infosec</category><category>module/tpm</category><category>powershell</category><category>soc</category><category>windows</category><pubDate>2026-10-22 01:33:33 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=windowsserver2025-ps"><code>Get-Tpm</code> (TrustedPlatformModule)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=42570988">The GPU, not the TPM, is the root of hardware DRM</a>
-<ul>
-<li>#acronym <a href="https://wikipedia.org/wiki/Digital_rights_management">DRM : Digital rights management</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Widevine">Widevine is a big DRM org.</a></li>
-</ul>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/pluton/pluton-as-tpm">Microsoft Pluton as Trusted Platform Module (TPM 2.0)</a>
-<ul>
-<li>this has #rust firmware.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#module: <a href="https://www.st.com/content/st_com/en/campaigns/tpm-update.html">TPM update - STMicroelectronics</a>
-<ul>
-<li>which is in my machine right now.</li>
-</ul>
-</li>
-<li>#board <a href="https://www.infineon.com/evaluation-board/OPTIGA-TPM-SLI9670-A-TPM#specification">OPTIGA-TPM-SLI9670-A-TPM - Evaluation Boards | Infineon Technologies</a></li>
-<li>#ic <a href="https://www.microchip.com/en-us/products/security/security-ics/tpm">Trusted Platform Module TPM | Microchip Technology</a></li>
-<li>#guide <a href="https://next.redhat.com/2021/05/13/what-can-you-do-with-a-tpm/">What Can You Do with a TPM? - Red Hat Emerging Technologies</a></li>
-<li>#taobao : <a href="https://item.taobao.com/item.htm?id=835905920665">TPM Security Module, TPM2.0 Module, Trusted Computing, Applicable to ASUS, MSI, Gigabyte, ASRock, Supermicro-Taobao</a></li>
-<li>#android: <a href="https://security.stackexchange.com/questions/102815/is-there-any-mechanism-available-in-android-platform-for-remote-attestation#102821">any mechanism available in Android platform for remote attestation?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 22 13:33:33 2026] #infosec #discussion <a href="https://lobste.rs/s/cdnepk/passkeys_attestation_trap">Passkeys Attestation Trap</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/YubiKey">YubiKey is using FIDO2</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
