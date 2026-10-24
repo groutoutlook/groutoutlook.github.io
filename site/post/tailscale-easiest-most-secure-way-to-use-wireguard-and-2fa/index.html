@@ -69,7 +69,11 @@
 <li><a href="https://github.com/tailscale/tailscale"><code>tailscale</code> easiest, most secure way to use WireGuard and 2FA.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in <code>scoop</code>.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #windows <code>reg import &quot;$HOME\scoop\apps\tailscale\current\add-startup.reg&quot;</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #windows
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">reg import &quot;$HOME\scoop\apps\tailscale\current\add-startup.reg&quot;
+Invoke-SudoPwsh &#39;spsv tailsca*; scoop uh tailscale &amp;&amp; scoop update tailscale &amp;&amp; scoop h tailscale &amp;&amp; tailscale-ipn&#39; # update
+</span></code></pre>
+</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44022881">VPN for personal services that you want to put online.</a></li>
