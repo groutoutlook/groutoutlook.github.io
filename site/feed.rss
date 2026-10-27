@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>上海晶丰明源半导体股份有限公司</title><category>led/driver</category><category>pmic</category><pubDate>2026-10-27 11:02:39 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`chisel` fast TCP/UDP tunnel over HTTP</title><category>NAT</category><category>http</category><category>tcp</category><pubDate>2026-10-27 11:46:23 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/jpillora/chisel"><code>chisel</code> fast TCP/UDP tunnel over HTTP</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>I encountered a problem with the ctfmon.exe system error in safe mode. - Microsoft Q&amp;A</title><category>chinese</category><category>keyboard/ime</category><category>windows</category><pubDate>2026-10-27 11:44:31 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/en-us/answers/questions/2353362/i-encountered-a-problem-with-the-ctfmon-exe-system">I encountered a problem with the ctfmon.exe system error in safe mode. - Microsoft Q&amp;A</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> mostly relate to language pack or so.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>上海晶丰明源半导体股份有限公司</title><category>led/driver</category><category>pmic</category><pubDate>2026-10-27 11:02:39 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.bpsemi.com/col302/index">上海晶丰明源半导体股份有限公司</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -482,48 +506,6 @@ GPIO and power management unit... Those two multi-unit symbols make schematic co
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Tailscale.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Create private networks with WARP-to-WARP · Cloudflare Zero Trust docs</title><category>cloudflare</category><category>network</category><category>remote</category><pubDate>2026-10-24 01:53:35 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/warp-to-warp/">Create private networks with WARP-to-WARP · Cloudflare Zero Trust docs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> p2p network with <code>warp-cli</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> CF Access offer Zero trust Remote access solution, same as Tailscale.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #android: <a href="https://tailscale.com/kb/1079/install-android#mdm-deployments">Install Tailscale on Android · Tailscale Docs</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#comparison : <a href="https://tailscale.com/compare/zerotier">ZeroTier vs. Tailscale | Which VPN Alternative is Better for You?</a>
-<ul>
-<li><a href="https://www.reddit.com/r/CloudFlare/comments/uiotfa">Cloudflare Zero Trust, Zerotier, Tailscale - differences?</a></li>
-<li><a href="https://tailscale.com/compare/cloudflare-access">Cloudflare Access vs. Tailscale | Compare Access and Gateway to Tailscale</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 24 13:53:35 2026] <a href="https://github.com/tailscale/tailscale/issues/183">FR: Connect to multiple tailnets simultaneously · Issue #183 · tailscale/tailscale</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Keep Tailscale running when I&apos;m not logged in to my computer · Tailscale Docs</title><category>android</category><category>remote</category><category>windows</category><pubDate>2026-10-24 01:42:01 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://tailscale.com/docs/how-to/run-unattended">Keep Tailscale running when I'm not logged in to my computer · Tailscale Docs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> at least in windows the fastest way to do it is open the Tailscale #gui.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> after I joined my Android device.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#gui of tailscale is <code>tailscale-ipn</code> <a href="https://pkg.go.dev/tailscale.com/ipn">ipn package - tailscale.com/ipn - Go Packages</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> but that thing ensure my LAN access over wire or sum, <code>tailscale-ipn</code>, so I shim to <code>tailgui</code></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
