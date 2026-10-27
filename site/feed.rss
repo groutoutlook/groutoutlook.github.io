@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Solar power is becoming bigger than nuclear</title><category>solar</category><pubDate>2026-10-27 03:05:04 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`tanim` Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</title><category>cpp</category><category>library/imgui</category><pubDate>2026-10-27 03:27:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/hegworks/tanim"><code>tanim</code> Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/NickVanheer/ImTimeline"><code>ImTimeline</code> small, single-include timeline API using ImGUI and C++</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Solar power is becoming bigger than nuclear</title><category>solar</category><pubDate>2026-10-27 03:05:04 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50245385">Solar power is becoming bigger than nuclear</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -370,56 +382,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>SF32LB52系列芯片-双模蓝牙-低功耗-LVGL-思澈科技</title><category>ble</category><category>usb</category><pubDate>2026-10-26 11:59:48 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://item.taobao.com/item.htm?id=913808983978">SF32LB52系列芯片-双模蓝牙-低功耗-LVGL-思澈科技</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use Star-MC1 240MHz and a coprocessor with 24MHz. Pin-to-Pin with nRF52x. have embedded PSRAM. MOQ 3000pcs.
-<ul>
-<li>#memory 4mB : 12, 16mB: 17. Expensive yeah? but at least better than nordic one.</li>
-<li>BLE 5.3.</li>
-<li>#graphic again, have ePicasso for 2D/2.5D graphic, rotation, scaling, etc...</li>
-<li>#compression eZip for accelerating compression , mostly used with graphic.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<ul>
-<li>#example/repo <a href="https://github.com/chenxuuu/BT-MP3/tree/master/hardware/bt-mp3">BT-MP3</a>
-<ul>
-<li>kicanvas check, in here you can see the engineer separate two different block of things in <code>eeschema</code>
-GPIO and power management unit... Those two multi-unit symbols make schematic comprehensive</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #board
-<ul>
-<li><a href="https://item.taobao.com/item.htm?id=972117309559">思澈SF32LB52开发板NANO蓝牙小智</a>
-<ul>
-<li><a href="https://shop286569561.taobao.com/">思澈科技</a></li>
-</ul>
-</li>
-<li>#software #ide <a href="https://github.com/eez-open/studio">EEZ Studio Cross-platform low-code GUI LVGL codegen</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>rmk</code> mentioned as one of the supported one.
-<ul>
-<li><a href="https://wiki.sifli.com/en/hardware/SF32LB520-3-5-7-HW-Application.html">SF32LB52x - Hardware Design Guide - SiFli-Wiki v1.0 documentation</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://item.taobao.com/item.htm?id=989840268714">Multi-functional macro keyboard with LCD screen</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 11:59:48 2026] <a href="https://news.ycombinator.com/item?id=50228115">Show HN: A Truly Modular Keyboard</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/notaroomba/keybytes"><code>keybytes</code> modular keyboard that can be made into a macropad</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
