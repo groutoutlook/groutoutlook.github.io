@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</title><category>led/rgb</category><category>lighting</category><category>linux</category><pubDate>2026-10-27 02:17:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Solar power is becoming bigger than nuclear</title><category>solar</category><pubDate>2026-10-27 03:05:04 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50245385">Solar power is becoming bigger than nuclear</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>first fleet</title><category>history</category><pubDate>2026-10-27 02:50:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/First_Fleet">first fleet</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> talking about the first 11 Britain ships come to Australia</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:50:33 2026] #news <a href="https://news.ycombinator.com/item?id=50254935">UK to charge universities $1,200 per international student</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Kelp – simple replacement for homebrew on macOS</title><category>macos</category><category>pacman/brew</category><pubDate>2026-10-27 02:48:45 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=44030560">Kelp – simple replacement for homebrew on macOS</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/74508234/install-cocoapods-brew-vs-regular-installation">ios - Install Cocoapods : Brew vs Regular installation</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#alternative : <a href="https://github.com/CocoaPods">CocoaPods</a> is more like a #libman for Swift and Objective-C</li>
+<li>#libman : <a href="https://github.com/swiftlang/swift-package-manager">swift-package-manager: The Package Manager for the Swift Programming Language</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:48:45 2026] <a href="https://news.ycombinator.com/item?id=50240465">How to grow a cacao tree at home (2024)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>RLHF : Reinforcement learning from human feedback</title><category>AI</category><category>ml</category><category>technologia</category><pubDate>2026-10-27 02:43:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Reinforcement_learning_from_human_feedback">RLHF : Reinforcement learning from human feedback</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/opendilab/awesome-RLVR">list of RLVR: reinforcement learning with verifiable rewards (continually updated)</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=48849066">GPT-5.6</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:43:44 2026] <a href="https://news.ycombinator.com/item?id=50248124">GPT-6.1 Terra price cut</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>ChatGPT `/voice` command | `f8` in `codex`</title><category>audio</category><category>codex</category><category>default</category><category>harness</category><category>microphone/voice</category><pubDate>2026-10-27 02:42:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.chatgpt.com/docs/features/voice">ChatGPT <code>/voice</code> command | <code>f8</code> in <code>codex</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Choropleth map</title><category>visual/graph</category><pubDate>2026-10-27 02:27:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Choropleth_map">Choropleth map</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>WizTree</code>. but the one in that is called a square <a href="https://wikipedia.org/wiki/Cartogram">Cartogram</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Cartography">Cartography</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`ASCIIFlow`</title><category>format/uml</category><category>visual/graph</category><pubDate>2026-10-27 02:26:37 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/lewish/asciiflow"><code>ASCIIFlow</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Microsoft Visio - <a href="https://app.diagrams.net/">draw.io</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #template : <a href="https://github.com/bhdicaire/visioStencils"><code>visioStencils</code> 4,450 visio shapes, stencils, symbols, and icons collection to visually represent your IT infrastructure</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:26:37 2026] so dead now.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</title><category>led/rgb</category><category>lighting</category><category>linux</category><pubDate>2026-10-27 02:17:38 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://community.frame.work/t/ambient-light-sensor-does-not-work-after-resume/75799">Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>sysfs</code>'s ALS.</li>
@@ -331,203 +418,6 @@ GPIO and power management unit... Those two multi-unit symbols make schematic co
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 11:59:48 2026] <a href="https://news.ycombinator.com/item?id=50228115">Show HN: A Truly Modular Keyboard</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/notaroomba/keybytes"><code>keybytes</code> modular keyboard that can be made into a macropad</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>教程：AT32F435 QSPI 读写W25Q256</title><category>flash</category><category>memory</category><category>spi/qspi</category><pubDate>2026-10-26 11:47:00 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://blog.csdn.net/liliquan2/article/details/130697268">教程：AT32F435 QSPI 读写W25Q256</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://blog.csdn.net/weixin_38933763/article/details/130941048">AT32F435/F437 QSPI Driver Winbond/Hengshuo NAND FLASH (W25N01G/ZB35Q01A) No Output Signal</a></li>
-<li>#firmware #libc <a href="https://github.com/libdriver/w25qxx"><code>w25qxx</code> W25QXX(W25Q10, W25Q20, W25Q40, W25Q80, W25Q16, W25Q32, W25Q64, W25Q128, W25Q256, W25Q512, W25Q01, W25Q02) full-featured driver library for general-purpose MCU and Linux.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://zhuanlan.zhihu.com/p/461163682">SPIM and QSPI functions of AT32 - Zhihu</a>
-<ul>
-<li>only on those weaker one as 403A and the like. F435_437 straight up using QSPI only.</li>
-<li>SPIM is SPI coupled with DMA to take stream to memory directly.
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #nordic nrf54L15 have that functionality. Under the name EasyDMA.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://bbs.21ic.com/forum.php?mod=viewthread&amp;tid=3387824">ICP Tool Adds QSPI Download Function - AT32 MCU AT32 MCU Official Technical Support Forum for AT32 MCU</a></li>
-<li>#api <a href="https://github.com/ArteryTek/sdk-csp-at32f4/blob/535245f3b5155c18a4998cc7b1a33478604828a9/libraries/f435_437/drivers/src/at32f435_437_qspi.c#L72">sdk-csp-at32f4/libraries/f435_437/drivers/src/at32f435_437_qspi.c at 535245f3b5155c18a4998cc7b1a33478604828a9 · ArteryTek/sdk-csp-at32f4</a></li>
-<li><a href="https://github.com/ArteryTek/AT32F435_437_Firmware_Library/blob/master/project/at_surf_f437/examples/qspi_flash/src/main.c">AT32F435_437_Firmware_Library examples qspi_flash</a>
-<ul>
-<li>If enable QSPI XIP, has to enable qspi_xip_cache_bypass_set(QSPIx， TRUE),</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> it's from their FAQ0130.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 11:47:00 2026] <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/1075710/tcan4550-q1-ssp-configuration">TCAN4550-Q1: SSP configuration - Interface forum - Interface - TI E2E support forums</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> QSPI.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Clef</title><category>music</category><pubDate>2026-10-26 10:08:16 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Clef">Clef</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> treble hand is your right hand, bass hand is your left hand.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Accordion actually.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://wikipedia.org/wiki/Alto">Alto</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 10:08:16 2026] <a href="https://english.stackexchange.com/questions/44125/is-there-a-difference-between-treble-and-triple">difference between &quot;treble&quot; and &quot;triple&quot;?</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</title><category>mcu/wch</category><category>usb/pd</category><pubDate>2026-10-26 10:01:42 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.wch-ic.com/products/CH32X035.html">USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> CH32X035F8U6 QFN20 and G8U8 QFN28. CH32X033F8P6 is TSSOP20. CH32X035D8U6 is QFN12 2*2 P0.4mm (this is new on [Thursday, May 7, 2026 06:02:50 PM])</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> this is the crsytal-less USB MCU. which can invoke USB-PD as well.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> also have <code>PIO</code> like block. it's called <code>PIOC</code> with an embedded eMCU (RISC8B ISA).
-<ul>
-<li>main chip is <code>RISCV4C</code> which I honestly cant remember the triplet.</li>
-<li>#ota #mcu/boot <a href="https://www.eevblog.com/forum/microcontrollers/bootloaders-and-cheap-risc-v-(ch32x035-and-ch32v003)/">Bootloaders and cheap RISC-V (CH32X035 and CH32V003)</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://community.st.com/t5/stm32-mcus-products/achieving-usb-pd-communication-via-bit-banging-on-stm32l562cet6/td-p/699037">Solved: Achieving USB PD Communication via Bit Banging on ...</a>
-<ul>
-<li><a href="https://hackaday.com/2025/01/10/bit-banging-the-usb-pd-protocol/">Bit-Banging The USB-PD Protocol | Hackaday</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#usb/pd/pps <a href="https://github.com/wagiminator/CH32X035-USB-PD-Adapter#building-instructions">Portable Programmable Power Supply with CH32X035 USB-PD PPS</a>
-<ul>
-<li>since my Beryl 7 PSU do have PPS support, I am wondering.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 10:01:42 2026] #pcb <a href="https://github.com/sydundar/BenchVolt-PD">BenchVolt PD is an open-source, USB-C powered multi-channel lab power supply delivering up to 100 W. Features 5 outputs (0 V–22 V), STM32 control, USB-PD, low-noise LDOs, and a Python GUI. Compact, portable, and perfect for makers and engineers.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> STUSB4500 is the usb controller. have pps in here.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</title><category>filesystem</category><category>linux</category><category>windows</category><category>wsl</category><pubDate>2026-10-26 08:57:00 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/microsoft/WSL/issues/8773">Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> right now it's impossible to do it if your Linux partition is in the same disk as the one mounting in Windows
-<ul>
-<li>e.g. Windows disk, or <code>D:\</code> disk which is being mounted and running program, accessing files on them, etc...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> If you are in <code>C:\</code>, good luck. Otherwise, unmount it right now.
-<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/storage/dismount-diskimage?view=windowsserver2025-ps">Dismount-DiskImage (Storage)</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1750399/eject-dismount-a-drive-using-powershell">windows 10 - Eject/dismount a drive using PowerShell</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/cloningsoftware/comments/1tzzc2f">What disk cloning software have you been using for years that seldom gets mentioned anywhere?</a>
-<ul>
-<li>actually just use <code>dd</code>. nothing else is better than that even in Windows.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 08:57:00 2026] <a href="https://www.partitionwizard.com/free-partition-manager.html">MiniTool Partition Wizard Free: Best Partition Manager for Windows</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm trying to find the software that can re-partition disk on the fly... certain windows settings prevent that
-<ul>
-<li>but I used one in the past.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>GitHub - Settings - Pages</title><category>github</category><category>host/self</category><pubDate>2026-10-25 01:53:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/groutoutlook/groutoutlook.github.io/settings/pages">GitHub - Settings - Pages</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://groutoutlook.github.io">btw it's this one</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch">Publishing from a branch</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 25 13:53:38 2026] once you take them private, it will take another publish + several hours for it to go back up again.
-<ul>
-<li>at least that's when I try private my free git page.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Free DDNS | Now-DNS - Services</title><category>dns/ddns</category><pubDate>2026-10-25 08:52:08 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://dtdns.org/?p=services">Free DDNS | Now-DNS - Services</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Con: DDNS is simply a way to find your unsecured synology on Internet.
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/synology/comments/x96l2u">DDNS vs Tailscale</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 25 08:51:53 2026] I just use tailscale now.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #url/shortener : <a href="https://www.301.li/">301 - Shorten Links</a>
-<ul>
-<li>#alternative : <a href="https://desec.io/">deSEC – Free Secure DNS</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://freedns.afraid.org/">FreeDNS - Free DNS - Dynamic DNS - Static DNS subdomain and domain hosting</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 25 08:52:08 2026] <a href="https://news.ycombinator.com/item?id=50222133">FreeDNS and many of its alternative</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Superconducting Microprocessors? Turns Out They&apos;re Ultra-Efficient (2021)</title><category>electronic</category><category>technology</category><pubDate>2026-10-24 09:31:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=41115591">Superconducting Microprocessors? Turns Out They're Ultra-Efficient (2021)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  <a href="https://www.eevblog.com/forum/beginners/high-current-low-voltage-power-supply/25/">High current low voltage power supply - Page 2</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/597146/what-happens-to-parasitic-capacitance-and-inductance-in-a-superconductor">What happens to parasitic capacitance and inductance in a superconductor?</a>
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/377025/whats-the-math-behind-generators-with-electromagnet-cores">power supply - What's the math behind generators with electromagnet cores?</a></li>
-<li><a href="https://electronics.stackexchange.com/questions/291329/lighting-in-mri">ac - Lighting in MRI</a></li>
-<li><a href="https://electronics.stackexchange.com/questions/666667/do-superconducting-electromagnets-require-less-energy-than-resistive-type-electr">Do superconducting electromagnets require less energy than resistive type electromagnets to create the same strength of magnetic field?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Aug 22 12:18:28 2026] <a href="https://wikipedia.org/wiki/Superconducting_magnet#Magnet_quench">Superconducting magnet</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 24 21:31:22 2026] <a href="https://wikipedia.org/wiki/Positron_emission_tomography">PET: Positron emission tomography</a>
-<ul>
-<li>this remind me of MRI.</li>
 </ul>
 </li>
 </ul>
