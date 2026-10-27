@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Feature request for PDF Viewer for Vimium C</title><category>keybinding</category><category>msedge</category><category>plugin</category><category>vimium</category><pubDate>2026-10-27 01:26:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</title><category>led/rgb</category><category>lighting</category><category>linux</category><pubDate>2026-10-27 02:17:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://community.frame.work/t/ambient-light-sensor-does-not-work-after-resume/75799">Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>sysfs</code>'s ALS.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/mpv-player/mpv/issues/16741">Support <code>ambient-light</code> property on Linux · Issue #16741 · mpv-player/mpv</a>
+<ul>
+<li>it's on <code>mpv&gt;=0.41</code>, that's all I care.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/framework/comments/1v8xjzf">memory training for DDR5 upward</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> initilization as frequency, PMIC settings, DDR controller settings,...</li>
+<li>I will never know... such a stupid terminology.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:17:38 2026] #hardware <a href="https://lobste.rs/s/zfoiw1/slurptop_home_built_luggable_runs_on">Slurptop: A home-built luggable that runs on power tool batteries</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>STM32 solutions for USB Type-C and Power Delivery - STMicroelectronics</title><category>acronym</category><pubDate>2026-10-27 02:04:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html">STM32 solutions for USB Type-C and Power Delivery - STMicroelectronics</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/649227/implementing-usb-c-pd-phy-directly-into-micro-controller">power supply - Implementing USB-C PD PHY directly into micro-controller&quot;&quot;</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> with the #acronym PPS: Programmable Power Supply. Only in USB-PD</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.eevblog.com/forum/projects/usb-pd-trigger-pps-with-potentiometer/msg5284510/#msg5284510">USB-PD Trigger + PPS with potentiometer</a></li>
+<li><a href="https://www.ti.com/lit/ta/ssztd49a/ssztd49a.pdf">USB Type-C® and USB Power Delivery: Designing for both Extended Power Range and battery-powered systems (Rev. A) - ssztd49a.pdf</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:04:09 2026] <a href="https://github.com/WeActStudio/WeActStudio.PDTriggerV1">WeAct Studio PD Trigger V1, PD 5-28V Fixed/PPS/AVS(EPR), QC 5/9/12/20V, 5A Max Current</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Feature request for PDF Viewer for Vimium C</title><category>keybinding</category><category>msedge</category><category>plugin</category><category>vimium</category><pubDate>2026-10-27 01:26:21 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/755">Feature request for PDF Viewer for Vimium C</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> vimium C can pass keystrokes to <code>pdf</code> files.</li>
@@ -486,30 +530,6 @@ GPIO and power management unit... Those two multi-unit symbols make schematic co
 <li>this remind me of MRI.</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Software is slow because of bad design, not slow languages</title><category>programming</category><pubDate>2026-10-24 03:26:53 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/hd72yt/software_is_slow_because_bad_design_not">Software is slow because of bad design, not slow languages</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> yeah.. that kind of talk again.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`zizmor` Static analysis for GitHub Actions</title><category>cicd</category><category>rust</category><pubDate>2026-10-24 02:29:27 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/zizmorcore/zizmor"><code>zizmor</code> Static analysis for GitHub Actions</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --><a href="https://docs.zizmor.sh/usage/#auto-fixing-results">Usage - zizmor</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #vocabulary <a href="https://en.wiktionary.org/wiki/stopgap">stopgap - Wiktionary, the free dictionary</a></li>
 </ul>
 </li>
 </ul>
