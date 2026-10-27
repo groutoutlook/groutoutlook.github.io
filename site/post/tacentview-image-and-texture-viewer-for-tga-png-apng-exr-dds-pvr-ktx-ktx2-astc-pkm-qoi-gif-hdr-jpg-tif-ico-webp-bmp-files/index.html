@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;tacentview&#x60; image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;tacentview&#x60; image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-05 11:05:26 PM<br><span class="updated-at">Updated at 2026-10-16 09:58:41 AM</span></span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/format/ktx">
+                        <span>format/ktx</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/viewer">
+                        <span>viewer</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/crossplatform">#crossplatform</a>
+            <a class="til-tag in-topic-tag" href="/subtag/nightly">#nightly</a>
+            <a class="til-tag in-topic-tag" href="/subtag/tui">#tui</a>
+            <a class="til-tag in-topic-tag" href="/subtag/windows">#windows</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/bluescan/tacentview"><code>tacentview</code> image and texture viewer for tga, png, apng, exr, dds, pvr, ktx, ktx2, astc, pkm, qoi, gif, hdr, jpg, tif, ico, webp, bmp files</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly since quite usable and fucking faster than <code>imageglass</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://bluescan.github.io/tacentview/cli.html">CLI | Tacent View</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">tacentview</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>c</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>op</span> flip</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> hold/drag <code>RightClick</code> to pan viewport.
+<ul>
+<li><code>alt+3</code> open kiosk mode which fit to height/width, whatever is smaller. <code>t</code> open thumbnail view for you to preview a bit.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try to remove default image viewer of #windows, come up with imageglass first then this.
+<ul>
+<li>#crossplatform of course.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>currently cant handle <code>jxl</code>.</li>
+<li>[2026-02-15 11:24:23 AM] #tui only <code>yazi</code> can kinda preview it.
+<ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">zz</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\D</span>ownloads<span class="constant character escape shell">\s</span>hark_hashquine.jxl</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or with chrome canary:</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">chrome</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\D</span>ownloads<span class="constant character escape shell">\s</span>hark_hashquine.jxl</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> sometimes you have to accept using browser as glorify editor/viewer for some ubiquotous files format.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 09:51:09 2026] <a href="https://github.com/bluescan/tacentfixtures">tacentfixtures: Static data used as test cases for both Tacent and TacentView. By and large the fixtures are image files in various formats, animated and not, with and without meta-data.</a>
+<ul>
+<li>Every image format on earth you can think of.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 09:58:41 2026] <a href="https://lobste.rs/s/uejdwj/jpeg_xl_vs_avif_for_web_use_cases">JPEG XL vs AVIF for web use-cases</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.slrphotographyguide.com/pixel-peeping-why-you-shouldnt-do-it/">Pixel Peeping – Why You Shouldn’t Do It – SLR Photography Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

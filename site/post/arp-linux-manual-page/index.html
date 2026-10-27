@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;arp&#x60; - Linux manual page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;arp&#x60; - Linux manual page</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-06-24 04:53:40 PM<br><span class="updated-at">Updated at 2026-10-19 01:11:55 PM</span></span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/address/mac">
+                        <span>address/mac</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli">
+                        <span>cli</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/documentation">
+                        <span>documentation</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/crossplatform">#crossplatform</a>
+            <a class="til-tag in-topic-tag" href="/subtag/ipv6">#ipv6</a>
+            <a class="til-tag in-topic-tag" href="/subtag/linux">#linux</a>
+            <a class="til-tag in-topic-tag" href="/subtag/mac">#mac</a>
+            <a class="til-tag in-topic-tag" href="/subtag/misc">#misc</a>
+            <a class="til-tag in-topic-tag" href="/subtag/powershell">#powershell</a>
+            <a class="til-tag in-topic-tag" href="/subtag/utils">#utils</a>
+            <a class="til-tag in-topic-tag" href="/subtag/windows">#windows</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.man7.org/linux/man-pages/man8/arp.8.html"><code>arp</code> - Linux manual page</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this is #crossplatform. Every windows distribution has one copy of this.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">arp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a</span> 192.168.1.42 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Wi-Fi - WLAN</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">arp</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>a</span> 192.168.1.62 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Ethernet - LAN</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>arp -a</code> show MAC address according to IP address of connected network, either LAN or WLAN.
+<ul>
+<li>#powershell : <a href="https://learn.microsoft.com/powershell/module/nettcpip/get-netneighbor?view=windowsserver2025-ps"><code>Get-NetNeighbor</code> (NetTCPIP)</a>
+<ul>
+<li>this is #windows alternative to <code>arp-scan</code> above</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/41785413/use-powershell-to-get-device-names-and-their-ipaddress-on-a-home-network">Use powershell to get device names and their ipaddress on a home network</a>
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/netadapter/get-netadapter?view=windowsserver2022-ps"><code>Get-NetAdapter</code> (NetAdapter)</a>
+This is also mentioned, it's more like</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> it resolves MAC address with simple output.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#utils: <a href="https://github.com/royhills/arp-scan"><code>arp-scan</code> ARP Scanner</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #linux exclusive.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself">ARP! Tell your network to explain itself</a></li>
+</ul>
+</li>
+<li>#misc: <a href="https://github.com/kognise/arpchat"><code>arpchat</code> what if you wanted to text your friends using only ARP?</a></li>
+<li>#linux <a href="https://www.man7.org/linux/man-pages/man8/rarp.8.html"><code>rarp</code></a></li>
+<li>#windows : <a href="https://serverfault.com/questions/26564/how-to-check-if-a-port-is-blocked-on-a-windows-machine">networking - How to check if a port is blocked on a Windows machine?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #ip/address: <a href="https://www.reddit.com/r/ipv6/comments/w37g8d">If you can't/shouldn't split up a /64, why is it so big?</a>
+<ul>
+<li>#mac : <a href="https://networkengineering.stackexchange.com/questions/23566/what-are-eui-48-and-eui-64">ethernet - What are EUI-48 and EUI-64?</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/MAC_address">MAC address is 48 bits.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:11:55 2026] #ipv6 <a href="https://wikipedia.org/wiki/Neighbor_Discovery_Protocol">NDP: Neighbor Discovery Protocol is Ipv6 version of <code>arp</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself">ARP! Tell your network to explain itself</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

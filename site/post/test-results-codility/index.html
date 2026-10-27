@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Test results - Codility</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Test results - Codility</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-11 12:03:31 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/practice">
+                        <span>practice</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://app.codility.com/demo/results/trainingMJCAEG-25G/">Test results - Codility</a></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>map<span class="punctuation definition string end c++">&gt;</span></span>
+</span><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>unordered_map<span class="punctuation definition string end c++">&gt;</span></span>
+</span><span class="storage type c">auto</span> <span class="meta function c++"><span class="entity name function c++">find_odd_out</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">vector<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> <span class="keyword operator c">&amp;</span><span class="variable parameter c++">A</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+std<span class="punctuation accessor c++">::</span>unordered_map<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation separator c++">,</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> recorded<span class="meta block c++"><span class="punctuation section block begin c++">{</span><span class="punctuation section block end c++">}</span></span><span class="punctuation terminator c++">;</span>
+    <span class="storage type c">int</span> temp_ans <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">0</span><span class="punctuation terminator c++">;</span>
+    <span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> <span class="keyword operator c">&amp;</span>i <span class="keyword operator ternary c">:</span> A<span class="punctuation section group end c++">)</span></span>
+    <span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        <span class="storage type c">auto</span> temp_val <span class="keyword operator assignment c">=</span> recorded<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>i<span class="punctuation section brackets end c++">]</span></span><span class="punctuation terminator c++">;</span>
+        recorded<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>i<span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator assignment c">=</span> temp_val <span class="keyword operator arithmetic c">+</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+
+    <span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> <span class="keyword operator c">&amp;</span> <span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>val<span class="punctuation separator c++">,</span> count<span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator ternary c">:</span> recorded<span class="punctuation section group end c++">)</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        <span class="keyword control c++">if</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span>count<span class="keyword operator arithmetic c">%</span><span class="constant numeric c++">2</span> <span class="keyword operator comparison c">==</span> <span class="constant numeric c++">1</span><span class="punctuation section group end c++">)</span></span> <span class="keyword control c++">return</span> val<span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+
+<span class="storage type c">int</span> <span class="meta function c++"><span class="entity name function c++">solution</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">vector<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> <span class="keyword operator c">&amp;</span><span class="variable parameter c++">A</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    <span class="storage type c">auto</span> a <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">find_odd_out</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">A</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="keyword control c++">return</span> a<span class="punctuation terminator c++">;</span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+</span></code></pre>
+<p><a href="https://stackoverflow.com/questions/4846798/why-would-map-be-much-faster-than-unordered-map">c++ - Why would map be much faster than unordered_map?</a>
+<a href="https://cppreference.com/w/cpp/container/map">std::map</a>
+<a href="https://cppreference.com/w/cpp/algorithm/unique">std::unique</a>
+<a href="https://cppreference.com/w/cpp/container/vector/erase2">std::erase, std::erase_if (std::vector)</a>
+<a href="https://cppreference.com/w/cpp/algorithm/count">std::count, std::count_if</a></p>
+<ul>
+<li>I use another map.... seems like map can solve everything.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>map<span class="punctuation definition string end c++">&gt;</span></span>
+</span><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>unordered_map<span class="punctuation definition string end c++">&gt;</span></span>
+</span><span class="storage type c">int</span> <span class="meta function c++"><span class="entity name function c++">miss_finding</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">vector<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> <span class="keyword operator c">&amp;</span><span class="variable parameter c++">A</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++">
+</span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    unordered_map<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation separator c++">,</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> record<span class="punctuation terminator c++">;</span>
+    <span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> <span class="keyword operator c">&amp;</span>i <span class="keyword operator ternary c">:</span> A<span class="punctuation section group end c++">)</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        record<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>i<span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator assignment c">=</span> i<span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+    <span class="keyword control c++">if</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span>A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">size</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator comparison c">==</span> <span class="constant numeric c++">0</span><span class="punctuation section group end c++">)</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        <span class="keyword control c++">return</span> <span class="constant numeric c++">1</span><span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+    <span class="keyword control c++">for</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span><span class="storage type c">auto</span> i <span class="keyword operator assignment c">=</span> <span class="constant numeric c++">0</span><span class="punctuation terminator c++">;</span> i <span class="keyword operator comparison c">&lt;=</span> A<span class="punctuation accessor dot c++">.</span><span class="meta method-call c++"><span class="variable function member c++">size</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta method-call c++"></span><span class="meta method-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span> i<span class="keyword operator assignment augmented c">+=</span><span class="constant numeric c++">1</span><span class="punctuation section group end c++">)</span></span><span class="meta block c++"><span class="punctuation section block begin c++">{</span>
+        <span class="keyword control c++">if</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span>record<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>i<span class="keyword operator arithmetic c">+</span><span class="constant numeric c++">1</span><span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator comparison c">==</span> <span class="constant numeric c++">0</span><span class="punctuation section group end c++">)</span></span> <span class="keyword control c++">return</span> <span class="meta group c++"><span class="punctuation section group begin c++">(</span>i<span class="keyword operator arithmetic c">+</span><span class="constant numeric c++">1</span><span class="punctuation section group end c++">)</span></span><span class="punctuation terminator c++">;</span>
+    <span class="punctuation section block end c++">}</span></span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+<span class="storage type c">int</span> <span class="meta function c++"><span class="entity name function c++">solution</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++">vector<span class="punctuation section generic begin c++">&lt;</span><span class="storage type c">int</span><span class="punctuation section generic end c++">&gt;</span> <span class="keyword operator c">&amp;</span><span class="variable parameter c++">A</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+    <span class="storage type c">auto</span> a <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">miss_finding</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">A</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+    <span class="keyword control c++">return</span> a<span class="punctuation terminator c++">;</span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+
+</span></code></pre>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Developer commands Interactive shortcuts in &#x60;codex&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Developer commands Interactive shortcuts in &#x60;codex&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-09-15 03:04:35 PM<br><span class="updated-at">Updated at 2026-10-08 01:38:53 PM</span></span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/codex">
+                        <span>codex</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/keybinding">
+                        <span>keybinding</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/llm">
+                        <span>llm</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/terminology">
+                        <span>terminology</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/ai">#ai</a>
+            <a class="til-tag in-topic-tag" href="/subtag/claude">#claude</a>
+            <a class="til-tag in-topic-tag" href="/subtag/cli">#cli</a>
+            <a class="til-tag in-topic-tag" href="/subtag/command">#command</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-interactive-shortcuts">Developer commands Interactive shortcuts in <code>codex</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> that's where those started with <code>/</code> reside.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">/cd</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">HOME</span></span>/AppData/Roaming/kanata</span>
+<span class="meta function-call shell"><span class="variable function shell">/exit <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> instead of double ctrl+c so the conversation continue.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">/model <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">obvious Reason. in codex this is also what needed to changes effort.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">/effort <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> in codex either you `shift+up`/`shift+down` or `/model` to change effort..</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">/permission <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> obvious.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">/copy <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `ctrl+o` | `/copy` the latest agent response as Markdown.</span><span class="comment line number-sign shell">
+</span></span></span><span class="meta function-call shell"><span class="variable function shell">/status <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> outputing how many percent of context are left, permissions, etc..</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2026-06-23 01:28:19 PM] #ai #cli #claude #command
+<ul>
+<li><a href="https://code.claude.com/docs/en/commands">&quot;Commands&quot; that start with <code>/</code> - Claude Code Docs</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/openai/codex/discussions/9618">How is there not a /rewind or /revert feature? · openai/codex · Discussion #9618</a>
+<ul>
+<li>no you wont get it. previously you have <code>/undo</code> but that's currently not there.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 13:38:53 2026] <a href="https://learn.chatgpt.com/docs/reference/slash-commands?site_locale=en">Slash commands e.g <code>/goal</code> mode</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you will have a timer for it in the bottom right corner, and <code>esc</code> while converse disrupt it.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex">Using Goals in Codex</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/codex/comments/1t93o7j">What does /goal do</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://learn.chatgpt.com/docs/prompting?site_locale=en#local-planning-ide"><code>/plan</code> mode Prompting | ChatGPT Learn</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Shift+tab</code> off plan mode while not in discussion. but normally after done with the plan you can confirm to switch to auto mode.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> In plan mode you will have lots of question asked, answer by <code>shift+left</code></li>
+<li><a href="https://developers.openai.com/cookbook/articles/codex_exec_plans">Using PLANS.md for multi-hour problem solving</a></li>
+<li><a href="https://learn.chatgpt.com/use-cases/build-unit-plan-from-sources?site_locale=en">Build a unit plan from source files | ChatGPT use cases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

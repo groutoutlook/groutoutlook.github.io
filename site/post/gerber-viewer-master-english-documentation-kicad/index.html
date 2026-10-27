@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Gerber Viewer | master | English | Documentation | KiCad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Gerber Viewer | master | English | Documentation | KiCad</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-07 10:26:13 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gerber">
+                        <span>gerber</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/gui">
+                        <span>gui</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/kicad">
+                        <span>kicad</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/utils">
+                        <span>utils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/blog">#blog</a>
+            <a class="til-tag in-topic-tag" href="/subtag/comparison">#comparison</a>
+            <a class="til-tag in-topic-tag" href="/subtag/dfm">#dfm</a>
+            <a class="til-tag in-topic-tag" href="/subtag/discussion">#discussion</a>
+            <a class="til-tag in-topic-tag" href="/subtag/embedded">#embedded</a>
+            <a class="til-tag in-topic-tag" href="/subtag/format">#format</a>
+            <a class="til-tag in-topic-tag" href="/subtag/pcb">#pcb</a>
+            <a class="til-tag in-topic-tag" href="/subtag/software">#software</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://docs.kicad.org/master/en/gerbview/gerbview.html#interface">Gerber Viewer | master | English | Documentation | KiCad</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gerbview</code>'s kicad to view gerber files, CAM350 seems kinda awkward to that nowadays.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gerbview</span></span><span class="meta function-call arguments shell"> ./production <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or so I thought.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> for production (panelization) reviewing (as what I did with sqpcb):
+<ul>
+<li>File (<code>alt+f</code>) -&gt; Open Autodetected Files (1 or no <code>o</code>) -&gt; <code>Enter</code> -&gt; <code>shift+tab</code> -&gt; <code>ctrl+a</code> -&gt; <code>Enter</code></li>
+<li><code>gerber</code> can import excellon files but you have to &quot;Open Excellon Drill File(s)&quot; separatedly.</li>
+<li>&quot;Clear Selected Layer&quot; will mean you prune that layer out of layers Manager even.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-06-07 10:05:37 AM] #pcb #embedded #dfm #software
+<ul>
+<li><a href="https://youtu.be/YBk-YQEcUcw"><code>cam350</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and the <a href="https://youtu.be/YBk-YQEcUcw">download link</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> use its Autoimport to import <code>.tap</code> file and other intrinsic weird pcb file format.
+<ul>
+<li>and <code>export</code> -&gt; &quot;Drill Data&quot; so you can have Excellon Drill.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #blog <a href="https://mp.weixin.qq.com/s/5YMzANA7mNtn8V6eChem1w">compare the differences with Gerber?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>Panelization is being made as pdf files from CAM350. you can download it from JLCPCB.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #format <a href="https://resources.altium.com/p/pcb-production-file-format-wars#gerber-x3">ODB++ vs. Gerber X2/X3 vs. IPC-2581: PCB Production File Format Wars</a>
+<ul>
+<li>#discussion <a href="https://www.eevblog.com/forum/kicad/kicad-output-of-manufacturingtest-data/">KiCAD Output of Manufacturing/Test Data</a></li>
+<li>#comparison <a href="https://www.nexpcb.com/blog/comparing-pcb-file-formats-gerber-vs-ipc-2581">PCB File Formats: Gerber(ASCII) vs IPC-2581(XML-based)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> IPC2581 is inherently better and may be future proof. KiCAD is supporting them more now.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.ipc2581.com/">Home | IPC- 2581 Consortium</a>
+<ul>
+<li>there is a guy (<code>@akhil106</code>) pushing this format a lot in Kicad Issue page.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

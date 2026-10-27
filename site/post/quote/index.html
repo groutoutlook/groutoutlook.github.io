@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &gt;[!quote]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&gt;[!quote]</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-10-23 02:10:43 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/ai">
+                        <span>ai</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <blockquote>
+<p>[!quote]</p>
+<p><strong>me</strong>: no it's more like, there are some files in certain branch which i dont like to be modified while merging at all</p>
+<p><strong>gpt-4o</strong>: if you want to prevent certain files from being modified during a merge in git, you can use the <code>.gitattributes</code> file to specify merge strategies for those files. this allows you to control how git handles merges for specific files or file types.</p>
+<h3>using <code>.gitattributes</code> to protect files during merges</h3>
+<ol>
+<li>
+<p><strong>create or edit <code>.gitattributes</code></strong>: in the root of your repository, create or edit a file named <code>.gitattributes</code>.</p>
+</li>
+<li>
+<p><strong>specify merge strategies</strong>: you can specify a merge strategy for the files you want to protect. for example, if you want to ensure that a specific file (e.g., <code>config.json</code>) is always taken from the current branch during a merge, you can use the <code>ours</code> merge strategy.</p>
+<p>here’s how to do it:</p>
+<p>plaintext</p>
+<p>copy code</p>
+<p><code>config.json merge=ours</code></p>
+<p>this tells git to always keep the version of <code>config.json</code> from the current branch (the branch you are merging into) and ignore changes from the branch being merged.</p>
+</li>
+<li>
+<p><strong>define the merge driver</strong>: you need to define the <code>ours</code> merge driver in your git configuration. you can do this by adding the following to your <code>.git/config</code> or the global git configuration file (<code>~/.gitconfig</code>):</p>
+<p>ini</p>
+<p>copy code</p>
+<p><code>[merge &quot;ours&quot;]     driver = true</code></p>
+</li>
+</ol>
+<h3>example of <code>.gitattributes</code></h3>
+<p>heRe’s an example of what your <code>.gitattributes</code> file might look like:</p>
+<p>plaintext</p>
+<p>copy code</p>
+<p><code># protect config.json from being modified during merges config.json merge=ours  # you can add more files or patterns as needed *.txt merge=ours</code></p>
+<h3>summary</h3>
+<ul>
+<li><strong>use <code>.gitattributes</code></strong>: specify files you want to protect during merges.</li>
+<li><strong>use the <code>ours</code> merge strategy</strong>: this keeps the current branch's version of the file and ignores changes from the branch being merged.</li>
+<li><strong>define the merge driver</strong>: ensure that the <code>ours</code> merge driver is defined in your git configuration.</li>
+</ul>
+</blockquote>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

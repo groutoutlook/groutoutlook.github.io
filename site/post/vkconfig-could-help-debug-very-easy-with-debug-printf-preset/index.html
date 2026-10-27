@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: vkconfig could help debug very easy with debug_printf_preset.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">vkconfig could help debug very easy with debug_printf_preset.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-20 04:47:37 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/debug">
+                        <span>debug</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vulkan">
+                        <span>vulkan</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>vkconfig could help debug very easy with debug_printf_preset.
+<ul>
+<li><a href="https://github.com/khronosgroup/vulkan-guide/blob/main/chapters/development_tools.adoc#vulkan-layers">development tools - vulkan layers on vkconfig</a>
+<ul>
+<li><a href="https://vulkan.lunarg.com/doc/view/latest/windows/vkconfig.html#vulkan-layers-execution-order-overview">vulkan layers execution order overview</a></li>
+<li>check [[001.002-vulkan tools#vkconfig|this note]]</li>
+</ul>
+</li>
+<li>for my vulkan-samples project, i put it in validation_debug_printf_preset</li>
+<li>vulkan loader messages load based on initial of message:
+<ul>
+<li>like <code>info: </code>, <code>warn: </code>, <code>debug: </code>,... <code>all</code> will display all that programs spit out.</li>
+<li>better pad shader debug info using that.</li>
+<li>sometimes you may need to unleash the printf buffer size higher than default value(1024). up to 32768 could be good.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>related: [[sdk-features-without-animations-sg.pdf|vulkan configurator slides.]]
+<ul>
+<li><a href="https://youtu.be/fja4lt508ca">vulkanised 2023: source-level shader debugging in vulkan with renderdoc</a></li>
+</ul>
+</li>
+<li>as in the videos and slides, using vkconfig and renderdoc at the same time is quite problematic. renderdoc offer higher level of debugging,
+<ul>
+<li>but for something trivial like <code>debugprintfext</code>, use vkconfig is easier.</li>
+<li></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

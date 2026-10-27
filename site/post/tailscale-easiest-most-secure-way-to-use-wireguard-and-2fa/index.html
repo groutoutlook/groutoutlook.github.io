@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: &#x60;tailscale&#x60; easiest, most secure way to use WireGuard and 2FA.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">&#x60;tailscale&#x60; easiest, most secure way to use WireGuard and 2FA.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2025-05-20 10:02:22 AM<br><span class="updated-at">Updated at 2025-07-04 16:03:49</span></span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/backend">
+                        <span>backend</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/daemon">
+                        <span>daemon</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/root/tailscale">
+                        <span>root/tailscale</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/selfhost">
+                        <span>selfhost</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/service">
+                        <span>service</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vpn">
+                        <span>vpn</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/alternative">#alternative</a>
+            <a class="til-tag in-topic-tag" href="/subtag/windows">#windows</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/tailscale/tailscale"><code>tailscale</code> easiest, most secure way to use WireGuard and 2FA.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in <code>scoop</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #windows
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">reg import &quot;$HOME\scoop\apps\tailscale\current\add-startup.reg&quot;
+Invoke-SudoPwsh &#39;spsv tailsca*; scoop uh tailscale &amp;&amp; scoop update tailscale &amp;&amp; scoop h tailscale &amp;&amp; tailscale-ipn&#39; # update
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44022881">VPN for personal services that you want to put online.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#alternative : <a href="https://github.com/juanfont/headscale">self-hosted implementation of the Tailscale control server</a>
+<ul>
+<li>not really reliable.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-07-04 16:03:49] : <a href="https://www.reddit.com/r/selfhosted/comments/rcvih1">You should know about using ZeroTier or Tailscale as an easier approach to secure all your connections, while being easier infrastructure-wise than VPN</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/Tailscale/comments/1jublor">Question: &quot;Wake On Lan&quot;-software</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

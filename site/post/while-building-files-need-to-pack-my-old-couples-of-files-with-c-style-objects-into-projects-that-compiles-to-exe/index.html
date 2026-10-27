@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: while building files, need to pack my old couples of files with c-style objects into projects that compiles to &#x60;.exe&#x60;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">while building files, need to pack my old couples of files with c-style objects into projects that compiles to &#x60;.exe&#x60;</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-18 02:18:36 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/build">
+                        <span>build</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vs">
+                        <span>vs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>while building files, need to pack my old couples of files with c-style objects into projects that compiles to <code>.exe</code></li>
+<li>since if you link to other project that compile to <code>.lib</code> or <code>.dll</code>, you should declare all them in oop-style class interface.</li>
+<li>that's what i stumbled when integrating the old crgb_t lib with vulkan examples... compiling them within the <code>main.cpp</code> project.</li>
+<li>well, this is because i had a lot of global states and objects like global buffers...
+<ul>
+<li>things which is closer to c-style embedded system.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

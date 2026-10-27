@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>上海晶丰明源半导体股份有限公司</title><category>led/driver</category><category>pmic</category><pubDate>2026-10-27 11:02:39 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.bpsemi.com/col302/index">上海晶丰明源半导体股份有限公司</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://github.com/slaesh/smahoo-hw">BP2525F in base-board/inwall-relay.pro</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #example/repo of a board which has BP2525F.
+<ul>
+<li>Capacitor are huge since 440V 3.3uF x 2pcs is large value.</li>
+<li>#inductor CKCS6045 470uH <code>6*6*4.5 mm</code> used here, will <strong>not</strong> be the suitable one for AP4514(2A type) because 0.5A I_sat.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://www.cenkersz.com/file/upload/product_series/SMD_Power_Inductor_CKCS6045_Series.pdf">SMD_Power_Inductor_CKCS6045_Series - 系列规格书 - SMD_Power_Inductor_CKCS6045_Series.pdf</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=677742904748">岑科电感 CKCS2520 3015 4018 5040 6045 8040-4.7UH/M 1-470UH</a>
+<ul>
+<li><a href="https://www.lcsc.com/datasheet/C354638.pdf">Datasheet Cenker/CKCS inductor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.bpsemi.com/en/col581/1267">BP2525F 5v500mA peak 700mA. transformerless non isolated buck with 85-265VAC</a></li>
+<li><a href="https://detail.1688.com/offer/801007422773.html?pcLoginAbJumpBeforeTimeStr=1777824391038&amp;scene=a261y.7663282.topbar.login&amp;from=login-modal">BP2525F SOT33-5原装 BPS 非隔离3.3V 5V辅助电源IC芯片 晶丰明源</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.eevblog.com/forum/beginners/non-isolated-ac-buck-converter-for-enclosed-projects/">Non-Isolated AC buck converter for enclosed projects</a></li>
+</ul>
+</li>
+<li><a href="http://www.kingsunled.net/Data/kingsunled/upload/file/20201116/6374112550798850992591944.pdf">BP2861X SOP8 Non-isolated Step-Down LED Constant Current Driver Chip</a>
+<ul>
+<li>this one just drive them up, no dimmer/PWM feature.</li>
+</ul>
+</li>
+<li><a href="https://www.bpsemi.com/upload/cn/file/2023-01/col319/1673490931472.pdf">BP3166XS isolated flyback constant current driver chip, not require a VCC capacitor or startup resistor. </a></li>
+<li>there is a PWM-able LED driver chip, BP2887G but that one is DIP8...
+<ul>
+<li><a href="https://www.bpsemi.com/en/col586/index">non isolated pwm dimmable chips... </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> on the very <code>Pmic-ee</code> group I have... some one have demo and information of BP2571 as well.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#mcu #blog <a href="https://mp.weixin.qq.com/s/uoI6MMnCde1XXZ-uJ4D3VA">LKS32MC07x dual motors of the drive dryer run efficiently and stably</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://www.lksmcu.com/index.php">南京凌鸥创芯电子有限公司</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/1G9nW9E8_b5oPwO7z6OIwg">高效节能：强大MCU实现干衣机压缩机+电机+PFC稳定运行，性能全面跃升</a></li>
+</ul>
+</li>
+<li>you can paste the <code>s_biz</code> link in wechat blog in browser back to its desktop app. It will render you the correct URI.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> AP451X  X (X ∈ A,1,2,3,4) <code>3</code> can do 400mA-1250mA. <code>4</code> do 450mA-2000mA. <code>A</code> cheapest one only 250mA.
+<ul>
+<li>@QYJANYSYS520 in #wechat quote me AP4513B 0.46 at 4000pcs cheapest so far.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> turns out it's a pretty generic componen, @comp1 do me cheapest at 0.39</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 11:02:39 2026] <a href="https://mp.weixin.qq.com/s/nGZ9nXYsuvi981rxTC1uSw">High-voltage direct-drive LED light driver chip and circuit diagram</a>
+<ul>
+<li>pinnacle of cheap LED lighting board.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>TL-PA9020P powerline V4 User Guide | TP-Link</title><category>ethernet/powerline</category><category>hardware</category><category>power/mains</category><pubDate>2026-10-27 10:41:41 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.tp-link.com/us/user-guides/tl-pa9020pkit_v4/chapter-2-powerline-networks">TL-PA9020P powerline V4 User Guide | TP-Link</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> powerline is hated by reddit, like a lot.
+<ul>
+<li><a href="https://meadowend.com/2021/07/12/some-musings-on-powerline-adapters/">Some musings on Powerline adapters | Mike's Blog</a>
+<ul>
+<li><a href="https://www.reddit.com/r/homeautomation/comments/1gtn17a">Powerline discussion</a></li>
+<li><a href="https://www.reddit.com/r/HomeNetworking/comments/1miex31">Powerline discussion</a></li>
+<li><a href="https://www.reddit.com/r/HomeNetworking/comments/1v4n37u">Powerline discussion that led me to MoCA</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: <a href="https://www.reddit.com/r/HomeNetworking/comments/18sz05l">Powerline adapter is life changing</a>
+<ul>
+<li>not so much....</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://diy.stackexchange.com/questions/182623/do-powerline-adaptors-need-to-be-plugged-into-outlets-that-are-on-the-same-leg">electrical - Do powerline adaptors need to be plugged into outlets that are on the same leg</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> I learned that UK used 240VAC in those things.
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/694803/what-stops-powerline-ethernet-from-going-to-grid">power line communication - What stops Powerline Ethernet from going to grid?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Multimedia_over_Coax_Alliance">MoCA: Multimedia over Coax Alliance</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> IEEE name: <a href="https://wikipedia.org/wiki/Ethernet_over_coax">Ethernet over coax</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.techreviewer.com/learn-about-tech/ethernet-over-coax-a-complete-guide-to-moca-adapters/">Ethernet Over Coax?! A Complete Guide To MoCA Adapters - TechReviewer</a></li>
+<li><a href="https://www.netgear.com/support/product/pl1000">PL1000 | Powerline 1000</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 10:41:41 2026] <a href="https://www.reddit.com/r/HomeNetworking/comments/1v3pwcp">Can I use POE through a MOCA network - futile actually</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use one, those are uncorrelated to each other.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/HomeNetworking/comments/1vz9pob">MoCa network plan good - need PoE MoCA filter..</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Binary distribution of PDFium</title><category>cpp</category><category>format/pdf</category><pubDate>2026-10-26 10:16:14 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/bblanchon/pdfium-binaries">Binary distribution of PDFium</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/kreuzberg-dev/kreuzberg"><code>kreuzberg</code> Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats. Available for Rust, Python, Ruby, Java, Go, PHP, Elixir, C#, R, C, TypeScript (Node/Bun/Wasm/Deno)- or use via CLI, REST API, or MCP server.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #rust #wrapper <a href="https://github.com/ajrcarey/pdfium-render"><code>pdfium-render</code> Rust wrapper around Pdfium, C++ PDF library  Google Chromium</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 22:16:14 2026] #discussion <a href="https://news.ycombinator.com/item?id=50238739">PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>statistics - What is the correct meaning and interpretation of p-values?</title><category>statistic</category><pubDate>2026-10-26 10:12:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://datascience.stackexchange.com/questions/130749/what-is-the-correct-meaning-and-interpretation-of-p-values">statistics - What is the correct meaning and interpretation of p-values?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://briefer.cloud/blog/posts/p-hacking/">P-Hacking in Startups | Briefer</a>
+<ul>
+<li>actually I have seen them a lot, but I record it now</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://stats.stackexchange.com/questions/219589/a-p-value-greater-than-0-05-means-that-my-results-are-meaningless">correlation - A p-value greater than 0.05 means that my results are meaningless? - Cross Validated</a></li>
+<li><a href="https://stats.stackexchange.com/questions/11812/sanity-check-how-low-can-a-p-value-go">hypothesis testing - Sanity check: how low can a p-value go? - Cross Validated</a></li>
+<li>#terminology : <a href="https://wikipedia.org/wiki/Null_hypothesis">Null hypothesis</a>
+<ul>
+<li>means no correlation between two effects, or there are no such effect being studied</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 22:12:05 2026] <a href="https://news.ycombinator.com/item?id=50244144">Vegemite is not a human right</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>&quot;Attention&quot;, &quot;Transformers&quot;, in Neural Network &quot;Large Language Models&quot;</title><category>technologia</category><pubDate>2026-10-26 07:05:02 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="http://bactra.org/notebooks/nn-attention-and-transformers.html">&quot;Attention&quot;, &quot;Transformers&quot;, in Neural Network &quot;Large Language Models&quot;</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> something as a famous tech phrase.... Attention is all you need ... or something along the lines.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=46523887">The Q, K, V Matrices</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://tombedor.dev/how-to-write-good-short-docs/#optimize-for-short-attention-spans">How to Write Good (Short) Docs | Tom Bedor's Blog</a></li>
+<li><a href="https://wikipedia.org/wiki/Markov_model">Markov model</a>
+<ul>
+<li>it's deterministic but more rigid than current paradigm of LLM.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 19:05:02 2026] <a href="https://news.ycombinator.com/item?id=50237224">Attention Is Not What You Need (2025)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>writing about pratt parsing so I remember it | ~yosh</title><category>language/libc</category><category>parser</category><pubDate>2026-10-26 06:22:02 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html">writing about pratt parsing so I remember it | ~yosh</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> lobste.rs</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Simple NetBSD webserver</title><category>backend</category><category>discussion</category><category>web/prog</category><pubDate>2026-10-26 05:43:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/hzrmwz/simple_netbsd_webserver">Simple NetBSD webserver</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>bozohttpd</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SF32LB52系列芯片-双模蓝牙-低功耗-LVGL-思澈科技</title><category>ble</category><category>usb</category><pubDate>2026-10-26 11:59:48 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://item.taobao.com/item.htm?id=913808983978">SF32LB52系列芯片-双模蓝牙-低功耗-LVGL-思澈科技</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use Star-MC1 240MHz and a coprocessor with 24MHz. Pin-to-Pin with nRF52x. have embedded PSRAM. MOQ 3000pcs.
+<ul>
+<li>#memory 4mB : 12, 16mB: 17. Expensive yeah? but at least better than nordic one.</li>
+<li>BLE 5.3.</li>
+<li>#graphic again, have ePicasso for 2D/2.5D graphic, rotation, scaling, etc...</li>
+<li>#compression eZip for accelerating compression , mostly used with graphic.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<ul>
+<li>#example/repo <a href="https://github.com/chenxuuu/BT-MP3/tree/master/hardware/bt-mp3">BT-MP3</a>
+<ul>
+<li>kicanvas check, in here you can see the engineer separate two different block of things in <code>eeschema</code>
+GPIO and power management unit... Those two multi-unit symbols make schematic comprehensive</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #board
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=972117309559">思澈SF32LB52开发板NANO蓝牙小智</a>
+<ul>
+<li><a href="https://shop286569561.taobao.com/">思澈科技</a></li>
+</ul>
+</li>
+<li>#software #ide <a href="https://github.com/eez-open/studio">EEZ Studio Cross-platform low-code GUI LVGL codegen</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>rmk</code> mentioned as one of the supported one.
+<ul>
+<li><a href="https://wiki.sifli.com/en/hardware/SF32LB520-3-5-7-HW-Application.html">SF32LB52x - Hardware Design Guide - SiFli-Wiki v1.0 documentation</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=989840268714">Multi-functional macro keyboard with LCD screen</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 11:59:48 2026] <a href="https://news.ycombinator.com/item?id=50228115">Show HN: A Truly Modular Keyboard</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/notaroomba/keybytes"><code>keybytes</code> modular keyboard that can be made into a macropad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>教程：AT32F435 QSPI 读写W25Q256</title><category>flash</category><category>memory</category><category>spi/qspi</category><pubDate>2026-10-26 11:47:00 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://blog.csdn.net/liliquan2/article/details/130697268">教程：AT32F435 QSPI 读写W25Q256</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://blog.csdn.net/weixin_38933763/article/details/130941048">AT32F435/F437 QSPI Driver Winbond/Hengshuo NAND FLASH (W25N01G/ZB35Q01A) No Output Signal</a></li>
+<li>#firmware #libc <a href="https://github.com/libdriver/w25qxx"><code>w25qxx</code> W25QXX(W25Q10, W25Q20, W25Q40, W25Q80, W25Q16, W25Q32, W25Q64, W25Q128, W25Q256, W25Q512, W25Q01, W25Q02) full-featured driver library for general-purpose MCU and Linux.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://zhuanlan.zhihu.com/p/461163682">SPIM and QSPI functions of AT32 - Zhihu</a>
+<ul>
+<li>only on those weaker one as 403A and the like. F435_437 straight up using QSPI only.</li>
+<li>SPIM is SPI coupled with DMA to take stream to memory directly.
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #nordic nrf54L15 have that functionality. Under the name EasyDMA.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://bbs.21ic.com/forum.php?mod=viewthread&amp;tid=3387824">ICP Tool Adds QSPI Download Function - AT32 MCU AT32 MCU Official Technical Support Forum for AT32 MCU</a></li>
+<li>#api <a href="https://github.com/ArteryTek/sdk-csp-at32f4/blob/535245f3b5155c18a4998cc7b1a33478604828a9/libraries/f435_437/drivers/src/at32f435_437_qspi.c#L72">sdk-csp-at32f4/libraries/f435_437/drivers/src/at32f435_437_qspi.c at 535245f3b5155c18a4998cc7b1a33478604828a9 · ArteryTek/sdk-csp-at32f4</a></li>
+<li><a href="https://github.com/ArteryTek/AT32F435_437_Firmware_Library/blob/master/project/at_surf_f437/examples/qspi_flash/src/main.c">AT32F435_437_Firmware_Library examples qspi_flash</a>
+<ul>
+<li>If enable QSPI XIP, has to enable qspi_xip_cache_bypass_set(QSPIx， TRUE),</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> it's from their FAQ0130.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 11:47:00 2026] <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/1075710/tcan4550-q1-ssp-configuration">TCAN4550-Q1: SSP configuration - Interface forum - Interface - TI E2E support forums</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> QSPI.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Clef</title><category>music</category><pubDate>2026-10-26 10:08:16 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Clef">Clef</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> treble hand is your right hand, bass hand is your left hand.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Accordion actually.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://wikipedia.org/wiki/Alto">Alto</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 10:08:16 2026] <a href="https://english.stackexchange.com/questions/44125/is-there-a-difference-between-treble-and-triple">difference between &quot;treble&quot; and &quot;triple&quot;?</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</title><category>mcu/wch</category><category>usb/pd</category><pubDate>2026-10-26 10:01:42 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.wch-ic.com/products/CH32X035.html">USB+Type-C PD MCU CH32X035 - Nanjing Qinheng Microelectronics Co., Ltd.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> CH32X035F8U6 QFN20 and G8U8 QFN28. CH32X033F8P6 is TSSOP20. CH32X035D8U6 is QFN12 2*2 P0.4mm (this is new on [Thursday, May 7, 2026 06:02:50 PM])</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> this is the crsytal-less USB MCU. which can invoke USB-PD as well.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> also have <code>PIO</code> like block. it's called <code>PIOC</code> with an embedded eMCU (RISC8B ISA).
+<ul>
+<li>main chip is <code>RISCV4C</code> which I honestly cant remember the triplet.</li>
+<li>#ota #mcu/boot <a href="https://www.eevblog.com/forum/microcontrollers/bootloaders-and-cheap-risc-v-(ch32x035-and-ch32v003)/">Bootloaders and cheap RISC-V (CH32X035 and CH32V003)</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://community.st.com/t5/stm32-mcus-products/achieving-usb-pd-communication-via-bit-banging-on-stm32l562cet6/td-p/699037">Solved: Achieving USB PD Communication via Bit Banging on ...</a>
+<ul>
+<li><a href="https://hackaday.com/2025/01/10/bit-banging-the-usb-pd-protocol/">Bit-Banging The USB-PD Protocol | Hackaday</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#usb/pd/pps <a href="https://github.com/wagiminator/CH32X035-USB-PD-Adapter#building-instructions">Portable Programmable Power Supply with CH32X035 USB-PD PPS</a>
+<ul>
+<li>since my Beryl 7 PSU do have PPS support, I am wondering.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 10:01:42 2026] #pcb <a href="https://github.com/sydundar/BenchVolt-PD">BenchVolt PD is an open-source, USB-C powered multi-channel lab power supply delivering up to 100 W. Features 5 outputs (0 V–22 V), STM32 control, USB-PD, low-noise LDOs, and a Python GUI. Compact, portable, and perfect for makers and engineers.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> STUSB4500 is the usb controller. have pps in here.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</title><category>filesystem</category><category>linux</category><category>windows</category><category>wsl</category><pubDate>2026-10-26 08:57:00 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/microsoft/WSL/issues/8773">Way to mount a partition from the disk the windows is installed. · Issue #8773 · microsoft/WSL</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> right now it's impossible to do it if your Linux partition is in the same disk as the one mounting in Windows
+<ul>
+<li>e.g. Windows disk, or <code>D:\</code> disk which is being mounted and running program, accessing files on them, etc...</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> If you are in <code>C:\</code>, good luck. Otherwise, unmount it right now.
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/storage/dismount-diskimage?view=windowsserver2025-ps">Dismount-DiskImage (Storage)</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1750399/eject-dismount-a-drive-using-powershell">windows 10 - Eject/dismount a drive using PowerShell</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/cloningsoftware/comments/1tzzc2f">What disk cloning software have you been using for years that seldom gets mentioned anywhere?</a>
+<ul>
+<li>actually just use <code>dd</code>. nothing else is better than that even in Windows.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 08:57:00 2026] <a href="https://www.partitionwizard.com/free-partition-manager.html">MiniTool Partition Wizard Free: Best Partition Manager for Windows</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm trying to find the software that can re-partition disk on the fly... certain windows settings prevent that
+<ul>
+<li>but I used one in the past.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>GitHub - Settings - Pages</title><category>github</category><category>host/self</category><pubDate>2026-10-25 01:53:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/groutoutlook/groutoutlook.github.io/settings/pages">GitHub - Settings - Pages</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://groutoutlook.github.io">btw it's this one</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch">Publishing from a branch</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 25 13:53:38 2026] once you take them private, it will take another publish + several hours for it to go back up again.
+<ul>
+<li>at least that's when I try private my free git page.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Free DDNS | Now-DNS - Services</title><category>dns/ddns</category><pubDate>2026-10-25 08:52:08 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://dtdns.org/?p=services">Free DDNS | Now-DNS - Services</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Con: DDNS is simply a way to find your unsecured synology on Internet.
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/synology/comments/x96l2u">DDNS vs Tailscale</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 25 08:51:53 2026] I just use tailscale now.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #url/shortener : <a href="https://www.301.li/">301 - Shorten Links</a>
+<ul>
+<li>#alternative : <a href="https://desec.io/">deSEC – Free Secure DNS</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://freedns.afraid.org/">FreeDNS - Free DNS - Dynamic DNS - Static DNS subdomain and domain hosting</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 25 08:52:08 2026] <a href="https://news.ycombinator.com/item?id=50222133">FreeDNS and many of its alternative</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Superconducting Microprocessors? Turns Out They&apos;re Ultra-Efficient (2021)</title><category>electronic</category><category>technology</category><pubDate>2026-10-24 09:31:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=41115591">Superconducting Microprocessors? Turns Out They're Ultra-Efficient (2021)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  <a href="https://www.eevblog.com/forum/beginners/high-current-low-voltage-power-supply/25/">High current low voltage power supply - Page 2</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/597146/what-happens-to-parasitic-capacitance-and-inductance-in-a-superconductor">What happens to parasitic capacitance and inductance in a superconductor?</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/377025/whats-the-math-behind-generators-with-electromagnet-cores">power supply - What's the math behind generators with electromagnet cores?</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/291329/lighting-in-mri">ac - Lighting in MRI</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/666667/do-superconducting-electromagnets-require-less-energy-than-resistive-type-electr">Do superconducting electromagnets require less energy than resistive type electromagnets to create the same strength of magnetic field?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Aug 22 12:18:28 2026] <a href="https://wikipedia.org/wiki/Superconducting_magnet#Magnet_quench">Superconducting magnet</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 24 21:31:22 2026] <a href="https://wikipedia.org/wiki/Positron_emission_tomography">PET: Positron emission tomography</a>
+<ul>
+<li>this remind me of MRI.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Software is slow because of bad design, not slow languages</title><category>programming</category><pubDate>2026-10-24 03:26:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/hd72yt/software_is_slow_because_bad_design_not">Software is slow because of bad design, not slow languages</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> yeah.. that kind of talk again.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`zizmor` Static analysis for GitHub Actions</title><category>cicd</category><category>rust</category><pubDate>2026-10-24 02:29:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/zizmorcore/zizmor"><code>zizmor</code> Static analysis for GitHub Actions</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --><a href="https://docs.zizmor.sh/usage/#auto-fixing-results">Usage - zizmor</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #vocabulary <a href="https://en.wiktionary.org/wiki/stopgap">stopgap - Wiktionary, the free dictionary</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Restart-Service` (Microsoft.PowerShell.Management)</title><category>background</category><category>powershell</category><category>service</category><pubDate>2026-10-24 02:13:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/restart-service"><code>Restart-Service</code> (Microsoft.PowerShell.Management)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Tailscale.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Create private networks with WARP-to-WARP · Cloudflare Zero Trust docs</title><category>cloudflare</category><category>network</category><category>remote</category><pubDate>2026-10-24 01:53:35 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/warp-to-warp/">Create private networks with WARP-to-WARP · Cloudflare Zero Trust docs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> p2p network with <code>warp-cli</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> CF Access offer Zero trust Remote access solution, same as Tailscale.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #android: <a href="https://tailscale.com/kb/1079/install-android#mdm-deployments">Install Tailscale on Android · Tailscale Docs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#comparison : <a href="https://tailscale.com/compare/zerotier">ZeroTier vs. Tailscale | Which VPN Alternative is Better for You?</a>
+<ul>
+<li><a href="https://www.reddit.com/r/CloudFlare/comments/uiotfa">Cloudflare Zero Trust, Zerotier, Tailscale - differences?</a></li>
+<li><a href="https://tailscale.com/compare/cloudflare-access">Cloudflare Access vs. Tailscale | Compare Access and Gateway to Tailscale</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 24 13:53:35 2026] <a href="https://github.com/tailscale/tailscale/issues/183">FR: Connect to multiple tailnets simultaneously · Issue #183 · tailscale/tailscale</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Keep Tailscale running when I&apos;m not logged in to my computer · Tailscale Docs</title><category>android</category><category>remote</category><category>windows</category><pubDate>2026-10-24 01:42:01 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://tailscale.com/docs/how-to/run-unattended">Keep Tailscale running when I'm not logged in to my computer · Tailscale Docs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> at least in windows the fastest way to do it is open the Tailscale #gui.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> after I joined my Android device.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#gui of tailscale is <code>tailscale-ipn</code> <a href="https://pkg.go.dev/tailscale.com/ipn">ipn package - tailscale.com/ipn - Go Packages</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> but that thing ensure my LAN access over wire or sum, <code>tailscale-ipn</code>, so I shim to <code>tailgui</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item></channel></rss>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: fzf syntax</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">fzf syntax</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-09-22 01:45:14 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cli/utils">
+                        <span>cli/utils</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/syntax">
+                        <span>syntax</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/junegunn/fzf#search-syntax">fzf syntax</a>
+<ul>
+<li>or  as the header, <code>fzf Search syntax</code>.</li>
+<li>Symbol is
+<ul>
+<li><code>''</code> (exact-boundary-match)</li>
+<li><code>'</code></li>
+<li><code>^...</code></li>
+<li><code>...$</code></li>
+<li><code>!</code> : inverse match (not included.)
+<ul>
+<li><code>!^...</code></li>
+<li><code>!...$</code></li>
+</ul>
+</li>
+<li><code>|</code> specified that query and matched using <code>or</code> logic.
+<ul>
+<li>default(separated by space) is <code>and</code> logic.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>syntax is resembling regex, not exactly the same as regex.
+<ul>
+<li>For example, no <code>?</code> and <code>.</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Check <a href="obsidian://open?vault=MainVault&amp;file=note_IDEAndTools%2FDev%2FCLI%2F001.006-fzf%23Search%20syntax">vault's note</a></li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

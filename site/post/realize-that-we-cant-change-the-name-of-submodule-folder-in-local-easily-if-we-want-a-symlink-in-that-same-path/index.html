@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Realize that we  cant change the name of submodule folder in local easily if we want a symlink in that same path.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Realize that we  cant change the name of submodule folder in local easily if we want a symlink in that same path.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-04-10 12:42:02 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/git">
+                        <span>git</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/submodule">
+                        <span>submodule</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li>Realize that we  cant change the name of submodule folder in local easily if we want a symlink in that same path.
+<ul>
+<li>Have to <code>submodule deinit</code> first then make the symlink, then add the submodule again.
+<ul>
+<li>Update 2025-04 : <code>git submodule deinit</code> need to take relative path, submodule name wont work.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

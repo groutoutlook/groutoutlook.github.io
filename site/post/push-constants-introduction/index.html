@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: push constants introduction</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">push constants introduction</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-07-09 10:42:49 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/shader">
+                        <span>shader</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/vulkan">
+                        <span>vulkan</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/khronosgroup/vulkan-samples/tree/main/samples/performance/constant_data#push-constants">push constants introduction</a>
+<blockquote>
+<p>[!abstract]</p>
+<h1>push constants</h1>
+<hr />
+<h2>introduction</h2>
+<p>push constants are usually the first method newer vulkan programmers will stumble upon when beginning to work with constant data. they are straightforward to use and integrate nicely into any codebase, making them a great option to send simple data to your shaders.</p>
+<p>a downside to push constants is that on some platforms they have strict limitations on how much data can be sent. the vulkan spec guarantees that drivers will support at least 128 bytes of push constants. many modern implementations of vulkan will commonly support 256 bytes and sometimes much more.</p>
+<p><em>note:</em> to determine how many bytes your system supports, you can query the physical device for its vkphysicaldevicelimits and check the value maxpushconstantssize.</p>
+<p>having said this, 128/256 bytes is still a useful amount of data, even if it isn’t exactly scalable to a full game scenario. in the case of 128 bytes, we can at least send two float 4x4 matrices (2 _ 4 _ 16 = 128). this, for example, can hold our world matrix and our view-projection matrix.</p>
+<p>so that the shader can understand where this data will be sent, we specify a special push constants <code>&lt;layout&gt;</code> in our shader code.</p>
+</blockquote>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

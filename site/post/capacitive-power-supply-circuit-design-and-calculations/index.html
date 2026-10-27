@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: Capacitive Power Supply: Circuit Design and Calculations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">Capacitive Power Supply: Circuit Design and Calculations</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-08-26 02:32:23 PM<br><span class="updated-at">Updated at 2026-07-12 10:52:21 PM</span></span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/power">
+                        <span>power</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/psu">
+                        <span>psu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="til-subtags" aria-label="In-topic tags">
+            <span class="til-subtags-label">In-topic tags</span>
+            <a class="til-tag in-topic-tag" href="/subtag/blog">#blog</a>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://www.electroschematics.com/capacitor-power-supply/">Capacitive Power Supply: Circuit Design and Calculations</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Capcitor power supply, something as 225j400V cap is being used for</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> transformerless AC to DC PSU, with enough power to feed a Zener.
+<ul>
+<li><a href="https://myphysicsclassroom.in/zener-regulated-power-supply-lab-manual/">Zener Regulated Power Supply Laboratory Manual</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: cheap. Even simpler than flyback converter PSU.</li>
+<li>Con: too much heat.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/126487/ac-to-dc-without-transformer-how-does-this-thing-work#126488">AC to DC without transformer. How does this thing work?</a>
+<ul>
+<li>capactive dropper... I have migrated to transformerless offline regulator now.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://wikipedia.org/wiki/Capacitive_power_supply">Capacitive power supply</a>
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/7JXDmmcfohSYLKEEE9aHOw">A comprehensive article explains the core principles of resistor-capacitance and voltage reduction!</a></li>
+</ul>
+</li>
+<li><a href="https://electronics.stackexchange.com/questions/49274/zener-diode-forward-voltage/49284#49284">datasheet - Zener diode forward voltage</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.electronics-lab.com/forums/threads/tl431-versus-zener.12298/">TL431 versus Zener | Electronics Forums</a></li>
+</ul>
+</li>
+<li><a href="https://www.we-online.com/components/media/o790814v410%20ANP124_Capacitive_Power_Supply_EN.pdf">ANP124 | Capacitive Power Supplies: Selecting the Input Capacitor </a>
+<ul>
+<li>which has the proper simulation and formula for all value in that kind of circuit.</li>
+<li>Also a reference design for 12V capacitive PSU. Normally I do 5V and skip a lot.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Jul 12 22:52:21 2026] nowadays I reside to PMIC as YD925/SI12xxx to do it instead.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

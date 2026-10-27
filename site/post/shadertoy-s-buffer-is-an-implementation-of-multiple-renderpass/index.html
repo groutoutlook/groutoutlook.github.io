@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: shadertoy&#x27;s buffer is an implementation of multiple renderpass.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title">shadertoy&#x27;s buffer is an implementation of multiple renderpass.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-06-28 11:12:13 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/glsl">
+                        <span>glsl</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://stackoverflow.com/questions/61522849/shadertoy-how-to-mix-add-multiply-any-two-shaders">shadertoy's buffer is an implementation of multiple renderpass.</a>
+<ul>
+<li>Brief: Which we have <code>main</code> each buffer, and final pass <code>main</code> will do the mixing/lerping work.</li>
+<li>...based on your workflow. Could be better make the final pass's work less complex by doing some simple color mixing/basix lerping.</li>
+<li>Other complex flow could be pushed to the <code>buffer</code> passes.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>
