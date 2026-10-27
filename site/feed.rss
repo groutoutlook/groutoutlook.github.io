@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`chisel` fast TCP/UDP tunnel over HTTP</title><category>NAT</category><category>http</category><category>tcp</category><pubDate>2026-10-27 11:46:23 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Feature request for PDF Viewer for Vimium C</title><category>keybinding</category><category>msedge</category><category>plugin</category><category>vimium</category><pubDate>2026-10-27 01:26:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/755">Feature request for PDF Viewer for Vimium C</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> vimium C can pass keystrokes to <code>pdf</code> files.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> It could also has that wrap view multiple pages in horizontal mode.
+<pre class="syntax-highlighting"><code class="language-msedge"><span class="text plain">msedge &quot;extension://nacjakoppgmdcpemlfnfegmlhipddanj/file:///D:/ProgramDataD/ST/Doc/stm32h757ai.pdf&quot;
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> maybe my default but I dont know.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://chromewebstore.google.com/detail/pdf-viewer-for-vimium-c/nacjakoppgmdcpemlfnfegmlhipddanj">PDF Viewer for Vimium C - Chrome Web Store</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #discussion solution is reader mode but still, <a href="https://news.ycombinator.com/item?id=50241664">Websites Should Be Printable</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 13:26:21 2026] <a href="https://news.ycombinator.com/item?id=50204697">A Printer Printing onto Paper</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`chisel` fast TCP/UDP tunnel over HTTP</title><category>NAT</category><category>http</category><category>tcp</category><pubDate>2026-10-27 11:46:23 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/jpillora/chisel"><code>chisel</code> fast TCP/UDP tunnel over HTTP</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -494,18 +510,6 @@ GPIO and power management unit... Those two multi-unit symbols make schematic co
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #vocabulary <a href="https://en.wiktionary.org/wiki/stopgap">stopgap - Wiktionary, the free dictionary</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Restart-Service` (Microsoft.PowerShell.Management)</title><category>background</category><category>powershell</category><category>service</category><pubDate>2026-10-24 02:13:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/restart-service"><code>Restart-Service</code> (Microsoft.PowerShell.Management)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Tailscale.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
