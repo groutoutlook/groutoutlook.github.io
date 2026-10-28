@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>EtherCAT</title><category>board</category><category>protocol/ethernet</category><pubDate>2026-10-28 05:37:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>JTAG Daisy Chain</title><category>protocol/jtag</category><category>swd</category><pubDate>2026-10-28 05:58:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/JTAG#Electrical_characteristics">JTAG Daisy Chain</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> fwiw, JTAG require <strong>4 pins</strong> while SWD only <strong>2 pins</strong>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/53571/jtag-vs-swd-debugging/292850#292850">JTAG vs SWD debugging</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>but we do have a cJTAG
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://weekly-geekly.imtqy.com/articles/237885/index.html">We understand the protocol 2-wire JTAG</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kuopinghsu/cjtag">Verilog implementations of <code>cjtag</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/8sPThJ9zzUdxQOpoThfe0g">Don't just use SWD and JTAG! Teach you how to play with two-wire CJTAG with CMSIS-DAP</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#usb <a href="https://electronics.stackexchange.com/questions/157160/high-speed-data-from-microcontrollers-to-pc-using-daisy-chain">High speed data from microcontrollers to pc using daisy chain</a></li>
+<li>#i2c <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/616909/pca9518-daisy-chaining-of-i2c-or-other-hubs-for-multiple-point---to---point-connections-creating-a-large-tree-network">PCA9518: Daisy chaining of I2C (or other) hubs for multiple point - to - point connections creating a large tree network - Interface forum - Interface - TI E2E support forums</a></li>
+<li>#spi <a href="https://www.analog.com/en/resources/technical-articles/2022/07/16/09/49/daisychaining-spi-devices.html">Daisy-Chaining SPI Devices | Analog Devices</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:58:44 2026] #network #ethercat <a href="https://www.reddit.com/r/PLC/comments/1j8ebgr">Coworker has etherCAT devices plugged into same switch as Modbus TCP/IP devices. Is this an issue?</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>EtherCAT</title><category>board</category><category>protocol/ethernet</category><pubDate>2026-10-28 05:37:24 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
@@ -394,19 +426,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/HomeNetworking/comments/1vz9pob">MoCa network plan good - need PoE MoCA filter..</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Binary distribution of PDFium</title><category>cpp</category><category>format/pdf</category><pubDate>2026-10-26 10:16:14 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/bblanchon/pdfium-binaries">Binary distribution of PDFium</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/kreuzberg-dev/kreuzberg"><code>kreuzberg</code> Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats. Available for Rust, Python, Ruby, Java, Go, PHP, Elixir, C#, R, C, TypeScript (Node/Bun/Wasm/Deno)- or use via CLI, REST API, or MCP server.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #rust #wrapper <a href="https://github.com/ajrcarey/pdfium-render"><code>pdfium-render</code> Rust wrapper around Pdfium, C++ PDF library  Google Chromium</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 22:16:14 2026] #discussion <a href="https://news.ycombinator.com/item?id=50238739">PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP</a></li>
 </ul>
 </li>
 </ul>
