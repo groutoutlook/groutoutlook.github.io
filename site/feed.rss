@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`tanim` Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</title><category>cpp</category><category>library/imgui</category><pubDate>2026-10-27 03:27:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>EtherCAT</title><category>board</category><category>protocol/ethernet</category><pubDate>2026-10-28 05:37:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a #protocol for PLC. every digital servo/robot arm 'll be controlled by this.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/VZ7iMurWvaWd-gsyCqdFeg">It's really open source?! The big god spends 150 yuan, hand rubbing FOC drive! It is also an EtherCAT slave development board......</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/507197/can-you-use-cat-5-6-ethernet-cable-to-power-devices#507208">Can you use cat 5/6 ethernet cable to power devices?</a>
+<ul>
+<li>I want to PoE without dedicated hardware.</li>
+</ul>
+</li>
+<li><a href="https://www.eevblog.com/forum/beginners/power-over-cat5-what-is-the-max-current/">Power over cat5. What is the max current?</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/113253/voltage-drop-and-safe-current-load-on-cat5-cable">power - Voltage Drop and Safe Current Load on CAT5 Cable</a>
+<ul>
+<li>which you ought to push voltage much further to balance the drop.</li>
+<li>The return path(negative wire on DC, AC dont have that.) also contribute to total voltage drop.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #meta <a href="https://www.rapidtables.com/calc/wire/voltage-drop-calculator.html">Voltage Drop Calculator</a></li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Category_1_cable">Category 1 cable</a>
+<ul>
+<li>this normally appears on probes. good for nothing other than power supplying, telephone lines, etc..</li>
+<li>#meta <a href="https://wikipedia.org/wiki/Structured_cabling">Structured cabling - CAT1 -&gt; CAT8</a></li>
+<li><a href="https://wikipedia.org/wiki/ISO/IEC_11801#Category_8">ISO/IEC 11801 - Defining CAT7 and CAT8 cable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/PLC/comments/mndwk3">Why Windows on PLCs?</a>
+<ul>
+<li>#blog <a href="https://news.ycombinator.com/item?id=45605556">PoE basics and beyond: What every engineer should know</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:37:24 2026] <a href="https://www.reddit.com/r/PLC/comments/rl3f42">Ethernet IP and EtherCAT on the same switch</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Convolution - integral product</title><category>ee</category><category>signal</category><pubDate>2026-10-28 05:17:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Convolution">Convolution - integral product</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Song structure</title><category>definition</category><category>music</category><pubDate>2026-10-28 11:43:21 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Song_structure">Song structure</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Refrain">Refrain</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`rk3326_core_builds` Script for building various cores and emulators for rk3326 devices</title><category>firmware</category><category>linux</category><category>sbc</category><pubDate>2026-10-28 10:44:00 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/christianhaitian/rk3326_core_builds"><code>rk3326_core_builds</code> Script for building various cores and emulators for rk3326 devices</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/radxa-build/rock-pi-s">ROCK Pi S RK3308</a>
+<ul>
+<li><a href="https://radxa.com/products/rockpi/pis">Radxa ROCK Pi S</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/pollen-robotics/microduck"><code>microduck</code> Tiny biped duck robot 🦆</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> 299/pc : <a href="https://docs.radxa.com/en/zero/zero3?model=zero-3w">Radxa ZERO 3W | Radxa Docs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://radxa.com/products/zeros/zero3w">Radxa ZERO 3W and ZERO 3E (PoE hat needed)</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:53:03 2026] #news <a href="https://news.ycombinator.com/item?id=50253750">ICE wants robot dogs. Boston Dynamics' workers urge company to 'cancel the sale'</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [Mon Oct 19 17:07:34 2026] <a href="https://item.taobao.com/item.htm?id=1089674174984">Kiwipi 5 RK3588S开发板 Linux安卓主板 支持一站式定制开发</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:46:18 2026] #cicd #sbc <a href="https://docs.radxa.com/en/zero/zero3/apps-deployment/opencv"><code>OpenCV</code> | Radxa Docs</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 10:44:00 2026] <a href="https://news.ycombinator.com/item?id=50265594">Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`tanim` Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</title><category>cpp</category><category>library/imgui</category><pubDate>2026-10-27 03:27:41 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/hegworks/tanim"><code>tanim</code> Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -309,79 +407,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/kreuzberg-dev/kreuzberg"><code>kreuzberg</code> Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats. Available for Rust, Python, Ruby, Java, Go, PHP, Elixir, C#, R, C, TypeScript (Node/Bun/Wasm/Deno)- or use via CLI, REST API, or MCP server.</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #rust #wrapper <a href="https://github.com/ajrcarey/pdfium-render"><code>pdfium-render</code> Rust wrapper around Pdfium, C++ PDF library  Google Chromium</a></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 22:16:14 2026] #discussion <a href="https://news.ycombinator.com/item?id=50238739">PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>statistics - What is the correct meaning and interpretation of p-values?</title><category>statistic</category><pubDate>2026-10-26 10:12:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://datascience.stackexchange.com/questions/130749/what-is-the-correct-meaning-and-interpretation-of-p-values">statistics - What is the correct meaning and interpretation of p-values?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://briefer.cloud/blog/posts/p-hacking/">P-Hacking in Startups | Briefer</a>
-<ul>
-<li>actually I have seen them a lot, but I record it now</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://stats.stackexchange.com/questions/219589/a-p-value-greater-than-0-05-means-that-my-results-are-meaningless">correlation - A p-value greater than 0.05 means that my results are meaningless? - Cross Validated</a></li>
-<li><a href="https://stats.stackexchange.com/questions/11812/sanity-check-how-low-can-a-p-value-go">hypothesis testing - Sanity check: how low can a p-value go? - Cross Validated</a></li>
-<li>#terminology : <a href="https://wikipedia.org/wiki/Null_hypothesis">Null hypothesis</a>
-<ul>
-<li>means no correlation between two effects, or there are no such effect being studied</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 22:12:05 2026] <a href="https://news.ycombinator.com/item?id=50244144">Vegemite is not a human right</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>&quot;Attention&quot;, &quot;Transformers&quot;, in Neural Network &quot;Large Language Models&quot;</title><category>technologia</category><pubDate>2026-10-26 07:05:02 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="http://bactra.org/notebooks/nn-attention-and-transformers.html">&quot;Attention&quot;, &quot;Transformers&quot;, in Neural Network &quot;Large Language Models&quot;</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> something as a famous tech phrase.... Attention is all you need ... or something along the lines.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=46523887">The Q, K, V Matrices</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://tombedor.dev/how-to-write-good-short-docs/#optimize-for-short-attention-spans">How to Write Good (Short) Docs | Tom Bedor's Blog</a></li>
-<li><a href="https://wikipedia.org/wiki/Markov_model">Markov model</a>
-<ul>
-<li>it's deterministic but more rigid than current paradigm of LLM.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 26 19:05:02 2026] <a href="https://news.ycombinator.com/item?id=50237224">Attention Is Not What You Need (2025)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>writing about pratt parsing so I remember it | ~yosh</title><category>language/libc</category><category>parser</category><pubDate>2026-10-26 06:22:02 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html">writing about pratt parsing so I remember it | ~yosh</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> lobste.rs</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Simple NetBSD webserver</title><category>backend</category><category>discussion</category><category>web/prog</category><pubDate>2026-10-26 05:43:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/hzrmwz/simple_netbsd_webserver">Simple NetBSD webserver</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>bozohttpd</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
