@@ -64,7 +64,11 @@
 <li><a href="https://github.com/shipurjan/subtitle-to-lrc"><code>subtitle-to-lrc</code> Convert subtitle file (eg. .vtt, .srt files) to .lrc file</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> set delay to those files require them to be <code>lrc</code>.. <code>vtt</code> is the default of youtube.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">yt-dlp --write-subs --sub-format=vtt --sub-lang=ko &quot;https://www.youtube.com/watch?v=D968qfUZMUE&quot; --force-overwrite # you can --list-subs for this.
+subtitle-to-lrc .\Neon-A2OLite.ko.vtt  # auto convert to `lrc` for you.
+</span></code></pre>
+</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>yt-dlp --write-subs --sub-format lrc &quot;VIDEO_URL&quot;</code> against all odds, this download vtt sub from youtube.</li>

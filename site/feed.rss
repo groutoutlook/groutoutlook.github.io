@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>JTAG Daisy Chain</title><category>protocol/jtag</category><category>swd</category><pubDate>2026-10-28 05:58:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>C++20 minimal perfect hash.</title><category>algorithm</category><category>cpp</category><category>hash</category><pubDate>2026-10-29 08:32:17 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/qlibs/mph">C++20 minimal perfect hash.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1dkg374">C++20 Minimal perfect hashing at compile-time</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/kmilo17pet/qlibs-cpp"><code>qlibs-cpp</code> C++ of <code>qlibs</code> collection of useful libraries for embedded systems : signal smoothing, PID control, Fuzzy Logic, fixed-point math and more...</a>
+<ul>
+<li>#algorithm : PID control in C++. suitable for writing firmware with this.
+<ul>
+<li><a href="https://youtu.be/Y3MgFS-9l3s">PID Controllers For Game Devs</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 08:33:08 2026] dead for about 1 year.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 08:32:17 2026] <a href="https://lobste.rs/s/d3ubhd/billion_query_per_second_lookup_tables_c">Billion-query-per-second lookup tables in C++</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>JTAG Daisy Chain</title><category>protocol/jtag</category><category>swd</category><pubDate>2026-10-28 05:58:44 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/JTAG#Electrical_characteristics">JTAG Daisy Chain</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> fwiw, JTAG require <strong>4 pins</strong> while SWD only <strong>2 pins</strong>
@@ -26,7 +52,11 @@
 <li>#spi <a href="https://www.analog.com/en/resources/technical-articles/2022/07/16/09/49/daisychaining-spi-devices.html">Daisy-Chaining SPI Devices | Analog Devices</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:58:44 2026] #network #ethercat <a href="https://www.reddit.com/r/PLC/comments/1j8ebgr">Coworker has etherCAT devices plugged into same switch as Modbus TCP/IP devices. Is this an issue?</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:58:44 2026] #network #ethercat <a href="https://www.reddit.com/r/PLC/comments/1j8ebgr">etherCAT daisychaining plugged into same switch as Modbus TCP/IP devices</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/587818/can-a-ring-of-ethercat-devices-be-connected-to-two-ports-of-an-existing-ethernet">digital communications - Can a ring of etherCAT devices be connected to two ports of an existing Ethernet/IP switch?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -377,53 +407,6 @@
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 11:02:39 2026] <a href="https://mp.weixin.qq.com/s/nGZ9nXYsuvi981rxTC1uSw">High-voltage direct-drive LED light driver chip and circuit diagram</a>
 <ul>
 <li>pinnacle of cheap LED lighting board.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>TL-PA9020P powerline V4 User Guide | TP-Link</title><category>ethernet/powerline</category><category>hardware</category><category>power/mains</category><pubDate>2026-10-27 10:41:41 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.tp-link.com/us/user-guides/tl-pa9020pkit_v4/chapter-2-powerline-networks">TL-PA9020P powerline V4 User Guide | TP-Link</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> powerline is hated by reddit, like a lot.
-<ul>
-<li><a href="https://meadowend.com/2021/07/12/some-musings-on-powerline-adapters/">Some musings on Powerline adapters | Mike's Blog</a>
-<ul>
-<li><a href="https://www.reddit.com/r/homeautomation/comments/1gtn17a">Powerline discussion</a></li>
-<li><a href="https://www.reddit.com/r/HomeNetworking/comments/1miex31">Powerline discussion</a></li>
-<li><a href="https://www.reddit.com/r/HomeNetworking/comments/1v4n37u">Powerline discussion that led me to MoCA</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: <a href="https://www.reddit.com/r/HomeNetworking/comments/18sz05l">Powerline adapter is life changing</a>
-<ul>
-<li>not so much....</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://diy.stackexchange.com/questions/182623/do-powerline-adaptors-need-to-be-plugged-into-outlets-that-are-on-the-same-leg">electrical - Do powerline adaptors need to be plugged into outlets that are on the same leg</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> I learned that UK used 240VAC in those things.
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/694803/what-stops-powerline-ethernet-from-going-to-grid">power line communication - What stops Powerline Ethernet from going to grid?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Multimedia_over_Coax_Alliance">MoCA: Multimedia over Coax Alliance</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> IEEE name: <a href="https://wikipedia.org/wiki/Ethernet_over_coax">Ethernet over coax</a></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.techreviewer.com/learn-about-tech/ethernet-over-coax-a-complete-guide-to-moca-adapters/">Ethernet Over Coax?! A Complete Guide To MoCA Adapters - TechReviewer</a></li>
-<li><a href="https://www.netgear.com/support/product/pl1000">PL1000 | Powerline 1000</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 10:41:41 2026] <a href="https://www.reddit.com/r/HomeNetworking/comments/1v3pwcp">Can I use POE through a MOCA network - futile actually</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use one, those are uncorrelated to each other.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/HomeNetworking/comments/1vz9pob">MoCa network plan good - need PoE MoCA filter..</a></li>
 </ul>
 </li>
 </ul>
