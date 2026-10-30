@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Organize and revisit tabs with the keyboard - Visual Studio Blog</title><category>default</category><category>keybinding</category><category>navigation</category><category>vs</category><pubDate>2026-10-29 08:50:16 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>If/else/switch</title><category>discussion</category><category>php</category><pubDate>2026-10-30 10:10:15 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/gjkbvp/if_else_switch">If/else/switch</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/ekxoyt/upcoming_critical_php_security_release">Upcoming Critical PHP Security Release</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50180836">PHP2Shell: AI uncovers critical RCE in PHP</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=50188228">Security Disclosure</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 10:10:15 2026] <a href="https://news.ycombinator.com/item?id=50286987">Chained PHP2Shell exploit roots 25 servers, including US Government servers</a>
+<ul>
+<li>and Perl is the same language category as PHP</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Instant camera - Polaroid</title><category>camera</category><category>hardware</category><pubDate>2026-10-29 08:23:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Instant_camera">Instant camera - Polaroid</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Gỏi đu đủ Thái – som tam. From Thailand</title><category>cooking/salad</category><category>food</category><category>fruit</category><pubDate>2026-10-29 08:17:00 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://vi.wikipedia.org/wiki/G%E1%BB%8Fi_%C4%91u_%C4%91%E1%BB%A7_Th%C3%A1i">Gỏi đu đủ Thái – som tam. From Thailand</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> well.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>PROCREATE Definition &amp; Meaning | Dictionary.com</title><category>anatomy</category><pubDate>2026-10-29 06:49:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.dictionary.com/browse/procreate">PROCREATE Definition &amp; Meaning | Dictionary.com</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://dictionary.cambridge.org/dictionary/english/progeny">PROGENY | English meaning - Cambridge Dictionary</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Claude for Government | Claude by Anthropic</title><category>politic</category><pubDate>2026-10-29 04:55:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://claude.com/solutions/government">Claude for Government | Claude by Anthropic</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.fedramp.gov/ai/">FedRAMP AI</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50276792">Gemini 4 Carbon</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`grok -c` continue latest conversation just as the other harness (e.g claude)</title><category>cli/option</category><category>harness/grok</category><pubDate>2026-10-29 12:58:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><code>grok -c</code> continue latest conversation just as the other harness (e.g claude)
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CNC Stone Carving - Carmelite Gothic</title><category>cnc</category><pubDate>2026-10-29 10:47:01 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://carmelitegothic.com/cnc-stone-carving/">CNC Stone Carving - Carmelite Gothic</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50274409">in HN</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>小型桌面贴片机SMT全自动双视觉研发PCB打样飞达设备2025款</title><category>industry</category><category>pcb</category><category>pcba</category><pubDate>2026-10-29 10:42:09 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://item.taobao.com/item.htm?id=744068366915">小型桌面贴片机SMT全自动双视觉研发PCB打样飞达设备2025款</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #software: <a href="https://github.com/openpnp/openpnp"><code>openpnp</code> SMT Pick and Place Hardware and Software</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?i">PocketPower Adjustable CNC Power Supply DC Convenient Mini Constant Voltage Constant Current Maintenance DIY High Power</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/YX7LL9NFQjYsocGT1YgTdQ">8-PCBA equipment _SMT placement machine</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 10:42:09 2026] <a href="https://news.ycombinator.com/item?id=50243060">The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>difference between std::atoi() and std::stoi?</title><category>cpp</category><category>string</category><category>sturcture</category><pubDate>2026-10-29 09:52:06 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/20583945/what-is-the-difference-between-stdatoi-and-stdstoi">difference between std::atoi() and std::stoi?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Use from_chars and to_chars for C++17 onward.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta function c++"><span class="entity name function constructor c++">std<span class="punctuation accessor c++">::</span>stoi</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="variable parameter c++">str</span><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/7663709/how-can-i-convert-a-stdstring-to-int">c++ - How can I convert a std::string to int?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> [Sun Oct 11 12:37:06 2026] #blog <a href="https://lobste.rs/s/rb2ulg/oh_apparently_it_s_not_possible_portably">oh, apparently it's not possible to portably check for string-to-float conversion errors in standard c</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 09:52:06 2026] #library #cpp #string <a href="https://github.com/vitaut/zmij"><code>zmij</code> fast floating-point-to-string conversion library for C and C++</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> BCD digit extraction. #acronym <a href="https://wikipedia.org/wiki/Binary-coded_decimal">BCD Binary-coded decimal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Organize and revisit tabs with the keyboard - Visual Studio Blog</title><category>default</category><category>keybinding</category><category>navigation</category><category>vs</category><pubDate>2026-10-29 08:50:16 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://devblogs.microsoft.com/visualstudio/organize-and-revisit-tabs-with-the-keyboard/">Organize and revisit tabs with the keyboard - Visual Studio Blog</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Ctrl+Shift+PageUp</code> + <code>Ctrl+Shift+PageDown</code></li>
@@ -214,145 +340,6 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> talking about the first 11 Britain ships come to Australia</li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:50:33 2026] #news <a href="https://news.ycombinator.com/item?id=50254935">UK to charge universities $1,200 per international student</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Kelp – simple replacement for homebrew on macOS</title><category>macos</category><category>pacman/brew</category><pubDate>2026-10-27 02:48:45 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=44030560">Kelp – simple replacement for homebrew on macOS</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/74508234/install-cocoapods-brew-vs-regular-installation">ios - Install Cocoapods : Brew vs Regular installation</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#alternative : <a href="https://github.com/CocoaPods">CocoaPods</a> is more like a #libman for Swift and Objective-C</li>
-<li>#libman : <a href="https://github.com/swiftlang/swift-package-manager">swift-package-manager: The Package Manager for the Swift Programming Language</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:48:45 2026] <a href="https://news.ycombinator.com/item?id=50240465">How to grow a cacao tree at home (2024)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>RLHF : Reinforcement learning from human feedback</title><category>AI</category><category>ml</category><category>technologia</category><pubDate>2026-10-27 02:43:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Reinforcement_learning_from_human_feedback">RLHF : Reinforcement learning from human feedback</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/opendilab/awesome-RLVR">list of RLVR: reinforcement learning with verifiable rewards (continually updated)</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=48849066">GPT-5.6</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:43:44 2026] <a href="https://news.ycombinator.com/item?id=50248124">GPT-6.1 Terra price cut</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ChatGPT `/voice` command | `f8` in `codex`</title><category>audio</category><category>codex</category><category>default</category><category>harness</category><category>microphone/voice</category><pubDate>2026-10-27 02:42:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.chatgpt.com/docs/features/voice">ChatGPT <code>/voice</code> command | <code>f8</code> in <code>codex</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Choropleth map</title><category>visual/graph</category><pubDate>2026-10-27 02:27:12 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Choropleth_map">Choropleth map</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>WizTree</code>. but the one in that is called a square <a href="https://wikipedia.org/wiki/Cartogram">Cartogram</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Cartography">Cartography</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`ASCIIFlow`</title><category>format/uml</category><category>visual/graph</category><pubDate>2026-10-27 02:26:37 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lewish/asciiflow"><code>ASCIIFlow</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Microsoft Visio - <a href="https://app.diagrams.net/">draw.io</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #template : <a href="https://github.com/bhdicaire/visioStencils"><code>visioStencils</code> 4,450 visio shapes, stencils, symbols, and icons collection to visually represent your IT infrastructure</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:26:37 2026] so dead now.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</title><category>led/rgb</category><category>lighting</category><category>linux</category><pubDate>2026-10-27 02:17:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://community.frame.work/t/ambient-light-sensor-does-not-work-after-resume/75799">Ambient light sensor does not work after resume - Framework Laptop 16 / Linux - Framework Community</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>sysfs</code>'s ALS.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/mpv-player/mpv/issues/16741">Support <code>ambient-light</code> property on Linux · Issue #16741 · mpv-player/mpv</a>
-<ul>
-<li>it's on <code>mpv&gt;=0.41</code>, that's all I care.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/framework/comments/1v8xjzf">memory training for DDR5 upward</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> initilization as frequency, PMIC settings, DDR controller settings,...</li>
-<li>I will never know... such a stupid terminology.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:17:38 2026] #hardware <a href="https://lobste.rs/s/zfoiw1/slurptop_home_built_luggable_runs_on">Slurptop: A home-built luggable that runs on power tool batteries</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>STM32 solutions for USB Type-C and Power Delivery - STMicroelectronics</title><category>acronym</category><pubDate>2026-10-27 02:04:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html">STM32 solutions for USB Type-C and Power Delivery - STMicroelectronics</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/649227/implementing-usb-c-pd-phy-directly-into-micro-controller">power supply - Implementing USB-C PD PHY directly into micro-controller&quot;&quot;</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> with the #acronym PPS: Programmable Power Supply. Only in USB-PD</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.eevblog.com/forum/projects/usb-pd-trigger-pps-with-potentiometer/msg5284510/#msg5284510">USB-PD Trigger + PPS with potentiometer</a></li>
-<li><a href="https://www.ti.com/lit/ta/ssztd49a/ssztd49a.pdf">USB Type-C® and USB Power Delivery: Designing for both Extended Power Range and battery-powered systems (Rev. A) - ssztd49a.pdf</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:04:09 2026] <a href="https://github.com/WeActStudio/WeActStudio.PDTriggerV1">WeAct Studio PD Trigger V1, PD 5-28V Fixed/PPS/AVS(EPR), QC 5/9/12/20V, 5A Max Current</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Feature request for PDF Viewer for Vimium C</title><category>keybinding</category><category>msedge</category><category>plugin</category><category>vimium</category><pubDate>2026-10-27 01:26:21 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/gdh1995/vimium-c/issues/755">Feature request for PDF Viewer for Vimium C</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> vimium C can pass keystrokes to <code>pdf</code> files.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> It could also has that wrap view multiple pages in horizontal mode.
-<pre class="syntax-highlighting"><code class="language-msedge"><span class="text plain">msedge &quot;extension://nacjakoppgmdcpemlfnfegmlhipddanj/file:///D:/ProgramDataD/ST/Doc/stm32h757ai.pdf&quot;
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> maybe my default but I dont know.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://chromewebstore.google.com/detail/pdf-viewer-for-vimium-c/nacjakoppgmdcpemlfnfegmlhipddanj">PDF Viewer for Vimium C - Chrome Web Store</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #discussion solution is reader mode but still, <a href="https://news.ycombinator.com/item?id=50241664">Websites Should Be Printable</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 13:26:21 2026] <a href="https://news.ycombinator.com/item?id=50204697">A Printer Printing onto Paper</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`chisel` fast TCP/UDP tunnel over HTTP</title><category>NAT</category><category>http</category><category>tcp</category><pubDate>2026-10-27 11:46:23 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/jpillora/chisel"><code>chisel</code> fast TCP/UDP tunnel over HTTP</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
