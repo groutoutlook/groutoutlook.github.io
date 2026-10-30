@@ -1,4 +1,161 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>If/else/switch</title><category>discussion</category><category>php</category><pubDate>2026-10-30 10:10:15 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>terminal</category><pubDate>2026-10-30 05:15:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">herdr # launch into the big mux menu.
+herdr server stop # kill all session.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: choose me <code>pwsh</code> without any config. That's much better over <code>zellij</code> which chose <code>cmd</code></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201003">Herdr is joining Y Combinator. The runtime stays open</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50298436">Herdr has released native app</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zellij</code>, <code>tmux</code>
+<ul>
+<li>but those 2 cant run in windows so dont bother actually.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Aug 28 12:35:05 2026] <code>zellij</code> in scoop now.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:15:10 2026] #macos <a href="https://github.com/codealong/codealong"><code>codealong</code> agent you run, in 1 window for macOS and Linux for Claude Code, Codex, OpenCode, Antigravity and Cursor, across your accounts and machines.</a>
+<ul>
+<li><a href="https://github.com/BrokkAi/mjolnir/"><code>mjolnir</code> Manage Harness with durable sessions, isolated environments, quotas, and remote control</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>nw.js Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web technologies.</title><category>javascript</category><category>programming</category><pubDate>2026-10-30 03:11:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nwjs/nw.js">nw.js Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web technologies.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=6910475">Emacs Lisp is such a horrible language, and the Emacs ecosystem is so firmly stu...</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 15:11:59 2026]</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Locust - grasshopper</title><category>insect</category><category>vocabulary</category><pubDate>2026-10-30 01:47:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Locust">Locust - grasshopper</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>scrolling - How do I scroll in tmux?</title><category>default</category><category>keybinding</category><category>terminal/mux</category><category>tmux</category><pubDate>2026-10-30 11:16:02 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://superuser.com/questions/209437/how-do-i-scroll-in-tmux">scrolling - How do I scroll in tmux?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Ctrl+b</code> <code>PgUp</code>/<code>PgDn</code> enter select mode, #navigate with arrow and navigation keys.
+<ul>
+<li>use <code>Esc</code> to go back into insert/normal mode which you enter text there.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.shellhacks.com/screen-scroll-up-scrollback-buffer/">Screen: Scroll Up - Scrollback Buffer</a>
+<ul>
+<li>I wonder how <a href="https://github.com/microsoft/terminal/issues/15796">why isn't possible to scroll anymore in a linux screen · Issue #15796 · microsoft/terminal</a>
+<ul>
+<li>windows terminal render Alt buffer for <code>nvim</code> and <code>hx</code> separatedly now, so there is nothing to scrollback</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>in #zellij it's <code>Ctrl+s</code> <code>up</code>/<code>down</code>/<code>PgUp</code>/<code>PgDn</code>, any navigation keys.</li>
+<li>#blog : <a href="https://news.ycombinator.com/item?id=44306892">Using Microsoft's New CLI Text Editor on Ubuntu</a>
+<ul>
+<li>A comment show the binding of CUA interface, which result into: terminal compliant binding
+<ul>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> CUA bindings for Cut, Copy, Paste are actually <code>Shift+Delete</code>, <code>Ctrl+Insert</code>, <code>Shift+Insert</code>.</li>
+</ul>
+</li>
+<li>#definition: CUA is #acronym of <a href="https://wikipedia.org/wiki/IBM_Common_User_Access">IBM Common User Access</a></li>
+<li><code>Ctrl+backspace</code> == <code>Ctrl+w</code> in emacs.</li>
+<li><code>Ctrl+delete</code> == <code>Alt+d</code> in emacs.</li>
+</ul>
+</li>
+<li>#keybinding #terminal : <a href="https://unix.stackexchange.com/questions/60382/how-to-scroll-in-a-terminal-using-keyboard">How to scroll in a terminal using keyboard?</a>
+<ul>
+<li>in short <code>Shift+PgUp</code> and <code>Shift+PgDn</code>.</li>
+</ul>
+</li>
+<li>#terminal : <a href="https://unix.stackexchange.com/questions/145050/what-exactly-is-scrollback-and-scrollback-buffer">shell - What exactly is scrollback and scrollback buffer?</a>
+<ul>
+<li>In windows terminal, alt buffer cant be scroll back e.g. in select mode or using <code>Ctrl+shift+up</code> / <code>down</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-06-24 14:46:57] : <a href="https://jyn.dev/how-i-use-my-terminal/">how i use my terminal</a>
+<ul>
+<li><a href="https://man.openbsd.org/tmux#COMMANDS">tmux(1) all commands - OpenBSD manual pages</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>tmux ls</code> and <code>tmux kill-session -t 0</code> or <code>tmux kill-session</code>
+<ul>
+<li>which <code>zellij ls</code> and <code>zellij kill-session</code> / <code>zellij kill-all-sessions</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 11:16:02 2026] <a href="https://lobste.rs/s/m6fw0x/netbsd_adds_new_emacs_like_text_editor">NetBSD adds a new Emacs-like text editor called atto</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>astroterm: A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐</title><category>software</category><category>tui</category><pubDate>2026-10-30 10:37:37 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/da-luce/astroterm">astroterm: A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`std::copy`, `std::copy_if`</title><category>algorithm</category><category>container/array</category><category>cpp</category><category>memory</category><pubDate>2026-10-30 10:21:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://cppreference.com/w/cpp/algorithm/copy"><code>std::copy</code>, <code>std::copy_if</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/259297/how-do-you-copy-the-contents-of-an-array-to-a-stdvector-in-c-without-looping">stl - How do you copy the contents of an array to a <code>std::vector</code> in C++ without looping?</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://stackoverflow.com/questions/14977632/copying-stdvector-prefer-assignment-or-stdcopy">c++ - Copying <code>std::vector</code>: prefer assignment or <code>std::copy</code>?</a>
+<ul>
+<li>use <code>=</code> if assign two vectors.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/cpp/comments/q13jsm">Word of advice regarding the use of the <code>std::copy_constructible</code> concept in the standard library</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 10:21:27 2026] <a href="https://stackoverflow.com/questions/4172223/double-assignment-should-it-be-avoided#4172308">&quot;Double&quot; assignment - should it be avoided?</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>If/else/switch</title><category>discussion</category><category>php</category><pubDate>2026-10-30 10:10:15 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/gjkbvp/if_else_switch">If/else/switch</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -251,95 +408,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:37:24 2026] <a href="https://www.reddit.com/r/PLC/comments/rl3f42">Ethernet IP and EtherCAT on the same switch</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Convolution - integral product</title><category>ee</category><category>signal</category><pubDate>2026-10-28 05:17:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Convolution">Convolution - integral product</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Song structure</title><category>definition</category><category>music</category><pubDate>2026-10-28 11:43:21 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Song_structure">Song structure</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Refrain">Refrain</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`rk3326_core_builds` Script for building various cores and emulators for rk3326 devices</title><category>firmware</category><category>linux</category><category>sbc</category><pubDate>2026-10-28 10:44:00 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/christianhaitian/rk3326_core_builds"><code>rk3326_core_builds</code> Script for building various cores and emulators for rk3326 devices</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/radxa-build/rock-pi-s">ROCK Pi S RK3308</a>
-<ul>
-<li><a href="https://radxa.com/products/rockpi/pis">Radxa ROCK Pi S</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/pollen-robotics/microduck"><code>microduck</code> Tiny biped duck robot 🦆</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> 299/pc : <a href="https://docs.radxa.com/en/zero/zero3?model=zero-3w">Radxa ZERO 3W | Radxa Docs</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://radxa.com/products/zeros/zero3w">Radxa ZERO 3W and ZERO 3E (PoE hat needed)</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:53:03 2026] #news <a href="https://news.ycombinator.com/item?id=50253750">ICE wants robot dogs. Boston Dynamics' workers urge company to 'cancel the sale'</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [Mon Oct 19 17:07:34 2026] <a href="https://item.taobao.com/item.htm?id=1089674174984">Kiwipi 5 RK3588S开发板 Linux安卓主板 支持一站式定制开发</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 15 10:46:18 2026] #cicd #sbc <a href="https://docs.radxa.com/en/zero/zero3/apps-deployment/opencv"><code>OpenCV</code> | Radxa Docs</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 10:44:00 2026] <a href="https://news.ycombinator.com/item?id=50265594">Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`tanim` Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</title><category>cpp</category><category>library/imgui</category><pubDate>2026-10-27 03:27:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/hegworks/tanim"><code>tanim</code> Timeline Animation Library for C++ projects based on ImGui &amp; ENTT.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/NickVanheer/ImTimeline"><code>ImTimeline</code> small, single-include timeline API using ImGUI and C++</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Solar power is becoming bigger than nuclear</title><category>solar</category><pubDate>2026-10-27 03:05:04 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50245385">Solar power is becoming bigger than nuclear</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>first fleet</title><category>history</category><pubDate>2026-10-27 02:50:33 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/First_Fleet">first fleet</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> talking about the first 11 Britain ships come to Australia</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:50:33 2026] #news <a href="https://news.ycombinator.com/item?id=50254935">UK to charge universities $1,200 per international student</a></li>
 </ul>
 </li>
 </ul>
