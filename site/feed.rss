@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>terminal</category><pubDate>2026-10-30 05:15:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>c++ - Behaviour of `std::array&lt;bool&gt;` vs. `std::vector&lt;bool&gt;`</title><category>array</category><category>container/vector</category><category>cpp</category><pubDate>2026-10-31 11:54:35 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/44607389/behaviour-of-stdarraybool-vs-stdvectorbool">c++ - Behaviour of <code>std::array&lt;bool&gt;</code> vs. <code>std::vector&lt;bool&gt;</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Design the interface for functionality not familiarity</title><category>software</category><category>ux</category><pubDate>2026-10-30 06:46:30 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/qqelq1/design_interface_for_functionality_not">Design the interface for functionality not familiarity</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Extremely brief history of PDP computers</title><category>compsci</category><category>hardware</category><pubDate>2026-10-30 06:40:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://entropicthoughts.com/history-of-pdp-computers">Extremely brief history of PDP computers</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Zotero Documentation</title><category>archive</category><category>documentation</category><category>typesetting</category><pubDate>2026-10-30 06:24:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.zotero.org/support/">Zotero Documentation</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #browser #plugin <a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Connector - Chrome Web Store</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> First time running will trigger installation of this one.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://www.zotero.org/support/plugins">Plugins for Zotero | Zotero Documentation</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`zotero`</title><category>linux</category><category>office</category><category>typesetting</category><pubDate>2026-10-30 06:21:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/zotero/zotero"><code>zotero</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> for bibliography, citation needs.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> There's an interesting technique of <a href="">registering URI</a>
+<ul>
+<li>That's heavily depended on #windows and #powershell</li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Could learn from that to do some interesting thing on terminal or <code>obsidian</code></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ONLYOFFICE/DesktopEditors">there are OnlyOffice to do office works as well</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Rather than sticking with ugly LibreOffice.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #meta #blog <a href="https://www.citationneeded.news/">Citation Needed by Molly White</a>
+<ul>
+<li>#web #service #academic <a href="https://veruscite.com/">VerusCite - Verify Citations</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 18:21:54 2026] <a href="https://lobste.rs/s/6ole9g/if_you_love_website_back_it_up">If you love a website, back it up</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Premium apps hosting that just works | Ultra.cc</title><category>host</category><pubDate>2026-10-30 06:02:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://ultra.cc/">Premium apps hosting that just works | Ultra.cc</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #til seedbox is file torrent server.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/seedboxes/comments/wi4m4e">Ultra.cc &amp; syncthing</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/seedboxes/comments/qm0nal">Review: Whatbox.ca , 2 years later.</a></li>
+<li>#alternative : <a href="https://cyberduck.io/">Cyberduck | Libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &amp; OneDrive, Google Drive and Dropbox</a>
+<ul>
+<li>this is more #selfhost version of those services.</li>
+</ul>
+</li>
+<li>#cli : <a href="https://github.com/lavv17/lftp"><code>lftp</code> cli file transfer (ftp, http, sftp, fish, torrent...)</a>
+<ul>
+<li>on Linux or WSL only..</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #doc: <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ftp-remotehelp_1">ftp remotehelp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:23:45 2026] #code/forge <a href="https://tonym.us/move-github-repos-to-google-drive.html">Move GitHub Private Repos to Google Drive in Minutes // Tony Metzidis</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 18:02:23 2026] <a href="https://rdrama.net/post/855735/reddit-is-becoming-a-loggedinonly-experience">Reddit is becoming a ‘logged-in-only experience,’ says CEO Steve Huffman.</a>
+<ul>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> mentioned seedboxes so..</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`NO_COLOR` disabling ANSI color output by default</title><category>ansi</category><category>string</category><pubDate>2026-10-30 05:43:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://no-color.org/"><code>NO_COLOR</code> disabling ANSI color output by default</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> just set the env var honestly.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Oklab color palette, cielab and things like that.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> pwsh has an env var of disabling ANSI color.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#discussion <a href="https://lobste.rs/s/g0te8h/how_choose_colors_for_your_cli">How to Choose Colors for Your CLI Applications (2023)</a></li>
+<li>#typesetting #color/theory <a href="https://huetone.ardov.me/">Huetone</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the important of palette to the intelligible of text.</li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/DCI-P3">DCI-P3</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:43:13 2026] #web #css <a href="https://wikipedia.org/wiki/Oklab_color_space">oklch() - Oklab color space</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>terminal</category><pubDate>2026-10-30 05:15:10 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
@@ -245,169 +379,6 @@ herdr server stop # kill all session.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50274409">in HN</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>小型桌面贴片机SMT全自动双视觉研发PCB打样飞达设备2025款</title><category>industry</category><category>pcb</category><category>pcba</category><pubDate>2026-10-29 10:42:09 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://item.taobao.com/item.htm?id=744068366915">小型桌面贴片机SMT全自动双视觉研发PCB打样飞达设备2025款</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #software: <a href="https://github.com/openpnp/openpnp"><code>openpnp</code> SMT Pick and Place Hardware and Software</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?i">PocketPower Adjustable CNC Power Supply DC Convenient Mini Constant Voltage Constant Current Maintenance DIY High Power</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/YX7LL9NFQjYsocGT1YgTdQ">8-PCBA equipment _SMT placement machine</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 10:42:09 2026] <a href="https://news.ycombinator.com/item?id=50243060">The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>difference between std::atoi() and std::stoi?</title><category>cpp</category><category>string</category><category>sturcture</category><pubDate>2026-10-29 09:52:06 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/20583945/what-is-the-difference-between-stdatoi-and-stdstoi">difference between std::atoi() and std::stoi?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Use from_chars and to_chars for C++17 onward.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta function c++"><span class="entity name function constructor c++">std<span class="punctuation accessor c++">::</span>stoi</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="variable parameter c++">str</span><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/7663709/how-can-i-convert-a-stdstring-to-int">c++ - How can I convert a std::string to int?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> [Sun Oct 11 12:37:06 2026] #blog <a href="https://lobste.rs/s/rb2ulg/oh_apparently_it_s_not_possible_portably">oh, apparently it's not possible to portably check for string-to-float conversion errors in standard c</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 09:52:06 2026] #library #cpp #string <a href="https://github.com/vitaut/zmij"><code>zmij</code> fast floating-point-to-string conversion library for C and C++</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> BCD digit extraction. #acronym <a href="https://wikipedia.org/wiki/Binary-coded_decimal">BCD Binary-coded decimal</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Organize and revisit tabs with the keyboard - Visual Studio Blog</title><category>default</category><category>keybinding</category><category>navigation</category><category>vs</category><pubDate>2026-10-29 08:50:16 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://devblogs.microsoft.com/visualstudio/organize-and-revisit-tabs-with-the-keyboard/">Organize and revisit tabs with the keyboard - Visual Studio Blog</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Ctrl+Shift+PageUp</code> + <code>Ctrl+Shift+PageDown</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Unreserved port in Windows.</title><category>network</category><category>tcp/port</category><category>windows</category><pubDate>2026-10-29 08:35:09 AM</pubDate><content:encoded><![CDATA[<ul>
-<li>Unreserved port in Windows.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">netsh interface ipv4 delete excludedportrange protocol=tcp startport=65432 numberofports=100
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>C++20 minimal perfect hash.</title><category>algorithm</category><category>cpp</category><category>hash</category><pubDate>2026-10-29 08:32:17 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/qlibs/mph">C++20 minimal perfect hash.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1dkg374">C++20 Minimal perfect hashing at compile-time</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/kmilo17pet/qlibs-cpp"><code>qlibs-cpp</code> C++ of <code>qlibs</code> collection of useful libraries for embedded systems : signal smoothing, PID control, Fuzzy Logic, fixed-point math and more...</a>
-<ul>
-<li>#algorithm : PID control in C++. suitable for writing firmware with this.
-<ul>
-<li><a href="https://youtu.be/Y3MgFS-9l3s">PID Controllers For Game Devs</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 08:33:08 2026] dead for about 1 year.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct 29 08:32:17 2026] <a href="https://lobste.rs/s/d3ubhd/billion_query_per_second_lookup_tables_c">Billion-query-per-second lookup tables in C++</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>JTAG Daisy Chain</title><category>protocol/jtag</category><category>swd</category><pubDate>2026-10-28 05:58:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/JTAG#Electrical_characteristics">JTAG Daisy Chain</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> fwiw, JTAG require <strong>4 pins</strong> while SWD only <strong>2 pins</strong>
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/53571/jtag-vs-swd-debugging/292850#292850">JTAG vs SWD debugging</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>but we do have a cJTAG
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://weekly-geekly.imtqy.com/articles/237885/index.html">We understand the protocol 2-wire JTAG</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kuopinghsu/cjtag">Verilog implementations of <code>cjtag</code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/8sPThJ9zzUdxQOpoThfe0g">Don't just use SWD and JTAG! Teach you how to play with two-wire CJTAG with CMSIS-DAP</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#usb <a href="https://electronics.stackexchange.com/questions/157160/high-speed-data-from-microcontrollers-to-pc-using-daisy-chain">High speed data from microcontrollers to pc using daisy chain</a></li>
-<li>#i2c <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/616909/pca9518-daisy-chaining-of-i2c-or-other-hubs-for-multiple-point---to---point-connections-creating-a-large-tree-network">PCA9518: Daisy chaining of I2C (or other) hubs for multiple point - to - point connections creating a large tree network - Interface forum - Interface - TI E2E support forums</a></li>
-<li>#spi <a href="https://www.analog.com/en/resources/technical-articles/2022/07/16/09/49/daisychaining-spi-devices.html">Daisy-Chaining SPI Devices | Analog Devices</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:58:44 2026] #network #ethercat <a href="https://www.reddit.com/r/PLC/comments/1j8ebgr">etherCAT daisychaining plugged into same switch as Modbus TCP/IP devices</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/587818/can-a-ring-of-ethercat-devices-be-connected-to-two-ports-of-an-existing-ethernet">digital communications - Can a ring of etherCAT devices be connected to two ports of an existing Ethernet/IP switch?</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>EtherCAT</title><category>board</category><category>protocol/ethernet</category><pubDate>2026-10-28 05:37:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a #protocol for PLC. every digital servo/robot arm 'll be controlled by this.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/VZ7iMurWvaWd-gsyCqdFeg">It's really open source?! The big god spends 150 yuan, hand rubbing FOC drive! It is also an EtherCAT slave development board......</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/507197/can-you-use-cat-5-6-ethernet-cable-to-power-devices#507208">Can you use cat 5/6 ethernet cable to power devices?</a>
-<ul>
-<li>I want to PoE without dedicated hardware.</li>
-</ul>
-</li>
-<li><a href="https://www.eevblog.com/forum/beginners/power-over-cat5-what-is-the-max-current/">Power over cat5. What is the max current?</a></li>
-<li><a href="https://electronics.stackexchange.com/questions/113253/voltage-drop-and-safe-current-load-on-cat5-cable">power - Voltage Drop and Safe Current Load on CAT5 Cable</a>
-<ul>
-<li>which you ought to push voltage much further to balance the drop.</li>
-<li>The return path(negative wire on DC, AC dont have that.) also contribute to total voltage drop.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #meta <a href="https://www.rapidtables.com/calc/wire/voltage-drop-calculator.html">Voltage Drop Calculator</a></li>
-</ul>
-</li>
-<li><a href="https://wikipedia.org/wiki/Category_1_cable">Category 1 cable</a>
-<ul>
-<li>this normally appears on probes. good for nothing other than power supplying, telephone lines, etc..</li>
-<li>#meta <a href="https://wikipedia.org/wiki/Structured_cabling">Structured cabling - CAT1 -&gt; CAT8</a></li>
-<li><a href="https://wikipedia.org/wiki/ISO/IEC_11801#Category_8">ISO/IEC 11801 - Defining CAT7 and CAT8 cable</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/PLC/comments/mndwk3">Why Windows on PLCs?</a>
-<ul>
-<li>#blog <a href="https://news.ycombinator.com/item?id=45605556">PoE basics and beyond: What every engineer should know</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:37:24 2026] <a href="https://www.reddit.com/r/PLC/comments/rl3f42">Ethernet IP and EtherCAT on the same switch</a></li>
 </ul>
 </li>
 </ul>
