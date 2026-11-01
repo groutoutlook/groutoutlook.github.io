@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Halloween is a crass American import – I&apos;ll never indulge it</title><category>culture</category><category>holiday</category><pubDate>2026-10-31 08:13:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Resource files `.rc`/`.rct` (C++)</title><category>cpp</category><category>dotnet</category><category>vs</category><pubDate>2026-11-01 10:46:45 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/en-us/cpp/windows/resource-files-visual-studio">Resource files <code>.rc</code>/<code>.rct</code> (C++)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>ScreenCapture</code> have this Resource.rc files.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Halloween is a crass American import – I&apos;ll never indulge it</title><category>culture</category><category>holiday</category><pubDate>2026-10-31 08:13:41 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50315039">Halloween is a crass American import – I'll never indulge it</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -367,18 +379,6 @@ herdr server stop # kill all session.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://dictionary.cambridge.org/dictionary/english/progeny">PROGENY | English meaning - Cambridge Dictionary</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Claude for Government | Claude by Anthropic</title><category>politic</category><pubDate>2026-10-29 04:55:12 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://claude.com/solutions/government">Claude for Government | Claude by Anthropic</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.fedramp.gov/ai/">FedRAMP AI</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50276792">Gemini 4 Carbon</a></li>
 </ul>
 </li>
 </ul>

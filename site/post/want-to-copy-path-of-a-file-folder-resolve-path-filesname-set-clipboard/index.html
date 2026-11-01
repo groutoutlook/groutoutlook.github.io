@@ -24,8 +24,23 @@
             <span class="til-date">2024-04-28 04:57:52 PM<br><span class="updated-at">Updated at 2026-10-13 09:25:23 PM</span></span>
             <ul class="topic-list">
                 <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/explorer">
+                        <span>explorer</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
                     <a class="til-tag" href="/category/powershell">
                         <span>powershell</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/windows">
+                        <span>windows</span>
                     </a>
                 </li>
             </ul>
@@ -43,7 +58,10 @@
 <li>Want to copy path of a file/folder? <code>Resolve-Path ./$filesname | Set-Clipboard</code>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">miniserve &quot;$((gcb) -replace&#39;&quot;&#39;)&quot; # every path copy from clipboard witll have double quote.
+</span></code></pre>
+</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #windows #keybinding is <code>ctrl+shift+c</code> for <code>explorer</code>. <code>fpilot</code> is same now.</li>
