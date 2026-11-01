@@ -2,3 +2,5 @@ base_url = "/"
 exclude_tags = ["adult","personal"]
 # Number of entries rendered on each recent page.
 recent_page_size = 75
+# Shared jrnl source parents and major tags.
+master_tag_dictionary = 'D:\ProgramDataD\dotfiles\config\jrnl\master-tags.toml'

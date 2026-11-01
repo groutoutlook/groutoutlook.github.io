@@ -1,3 +1,5 @@
 book
 tils
 .tiller-build.sha256
+.*.tiller-cache.json
+.*.tiller-cache.pending
