@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Resource files `.rc`/`.rct` (C++)</title><category>cpp</category><category>dotnet</category><category>vs</category><pubDate>2026-11-01 10:46:45 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Samba - opening windows to a wider world</title><category>network</category><category>remote</category><pubDate>2026-11-01 12:11:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.samba.org/">Samba - opening windows to a wider world</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://superuser.com/questions/1094931/ssh-tunnel-on-windows-10-to-linux-samba">SSH tunnel on Windows 10 to Linux Samba</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #termux <a href="https://github.com/fireclouu/android-samba-server">android-samba-server: Script automation for Samba server running on Android</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://apple.stackexchange.com/questions/81751/should-i-block-incoming-connections-from-netbiosd#81757">network - Should I block incoming connections from &quot;netbiosd&quot;? - Ask Different</a></li>
+<li><a href="https://serverfault.com/questions/620202/windows-file-explorer-using-port-80-webdav-instead-of-445-samba-smb-cifs-for">Windows file explorer using port 80 (webdav) instead of 445 (samba SMB CIFS) for UNC path - Server Fault</a></li>
+<li><a href="https://learn.microsoft.com/en-us/answers/questions/682156/windows-11-webdav-issue-with-owncloud?page=2#answers">Windows 11 WebDav issue with OwnCloud - Microsoft Q&amp;A</a></li>
+<li><a href="https://superuser.com/questions/1226726/which-protocols-are-used-for-network-share-access">windows - Which protocols are used for network share access</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 12:11:12 2026] <a href="https://wiki.samba.org/index.php/How_to_do_Samba:_Nicely">How to do Samba: Nicely - SambaWiki</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://gitlab.com/samba-team/samba">The Samba Team / Samba · GitLab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Fider` platform to collect and prioritize feedback</title><category>crm</category><category>host/self</category><category>programming</category><category>service</category><category>web/ui</category><pubDate>2026-11-01 12:07:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/getfider/fider"><code>Fider</code> platform to collect and prioritize feedback</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://features.jellyfin.org/">Jellyfin Feature Requests</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Slurm Workload Manager - Quick Start User Guide</title><category>async</category><category>compsci/hpc</category><category>linux</category><category>protocol/mpi</category><category>tui</category><pubDate>2026-11-01 12:02:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://slurm.schedmd.com/quickstart.html">Slurm Workload Manager - Quick Start User Guide</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/karimknaebel/turm">karimknaebel/turm: TUI for the Slurm Workload Manager</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`MaterialFiles` Material Design file manager for Android</title><category>android</category><category>filesystem/manager</category><category>gui</category><pubDate>2026-11-01 11:20:47 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/zhanghai/MaterialFiles"><code>MaterialFiles</code> Material Design file manager for Android</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">miniserve . --enable-webdav --port 80 # quickest way to spin a **read-only** WebDav server on desktop.
+# Android: &quot;Add storage..&quot; -&gt; &quot;WebDAV server&quot; -&gt; select HTTP will route you to correct setting. Any user will be fine.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #http conformance way to share files between Android and Windows/Linux.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> F-droid, quite a long time ago.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#alternative : <code>samba</code> for #linux. #windows have internal SMB server if you enable make this device discoverable in LAN.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Resource files `.rc`/`.rct` (C++)</title><category>cpp</category><category>dotnet</category><category>vs</category><pubDate>2026-11-01 10:46:45 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://learn.microsoft.com/en-us/cpp/windows/resource-files-visual-studio">Resource files <code>.rc</code>/<code>.rct</code> (C++)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -322,63 +394,6 @@ herdr server stop # kill all session.
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 10:21:27 2026] <a href="https://stackoverflow.com/questions/4172223/double-assignment-should-it-be-avoided#4172308">&quot;Double&quot; assignment - should it be avoided?</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>If/else/switch</title><category>discussion</category><category>php</category><pubDate>2026-10-30 10:10:15 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/gjkbvp/if_else_switch">If/else/switch</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/ekxoyt/upcoming_critical_php_security_release">Upcoming Critical PHP Security Release</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50180836">PHP2Shell: AI uncovers critical RCE in PHP</a>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=50188228">Security Disclosure</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 10:10:15 2026] <a href="https://news.ycombinator.com/item?id=50286987">Chained PHP2Shell exploit roots 25 servers, including US Government servers</a>
-<ul>
-<li>and Perl is the same language category as PHP</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Instant camera - Polaroid</title><category>camera</category><category>hardware</category><pubDate>2026-10-29 08:23:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Instant_camera">Instant camera - Polaroid</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Gỏi đu đủ Thái – som tam. From Thailand</title><category>cooking/salad</category><category>food</category><category>fruit</category><pubDate>2026-10-29 08:17:00 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://vi.wikipedia.org/wiki/G%E1%BB%8Fi_%C4%91u_%C4%91%E1%BB%A7_Th%C3%A1i">Gỏi đu đủ Thái – som tam. From Thailand</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> well.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>PROCREATE Definition &amp; Meaning | Dictionary.com</title><category>anatomy</category><pubDate>2026-10-29 06:49:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.dictionary.com/browse/procreate">PROCREATE Definition &amp; Meaning | Dictionary.com</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://dictionary.cambridge.org/dictionary/english/progeny">PROGENY | English meaning - Cambridge Dictionary</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
