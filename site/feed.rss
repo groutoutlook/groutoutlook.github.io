@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`zotero-connectors` Chrome, Firefox, Edge, and Safari extensions for Zotero</title><category>browser</category><category>plugin</category><category>software</category><pubDate>2026-11-01 04:18:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>keyboard - Need table of key codes for android and presenter</title><category>adb</category><category>android</category><pubDate>2026-11-01 10:00:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/11768356/need-table-of-key-codes-for-android-and-presenter">keyboard - Need table of key codes for android and presenter</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>KEYCODE_POWER</code> to turn off screen/phones on <code>adb</code>. That's faster on most situations.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input keyevent KEYCODE_POWER</span>
+<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell svc wifi enable </span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://stackoverflow.com/questions/10033757/how-to-turn-off-wifi-via-adb/62222926#62222926">android - How to turn off Wifi via ADB?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I need to enable hotspot and connect to my phone's wifi without touching phones.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#adb <a href="https://stackoverflow.com/questions/12251101/how-to-enable-adbd-to-listen-to-a-port-at-boot-time-in-android/34219466#34219466">adb - How to enable adbd to listen to a port at boot time in Android?</a>
+<ul>
+<li><code>adb shell setprop service.adb.tcp.port 5555</code></li>
+</ul>
+</li>
+<li>#hotspot #wlan : <a href="https://android.stackexchange.com/questions/173709/how-to-turn-on-the-wi-fi-hotspot-using-adb/173778#173778">How to turn on the Wi-Fi hotspot using ADB?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 22:00:12 2026] <a href="https://stackoverflow.com/questions/3512198/need-command-line-to-start-web-browser-using-adb/48788196#48788196"><code>adb</code> start web browser</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is KEYCODE_EXPLORER | <code>64</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Norway makes shithouses great again</title><category>norway</category><category>public</category><pubDate>2026-11-01 09:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50324388">Norway makes shithouses great again</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`zotero-connectors` Chrome, Firefox, Edge, and Safari extensions for Zotero</title><category>browser</category><category>plugin</category><category>software</category><pubDate>2026-11-01 04:18:03 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/zotero/zotero-connectors"><code>zotero-connectors</code> Chrome, Firefox, Edge, and Safari extensions for Zotero</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you have to keep zotero desktop running for this. I wish it has a tray icon mode but no, nothing like that yet.</li>
@@ -347,53 +393,6 @@ just reuse HTTP REST API to trigger event, more than enough.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://features.jellyfin.org/">Jellyfin Feature Requests</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Slurm Workload Manager - Quick Start User Guide</title><category>async</category><category>compsci/hpc</category><category>linux</category><category>protocol/mpi</category><category>tui</category><pubDate>2026-11-01 12:02:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://slurm.schedmd.com/quickstart.html">Slurm Workload Manager - Quick Start User Guide</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/karimknaebel/turm">karimknaebel/turm: TUI for the Slurm Workload Manager</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`MaterialFiles` Material Design file manager for Android</title><category>android</category><category>filesystem/manager</category><category>gui</category><pubDate>2026-11-01 11:20:47 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/zhanghai/MaterialFiles"><code>MaterialFiles</code> Material Design file manager for Android</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">miniserve . --enable-webdav --port 80 # quickest way to spin a **read-only** WebDav server on desktop.
-# Android: &quot;Add storage..&quot; -&gt; &quot;WebDAV server&quot; -&gt; select HTTP will route you to correct setting. Any user will be fine.
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #http conformance way to share files between Android and Windows/Linux.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> F-droid, quite a long time ago.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative : <code>samba</code> for #linux. #windows have internal SMB server if you enable make this device discoverable in LAN.
-<ul>
-<li>or you can just do <code>syncthing</code>.</li>
-<li>bit worse, create a google drive links or so and share it.</li>
-<li>worse, you can send through apps as wechat, zalo, those kinds of messaging app.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/AlanHuang99/Voyager"><code>Voyager</code> Material Design 3 file browser for Android with SFTP, FTP, SMB, WebDAV. <strong>No server</strong></a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/TeamAmaze/AmazeFileManager"><code>AmazeFileManager</code> file manager for Android, can launch a SFTP <strong>server</strong> straight from app.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative is you using #termux for those works.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/TeamAmaze/AmazeFileManager/issues/1163">Add WebDAV server</a></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/dev2ex/twig"><code>twig</code> Dual-pane Android file manager, have an internal WebDAV server.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have WebDAV server in which you can just launch and access. To delete/copy from computer for example.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> up to date.. this is the only one I know of embedded a file server.</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
