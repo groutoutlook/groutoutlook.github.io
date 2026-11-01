@@ -1,4 +1,316 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Samba - opening windows to a wider world</title><category>network</category><category>remote</category><pubDate>2026-11-01 12:11:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`zotero-connectors` Chrome, Firefox, Edge, and Safari extensions for Zotero</title><category>browser</category><category>plugin</category><category>software</category><pubDate>2026-11-01 04:18:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/zotero/zotero-connectors"><code>zotero-connectors</code> Chrome, Firefox, Edge, and Safari extensions for Zotero</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you have to keep zotero desktop running for this. I wish it has a tray icon mode but no, nothing like that yet.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`scp` OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</title><category>linux</category><category>networking</category><category>ssh</category><pubDate>2026-11-01 04:11:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.mankier.com/1/scp"><code>scp</code> OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scp -P8022 .\sftpgo.log golk@mainphone:~ # quite simple..
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`dufs` file server for static serving, uploading, searching, accessing control, webdav...</title><category>nas</category><category>webdav/root</category><pubDate>2026-11-01 03:42:25 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/sigoden/dufs"><code>dufs</code> file server for static serving, uploading, searching, accessing control, webdav...</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to <code>copyparty</code> and <code>miniserve</code>. Another contender to use with <code>iroh</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #api/rest: <a href="https://github.com/sigoden/dufs#api">all API for <code>curl</code> client</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">dufs</span></span><span class="meta function-call arguments shell"> .<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>A <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `miniserve` a dir + allow upload/delete/search/create/edit..</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #introduction <a href="https://http.dev/webdav">WebDAV explained</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #host/self <a href="https://github.com/thecoshman/http"><code>http</code>: Host These Things Please - a basic http server for hosting a folder fast and simply</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #router <a href="https://github.com/zouzonghao/luci-app-dufs">OpenWrt <code>dufs</code> 文件服务器</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/51366101/git-remote-https-is-not-a-git-command/69520407#69520407"><code>git</code> 'remote-https' is not a git command - <code>opkg install git git-http</code></a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/rustfs/rustfs"><code>rustfs</code> S3-compatible object storage system.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> this used <code>dav-server-rs</code> for WebDAV . Also, MinIO.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 15:42:25 2026] <a href="https://www.reddit.com/r/selfhosted/comments/1oyadlv">WebDAV server</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>properly install a systemd timer and service?</title><category>linux</category><category>schedule</category><category>systemd</category><pubDate>2026-11-01 03:15:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://askubuntu.com/questions/1083537/how-do-i-properly-install-a-systemd-timer-and-service">properly install a systemd timer and service?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about <code>.timer</code> and <code>.service</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://git.0x0.st/mia/0x0"><code>0x0</code>: No-bullshit file hosting and URL shortening service - git.0x0.st</a>
+<ul>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2026-01-05 10:34:06] maybe better than any kind of <code>sendme</code> or <code>croc</code> since it's persistent.</li>
+<li>#networking: FPT and VNPT is banned due to so many bad actors.. Fuck vietnamese ruin my web experience.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html"><code>systemd.service</code></a></li>
+<li><a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html"><code>systemd.timer</code></a>
+<ul>
+<li>#nixos #daemon/systemd <a href="https://lobste.rs/s/9vt4ng/you_don_t_love_systemd_timers_enough">You Don't Love systemd Timers Enough</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Wednesday, June 3, 2026 05:02:54 PM ] <a href="https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/"><code>systemd</code> support is now available in WSL! - Windows Command Line</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 15:15:03 2026] <a href="https://lobste.rs/s/qwou15/mystery_60_second_fluctuations_power">Mystery of 60-Second Fluctuations in Power Grids Solved</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Avoid Public Functions Calling Other Public Functions</title><category>class</category><category>function</category><category>methodology</category><pubDate>2026-11-01 03:13:42 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/k508we/avoid_public_functions_calling_other">Avoid Public Functions Calling Other Public Functions</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://matklad.github.io/2026/10/29/pub-calls-pub.html">in zotero</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The Kluever Maneuver</title><category>git</category><category>test/unit</category><category>workflow</category><pubDate>2026-11-01 03:12:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/rpiu3w/kluever_maneuver">The Kluever Maneuver</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`pyzotero` Python client for Zotero API</title><category>document</category><category>gui</category><category>typesetting</category><pubDate>2026-11-01 02:47:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/urschrei/pyzotero"><code>pyzotero</code> Python client for Zotero API</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">r ins # uv tool install .[cli,mcp]
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`immich` self-hosted photo and video management solution.</title><category>host/self</category><category>nas/media</category><pubDate>2026-11-01 02:22:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/immich-app/immich"><code>immich</code> self-hosted photo and video management solution.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://immich.app/docs/administration/storage-template/">Storage Template | Immich</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44831704">Cursed Knowledge</a>
+<ul>
+<li>#news <a href="https://news.ycombinator.com/item?id=45675015">Google flags Immich sites as dangerous</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#blog #discussion <a href="https://news.ycombinator.com/item?id=46794971">My ridiculously robust photo management system (Immich edition)</a></li>
+<li><code>stash</code> mentioned <a href="https://github.com/immich-app/immich/discussions/7786">Hash files to be able to repair path changes</a>
+<ul>
+<li>well... unrelated. it's just the topic of storing images.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/DataHoarder/comments/1v2gbfz">Stash good for amateur porn with no database? most of my collection is personal/amateur/friends.</a>
+<ul>
+<li>if so <code>stash</code> is obviously better than <code>immich</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#blog <a href="https://jacobian.org/til/immich-setup/">My Immich Setup - Jacob Kaplan-Moss</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://forum.syncthing.net/t/synctrain-photos-sync-feature-with-immich-metadata-and-live-photos/24492/9">Synctrain photos sync feature with Immich: metadata and Live Photos - Support / iOS - Syncthing Community Forum</a>
+<ul>
+<li>so <code>syncthing</code> and <code>immich</code> is not meant to used together.</li>
+<li>Synology Photo is also conflicted with this.</li>
+<li><code>ente</code> which is cloud-hosted and <a href="https://github.com/photoprism/photoprism"><code>photoprism</code> AI-Powered Photos App 🌈💎✨</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 14:22:05 2026] <a href="https://github.com/immich-app/immich/discussions/7264"><code>immich</code> text based search, with LLM/AI context labeling</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>20 years. 766 million files. Two Chameleons. - The Zamzar Blog</title><category>adapter</category><category>convert</category><category>meta</category><category>misc</category><pubDate>2026-11-01 02:20:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/">20 years. 766 million files. Two Chameleons. - The Zamzar Blog</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> all kind of exoteric files can be usef through here to convert almost anything.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I thought it's using <code>pandoc</code> but its not.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50303984">Running a bootstrapped SaaS for 20 years with my brother</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Altoids</title><category>culture</category><category>food</category><category>us</category><pubDate>2026-11-01 02:17:00 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Altoids">Altoids</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50321048">Altoids Project</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`ZeroFS`: 9P/NFS/NBD on top of S3.</title><category>cloud/s3</category><category>filesystem</category><pubDate>2026-11-01 01:36:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Barre/ZeroFS"><code>ZeroFS</code>: 9P/NFS/NBD on top of S3.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #tui <a href="https://github.com/lusingander/stu"><code>stu</code> TUI explorer application for Amazon S3 (AWS S3) 🪣</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://wiki.archlinux.org/title/NFS">NFS - ArchWiki</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 13:36:05 2026] #android #backup <a href="https://github.com/He11PC/android-mirror">Multiprotocol backup application for Android (NFS, SMB, FTP, SFTP, WebDAV)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Gitea Mirror` syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</title><category>backup</category><category>cicd</category><category>code/forge</category><category>nas</category><pubDate>2026-11-01 01:35:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/RayLabsHQ/gitea-mirror"><code>Gitea Mirror</code> syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`udp2raw` Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</title><category>Tunnel</category><category>cli</category><category>protocol/udp</category><category>tcp</category><pubDate>2026-11-01 01:05:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/wangyu-/udp2raw"><code>udp2raw</code> Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://gist.github.com/zOrg1331/a2a7ffb3cfe3b3b821d45d6af00cb8f6">wireguard, wireguard layer 2, wireguard over TCP</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`json-rpc`</title><category>database</category><category>http</category><category>ipc</category><category>rpc</category><category>serialize</category><category>server</category><pubDate>2026-11-01 01:00:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/json-rpc.md"><code>json-rpc</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> For event based system, implement an in-process file watcher to watch a file, treat it as event database.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>For each event you want to invoke e.g. from <code>hx</code> editor, run recipes that add events into the databases.
+<ul>
+<li>It could be JSON or something <code>glaze</code> could take to invoke new event based on newly appended events there.</li>
+<li><code>glaze</code> also has a simple http server to take event from, so we dont have to implement file watcher,
+just reuse HTTP REST API to trigger event, more than enough.
+<ul>
+<li><code>justfile</code> recipes can <code>iwr</code> or <code>curl</code> or <code>xh</code> to the server. No file-based local dir thing.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stephenberry.github.io/glaze/rpc/jsonrpc-registry/">JSON-RPC 2.0 Registry - Glaze Documentation</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/repe-rpc.md"><code>repe-rpc</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> A customization things...</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  1 13:46:00 2026] #ipc on my <code>vulkan-samples</code> is in <code>just rl</code></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 18:06:06 2026] #cli <a href="https://github.com/sile/jlot"><code>jlot</code> JSON-RPC 2.0 over JSON Lines over TCP.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> my <a href="https://github.com/groutoutlook/jlot">fork</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 13:00:17 2026] <a href="https://hoop.dev/blog/what-json-rpc-zeromq-actually-does-and-when-to-use-it">What JSON-RPC ZeroMQ Actually Does and When to Use It</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</title><category>filesytem</category><category>protocol/ftp</category><category>sysadmin</category><pubDate>2026-11-01 12:53:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://winscp.net/eng/docs/guide_windows_openssh_server">Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> which is another borderline insane shit to do.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: well supported since based on <code>ssh</code></li>
+<li>Con: old, many other utils. just use WebDAV instead.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`rclone` Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</title><category>cloud</category><category>filesystem</category><category>gui</category><category>selfhost</category><category>utils</category><pubDate>2026-11-01 12:38:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/rclone/rclone"><code>rclone</code> Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> There is also a list of common cloud storage provider in README.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rclone</span></span><span class="meta function-call arguments shell"> serve <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> .</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop
+<ul>
+<li>Pro: can use with FTP / HTTP hosters as well</li>
+<li>Con:...? web related? Not really my profession.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/versity/versitygw/"><code>versitygw</code> selfhost S3 object storage inteface/server for local filesystem</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> ehm, idk.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://rclone.org/commands/rclone_serve_webdav/">rclone serve webdav</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-31 15:23:02] <a href="https://github.com/drakkan/sftpgo"><code>sftpgo</code> configurable SFTP, HTTP/S, FTP/S, WebDAV server - S3, Google Cloud Storage, Azure Blob</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> WebDAV killer it seems. Quickest way to launch <code>sftp</code> server.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.sftpgo.com/latest/initial-configuration/#initial-configuration">Feature overview - SFTPGo documentation</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 12:38:46 2026] <a href="https://invent.kde.org/frameworks/kio">KIO Kioslave</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Samba - opening windows to a wider world</title><category>network</category><category>remote</category><pubDate>2026-11-01 12:11:12 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.samba.org/">Samba - opening windows to a wider world</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -62,338 +374,26 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #http conformance way to share files between Android and Windows/Linux.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> F-droid, quite a long time ago.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative : <code>samba</code> for #linux. #windows have internal SMB server if you enable make this device discoverable in LAN.
 <ul>
-<li>#alternative : <code>samba</code> for #linux. #windows have internal SMB server if you enable make this device discoverable in LAN.</li>
+<li>or you can just do <code>syncthing</code>.</li>
+<li>bit worse, create a google drive links or so and share it.</li>
+<li>worse, you can send through apps as wechat, zalo, those kinds of messaging app.</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Resource files `.rc`/`.rct` (C++)</title><category>cpp</category><category>dotnet</category><category>vs</category><pubDate>2026-11-01 10:46:45 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/en-us/cpp/windows/resource-files-visual-studio">Resource files <code>.rc</code>/<code>.rct</code> (C++)</a>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/AlanHuang99/Voyager"><code>Voyager</code> Material Design 3 file browser for Android with SFTP, FTP, SMB, WebDAV. <strong>No server</strong></a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/TeamAmaze/AmazeFileManager"><code>AmazeFileManager</code> file manager for Android, can launch a SFTP <strong>server</strong> straight from app.</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>ScreenCapture</code> have this Resource.rc files.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Halloween is a crass American import – I&apos;ll never indulge it</title><category>culture</category><category>holiday</category><pubDate>2026-10-31 08:13:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50315039">Halloween is a crass American import – I'll never indulge it</a>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative is you using #termux for those works.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/TeamAmaze/AmazeFileManager/issues/1163">Add WebDAV server</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/dev2ex/twig"><code>twig</code> Dual-pane Android file manager, have an internal WebDAV server.</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`sanstun` sans-IO, parallel-friendly WireGuard implementation in Rust</title><category>backend</category><category>library</category><category>networking</category><pubDate>2026-10-31 12:43:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50310398"><code>sanstun</code> sans-IO, parallel-friendly WireGuard implementation in Rust</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> we can use <code>sanstun</code> in <code>no_std</code> environments like on an #ESP32. Async style some would say.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>c++ - Behaviour of `std::array&lt;bool&gt;` vs. `std::vector&lt;bool&gt;`</title><category>array</category><category>container/vector</category><category>cpp</category><pubDate>2026-10-31 11:54:35 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/44607389/behaviour-of-stdarraybool-vs-stdvectorbool">c++ - Behaviour of <code>std::array&lt;bool&gt;</code> vs. <code>std::vector&lt;bool&gt;</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Design the interface for functionality not familiarity</title><category>software</category><category>ux</category><pubDate>2026-10-30 06:46:30 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/qqelq1/design_interface_for_functionality_not">Design the interface for functionality not familiarity</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Extremely brief history of PDP computers</title><category>compsci</category><category>hardware</category><pubDate>2026-10-30 06:40:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://entropicthoughts.com/history-of-pdp-computers">Extremely brief history of PDP computers</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Zotero Documentation</title><category>archive</category><category>documentation</category><category>typesetting</category><pubDate>2026-10-30 06:24:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.zotero.org/support/">Zotero Documentation</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #browser #plugin <a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Connector - Chrome Web Store</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> First time running will trigger installation of this one.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://www.zotero.org/support/plugins">Plugins for Zotero | Zotero Documentation</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`zotero`</title><category>linux</category><category>office</category><category>typesetting</category><pubDate>2026-10-30 06:21:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/zotero/zotero"><code>zotero</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> for bibliography, citation needs.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> There's an interesting technique of <a href="">registering URI</a>
-<ul>
-<li>That's heavily depended on #windows and #powershell</li>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Could learn from that to do some interesting thing on terminal or <code>obsidian</code></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ONLYOFFICE/DesktopEditors">there are OnlyOffice to do office works as well</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Rather than sticking with ugly LibreOffice.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #meta #blog <a href="https://www.citationneeded.news/">Citation Needed by Molly White</a>
-<ul>
-<li>#web #service #academic <a href="https://veruscite.com/">VerusCite - Verify Citations</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 18:21:54 2026] <a href="https://lobste.rs/s/6ole9g/if_you_love_website_back_it_up">If you love a website, back it up</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Premium apps hosting that just works | Ultra.cc</title><category>host</category><pubDate>2026-10-30 06:02:23 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://ultra.cc/">Premium apps hosting that just works | Ultra.cc</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #til seedbox is file torrent server.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/seedboxes/comments/wi4m4e">Ultra.cc &amp; syncthing</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/seedboxes/comments/qm0nal">Review: Whatbox.ca , 2 years later.</a></li>
-<li>#alternative : <a href="https://cyberduck.io/">Cyberduck | Libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &amp; OneDrive, Google Drive and Dropbox</a>
-<ul>
-<li>this is more #selfhost version of those services.</li>
-</ul>
-</li>
-<li>#cli : <a href="https://github.com/lavv17/lftp"><code>lftp</code> cli file transfer (ftp, http, sftp, fish, torrent...)</a>
-<ul>
-<li>on Linux or WSL only..</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #doc: <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ftp-remotehelp_1">ftp remotehelp</a></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have WebDAV server in which you can just launch and access. To delete/copy from computer for example.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> up to date.. this is the only one I know of embedded a file server.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Oct 19 13:23:45 2026] #code/forge <a href="https://tonym.us/move-github-repos-to-google-drive.html">Move GitHub Private Repos to Google Drive in Minutes // Tony Metzidis</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 18:02:23 2026] <a href="https://rdrama.net/post/855735/reddit-is-becoming-a-loggedinonly-experience">Reddit is becoming a ‘logged-in-only experience,’ says CEO Steve Huffman.</a>
-<ul>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> mentioned seedboxes so..</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`NO_COLOR` disabling ANSI color output by default</title><category>ansi</category><category>string</category><pubDate>2026-10-30 05:43:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://no-color.org/"><code>NO_COLOR</code> disabling ANSI color output by default</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> just set the env var honestly.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Oklab color palette, cielab and things like that.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> pwsh has an env var of disabling ANSI color.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#discussion <a href="https://lobste.rs/s/g0te8h/how_choose_colors_for_your_cli">How to Choose Colors for Your CLI Applications (2023)</a></li>
-<li>#typesetting #color/theory <a href="https://huetone.ardov.me/">Huetone</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the important of palette to the intelligible of text.</li>
-</ul>
-</li>
-<li><a href="https://wikipedia.org/wiki/DCI-P3">DCI-P3</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:43:13 2026] #web #css <a href="https://wikipedia.org/wiki/Oklab_color_space">oklch() - Oklab color space</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>terminal</category><pubDate>2026-10-30 05:15:10 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">herdr # launch into the big mux menu.
-herdr server stop # kill all session.
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: choose me <code>pwsh</code> without any config. That's much better over <code>zellij</code> which chose <code>cmd</code></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201003">Herdr is joining Y Combinator. The runtime stays open</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50298436">Herdr has released native app</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zellij</code>, <code>tmux</code>
-<ul>
-<li>but those 2 cant run in windows so dont bother actually.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Aug 28 12:35:05 2026] <code>zellij</code> in scoop now.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:15:10 2026] #macos <a href="https://github.com/codealong/codealong"><code>codealong</code> agent you run, in 1 window for macOS and Linux for Claude Code, Codex, OpenCode, Antigravity and Cursor, across your accounts and machines.</a>
-<ul>
-<li><a href="https://github.com/BrokkAi/mjolnir/"><code>mjolnir</code> Manage Harness with durable sessions, isolated environments, quotas, and remote control</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>nw.js Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web technologies.</title><category>javascript</category><category>programming</category><pubDate>2026-10-30 03:11:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/nwjs/nw.js">nw.js Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web technologies.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=6910475">Emacs Lisp is such a horrible language, and the Emacs ecosystem is so firmly stu...</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 15:11:59 2026]</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Locust - grasshopper</title><category>insect</category><category>vocabulary</category><pubDate>2026-10-30 01:47:49 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Locust">Locust - grasshopper</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>scrolling - How do I scroll in tmux?</title><category>default</category><category>keybinding</category><category>terminal/mux</category><category>tmux</category><pubDate>2026-10-30 11:16:02 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://superuser.com/questions/209437/how-do-i-scroll-in-tmux">scrolling - How do I scroll in tmux?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>Ctrl+b</code> <code>PgUp</code>/<code>PgDn</code> enter select mode, #navigate with arrow and navigation keys.
-<ul>
-<li>use <code>Esc</code> to go back into insert/normal mode which you enter text there.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.shellhacks.com/screen-scroll-up-scrollback-buffer/">Screen: Scroll Up - Scrollback Buffer</a>
-<ul>
-<li>I wonder how <a href="https://github.com/microsoft/terminal/issues/15796">why isn't possible to scroll anymore in a linux screen · Issue #15796 · microsoft/terminal</a>
-<ul>
-<li>windows terminal render Alt buffer for <code>nvim</code> and <code>hx</code> separatedly now, so there is nothing to scrollback</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>in #zellij it's <code>Ctrl+s</code> <code>up</code>/<code>down</code>/<code>PgUp</code>/<code>PgDn</code>, any navigation keys.</li>
-<li>#blog : <a href="https://news.ycombinator.com/item?id=44306892">Using Microsoft's New CLI Text Editor on Ubuntu</a>
-<ul>
-<li>A comment show the binding of CUA interface, which result into: terminal compliant binding
-<ul>
-<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> CUA bindings for Cut, Copy, Paste are actually <code>Shift+Delete</code>, <code>Ctrl+Insert</code>, <code>Shift+Insert</code>.</li>
-</ul>
-</li>
-<li>#definition: CUA is #acronym of <a href="https://wikipedia.org/wiki/IBM_Common_User_Access">IBM Common User Access</a></li>
-<li><code>Ctrl+backspace</code> == <code>Ctrl+w</code> in emacs.</li>
-<li><code>Ctrl+delete</code> == <code>Alt+d</code> in emacs.</li>
-</ul>
-</li>
-<li>#keybinding #terminal : <a href="https://unix.stackexchange.com/questions/60382/how-to-scroll-in-a-terminal-using-keyboard">How to scroll in a terminal using keyboard?</a>
-<ul>
-<li>in short <code>Shift+PgUp</code> and <code>Shift+PgDn</code>.</li>
-</ul>
-</li>
-<li>#terminal : <a href="https://unix.stackexchange.com/questions/145050/what-exactly-is-scrollback-and-scrollback-buffer">shell - What exactly is scrollback and scrollback buffer?</a>
-<ul>
-<li>In windows terminal, alt buffer cant be scroll back e.g. in select mode or using <code>Ctrl+shift+up</code> / <code>down</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-06-24 14:46:57] : <a href="https://jyn.dev/how-i-use-my-terminal/">how i use my terminal</a>
-<ul>
-<li><a href="https://man.openbsd.org/tmux#COMMANDS">tmux(1) all commands - OpenBSD manual pages</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>tmux ls</code> and <code>tmux kill-session -t 0</code> or <code>tmux kill-session</code>
-<ul>
-<li>which <code>zellij ls</code> and <code>zellij kill-session</code> / <code>zellij kill-all-sessions</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 11:16:02 2026] <a href="https://lobste.rs/s/m6fw0x/netbsd_adds_new_emacs_like_text_editor">NetBSD adds a new Emacs-like text editor called atto</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>astroterm: A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐</title><category>software</category><category>tui</category><pubDate>2026-10-30 10:37:37 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/da-luce/astroterm">astroterm: A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`std::copy`, `std::copy_if`</title><category>algorithm</category><category>container/array</category><category>cpp</category><category>memory</category><pubDate>2026-10-30 10:21:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://cppreference.com/w/cpp/algorithm/copy"><code>std::copy</code>, <code>std::copy_if</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/259297/how-do-you-copy-the-contents-of-an-array-to-a-stdvector-in-c-without-looping">stl - How do you copy the contents of an array to a <code>std::vector</code> in C++ without looping?</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://stackoverflow.com/questions/14977632/copying-stdvector-prefer-assignment-or-stdcopy">c++ - Copying <code>std::vector</code>: prefer assignment or <code>std::copy</code>?</a>
-<ul>
-<li>use <code>=</code> if assign two vectors.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/cpp/comments/q13jsm">Word of advice regarding the use of the <code>std::copy_constructible</code> concept in the standard library</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 10:21:27 2026] <a href="https://stackoverflow.com/questions/4172223/double-assignment-should-it-be-avoided#4172308">&quot;Double&quot; assignment - should it be avoided?</a></li>
 </ul>
 </li>
 </ul>
