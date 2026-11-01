@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>c++ - Behaviour of `std::array&lt;bool&gt;` vs. `std::vector&lt;bool&gt;`</title><category>array</category><category>container/vector</category><category>cpp</category><pubDate>2026-10-31 11:54:35 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Halloween is a crass American import – I&apos;ll never indulge it</title><category>culture</category><category>holiday</category><pubDate>2026-10-31 08:13:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50315039">Halloween is a crass American import – I'll never indulge it</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`sanstun` sans-IO, parallel-friendly WireGuard implementation in Rust</title><category>backend</category><category>library</category><category>networking</category><pubDate>2026-10-31 12:43:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50310398"><code>sanstun</code> sans-IO, parallel-friendly WireGuard implementation in Rust</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> we can use <code>sanstun</code> in <code>no_std</code> environments like on an #ESP32. Async style some would say.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>c++ - Behaviour of `std::array&lt;bool&gt;` vs. `std::vector&lt;bool&gt;`</title><category>array</category><category>container/vector</category><category>cpp</category><pubDate>2026-10-31 11:54:35 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/44607389/behaviour-of-stdarraybool-vs-stdvectorbool">c++ - Behaviour of <code>std::array&lt;bool&gt;</code> vs. <code>std::vector&lt;bool&gt;</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -355,30 +379,6 @@ herdr server stop # kill all session.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.fedramp.gov/ai/">FedRAMP AI</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50276792">Gemini 4 Carbon</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`grok -c` continue latest conversation just as the other harness (e.g claude)</title><category>cli/option</category><category>harness/grok</category><pubDate>2026-10-29 12:58:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><code>grok -c</code> continue latest conversation just as the other harness (e.g claude)
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CNC Stone Carving - Carmelite Gothic</title><category>cnc</category><pubDate>2026-10-29 10:47:01 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://carmelitegothic.com/cnc-stone-carving/">CNC Stone Carving - Carmelite Gothic</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50274409">in HN</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
