@@ -55,7 +55,26 @@ body {
     transition: color 150ms ease, background-color 150ms ease;
 }
 
-h1.til-title { margin-bottom: 0px; text-wrap: balance; }
+h1.til-title { margin-bottom: 0; }
+.til-title {
+    display: block;
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.til-title code {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0.08em 0.3em;
+    border-radius: 0.25em;
+    color: var(--text);
+    background: var(--code-bg);
+    white-space: pre;
+}
+.til-title strong { font-weight: 800; }
+.til-title:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 
 pre {
     border: 1px solid var(--border);
@@ -109,6 +128,8 @@ a:hover.til-tag.master-tag {
 a:hover.til-tag { color: var(--page-bg); background-color: var(--accent-hover); }
 
 header.til-header, div.til-subheader { display: flex; align-items: center; gap: 0.5em; }
+.til-header { flex-wrap: wrap; }
+.til-header > :is(h1, h3) { min-inline-size: 0; flex: 1 1 100%; }
 .til-date { font-style: italic; color: var(--muted); }
 .til-date .updated-at { color: var(--accent); font-weight: 600; }
 .til-subtags { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4em; margin-top: 0.45em; }
@@ -162,7 +183,8 @@ blockquote {
     border-bottom: 1px solid var(--border);
 }
 .recent-til .til-date { font-size: 14px; font-style: normal; padding-top: 0.15em; }
-.recent-entry h3 { font-size: 16px; line-height: 1.5; margin: 0 0 0.5em; overflow-wrap: anywhere; }
+.recent-entry { min-inline-size: 0; }
+.recent-entry h3 { font-size: 16px; font-weight: 600; line-height: 1.5; margin: 0 0 0.5em; }
 .recent-tags { display: flex; flex-wrap: wrap; gap: 0.4em; }
 .pagination { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.5em; padding: 0.75em 0; }
 .pagination > :last-child { justify-self: end; }

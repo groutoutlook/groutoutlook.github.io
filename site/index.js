@@ -76,10 +76,8 @@ function showRandomEntries() {
         [source[i], source[j]] = [source[j], source[i]];
     }
     results.replaceChildren(...source.slice(0, 5).map(link => {
-        const item = document.createElement("a");
-        item.href = link.href;
-        item.className = "random-entry";
-        item.textContent = link.textContent;
+        const item = link.cloneNode(true);
+        item.classList.add("random-entry");
         return item;
     }));
 }
