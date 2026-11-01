@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Agent Directory | Railway</title><category>cicd</category><category>cloud</category><category>harness</category><category>meta</category><category>microservice</category><pubDate>2026-11-02 12:02:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Agent Directory | Railway</title><category>cicd</category><category>cloud</category><category>harness</category><category>meta</category><category>microservice</category><category>wprog</category><pubDate>2026-11-02 12:02:27 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://railway.com/agents">Agent Directory | Railway</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -10,7 +10,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`action-tmate` Debug your GitHub Actions via SSH by using tmate to get access to the runner system itself.</title><category>cicd</category><category>remote/ssh</category><category>terminal</category><pubDate>2026-11-01 11:43:25 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`action-tmate` Debug your GitHub Actions via SSH by using tmate to get access to the runner system itself.</title><category>cicd</category><category>remote/ssh</category><category>terminal</category><category>wprog</category><pubDate>2026-11-01 11:43:25 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/mxschmitt/action-tmate"><code>action-tmate</code> Debug your GitHub Actions via SSH by using tmate to get access to the runner system itself.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -79,7 +79,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>keyboard - Need table of key codes for android and presenter</title><category>adb</category><category>android</category><pubDate>2026-11-01 10:00:12 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>keyboard - Need table of key codes for android and presenter</title><category>adb</category><category>android</category><category>windows</category><pubDate>2026-11-01 10:00:12 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/11768356/need-table-of-key-codes-for-android-and-presenter">keyboard - Need table of key codes for android and presenter</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>KEYCODE_POWER</code> to turn off screen/phones on <code>adb</code>. That's faster on most situations.</li>
@@ -113,7 +113,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Norway makes shithouses great again</title><category>norway</category><category>public</category><pubDate>2026-11-01 09:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Norway makes shithouses great again</title><category>norway</category><category>public</category><category>society</category><pubDate>2026-11-01 09:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50324388">Norway makes shithouses great again</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -125,7 +125,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`zotero-connectors` Chrome, Firefox, Edge, and Safari extensions for Zotero</title><category>browser</category><category>plugin</category><category>software</category><pubDate>2026-11-01 04:18:03 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`zotero-connectors` Chrome, Firefox, Edge, and Safari extensions for Zotero</title><category>browser</category><category>plugin</category><category>software</category><category>web</category><pubDate>2026-11-01 04:18:03 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/zotero/zotero-connectors"><code>zotero-connectors</code> Chrome, Firefox, Edge, and Safari extensions for Zotero</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you have to keep zotero desktop running for this. I wish it has a tray icon mode but no, nothing like that yet.</li>
@@ -137,7 +137,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`scp` OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</title><category>linux</category><category>networking</category><category>ssh</category><pubDate>2026-11-01 04:11:18 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`scp` OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</title><category>cli</category><category>linux</category><category>networking</category><category>ssh</category><pubDate>2026-11-01 04:11:18 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.mankier.com/1/scp"><code>scp</code> OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -152,7 +152,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`dufs` file server for static serving, uploading, searching, accessing control, webdav...</title><category>nas</category><category>webdav/root</category><pubDate>2026-11-01 03:42:25 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`dufs` file server for static serving, uploading, searching, accessing control, webdav...</title><category>backend</category><category>nas</category><category>webdav/root</category><pubDate>2026-11-01 03:42:25 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/sigoden/dufs"><code>dufs</code> file server for static serving, uploading, searching, accessing control, webdav...</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to <code>copyparty</code> and <code>miniserve</code>. Another contender to use with <code>iroh</code>.</li>
@@ -177,7 +177,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>properly install a systemd timer and service?</title><category>linux</category><category>schedule</category><category>systemd</category><pubDate>2026-11-01 03:15:03 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>properly install a systemd timer and service?</title><category>linux</category><category>schedule</category><category>systemd</category><category>windows</category><pubDate>2026-11-01 03:15:03 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://askubuntu.com/questions/1083537/how-do-i-properly-install-a-systemd-timer-and-service">properly install a systemd timer and service?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about <code>.timer</code> and <code>.service</code>.</li>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Avoid Public Functions Calling Other Public Functions</title><category>class</category><category>function</category><category>methodology</category><pubDate>2026-11-01 03:13:42 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Avoid Public Functions Calling Other Public Functions</title><category>class</category><category>function</category><category>methodology</category><category>prog</category><pubDate>2026-11-01 03:13:42 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/k508we/avoid_public_functions_calling_other">Avoid Public Functions Calling Other Public Functions</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -217,7 +217,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>The Kluever Maneuver</title><category>git</category><category>test/unit</category><category>workflow</category><pubDate>2026-11-01 03:12:56 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>The Kluever Maneuver</title><category>git</category><category>prog</category><category>test/unit</category><category>workflow</category><pubDate>2026-11-01 03:12:56 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/rpiu3w/kluever_maneuver">The Kluever Maneuver</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -229,7 +229,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`pyzotero` Python client for Zotero API</title><category>document</category><category>gui</category><category>typesetting</category><pubDate>2026-11-01 02:47:05 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`pyzotero` Python client for Zotero API</title><category>cli</category><category>document</category><category>gui</category><category>typesetting</category><pubDate>2026-11-01 02:47:05 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/urschrei/pyzotero"><code>pyzotero</code> Python client for Zotero API</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly</li>
@@ -248,7 +248,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`immich` self-hosted photo and video management solution.</title><category>host/self</category><category>nas/media</category><pubDate>2026-11-01 02:22:05 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`immich` self-hosted photo and video management solution.</title><category>backend</category><category>host/self</category><category>nas/media</category><pubDate>2026-11-01 02:22:05 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/immich-app/immich"><code>immich</code> self-hosted photo and video management solution.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -291,7 +291,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>20 years. 766 million files. Two Chameleons. - The Zamzar Blog</title><category>adapter</category><category>convert</category><category>meta</category><category>misc</category><pubDate>2026-11-01 02:20:06 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>20 years. 766 million files. Two Chameleons. - The Zamzar Blog</title><category>adapter</category><category>convert</category><category>file</category><category>meta</category><category>misc</category><pubDate>2026-11-01 02:20:06 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/">20 years. 766 million files. Two Chameleons. - The Zamzar Blog</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> all kind of exoteric files can be usef through here to convert almost anything.</li>
@@ -303,7 +303,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Altoids</title><category>culture</category><category>food</category><category>us</category><pubDate>2026-11-01 02:17:00 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Altoids</title><category>culture</category><category>food</category><category>misc</category><category>us</category><pubDate>2026-11-01 02:17:00 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Altoids">Altoids</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -315,7 +315,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`ZeroFS`: 9P/NFS/NBD on top of S3.</title><category>cloud/s3</category><category>filesystem</category><pubDate>2026-11-01 01:36:05 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`ZeroFS`: 9P/NFS/NBD on top of S3.</title><category>backend</category><category>cloud/s3</category><category>filesystem</category><pubDate>2026-11-01 01:36:05 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/Barre/ZeroFS"><code>ZeroFS</code>: 9P/NFS/NBD on top of S3.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -332,7 +332,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`Gitea Mirror` syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</title><category>backup</category><category>cicd</category><category>code/forge</category><category>nas</category><pubDate>2026-11-01 01:35:07 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`Gitea Mirror` syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</title><category>backup</category><category>cicd</category><category>code/forge</category><category>nas</category><category>wprog</category><pubDate>2026-11-01 01:35:07 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/RayLabsHQ/gitea-mirror"><code>Gitea Mirror</code> syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -344,7 +344,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`udp2raw` Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</title><category>Tunnel</category><category>cli</category><category>protocol/udp</category><category>tcp</category><pubDate>2026-11-01 01:05:09 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`udp2raw` Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</title><category>Tunnel</category><category>cli</category><category>netw</category><category>protocol/udp</category><category>tcp</category><pubDate>2026-11-01 01:05:09 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/wangyu-/udp2raw"><code>udp2raw</code> Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -356,7 +356,7 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`json-rpc`</title><category>database</category><category>http</category><category>ipc</category><category>rpc</category><category>serialize</category><category>server</category><pubDate>2026-11-01 01:00:17 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`json-rpc`</title><category>api</category><category>database</category><category>http</category><category>ipc</category><category>rpc</category><category>serialize</category><category>server</category><pubDate>2026-11-01 01:00:17 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/json-rpc.md"><code>json-rpc</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> For event based system, implement an in-process file watcher to watch a file, treat it as event database.</li>
@@ -393,7 +393,7 @@ just reuse HTTP REST API to trigger event, more than enough.
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</title><category>filesytem</category><category>protocol/ftp</category><category>sysadmin</category><pubDate>2026-11-01 12:53:41 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</title><category>filesytem</category><category>protocol/ftp</category><category>sysadmin</category><category>wprog</category><pubDate>2026-11-01 12:53:41 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://winscp.net/eng/docs/guide_windows_openssh_server">Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> which is another borderline insane shit to do.</li>
@@ -410,7 +410,7 @@ just reuse HTTP REST API to trigger event, more than enough.
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>`rclone` Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</title><category>cloud</category><category>filesystem</category><category>gui</category><category>selfhost</category><category>utils</category><pubDate>2026-11-01 12:38:46 PM</pubDate><content:encoded><![CDATA[<ul>
+]]></content:encoded></item><item><title>`rclone` Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</title><category>cloud</category><category>filesystem</category><category>gui</category><category>selfhost</category><category>soft</category><category>utils</category><pubDate>2026-11-01 12:38:46 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/rclone/rclone"><code>rclone</code> Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> There is also a list of common cloud storage provider in README.</li>

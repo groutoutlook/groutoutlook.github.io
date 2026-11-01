@@ -84,63 +84,26 @@ a.til-tag {
 }
 
 a.til-tag.master-tag {
-    color: #5d4600;
-    background-color: #f4e7ad;
-    border-color: #b48a15;
+    color: light-dark(#5d4600, #ffed9a);
+    background-color: light-dark(#f4e7ad, #514719);
+    border-color: light-dark(#b48a15, #d4b33f);
 }
 
 a.til-tag.parent-tag {
-    color: #064f52;
-    background-color: #a8e4d2;
-    border-color: #279c91;
+    color: light-dark(#064f52, #a9f2dc);
+    background-color: light-dark(#a8e4d2, #174c4b);
+    border-color: light-dark(#279c91, #54c7b0);
     font-weight: 700;
 }
 
 a:hover.til-tag.parent-tag {
-    color: #eafff8;
-    background-color: #167b78;
-}
-
-html[data-theme="dark"] a.til-tag.parent-tag {
-    color: #a9f2dc;
-    background-color: #174c4b;
-    border-color: #54c7b0;
-}
-
-html[data-theme="dark"] a:hover.til-tag.parent-tag {
-    color: #082d2c;
-    background-color: #73dfc2;
+    color: light-dark(#eafff8, #082d2c);
+    background-color: light-dark(#167b78, #73dfc2);
 }
 
 a:hover.til-tag.master-tag {
-    color: #fff9dc;
-    background-color: #9a7410;
-}
-
-@media (prefers-color-scheme: dark) {
-    html:not([data-theme="light"]) a.til-tag.master-tag {
-    color: #ffed9a;
-    background-color: #514719;
-    border-color: #d4b33f;
-    }
-}
-
-html[data-theme="dark"] a.til-tag.master-tag {
-    color: #ffed9a;
-    background-color: #514719;
-    border-color: #d4b33f;
-}
-
-html[data-theme="dark"] a:hover.til-tag.master-tag {
-    color: #1b1808;
-    background-color: #e0bd45;
-}
-
-@media (prefers-color-scheme: dark) {
-    html:not([data-theme="light"]) a:hover.til-tag.master-tag {
-        color: #1b1808;
-        background-color: #e0bd45;
-    }
+    color: light-dark(#fff9dc, #1b1808);
+    background-color: light-dark(#9a7410, #e0bd45);
 }
 
 a:hover.til-tag { color: var(--page-bg); background-color: var(--accent-hover); }
