@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Agent Directory | Railway</title><category>cicd</category><category>cloud</category><category>harness</category><category>meta</category><category>microservice</category><category>wprog</category><pubDate>2026-11-02 12:02:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Lazy` for just recipe.</title><category>cli</category><category>justfile</category><pubDate>2026-11-02 08:22:12 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/casey/just#lazy"><code>Lazy</code> for just recipe.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Agent Directory | Railway</title><category>cicd</category><category>cloud</category><category>harness</category><category>meta</category><category>microservice</category><category>wprog</category><pubDate>2026-11-02 12:02:27 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://railway.com/agents">Agent Directory | Railway</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -407,37 +419,6 @@ just reuse HTTP REST API to trigger event, more than enough.
 </li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`rclone` Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</title><category>cloud</category><category>filesystem</category><category>gui</category><category>selfhost</category><category>soft</category><category>utils</category><pubDate>2026-11-01 12:38:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/rclone/rclone"><code>rclone</code> Google Drive, S3, Dropbox, Backblaze B2, OneDrive, Cloudflare R2, MEGA, Wasabi, Google Cloud Storage, Azure, Yandex Files, WebDAV</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> There is also a list of common cloud storage provider in README.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">rclone</span></span><span class="meta function-call arguments shell"> serve <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> .</span><span class="comment line number-sign shell">
-</span></span></span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop
-<ul>
-<li>Pro: can use with FTP / HTTP hosters as well</li>
-<li>Con:...? web related? Not really my profession.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/versity/versitygw/"><code>versitygw</code> selfhost S3 object storage inteface/server for local filesystem</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> ehm, idk.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://rclone.org/commands/rclone_serve_webdav/">rclone serve webdav</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-31 15:23:02] <a href="https://github.com/drakkan/sftpgo"><code>sftpgo</code> configurable SFTP, HTTP/S, FTP/S, WebDAV server - S3, Google Cloud Storage, Azure Blob</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> WebDAV killer it seems. Quickest way to launch <code>sftp</code> server.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.sftpgo.com/latest/initial-configuration/#initial-configuration">Feature overview - SFTPGo documentation</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 12:38:46 2026] <a href="https://invent.kde.org/frameworks/kio">KIO Kioslave</a></li>
 </ul>
 </li>
 </ul>
