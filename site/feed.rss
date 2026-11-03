@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>CAN, LIN, RS485 over DC powerline - Embedded 2020</title><category>can</category><category>lin</category><category>powerline</category><category>proto</category><pubDate>2026-11-03 10:13:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Dell Precision 7670 specs</title><category>asset</category><category>hard</category><category>hardware</category><category>notebook</category><pubDate>2026-11-03 11:57:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-7670-technical-guidebook.pdf">Dell Precision 7670 specs</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm looking at sensors and fingerprint reader part here.</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [Sun Aug  9 11:38:25 2026] <a href="https://www.dell.com/en-us/shop/dell-laptops/dell-pro-max-18-plus-laptop/spd/dell-pro-max-mb18250-laptop">Dell Pro Max Plus 18 Inch Workstation - Large Display Power</a>
+<ul>
+<li><a href="https://www.dell.com/support/home/en-vn/drivers/driversdetails?driverid=4jdc5">Intel BE200/AX411/AX211 Wi-Fi UWD Driver</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/products/sku/230078/intel-wifi-7-be200/specifications.html">Intel® Wi-Fi 7 BE200</a>
+<ul>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://www.intel.com/content/www/us/en/products/sku/240287/intel-wifi-7-r2-be211/specifications.html">Intel® Wi-Fi 7 R2 BE211</a></li>
+</ul>
+</li>
+<li><a href="https://www.reddit.com/r/Dell/comments/1upt0fd">Thinking about the Dell Pro Max Plus 18 as a desktop replacement for Isaac Sim &amp; CAD (RTX Pro 5000, 64/96GB RAM). Any known issues?</a>
+<ul>
+<li>probably not.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-10-18 12:39:50] Supported accesories for this laptop.
+![[{7F52F97F-F5FC-4603-8C06-060D0BDD2E58}.png]]</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 23:57:09 2026] <a href="https://www.dell.com/support/manuals/precision-16-7670-laptop/precision_7670_ss/external-ports-and-slots?guid=guid-4c4cc1ba-66a4-45f0-8dfc-6013a624ddc0&amp;lang=en-us">Precision 7670 Setup and Specifications ports and slots</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`wadbd` enable or disable wireless ADB for the current session or at boot.</title><category>adb</category><category>windows</category><pubDate>2026-11-03 11:49:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Magisk-Modules-Alt-Repo/wadbd"><code>wadbd</code> enable or disable wireless ADB for the current session or at boot.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/11314145/looking-to-enable-and-disable-toggle-adb-or-usb-debugging-using-command-line-o">android - Looking to enable and disable (toggle) ADB or USB debugging using command line or in app</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CAN, LIN, RS485 over DC powerline - Embedded 2020</title><category>can</category><category>lin</category><category>powerline</category><category>proto</category><pubDate>2026-11-03 10:13:50 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="">CAN, LIN, RS485 over DC powerline - Embedded 2020</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -352,85 +389,6 @@ If cache entry is non-empty and outputs in cache entry match their current state
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>wasm and webusb feasibility for `probe-rs`</title><category>cli</category><category>probe</category><category>usb</category><category>wasm</category><category>web/api/webusb</category><pubDate>2026-11-02 07:46:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/probe-rs/probe-rs/discussions/838">wasm and webusb feasibility for <code>probe-rs</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`daplink_cli` DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</title><category>cli</category><category>daplink</category><category>probe</category><pubDate>2026-11-02 07:38:21 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://gitee.com/jhembed/daplink_cli"><code>daplink_cli</code> DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">daplink</span></span><span class="meta function-call arguments shell"> read<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>addr</span> 08000000<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>size</span> 10000<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> read.bin </span>
-</span></code></pre>
-<ul>
-<li><a href="https://vllogic.com/quick/vllink_2x#tcp-dap">Vllink 2X 快速上手 — Vllogic 文档</a></li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">openocd</span></span><span class="meta function-call arguments shell"> dump_image ram.bin 0x20000000 0x10000</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://vllogic.com/example/over_local_area_network">LAN with <strong>2 VLLink Basic2, 1AP and 1STA</strong></a>
-<ul>
-<li><!-- raw HTML omitted -->Require:<!-- raw HTML omitted --> both of them enter the same <code>SSID/Password</code> as(<strong>both put in Wireless_Device</strong>):
-<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">Wireless_Device_SSID=GL-MT3600BE-ace-MLO
-Wireless_Device_Password=owrt2120aA
-</span></code></pre>
-</li>
-<li>&quot;AP&quot; will need to enable <code>Mode2_STA=enable</code>. Then acquire the &quot;AP&quot; owned IP address.</li>
-<li>&quot;STA&quot; dont need to enable shit, just <code>Mode3_SERVER_IPV4=192.168.8.&lt;&gt;</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=909368817574">JLINK离线下载器V2 STM32 NXP N76E GD脱机烧录器编程烧写ARM</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.vsemec.com/page-87622.html">脱机烧录器_济南禾文智能科技有限公司</a>
-<ul>
-<li><a href="https://www.lanzouu.com/b0kobqich">EasyFlasher-META_V3</a>
-<ul>
-<li>only lanzouu is downloadable for me, baidu cloud is fucked up. pw: <code>5lxi</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>#wireless <a href="https://item.taobao.com/item.htm?id=908364998010&amp;skuId=5769057460337">高速无线调试器STM32仿真编程下载器DAP烧录STM32 DAPLink仿真器</a></li>
-<li><a href="https://item.taobao.com/item.htm?id=899653281216">小智AI 外壳 stlink typec口 jtag口 1.54寸tft 0.96oled</a>
-<ul>
-<li>the guy sell the shell separatably as well. I can make something fit this case.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Jul 3 17:16:44 2026] <a href="https://docs.vsemec.com/EasyFlasher-META/">EasyFlasher META Offline Programmer</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #fpga [Sat Sep 26 10:33:55 2026] #web/ui #debugger
-<ul>
-<li><a href="https://vllogic.com/_static/tools/web_program_hercules/">Web Program Hercules FPGA - 量产工具</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.mfmic.com.hk/blog/performance-technology.html">Jingwei Qili/hercules FPGA announced the launch of the first domestic 22nm FPGA chip with low power consumption and high performance technology</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 19:38:21 2026] #gui #cli <a href="https://github.com/WeActStudio/WeActStudio.DAPFlasher">DAP-Link Flasher for Windows</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> can take as many chip. as those above. try <code>dapc</code>/<code>dapg</code> since I #nightly them.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
