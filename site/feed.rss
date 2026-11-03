@@ -1,4 +1,279 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Lazy` for just recipe.</title><category>cli</category><category>justfile</category><pubDate>2026-11-02 08:22:12 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Linux System Call Tables by Architecture · syscall.sh</title><category>arch</category><category>linux</category><category>windows</category><pubDate>2026-11-02 08:07:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://syscall.sh/">Linux System Call Tables by Architecture · syscall.sh</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Propinquity</title><category>human</category><category>social</category><pubDate>2026-11-02 07:55:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Propinquity">Propinquity</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>wasm and webusb feasibility for `probe-rs`</title><category>cli</category><category>probe</category><category>usb</category><category>wasm</category><category>web/api/webusb</category><pubDate>2026-11-02 07:46:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/probe-rs/probe-rs/discussions/838">wasm and webusb feasibility for <code>probe-rs</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`daplink_cli` DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</title><category>cli</category><category>daplink</category><category>probe</category><pubDate>2026-11-02 07:38:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://gitee.com/jhembed/daplink_cli"><code>daplink_cli</code> DAPLink上位机DAPLinkUtility分支软件，daplink命令行工具，用于替代pyocd。</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">daplink</span></span><span class="meta function-call arguments shell"> read<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>addr</span> 08000000<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>size</span> 10000<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> read.bin </span>
+</span></code></pre>
+<ul>
+<li><a href="https://vllogic.com/quick/vllink_2x#tcp-dap">Vllink 2X 快速上手 — Vllogic 文档</a></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">openocd</span></span><span class="meta function-call arguments shell"> dump_image ram.bin 0x20000000 0x10000</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://vllogic.com/example/over_local_area_network">LAN with <strong>2 VLLink Basic2, 1AP and 1STA</strong></a>
+<ul>
+<li><!-- raw HTML omitted -->Require:<!-- raw HTML omitted --> both of them enter the same <code>SSID/Password</code> as(<strong>both put in Wireless_Device</strong>):
+<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">Wireless_Device_SSID=GL-MT3600BE-ace-MLO
+Wireless_Device_Password=owrt2120aA
+</span></code></pre>
+</li>
+<li>&quot;AP&quot; will need to enable <code>Mode2_STA=enable</code>. Then acquire the &quot;AP&quot; owned IP address.</li>
+<li>&quot;STA&quot; dont need to enable shit, just <code>Mode3_SERVER_IPV4=192.168.8.&lt;&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=909368817574">JLINK离线下载器V2 STM32 NXP N76E GD脱机烧录器编程烧写ARM</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.vsemec.com/page-87622.html">脱机烧录器_济南禾文智能科技有限公司</a>
+<ul>
+<li><a href="https://www.lanzouu.com/b0kobqich">EasyFlasher-META_V3</a>
+<ul>
+<li>only lanzouu is downloadable for me, baidu cloud is fucked up. pw: <code>5lxi</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>#wireless <a href="https://item.taobao.com/item.htm?id=908364998010&amp;skuId=5769057460337">高速无线调试器STM32仿真编程下载器DAP烧录STM32 DAPLink仿真器</a></li>
+<li><a href="https://item.taobao.com/item.htm?id=899653281216">小智AI 外壳 stlink typec口 jtag口 1.54寸tft 0.96oled</a>
+<ul>
+<li>the guy sell the shell separatably as well. I can make something fit this case.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Jul 3 17:16:44 2026] <a href="https://docs.vsemec.com/EasyFlasher-META/">EasyFlasher META Offline Programmer</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #fpga [Sat Sep 26 10:33:55 2026] #web/ui #debugger
+<ul>
+<li><a href="https://vllogic.com/_static/tools/web_program_hercules/">Web Program Hercules FPGA - 量产工具</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.mfmic.com.hk/blog/performance-technology.html">Jingwei Qili/hercules FPGA announced the launch of the first domestic 22nm FPGA chip with low power consumption and high performance technology</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 19:38:21 2026] #gui #cli <a href="https://github.com/WeActStudio/WeActStudio.DAPFlasher">DAP-Link Flasher for Windows</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> can take as many chip. as those above. try <code>dapc</code>/<code>dapg</code> since I #nightly them.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>you can enter mark mode `Ctrl+shift+m` and select words.</title><category>highlight</category><category>soft</category><category>terminal</category><category>visual</category><category>windows</category><pubDate>2026-11-02 06:59:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>you can enter mark mode <code>Ctrl+shift+m</code> and select words.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
+<ul>
+<li><code>Ctrl+1,2,3...</code> to highlight words with background colors.</li>
+<li><code>Alt+1,2,3...</code> highlight using foreground. It will overwrite the background color to transparent/black.
+<ul>
+<li>there are also all matches options with <code>Alt+shift+1,2,3...</code>
+<ul>
+<li>That will change foreground of all existed instance.
+<ul>
+<li>not regex, but case insensitive. try &quot;that&quot;.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> [Sat Aug  1 15:05:04 2026] since osc8 is so convenient now.<code>ctrl+m</code> toggle my mark mode.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> as long as you dont clear-host, it will retain your text background.
+<ul>
+<li>Very useful when you want to highlight or mark something in stdout.</li>
+<li>Tricks for all matches foreground:
+<ul>
+<li>You can  type the word in the shell prompt and highlight...
+<ul>
+<li>That will be faster than switch to mark mode and highlight at its place..</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> best features ever seen.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 18:59:41 2026] <code>qcclip</code> makes me changes the quick paste - <code>Ctrl+Alt+1,2,3...</code>.
+<ul>
+<li><code>Alt+F3</code> now quick paste menu. Also map <code>kanata</code> so <code>kpenter+kp3</code>== instant <code>lalt+f3</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>I built a forum with no interface, no passwords, made for the terminal | Andros Fenollosa</title><category>blog</category><category>forum</category><category>swt</category><pubDate>2026-11-02 06:51:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://en.andros.dev/blog/b5c8c6aa/i-built-a-forum-with-no-interface-no-passwords-made-for-the-terminal/">I built a forum with no interface, no passwords, made for the terminal | Andros Fenollosa</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`PeerTube` ActivityPub-federated video streaming platform using P2P directly in your web browser</title><category>backend</category><category>browser</category><category>frontend</category><category>media</category><category>nas</category><category>self/host</category><category>software</category><category>tunnel/p2p</category><category>video</category><pubDate>2026-11-02 03:33:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Chocobozzz/PeerTube"><code>PeerTube</code> ActivityPub-federated video streaming platform using P2P directly in your web browser</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> some people use this to interact with videos/medias files in NAS.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://docs.joinpeertube.org/maintain/tools#remote-peertube-cli">CLI tools guide | PeerTube documentation</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/selfhosted/comments/1l6epmz"><code>Stash</code> service for non adult videos</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #media #player<a href="https://github.com/wwww-wwww/grasstube"><code>grasstube</code> Multi channel synchronized player created with Phoenix/Elixir</a>
+<ul>
+<li><a href="https://github.com/owncast/owncast"><code>owncast</code>: Take control over your live stream video by running it yourself. Streaming + chat out of the box.</a>
+<ul>
+<li>also integrate AcitvityPub.</li>
+</ul>
+</li>
+<li>#blog : <a href="https://github.com/mariusor/brutalinks"><code>brutalinks</code> URL aggregator inspired by (old)reddit using ActivityPub</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/mediacms-io/mediacms"><code>MediaCMS</code> modern FOSS video and media CMS, written in Python/Django and React, featuring a REST API</a>
+<ul>
+<li>quite active again lately</li>
+<li><a href="https://github.com/Materialious/Materialious"><code>Materialious</code> material design frontend for YouTube &amp; Invidious</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49842764"><code>PipePipe</code>: <code>NewPipe</code> hard fork implementing SponsorBlock</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Jun 23 14:48:08 2026] <a href="https://codeberg.org/ForgeFed">ForgeFed - Codeberg.org</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/pifl3k/one_year_with_codeberg">One year with Codeberg</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 15:33:21 2026] <a href="https://exquisite.tube/videos/browse">Recently added - Exquisite.tube</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #filesystem #linux <a href="https://exquisite.tube/w/3QQimMdswWJxrsPaJtak2u">Ori Bernstein - GEFS: The File Shredder of the Future. - Exquisite.tube</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Lenovo Freestyle</title><category>hardware</category><category>monitor</category><category>soft</category><pubDate>2026-11-02 03:21:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.lenovo.com/us/en/software/lenovo-freestyle">Lenovo Freestyle</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/androidtablets/comments/1lh0yb2">Android tablet as second monitor without installing apps on laptop?</a>
+<ul>
+<li>one of those are Samsung Tablet S8 and above.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> no OPPO tablet have that. Xiaomi partly support it.
+<ul>
+<li><a href="https://mi-home.pl/en/blogs/porady-tutoriale/jak-uzywac-xiaomi-pad-jako-dodatkowy-monitor-krok-po-kroku">How to use the Xiaomi Pad as a secondary monitor? Step by step – Mi-Home.pl</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 15:21:32 2026] #infosec <a href="https://news.ycombinator.com/item?id=50326099">Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>RS422 to uart interfacing</title><category>differential</category><category>interface</category><category>proto</category><category>uart</category><pubDate>2026-11-02 02:29:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://electronics.stackexchange.com/questions/197708/rs422-to-uart-interfacing">RS422 to uart interfacing</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>MM32SPIN0260-0280</title><category>bldc</category><category>mcu</category><category>motor</category><pubDate>2026-11-02 02:16:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.mindmotion.com.cn/products/mm32mcu/mm32spin/mm32spin_specific_mcu/mm32spin0260/">MM32SPIN0260-0280</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 96MHz , 2.5-5.5V, have I2S. have 4 OPAMP. but no USB nor less RAM than FT32F072KB.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> both of them Have MCO tho.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`ESPectre` Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</title><category>esp32</category><category>hard</category><category>sensor</category><pubDate>2026-11-02 01:53:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/francescopace/espectre"><code>ESPectre</code> Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> PIR sensor is equal with trash. it's dirt cheap and being used in PIR LED module all the time tho.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> there are some interesting #cicd stuff inside here,
+as using QEMU to smoke test firmware of ESP32.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.xda-developers.com/i-built-multimodal-esp32-powered-presence-sensor/">I built a ghost-proof ESP32-powered presence sensor and here’s how it works</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/homeassistant/comments/1tnuxsu">PIR vs Presence Sensor for dual zone Hallway &amp; Stairwell</a>
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/nVOa6ilwAPsRsxPznSO_xA">HC-SR501 Human Infrared Sensor</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> ToF sensor, LiDAR, various of optical based sensors.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 13:53:38 2026] #re <a href="https://mp.weixin.qq.com/s/azo8R_3Sea2JxZwg8QizmQ">interior of the infrared sensor (human detection) ground light</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Lazy` for just recipe.</title><category>cli</category><category>justfile</category><pubDate>2026-11-02 08:22:12 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/casey/just#lazy"><code>Lazy</code> for just recipe.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -214,211 +489,6 @@
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Wednesday, June 3, 2026 05:02:54 PM ] <a href="https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/"><code>systemd</code> support is now available in WSL! - Windows Command Line</a></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 15:15:03 2026] <a href="https://lobste.rs/s/qwou15/mystery_60_second_fluctuations_power">Mystery of 60-Second Fluctuations in Power Grids Solved</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Avoid Public Functions Calling Other Public Functions</title><category>class</category><category>function</category><category>methodology</category><category>prog</category><pubDate>2026-11-01 03:13:42 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/k508we/avoid_public_functions_calling_other">Avoid Public Functions Calling Other Public Functions</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://matklad.github.io/2026/10/29/pub-calls-pub.html">in zotero</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>The Kluever Maneuver</title><category>git</category><category>prog</category><category>test/unit</category><category>workflow</category><pubDate>2026-11-01 03:12:56 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/rpiu3w/kluever_maneuver">The Kluever Maneuver</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`pyzotero` Python client for Zotero API</title><category>cli</category><category>document</category><category>gui</category><category>typesetting</category><pubDate>2026-11-01 02:47:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/urschrei/pyzotero"><code>pyzotero</code> Python client for Zotero API</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">r ins # uv tool install .[cli,mcp]
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.zotero.org/support/dev/web_api/v3/basics/#searches">Zotero Web API Documentation | Zotero Documentation</a>
-<ul>
-<li>so... only touch this if there are some functionality that is so intricate then.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`immich` self-hosted photo and video management solution.</title><category>backend</category><category>host/self</category><category>nas/media</category><pubDate>2026-11-01 02:22:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/immich-app/immich"><code>immich</code> self-hosted photo and video management solution.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://immich.app/docs/administration/storage-template/">Storage Template | Immich</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44831704">Cursed Knowledge</a>
-<ul>
-<li>#news <a href="https://news.ycombinator.com/item?id=45675015">Google flags Immich sites as dangerous</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#blog #discussion <a href="https://news.ycombinator.com/item?id=46794971">My ridiculously robust photo management system (Immich edition)</a></li>
-<li><code>stash</code> mentioned <a href="https://github.com/immich-app/immich/discussions/7786">Hash files to be able to repair path changes</a>
-<ul>
-<li>well... unrelated. it's just the topic of storing images.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/DataHoarder/comments/1v2gbfz">Stash good for amateur porn with no database? most of my collection is personal/amateur/friends.</a>
-<ul>
-<li>if so <code>stash</code> is obviously better than <code>immich</code>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>#blog <a href="https://jacobian.org/til/immich-setup/">My Immich Setup - Jacob Kaplan-Moss</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://forum.syncthing.net/t/synctrain-photos-sync-feature-with-immich-metadata-and-live-photos/24492/9">Synctrain photos sync feature with Immich: metadata and Live Photos - Support / iOS - Syncthing Community Forum</a>
-<ul>
-<li>so <code>syncthing</code> and <code>immich</code> is not meant to used together.</li>
-<li>Synology Photo is also conflicted with this.</li>
-<li><code>ente</code> which is cloud-hosted and <a href="https://github.com/photoprism/photoprism"><code>photoprism</code> AI-Powered Photos App 🌈💎✨</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 14:22:05 2026] <a href="https://github.com/immich-app/immich/discussions/7264"><code>immich</code> text based search, with LLM/AI context labeling</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>20 years. 766 million files. Two Chameleons. - The Zamzar Blog</title><category>adapter</category><category>convert</category><category>file</category><category>meta</category><category>misc</category><pubDate>2026-11-01 02:20:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/">20 years. 766 million files. Two Chameleons. - The Zamzar Blog</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> all kind of exoteric files can be usef through here to convert almost anything.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I thought it's using <code>pandoc</code> but its not.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50303984">Running a bootstrapped SaaS for 20 years with my brother</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Altoids</title><category>culture</category><category>food</category><category>misc</category><category>us</category><pubDate>2026-11-01 02:17:00 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Altoids">Altoids</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50321048">Altoids Project</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`ZeroFS`: 9P/NFS/NBD on top of S3.</title><category>backend</category><category>cloud/s3</category><category>filesystem</category><pubDate>2026-11-01 01:36:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Barre/ZeroFS"><code>ZeroFS</code>: 9P/NFS/NBD on top of S3.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #tui <a href="https://github.com/lusingander/stu"><code>stu</code> TUI explorer application for Amazon S3 (AWS S3) 🪣</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://wiki.archlinux.org/title/NFS">NFS - ArchWiki</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 13:36:05 2026] #android #backup <a href="https://github.com/He11PC/android-mirror">Multiprotocol backup application for Android (NFS, SMB, FTP, SFTP, WebDAV)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Gitea Mirror` syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</title><category>backup</category><category>cicd</category><category>code/forge</category><category>nas</category><category>wprog</category><pubDate>2026-11-01 01:35:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/RayLabsHQ/gitea-mirror"><code>Gitea Mirror</code> syncs GitHub repos to self-hosted Gitea/Forgejo, with a sleek Web UI and Docker deployment</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`udp2raw` Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</title><category>Tunnel</category><category>cli</category><category>netw</category><category>protocol/udp</category><category>tcp</category><pubDate>2026-11-01 01:05:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/wangyu-/udp2raw"><code>udp2raw</code> Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic using Raw Socket, Bypass UDP FireWalls(or Unstable UDP Environment)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://gist.github.com/zOrg1331/a2a7ffb3cfe3b3b821d45d6af00cb8f6">wireguard, wireguard layer 2, wireguard over TCP</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`json-rpc`</title><category>api</category><category>database</category><category>http</category><category>ipc</category><category>rpc</category><category>serialize</category><category>server</category><pubDate>2026-11-01 01:00:17 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/json-rpc.md"><code>json-rpc</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> For event based system, implement an in-process file watcher to watch a file, treat it as event database.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>For each event you want to invoke e.g. from <code>hx</code> editor, run recipes that add events into the databases.
-<ul>
-<li>It could be JSON or something <code>glaze</code> could take to invoke new event based on newly appended events there.</li>
-<li><code>glaze</code> also has a simple http server to take event from, so we dont have to implement file watcher,
-just reuse HTTP REST API to trigger event, more than enough.
-<ul>
-<li><code>justfile</code> recipes can <code>iwr</code> or <code>curl</code> or <code>xh</code> to the server. No file-based local dir thing.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stephenberry.github.io/glaze/rpc/jsonrpc-registry/">JSON-RPC 2.0 Registry - Glaze Documentation</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/stephenberry/glaze/blob/main/docs/rpc/repe-rpc.md"><code>repe-rpc</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> A customization things...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  1 13:46:00 2026] #ipc on my <code>vulkan-samples</code> is in <code>just rl</code></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Oct  8 18:06:06 2026] #cli <a href="https://github.com/sile/jlot"><code>jlot</code> JSON-RPC 2.0 over JSON Lines over TCP.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> my <a href="https://github.com/groutoutlook/jlot">fork</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 13:00:17 2026] <a href="https://hoop.dev/blog/what-json-rpc-zeromq-actually-does-and-when-to-use-it">What JSON-RPC ZeroMQ Actually Does and When to Use It</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</title><category>filesytem</category><category>protocol/ftp</category><category>sysadmin</category><category>wprog</category><pubDate>2026-11-01 12:53:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://winscp.net/eng/docs/guide_windows_openssh_server">Installing SFTP/SSH Server on Windows using OpenSSH :: WinSCP</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> which is another borderline insane shit to do.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: well supported since based on <code>ssh</code></li>
-<li>Con: old, many other utils. just use WebDAV instead.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
