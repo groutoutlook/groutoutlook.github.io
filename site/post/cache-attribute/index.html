@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: cache]&#x60; attribute</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title" title="cache]&#x60; attribute">cache]&#x60; attribute</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2026-11-03 09:21:27 AM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag"><a class="til-tag parent-tag" href="/category/cli"><span>#cli</span></a></li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/cache">
+                        <span>cache</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/filesystem">
+                        <span>filesystem</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/justfile">
+                        <span>justfile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/casey/just#cached-recipes"><code>just</code> cached recipe / <code>[cache]</code> attribute</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta qualified-name python"><span class="support type python">set</span></span> <span class="meta qualified-name python"><span class="meta generic-name python">unstable</span></span>
+
+<span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta qualified-name python"><span class="meta generic-name python">script</span></span><span class="punctuation section list end python">]</span></span>
+<span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="variable function python">cache</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="variable parameter python">inputs</span> <span class="keyword operator assignment python">=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">image.png<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span> <span class="variable parameter python">outputs</span> <span class="keyword operator assignment python">=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">image.jpg<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span> <span class="variable parameter python">extra</span> <span class="keyword operator assignment python">=</span> `<span class="meta qualified-name python"><span class="meta generic-name python">convert</span></span> <span class="keyword operator arithmetic python">-</span><span class="meta qualified-name python"><span class="meta generic-name python">version</span></span>`</span><span class="punctuation section arguments end python">)</span></span><span class="punctuation section list end python">]</span></span>
+<span class="meta qualified-name python"><span class="meta generic-name python">gen</span></span> <span class="keyword operator logical python">in</span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">image.png<span class="punctuation definition string end python">&#39;</span></span></span> <span class="meta qualified-name python"><span class="meta generic-name python">out</span></span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">image.jpg<span class="punctuation definition string end python">&#39;</span></span></span><span class="punctuation separator annotation variable python">:</span>
+  <span class="meta qualified-name python"><span class="meta generic-name python">convert</span></span> <span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="keyword operator logical python">in</span><span class="punctuation section dictionary-or-set end python">}</span></span><span class="punctuation section dictionary-or-set end python">}</span></span> <span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta qualified-name python"><span class="meta generic-name python">out</span></span><span class="punctuation section dictionary-or-set end python">}</span></span><span class="punctuation section dictionary-or-set end python">}</span></span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> all those quote here are being acted as parameter for the <code>cache</code> attribute.
+<ul>
+<li>All keys other than <code>extra</code> and <code>inputs</code> are populated automatically.
+<ul>
+<li><code>body</code>: evaluated recipe body</li>
+<li><code>environment</code>: map of environment variable names to values</li>
+<li><code>executor</code>: script interpreter or shebang</li>
+<li><code>extension</code>: script file extension</li>
+<li><code>extra</code>: user-supplied value</li>
+<li><code>inputs</code>: map of file paths to content hashes</li>
+<li><code>positional</code>: positional arguments</li>
+<li><code>recipe</code>: ::-separated module path to invoked recipe</li>
+<li><code>working_directory</code>: current working directory</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>Cache key objects for invoked recipes can be printed to standard error with <code>just -vv</code>.
+Environment variables included in environment may be controlled with <code>[cache(environment = EXPRESSION)]</code>
+Value of <code>extras</code> may be supplied with <code>[cache(extra = EXPRESSION)]</code>,
+<ul>
+<li>where <code>EXPRESSION</code> is an arbitrary expression evaluated with recipe arguments in scope.
+Changes to the value of extra will cause a cache miss.
+Before <code>just</code> run a cached recipe, it creates a cache key, hashes it, looks for corresponding cache entry
+If cache entry is non-empty and outputs in cache entry match their current state, it skips invocation.</li>
+<li>Otherwise it runs the invocation and writes a JSON object with following keys:</li>
+<li><code>outputs</code>: map of output path to state</li>
+<li><code>recipe</code>: recipe path</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>

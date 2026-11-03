@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Linux System Call Tables by Architecture · syscall.sh</title><category>arch</category><category>linux</category><category>windows</category><pubDate>2026-11-02 08:07:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>PAN1080 Development Kit 文档中心 — PAN1080 DK Documentation</title><category>ble</category><category>mcu</category><pubDate>2026-11-03 01:33:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://docs.panchip.com/pan1080dk-doc/latest/index.html">PAN1080 Development Kit 文档中心 — PAN1080 DK Documentation</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> this can be burned thru EasyFlasher offline probe.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=996880979263">PANCHIP PAN108X Module BLE 5.1 Bluetooth/Development Board/Beta/Evaluation Board</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://oshwhub.com/hym1234/project_nlliyagc">PAN211-SOP8-V1.0 - 立创开源硬件平台</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 13:33:59 2026] <a href="https://item.taobao.com/item.htm?id=994594640849">Panqi Micro PAN2110/PAN2160/development kits, development boards, modules - Taobao</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Questions about EOF and EOL</title><category>acronym</category><category>ascii</category><category>file</category><category>filesystem</category><category>programming</category><pubDate>2026-11-03 01:07:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/6817441/questions-about-eof-and-eol">Questions about EOF and EOL</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CAN to UART bridge (Rev. A) - slaaej2a.pdf</title><category>adapter</category><category>can</category><category>hardware</category><category>proto</category><category>uart</category><pubDate>2026-11-03 12:47:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.ti.com/lit/sd/slaaej2a/slaaej2a.pdf">CAN to UART bridge (Rev. A) - slaaej2a.pdf</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> just discover I still can use USART2 in FT32Fxxx board to work with things.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>JTAG Daisy Chain</title><category>proto</category><category>protocol/jtag</category><category>swd</category><pubDate>2026-11-03 10:49:22 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/JTAG#Electrical_characteristics">JTAG Daisy Chain</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> fwiw, JTAG require <strong>4 pins</strong> while SWD only <strong>2 pins</strong>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/53571/jtag-vs-swd-debugging/292850#292850">JTAG vs SWD debugging</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>but we do have a cJTAG
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://weekly-geekly.imtqy.com/articles/237885/index.html">We understand the protocol 2-wire JTAG</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kuopinghsu/cjtag">Verilog implementations of <code>cjtag</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/8sPThJ9zzUdxQOpoThfe0g">Don't just use SWD and JTAG! Teach you how to play with two-wire CJTAG with CMSIS-DAP</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#usb <a href="https://electronics.stackexchange.com/questions/157160/high-speed-data-from-microcontrollers-to-pc-using-daisy-chain">High speed data from microcontrollers to pc using daisy chain</a></li>
+<li>#i2c <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/616909/pca9518-daisy-chaining-of-i2c-or-other-hubs-for-multiple-point---to---point-connections-creating-a-large-tree-network">PCA9518: Daisy chaining of I2C (or other) hubs for multiple point - to - point connections creating a large tree network - Interface forum - Interface - TI E2E support forums</a></li>
+<li>#spi <a href="https://www.analog.com/en/resources/technical-articles/2022/07/16/09/49/daisychaining-spi-devices.html">Daisy-Chaining SPI Devices | Analog Devices</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:58:44 2026] #network #ethercat <a href="https://www.reddit.com/r/PLC/comments/1j8ebgr">etherCAT daisychaining plugged into same switch as Modbus TCP/IP devices</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/587818/can-a-ring-of-ethercat-devices-be-connected-to-two-ports-of-an-existing-ethernet">digital communications - Can a ring of etherCAT devices be connected to two ports of an existing Ethernet/IP switch?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 10:49:22 2026] <a href="https://electronics.stackexchange.com/questions/506068/can-bus-daisy-chaining-nodes/506083#506083">CAN Bus Daisy chaining nodes</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>List of automation protocols</title><category>CAN</category><category>ethercat</category><category>meta</category><category>proto</category><pubDate>2026-11-03 10:40:37 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/List_of_automation_protocols">List of automation protocols</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> worth an entry no?</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>cache]` attribute</title><category>cache</category><category>cli</category><category>filesystem</category><category>justfile</category><pubDate>2026-11-03 09:21:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/casey/just#cached-recipes"><code>just</code> cached recipe / <code>[cache]</code> attribute</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta qualified-name python"><span class="support type python">set</span></span> <span class="meta qualified-name python"><span class="meta generic-name python">unstable</span></span>
+
+<span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta qualified-name python"><span class="meta generic-name python">script</span></span><span class="punctuation section list end python">]</span></span>
+<span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="variable function python">cache</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="variable parameter python">inputs</span> <span class="keyword operator assignment python">=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">image.png<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span> <span class="variable parameter python">outputs</span> <span class="keyword operator assignment python">=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">image.jpg<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span> <span class="variable parameter python">extra</span> <span class="keyword operator assignment python">=</span> `<span class="meta qualified-name python"><span class="meta generic-name python">convert</span></span> <span class="keyword operator arithmetic python">-</span><span class="meta qualified-name python"><span class="meta generic-name python">version</span></span>`</span><span class="punctuation section arguments end python">)</span></span><span class="punctuation section list end python">]</span></span>
+<span class="meta qualified-name python"><span class="meta generic-name python">gen</span></span> <span class="keyword operator logical python">in</span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">image.png<span class="punctuation definition string end python">&#39;</span></span></span> <span class="meta qualified-name python"><span class="meta generic-name python">out</span></span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">image.jpg<span class="punctuation definition string end python">&#39;</span></span></span><span class="punctuation separator annotation variable python">:</span>
+  <span class="meta qualified-name python"><span class="meta generic-name python">convert</span></span> <span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="keyword operator logical python">in</span><span class="punctuation section dictionary-or-set end python">}</span></span><span class="punctuation section dictionary-or-set end python">}</span></span> <span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta qualified-name python"><span class="meta generic-name python">out</span></span><span class="punctuation section dictionary-or-set end python">}</span></span><span class="punctuation section dictionary-or-set end python">}</span></span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> all those quote here are being acted as parameter for the <code>cache</code> attribute.
+<ul>
+<li>All keys other than <code>extra</code> and <code>inputs</code> are populated automatically.
+<ul>
+<li><code>body</code>: evaluated recipe body</li>
+<li><code>environment</code>: map of environment variable names to values</li>
+<li><code>executor</code>: script interpreter or shebang</li>
+<li><code>extension</code>: script file extension</li>
+<li><code>extra</code>: user-supplied value</li>
+<li><code>inputs</code>: map of file paths to content hashes</li>
+<li><code>positional</code>: positional arguments</li>
+<li><code>recipe</code>: ::-separated module path to invoked recipe</li>
+<li><code>working_directory</code>: current working directory</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>Cache key objects for invoked recipes can be printed to standard error with <code>just -vv</code>.
+Environment variables included in environment may be controlled with <code>[cache(environment = EXPRESSION)]</code>
+Value of <code>extras</code> may be supplied with <code>[cache(extra = EXPRESSION)]</code>,
+<ul>
+<li>where <code>EXPRESSION</code> is an arbitrary expression evaluated with recipe arguments in scope.
+Changes to the value of extra will cause a cache miss.
+Before <code>just</code> run a cached recipe, it creates a cache key, hashes it, looks for corresponding cache entry
+If cache entry is non-empty and outputs in cache entry match their current state, it skips invocation.</li>
+<li>Otherwise it runs the invocation and writes a JSON object with following keys:</li>
+<li><code>outputs</code>: map of output path to state</li>
+<li><code>recipe</code>: recipe path</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Linux System Call Tables by Architecture · syscall.sh</title><category>arch</category><category>linux</category><category>windows</category><pubDate>2026-11-02 08:07:20 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://syscall.sh/">Linux System Call Tables by Architecture · syscall.sh</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -363,132 +505,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 23:43:25 2026] <a href="https://github.com/jssmith/zellij-over-tailscale"><code>zellij-over-tailscale</code> Set up zillij to work over tailscale</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>keyboard - Need table of key codes for android and presenter</title><category>adb</category><category>android</category><category>windows</category><pubDate>2026-11-01 10:00:12 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/11768356/need-table-of-key-codes-for-android-and-presenter">keyboard - Need table of key codes for android and presenter</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>KEYCODE_POWER</code> to turn off screen/phones on <code>adb</code>. That's faster on most situations.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell input keyevent KEYCODE_POWER</span>
-<span class="meta function-call shell"><span class="variable function shell">adb</span></span><span class="meta function-call arguments shell"> shell svc wifi enable </span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://stackoverflow.com/questions/10033757/how-to-turn-off-wifi-via-adb/62222926#62222926">android - How to turn off Wifi via ADB?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I need to enable hotspot and connect to my phone's wifi without touching phones.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#adb <a href="https://stackoverflow.com/questions/12251101/how-to-enable-adbd-to-listen-to-a-port-at-boot-time-in-android/34219466#34219466">adb - How to enable adbd to listen to a port at boot time in Android?</a>
-<ul>
-<li><code>adb shell setprop service.adb.tcp.port 5555</code></li>
-</ul>
-</li>
-<li>#hotspot #wlan : <a href="https://android.stackexchange.com/questions/173709/how-to-turn-on-the-wi-fi-hotspot-using-adb/173778#173778">How to turn on the Wi-Fi hotspot using ADB?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 22:00:12 2026] <a href="https://stackoverflow.com/questions/3512198/need-command-line-to-start-web-browser-using-adb/48788196#48788196"><code>adb</code> start web browser</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is KEYCODE_EXPLORER | <code>64</code>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Norway makes shithouses great again</title><category>norway</category><category>public</category><category>society</category><pubDate>2026-11-01 09:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50324388">Norway makes shithouses great again</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`zotero-connectors` Chrome, Firefox, Edge, and Safari extensions for Zotero</title><category>browser</category><category>plugin</category><category>software</category><category>web</category><pubDate>2026-11-01 04:18:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/zotero/zotero-connectors"><code>zotero-connectors</code> Chrome, Firefox, Edge, and Safari extensions for Zotero</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you have to keep zotero desktop running for this. I wish it has a tray icon mode but no, nothing like that yet.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->  #keybinding <code>alt+z</code> to archive one to zotero. if zotero is not running, <code>Esc</code> to escape the annoying save online.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #http <a href="https://www.zotero.org/support/dev/client_coding/http_integration_protocol">HTTP Citing Protocol | Zotero Documentation</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://tech-notes.maxmasnick.com/zotero-quickly-get-links-to-library-items-using-zotero-slash-slash-url-scheme-links">Zotero: quickly get links to library items using <code>zotero://</code> url scheme links - Technical Notes</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`scp` OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</title><category>cli</category><category>linux</category><category>networking</category><category>ssh</category><pubDate>2026-11-01 04:11:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.mankier.com/1/scp"><code>scp</code> OpenSSH secure file copy | Man Page | Commands | openssh-clients | ManKier</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scp -P8022 .\sftpgo.log golk@mainphone:~ # quite simple..
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`dufs` file server for static serving, uploading, searching, accessing control, webdav...</title><category>backend</category><category>nas</category><category>webdav/root</category><pubDate>2026-11-01 03:42:25 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/sigoden/dufs"><code>dufs</code> file server for static serving, uploading, searching, accessing control, webdav...</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to <code>copyparty</code> and <code>miniserve</code>. Another contender to use with <code>iroh</code>.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> #api/rest: <a href="https://github.com/sigoden/dufs#api">all API for <code>curl</code> client</a>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">dufs</span></span><span class="meta function-call arguments shell"> .<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>A <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> `miniserve` a dir + allow upload/delete/search/create/edit..</span><span class="comment line number-sign shell">
-</span></span></span></span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #introduction <a href="https://http.dev/webdav">WebDAV explained</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #host/self <a href="https://github.com/thecoshman/http"><code>http</code>: Host These Things Please - a basic http server for hosting a folder fast and simply</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #router <a href="https://github.com/zouzonghao/luci-app-dufs">OpenWrt <code>dufs</code> 文件服务器</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/51366101/git-remote-https-is-not-a-git-command/69520407#69520407"><code>git</code> 'remote-https' is not a git command - <code>opkg install git git-http</code></a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/rustfs/rustfs"><code>rustfs</code> S3-compatible object storage system.</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> this used <code>dav-server-rs</code> for WebDAV . Also, MinIO.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 15:42:25 2026] <a href="https://www.reddit.com/r/selfhosted/comments/1oyadlv">WebDAV server</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>properly install a systemd timer and service?</title><category>linux</category><category>schedule</category><category>systemd</category><category>windows</category><pubDate>2026-11-01 03:15:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://askubuntu.com/questions/1083537/how-do-i-properly-install-a-systemd-timer-and-service">properly install a systemd timer and service?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about <code>.timer</code> and <code>.service</code>.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://git.0x0.st/mia/0x0"><code>0x0</code>: No-bullshit file hosting and URL shortening service - git.0x0.st</a>
-<ul>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2026-01-05 10:34:06] maybe better than any kind of <code>sendme</code> or <code>croc</code> since it's persistent.</li>
-<li>#networking: FPT and VNPT is banned due to so many bad actors.. Fuck vietnamese ruin my web experience.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html"><code>systemd.service</code></a></li>
-<li><a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html"><code>systemd.timer</code></a>
-<ul>
-<li>#nixos #daemon/systemd <a href="https://lobste.rs/s/9vt4ng/you_don_t_love_systemd_timers_enough">You Don't Love systemd Timers Enough</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Wednesday, June 3, 2026 05:02:54 PM ] <a href="https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/"><code>systemd</code> support is now available in WSL! - Windows Command Line</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  1 15:15:03 2026] <a href="https://lobste.rs/s/qwou15/mystery_60_second_fluctuations_power">Mystery of 60-Second Fluctuations in Power Grids Solved</a></li>
 </ul>
 </li>
 </ul>

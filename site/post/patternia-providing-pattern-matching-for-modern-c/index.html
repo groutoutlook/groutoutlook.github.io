@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TIL: patternia: Providing pattern matching for modern C++.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/syntect.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+        <nav class="top-links" aria-label="Site navigation">
+            <a class="top-link" href="/">All TILs</a>
+            <label class="theme-toggle">
+                <input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')">
+                <span>Dark mode</span>
+            </label>
+        </nav>
+
+        <header class="til-header">
+            <h1 class="til-title" title="patternia: Providing pattern matching for modern C++.">patternia: Providing pattern matching for modern C++.</h1>
+        </header>
+
+        <div class="til-subheader">
+            <span class="til-date">2024-12-01 04:48:16 PM</span>
+            <ul class="topic-list">
+                <li class="topic-list-tag"><a class="til-tag parent-tag" href="/category/lang"><span>#lang</span></a></li>
+                <li class="topic-list-tag">
+                    <a class="til-tag master-tag" href="/category/cpp">
+                        <span>cpp</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag master-tag" href="/category/library">
+                        <span>library</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/metaprogramming">
+                        <span>metaprogramming</span>
+                    </a>
+                </li>
+                <li class="topic-list-tag">
+                    <a class="til-tag" href="/category/pattern">
+                        <span>pattern</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="til-content">
+            <ul>
+<li><a href="https://github.com/sentomk/patternia">patternia: Providing pattern matching for modern C++.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage modifier c++">const</span> <span class="storage type c">char</span> <span class="keyword operator c++">*</span><span class="meta function c++"><span class="entity name function c++">bucket</span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function parameters c++"><span class="meta group c++"><span class="storage type c">int</span> <span class="variable parameter c++">x</span><span class="punctuation section group end c++">)</span></span></span><span class="meta function c++"> </span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block begin c++">{</span></span></span><span class="meta function c++"><span class="meta block c++">
+  <span class="keyword control c++">return</span> <span class="meta function-call c++"><span class="variable function c++">match</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">x</span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span> <span class="keyword operator arithmetic c">|</span> <span class="meta function-call c++"><span class="variable function c++">on</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++">
+    <span class="meta function-call c++"><span class="variable function c++">lit</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="constant numeric c++">0</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span>    <span class="keyword operator arithmetic c">&gt;&gt;</span> <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>zero<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span>
+    $<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>_ <span class="keyword operator comparison c">&lt;</span> <span class="constant numeric c++">0</span><span class="punctuation section brackets end c++">]</span></span>  <span class="keyword operator arithmetic c">&gt;&gt;</span> <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>negative<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span>   <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> `_` is the bound value inside a guard
+</span>    $<span class="meta brackets c++"><span class="punctuation section brackets begin c++">[</span>_ <span class="keyword operator comparison c">&lt;</span> <span class="constant numeric c++">10</span><span class="punctuation section brackets end c++">]</span></span> <span class="keyword operator arithmetic c">&gt;&gt;</span> <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>small<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation separator c++">,</span>
+    _         <span class="keyword operator arithmetic c">&gt;&gt;</span> <span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>large<span class="punctuation definition string end c">&quot;</span></span>
+  </span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation terminator c++">;</span>
+</span></span><span class="meta function c++"><span class="meta block c++"><span class="punctuation section block end c++">}</span></span></span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>Pattern matching as from <code>mpark/patterns</code> will happen in c++26 onward. Although, not sure now.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/cplusplus/papers/issues/1353">P2688 R3 Pattern Matching: <code>match</code> Expression · Issue #1353 · cplusplus/papers</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <hr>
+    </body>
+</html>
