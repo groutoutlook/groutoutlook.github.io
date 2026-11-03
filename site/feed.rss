@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>The Heat Death Company</title><category>service</category><category>web</category><pubDate>2026-11-03 07:42:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-03 10:09:16 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.ti.com/product/TCAN332">TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The Heat Death Company</title><category>service</category><category>web</category><pubDate>2026-11-03 07:42:41 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://theheatdeathcompany.com/">The Heat Death Company</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> post apocalypse vibe, those guys. Kinda like the Forth based computer.</li>
@@ -445,18 +457,6 @@ Wireless_Device_Password=owrt2120aA
 <li><code>Alt+F3</code> now quick paste menu. Also map <code>kanata</code> so <code>kpenter+kp3</code>== instant <code>lalt+f3</code></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>I built a forum with no interface, no passwords, made for the terminal | Andros Fenollosa</title><category>blog</category><category>forum</category><category>swt</category><pubDate>2026-11-02 06:51:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://en.andros.dev/blog/b5c8c6aa/i-built-a-forum-with-no-interface-no-passwords-made-for-the-terminal/">I built a forum with no interface, no passwords, made for the terminal | Andros Fenollosa</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
