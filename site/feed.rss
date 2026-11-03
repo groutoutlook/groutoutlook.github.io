@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`patterns` pattern matching as P2688R7(C++29) for c++17, single header</title><category>api</category><category>comparison</category><category>compiler</category><category>cpp</category><category>pattern</category><category>string</category><pubDate>2026-11-03 02:40:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>The Heat Death Company</title><category>service</category><category>web</category><pubDate>2026-11-03 07:42:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://theheatdeathcompany.com/">The Heat Death Company</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> post apocalypse vibe, those guys. Kinda like the Forth based computer.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`ASCIIFlow`</title><category>csci</category><category>format/uml</category><category>visual/graph</category><pubDate>2026-11-03 07:34:37 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/lewish/asciiflow"><code>ASCIIFlow</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Microsoft Visio - <a href="https://app.diagrams.net/">draw.io</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #template : <a href="https://github.com/bhdicaire/visioStencils"><code>visioStencils</code> 4,450 visio shapes, stencils, symbols, and icons collection to visually represent your IT infrastructure</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:26:37 2026] so dead now.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 19:34:37 2026] <a href="https://github.com/reladraw/reladraw"><code>reladraw</code> text diagram language where you say where things go</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>There are something super weird now that meddle with &quot;Network &amp; Internet&quot; &gt; &quot;Proxy&quot; .</title><category>network</category><category>proxy</category><category>windows</category><pubDate>2026-11-03 04:16:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>There are something super weird now that meddle with &quot;Network &amp; Internet&quot; &gt; &quot;Proxy&quot; .
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like some script make things acting wrong or so. go there and turn off &quot;Use a proxy server&quot;.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I think that happened after I update <code>tailscale</code>. Somehow.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Square triangular number</title><category>numeric</category><category>shape</category><pubDate>2026-11-03 03:14:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Square_triangular_number">Square triangular number</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Triangular_number">Triangular number</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Catalan%27s_conjecture">Catalan's conjecture</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/Prime_power">Prime power</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>2-in-1 laptop</title><category>laptop</category><category>other</category><category>til</category><pubDate>2026-11-03 03:12:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/2-in-1_laptop">2-in-1 laptop</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 2-in-1 means it can be tablets and laptops/notebooks at the same time.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> tabtop.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/laptops/comments/1u286ck">Any 2 in 1s with lpcamm?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 15:12:10 2026] #macos <a href="https://news.ycombinator.com/item?id=50276940">MacBook Pro with PROLED XDR Display and Touch</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`patterns` pattern matching as P2688R7(C++29) for c++17, single header</title><category>api</category><category>comparison</category><category>compiler</category><category>cpp</category><category>pattern</category><category>string</category><pubDate>2026-11-03 02:40:06 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/mpark/patterns"><code>patterns</code> pattern matching as P2688R7(C++29) for c++17, single header</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -123,7 +193,7 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> just discover I still can use USART2 in FT32Fxxx board to work with things.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/32241/is-mcp2551-a-uart-to-can-converter">MCP2551 UART-to-CAN converter?</a></li>
 </ul>
 </li>
 </ul>
@@ -387,119 +457,6 @@ Wireless_Device_Password=owrt2120aA
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`PeerTube` ActivityPub-federated video streaming platform using P2P directly in your web browser</title><category>backend</category><category>browser</category><category>frontend</category><category>media</category><category>nas</category><category>self/host</category><category>software</category><category>tunnel/p2p</category><category>video</category><pubDate>2026-11-02 03:33:21 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Chocobozzz/PeerTube"><code>PeerTube</code> ActivityPub-federated video streaming platform using P2P directly in your web browser</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> some people use this to interact with videos/medias files in NAS.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://docs.joinpeertube.org/maintain/tools#remote-peertube-cli">CLI tools guide | PeerTube documentation</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/selfhosted/comments/1l6epmz"><code>Stash</code> service for non adult videos</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #media #player<a href="https://github.com/wwww-wwww/grasstube"><code>grasstube</code> Multi channel synchronized player created with Phoenix/Elixir</a>
-<ul>
-<li><a href="https://github.com/owncast/owncast"><code>owncast</code>: Take control over your live stream video by running it yourself. Streaming + chat out of the box.</a>
-<ul>
-<li>also integrate AcitvityPub.</li>
-</ul>
-</li>
-<li>#blog : <a href="https://github.com/mariusor/brutalinks"><code>brutalinks</code> URL aggregator inspired by (old)reddit using ActivityPub</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/mediacms-io/mediacms"><code>MediaCMS</code> modern FOSS video and media CMS, written in Python/Django and React, featuring a REST API</a>
-<ul>
-<li>quite active again lately</li>
-<li><a href="https://github.com/Materialious/Materialious"><code>Materialious</code> material design frontend for YouTube &amp; Invidious</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49842764"><code>PipePipe</code>: <code>NewPipe</code> hard fork implementing SponsorBlock</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Jun 23 14:48:08 2026] <a href="https://codeberg.org/ForgeFed">ForgeFed - Codeberg.org</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/pifl3k/one_year_with_codeberg">One year with Codeberg</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 15:33:21 2026] <a href="https://exquisite.tube/videos/browse">Recently added - Exquisite.tube</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #filesystem #linux <a href="https://exquisite.tube/w/3QQimMdswWJxrsPaJtak2u">Ori Bernstein - GEFS: The File Shredder of the Future. - Exquisite.tube</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Lenovo Freestyle</title><category>hardware</category><category>monitor</category><category>soft</category><pubDate>2026-11-02 03:21:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.lenovo.com/us/en/software/lenovo-freestyle">Lenovo Freestyle</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/androidtablets/comments/1lh0yb2">Android tablet as second monitor without installing apps on laptop?</a>
-<ul>
-<li>one of those are Samsung Tablet S8 and above.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> no OPPO tablet have that. Xiaomi partly support it.
-<ul>
-<li><a href="https://mi-home.pl/en/blogs/porady-tutoriale/jak-uzywac-xiaomi-pad-jako-dodatkowy-monitor-krok-po-kroku">How to use the Xiaomi Pad as a secondary monitor? Step by step – Mi-Home.pl</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 15:21:32 2026] #infosec <a href="https://news.ycombinator.com/item?id=50326099">Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>RS422 to uart interfacing</title><category>differential</category><category>interface</category><category>proto</category><category>uart</category><pubDate>2026-11-02 02:29:36 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://electronics.stackexchange.com/questions/197708/rs422-to-uart-interfacing">RS422 to uart interfacing</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>MM32SPIN0260-0280</title><category>bldc</category><category>mcu</category><category>motor</category><pubDate>2026-11-02 02:16:28 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.mindmotion.com.cn/products/mm32mcu/mm32spin/mm32spin_specific_mcu/mm32spin0260/">MM32SPIN0260-0280</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 96MHz , 2.5-5.5V, have I2S. have 4 OPAMP. but no USB nor less RAM than FT32F072KB.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> both of them Have MCO tho.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`ESPectre` Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</title><category>esp32</category><category>hard</category><category>sensor</category><pubDate>2026-11-02 01:53:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/francescopace/espectre"><code>ESPectre</code> Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> PIR sensor is equal with trash. it's dirt cheap and being used in PIR LED module all the time tho.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> there are some interesting #cicd stuff inside here,
-as using QEMU to smoke test firmware of ESP32.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.xda-developers.com/i-built-multimodal-esp32-powered-presence-sensor/">I built a ghost-proof ESP32-powered presence sensor and here’s how it works</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/homeassistant/comments/1tnuxsu">PIR vs Presence Sensor for dual zone Hallway &amp; Stairwell</a>
-<ul>
-<li>#blog <a href="https://mp.weixin.qq.com/s/nVOa6ilwAPsRsxPznSO_xA">HC-SR501 Human Infrared Sensor</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> ToF sensor, LiDAR, various of optical based sensors.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 13:53:38 2026] #re <a href="https://mp.weixin.qq.com/s/azo8R_3Sea2JxZwg8QizmQ">interior of the infrared sensor (human detection) ground light</a></li>
 </ul>
 </li>
 </ul>
