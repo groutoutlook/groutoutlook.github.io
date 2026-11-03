@@ -1,11 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-03 10:09:16 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>CAN, LIN, RS485 over DC powerline - Embedded 2020</title><category>can</category><category>lin</category><category>powerline</category><category>proto</category><pubDate>2026-11-03 10:13:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="">CAN, LIN, RS485 over DC powerline - Embedded 2020</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://yamar.com/articles/AN%20-%20Using%20DC-LIN%20as%20redundancy%20of%20LIN%20BUS.pdf">AN - Using DC-LIN as redundancy of LIN</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://yamar.com/datasheet/DS-Powerline-Attenuator.pdf">DC-Powerline Attenuator</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 22:13:50 2026] #taobao <a href="https://item.taobao.com/item.htm?id=841670429007">LIN bus development board/LIN to CAN/TJA1021 module/STM32 development board/automotive bus/monitoring—Taobao</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-03 10:09:16 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.ti.com/product/TCAN332">TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a>
+<ul>
+<li>#alternative <a href="https://www.ti.com/product/TCAN3413">TCAN3413 3.3-V CAN FD transceiver with flexible IO and standby mode </a></li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a></li>
 </ul>
 </li>
@@ -408,53 +429,6 @@ Wireless_Device_Password=owrt2120aA
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 19:38:21 2026] #gui #cli <a href="https://github.com/WeActStudio/WeActStudio.DAPFlasher">DAP-Link Flasher for Windows</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> can take as many chip. as those above. try <code>dapc</code>/<code>dapg</code> since I #nightly them.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>you can enter mark mode `Ctrl+shift+m` and select words.</title><category>highlight</category><category>soft</category><category>terminal</category><category>visual</category><category>windows</category><pubDate>2026-11-02 06:59:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>you can enter mark mode <code>Ctrl+shift+m</code> and select words.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->
-<ul>
-<li><code>Ctrl+1,2,3...</code> to highlight words with background colors.</li>
-<li><code>Alt+1,2,3...</code> highlight using foreground. It will overwrite the background color to transparent/black.
-<ul>
-<li>there are also all matches options with <code>Alt+shift+1,2,3...</code>
-<ul>
-<li>That will change foreground of all existed instance.
-<ul>
-<li>not regex, but case insensitive. try &quot;that&quot;.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> [Sat Aug  1 15:05:04 2026] since osc8 is so convenient now.<code>ctrl+m</code> toggle my mark mode.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> as long as you dont clear-host, it will retain your text background.
-<ul>
-<li>Very useful when you want to highlight or mark something in stdout.</li>
-<li>Tricks for all matches foreground:
-<ul>
-<li>You can  type the word in the shell prompt and highlight...
-<ul>
-<li>That will be faster than switch to mark mode and highlight at its place..</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> best features ever seen.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 18:59:41 2026] <code>qcclip</code> makes me changes the quick paste - <code>Ctrl+Alt+1,2,3...</code>.
-<ul>
-<li><code>Alt+F3</code> now quick paste menu. Also map <code>kanata</code> so <code>kpenter+kp3</code>== instant <code>lalt+f3</code></li>
 </ul>
 </li>
 </ul>
