@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>TIL: partial_write with glaze</title>
+        <title>TIL: &#x60;partial_write&#x60; with glaze</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/syntect.css">
         <link rel="stylesheet" href="/style.css">
@@ -17,7 +17,7 @@
         </nav>
 
         <header class="til-header">
-            <h1 class="til-title" title="partial_write with glaze">partial_write with glaze</h1>
+            <h1 class="til-title" title="&#x60;partial_write&#x60; with glaze"><code>partial_write</code> with glaze</h1>
         </header>
 
         <div class="til-subheader">
@@ -46,10 +46,13 @@
 
         <div class="til-content">
             <ul>
-<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/partial-write.md">partial_write with glaze</a>
+<li><a href="https://github.com/stephenberry/glaze/blob/main/docs/partial-write.md"><code>partial_write</code> with glaze</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> parsing a string to modify the state of objects in runtime.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> See <code>vulkan_samples</code> I used that to iterate through runtime JSON fields.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> See <code>vulkan_samples</code> I used that to iterate through runtime JSON fields.
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="storage type c">auto</span> view <span class="keyword operator assignment c">=</span> glz<span class="punctuation accessor c++">::</span>get_sv_json<span class="punctuation section generic begin c++">&lt;</span><span class="string quoted double c"><span class="punctuation definition string begin c">&quot;</span>/obj/x<span class="punctuation definition string end c">&quot;</span></span><span class="punctuation section generic end c++">&gt;</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span>s <span class="keyword operator assignment c">=</span> <span class="meta function-call c++"><span class="variable function c++">std<span class="punctuation accessor c++">::</span></span><span class="variable function c++">string</span><span class="meta group c++"><span class="punctuation section group begin c++">(</span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="string quoted double c++"><span class="storage type string c++">R</span><span class="punctuation definition string begin c++">&quot;(</span>{&quot;obj&quot;:{&quot;x&quot;:5.5}}<span class="punctuation definition string end c++">)&quot;</span></span></span></span><span class="meta function-call c++"><span class="meta group c++"><span class="punctuation section group end c++">)</span></span></span><span class="punctuation section group end c++">)</span></span><span class="punctuation terminator c++">;</span>
+</span></code></pre>
+</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Actually it's <a href="https://github.com/stephenberry/glaze/blob/main/docs/json-pointer-syntax.md">JSON Pointer syntax</a>
 <ul>
 <li>using setter getter here.</li>

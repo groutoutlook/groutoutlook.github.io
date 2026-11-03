@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Overview of ChirpIoT™ Spread Spectrum Technology_Industry dynamics_Blog_</title><category>proto</category><category>wireless</category><pubDate>2026-11-03 01:35:45 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`patterns` pattern matching as P2688R7(C++29) for c++17, single header</title><category>api</category><category>comparison</category><category>compiler</category><category>cpp</category><category>pattern</category><category>string</category><pubDate>2026-11-03 02:40:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/mpark/patterns"><code>patterns</code> pattern matching as P2688R7(C++29) for c++17, single header</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>match(expression)(pattern(&lt;pattern&gt;) = &lt;lambda&gt;,...);</code>
+<ul>
+<li>Expression Pattern: matching some condition range, or null or placeholders, in the style of case as tuples.</li>
+<li>Arg Pattern: <code>arg</code> : match <code>any</code>, but also bind args to lambda during pattern declaration.</li>
+<li>Wildcard: <code>_</code> : match <code>any</code>, but <code>move</code> values from arg to the lambda.</li>
+<li>Identifier: work by names, matching by comparing with pattern name.</li>
+<li>Destructure: <code>ds(&lt;pattern&gt;,...)</code> it's like matching a tuple by structured binding.</li>
+<li>Optional: <code>some(&lt;pattern&gt;)</code> | <code>none</code> : to match optional or pointer, any of which can be deref.</li>
+<li>As: <code>as&lt;typename&gt;(&lt;pattern&gt;)</code> : this could mainly be used to match the typename itself.</li>
+<li>Visit: <code>vis(&lt;pattern&gt;)</code></li>
+<li>Alternation: <code>anyof(&lt;pattern&gt;)</code></li>
+<li>Variadic: <code>variadic(&lt;pattern&gt;)</code> : which can only be used along with the variadic lambda.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> more expressive code, not necessary faster though.
+<ul>
+<li>Some clauses to help on match:
+<ul>
+<li><code>WHEN(boolean expression)</code> will help better on negating unwanted match(es).</li>
+</ul>
+</li>
+<li>Pattern statements:
+<ul>
+<li><code>if_let</code> match  one pattern, other execution paths left uncalculated.</li>
+<li><code>for_let</code> match one pattern, and loop over ranges.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1x1wh77"><code>std::variant</code>, operator== and pattern matching</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/BowenFu/matchit.cpp"><code>match(it)</code> single-header pattern-matching library for C++17 with macro-free APIs.</a></li>
+<li><a href="https://github.com/jbandela/simple_match/">Simple header only pattern matching for c++14</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 14:40:06 2026] #library <a href="https://github.com/sentomk/patternia"><code>patternia</code> Providing pattern matching for modern C++.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>c# - CRC checking done automatically on Tcp/Ip?</title><category>proto</category><category>tcp</category><pubDate>2026-11-03 02:08:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/8269693/crc-checking-done-automatically-on-tcp-ip">c# - CRC checking done automatically on Tcp/Ip?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in #mcu, nothing have CRC except SPI and maybe Ethernet PHY in them.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Overview of ChirpIoT™ Spread Spectrum Technology_Industry dynamics_Blog_</title><category>proto</category><category>wireless</category><pubDate>2026-11-03 01:35:45 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.cdebyte.com/news/663">Overview of ChirpIoT™ Spread Spectrum Technology_Industry dynamics_Blog_</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to FSK, OOK, and MSK.</li>
@@ -443,30 +500,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 </li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> ToF sensor, LiDAR, various of optical based sensors.</li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 13:53:38 2026] #re <a href="https://mp.weixin.qq.com/s/azo8R_3Sea2JxZwg8QizmQ">interior of the infrared sensor (human detection) ground light</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Lazy` for just recipe.</title><category>cli</category><category>justfile</category><pubDate>2026-11-02 08:22:12 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/casey/just#lazy"><code>Lazy</code> for just recipe.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Agent Directory | Railway</title><category>cicd</category><category>cloud</category><category>harness</category><category>meta</category><category>microservice</category><category>wprog</category><pubDate>2026-11-02 12:02:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://railway.com/agents">Agent Directory | Railway</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
