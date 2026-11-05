@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`gh-repo-stats` GH CLI extension to pull statistics on repository metadata used in GitHub migrations</title><category>code/forge</category><category>meta</category><category>misc</category><category>wprog</category><pubDate>2026-11-04 08:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>CMS32L032GE20NB which is CMS32L032 QFN20 3x3 (e=0.4), still 64 Mhz tho.</title><category>mcu</category><category>wechat</category><pubDate>2026-11-05 12:34:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>CMS32L032GE20NB which is CMS32L032 QFN20 3x3 (e=0.4), still 64 Mhz tho.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Upcoming CMS32F040 QFN32 which is 72Mhz 128Kb ROM/16kb RAM/1kb EEPROM 5v MCU.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>Nicolelife</code></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I need this person because I want the product selection table every year.
+<ul>
+<li>pinout is wholly different from FT32.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> CMS's PM contact me. Now I ask about new chip which can 72 Mhz.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>CMS32M6910 has 96Mhz 128K Flash/12K RAM/1K EEPROM, for motor application.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov  5 12:34:52 2026] <a href="https://www.nxp.com/applications/technologies/functional-safety/iec-60730-safety-standard-for-household-appliances:APIEC60730">IEC 60730 Safety Standard for Household Appliances | NXP Semiconductors</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/6KO-61bmb3mIEk88T_fR0g">CMS32C003 Cortex-M0+ 24kB/3kB Flash/RAM + 0.5kB User DATA FLASH </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Get the PID of _MY_ OpenConsole.exe? · microsoft/terminal · Discussion #16447</title><category>powershell</category><category>process</category><category>windows</category><pubDate>2026-11-05 12:25:30 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/microsoft/terminal/discussions/16447">Get the PID of <em>MY</em> OpenConsole.exe? · microsoft/terminal · Discussion #16447</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">$groups = Get-Process | Where-Object { $_.Parent.ProcessName -eq &#39;WindowsTerminal&#39; }
+                  | Group-Object { $_.StartTime.ToString() }
+
+foreach ($group in $groups) { $group.Group; &#39;&#39;}
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`gh-repo-stats` GH CLI extension to pull statistics on repository metadata used in GitHub migrations</title><category>code/forge</category><category>meta</category><category>misc</category><category>wprog</category><pubDate>2026-11-04 08:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/mona-actions/gh-repo-stats"><code>gh-repo-stats</code> GH CLI extension to pull statistics on repository metadata used in GitHub migrations</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -257,38 +300,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Square triangular number</title><category>numeric</category><category>shape</category><pubDate>2026-11-03 03:14:49 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Square_triangular_number">Square triangular number</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Triangular_number">Triangular number</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Catalan%27s_conjecture">Catalan's conjecture</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/Prime_power">Prime power</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>2-in-1 laptop</title><category>laptop</category><category>other</category><category>til</category><pubDate>2026-11-03 03:12:10 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/2-in-1_laptop">2-in-1 laptop</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 2-in-1 means it can be tablets and laptops/notebooks at the same time.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> tabtop.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/laptops/comments/1u286ck">Any 2 in 1s with lpcamm?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 15:12:10 2026] #macos <a href="https://news.ycombinator.com/item?id=50276940">MacBook Pro with PROLED XDR Display and Touch</a></li>
 </ul>
 </li>
 </ul>
