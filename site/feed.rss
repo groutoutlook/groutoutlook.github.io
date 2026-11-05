@@ -1,8 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>DIP: Dual in-line package</title><category>acro</category><category>ic</category><pubDate>2026-11-05 01:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Dual_in-line_package">DIP: Dual in-line package</a>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>World Economic Forum in Davos</title><category>discussion</category><category>economy</category><category>media</category><pubDate>2026-11-05 06:37:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/World_Economic_Forum">World Economic Forum in Davos</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>you can delete the entry you dont want to be the default URI for some sites you oftenly visit.</title><category>browser</category><category>web</category><pubDate>2026-11-05 06:08:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>you can delete the entry you dont want to be the default URI for some sites you oftenly visit.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> the more exotic case could be setting up a HTTPS proxy to resolve URL.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`deepseek-harness` | `dsh` DeepSeek Harness: Everything is a Plugin.</title><category>ai/vendor/deepseek</category><category>format</category><category>harness</category><category>llm</category><category>swgui</category><pubDate>2026-11-05 04:04:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness"><code>deepseek-harness</code> | <code>dsh</code> DeepSeek Harness: Everything is a Plugin.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> suitable for processing #office oriented (xlsx, pptx, pdf, psd and such.) those assets files than #codex or #cli</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>ctrl+enter</code> steer all queued message.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> this credited me 6 rmb upon re-logged in so...</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Broadcast Range of WirelessHART Transmitters</title><category>hart</category><category>power</category><category>proto</category><category>rf</category><pubDate>2026-11-05 03:38:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.emersonautomationexperts.com/2014/industrial-internet-things/broadcast-range-of-wirelesshart-transmitters/">Broadcast Range of WirelessHART Transmitters</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>M032TC1AE - Nuvoton</title><category>mcu</category><category>protocol/usci</category><pubDate>2026-11-05 03:26:14 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.nuvoton.com/products/microcontrollers/arm-cortex-m0-mcus/m032-series/m032tc1ae/">M032TC1AE - Nuvoton</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> USCI == UART,SPI,I2C in one.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>DIP: Dual in-line package</title><category>acro</category><category>ic</category><pubDate>2026-11-05 01:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Dual_in-line_package">DIP: Dual in-line package</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> IT's something that I have never questioned.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Pin numbering is counter-clockwise. Same with SOP, QFN, those things.</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.bestpcbs.com/blog/2026/07/single-inline-package/">SIP: Single Inline Package: Types, Uses, and SIP vs DIP</a>
@@ -219,88 +279,6 @@ foreach ($group in $groups) { $group.Group; &#39;&#39;}
 <li><a href="https://wikipedia.org/wiki/Masquerade_ball">Masquerade ball</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Dell Precision 7670 specs</title><category>asset</category><category>hard</category><category>hardware</category><category>notebook</category><pubDate>2026-11-03 11:57:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-7670-technical-guidebook.pdf">Dell Precision 7670 specs</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm looking at sensors and fingerprint reader part here.</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [Sun Aug  9 11:38:25 2026] <a href="https://www.dell.com/en-us/shop/dell-laptops/dell-pro-max-18-plus-laptop/spd/dell-pro-max-mb18250-laptop">Dell Pro Max Plus 18 Inch Workstation - Large Display Power</a>
-<ul>
-<li><a href="https://www.dell.com/support/home/en-vn/drivers/driversdetails?driverid=4jdc5">Intel BE200/AX411/AX211 Wi-Fi UWD Driver</a></li>
-<li><a href="https://www.intel.com/content/www/us/en/products/sku/230078/intel-wifi-7-be200/specifications.html">Intel® Wi-Fi 7 BE200</a>
-<ul>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://www.intel.com/content/www/us/en/products/sku/240287/intel-wifi-7-r2-be211/specifications.html">Intel® Wi-Fi 7 R2 BE211</a></li>
-</ul>
-</li>
-<li><a href="https://www.reddit.com/r/Dell/comments/1upt0fd">Thinking about the Dell Pro Max Plus 18 as a desktop replacement for Isaac Sim &amp; CAD (RTX Pro 5000, 64/96GB RAM). Any known issues?</a>
-<ul>
-<li>probably not.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-10-18 12:39:50] Supported accesories for this laptop.
-![[{7F52F97F-F5FC-4603-8C06-060D0BDD2E58}.png]]</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 23:57:09 2026] <a href="https://www.dell.com/support/manuals/precision-16-7670-laptop/precision_7670_ss/external-ports-and-slots?guid=guid-4c4cc1ba-66a4-45f0-8dfc-6013a624ddc0&amp;lang=en-us">Precision 7670 Setup and Specifications ports and slots</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`wadbd` enable or disable wireless ADB for the current session or at boot.</title><category>adb</category><category>windows</category><pubDate>2026-11-03 11:49:26 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Magisk-Modules-Alt-Repo/wadbd"><code>wadbd</code> enable or disable wireless ADB for the current session or at boot.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/11314145/looking-to-enable-and-disable-toggle-adb-or-usb-debugging-using-command-line-o">android - Looking to enable and disable (toggle) ADB or USB debugging using command line or in app</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CAN, LIN, RS485 over DC powerline - Embedded 2020</title><category>can</category><category>lin</category><category>powerline</category><category>proto</category><pubDate>2026-11-03 10:13:50 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="">CAN, LIN, RS485 over DC powerline - Embedded 2020</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://yamar.com/articles/AN%20-%20Using%20DC-LIN%20as%20redundancy%20of%20LIN%20BUS.pdf">AN - Using DC-LIN as redundancy of LIN</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://yamar.com/datasheet/DS-Powerline-Attenuator.pdf">DC-Powerline Attenuator</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 22:13:50 2026] #taobao <a href="https://item.taobao.com/item.htm?id=841670429007">LIN bus development board/LIN to CAN/TJA1021 module/STM32 development board/automotive bus/monitoring—Taobao</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-03 10:09:16 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.ti.com/product/TCAN332">TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a>
-<ul>
-<li>#alternative <a href="https://www.ti.com/product/TCAN3413">TCAN3413 3.3-V CAN FD transceiver with flexible IO and standby mode </a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>The Heat Death Company</title><category>service</category><category>web</category><pubDate>2026-11-03 07:42:41 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://theheatdeathcompany.com/">The Heat Death Company</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> post apocalypse vibe, those guys. Kinda like the Forth based computer.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
