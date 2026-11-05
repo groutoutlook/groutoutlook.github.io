@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>CMS32L032GE20NB which is CMS32L032 QFN20 3x3 (e=0.4), still 64 Mhz tho.</title><category>mcu</category><category>wechat</category><pubDate>2026-11-05 12:34:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Nextcloud` server</title><category>backend</category><category>filesystem</category><category>nas</category><category>networking</category><pubDate>2026-11-05 01:02:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nextcloud/server"><code>Nextcloud</code> server</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/nextcloud/desktop">Desktop sync client for Nextcloud</a>, <a href="https://github.com/nextcloud/android">Nextcloud Android app</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://openwrt.org/docs/guide-user/services/nas/owncloud"><code>owncloud</code> or <code>nextcloud</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://forum.gl-inet.com/t/is-it-possible-to-install-nextcloud-on-a-flint-2-router/56788">Is it possible to install Nextcloud on a Flint 2 Router ? - Router - GL.iNet Official Forum</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CMS32L032GE20NB which is CMS32L032 QFN20 3x3 (e=0.4), still 64 Mhz tho.</title><category>mcu</category><category>wechat</category><pubDate>2026-11-05 12:34:52 PM</pubDate><content:encoded><![CDATA[<ul>
 <li>CMS32L032GE20NB which is CMS32L032 QFN20 3x3 (e=0.4), still 64 Mhz tho.
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Upcoming CMS32F040 QFN32 which is 72Mhz 128Kb ROM/16kb RAM/1kb EEPROM 5v MCU.</li>
@@ -288,18 +300,6 @@ foreach ($group in $groups) { $group.Group; &#39;&#39;}
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #template : <a href="https://github.com/bhdicaire/visioStencils"><code>visioStencils</code> 4,450 visio shapes, stencils, symbols, and icons collection to visually represent your IT infrastructure</a></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:26:37 2026] so dead now.</li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 19:34:37 2026] <a href="https://github.com/reladraw/reladraw"><code>reladraw</code> text diagram language where you say where things go</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>There are something super weird now that meddle with &quot;Network &amp; Internet&quot; &gt; &quot;Proxy&quot; .</title><category>network</category><category>proxy</category><category>windows</category><pubDate>2026-11-03 04:16:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>There are something super weird now that meddle with &quot;Network &amp; Internet&quot; &gt; &quot;Proxy&quot; .
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like some script make things acting wrong or so. go there and turn off &quot;Use a proxy server&quot;.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I think that happened after I update <code>tailscale</code>. Somehow.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
