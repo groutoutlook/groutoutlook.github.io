@@ -1,4 +1,158 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Dell Precision 7670 specs</title><category>asset</category><category>hard</category><category>hardware</category><category>notebook</category><pubDate>2026-11-03 11:57:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`gh-repo-stats` GH CLI extension to pull statistics on repository metadata used in GitHub migrations</title><category>code/forge</category><category>meta</category><category>misc</category><category>wprog</category><pubDate>2026-11-04 08:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/mona-actions/gh-repo-stats"><code>gh-repo-stats</code> GH CLI extension to pull statistics on repository metadata used in GitHub migrations</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`oxitrack` Self-hosted, privacy-respecting website traffic tracker</title><category>library/rust</category><category>telemetry</category><category>wprog</category><pubDate>2026-11-04 07:43:25 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/mre/oxitrack"><code>oxitrack</code> Self-hosted, privacy-respecting website traffic tracker</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`lychee` async, stream-based link checker to fix broken URL, link rot, dead hyperlink</title><category>cli</category><category>network</category><category>uri</category><pubDate>2026-11-04 07:39:37 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/lycheeverse/lychee"><code>lychee</code> async, stream-based link checker to fix broken URL, link rot, dead hyperlink</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">f -emd |%{lychee $_}
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Bru` Send and read SMS from the browser</title><category>browser</category><category>protocol/sms</category><category>retro</category><pubDate>2026-11-04 07:31:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/a0jmkh/bru_send_read_sms_from_browser"><code>Bru</code> Send and read SMS from the browser</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ssg <a href="https://github.com/getzola/zola"><code>zola</code> fast static site generator in a single binary with everything built-in</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sverre.me/projects/this-site/">This very website</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #accord <a href="https://sverre.me/projects/ebike/">My dumb e-bike</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov  4 19:31:39 2026] <a href="https://github.com/getzola/zola"><code>zola</code> for documentation again. in <code>scoop</code></a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Perforation</title><category>format</category><category>vocab</category><pubDate>2026-11-04 06:31:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Perforation">Perforation</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> basically hole.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Gerrymandering</title><category>culture</category><category>media</category><category>us</category><pubDate>2026-11-04 05:57:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Gerrymandering">Gerrymandering</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/thebulwark/comments/1u2fgs3">Don’t Get Your Hopes Up For The Midterms</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov  4 17:57:15 2026] <a href="https://www.youtube.com/watch?v=aA04OLyy1wE">Trump Just Lost the Midterms... What Comes Next - YouTube</a>
+<ul>
+<li>goverment shutdown.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What is by far the most blatant example of &quot;weaponized incompetence&quot; you have ever witnessed?</title><category>human</category><category>social</category><pubDate>2026-11-04 05:29:35 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/AskReddit/comments/1xn2uwa">What is by far the most blatant example of &quot;weaponized incompetence&quot; you have ever witnessed?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/TikTokCringe/comments/1xmxjgy">New Problem With 10th Graders This Year Is Terrifying</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>RF: Radio spectrum</title><category>basic</category><category>elec</category><category>rf</category><pubDate>2026-11-04 03:33:40 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Radio_spectrum">RF: Radio spectrum</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/High_frequency">HF band : High frequency</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#android <a href="https://github.com/danleetw/FT8TW"><code>FT8TW</code> Run FT8 on Android</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/amateurradio/comments/1s2lt8q"><code>Pebble HF</code> another useful iteration of <code>uSDX</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov  4 15:33:40 2026] <a href="https://mp.weixin.qq.com/s/gcEJpYJGh4y_zhibulBFvw">Pebble HF's FT8 accessory</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Chevron (insignia)</title><category>geometry</category><category>shape</category><category>society</category><category>vocabulary</category><pubDate>2026-11-04 12:48:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>[Chevron (insignia)](https://wikipedia.org/wiki/Chevron_(insignia)
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>USB communication only via control transaction (EP0 : Endpoint 0)</title><category>acronym</category><category>proto</category><category>usb/host</category><pubDate>2026-11-04 11:05:38 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://community.st.com/stm32-mcus-embedded-software-32/usb-communication-only-via-control-transaction-ep0-28461">USB communication only via control transaction (EP0 : Endpoint 0)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Masquerade ball</title><category>costume</category><category>social</category><category>society</category><pubDate>2026-11-04 09:26:45 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Masquerade_ball">Masquerade ball</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Dell Precision 7670 specs</title><category>asset</category><category>hard</category><category>hardware</category><category>notebook</category><pubDate>2026-11-03 11:57:09 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-7670-technical-guidebook.pdf">Dell Precision 7670 specs</a>
 <ul>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm looking at sensors and fingerprint reader part here.</li>
@@ -135,260 +289,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 15:12:10 2026] #macos <a href="https://news.ycombinator.com/item?id=50276940">MacBook Pro with PROLED XDR Display and Touch</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`patterns` pattern matching as P2688R7(C++29) for c++17, single header</title><category>api</category><category>comparison</category><category>compiler</category><category>cpp</category><category>pattern</category><category>string</category><pubDate>2026-11-03 02:40:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/mpark/patterns"><code>patterns</code> pattern matching as P2688R7(C++29) for c++17, single header</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>match(expression)(pattern(&lt;pattern&gt;) = &lt;lambda&gt;,...);</code>
-<ul>
-<li>Expression Pattern: matching some condition range, or null or placeholders, in the style of case as tuples.</li>
-<li>Arg Pattern: <code>arg</code> : match <code>any</code>, but also bind args to lambda during pattern declaration.</li>
-<li>Wildcard: <code>_</code> : match <code>any</code>, but <code>move</code> values from arg to the lambda.</li>
-<li>Identifier: work by names, matching by comparing with pattern name.</li>
-<li>Destructure: <code>ds(&lt;pattern&gt;,...)</code> it's like matching a tuple by structured binding.</li>
-<li>Optional: <code>some(&lt;pattern&gt;)</code> | <code>none</code> : to match optional or pointer, any of which can be deref.</li>
-<li>As: <code>as&lt;typename&gt;(&lt;pattern&gt;)</code> : this could mainly be used to match the typename itself.</li>
-<li>Visit: <code>vis(&lt;pattern&gt;)</code></li>
-<li>Alternation: <code>anyof(&lt;pattern&gt;)</code></li>
-<li>Variadic: <code>variadic(&lt;pattern&gt;)</code> : which can only be used along with the variadic lambda.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> more expressive code, not necessary faster though.
-<ul>
-<li>Some clauses to help on match:
-<ul>
-<li><code>WHEN(boolean expression)</code> will help better on negating unwanted match(es).</li>
-</ul>
-</li>
-<li>Pattern statements:
-<ul>
-<li><code>if_let</code> match  one pattern, other execution paths left uncalculated.</li>
-<li><code>for_let</code> match one pattern, and loop over ranges.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1x1wh77"><code>std::variant</code>, operator== and pattern matching</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/BowenFu/matchit.cpp"><code>match(it)</code> single-header pattern-matching library for C++17 with macro-free APIs.</a></li>
-<li><a href="https://github.com/jbandela/simple_match/">Simple header only pattern matching for c++14</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 14:40:06 2026] #library <a href="https://github.com/sentomk/patternia"><code>patternia</code> Providing pattern matching for modern C++.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>c# - CRC checking done automatically on Tcp/Ip?</title><category>proto</category><category>tcp</category><pubDate>2026-11-03 02:08:31 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/8269693/crc-checking-done-automatically-on-tcp-ip">c# - CRC checking done automatically on Tcp/Ip?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in #mcu, nothing have CRC except SPI and maybe Ethernet PHY in them.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Overview of ChirpIoT™ Spread Spectrum Technology_Industry dynamics_Blog_</title><category>proto</category><category>wireless</category><pubDate>2026-11-03 01:35:45 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.cdebyte.com/news/663">Overview of ChirpIoT™ Spread Spectrum Technology_Industry dynamics_Blog_</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #alternative to FSK, OOK, and MSK.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.panchip.com/">PANCHIP磐启微-国内无线通讯及物联网芯片设计企业-PANCHIP磐启微-国内无线通讯及物联网芯片设计企业</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> CW32W031 QFN64 48MHz 64Kb / 8Kb / 128  FLASH/RAM/OTP
-<ul>
-<li><a href="https://github.com/SoCXin/CW32W031"><code>CW32W031</code> L1 R2: 48MHz Cortex-M0 Sub-1G ChirpIoT SoC</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.c114pro.com/chipnews/103644.html">Telink Semiconductor Announces Intent to Acquire Shares in Panqi Microelectronics and Raise Supporting Funds, with Stock Suspension Scheduled for Next Monday - Chip - C114Pro</a></li>
-<li><a href="https://en.eeworld.com.cn/mp/XSY/a405280.jspx">Panqi Micro: Committed to becoming a global leader in ultra-low power wireless communication</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 13:35:45 2026] <a href="https://shop494235077.taobao.com/category.htm">芯程无限店铺</a>
-<ul>
-<li><a href="https://item.taobao.com/item.htm?id=1020762489949">PAN2110磐启微2.4G射频芯片SOP8/SOT23国产IC替XN297LBW遥控芯片</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> LoRA.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>PAN1080 Development Kit 文档中心 — PAN1080 DK Documentation</title><category>ble</category><category>mcu</category><pubDate>2026-11-03 01:33:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://docs.panchip.com/pan1080dk-doc/latest/index.html">PAN1080 Development Kit 文档中心 — PAN1080 DK Documentation</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> this can be burned thru EasyFlasher offline probe.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=996880979263">PANCHIP PAN108X Module BLE 5.1 Bluetooth/Development Board/Beta/Evaluation Board</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://oshwhub.com/hym1234/project_nlliyagc">PAN211-SOP8-V1.0 - 立创开源硬件平台</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 13:33:59 2026] <a href="https://item.taobao.com/item.htm?id=994594640849">Panqi Micro PAN2110/PAN2160/development kits, development boards, modules - Taobao</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Questions about EOF and EOL</title><category>acronym</category><category>ascii</category><category>file</category><category>filesystem</category><category>programming</category><pubDate>2026-11-03 01:07:28 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/6817441/questions-about-eof-and-eol">Questions about EOF and EOL</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CAN to UART bridge (Rev. A) - slaaej2a.pdf</title><category>adapter</category><category>can</category><category>hardware</category><category>proto</category><category>uart</category><pubDate>2026-11-03 12:47:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.ti.com/lit/sd/slaaej2a/slaaej2a.pdf">CAN to UART bridge (Rev. A) - slaaej2a.pdf</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> just discover I still can use USART2 in FT32Fxxx board to work with things.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/32241/is-mcp2551-a-uart-to-can-converter">MCP2551 UART-to-CAN converter?</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>JTAG Daisy Chain</title><category>proto</category><category>protocol/jtag</category><category>swd</category><pubDate>2026-11-03 10:49:22 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/JTAG#Electrical_characteristics">JTAG Daisy Chain</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> fwiw, JTAG require <strong>4 pins</strong> while SWD only <strong>2 pins</strong>
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/53571/jtag-vs-swd-debugging/292850#292850">JTAG vs SWD debugging</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>but we do have a cJTAG
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://weekly-geekly.imtqy.com/articles/237885/index.html">We understand the protocol 2-wire JTAG</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kuopinghsu/cjtag">Verilog implementations of <code>cjtag</code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/8sPThJ9zzUdxQOpoThfe0g">Don't just use SWD and JTAG! Teach you how to play with two-wire CJTAG with CMSIS-DAP</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#usb <a href="https://electronics.stackexchange.com/questions/157160/high-speed-data-from-microcontrollers-to-pc-using-daisy-chain">High speed data from microcontrollers to pc using daisy chain</a></li>
-<li>#i2c <a href="https://e2e.ti.com/support/interface-group/interface/f/interface-forum/616909/pca9518-daisy-chaining-of-i2c-or-other-hubs-for-multiple-point---to---point-connections-creating-a-large-tree-network">PCA9518: Daisy chaining of I2C (or other) hubs for multiple point - to - point connections creating a large tree network - Interface forum - Interface - TI E2E support forums</a></li>
-<li>#spi <a href="https://www.analog.com/en/resources/technical-articles/2022/07/16/09/49/daisychaining-spi-devices.html">Daisy-Chaining SPI Devices | Analog Devices</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:58:44 2026] #network #ethercat <a href="https://www.reddit.com/r/PLC/comments/1j8ebgr">etherCAT daisychaining plugged into same switch as Modbus TCP/IP devices</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/587818/can-a-ring-of-ethercat-devices-be-connected-to-two-ports-of-an-existing-ethernet">digital communications - Can a ring of etherCAT devices be connected to two ports of an existing Ethernet/IP switch?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 10:49:22 2026] <a href="https://electronics.stackexchange.com/questions/506068/can-bus-daisy-chaining-nodes/506083#506083">CAN Bus Daisy chaining nodes</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>List of automation protocols</title><category>CAN</category><category>ethercat</category><category>meta</category><category>proto</category><pubDate>2026-11-03 10:40:37 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/List_of_automation_protocols">List of automation protocols</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> worth an entry no?</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>cache]` attribute</title><category>cache</category><category>cli</category><category>filesystem</category><category>justfile</category><pubDate>2026-11-03 09:21:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/casey/just#cached-recipes"><code>just</code> cached recipe / <code>[cache]</code> attribute</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-python"><span class="source python"><span class="meta qualified-name python"><span class="support type python">set</span></span> <span class="meta qualified-name python"><span class="meta generic-name python">unstable</span></span>
-
-<span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta qualified-name python"><span class="meta generic-name python">script</span></span><span class="punctuation section list end python">]</span></span>
-<span class="meta structure list python"><span class="punctuation section list begin python">[</span><span class="meta function-call python"><span class="meta qualified-name python"><span class="variable function python">cache</span></span><span class="punctuation section arguments begin python">(</span><span class="meta function-call arguments python"><span class="variable parameter python">inputs</span> <span class="keyword operator assignment python">=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">image.png<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span> <span class="variable parameter python">outputs</span> <span class="keyword operator assignment python">=</span> <span class="meta string python"><span class="string quoted double python"><span class="punctuation definition string begin python">&quot;</span></span></span><span class="meta string python"><span class="string quoted double python">image.jpg<span class="punctuation definition string end python">&quot;</span></span></span><span class="punctuation separator arguments python">,</span> <span class="variable parameter python">extra</span> <span class="keyword operator assignment python">=</span> `<span class="meta qualified-name python"><span class="meta generic-name python">convert</span></span> <span class="keyword operator arithmetic python">-</span><span class="meta qualified-name python"><span class="meta generic-name python">version</span></span>`</span><span class="punctuation section arguments end python">)</span></span><span class="punctuation section list end python">]</span></span>
-<span class="meta qualified-name python"><span class="meta generic-name python">gen</span></span> <span class="keyword operator logical python">in</span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">image.png<span class="punctuation definition string end python">&#39;</span></span></span> <span class="meta qualified-name python"><span class="meta generic-name python">out</span></span><span class="keyword operator assignment python">=</span><span class="meta string python"><span class="string quoted single python"><span class="punctuation definition string begin python">&#39;</span></span></span><span class="meta string python"><span class="string quoted single python">image.jpg<span class="punctuation definition string end python">&#39;</span></span></span><span class="punctuation separator annotation variable python">:</span>
-  <span class="meta qualified-name python"><span class="meta generic-name python">convert</span></span> <span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="keyword operator logical python">in</span><span class="punctuation section dictionary-or-set end python">}</span></span><span class="punctuation section dictionary-or-set end python">}</span></span> <span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta structure dictionary-or-set python"><span class="punctuation section dictionary-or-set begin python">{</span><span class="meta qualified-name python"><span class="meta generic-name python">out</span></span><span class="punctuation section dictionary-or-set end python">}</span></span><span class="punctuation section dictionary-or-set end python">}</span></span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> all those quote here are being acted as parameter for the <code>cache</code> attribute.
-<ul>
-<li>All keys other than <code>extra</code> and <code>inputs</code> are populated automatically.
-<ul>
-<li><code>body</code>: evaluated recipe body</li>
-<li><code>environment</code>: map of environment variable names to values</li>
-<li><code>executor</code>: script interpreter or shebang</li>
-<li><code>extension</code>: script file extension</li>
-<li><code>extra</code>: user-supplied value</li>
-<li><code>inputs</code>: map of file paths to content hashes</li>
-<li><code>positional</code>: positional arguments</li>
-<li><code>recipe</code>: ::-separated module path to invoked recipe</li>
-<li><code>working_directory</code>: current working directory</li>
-</ul>
-</li>
-</ul>
-<hr />
-<ul>
-<li>Cache key objects for invoked recipes can be printed to standard error with <code>just -vv</code>.
-Environment variables included in environment may be controlled with <code>[cache(environment = EXPRESSION)]</code>
-Value of <code>extras</code> may be supplied with <code>[cache(extra = EXPRESSION)]</code>,
-<ul>
-<li>where <code>EXPRESSION</code> is an arbitrary expression evaluated with recipe arguments in scope.
-Changes to the value of extra will cause a cache miss.
-Before <code>just</code> run a cached recipe, it creates a cache key, hashes it, looks for corresponding cache entry
-If cache entry is non-empty and outputs in cache entry match their current state, it skips invocation.</li>
-<li>Otherwise it runs the invocation and writes a JSON object with following keys:</li>
-<li><code>outputs</code>: map of output path to state</li>
-<li><code>recipe</code>: recipe path</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Linux System Call Tables by Architecture · syscall.sh</title><category>arch</category><category>linux</category><category>windows</category><pubDate>2026-11-02 08:07:20 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://syscall.sh/">Linux System Call Tables by Architecture · syscall.sh</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Propinquity</title><category>human</category><category>social</category><pubDate>2026-11-02 07:55:50 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Propinquity">Propinquity</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
