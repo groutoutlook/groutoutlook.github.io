@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`Nextcloud` server</title><category>backend</category><category>filesystem</category><category>nas</category><category>networking</category><pubDate>2026-11-05 01:02:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>DIP: Dual in-line package</title><category>acro</category><category>ic</category><pubDate>2026-11-05 01:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Dual_in-line_package">DIP: Dual in-line package</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.bestpcbs.com/blog/2026/07/single-inline-package/">SIP: Single Inline Package: Types, Uses, and SIP vs DIP</a>
+<ul>
+<li>I almost never used that kind of acronym. so rare for chip to do that. only PCB module.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Nextcloud` server</title><category>backend</category><category>filesystem</category><category>nas</category><category>networking</category><pubDate>2026-11-05 01:02:49 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/nextcloud/server"><code>Nextcloud</code> server</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/nextcloud/desktop">Desktop sync client for Nextcloud</a>, <a href="https://github.com/nextcloud/android">Nextcloud Android app</a></li>
@@ -6,7 +22,11 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://openwrt.org/docs/guide-user/services/nas/owncloud"><code>owncloud</code> or <code>nextcloud</code></a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://forum.gl-inet.com/t/is-it-possible-to-install-nextcloud-on-a-flint-2-router/56788">Is it possible to install Nextcloud on a Flint 2 Router ? - Router - GL.iNet Official Forum</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://forum.gl-inet.com/t/is-it-possible-to-install-nextcloud-on-a-flint-2-router/56788">Is it possible to install Nextcloud on a Flint 2 Router ? - Router - GL.iNet Official Forum</a>
+<ul>
+<li><a href="https://github.com/nextcloud/spreed"><code>spreed</code> Nextcloud Talk – chat, video &amp; audio calls for Nextcloud</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -286,20 +306,6 @@ foreach ($group in $groups) { $group.Group; &#39;&#39;}
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`ASCIIFlow`</title><category>csci</category><category>format/uml</category><category>visual/graph</category><pubDate>2026-11-03 07:34:37 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lewish/asciiflow"><code>ASCIIFlow</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Microsoft Visio - <a href="https://app.diagrams.net/">draw.io</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #template : <a href="https://github.com/bhdicaire/visioStencils"><code>visioStencils</code> 4,450 visio shapes, stencils, symbols, and icons collection to visually represent your IT infrastructure</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 27 14:26:37 2026] so dead now.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov  3 19:34:37 2026] <a href="https://github.com/reladraw/reladraw"><code>reladraw</code> text diagram language where you say where things go</a></li>
 </ul>
 </li>
 </ul>
