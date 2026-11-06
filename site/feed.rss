@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>World Economic Forum in Davos</title><category>discussion</category><category>economy</category><category>media</category><pubDate>2026-11-05 06:37:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>swt</category><category>terminal</category><pubDate>2026-11-06 07:15:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">herdr # launch into the big mux menu.
+herdr server stop # kill all session.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: choose me <code>pwsh</code> without any config. That's much better over <code>zellij</code> which chose <code>cmd</code></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201003">Herdr is joining Y Combinator. The runtime stays open</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50298436">Herdr has released native app</a>
+<ul>
+<li>#android <a href="https://github.com/0cv/herdr-mobile-relay"><code>herdr-mobile-relay</code> monitor Herdr agents remotely from your phone, a mobile web app for Android/iOS with push notifications, QR setup, and multi-computer relays.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zellij</code>, <code>tmux</code>
+<ul>
+<li>but those 2 cant run in windows so dont bother actually.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Aug 28 12:35:05 2026] <code>zellij</code> in scoop now.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:15:10 2026] #macos <a href="https://github.com/codealong/codealong"><code>codealong</code> agent you run, in 1 window for macOS and Linux for Claude Code, Codex, OpenCode, Antigravity and Cursor, across your accounts and machines.</a>
+<ul>
+<li><a href="https://github.com/BrokkAi/mjolnir/"><code>mjolnir</code> Manage Harness with durable sessions, isolated environments, quotas, and remote control</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:15:27 2026] <a href="https://github.com/makefunstuff/herdr-android">herdr-android</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>N32H765EC</title><category>ethernet</category><category>mcu</category><pubDate>2026-11-06 07:06:19 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.nationstech.com/product/general/n32h/n32h765ec/">N32H765EC</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have 2 Ethernet.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32h7xx-series/gd32h759">GD32H759: 600MHz Arm® Cortex®-M7 MCU with TFT-LCD &amp; CAN-FD | also 2 Ethernet</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://community.nxp.com/t5/MCUXpresso-SDK/Dual-Ethernet-application-with-LWIP-on-RT1064/m-p/1394396#M3500">Solved: Dual Ethernet application with LWIP on RT1064 - NXP Community</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://www.nxp.com/products/i.MX-RT1170">i.MX RT1170 Crossover MCU Family with Arm Cortex-M7 and Cortex-M4, also dual Ethernet</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`rtic` Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</title><category>embed</category><category>rust</category><category>scheduler</category><category>stm32</category><pubDate>2026-11-06 07:01:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/rtic-rs/rtic"><code>rtic</code> Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #protocol/ptp: <a href="https://github.com/pendulum-project/statime"><code>statime</code> Precision Time Protocol (PTP) in Rust</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have #stm32 implementation as well, madness.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> at first I thought of this as something related to NTP.
+<ul>
+<li><a href="https://github.com/pendulum-project/ntpd-rs"><code>ntpd-rs</code> full implementation of Network Time Protocol, NTS support.</a>
+<ul>
+<li>#blog <a href="https://lobste.rs/s/rnvrel/ubuntu_adopt_ntpd_rs_as_default_time">Ubuntu to adopt ntpd-rs as the default time synchronization client and server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=35520044">The end of a myth: Distributed transactions can scale</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#networking <a href="https://nasa-jpl.github.io/tsn-scenarios/docs/main/">Introduction :: TSN: Time sensitive networking Scenarios</a></li>
+<li><a href="https://github.com/nasa-jpl/tsn-scenarios">Time-Sensitive Networking scenarios</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:01:10 2026] <a href="https://www.ti.com/product/DP83640">DP83640 PTP-aware Ethernet PHY transceiver</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>awesome README template to jumpstart your projects!</title><category>template</category><category>wprog</category><pubDate>2026-11-05 08:23:02 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/othneildrew/Best-README-Template">awesome README template to jumpstart your projects!</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov  5 20:23:02 2026] how naive for anyone to think this hold a candle to AI..</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>World Economic Forum in Davos</title><category>discussion</category><category>economy</category><category>media</category><pubDate>2026-11-05 06:37:38 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/World_Economic_Forum">World Economic Forum in Davos</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -226,63 +320,6 @@ foreach ($group in $groups) { $group.Group; &#39;&#39;}
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/TikTokCringe/comments/1xmxjgy">New Problem With 10th Graders This Year Is Terrifying</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>RF: Radio spectrum</title><category>basic</category><category>elec</category><category>rf</category><pubDate>2026-11-04 03:33:40 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Radio_spectrum">RF: Radio spectrum</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/High_frequency">HF band : High frequency</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#android <a href="https://github.com/danleetw/FT8TW"><code>FT8TW</code> Run FT8 on Android</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/amateurradio/comments/1s2lt8q"><code>Pebble HF</code> another useful iteration of <code>uSDX</code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov  4 15:33:40 2026] <a href="https://mp.weixin.qq.com/s/gcEJpYJGh4y_zhibulBFvw">Pebble HF's FT8 accessory</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Chevron (insignia)</title><category>geometry</category><category>shape</category><category>society</category><category>vocabulary</category><pubDate>2026-11-04 12:48:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>[Chevron (insignia)](https://wikipedia.org/wiki/Chevron_(insignia)
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>USB communication only via control transaction (EP0 : Endpoint 0)</title><category>acronym</category><category>proto</category><category>usb/host</category><pubDate>2026-11-04 11:05:38 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://community.st.com/stm32-mcus-embedded-software-32/usb-communication-only-via-control-transaction-ep0-28461">USB communication only via control transaction (EP0 : Endpoint 0)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Masquerade ball</title><category>costume</category><category>social</category><category>society</category><pubDate>2026-11-04 09:26:45 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Masquerade_ball">Masquerade ball</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
