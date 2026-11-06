@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Introducing Adaptive Dark Mode</title><category>css</category><category>ui</category><category>uiweb</category><pubDate>2026-11-06 08:57:16 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>LLVM Weekly - a weekly newsletter covering developments in LLVM, Clang and more</title><category>compiler</category><category>meta</category><category>prog</category><pubDate>2026-11-07 01:11:06 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://llvmweekly.org/">LLVM Weekly - a weekly newsletter covering developments in LLVM, Clang and more</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1vsmdo9">Is there a way to track reflection support status in Clang?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`hpx` C++ Standard Library for Parallelism and Concurrency</title><category>api</category><category>cpp</category><category>hpc</category><pubDate>2026-11-06 10:30:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/TheHPXProject/hpx"><code>hpx</code> C++ Standard Library for Parallelism and Concurrency</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1xkrq2q">HPX V2.0.0 released: C++20 baseline, C++20 modules, stdexec-based senders/receivers, early C++26 reflection! - The HPX Project</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>InPlay IN100 NanoBeacon</title><category>ble</category><category>mcu</category><category>module</category><pubDate>2026-11-06 12:16:35 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.blecon.net/in100">InPlay IN100 NanoBeacon</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/NanoBeacon/config-files">config-files: sample config for IN100</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/tvR_Ua_VLX1GQZ8NSH2sgA">一颗芯片加一个晶振，就是一个蓝牙信标</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=702191963303">INPLAY免编程 IN100 开发板学习板开发套件 蓝牙广播</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>basiliscos/cpp-rotor: Event loop friendly C++ actor micro-framework, supervisable</title><category>api</category><category>event</category><category>loop</category><category>message</category><pubDate>2026-11-06 09:41:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/basiliscos/cpp-rotor">basiliscos/cpp-rotor: Event loop friendly C++ actor micro-framework, supervisable</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/amoldhamale1105/EventLoop">amoldhamale1105/EventLoop: A C++ library providing the functionality of an event loop within an application</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Introducing Adaptive Dark Mode</title><category>css</category><category>ui</category><category>uiweb</category><pubDate>2026-11-06 08:57:16 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/yba0yg/introducing_adaptive_dark_mode">Introducing Adaptive Dark Mode</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -297,63 +349,6 @@ herdr server stop # kill all session.
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/6KO-61bmb3mIEk88T_fR0g">CMS32C003 Cortex-M0+ 24kB/3kB Flash/RAM + 0.5kB User DATA FLASH </a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Get the PID of _MY_ OpenConsole.exe? · microsoft/terminal · Discussion #16447</title><category>powershell</category><category>process</category><category>windows</category><pubDate>2026-11-05 12:25:30 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/microsoft/terminal/discussions/16447">Get the PID of <em>MY</em> OpenConsole.exe? · microsoft/terminal · Discussion #16447</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">$groups = Get-Process | Where-Object { $_.Parent.ProcessName -eq &#39;WindowsTerminal&#39; }
-                  | Group-Object { $_.StartTime.ToString() }
-
-foreach ($group in $groups) { $group.Group; &#39;&#39;}
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`gh-repo-stats` GH CLI extension to pull statistics on repository metadata used in GitHub migrations</title><category>code/forge</category><category>meta</category><category>misc</category><category>wprog</category><pubDate>2026-11-04 08:18:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/mona-actions/gh-repo-stats"><code>gh-repo-stats</code> GH CLI extension to pull statistics on repository metadata used in GitHub migrations</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`oxitrack` Self-hosted, privacy-respecting website traffic tracker</title><category>library/rust</category><category>telemetry</category><category>wprog</category><pubDate>2026-11-04 07:43:25 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/mre/oxitrack"><code>oxitrack</code> Self-hosted, privacy-respecting website traffic tracker</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`lychee` async, stream-based link checker to fix broken URL, link rot, dead hyperlink</title><category>cli</category><category>network</category><category>uri</category><pubDate>2026-11-04 07:39:37 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lycheeverse/lychee"><code>lychee</code> async, stream-based link checker to fix broken URL, link rot, dead hyperlink</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">f -emd |%{lychee $_}
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
