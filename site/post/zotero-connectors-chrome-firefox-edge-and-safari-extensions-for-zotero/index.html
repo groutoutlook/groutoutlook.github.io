@@ -44,7 +44,9 @@
         <div class="til-subtags" aria-label="In-topic tags">
             <span class="til-subtags-label">In-topic tags</span>
             <a class="til-tag in-topic-tag" href="/subtag/http">#http</a>
+            <a class="til-tag in-topic-tag" href="/subtag/javascript">#javascript</a>
             <a class="til-tag in-topic-tag" href="/subtag/keybinding">#keybinding</a>
+            <a class="til-tag in-topic-tag" href="/subtag/vimium">#vimium</a>
         </div>
 
         <hr>
@@ -54,11 +56,48 @@
 <li><a href="https://github.com/zotero/zotero-connectors"><code>zotero-connectors</code> Chrome, Firefox, Edge, and Safari extensions for Zotero</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you have to keep zotero desktop running for this. I wish it has a tray icon mode but no, nothing like that yet.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->  #keybinding <code>alt+z</code> to archive one to zotero. if zotero is not running, <code>Esc</code> to escape the annoying save online.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->  #keybinding <code>alt+z</code> to archive one to zotero. if zotero is not running, <code>Esc</code> to escape the annoying save online.
+<ul>
+<li>#vimium
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">map</span></span><span class="meta function-call arguments shell"> q sendToExtension id=<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>bffdgkbecddhmhmgdfmpboagipgpfnpo<span class="punctuation definition string end shell">&quot;</span></span> data=<span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>savePage<span class="punctuation definition string end shell">&quot;</span></span> raw</span>
+</span></code></pre>
+</li>
+<li>#javascript : on the browser extension side.
+<pre class="syntax-highlighting"><code class="language-typescript"><span class="text plain">   /**
+* Lets page scripts ask the connector to save the current page, e.g. a Vimium C key mapping that
+* runs `document.dispatchEvent(new Event(&#39;zotero-connector-save&#39;))`. This takes the same path as
+* clicking the toolbar button.
+*/
+document.addEventListener(&#39;zotero-connector-save&#39;, function () {
+ 	Zotero.Connector_Browser.savePage();
+});
+  // Vimium C&#39;s sendToExtension avoids javascript: URLs, which may be blocked by the page.
+  this.onMessageExternal = function(message, sender, sendResponse) {
+  	if (sender.id !== &#39;hfjbmagddngcpeloejdejnfgbamkjaeg&#39; || message !== &#39;savePage&#39;) {
+  		return false;
+  	}
+  	(async () =&gt; {
+  		await Zotero.initDeferred.promise;
+  		await Zotero.Connector_Browser.savePage(null, await getCurrentTab());
+  		sendResponse(true);
+  	})().catch(error =&gt; {
+  		Zotero.logError(error);
+  		sendResponse(&#39;Zotero could not save this page. Try the Zotero toolbar button.&#39;);
+  	});
+  	return true;
+  }
+</span></code></pre>
+</li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #http <a href="https://www.zotero.org/support/dev/client_coding/http_integration_protocol">HTTP Citing Protocol | Zotero Documentation</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://tech-notes.maxmasnick.com/zotero-quickly-get-links-to-library-items-using-zotero-slash-slash-url-scheme-links">Zotero: quickly get links to library items using <code>zotero://</code> url scheme links - Technical Notes</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://tech-notes.maxmasnick.com/zotero-quickly-get-links-to-library-items-using-zotero-slash-slash-url-scheme-links">Zotero: quickly get links to library items using <code>zotero://</code> url scheme links - Technical Notes</a>
+<ul>
+<li>no, it's some weird shit somewhere.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
