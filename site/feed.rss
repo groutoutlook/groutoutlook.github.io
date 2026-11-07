@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`gmp` metaprogramming library for compile-time code generation</title><category>api</category><category>codegen</category><category>cpp</category><category>meta</category><category>reflection</category><pubDate>2026-11-07 01:55:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</title><category>mcu</category><category>motor</category><category>protocol/can</category><pubDate>2026-11-07 09:09:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/-CWz4tMx0C5-416uAtcOlQ">STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.st.com/content/ccc/resource/training/technical/product_training/group1/b3/5b/b1/ac/e1/61/40/b7/STM32H7-Peripheral-Filter_Math_Accelerator_FMAC/files/STM32H7-Peripheral-Filter_Math_Accelerator_FMAC.pdf/_jcr_content/translations/en.STM32H7-Peripheral-Filter_Math_Accelerator_FMAC.pdf">FMAC: Filter Math ACcelerator </a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> MCP2562FD CAN FD transceiver coupled with it.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Official ProtonVPN Windows GUI</title><category>gui</category><category>netw</category><category>software/proton</category><category>vpn</category><pubDate>2026-11-07 03:50:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/ProtonVPN/win-app">Official ProtonVPN Windows GUI</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> since I shim <code>vpnc</code> and <code>vpnl</code> as <code>ProtonVPN.Client</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> well this caused <code>Zalo Bảo Mật</code> service to send is this IP mine. fucked.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.reddit.com/r/Piracy/comments/1v5w03j">How good are Proton Services?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://diziet.dreamwidth.org/20436.html">diziet | Debian’s git transition</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> those guys block all VNPT traffic regardless of you turning (CF's) WARP DNS or not.</li>
+<li>this pushed me to use at least one of those invasive VPN... So I used the one that I already made an account on.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bygvwv/package_managers_keep_using_git_as">Package managers keep using git as a database, it never works out</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/OpenVPN/tap-windows6">tap-windows6: Windows TAP driver (NDIS 6)</a>
+<ul>
+<li>it has a <code>tapinstaller</code> so...</li>
+</ul>
+</li>
+<li><a href="https://proton.me/pass/download/windows">Windows password manager | Download Proton Pass | Proton</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov  7 15:50:47 2026] <a href="https://zola.ink/blog/posts/rawlink-building-a-vpn-protocol-from-scratch">RawLink: Building a VPN Protocol From Scratch · Zola Gonano</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Typeface search</title><category>asset/font</category><category>meta</category><category>typesetting</category><category>web</category><pubDate>2026-11-07 02:12:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://online-fonts.com/search?keys=chalkboard+se">Typeface search</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> • Arial Narrow • Blender Pro Bold • Chalkboard SE • Gotham •</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a captcha for you.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://open-fonts.com/fonts/grenadine-mvb-regular">Grenadine MVB Regular: Download for free at Open Fonts : OpenFonts</a>
+<ul>
+<li>Grenadine MVB • Harry Fatt</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`lineread` Like readline but not copyleft</title><category>api</category><category>cli</category><category>editor/line</category><category>keybinding</category><category>rust</category><category>tui</category><pubDate>2026-11-07 02:05:01 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/mitsuhiko/lineread"><code>lineread</code> Like readline but not copyleft</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> linenoise, reedline and infinite of them.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Truetype font with PCB related symbols</title><category>kicad</category><category>symbol</category><category>typesetting</category><pubDate>2026-11-07 01:57:57 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.eevblog.com/forum/eda/truetype-font-with-pcb-related-symbols/">Truetype font with PCB related symbols</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> no more special graphic, now just font.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov  7 13:57:57 2026] #ai I prompted <code>codex</code> to install font today. Too many questionable font choice.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`gmp` metaprogramming library for compile-time code generation</title><category>api</category><category>codegen</category><category>cpp</category><category>meta</category><category>reflection</category><pubDate>2026-11-07 01:55:51 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/lkimuk/gmp"><code>gmp</code> metaprogramming library for compile-time code generation</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -268,66 +353,6 @@ herdr server stop # kill all session.
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov  5 20:23:02 2026] how naive for anyone to think this hold a candle to AI..</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>World Economic Forum in Davos</title><category>discussion</category><category>economy</category><category>media</category><pubDate>2026-11-05 06:37:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/World_Economic_Forum">World Economic Forum in Davos</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>you can delete the entry you dont want to be the default URI for some sites you oftenly visit.</title><category>browser</category><category>web</category><pubDate>2026-11-05 06:08:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>you can delete the entry you dont want to be the default URI for some sites you oftenly visit.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> the more exotic case could be setting up a HTTPS proxy to resolve URL.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`deepseek-harness` | `dsh` DeepSeek Harness: Everything is a Plugin.</title><category>ai/vendor/deepseek</category><category>format</category><category>harness</category><category>llm</category><category>swgui</category><pubDate>2026-11-05 04:04:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness"><code>deepseek-harness</code> | <code>dsh</code> DeepSeek Harness: Everything is a Plugin.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> suitable for processing #office oriented (xlsx, pptx, pdf, psd and such.) those assets files than #codex or #cli</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <code>ctrl+enter</code> steer all queued message.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> this credited me 6 rmb upon re-logged in so...</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Broadcast Range of WirelessHART Transmitters</title><category>hart</category><category>power</category><category>proto</category><category>rf</category><pubDate>2026-11-05 03:38:17 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.emersonautomationexperts.com/2014/industrial-internet-things/broadcast-range-of-wirelesshart-transmitters/">Broadcast Range of WirelessHART Transmitters</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>M032TC1AE - Nuvoton</title><category>mcu</category><category>protocol/usci</category><pubDate>2026-11-05 03:26:14 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.nuvoton.com/products/microcontrollers/arm-cortex-m0-mcus/m032-series/m032tc1ae/">M032TC1AE - Nuvoton</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> USCI == UART,SPI,I2C in one.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
