@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</title><category>mcu</category><category>motor</category><category>protocol/can</category><pubDate>2026-11-07 09:09:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`resterm` Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain `.http` for diff and version</title><category>api/graphql</category><category>format/http</category><category>http</category><category>swt</category><pubDate>2026-11-08 08:24:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/unkn0wn-root/resterm"><code>resterm</code> Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain <code>.http</code> for diff and version</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> with scripted tests, workflows, mocks, recorder, and a CLI runner for CI.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>xh</code>, <code>httpie</code>, etc...</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Prime triplet</title><category>numeric</category><category>shape</category><pubDate>2026-11-08 08:19:06 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Prime_triplet">Prime triplet</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`moduli` Diffie-Hellman moduli | Man Page | File Formats | openssh-server | ManKier</title><category>config</category><category>cryptography</category><category>infosec</category><category>legacy</category><category>ssh/sshd</category><pubDate>2026-11-08 08:07:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.mankier.com/5/moduli"><code>moduli</code> Diffie-Hellman moduli | Man Page | File Formats | openssh-server | ManKier</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>/etc/moduli</code> prime numbers and generators for use by <code>sshd</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://security.stackexchange.com/questions/79043/is-it-considered-worth-it-to-replace-opensshs-moduli-file">cryptography - Is it considered worth it to replace OpenSSH's moduli file?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://asecuritysite.com/blog/2024-10-16_After-48-Years--It-s-A-Long-Goodbye-to-the-Diffie-Hellman-Method-a6976a562bfe.html">After 48 Years, It’s A Long Goodbye to the Diffie-Hellman Method</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">DH Diffie–Hellman key exchange</a></li>
+<li><a href="https://wikipedia.org/wiki/Post-Quantum_Extended_Diffie%E2%80%93Hellman">PQXDH Post-Quantum Extended Diffie–Hellman</a></li>
+<li>#successor <a href="https://wikipedia.org/wiki/ML-KEM">ML-KEM: Module-Lattice-Based Key-Encapsulation Mechanism</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  8 08:07:46 2026] #cpp #cli <a href="https://github.com/kimwalisch/primesieve"><code>primesieve</code> prime number generator</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">primesieve 1000000 --print=2
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> stress #test/load both the CPU and memory.
+<ul>
+<li>Pro: checking system stability under maximum load and verifying your cooling solution (fans, heatsinks, thermal paste, etc.)
+<code>primesieve</code> stress test supports two modes: CPU (highest CPU load) and RAM (high memory usage).</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>scoop</code></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kimwalisch/primecount"><code>primecount</code> prime counting function library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</title><category>mcu</category><category>motor</category><category>protocol/can</category><pubDate>2026-11-07 09:09:39 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/-CWz4tMx0C5-416uAtcOlQ">STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -295,64 +359,6 @@ herdr server stop # kill all session.
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:15:27 2026] <a href="https://github.com/makefunstuff/herdr-android">herdr-android</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>N32H765EC</title><category>ethernet</category><category>mcu</category><pubDate>2026-11-06 07:06:19 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.nationstech.com/product/general/n32h/n32h765ec/">N32H765EC</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have 2 Ethernet.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32h7xx-series/gd32h759">GD32H759: 600MHz Arm® Cortex®-M7 MCU with TFT-LCD &amp; CAN-FD | also 2 Ethernet</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://community.nxp.com/t5/MCUXpresso-SDK/Dual-Ethernet-application-with-LWIP-on-RT1064/m-p/1394396#M3500">Solved: Dual Ethernet application with LWIP on RT1064 - NXP Community</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://www.nxp.com/products/i.MX-RT1170">i.MX RT1170 Crossover MCU Family with Arm Cortex-M7 and Cortex-M4, also dual Ethernet</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`rtic` Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</title><category>embed</category><category>rust</category><category>scheduler</category><category>stm32</category><pubDate>2026-11-06 07:01:10 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/rtic-rs/rtic"><code>rtic</code> Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #protocol/ptp: <a href="https://github.com/pendulum-project/statime"><code>statime</code> Precision Time Protocol (PTP) in Rust</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have #stm32 implementation as well, madness.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> at first I thought of this as something related to NTP.
-<ul>
-<li><a href="https://github.com/pendulum-project/ntpd-rs"><code>ntpd-rs</code> full implementation of Network Time Protocol, NTS support.</a>
-<ul>
-<li>#blog <a href="https://lobste.rs/s/rnvrel/ubuntu_adopt_ntpd_rs_as_default_time">Ubuntu to adopt ntpd-rs as the default time synchronization client and server</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=35520044">The end of a myth: Distributed transactions can scale</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#networking <a href="https://nasa-jpl.github.io/tsn-scenarios/docs/main/">Introduction :: TSN: Time sensitive networking Scenarios</a></li>
-<li><a href="https://github.com/nasa-jpl/tsn-scenarios">Time-Sensitive Networking scenarios</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:01:10 2026] <a href="https://www.ti.com/product/DP83640">DP83640 PTP-aware Ethernet PHY transceiver</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>awesome README template to jumpstart your projects!</title><category>template</category><category>wprog</category><pubDate>2026-11-05 08:23:02 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/othneildrew/Best-README-Template">awesome README template to jumpstart your projects!</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov  5 20:23:02 2026] how naive for anyone to think this hold a candle to AI..</li>
 </ul>
 </li>
 </ul>
