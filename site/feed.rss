@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`resterm` Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain `.http` for diff and version</title><category>api/graphql</category><category>format/http</category><category>http</category><category>swt</category><pubDate>2026-11-08 08:24:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`mpvrc` Unofficial IPC wrapper &amp; command-line controller for `MPV`</title><category>cli</category><category>mpv</category><category>remote</category><category>socket/ipc</category><pubDate>2026-11-08 09:33:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/NotAShelf/mpvrc"><code>mpvrc</code> Unofficial IPC wrapper &amp; command-line controller for <code>MPV</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">mpvrc next
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #nightly <a href="https://github.com/groutoutlook/mpvrc">forked <code>mpvrc</code></a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`TreeSheets` mind mapper.</title><category>diagram</category><category>graph</category><category>swgui</category><pubDate>2026-11-08 08:36:57 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://strlen.com/treesheets/"><code>TreeSheets</code> mind mapper.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`resterm` Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain `.http` for diff and version</title><category>api/graphql</category><category>format/http</category><category>http</category><category>swt</category><pubDate>2026-11-08 08:24:46 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/unkn0wn-root/resterm"><code>resterm</code> Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain <code>.http</code> for diff and version</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> with scripted tests, workflows, mocks, recorder, and a CLI runner for CI.</li>
@@ -311,54 +338,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 08:24:38 2026] <a href="https://lobste.rs/s/cozhtg/so_my_isp_was_hijacking_my_dns">So my ISP was hijacking my DNS</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ESP32 Dual Ethernet, production-ready ESP32 KSZ8863. IoT development platform that combines Wi-Fi wireless networking with a wired dual-port Ethernet switch</title><category>esp32</category><category>ethernet</category><category>hard</category><pubDate>2026-11-06 08:15:31 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/jnlee4838/esp32-ksz8863-dual-Ethernet">ESP32 Dual Ethernet, production-ready ESP32 KSZ8863. IoT development platform that combines Wi-Fi wireless networking with a wired dual-port Ethernet switch</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>swt</category><category>terminal</category><pubDate>2026-11-06 07:15:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">herdr # launch into the big mux menu.
-herdr server stop # kill all session.
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: choose me <code>pwsh</code> without any config. That's much better over <code>zellij</code> which chose <code>cmd</code></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201003">Herdr is joining Y Combinator. The runtime stays open</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50298436">Herdr has released native app</a>
-<ul>
-<li>#android <a href="https://github.com/0cv/herdr-mobile-relay"><code>herdr-mobile-relay</code> monitor Herdr agents remotely from your phone, a mobile web app for Android/iOS with push notifications, QR setup, and multi-computer relays.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zellij</code>, <code>tmux</code>
-<ul>
-<li>but those 2 cant run in windows so dont bother actually.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Aug 28 12:35:05 2026] <code>zellij</code> in scoop now.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:15:10 2026] #macos <a href="https://github.com/codealong/codealong"><code>codealong</code> agent you run, in 1 window for macOS and Linux for Claude Code, Codex, OpenCode, Antigravity and Cursor, across your accounts and machines.</a>
-<ul>
-<li><a href="https://github.com/BrokkAi/mjolnir/"><code>mjolnir</code> Manage Harness with durable sessions, isolated environments, quotas, and remote control</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:15:27 2026] <a href="https://github.com/makefunstuff/herdr-android">herdr-android</a></li>
 </ul>
 </li>
 </ul>
