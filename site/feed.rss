@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`git-workspace` Sync personal and work git repositories from multiple providers :rocket:</title><category>cli</category><category>git</category><pubDate>2026-11-08 07:45:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Managing a custom domain for your GitHub Pages site - GitHub Docs</title><category>code/forge</category><category>github</category><category>wprog</category><pubDate>2026-11-08 09:52:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Managing a custom domain for your GitHub Pages site - GitHub Docs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Codex CLI 0.167.0 add agent command center, backend switching and image previews</title><category>cli</category><category>codex</category><category>keybinding</category><category>swt</category><pubDate>2026-11-08 09:17:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/CodexAutomation/comments/1xpf8er">Codex CLI 0.167.0 add agent command center, backend switching and image previews</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's <code>left</code> on a blank textbox. <code>esc</code> back to normal interface. navigation keys move around, there is &quot;show more&quot;</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">codex agents --no-daemon # in my shim anyways.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can change dir easier.. look at other running, history inside <code>codex</code> itself.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`git-workspace` Sync personal and work git repositories from multiple providers :rocket:</title><category>cli</category><category>git</category><pubDate>2026-11-08 07:45:08 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/orf/git-workspace#install-cd"><code>git-workspace</code> Sync personal and work git repositories from multiple providers :rocket:</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -268,31 +295,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> linenoise, reedline and infinite of them.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Truetype font with PCB related symbols</title><category>kicad</category><category>symbol</category><category>typesetting</category><pubDate>2026-11-07 01:57:57 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.eevblog.com/forum/eda/truetype-font-with-pcb-related-symbols/">Truetype font with PCB related symbols</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> no more special graphic, now just font.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov  7 13:57:57 2026] #ai I prompted <code>codex</code> to install font today. Too many questionable font choice.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`gmp` metaprogramming library for compile-time code generation</title><category>api</category><category>codegen</category><category>cpp</category><category>meta</category><category>reflection</category><pubDate>2026-11-07 01:55:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lkimuk/gmp"><code>gmp</code> metaprogramming library for compile-time code generation</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/SteveOberst/cppgen"><code>cppgen</code> code-first, header-only C++ code generator with a typed AST, ergonomic builder API, explicit raw fallbacks</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
