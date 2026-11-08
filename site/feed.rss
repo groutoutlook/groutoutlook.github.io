@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Tailscale Community Projects: a new approach to stability &amp; reliability</title><category>infosec</category><category>methodology</category><category>netw</category><category>remote</category><category>tailscale</category><pubDate>2026-11-08 03:34:11 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`git-workspace` Sync personal and work git repositories from multiple providers :rocket:</title><category>cli</category><category>git</category><pubDate>2026-11-08 07:45:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/orf/git-workspace#install-cd"><code>git-workspace</code> Sync personal and work git repositories from multiple providers :rocket:</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>richtexteditor</title><category>markdown</category><category>richtext</category><category>soft</category><category>utils/macro</category><category>website</category><pubDate>2026-11-08 05:58:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://richtexteditor.com/Demos/">richtexteditor</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Render rich text, visit that website.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to test rich text inject in espanso.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Could very much find a software to render those rich text.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  8 17:58:07 2026] #library #typescript <a href="https://github.com/obsidianmd/wordgard"><code>wordgard</code> - Rich text editor textbox.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`KaTeX` Fast math typesetting for the web.</title><category>document</category><category>file</category><category>math</category><category>typesetting</category><pubDate>2026-11-08 05:35:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/KaTeX/KaTeX"><code>KaTeX</code> Fast math typesetting for the web.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>typst</code> of course.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Our Business Card Has a Play Button | Systemscape</title><category>battery</category><category>ble</category><category>hard</category><category>pcb</category><category>rust</category><category>usb</category><pubDate>2026-11-08 05:14:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.systemscape.com/blog/2026/bluetooth-business-card/">Our Business Card Has a Play Button | Systemscape</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and a carved in usb c female receptacle in the edge. a CR2032 holder which I found very impressive.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Systemscape/business-card-firmware">Systemscape/business-card-firmware: The firmware for our Bluetooth business card</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Tailscale Community Projects: a new approach to stability &amp; reliability</title><category>infosec</category><category>methodology</category><category>netw</category><category>remote</category><category>tailscale</category><pubDate>2026-11-08 03:34:11 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.reddit.com/r/Tailscale/comments/1jjnjro">Tailscale Community Projects: a new approach to stability &amp; reliability</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -243,54 +292,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/SteveOberst/cppgen"><code>cppgen</code> code-first, header-only C++ code generator with a typed AST, ergonomic builder API, explicit raw fallbacks</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>From Token Sequences to operator for | Barry&apos;s C++ Blog</title><category>cpp</category><category>lang</category><category>template</category><pubDate>2026-11-07 01:32:12 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://brevzin.github.io/c++/2026/11/04/operator-for/">From Token Sequences to operator for | Barry's C++ Blog</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>P4444: std::big_int</title><category>cpp</category><category>integer</category><category>lang</category><pubDate>2026-11-07 01:17:17 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/cpp/comments/1vrk2cj">P4444: std::big_int</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=19991405">BigInt Shipping in Firefox</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>LLVM Weekly - a weekly newsletter covering developments in LLVM, Clang and more</title><category>compiler</category><category>meta</category><category>prog</category><pubDate>2026-11-07 01:11:06 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://llvmweekly.org/">LLVM Weekly - a weekly newsletter covering developments in LLVM, Clang and more</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1vsmdo9">Is there a way to track reflection support status in Clang?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`hpx` C++ Standard Library for Parallelism and Concurrency</title><category>api</category><category>cpp</category><category>hpc</category><pubDate>2026-11-06 10:30:29 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/TheHPXProject/hpx"><code>hpx</code> C++ Standard Library for Parallelism and Concurrency</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/cpp/comments/1xkrq2q">HPX V2.0.0 released: C++20 baseline, C++20 modules, stdexec-based senders/receivers, early C++26 reflection! - The HPX Project</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
