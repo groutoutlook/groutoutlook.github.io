@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>`mpvrc` Unofficial IPC wrapper &amp; command-line controller for `MPV`</title><category>cli</category><category>mpv</category><category>remote</category><category>socket/ipc</category><pubDate>2026-11-08 09:33:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/</link><description></description><item><title>Ephemeral nodes · Tailscale Docs</title><category>backend</category><category>remote</category><category>tailscale</category><category>web/app</category><pubDate>2026-11-08 03:24:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://tailscale.com/docs/features/ephemeral-nodes">Ephemeral nodes · Tailscale Docs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in general <code>tailscale</code> is so strong. let me feel like WLAN is one click away.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://hub.docker.com/r/tailscale/tailscale"><code>tailscale</code> - <code>Docker</code> Image</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>电感式编码器线圈生成工具 V3.0</title><category>component</category><category>pcb/placement</category><category>pcba</category><category>tiling</category><pubDate>2026-11-08 01:41:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/SU4_gm8KfP2XJzNso3uFZg">电感式编码器线圈生成工具 V3.0</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The US believes Nvidia’s Huang had romantic relationship with alleged Chinese spy</title><category>humor</category><category>us</category><pubDate>2026-11-08 11:24:42 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/pcmasterrace/comments/1xqacd6">The US believes Nvidia’s Huang had romantic relationship with alleged Chinese spy</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`mpvrc` Unofficial IPC wrapper &amp; command-line controller for `MPV`</title><category>cli</category><category>mpv</category><category>remote</category><category>socket/ipc</category><pubDate>2026-11-08 09:33:51 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/NotAShelf/mpvrc"><code>mpvrc</code> Unofficial IPC wrapper &amp; command-line controller for <code>MPV</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -259,85 +295,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/amoldhamale1105/EventLoop">amoldhamale1105/EventLoop: A C++ library providing the functionality of an event loop within an application</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Introducing Adaptive Dark Mode</title><category>css</category><category>ui</category><category>uiweb</category><pubDate>2026-11-06 08:57:16 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/yba0yg/introducing_adaptive_dark_mode">Introducing Adaptive Dark Mode</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`mbedtls` TLS library, and reference implementation of the PSA Cryptography API</title><category>debugging</category><category>embed</category><category>encrypt</category><category>libc</category><category>tcpip</category><pubDate>2026-11-06 08:55:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Mbed-TLS/mbedtls"><code>mbedtls</code> TLS library, and reference implementation of the PSA Cryptography API</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> needed for LwIP stack in general.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-libc"></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #windows <a href="https://github.com/TINF20C/Team_4_Websockets-lwIP/wiki/lwIP-Windows-Installation-Guide">lwIP Windows Installation Guide · TINF20C/Team_4_Websockets-lwIP Wiki</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/mbed-ce/mbed-os"><code>mbed-os</code> operating system designed for the internet of things</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> community edition, official <code>mbed-os</code> from ARM discontinued due to lack of interests.</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zephyr</code>. this shithole of #libc code still kicking, which is enraging for me.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #esp32 #rpi
-<ul>
-<li><a href="https://github.com/felixthecat8a/nano_rp2040_aht10_server">felixthecat8a/nano_rp2040_aht10_server: JSON WiFi server for Nano RP2040 + AHT10/AHT20 that shares sensor data over AP using WiFiNINA.</a></li>
-<li><a href="https://github.com/ayushsharma82/ESP-DASH">ayushsharma82/ESP-DASH: Blazing fast library to create a functional, on-device dashboard for ESP32, RP2040+W and RP2350+W microcontrollers</a></li>
-<li><code>ttyd</code> also support this backend,</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 08:55:27 2026] <a href="https://lobste.rs/s/bqllfe/your_cryptography_conspiracy_theory_is">Your Cryptography Conspiracy Theory Is Wrong</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What Is My ISP - Find Your Internet Service Provider</title><category>dns</category><category>networking/isp</category><category>web</category><pubDate>2026-11-06 08:24:38 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://dnschecker.org/what-is-my-isp.php">What Is My ISP - Find Your Internet Service Provider</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/openwrt/comments/1kuf57v">ISPs hate this little trick</a>
-<ul>
-<li>I am being blocked in <code>codeberg</code> with FPT internet.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#openwrt PPPoE is kinda a weird topic.
-<ul>
-<li><a href="https://www.reddit.com/r/networking/comments/198zy56">Is PPPoE a must on a GPON network</a>
-<ul>
-<li>no PPPoE is actually legacy.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://openwrt.org/docs/guide-user/network/wan/isp-configurations">ISP Configurations</a></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/GlInet/comments/1w4ejs8">Flint 4 directly connected to fiber with an XGS-PON SFP+ module</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/HomeNetworking/comments/15hjiqt">Planning a new home network. Is it possible to ditch this modem and plug the GPON directly into a SFP transceiver in a switch?</a>
-<ul>
-<li>dont bother to ditch ISP's GPON anytime soon.</li>
-</ul>
-</li>
-<li><a href="https://voz.vn/t/sau-1-ngay-trai-nghiem-xgspon.1021806/page-47">đánh giá - Sau 1 ngày trải nghiệm XGSPON | Page 47 | VOZ</a>
-<ul>
-<li><a href="https://vnpt-technology.vn/vi/product_category_v2/xgs-pon-ont">VNPT Technology - Website</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 08:24:38 2026] <a href="https://lobste.rs/s/cozhtg/so_my_isp_was_hijacking_my_dns">So my ISP was hijacking my DNS</a></li>
 </ul>
 </li>
 </ul>
