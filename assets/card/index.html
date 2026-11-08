@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Card — browser preview</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    :root { color-scheme: dark; font: 15px/1.5 system-ui, sans-serif; color: var(--text); background: var(--bg); }
+    * { box-sizing: border-box; }
+    body { margin: 0; height: 100dvh; display: grid; grid-template-columns: 156px minmax(0, 1fr); overflow: hidden; }
+    header { padding: 20px 12px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 20px; min-height: 0; overflow: auto; }
+    h1 { font-size: 16px; margin: 0 10px; }
+    nav { display: grid; gap: 6px; }
+    a { color: inherit; text-underline-offset: 4px; }
+    nav a { text-decoration: none; padding: 8px 10px; border: 1px solid transparent; border-radius: 6px; font-size: 13px; }
+    nav a[aria-current="page"] { color: var(--bg); background: var(--green); border-color: var(--green); }
+    a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+    .actions { margin-top: auto; display: grid; gap: 8px; }
+    .actions a { padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; font-size: 12px; }
+    main { padding: 12px; min-width: 0; min-height: 0; position: relative; }
+    iframe { display: block; width: 100%; height: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+    .image-view { width: 100%; height: 100%; }
+    img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    [hidden] { display: none !important; }
+    #message { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: calc(100% - 40px); padding: 16px; margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+    @media (max-width: 640px) {
+      body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+      header { padding: 10px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; border-right: 0; border-bottom: 1px solid var(--line); }
+      h1 { margin: 0; align-self: center; } nav { grid-column: 1 / -1; grid-row: 2; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+      nav a { padding: 6px 3px; text-align: center; font-size: 11px; }
+      .actions { display: flex; justify-content: end; gap: 6px; margin: 0; } .actions a { padding: 5px 8px; }
+      main { padding: 8px; }
+    }
+  </style>
+  <script src="gif.js" defer></script><script src="preview.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Preview</h1>
+    <nav aria-label="Render mode">
+      <a href="#animate" data-mode="animate" aria-current="page">Animated</a>
+      <a href="#wasm" data-mode="wasm">Interactive demo</a>
+      <a href="#html" data-mode="html">HTML</a>
+      <a href="#svg" data-mode="svg">SVG</a>
+      <a href="#png" data-mode="png">PNG</a>
+      <a href="#animated-svg" data-mode="animated-svg" hidden>Animated SVG</a>
+      <a href="#lottie" data-mode="lottie">Lottie</a>
+      <a href="#gif" data-mode="gif">GIF</a>
+    </nav>
+    <div class="actions">
+      <a id="open-view" href="card.animated.html" target="_blank" rel="noopener">Open ↗</a>
+      <a id="download" href="card.animated.html" download>Export HTML</a>
+    </div>
+  </header>
+  <main>
+    <iframe id="frame" src="card.animated.html" title="Animated card"></iframe>
+    <div class="image-view" id="image-view" hidden><img id="image" alt="Business card"></div>
+    <p id="message" role="status" hidden></p>
+  </main>
+  <noscript><p>Open a view directly: <a href="wasm.html">WASM</a>, <a href="card.html">HTML</a>, <a href="card.svg">SVG</a>, <a href="card.png">PNG</a>.</p></noscript>
+</body>
+</html>

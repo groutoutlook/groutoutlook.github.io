@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>M microchip</title>
+  <rect width="64" height="64" rx="14" fill="#10151d"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 10v7m8-7v7m8-7v7M24 47v7m8-7v7m8-7v7M10 24h7m-7 8h7m-7 8h7m30-16h7m-7 8h7m-7 8h7" stroke="#8bc9ef" stroke-width="3"/>
+    <rect x="17" y="17" width="30" height="30" rx="6" fill="#151c26" stroke="#84d884" stroke-width="3"/>
+    <path d="M24 39V25l8 9 8-9v14" stroke="#84d884" stroke-width="4"/>
+  </g>
+</svg>

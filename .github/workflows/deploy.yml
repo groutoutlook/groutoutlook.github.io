@@ -1,4 +1,4 @@
-name: Deploy Tiller site
+name: Deploy personal site
 
 on:
   push:
@@ -24,13 +24,24 @@ jobs:
       - name: Check out Tiller site source
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Test site assembly
+        run: node --test tests/site.test.mjs
+
+      - name: Assemble card, blog, and map
+        run: node scripts/build-site.mjs
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: public
 
       - name: Deploy to Pages
         id: deployment

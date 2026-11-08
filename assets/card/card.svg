@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+<title id="title">Meog — Embedded Firmware Engineer + PCB Designer</title><desc id="description">I write software and write hardware, yeah, write. Sometimes fun TUI/CLI things like this! meogauchip_0. RelightTL. Email mailto:tdtd@duck.com</desc>
+<defs>
+<linearGradient id="panel" x2="1" y2="1"><stop stop-color="#18212c"/><stop offset="1" stop-color="#121923"/></linearGradient>
+<linearGradient id="accent" x2="1" y2="1"><stop stop-color="#84d884"/><stop offset="1" stop-color="#8bc9ef"/></linearGradient>
+<radialGradient id="glow" cx="0" cy="0" r="1"><stop stop-color="#84d884" stop-opacity=".07"/><stop offset="1" stop-color="#10151d" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#283342"/></pattern>
+</defs>
+<rect width="1200" height="800" fill="#10151d"/><rect width="1200" height="800" fill="url(#dots)"/><rect width="1200" height="800" fill="url(#glow)"/>
+<rect x="48" y="48" width="1104" height="704" rx="18" fill="url(#panel)" stroke="url(#accent)" stroke-width="1.5"/>
+<path d="M96 142H1104M402 180V650M440 350H1096M96 682H1104" fill="none" stroke="#283342"/>
+<g fill="none" stroke="url(#accent)" stroke-width="2">
+<rect x="140" y="340" width="200" height="180" rx="20" fill="#151c26"/>
+<path d="M170 340v-30m40 30v-30m40 30v-30m40 30v-30m40 30v-30M170 520v30m40-30v30m40-30v30m40-30v30m40-30v30M140 370h-30m30 40h-30m30 40h-30m30 40h-30M340 370h30m-30 40h30m-30 40h30m-30 40h30"/>
+<path d="M192 470v-80l48 54 48-54v80" stroke-width="5" stroke-linejoin="round"/>
+<path d="M110 410H88v-48M370 450h24v66"/>
+<circle cx="88" cy="354" r="6"/><circle cx="394" cy="524" r="6"/>
+</g><g font-family="Consolas, Liberation Mono, monospace" fill="#f5f9ff"><text x="96" y="112" font-size="20" fill="#f5f9ff" xml:space="preserve">@meogauchip_0</text>
+<text x="858" y="112" font-size="16" fill="#a7b6c8" xml:space="preserve">PERSONAL CARD / 01</text>
+<text x="440" y="166" font-size="14" fill="#a7b6c8" xml:space="preserve">HELLO, I&#39;M</text>
+<text x="440" y="232" font-size="56" fill="#f5f9ff" xml:space="preserve">Meog</text>
+<text x="440" y="282" font-size="24" fill="#f5f9ff" xml:space="preserve">Embedded Firmware Engineer + PCB Designer</text>
+<text x="440" y="328" font-size="26" fill="#f5f9ff" xml:space="preserve">RelightTL</text>
+<text x="440" y="402" font-size="14" fill="#a7b6c8" xml:space="preserve">ABOUT</text>
+<text x="440" y="444" font-size="20" fill="#f5f9ff" xml:space="preserve">I write software and write hardware, yeah, write.</text>
+<text x="440" y="478" font-size="20" fill="#f5f9ff" xml:space="preserve">Sometimes fun TUI/CLI things like this!</text>
+<text x="106" y="602" font-size="17" fill="#8bc9ef" xml:space="preserve">FIRMWARE / PCB DESIGN</text>
+<text x="82" y="200" font-size="17" fill="#84d884" xml:space="preserve">    |   |     |    |</text>
+<text x="82" y="223" font-size="17" fill="#84d884" xml:space="preserve">    |---|,---.|    |    .---.</text>
+<text x="82" y="246" font-size="17" fill="#84d884" xml:space="preserve">    |   ||---&#39;|    |    |   |</text>
+<text x="82" y="269" font-size="17" fill="#84d884" xml:space="preserve">    &#39;   &#39;`---&#39;`---&#39;`---&#39;`---&#39;,</text>
+<text x="440" y="548" font-size="14" fill="#a7b6c8" xml:space="preserve">EMAIL</text>
+<a href="mailto:tdtd@duck.com" xlink:href="mailto:tdtd@duck.com"><text x="440" y="587" font-size="24" fill="#f5f9ff" xml:space="preserve">tdtd@duck.com</text></a>
+</g>
+<g><rect x="96" y="708" width="24" height="5" rx="2" fill="#84d884"/><rect x="126" y="708" width="24" height="5" rx="2" fill="#8bc9ef"/><rect x="156" y="708" width="24" height="5" rx="2" fill="#aaa2ef"/><rect x="186" y="708" width="24" height="5" rx="2" fill="#f5f9ff"/></g>
+</svg>

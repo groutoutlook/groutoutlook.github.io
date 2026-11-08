@@ -1,6 +1,6 @@
 param([ValidateRange(1024, 65535)][int] $Port = 1337)
 $ErrorActionPreference = 'Stop'
-$site = Join-Path (Split-Path -Parent $PSScriptRoot) 'site'
+$site = Join-Path (Split-Path -Parent $PSScriptRoot) 'public'
 $url = "http://127.0.0.1:$Port/"
 if ([System.Net.NetworkInformation.IPGlobalProperties]::GetIPGlobalProperties().GetActiveTcpListeners().Port -contains $Port) { throw "Port $Port is already in use. Run just dev with another port." }
 $log = Join-Path ([System.IO.Path]::GetTempPath()) "tiller-preview-$([guid]::NewGuid())"

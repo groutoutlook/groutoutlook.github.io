@@ -21,7 +21,19 @@ build:
 rebuild:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1" -Force
 
-dev port="1337": build
+# Assemble the checked-in blog and card without reading the journals.
+assemble:
+    node "{{justfile_directory()}}/scripts/build-site.mjs"
+
+# Import an already staged release build from the card project.
+card-import source:
+    node "{{justfile_directory()}}/scripts/import-card.mjs" "{{source}}"
+
+# Download only final browser files from an authenticated private release.
+card-release tag="latest" repo="groutoutlook/card":
+    node "{{justfile_directory()}}/scripts/import-card-release.mjs" "{{tag}}" "{{repo}}"
+
+dev port="1337": assemble
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Start-TilPreview.ps1" -Port {{port}}
 
 dev-stop port="1337":
@@ -32,6 +44,9 @@ daily:
 
 scan:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-SecretScan.ps1"
+
+test:
+    node --test tests/site.test.mjs
 
 hooks:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Install-GitHooks.ps1"

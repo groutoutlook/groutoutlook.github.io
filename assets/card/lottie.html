@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card — Lottie</title><link rel="stylesheet" href="theme.css">
+  <style>
+    * { box-sizing:border-box; } body { margin:0; height:100dvh; display:grid; grid-template-rows:auto minmax(0,1fr) auto; overflow:hidden; font:14px/1.5 system-ui,sans-serif; }
+    header { display:flex; align-items:center; flex-wrap:wrap; gap:8px; padding:10px 12px; border-bottom:1px solid var(--line); }
+    h1 { font-size:16px; margin:0 auto 0 0; } a { color:var(--green); }
+    button { color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:5px; padding:7px 12px; font:inherit; cursor:pointer; }
+    main { min-width:0; min-height:0; } #animation { width:100%; height:100%; }
+    footer { display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding:10px 16px; color:var(--muted); }
+    #timeline { flex:1; min-width:80px; accent-color:var(--green); } #status { width:100%; margin:0; }
+    .embedded h1, .embedded header > a { display:none; }
+    :focus-visible { outline:2px solid var(--green); outline-offset:4px; }
+  </style>
+  <script src="lottie.min.js" defer></script><script src="lottie.js" defer></script>
+</head>
+<body>
+  <header><h1>Lottie</h1><button id="play" disabled>Pause</button><button id="restart" disabled>Restart</button><button id="static" disabled>Static</button><a href="card.lottie.json" download>Export JSON</a></header>
+  <main><div id="animation" role="img" aria-label="Animated business card"></div></main>
+  <footer><input id="timeline" aria-label="Animation position" type="range" min="0" max="374" value="0" step="1"><span id="duration"></span><p id="status" role="status">Loading…</p></footer>
+</body>
+</html>

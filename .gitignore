@@ -3,3 +3,6 @@ tils
 .tiller-build.sha256
 .*.tiller-cache.json
 .*.tiller-cache.pending
+/public/
+/artifacts/
+/.card-import-*/

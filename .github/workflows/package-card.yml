@@ -1,0 +1,31 @@
+name: Package card browser snapshot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test and assemble
+        run: |
+          node --test tests/site.test.mjs
+          node scripts/build-site.mjs
+      - name: Archive the portable browser build
+        run: |
+          mkdir -p artifacts
+          cd assets/card
+          zip -r ../../artifacts/card-web.zip .
+      - name: Upload browser release files
+        uses: actions/upload-artifact@v4
+        with:
+          name: card-web
+          path: artifacts/card-web.zip
+          if-no-files-found: error

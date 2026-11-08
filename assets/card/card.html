@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="description" content="Meog — Embedded Firmware Engineer + PCB Designer">
+<title>Meog — Embedded Firmware Engineer + PCB Designer</title>
+<style>
+:root { color-scheme:dark; --bg:#10151d; --panel:#151c26; --text:#f5f9ff; --muted:#a7b6c8; --green:#84d884; --blue:#8bc9ef; --line:#283342; background:var(--bg); color:var(--text); font-family:Consolas,"Liberation Mono",monospace; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; min-height:100dvh; display:grid; place-content:center; gap:12px; padding:24px; background:radial-gradient(ellipse at 12% 12%,#84d8840d,transparent 48%),radial-gradient(ellipse at 88% 85%,#8bc9ef0c,transparent 45%),radial-gradient(#28334270 .8px,transparent .8px); background-size:auto,auto,24px 24px; }
+main { width:min(1000px,calc(100vw - 48px)); padding:24px 28px; border:1px solid transparent; border-radius:18px; background:linear-gradient(135deg,#18212c,#121923) padding-box,linear-gradient(120deg,var(--green),var(--line),var(--blue),var(--line),var(--green)) border-box; background-size:100% 100%,300% 300%; box-shadow:0 24px 90px #0005; animation:border-flow 18s ease-in-out infinite; }
+@keyframes border-flow { 0%,100% { background-position:0 0,0% 50%; } 50% { background-position:0 0,100% 50%; } }
+header { display:flex; justify-content:space-between; align-items:center; gap:16px; padding-bottom:16px; border-bottom:1px solid var(--line); }
+.handle { font-size:16px; color:var(--text); } .edition,.field-label { color:var(--muted); font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+.content { display:grid; grid-template-columns:220px minmax(0,1fr); gap:28px; padding:24px 0 12px; }
+.art { display:flex; flex-direction:column; justify-content:center; align-items:center; padding-right:20px; border-right:1px solid var(--line); }
+pre { font:bold 11px/1.3 Consolas,"Liberation Mono",monospace; color:var(--green); margin:0; white-space:pre; }
+.art svg { width:190px; max-width:100%; height:auto; margin:18px 0 0; }
+.art-caption { font-size:11px; letter-spacing:.15em; color:var(--blue); margin-top:12px; }
+h1 { font-size:clamp(34px,4.5vw,48px); line-height:1.1; margin:8px 0 12px; overflow-wrap:anywhere; }
+.title { font-size:clamp(17px,1.8vw,20px); line-height:1.4; margin:0 0 8px; }
+.company { color:var(--text); font-size:20px; margin:0 0 18px; }
+.about { border-top:1px solid var(--line); padding-top:16px; }
+.intro { font-size:14px; line-height:1.65; color:var(--text); margin:8px 0 16px; }
+h2 { font-size:12px; font-weight:normal; color:var(--muted); letter-spacing:.12em; text-transform:uppercase; margin:0; }
+ul { list-style:none; padding:0; margin:0; } li+li { border-top:1px solid var(--line); }
+a { color:var(--text); text-decoration:none; }
+li a { display:grid; grid-template-columns:1fr auto; gap:6px 16px; padding:12px 0; border-top:1px solid var(--line); }
+li .field-label { grid-column:1; } .contact { grid-column:1; font-size:18px; overflow-wrap:anywhere; } .arrow { grid-column:2; grid-row:1/3; align-self:center; color:var(--green); }
+a:hover .contact { color:var(--green); } a:focus-visible,button:focus-visible,input:focus-visible { outline:2px solid var(--green); outline-offset:5px; }
+.card-foot { display:flex; gap:6px; padding-top:14px; margin-top:8px; border-top:1px solid var(--line); } .swatch { width:20px; height:5px; border-radius:2px; }
+.playback { width:min(1000px,calc(100vw - 48px)); display:flex; flex-wrap:wrap; gap:8px; align-items:center; color:var(--muted); font-size:12px; }
+button { font:inherit; color:var(--text); border:1px solid var(--line); border-radius:6px; background:var(--panel); padding:9px 14px; cursor:pointer; } button:hover { border-color:var(--green); }
+.scrubber { display:flex; align-items:center; gap:8px; margin-left:auto; } input { accent-color:var(--green); } #clock { font-size:11px; text-align:right; }
+body[data-state="paused"] * { animation-play-state:paused!important; } body[data-state="static"] * { animation:none!important; }
+
+@media (prefers-reduced-motion:reduce) { body:not([data-state="playing"]) * { animation:none!important; } }
+@media(max-width:760px) { body { padding:16px; } main { width:calc(100vw - 32px); padding:20px; } .content { grid-template-columns:1fr; padding-top:20px; gap:20px; } .art { display:none; } .edition { font-size:10px; } .handle { font-size:13px; } .title { font-size:18px; } .playback { width:calc(100vw - 32px); } .scrubber { margin-left:0; } #clock { display:none; } }
+@media print { body { min-height:auto; padding:0; background:var(--bg); } main { width:100%; break-inside:avoid; box-shadow:none; } .playback { display:none; } * { animation:none!important; print-color-adjust:exact; -webkit-print-color-adjust:exact; } }
+</style></head><body>
+<main aria-label="Business card">
+<header><span class="handle spotlight spotlight-3">@meogauchip_0</span><span class="edition">Personal card / 01</span></header>
+<div class="content"><aside class="art" aria-hidden="true"><pre>    |   |     |    |
+    |---|,---.|    |    .---.
+    |   ||---&#39;|    |    |   |
+    &#39;   &#39;`---&#39;`---&#39;`---&#39;`---&#39;,</pre>
+<svg viewBox="70 295 340 285" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="accent" x2="1" y2="1"><stop stop-color="#84d884"/><stop offset="1" stop-color="#8bc9ef"/></linearGradient></defs><g fill="none" stroke="url(#accent)" stroke-width="2">
+<rect x="140" y="340" width="200" height="180" rx="20" fill="#151c26"/>
+<path d="M170 340v-30m40 30v-30m40 30v-30m40 30v-30m40 30v-30M170 520v30m40-30v30m40-30v30m40-30v30m40-30v30M140 370h-30m30 40h-30m30 40h-30m30 40h-30M340 370h30m-30 40h30m-30 40h30m-30 40h30"/>
+<path d="M192 470v-80l48 54 48-54v80" stroke-width="5" stroke-linejoin="round"/>
+<path d="M110 410H88v-48M370 450h24v66"/>
+<circle cx="88" cy="354" r="6"/><circle cx="394" cy="524" r="6"/>
+</g></svg><span class="art-caption">FIRMWARE / PCB DESIGN</span></aside>
+<section class="details"><span class="field-label">Hello, I'm</span><h1 class="spotlight spotlight-0">Meog</h1>
+<p class="title spotlight spotlight-1">Embedded Firmware Engineer + PCB Designer</p><p class="company spotlight spotlight-2">RelightTL</p>
+<div class="about"><h2>About</h2><p class="intro">I write software and write hardware, yeah, write.<br>Sometimes fun TUI/CLI things like this!</p></div>
+<nav aria-label="Hope to do more connectivity-related demo tho"><ul><li><a href="mailto:tdtd@duck.com"><span class="field-label">Email</span><span class="contact spotlight spotlight-4">tdtd@duck.com</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+</ul></nav></section></div>
+<div class="card-foot" aria-hidden="true"><span class="swatch" style="background:#84d884"></span><span class="swatch" style="background:#8bc9ef"></span><span class="swatch" style="background:#aaa2ef"></span><span class="swatch" style="background:#f5f9ff"></span></div>
+</main></body></html>
