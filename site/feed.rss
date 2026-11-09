@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</title><category>module</category><category>voltage/reference</category><pubDate>2026-11-09 01:37:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Tra từ: 祝 / zhu / chúc</title><category>chinese</category><category>vocab</category><pubDate>2026-11-09 01:39:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://hvdic.thivien.net/whv/%E7%A5%9D">Tra từ: 祝 / zhu / chúc</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> as in chúc mừng.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</title><category>module</category><category>voltage/reference</category><pubDate>2026-11-09 01:37:15 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/_NZ7qbCsl5UuDm7TBmJJwA">ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> another bandgap ref chip... like TL431</li>
@@ -236,19 +248,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`resterm` Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain `.http` for diff and version</title><category>api/graphql</category><category>format/http</category><category>http</category><category>swt</category><pubDate>2026-11-08 08:24:46 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/unkn0wn-root/resterm"><code>resterm</code> Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain <code>.http</code> for diff and version</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> with scripted tests, workflows, mocks, recorder, and a CLI runner for CI.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>xh</code>, <code>httpie</code>, etc...</li>
 </ul>
 </li>
 </ul>
