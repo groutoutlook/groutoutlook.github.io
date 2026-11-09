@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`Pagefind` Static low-bandwidth search at scale</title><category>frontend</category><category>rust</category><category>search</category><category>ssg</category><category>web</category><category>wprog</category><pubDate>2026-11-09 11:52:56 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</title><category>module</category><category>voltage/reference</category><pubDate>2026-11-09 01:37:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/_NZ7qbCsl5UuDm7TBmJJwA">ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> another bandgap ref chip... like TL431</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> in here we have the calculaton of the current limit resistor to check which value I should pick.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/NMHYzSO9p6WEDcj7FH6yrg">High-voltage linear constant current direct-drive LED driver circuit design solution</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog <a href="https://www.analog.com/en/resources/analog-dialogue/articles/how-good-must-voltage-reference-be.html">Ask the Applications Engineer—11: How Good Must a Voltage Reference Be? | Analog Devices</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 13:37:15 2026] #pmic #buck <a href="https://mp.weixin.qq.com/s/qe4bKT7gWvMyC9lHBAVsOA">ME3104 | Synchronous current mode buck DC-DC, 2.5~5V width</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`win+x` `i` will open #terminal in Windows, always. Whether default is `pwsh` or `cmd` based on newness.</title><category>default</category><category>keybinding</category><category>windows</category><pubDate>2026-11-09 01:11:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><code>win+x</code> <code>i</code> will open #terminal in Windows, always. Whether default is <code>pwsh</code> or <code>cmd</code> based on newness.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Pagefind` Static low-bandwidth search at scale</title><category>frontend</category><category>rust</category><category>search</category><category>ssg</category><category>web</category><category>wprog</category><pubDate>2026-11-09 11:52:56 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://pagefind.app/"><code>Pagefind</code> Static low-bandwidth search at scale</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -224,57 +249,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>xh</code>, <code>httpie</code>, etc...</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Prime triplet</title><category>numeric</category><category>shape</category><pubDate>2026-11-08 08:19:06 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Prime_triplet">Prime triplet</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`moduli` Diffie-Hellman moduli | Man Page | File Formats | openssh-server | ManKier</title><category>config</category><category>cryptography</category><category>infosec</category><category>legacy</category><category>ssh/sshd</category><pubDate>2026-11-08 08:07:46 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.mankier.com/5/moduli"><code>moduli</code> Diffie-Hellman moduli | Man Page | File Formats | openssh-server | ManKier</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>/etc/moduli</code> prime numbers and generators for use by <code>sshd</code>.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://security.stackexchange.com/questions/79043/is-it-considered-worth-it-to-replace-opensshs-moduli-file">cryptography - Is it considered worth it to replace OpenSSH's moduli file?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://asecuritysite.com/blog/2024-10-16_After-48-Years--It-s-A-Long-Goodbye-to-the-Diffie-Hellman-Method-a6976a562bfe.html">After 48 Years, It’s A Long Goodbye to the Diffie-Hellman Method</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">DH Diffie–Hellman key exchange</a></li>
-<li><a href="https://wikipedia.org/wiki/Post-Quantum_Extended_Diffie%E2%80%93Hellman">PQXDH Post-Quantum Extended Diffie–Hellman</a></li>
-<li>#successor <a href="https://wikipedia.org/wiki/ML-KEM">ML-KEM: Module-Lattice-Based Key-Encapsulation Mechanism</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  8 08:07:46 2026] #cpp #cli <a href="https://github.com/kimwalisch/primesieve"><code>primesieve</code> prime number generator</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">primesieve 1000000 --print=2
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> stress #test/load both the CPU and memory.
-<ul>
-<li>Pro: checking system stability under maximum load and verifying your cooling solution (fans, heatsinks, thermal paste, etc.)
-<code>primesieve</code> stress test supports two modes: CPU (highest CPU load) and RAM (high memory usage).</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>scoop</code></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kimwalisch/primecount"><code>primecount</code> prime counting function library</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
