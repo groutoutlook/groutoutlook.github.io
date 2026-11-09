@@ -19,10 +19,10 @@ _default:
 
 alias b := build
 alias rb := rebuild
-build:
+build: card-import
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1"
 
-rebuild:
+rebuild: card-import
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1" -Force
 
 # Assemble the checked-in blog and card without reading the journals.
@@ -59,5 +59,5 @@ test:
 hooks:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Install-GitHooks.ps1"
 
-pub: card-import build
+pub: build
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Publish-TilSite.ps1"

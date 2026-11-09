@@ -76,8 +76,12 @@ New-Item artifacts -ItemType Directory -Force
 Compress-Archive -Path assets/card/* -DestinationPath artifacts/card-web.zip -Force
 ```
 
-`just build` / `just rebuild` still run Tiller against the configured journals,
-then assemble the complete site. Tiller uses `/blog/` rather than overriding
+`just build` / `just rebuild` first import the latest committed card, then run
+Tiller against the configured journals and assemble the complete site. The
+import includes bundled fonts and their licenses. If an older `public/` has no
+build marker, it is preserved under `.cache/public-backup-*/public` before the
+new output is created. Unmarked custom output directories are still refused.
+Tiller uses `/blog/` rather than overriding
 the base URL with `--dev`. Existing generated pages with root URLs are also
 supported, so assembling alone does not require a full journal rebuild.
 The blog header reads **Blog**, with Home and Map links on every entry.
