@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Card — interactive demo</title>
+  <link rel="preload" href="fonts/DejaVuSansMono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DejaVuSansMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="theme.css">
   <style>
+    @font-face { font-family: "Card Terminal"; src: url("fonts/DejaVuSansMono.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: "Card Terminal"; src: url("fonts/DejaVuSansMono-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
     :root { color-scheme: dark; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, sans-serif; }
     * { box-sizing: border-box; }
     body { margin: 0; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
@@ -21,7 +25,7 @@
     .interaction-hint { flex-basis: 100%; margin: 0; color: var(--muted); font-size: 12px; }
     .help { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
     #stage { flex: 1; min-height: 0; min-width: 0; overflow: auto; display: flex; }
-    #terminal { flex: 1; min-width: 0; margin: 0; padding: 12px; font: 14px/1.25 Consolas, "Liberation Mono", monospace; white-space: pre; tab-size: 4; outline-offset: -3px; touch-action: pan-y; }
+    #terminal { flex: 1; min-width: 0; margin: 0; padding: 12px; font: 14px/17px "Card Terminal", monospace; font-kerning: none; font-variant-ligatures: none; font-synthesis: none; letter-spacing: 0; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; white-space: pre; tab-size: 4; outline-offset: -3px; touch-action: pan-y; }
     #terminal:focus { outline: 1px solid var(--green); }
     #status { padding: 8px 12px; margin: 0; color: var(--muted); }
     .embedded h1 { display:none; }

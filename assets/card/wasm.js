@@ -56,6 +56,9 @@ function renderAnsi(input) {
 
 async function main() {
   if (location.protocol === "file:") throw new Error("Start `just preview` to load WASM over local HTTP in Chrome or Edge. Standalone card.html and card.svg can be opened directly.");
+  // Use the same glyph metrics for text, bold labels, and box drawing on every OS.
+  // Keep the fallback usable if a standalone host omits the bundled fonts.
+  await Promise.all([document.fonts.load('14px "Card Terminal"'), document.fonts.load('bold 14px "Card Terminal"')]).catch(() => {});
   const response = await fetch("card.wasm");
   if (!response.ok) throw new Error(`Could not load card.wasm (HTTP ${response.status}). Run just wasm-stage.`);
   const { instance } = await WebAssembly.instantiate(await response.arrayBuffer(), {});
@@ -91,18 +94,15 @@ async function main() {
     const css = getComputedStyle(terminal);
     const availableWidth = stage.clientWidth - parseFloat(css.paddingLeft) - parseFloat(css.paddingRight);
     const availableHeight = stage.clientHeight - parseFloat(css.paddingTop) - parseFloat(css.paddingBottom);
-    const base = matchMedia("(max-width: 640px)").matches ? 10 : 14;
-    // Measure real cells. Never force a minimum column count wider than the viewport.
-    let fontSize = base, cellWidth, lineHeight, width, visibleRows, minimumRows;
-    for (; fontSize >= 8; fontSize -= 0.25) {
-      context.font = `${fontSize}px ${css.fontFamily}`;
-      cellWidth = context.measureText("M").width;
-      lineHeight = fontSize * 1.25;
-      width = Math.max(1, Math.min(180, Math.floor(availableWidth / cellWidth)));
-      visibleRows = Math.max(1, Math.floor(availableHeight / lineHeight));
-      minimumRows = wasm.wasm_card_minimum_height(width);
-      if (visibleRows >= minimumRows || fontSize === 8) break;
-    }
+    // Reflow the character grid instead of shrinking glyphs into tiny, fractional
+    // sizes. Whole CSS-pixel line heights also keep vertical box strokes joined.
+    const fontSize = matchMedia("(max-width: 640px)").matches ? 12 : 14;
+    context.font = `${fontSize}px ${css.fontFamily}`;
+    const cellWidth = context.measureText("M").width;
+    const lineHeight = Math.round(fontSize * 1.2);
+    const width = Math.max(1, Math.min(180, Math.floor(availableWidth / cellWidth)));
+    const visibleRows = Math.max(1, Math.floor(availableHeight / lineHeight));
+    const minimumRows = wasm.wasm_card_minimum_height(width);
     terminal.style.fontSize = `${fontSize}px`;
     terminal.style.lineHeight = `${lineHeight}px`;
     // Short landscape windows scroll vertically instead of clipping card details.
