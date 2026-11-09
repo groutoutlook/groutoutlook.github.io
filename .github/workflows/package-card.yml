@@ -16,7 +16,7 @@ jobs:
           node-version: 22
       - name: Test and assemble
         run: |
-          node --test tests/site.test.mjs
+          node --test tests/site.test.mjs tests/card.test.mjs
           node scripts/build-site.mjs
       - name: Archive the portable browser build
         run: |

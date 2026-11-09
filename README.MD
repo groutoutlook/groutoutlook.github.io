@@ -7,9 +7,11 @@ served as **Blog** at `/blog/`; `/map/` links to both, the interactive WASM demo
 the render-mode preview, and the feed.
 
 ```powershell
-just assemble       # Build public/ from the checked-in snapshots; no journal scan
+just                # List recipes; never builds anything
+just card-import    # Fetch/build/import the latest card commit; no release needed
+just assemble       # Assemble public/ from the existing blog and card files
 just dev            # Assemble and preview at http://127.0.0.1:1337/
-just test           # Check routes, links, RSS rebasing, and old-link redirects
+just test           # Check card syncing, publishing, routes, and favicons
 ```
 
 `site/` stays the generated Tiller blog. `assets/card/` is a portable browser
@@ -18,45 +20,51 @@ GitHub Pages runs the assembler before uploading `public/`.
 The shared green microchip favicon is in `assets/site/` and is added to the
 card, blog, map, and other browser views during assembly.
 
-Your shell's `rlo` command already follows the vault's daily publish script
-into this repo's `just pub` recipe. That regenerates the blog and assembles
-the complete site before publishing. The existing once-per-day check still
-applies; `rlo -Force` bypasses that daily check. It does not import a new card
-release. Use `just assemble` or `just dev` here for local site-only changes.
+`rlo` now checks the latest committed card on every run. When the daily blog
+publish is due, it runs `just pub`: sync the card, regenerate the blog, assemble
+the site, and commit/push the blog and card assets. If the blog was already
+published today, it runs `just card-publish`: sync and publish card changes
+without rebuilding the journals. `rlo -Force` still bypasses the daily blog
+check. An unchanged card commit does not trigger another card build or commit.
 
-To refresh the card, first run `just wasm-stage` in the card project, then
-generate any PNG/GIF files its exported pages link to. From this repo:
+Card source and ref are configured in `card.config.json`. By default, syncing
+fetches the latest commit on the private repo's default branch. Push changes
+to the card repo, then run `rlo`; tags and GitHub Releases are not required.
+Git uses your existing GitHub credentials. The private checkout, npm packages,
+and Rust build cache stay under ignored `.cache/card/`; only browser files
+are imported into `assets/card/` and published. Your working card repo is
+not modified, and its uncommitted edits are not imported by this workflow.
+
+To update and preview the card without publishing:
+
+```powershell
+just card-import
+just dev
+```
+
+The first sync requires Git, stable Rust/rustup, the WASM target, and Node/npm.
+It installs the WASM target, builds the committed source, and generates the
+PNG/GIF exports, including portrait variants when supported. Later syncs
+rebuild only when the upstream commit or imported files have changed.
+
+An explicit local project, `dist` directory, or extracted browser archive is
+still supported for testing local builds:
 
 ```powershell
 just card-import 'D:\ProgramDataD\MiscLang\07.02-Rust\proj\card'
 just assemble
 ```
 
-The importer also accepts a `dist` directory or an extracted `card-web.zip`.
-It validates the WASM and referenced browser assets before replacing the
-snapshot. `assets/card/build.json` records the source commit, local-change
-status, import time, and WASM checksum. The initial snapshot was built locally;
-check its recorded local-change status when reproducing it.
+The importer validates WASM and referenced browser assets before replacing
+the snapshot. `assets/card/build.json` records the commit, local-change status,
+import time, and checksums. Identical imports preserve that file unchanged.
+Failed builds keep the last working imported card. `just card-publish` commits
+only card assets, leaving pending blog edits for the daily publish.
 
-The private card repo has a **Release browser card** workflow. A `web-v*` tag
-builds the Rust/WASM engine, stages the browser app, generates PNG/GIF exports,
-and attaches `card-web.zip` to the private GitHub Release. Manual workflow runs
-produce an Actions artifact without creating a release. The `web-v` prefix
-avoids the card repo's older `v*` npm release workflow.
-
-After committing/pushing that workflow in the private card repo and creating
-a `web-v*` release tag, import only its browser files here:
-
-```powershell
-gh auth login                    # If not already authenticated
-just card-release web-v0.1.0      # Or: just card-release (latest release)
-just assemble
-```
-
-This uses your local GitHub CLI authentication to download the private asset.
-Commit `assets/card/` here to deploy; Pages needs no private-repo token,
-submodule, or source checkout. No GitHub credentials go into browser files.
-The release importer requires PowerShell 7 (`pwsh`) for ZIP extraction.
+GitHub Pages consumes the checked-in browser files; it needs no private-repo
+token or source checkout. The optional `just card-release <tag>` recipe still
+accepts a `card-web.zip` from a GitHub Release if one exists; it is not used
+by `rlo` or `just card-import`.
 
 The **Package card browser snapshot** Actions workflow produces `card-web.zip`
 from the checked-in snapshot. It can be downloaded and imported elsewhere;

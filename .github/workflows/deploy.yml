@@ -30,7 +30,7 @@ jobs:
           node-version: 22
 
       - name: Test site assembly
-        run: node --test tests/site.test.mjs
+        run: node --test tests/site.test.mjs tests/card.test.mjs
 
       - name: Assemble card, blog, and map
         run: node scripts/build-site.mjs

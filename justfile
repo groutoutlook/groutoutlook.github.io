@@ -13,6 +13,10 @@ set lists
     
 set windows-powershell := true
 
+# Show available commands when no recipe is selected.
+_default:
+    @just --list
+
 alias b := build
 alias rb := rebuild
 build:
@@ -25,9 +29,13 @@ rebuild:
 assemble:
     node "{{justfile_directory()}}/scripts/build-site.mjs"
 
-# Import an already staged release build from the card project.
-card-import source:
-    node "{{justfile_directory()}}/scripts/import-card.mjs" "{{source}}"
+# Fetch/build the latest committed card, or import an explicit dist directory.
+card-import source="":
+    node "{{justfile_directory()}}/scripts/sync-card.mjs" "{{source}}"
+
+# Update and publish the card without rebuilding the journals.
+card-publish:
+    node "{{justfile_directory()}}/scripts/sync-card.mjs" --publish
 
 # Download only final browser files from an authenticated private release.
 card-release tag="latest" repo="groutoutlook/card":
@@ -46,10 +54,10 @@ scan:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-SecretScan.ps1"
 
 test:
-    node --test tests/site.test.mjs
+    node --test tests/site.test.mjs tests/card.test.mjs
 
 hooks:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Install-GitHooks.ps1"
 
-pub: build
+pub: card-import build
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Publish-TilSite.ps1"

@@ -5,4 +5,5 @@ tils
 .*.tiller-cache.pending
 /public/
 /artifacts/
-/.card-import-*/
+.card-import-*/
+/.cache/
