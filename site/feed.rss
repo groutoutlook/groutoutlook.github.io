@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-09 05:03:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>A bit about email</title><category>blog</category><category>protcol/smtp</category><pubDate>2026-11-09 05:27:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/jnz4v5/bit_about_email">A bit about email</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-09 05:03:53 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50418176">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -309,18 +321,6 @@ Just buy those and design from there.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>typst</code> of course.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Our Business Card Has a Play Button | Systemscape</title><category>battery</category><category>ble</category><category>hard</category><category>pcb</category><category>rust</category><category>usb</category><pubDate>2026-11-08 05:14:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.systemscape.com/blog/2026/bluetooth-business-card/">Our Business Card Has a Play Button | Systemscape</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and a carved in usb c female receptacle in the edge. a CR2032 holder which I found very impressive.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Systemscape/business-card-firmware">Systemscape/business-card-firmware: The firmware for our Bluetooth business card</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
