@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Managing a custom domain for your GitHub Pages site - GitHub Docs</title><category>code/forge</category><category>github</category><category>wprog</category><pubDate>2026-11-08 09:52:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`Pagefind` Static low-bandwidth search at scale</title><category>frontend</category><category>rust</category><category>search</category><category>ssg</category><category>web</category><category>wprog</category><pubDate>2026-11-09 11:52:56 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://pagefind.app/"><code>Pagefind</code> Static low-bandwidth search at scale</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>zola</code> + <code>pagefind</code> on my end.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Quarry - mỏ.</title><category>stone</category><category>vocab</category><pubDate>2026-11-09 10:51:04 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Quarry">Quarry - mỏ.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/confusingperspective/comments/1xr3dzl">It's not a brick</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>AOZ2254 QFN22 4*4mm</title><category>buck</category><category>current</category><category>module</category><category>pmic</category><pubDate>2026-11-09 10:15:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.aosmd.com/res/datasheets/AOZ2254TQI-20.pdf">AOZ2254 QFN22 4*4mm</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Hi5000 common cathode step-down 48V input maximum efficiency of 96.76</title><category>buck</category><category>module</category><category>pmic</category><pubDate>2026-11-09 10:06:34 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/gNUaScnVuqIThsf602NwOw">Hi5000 common cathode step-down 48V input maximum efficiency of 96.76</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #mcu <a href="https://mp.weixin.qq.com/s/eTAnxoO55p8G4f628FNpuQ">APT32F171 fully self-developed IP 32-bit Risc-V MCU and motor solution</a>
+<ul>
+<li>#pcb drawn inside.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Managing a custom domain for your GitHub Pages site - GitHub Docs</title><category>code/forge</category><category>github</category><category>wprog</category><pubDate>2026-11-08 09:52:20 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Managing a custom domain for your GitHub Pages site - GitHub Docs</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -223,78 +275,6 @@
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kimwalisch/primecount"><code>primecount</code> prime counting function library</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</title><category>mcu</category><category>motor</category><category>protocol/can</category><pubDate>2026-11-07 09:09:39 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/-CWz4tMx0C5-416uAtcOlQ">STM32G5 Got it! 280MHz + 111ps ultra-high performance—what upgrades does it actually make compared to the G4?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.st.com/content/ccc/resource/training/technical/product_training/group1/b3/5b/b1/ac/e1/61/40/b7/STM32H7-Peripheral-Filter_Math_Accelerator_FMAC/files/STM32H7-Peripheral-Filter_Math_Accelerator_FMAC.pdf/_jcr_content/translations/en.STM32H7-Peripheral-Filter_Math_Accelerator_FMAC.pdf">FMAC: Filter Math ACcelerator </a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> MCP2562FD CAN FD transceiver coupled with it.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Official ProtonVPN Windows GUI</title><category>gui</category><category>netw</category><category>software/proton</category><category>vpn</category><pubDate>2026-11-07 03:50:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/ProtonVPN/win-app">Official ProtonVPN Windows GUI</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> since I shim <code>vpnc</code> and <code>vpnl</code> as <code>ProtonVPN.Client</code></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> well this caused <code>Zalo Bảo Mật</code> service to send is this IP mine. fucked.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.reddit.com/r/Piracy/comments/1v5w03j">How good are Proton Services?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://diziet.dreamwidth.org/20436.html">diziet | Debian’s git transition</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> those guys block all VNPT traffic regardless of you turning (CF's) WARP DNS or not.</li>
-<li>this pushed me to use at least one of those invasive VPN... So I used the one that I already made an account on.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bygvwv/package_managers_keep_using_git_as">Package managers keep using git as a database, it never works out</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/OpenVPN/tap-windows6">tap-windows6: Windows TAP driver (NDIS 6)</a>
-<ul>
-<li>it has a <code>tapinstaller</code> so...</li>
-</ul>
-</li>
-<li><a href="https://proton.me/pass/download/windows">Windows password manager | Download Proton Pass | Proton</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov  7 15:50:47 2026] <a href="https://zola.ink/blog/posts/rawlink-building-a-vpn-protocol-from-scratch">RawLink: Building a VPN Protocol From Scratch · Zola Gonano</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Typeface search</title><category>asset/font</category><category>meta</category><category>typesetting</category><category>web</category><pubDate>2026-11-07 02:12:23 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://online-fonts.com/search?keys=chalkboard+se">Typeface search</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> • Arial Narrow • Blender Pro Bold • Chalkboard SE • Gotham •</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a captcha for you.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://open-fonts.com/fonts/grenadine-mvb-regular">Grenadine MVB Regular: Download for free at Open Fonts : OpenFonts</a>
-<ul>
-<li>Grenadine MVB • Harry Fatt</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`lineread` Like readline but not copyleft</title><category>api</category><category>cli</category><category>editor/line</category><category>keybinding</category><category>rust</category><category>tui</category><pubDate>2026-11-07 02:05:01 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/mitsuhiko/lineread"><code>lineread</code> Like readline but not copyleft</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> linenoise, reedline and infinite of them.</li>
 </ul>
 </li>
 </ul>
