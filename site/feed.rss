@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`scrcpy` virtual display</title><category>android</category><category>scrcpy</category><category>soft</category><pubDate>2026-11-09 02:54:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-09 05:03:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50418176">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li><a href="https://github.com/hew3d/hew">hew3d/hew: The intuitive, Open Source, cross-platform, solids-first 3D modeler</a></li>
+<li><a href="https://github.com/iamahsanmehmood/openskp">iamahsanmehmood/openskp: Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #meta  <a href="https://3dwarehouse.sketchup.com/">3D Warehouse a model library</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/hew3d/hew">The intuitive, Open Source, cross-platform, solids-first 3D modeler</a>
+<ul>
+<li><a href="https://github.com/iamahsanmehmood/openskp">Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`scrcpy` virtual display</title><category>android</category><category>scrcpy</category><category>soft</category><pubDate>2026-11-09 02:54:13 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/Genymobile/scrcpy/blob/master/doc/virtual-display.md"><code>scrcpy</code> virtual display</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -302,18 +320,6 @@ Just buy those and design from there.</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Systemscape/business-card-firmware">Systemscape/business-card-firmware: The firmware for our Bluetooth business card</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Tailscale Community Projects: a new approach to stability &amp; reliability</title><category>infosec</category><category>methodology</category><category>netw</category><category>remote</category><category>tailscale</category><pubDate>2026-11-08 03:34:11 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/Tailscale/comments/1jjnjro">Tailscale Community Projects: a new approach to stability &amp; reliability</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <code>tailscale</code> truly is a very convenient way to run internal reverse proxy.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>

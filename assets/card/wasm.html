@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Card — interactive demo</title>
-  <link rel="preload" href="fonts/DejaVuSansMono.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/DejaVuSansMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="wasm.css">
   <style>
-    @font-face { font-family: "Card Terminal"; src: url("fonts/DejaVuSansMono.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-    @font-face { font-family: "Card Terminal"; src: url("fonts/DejaVuSansMono-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
     :root { color-scheme: dark; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, sans-serif; }
     * { box-sizing: border-box; }
     body { margin: 0; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
@@ -25,11 +22,11 @@
     .interaction-hint { flex-basis: 100%; margin: 0; color: var(--muted); font-size: 12px; }
     .help { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
     #stage { flex: 1; min-height: 0; min-width: 0; overflow: auto; display: flex; }
-    #terminal { flex: 1; min-width: 0; margin: 0; padding: 12px; font: 14px/17px "Card Terminal", monospace; font-kerning: none; font-variant-ligatures: none; font-synthesis: none; letter-spacing: 0; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; white-space: pre; tab-size: 4; outline-offset: -3px; touch-action: pan-y; }
-    #terminal:focus { outline: 1px solid var(--green); }
+    #terminal { --term-font-size: 16px; --term-line-height: 20px; --term-row-height: 20px !important; --term-fg: var(--text); --term-bg: transparent; flex: 1; min-width: 0; margin: 0; padding: 12px; border-radius: 0; box-shadow: none; outline-offset: -3px; touch-action: pan-y; }
+    #terminal:focus-within { outline: 1px solid var(--green); }
     #status { padding: 8px 12px; margin: 0; color: var(--muted); }
     .embedded h1 { display:none; }
-    @media (max-width: 640px) { h1 { flex-basis: 100%; } a, button { min-height: 40px; padding: 7px 10px; } #terminal { padding: 6px; } header { gap: 6px; padding: 8px; } }
+    @media (max-width: 640px) { h1 { flex-basis: 100%; } a, button { min-height: 40px; padding: 7px 10px; } #terminal { --term-font-size: 14px; --term-line-height: 18px; --term-row-height: 18px !important; padding: 6px; } header { gap: 6px; padding: 8px; } }
   </style>
   <script src="wasm.js" defer></script>
 </head>
@@ -40,10 +37,10 @@
     <nav id="links" aria-label="Card actions"></nav>
     <button id="motion" type="button" disabled>Pause</button>
     <button id="restart" type="button" disabled>Restart</button>
-    <p class="interaction-hint" id="interaction-hint">Click or tap fields to copy · Focus app for Tab / arrow controls · Enter to activate</p>
+    <p class="interaction-hint" id="interaction-hint">Click or tap fields to copy · Focus app for Tab / arrow controls · Enter to activate · Shift+Left/Right: train 2× (0.5–6×)</p>
   </header>
-  <p class="help" id="help">Tab or arrows to move through fields and controls. Enter or a click copies a field or activates a control. Home selects Name, End selects Email. Space pauses motion. Page Up or Down scrolls short terminals. Esc pauses the demo.</p>
-  <div id="stage"><pre id="terminal" tabindex="0" role="region" aria-label="Interactive card" aria-describedby="interaction-hint help">Loading…</pre></div>
+  <p class="help" id="help">Tab or arrows to move through fields and controls. Enter or a click copies a field or activates a control. Home selects Name, End selects Email. Shift+Left or Right adjusts train speed from 0.5 to 6 times, starting at 2. Space pauses motion. Page Up or Down scrolls short terminals. Esc pauses the demo.</p>
+  <div id="stage"><div id="terminal" tabindex="0" role="group" aria-label="Interactive card" aria-describedby="interaction-hint help">Loading…</div></div>
   <p id="status" role="status">Loading…</p>
   <noscript>This interactive view requires JavaScript. The standalone HTML and SVG cards work without it.</noscript>
 </body>
