@@ -10,21 +10,25 @@ const modes = {
   gif:{file:"card.gif",title:"GIF card",image:true,download:"card.gif",label:"Export GIF"},
 };
 const frame=document.querySelector("#frame"), imageView=document.querySelector("#image-view"), picture=document.querySelector("#image"), message=document.querySelector("#message");
+const phone=matchMedia("(max-width: 640px)");
+function previewFile(mode) { return phone.matches && [modes.svg,modes.png,modes["animated-svg"],modes.gif].includes(mode) ? mode.file.replace("card.","card.portrait.") : mode.file; }
 let pngAvailable=false, current, gifLoading, gifPercent=0;
 function showGif() {
+  const file=previewFile(modes.gif);
   imageView.hidden=true;
   message.hidden=false;
   message.textContent=`GIF · ${gifPercent}%`;
-  if (gifLoading) return;
-  gifLoading=cardGif.prepare(percent=>{gifPercent=percent;if(current===modes.gif)message.textContent=`GIF · ${percent}%`;})
+  if (gifLoading===file) return;
+  gifLoading=file;
+  cardGif.prepare(percent=>{gifPercent=percent;if(current===modes.gif && previewFile(current)===file)message.textContent=`GIF · ${percent}%`;},file)
     .then(()=>{
-      if(current!==modes.gif)return;
+      if(current!==modes.gif || previewFile(current)!==file)return;
       imageView.hidden=false;
-      if(picture.getAttribute("src")!==modes.gif.file)picture.src=modes.gif.file;
+      if(picture.getAttribute("src")!==file)picture.src=file;
       else if(picture.complete && picture.naturalWidth)message.hidden=true;
     })
-    .catch(error=>{if(current===modes.gif){message.hidden=false;message.textContent=error.message;}})
-    .finally(()=>{gifLoading=null;});
+    .catch(error=>{if(current===modes.gif && previewFile(current)===file){message.hidden=false;message.textContent=error.message;}})
+    .finally(()=>{if(gifLoading===file)gifLoading=null;});
 }
 function showMode() {
   const key=location.hash.slice(1), mode=modes[key] || modes.animate;
@@ -40,7 +44,7 @@ function showMode() {
   message.textContent=unavailable?"PNG unavailable. Export SVG instead.":"";
   if(mode.image && !unavailable) {
     if(mode===modes.gif) showGif();
-    else if(picture.getAttribute("src")!==mode.file) picture.src=mode.file;
+    else if(picture.getAttribute("src")!==previewFile(mode)) picture.src=previewFile(mode);
     picture.alt=mode.title;
   }
   if(!mode.image) {
@@ -57,5 +61,6 @@ function showMode() {
 picture.addEventListener("load",()=>{if(current===modes.gif)message.hidden=true;});
 picture.addEventListener("error",()=>{imageView.hidden=true;message.hidden=false;message.textContent="Preview unavailable. Restart the viewer to regenerate it.";});
 window.addEventListener("hashchange",showMode);
+phone.addEventListener("change",showMode);
 fetch("card.png",{method:"HEAD"}).then(response=>{pngAvailable=response.ok;}).catch(()=>{pngAvailable=false;}).finally(showMode);
 showMode();

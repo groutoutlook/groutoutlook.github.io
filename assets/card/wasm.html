@@ -17,25 +17,29 @@
     a:hover, button:hover { border-color: var(--green); }
     a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
     #restart { margin-left: auto; }
+    #focus-app { border-color: var(--green); }
+    .interaction-hint { flex-basis: 100%; margin: 0; color: var(--muted); font-size: 12px; }
     .help { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
     #stage { flex: 1; min-height: 0; min-width: 0; overflow: auto; display: flex; }
-    #terminal { flex: 1; min-width: 0; margin: 0; padding: 12px; font: 15px/1.2 Consolas, "Liberation Mono", monospace; white-space: pre; tab-size: 4; outline-offset: -3px; }
-    #terminal:focus-visible { outline: 1px solid var(--green); }
+    #terminal { flex: 1; min-width: 0; margin: 0; padding: 12px; font: 14px/1.25 Consolas, "Liberation Mono", monospace; white-space: pre; tab-size: 4; outline-offset: -3px; touch-action: pan-y; }
+    #terminal:focus { outline: 1px solid var(--green); }
     #status { padding: 8px 12px; margin: 0; color: var(--muted); }
     .embedded h1 { display:none; }
-    @media (max-width: 640px) { h1 { flex-basis: 100%; } a, button { padding: 5px 9px; } }
+    @media (max-width: 640px) { h1 { flex-basis: 100%; } a, button { min-height: 40px; padding: 7px 10px; } #terminal { padding: 6px; } header { gap: 6px; padding: 8px; } }
   </style>
   <script src="wasm.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Interactive demo</h1>
+    <button id="focus-app" type="button" aria-controls="terminal" aria-describedby="interaction-hint" disabled>Focus app</button>
     <nav id="links" aria-label="Card actions"></nav>
     <button id="motion" type="button" disabled>Pause</button>
     <button id="restart" type="button" disabled>Restart</button>
+    <p class="interaction-hint" id="interaction-hint">Click or tap fields to copy · Focus app for Tab / arrow controls · Enter to activate</p>
   </header>
-  <p class="help" id="help">Tab or arrows to move, Enter to select, Space to pause motion, Esc to pause the demo.</p>
-  <div id="stage"><pre id="terminal" tabindex="0" role="region" aria-label="Interactive card" aria-describedby="help">Loading…</pre></div>
+  <p class="help" id="help">Tab or arrows to move through fields and controls. Enter or a click copies a field or activates a control. Home selects Name, End selects Email. Space pauses motion. Page Up or Down scrolls short terminals. Esc pauses the demo.</p>
+  <div id="stage"><pre id="terminal" tabindex="0" role="region" aria-label="Interactive card" aria-describedby="interaction-hint help">Loading…</pre></div>
   <p id="status" role="status">Loading…</p>
   <noscript>This interactive view requires JavaScript. The standalone HTML and SVG cards work without it.</noscript>
 </body>

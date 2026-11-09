@@ -6,8 +6,8 @@
 <style>
 :root { color-scheme:dark; --bg:#10151d; --panel:#151c26; --text:#f5f9ff; --muted:#a7b6c8; --green:#84d884; --blue:#8bc9ef; --line:#283342; background:var(--bg); color:var(--text); font-family:Consolas,"Liberation Mono",monospace; }
 * { box-sizing:border-box; }
-body { margin:0; min-height:100vh; min-height:100dvh; display:grid; place-content:center; gap:12px; padding:24px; background:radial-gradient(ellipse at 12% 12%,#84d8840d,transparent 48%),radial-gradient(ellipse at 88% 85%,#8bc9ef0c,transparent 45%),radial-gradient(#28334270 .8px,transparent .8px); background-size:auto,auto,24px 24px; }
-main { width:min(1000px,calc(100vw - 48px)); padding:24px 28px; border:1px solid transparent; border-radius:18px; background:linear-gradient(135deg,#18212c,#121923) padding-box,linear-gradient(120deg,var(--green),var(--line),var(--blue),var(--line),var(--green)) border-box; background-size:100% 100%,300% 300%; box-shadow:0 24px 90px #0005; animation:border-flow 18s ease-in-out infinite; }
+body { margin:0; min-height:100vh; min-height:100dvh; display:grid; place-content:safe center; gap:12px; padding:24px; background:radial-gradient(ellipse at 12% 12%,#84d8840d,transparent 48%),radial-gradient(ellipse at 88% 85%,#8bc9ef0c,transparent 45%),radial-gradient(#28334270 .8px,transparent .8px); background-size:auto,auto,24px 24px; }
+main { width:min(1000px,calc(100vw - 48px)); padding:24px 28px; border:1px solid transparent; border-radius:18px; background:linear-gradient(135deg,#18212c,#121923) padding-box,linear-gradient(120deg,#efd375,#84d884,#52caaa,#8bc9ef,#efd375) border-box; background-size:100% 100%,300% 300%; box-shadow:0 24px 90px #0005; animation:border-flow 4s linear infinite; }
 @keyframes border-flow { 0%,100% { background-position:0 0,0% 50%; } 50% { background-position:0 0,100% 50%; } }
 header { display:flex; justify-content:space-between; align-items:center; gap:16px; padding-bottom:16px; border-bottom:1px solid var(--line); }
 .handle { font-size:16px; color:var(--text); } .edition,.field-label { color:var(--muted); font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
@@ -19,7 +19,9 @@ pre { font:bold 11px/1.3 Consolas,"Liberation Mono",monospace; color:var(--green
 h1 { font-size:clamp(34px,4.5vw,48px); line-height:1.1; margin:8px 0 12px; overflow-wrap:anywhere; }
 .title { font-size:clamp(17px,1.8vw,20px); line-height:1.4; margin:0 0 8px; }
 .company { color:var(--text); font-size:20px; margin:0 0 18px; }
-.about { border-top:1px solid var(--line); padding-top:16px; }
+.rainbow-bar { height:3px; border-radius:2px; background:repeating-linear-gradient(90deg,#ff6060 0%,#ffdc60 8.3333%,#60e080 16.6667%,#60d0ff 25%,#8070ff 33.3333%,#e070f0 41.6667%,#ff6060 50%); background-size:200% 100%; }
+@keyframes rainbow-chase { from { background-position:100% 0; } to { background-position:0% 0; } }
+.about { padding-top:16px; }
 .intro { font-size:14px; line-height:1.65; color:var(--text); margin:8px 0 16px; }
 h2 { font-size:12px; font-weight:normal; color:var(--muted); letter-spacing:.12em; text-transform:uppercase; margin:0; }
 ul { list-style:none; padding:0; margin:0; } li+li { border-top:1px solid var(--line); }
@@ -44,8 +46,29 @@ body[data-state="paused"] * { animation-play-state:paused!important; } body[data
 @keyframes spotlight-4 { 0%,20%,100% { color:#f5f9ff; fill:#f5f9ff; } 3%,15.5% { color:#8bc9ef; fill:#8bc9ef; } }
 .spotlight-4 { animation-name:spotlight-4; animation-delay:-2000ms; }
 
+.rainbow-bar { animation:rainbow-chase 2000ms linear infinite; }
 @media (prefers-reduced-motion:reduce) { body:not([data-state="playing"]) * { animation:none!important; } }
-@media(max-width:760px) { body { padding:16px; } main { width:calc(100vw - 32px); padding:20px; } .content { grid-template-columns:1fr; padding-top:20px; gap:20px; } .art { display:none; } .edition { font-size:10px; } .handle { font-size:13px; } .title { font-size:18px; } .playback { width:calc(100vw - 32px); } .scrubber { margin-left:0; } #clock { display:none; } }
+@media(min-width:761px) {
+body { padding:32px; gap:16px; }
+main,.playback { width:min(1440px,calc(100vw - 64px)); }
+main { padding:clamp(24px,2.2vw,40px); }
+header { padding-bottom:22px; }
+.handle { font-size:18px; } .edition,.field-label,h2 { font-size:13px; }
+.content { grid-template-columns:clamp(260px,22vw,340px) minmax(0,1fr); gap:clamp(24px,2.6vw,40px); padding:30px 0 18px; }
+.art { padding-right:24px; }
+pre { font-size:clamp(14px,1.1vw,19px); line-height:1.3; }
+.art svg { width:250px; margin-top:24px; }
+.art-caption { font-size:13px; }
+h1 { font-size:clamp(40px,4.2vw,64px); margin:10px 0 16px; }
+.title { font-size:clamp(20px,1.6vw,26px); margin-bottom:12px; }
+.company { font-size:clamp(22px,1.5vw,26px); margin-bottom:22px; }
+.rainbow-bar { height:4px; } .about { padding-top:20px; }
+.intro { font-size:clamp(16px,1.15vw,18px); margin:10px 0 20px; }
+.contact { font-size:clamp(20px,1.5vw,24px); }
+li a { padding:16px 0; } .playback { font-size:14px; }
+}
+@media(max-width:760px) { body { padding:12px; } main { width:calc(100vw - 24px); padding:20px; } header { flex-wrap:wrap; gap:8px 12px; } .content { grid-template-columns:1fr; padding-top:20px; gap:20px; } .details { min-width:0; } .art { display:none; } .edition { font-size:10px; } .handle { font-size:13px; overflow-wrap:anywhere; } .title { font-size:18px; } .playback { width:calc(100vw - 24px); } .scrubber { margin-left:0; width:100%; } .scrubber input { flex:1; min-width:0; } #clock { display:none; } button,li a { min-height:44px; } }
+@media(max-width:360px) { main { padding:16px; } .intro { font-size:13px; } .contact { font-size:16px; } }
 @media print { body { min-height:auto; padding:0; background:var(--bg); } main { width:100%; break-inside:avoid; box-shadow:none; } .playback { display:none; } * { animation:none!important; print-color-adjust:exact; -webkit-print-color-adjust:exact; } }
 
 .playback > :not(#play):not(.app-actions):not(#export-status) { display:none; }
@@ -62,30 +85,25 @@ body[data-state="paused"] * { animation-play-state:paused!important; } body[data
 .export-options a { display:block; padding:8px 10px; border-radius:4px; }
 .export-options a:hover { background:var(--line); color:var(--green); }
 #export-status { width:100%; margin:0; color:var(--muted); }
+@media(max-width:480px) { .app-actions { flex-wrap:wrap; gap:6px; } .app-actions > a, .app-actions summary { min-height:44px; padding:10px; } }
 </style><script src="gif.js" defer></script><script src="app.js" defer></script></head><body>
 <main aria-label="Business card">
 <header><span class="handle spotlight spotlight-3">@meogauchip_0</span><span class="edition">Personal card / 01</span></header>
-<div class="content"><aside class="art" aria-hidden="true"><pre>    |   |     |    |
-    |---|,---.|    |    .---.
-    |   ||---&#39;|    |    |   |
-    &#39;   &#39;`---&#39;`---&#39;`---&#39;`---&#39;,</pre>
-<svg viewBox="70 295 340 285" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="accent" x2="1" y2="1"><stop stop-color="#84d884"/><stop offset="1" stop-color="#8bc9ef"/></linearGradient></defs><g fill="none" stroke="url(#accent)" stroke-width="2">
-<rect x="140" y="340" width="200" height="180" rx="20" fill="#151c26"/>
-<path d="M170 340v-30m40 30v-30m40 30v-30m40 30v-30m40 30v-30M170 520v30m40-30v30m40-30v30m40-30v30m40-30v30M140 370h-30m30 40h-30m30 40h-30m30 40h-30M340 370h30m-30 40h30m-30 40h30m-30 40h30"/>
-<path d="M192 470v-80l48 54 48-54v80" stroke-width="5" stroke-linejoin="round"/>
-<path d="M110 410H88v-48M370 450h24v66"/>
-<circle cx="88" cy="354" r="6"/><circle cx="394" cy="524" r="6"/>
-</g></svg><span class="art-caption">FIRMWARE / PCB DESIGN</span></aside>
+<div class="content"><aside class="art" aria-hidden="true"><pre>|   |     |    |
+|---|,---.|    |    .---.
+|   ||---&#39;|    |    |   |
+&#39;   &#39;`---&#39;`---&#39;`---&#39;`---&#39;,</pre>
+<svg viewBox="70 295 340 285" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="accent" x2="1" y2="1"><stop stop-color="#84d884"/><stop offset="1" stop-color="#8bc9ef"/></linearGradient></defs><g id="qfn32" fill="none" stroke="url(#accent)" stroke-width="2"><rect x="140" y="330" width="200" height="200" rx="14" fill="#151c26"/><rect class="qfn-pad" x="160" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="160" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="350" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="350" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="182" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="182" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="372" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="372" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="204" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="204" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="394" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="394" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="226" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="226" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="416" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="416" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="248" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="248" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="438" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="438" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="270" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="270" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="460" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="460" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="292" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="292" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="482" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="482" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="314" y="330" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="314" y="516" width="8" height="14" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="140" y="504" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><rect class="qfn-pad" x="326" y="504" width="14" height="8" rx="1" fill="url(#accent)" stroke="none"/><path d="M192 454 L192 390 L240 438 L288 390 L288 454" stroke-width="5" stroke-linejoin="round"/><circle cx="155" cy="345" r="3" fill="url(#accent)" stroke="none"/></g></svg><span class="art-caption">FIRMWARE / PCB DESIGN</span></aside>
 <section class="details"><span class="field-label">Hello, I'm</span><h1 class="spotlight spotlight-0">Meog</h1>
 <p class="title spotlight spotlight-1">Embedded Firmware Engineer + PCB Designer</p><p class="company spotlight spotlight-2">RelightTL</p>
-<div class="about"><h2>About</h2><p class="intro">I write software and write hardware, yeah, write.<br>Sometimes fun TUI/CLI things like this!</p></div>
+<div class="rainbow-bar" aria-hidden="true"></div><div class="about"><h2>About</h2><p class="intro">I write software and write hardware, yeah, write.<br>Sometimes fun TUI/CLI things like this!</p></div>
 <nav aria-label="Hope to do more connectivity-related demo tho"><ul><li><a href="mailto:tdtd@duck.com"><span class="field-label">Email</span><span class="contact spotlight spotlight-4">tdtd@duck.com</span><span class="arrow" aria-hidden="true">↗</span></a></li>
 </ul></nav></section></div>
 <div class="card-foot" aria-hidden="true"><span class="swatch" style="background:#84d884"></span><span class="swatch" style="background:#8bc9ef"></span><span class="swatch" style="background:#aaa2ef"></span><span class="swatch" style="background:#f5f9ff"></span></div>
 </main><footer class="playback" aria-label="Animation controls">
 <button id="play" type="button">Pause</button><button id="restart" type="button">Restart</button><button id="static" type="button">Static view</button>
 <label class="scrubber">Timeline <input id="timeline" type="range" min="0" max="10000" step="50" value="0" aria-label="Animation position"></label>
-<span id="clock">10 s loop · 2 s / item</span><nav class="app-actions" aria-label="Card actions"><a href="wasm.html">Interactive demo</a><details><summary aria-live="polite">Export</summary><div class="export-options"><a href="card.png" download>PNG</a><a href="card.svg" download>SVG</a><a href="card.html" download>HTML</a><a href="card.animated.html" download>Animated HTML</a><a href="card.gif" download>GIF</a><a href="card.lottie.json" download>Lottie</a></div></details></nav><p id="export-status" role="status" hidden></p></footer><script>
+<span id="clock">10 s loop · 2 s / item</span><nav class="app-actions" aria-label="Card actions"><a href="wasm.html" title="Try clicking, tapping, or using the keyboard">Try interactive demo</a><details><summary aria-live="polite">Export</summary><div class="export-options"><a href="card.png" download>PNG</a><a href="card.svg" download>SVG</a><a href="card.html" download>HTML</a><a href="card.animated.html" download>Animated HTML</a><a href="card.gif" download>GIF</a><a href="card.lottie.json" download>Lottie</a></div></details></nav><p id="export-status" role="status" hidden></p></footer><script>
 (() => {
   const body=document.body, play=document.getElementById('play'), slider=document.getElementById('timeline');
   const duration=Number(slider.max);
