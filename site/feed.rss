@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>A bit about email</title><category>blog</category><category>protcol/smtp</category><pubDate>2026-11-09 05:27:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Why do GPS receivers have a 1 PPS output?</title><category>gps</category><category>hard</category><category>signal</category><pubDate>2026-11-09 06:20:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://electronics.stackexchange.com/questions/30750/why-do-gps-receivers-have-a-1-pps-output">Why do GPS receivers have a 1 PPS output?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> extra PPS pin on GPS module,  for a very accurate 1Hz signal generator.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.gps.gov/gps-accuracy">GPS Accuracy | GPS.gov</a>
+<ul>
+<li>#terminology H and V is  directional components of precision and accuracy.
+H (Horizontal): Refers to precision on a 2D plane (latitude and longitude).
+V (Vertical): Refers to precision along the Z-axis (altitude or elevation).</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://docs.emlid.com/reachrs2/specifications/specs/">Specification | Reach RS2/RS2+</a></li>
+<li><a href="https://zenodo.org/records/1334411/files/7783.pdf">Suitability of GPS Receivers Update Rates for Navigation Applications</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> typically GPS module is 5/10/20Hz update rate (phone, car, GPS stationary,etc...). 0.1Hz for very slow one.
+<ul>
+<li>100Hz is for some military. 50Hz for car within low coverage of any signal.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/287794/what-is-the-highest-achievable-update-rate-for-a-civilian-gps-receiver">highest achievable update rate for a civilian GPS receiver?</a></li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Dilution_of_precision">Dilution of precision</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 18:20:44 2026] <a href="https://lobste.rs/s/jdsu1z/microsecond_accurate_ntp_with_raspberry">Microsecond accurate NTP with a Raspberry Pi and PPS GPS(2021)</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>HMC241 EVB antenna switch.</title><category>analog/switch</category><category>ic</category><category>rfid</category><pubDate>2026-11-09 06:16:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/g3f3O7T2-lNE53z7rtLzaw">HMC241 EVB antenna switch.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 0-3.5GHz.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.ti.com/product/SN74LVC1G139">SN74LVC1G139 2-Line-to-4-Line Decoder</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`portless` Replace port numbers with stable, named local URLs</title><category>backend</category><category>netw</category><pubDate>2026-11-09 05:45:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/vercel-labs/portless"><code>portless</code> Replace port numbers with stable, named local URLs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>nextjs</code>.</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>caddy</code></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>A bit about email</title><category>blog</category><category>protcol/smtp</category><pubDate>2026-11-09 05:27:19 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/jnz4v5/bit_about_email">A bit about email</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -284,43 +343,6 @@ Just buy those and design from there.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`git-workspace` Sync personal and work git repositories from multiple providers :rocket:</title><category>cli</category><category>git</category><pubDate>2026-11-08 07:45:08 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/orf/git-workspace#install-cd"><code>git-workspace</code> Sync personal and work git repositories from multiple providers :rocket:</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>richtexteditor</title><category>markdown</category><category>richtext</category><category>soft</category><category>utils/macro</category><category>website</category><pubDate>2026-11-08 05:58:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://richtexteditor.com/Demos/">richtexteditor</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Render rich text, visit that website.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to test rich text inject in espanso.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> Could very much find a software to render those rich text.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov  8 17:58:07 2026] #library #typescript <a href="https://github.com/obsidianmd/wordgard"><code>wordgard</code> - Rich text editor textbox.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`KaTeX` Fast math typesetting for the web.</title><category>document</category><category>file</category><category>math</category><category>typesetting</category><pubDate>2026-11-08 05:35:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/KaTeX/KaTeX"><code>KaTeX</code> Fast math typesetting for the web.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>typst</code> of course.</li>
 </ul>
 </li>
 </ul>
