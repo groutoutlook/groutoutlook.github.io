@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>CAN Protocol maximum devices in network and longest range</title><category>can</category><category>proto</category><category>range</category><pubDate>2026-11-10 11:21:26 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>swt</category><category>terminal</category><pubDate>2026-11-10 12:10:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">herdr # launch into the big mux menu.
+herdr server stop # kill all session.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: choose me <code>pwsh</code> without any config. That's much better over <code>zellij</code> which chose <code>cmd</code></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201003">Herdr is joining Y Combinator. The runtime stays open</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50298436">Herdr has released native app</a>
+<ul>
+<li>#android <a href="https://github.com/0cv/herdr-mobile-relay"><code>herdr-mobile-relay</code> monitor Herdr agents remotely from your phone, a mobile web app for Android/iOS with push notifications, QR setup, and multi-computer relays.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zellij</code>, <code>tmux</code>
+<ul>
+<li>but those 2 cant run in windows so dont bother actually.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Aug 28 12:35:05 2026] <code>zellij</code> in scoop now.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:15:10 2026] #macos <a href="https://github.com/codealong/codealong"><code>codealong</code> agent you run, in 1 window for macOS and Linux for Claude Code, Codex, OpenCode, Antigravity and Cursor, across your accounts and machines.</a>
+<ul>
+<li><a href="https://github.com/BrokkAi/mjolnir/"><code>mjolnir</code> Manage Harness with durable sessions, isolated environments, quotas, and remote control</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:15:27 2026] <a href="https://github.com/makefunstuff/herdr-android">herdr-android</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 12:10:34 2026] #android <a href="https://github.com/kosumic/whip"><code>Whip</code> agent-native SSH mobile client, Herdr multiplexer in Android</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Model Context Protocol (MCP) for `meilisearch`</title><category>backend</category><category>harness</category><category>protocol/mcp</category><category>search/engine</category><pubDate>2026-11-10 11:49:19 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.meilisearch.com/docs/getting_started/integrations/mcp">Model Context Protocol (MCP) for <code>meilisearch</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CAN Protocol maximum devices in network and longest range</title><category>can</category><category>proto</category><category>range</category><pubDate>2026-11-10 11:21:26 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://blog.mbedded.ninja/electronics/communication-protocols/can-protocol/#bit-rate-and-transmission-distances">CAN Protocol maximum devices in network and longest range</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> we have a general correlation between Bit Rate And Transmission Distances.</li>
@@ -6,7 +55,7 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> Contactless CAN Bus Sniffers.. true wire-tap spirit.</li>
 </ul>
 </li>
 </ul>
@@ -336,30 +385,6 @@ Just buy those and design from there.</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Pagefind` Static low-bandwidth search at scale</title><category>frontend</category><category>rust</category><category>search</category><category>ssg</category><category>web</category><category>wprog</category><pubDate>2026-11-09 11:52:56 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://pagefind.app/"><code>Pagefind</code> Static low-bandwidth search at scale</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>zola</code> + <code>pagefind</code> on my end.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Quarry - mỏ.</title><category>stone</category><category>vocab</category><pubDate>2026-11-09 10:51:04 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Quarry">Quarry - mỏ.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/confusingperspective/comments/1xr3dzl">It's not a brick</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
