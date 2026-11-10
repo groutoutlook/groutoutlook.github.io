@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>800V thyristors enter Dyson&apos;s high-end personal care products!</title><category>bldc</category><category>hard</category><category>mosfet</category><category>pcb</category><pubDate>2026-11-10 01:29:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>The only way to save video is sharing the link from phone to weixin or some kind of apps.</title><category>android</category><category>browser</category><category>software</category><category>video</category><category>web</category><pubDate>2026-11-10 04:18:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>The only way to save video is sharing the link from phone to weixin or some kind of apps.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and open that link to browser, save the video on that one.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can patch <code>yt-dlp</code> or even <code>gallery-dl</code> for that. But unless I have my own AI rack, wont do that.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Just Let Me Write Digits</title><category>a11y</category><category>blog</category><category>ux</category><category>web/ui</category><pubDate>2026-11-10 04:10:58 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/yf6vbc/just_let_me_write_digits">Just Let Me Write Digits</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>U3210A - High Voltage Power IC（&gt;400V） - 绍兴宇力半导体有限公司官网</title><category>buck</category><category>module</category><category>voltage/ac</category><pubDate>2026-11-10 03:29:40 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="http://www.uni-semic.com/product/515.html">U3210A - High Voltage Power IC（&gt;400V） - 绍兴宇力半导体有限公司官网</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  10-20V HVDC non isolated buck.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in APT32F170 schdoc, this one out 15V -&gt; CJ78L05 to provide 5V? i dont understand that part.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</title><category>debugging</category><category>hard</category><category>optic</category><category>probe</category><category>thermal</category><pubDate>2026-11-10 02:24:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://resources.altium.com/p/using-thermal-camera-pcb-diagnostics">Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I may have to reside to a thermal camera nowadays..</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/AskElectronics/comments/1oh4kz9">How to locate a short circuit on a PCB</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #video #review <a href="https://www.youtube.com/watch?v=OivS8pxigNw">Thermal Master P3 USB-C Camera Review - YouTube</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 07:21:44 2026] <a href="https://item.taobao.com/item.htm?id=921791272515&amp;skuId=6246273539527">【正品保障】艾睿天眼P2pro热成像P3手机外接摄像头工业热成像</a>
+<ul>
+<li>it's really cheaper than the affiliate link, but by 5-10 only..</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 14:24:32 2026] <a href="https://github.com/icamaster/picothermal-fw">Firmware for the picothermal project and WebUSB app</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/icamaster/picothermal"><code>picothermal</code> Thermal camera based on Flir Lepton with RP2040 and USB-C</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>OpenWrt 25.12 firmware and a phone-first travel panel for the GL.iNet Beryl 7 (GL-MT3600BE), with mt76 and hostapd fixes</title><category>firmware</category><category>netw</category><category>router</category><pubDate>2026-11-10 02:09:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/coreywonggithub/beryl7-travel">OpenWrt 25.12 firmware and a phone-first travel panel for the GL.iNet Beryl 7 (GL-MT3600BE), with mt76 and hostapd fixes</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>800V thyristors enter Dyson&apos;s high-end personal care products!</title><category>bldc</category><category>hard</category><category>mosfet</category><category>pcb</category><pubDate>2026-11-10 01:29:36 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/2e8WAw8-BoLqorGAjLczLw">800V thyristors enter Dyson's high-end personal care products!</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> really consolidated protection mechanism on the thyristor / MOSFET.</li>
@@ -292,101 +362,6 @@ V (Vertical): Refers to precision along the Z-axis (altitude or elevation).</li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>nextjs</code>.</li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>caddy</code></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>A bit about email</title><category>blog</category><category>protcol/smtp</category><pubDate>2026-11-09 05:27:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/jnz4v5/bit_about_email">A bit about email</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-09 05:03:53 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50418176">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-<li><a href="https://github.com/hew3d/hew">hew3d/hew: The intuitive, Open Source, cross-platform, solids-first 3D modeler</a></li>
-<li><a href="https://github.com/iamahsanmehmood/openskp">iamahsanmehmood/openskp: Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #meta  <a href="https://3dwarehouse.sketchup.com/">3D Warehouse a model library</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/hew3d/hew">The intuitive, Open Source, cross-platform, solids-first 3D modeler</a>
-<ul>
-<li><a href="https://github.com/iamahsanmehmood/openskp">Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`scrcpy` virtual display</title><category>android</category><category>scrcpy</category><category>soft</category><pubDate>2026-11-09 02:54:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Genymobile/scrcpy/blob/master/doc/virtual-display.md"><code>scrcpy</code> virtual display</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">scrcpy --new-display=1024x768 --start-app=com.android.settings --flex-display
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ssleay32 and libeay32 libraries for actual version of OpenSSL-master · Issue #10332 · openssl/openssl</title><category>runtime/dll</category><category>soft</category><pubDate>2026-11-09 02:49:48 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/openssl/openssl/issues/10332">ssleay32 and libeay32 libraries for actual version of OpenSSL-master · Issue #10332 · openssl/openssl</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> from Zalo DLL dependencies.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#library #cpp : <a href="https://github.com/libjxl/libjxl">libjxl: JPEG XL image format reference implementation</a>
-<ul>
-<li>result into <code>jxl.dll</code> in Zalo.</li>
-<li>#news: <a href="https://news.ycombinator.com/item?id=46021179">Google Revisits JPEG XL in Chromium After Earlier Removal</a>
-<ul>
-<li>#rust <a href="https://github.com/libjxl/jxl-rs"><code>jxl-rs</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/8l9ysn">jxl-rs merged into Chromium</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>#image : <code>libvips-cpp.dll</code> in <code>libvips</code>.</li>
-<li>#encode: <a href="https://github.com/google/brotli"><code>Brotli</code> compression format</a>
-<ul>
-<li><code>brotlidec.dll</code> and <code>brotlienc.dll</code></li>
-</ul>
-</li>
-<li>The left is Qt5 dependencies which I have no interest.</li>
-<li>Weixin use Qt6 though.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 14:49:48 2026] #typesetting <a href="https://github.com/google/woff2"><code>woff2</code> font format</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`OpenIDM` identity management solution that automates user provisioning, synchronization, and lifecycle management</title><category>acronym</category><category>infosec</category><pubDate>2026-11-09 02:45:02 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/OpenIdentityPlatform/OpenIDM"><code>OpenIDM</code> identity management solution that automates user provisioning, synchronization, and lifecycle management</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/">unlocking any car from X brand in most of the world</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
