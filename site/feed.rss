@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Google AI search mode can take image and you query against that directly on browser</title><category>browser</category><category>google</category><category>search/engine</category><category>web</category><pubDate>2026-11-10 12:45:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>800V thyristors enter Dyson&apos;s high-end personal care products!</title><category>bldc</category><category>hard</category><category>mosfet</category><category>pcb</category><pubDate>2026-11-10 01:29:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/2e8WAw8-BoLqorGAjLczLw">800V thyristors enter Dyson's high-end personal care products!</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> really consolidated protection mechanism on the thyristor / MOSFET.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>2 ns, 87 A: 7 W laser tube can be used to 67 W</title><category>blog</category><category>hard</category><category>laser</category><pubDate>2026-11-10 01:28:02 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/s_r5OcBcc0QHUckamq_hQQ">2 ns, 87 A: 7 W laser tube can be used to 67 W</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Google AI search mode can take image and you query against that directly on browser</title><category>browser</category><category>google</category><category>search/engine</category><category>web</category><pubDate>2026-11-10 12:45:03 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://google.com/ai">Google AI search mode can take image and you query against that directly on browser</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -362,30 +386,6 @@ V (Vertical): Refers to precision along the Z-axis (altitude or elevation).</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/">unlocking any car from X brand in most of the world</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Markdoc - Stripe&apos;s documentation system is now open-source</title><category>file</category><category>markdown</category><category>ssg</category><category>web/ui</category><pubDate>2026-11-09 02:08:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/errk9j/markdoc_stripe_s_documentation_system_is">Markdoc - Stripe's documentation system is now open-source</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://markdoc.dev/docs/faq#why-not-mdx"><code>Markdoc</code> | Frequently asked questions</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How to Connect to WSL via SSH</title><category>netw</category><category>remote</category><category>ssh</category><category>windows</category><category>wsl</category><pubDate>2026-11-09 02:06:25 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.futures.moe/posts/ssh-to-wsl">How to Connect to WSL via SSH</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this fucker setup something that make me impossible to read it as normal human. Saved to #zotero.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
