@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>EtherCAT</title><category>board</category><category>hard</category><category>protocol/ethernet</category><pubDate>2026-11-10 12:34:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Google AI search mode can take image and you query against that directly on browser</title><category>browser</category><category>google</category><category>search/engine</category><category>web</category><pubDate>2026-11-10 12:45:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://google.com/ai">Google AI search mode can take image and you query against that directly on browser</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>EtherCAT</title><category>board</category><category>hard</category><category>protocol/ethernet</category><pubDate>2026-11-10 12:34:20 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
@@ -375,60 +387,6 @@ V (Vertical): Refers to precision along the Z-axis (altitude or elevation).</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Technical Documents | Espressif Systems</title><category>board</category><category>doc/official</category><category>esp32/p4</category><category>mcu</category><pubDate>2026-11-09 01:44:20 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.espressif.com/en/support/documents/technical-documents?keys=&amp;field_type_tid%5B%5D=1633">Technical Documents | Espressif Systems</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> this esp32p4 chips dont have Wi-FI or bluetooth.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Decent #board/evb <a href="https://item.taobao.com/item.htm?id=922333526177">Qiming Cloud original genuine ESP32-P4 development board with 7-inch MIPI screen</a>
-<ul>
-<li>Lite version : <a href="https://item.taobao.com/item.htm?id=968776315829">乐鑫ESP32-P4 迷你开发板</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-p4_datasheet_en.pdf">esp32-p4_datasheet_en.pdf</a></li>
-<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-p4_technical_reference_manual_en.pdf">esp32-p4_technical_reference_manual_en.pdf</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  <a href="https://item.taobao.com/item.htm?id=952194584533">ESP32P4 + ESP32-C6 core board development board RISC-V32-bit dual-core 2.4G WIFI6 Bluetooth 5-Taobao network</a>
-<ul>
-<li><a href="https://github.com/VIEWESMART/ESP32-P4-Pi">ESP32-P4-Pi: P4 development board designed based on the ESP32-P4 module (supporting WIFI 6 and BLE 5) designed by VIEWE</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=958114851841">ESP32P4模组集成ESP32C6芯片WiFi蓝牙完整技术资料提供封装库</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Module-like, more suitable for final production.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> although I'm more interested in how they test the module.
-So that's why the half-hole processed is needed. To be put in prong like that...
-<ul>
-<li>Final conclusion... dont even try to draw my own esp32-p4 board.
-Just buy those and design from there.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#kicad #pcb/footprint: <a href="https://github.com/espressif/kicad-libraries/blob/main/README.md">Espressif KiCad Library</a></li>
-<li>#alternative : <a href="https://www.wch.cn/products/CH32H417.html">Ultra-High Speed USB3.0 Dual-Core Interconnect MCU CH32H417</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> CH32H417 has I3C, the only chip of WCH has this interface.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/SoCXin/CH32H417"><code>CH32H417</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> this SoCXin page is super #meta, fast on update any modern SoC.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog <a href="https://mp.weixin.qq.com/s/C_ruXISy7eeziyr38dXplA">RISC-V MCU CH32H417 TKey(Touch Key detection) application tutorial</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Oct 20 10:37:22 2026] <a href="https://mp.weixin.qq.com/s/pRAKW7cgtUGBT7b7VjgHCw">125Mhz * 32bit = 500MB/s parallel UHSIF CH32H417 (proprietary protocol).</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 13:44:20 2026] #doc/ap #mcu #input/button <a href="https://mp.weixin.qq.com/s/OdwVmfHZfTsc4tL-z7AcCA">TOUCH key app note and some drawing</a></li>
 </ul>
 </li>
 </ul>
