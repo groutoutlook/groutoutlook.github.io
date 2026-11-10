@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>swt</category><category>terminal</category><pubDate>2026-11-10 12:10:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>EtherCAT</title><category>board</category><category>hard</category><category>protocol/ethernet</category><pubDate>2026-11-10 12:34:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a #protocol for PLC. every digital servo/robot arm 'll be controlled by this.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/VZ7iMurWvaWd-gsyCqdFeg">It's really open source?! The big god spends 150 yuan, hand rubbing FOC drive! It is also an EtherCAT slave development board......</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/507197/can-you-use-cat-5-6-ethernet-cable-to-power-devices#507208">Can you use cat 5/6 ethernet cable to power devices?</a>
+<ul>
+<li>I want to PoE without dedicated hardware.</li>
+</ul>
+</li>
+<li><a href="https://www.eevblog.com/forum/beginners/power-over-cat5-what-is-the-max-current/">Power over cat5. What is the max current?</a></li>
+<li><a href="https://electronics.stackexchange.com/questions/113253/voltage-drop-and-safe-current-load-on-cat5-cable">power - Voltage Drop and Safe Current Load on CAT5 Cable</a>
+<ul>
+<li>which you ought to push voltage much further to balance the drop.</li>
+<li>The return path(negative wire on DC, AC dont have that.) also contribute to total voltage drop.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #meta <a href="https://www.rapidtables.com/calc/wire/voltage-drop-calculator.html">Voltage Drop Calculator</a></li>
+</ul>
+</li>
+<li><a href="https://wikipedia.org/wiki/Category_1_cable">Category 1 cable</a>
+<ul>
+<li>this normally appears on probes. good for nothing other than power supplying, telephone lines, etc..</li>
+<li>#meta <a href="https://wikipedia.org/wiki/Structured_cabling">Structured cabling - CAT1 -&gt; CAT8</a></li>
+<li><a href="https://wikipedia.org/wiki/ISO/IEC_11801#Category_8">ISO/IEC 11801 - Defining CAT7 and CAT8 cable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/PLC/comments/mndwk3">Why Windows on PLCs?</a>
+<ul>
+<li>#blog <a href="https://news.ycombinator.com/item?id=45605556">PoE basics and beyond: What every engineer should know</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:37:24 2026] <a href="https://www.reddit.com/r/PLC/comments/rl3f42">Ethernet IP and EtherCAT on the same switch</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 12:34:20 2026] #connector #RJ45 <a href="https://item.taobao.com/item.htm?id=758270727052">ZLG致远电子 集成式EtherCAT从站开发模块 以太网模块DPort-ECT</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Pulian Technology launched an industrial-grade PLC single-lamp controller</title><category>blog</category><category>hard</category><category>pcb</category><category>protocol/powerline</category><category>psa</category><pubDate>2026-11-10 12:31:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/kokt6NGytZ8G9cwIZ3eomA">Pulian Technology launched an industrial-grade PLC single-lamp controller</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> such things really require a high conformance AC-DC or DC-DC conversion module.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`rust-cache` GitHub Action that implements smart caching for rust/cargo projects</title><category>build/cargo</category><category>cicd</category><category>ide</category><pubDate>2026-11-10 12:18:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Swatinem/rust-cache"><code>rust-cache</code> GitHub Action that implements smart caching for rust/cargo projects</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/rust/comments/1hpuy01">Why You Need Sccache</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://gitlab.com/bits-n-bites/buildcache">Bits-n-Bites / BuildCache · GitLab</a></li>
+<li><a href="https://github.com/mozilla/sccache"><code>Sccache</code> ccache-like tool. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sometime you need <code>$env:SCCACHE_SERVER_PORT = '4226'</code> .idk.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 12:18:39 2026] <a href="https://github.com/kosumic/invocateur"><code>invocateur</code> Summon coding agents in Herdr from configurable GitHub comment</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>swt</category><category>terminal</category><pubDate>2026-11-10 12:10:34 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
@@ -349,43 +425,6 @@ Just buy those and design from there.</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 13:44:20 2026] #doc/ap #mcu #input/button <a href="https://mp.weixin.qq.com/s/OdwVmfHZfTsc4tL-z7AcCA">TOUCH key app note and some drawing</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Tra từ: 祝 / zhu / chúc</title><category>chinese</category><category>vocab</category><pubDate>2026-11-09 01:39:49 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://hvdic.thivien.net/whv/%E7%A5%9D">Tra từ: 祝 / zhu / chúc</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> as in chúc mừng. 成功 / thành công.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</title><category>module</category><category>voltage/reference</category><pubDate>2026-11-09 01:37:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/_NZ7qbCsl5UuDm7TBmJJwA">ME432AXG Principles, parameters, and circuit analysis documentation of parallel voltage regulator circuits</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> another bandgap ref chip... like TL431</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> in here we have the calculaton of the current limit resistor to check which value I should pick.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/NMHYzSO9p6WEDcj7FH6yrg">High-voltage linear constant current direct-drive LED driver circuit design solution</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog <a href="https://www.analog.com/en/resources/analog-dialogue/articles/how-good-must-voltage-reference-be.html">Ask the Applications Engineer—11: How Good Must a Voltage Reference Be? | Analog Devices</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 13:37:15 2026] #pmic #buck <a href="https://mp.weixin.qq.com/s/qe4bKT7gWvMyC9lHBAVsOA">ME3104 | Synchronous current mode buck DC-DC, 2.5~5V width</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`win+x` `i` will open #terminal in Windows, always. Whether default is `pwsh` or `cmd` based on newness.</title><category>default</category><category>keybinding</category><category>windows</category><pubDate>2026-11-09 01:11:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><code>win+x</code> <code>i</code> will open #terminal in Windows, always. Whether default is <code>pwsh</code> or <code>cmd</code> based on newness.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
