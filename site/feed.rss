@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Why do GPS receivers have a 1 PPS output?</title><category>gps</category><category>hard</category><category>signal</category><pubDate>2026-11-09 06:20:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>CAN Protocol maximum devices in network and longest range</title><category>can</category><category>proto</category><category>range</category><pubDate>2026-11-10 11:21:26 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://blog.mbedded.ninja/electronics/communication-protocols/can-protocol/#bit-rate-and-transmission-distances">CAN Protocol maximum devices in network and longest range</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> we have a general correlation between Bit Rate And Transmission Distances.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>jacuzzi is A hot tub with underwater jets that massage the body.</title><category>bathroom</category><category>vocab</category><pubDate>2026-11-10 11:17:24 AM</pubDate><content:encoded><![CDATA[<ul>
+<li>jacuzzi is A hot tub with underwater jets that massage the body.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in those massage place.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Nvidia was in 1 in 11 startup rounds over $100M last year</title><category>finance</category><category>media</category><category>us</category><pubDate>2026-11-09 07:23:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50392256">Nvidia was in 1 in 11 startup rounds over $100M last year</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Andreessen_Horowitz">Andreessen Horowitz</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Assets_under_management">AUM: Assets under management</a>
+<ul>
+<li><a href="https://wikipedia.org/wiki/Sequoia_Capital">Sequoia Capital</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`rtic` Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</title><category>embed</category><category>rust</category><category>scheduler</category><category>stm32</category><pubDate>2026-11-09 06:22:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/rtic-rs/rtic"><code>rtic</code> Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #protocol/ptp: <a href="https://github.com/pendulum-project/statime"><code>statime</code> Precision Time Protocol (PTP) in Rust</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have #stm32 implementation as well, madness.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> at first I thought of this as something related to NTP.
+<ul>
+<li><a href="https://github.com/pendulum-project/ntpd-rs"><code>ntpd-rs</code> full implementation of Network Time Protocol, NTS support.</a>
+<ul>
+<li>#blog <a href="https://lobste.rs/s/rnvrel/ubuntu_adopt_ntpd_rs_as_default_time">Ubuntu to adopt ntpd-rs as the default time synchronization client and server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=35520044">The end of a myth: Distributed transactions can scale</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#networking <a href="https://nasa-jpl.github.io/tsn-scenarios/docs/main/">Introduction :: TSN: Time sensitive networking Scenarios</a></li>
+<li><a href="https://github.com/nasa-jpl/tsn-scenarios">Time-Sensitive Networking scenarios</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:01:10 2026] <a href="https://www.ti.com/product/DP83640">DP83640 PTP-aware Ethernet PHY transceiver</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 18:22:24 2026] <a href="https://austinsnerdythings.com/2026/04/26/ptp-osa5401-26-nanoseconds-raspberry-pi/">From Milliseconds to 26 Nanoseconds: How a $20 eBay SFP Module Beat My Entire NTP Setup - Austin's Nerdy Things</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Why do GPS receivers have a 1 PPS output?</title><category>gps</category><category>hard</category><category>signal</category><pubDate>2026-11-09 06:20:44 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://electronics.stackexchange.com/questions/30750/why-do-gps-receivers-have-a-1-pps-output">Why do GPS receivers have a 1 PPS output?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> extra PPS pin on GPS module,  for a very accurate 1Hz signal generator.</li>
@@ -287,61 +360,6 @@ Just buy those and design from there.</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/confusingperspective/comments/1xr3dzl">It's not a brick</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>AOZ2254 QFN22 4*4mm</title><category>buck</category><category>current</category><category>module</category><category>pmic</category><pubDate>2026-11-09 10:15:10 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.aosmd.com/res/datasheets/AOZ2254TQI-20.pdf">AOZ2254 QFN22 4*4mm</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Hi5000 common cathode step-down 48V input maximum efficiency of 96.76</title><category>buck</category><category>module</category><category>pmic</category><pubDate>2026-11-09 10:06:34 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/gNUaScnVuqIThsf602NwOw">Hi5000 common cathode step-down 48V input maximum efficiency of 96.76</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #mcu <a href="https://mp.weixin.qq.com/s/eTAnxoO55p8G4f628FNpuQ">APT32F171 fully self-developed IP 32-bit Risc-V MCU and motor solution</a>
-<ul>
-<li>#pcb drawn inside.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Managing a custom domain for your GitHub Pages site - GitHub Docs</title><category>code/forge</category><category>github</category><category>wprog</category><pubDate>2026-11-08 09:52:20 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Managing a custom domain for your GitHub Pages site - GitHub Docs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Codex CLI 0.167.0 add agent command center, backend switching and image previews</title><category>cli</category><category>codex</category><category>keybinding</category><category>swt</category><pubDate>2026-11-08 09:17:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/CodexAutomation/comments/1xpf8er">Codex CLI 0.167.0 add agent command center, backend switching and image previews</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's <code>left</code> on a blank textbox. <code>esc</code> back to normal interface. navigation keys move around, there is &quot;show more&quot;</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">codex agents --no-daemon # in my shim anyways.
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can change dir easier.. look at other running, history inside <code>codex</code> itself.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
