@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>The only way to save video is sharing the link from phone to weixin or some kind of apps.</title><category>android</category><category>browser</category><category>software</category><category>video</category><category>web</category><pubDate>2026-11-10 04:18:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>hw-at32f455-bob</title><category>mcu</category><category>pcba</category><category>protocol/cana</category><pubDate>2026-11-10 05:22:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/burgrp/hw-at32f455-bob">hw-at32f455-bob</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about the only board I saw online that use a CAN transceiver with it</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://codeberg.org/blackmagic-debug/blackmagic">blackmagic-debug/blackmagic: In-application debugger for ARM Cortex and RISC-V processors. - Codeberg.org</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.gmmicro.com/uploadfile/202410/48048aefcffa0da.pdf">HMT1040T</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>The only way to save video is sharing the link from phone to weixin or some kind of apps.</title><category>android</category><category>browser</category><category>software</category><category>video</category><category>web</category><pubDate>2026-11-10 04:18:32 PM</pubDate><content:encoded><![CDATA[<ul>
 <li>The only way to save video is sharing the link from phone to weixin or some kind of apps.
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and open that link to browser, save the video on that one.</li>
@@ -349,19 +361,6 @@ V (Vertical): Refers to precision along the Z-axis (altitude or elevation).</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.ti.com/product/SN74LVC1G139">SN74LVC1G139 2-Line-to-4-Line Decoder</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`portless` Replace port numbers with stable, named local URLs</title><category>backend</category><category>netw</category><pubDate>2026-11-09 05:45:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/vercel-labs/portless"><code>portless</code> Replace port numbers with stable, named local URLs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>nextjs</code>.</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>caddy</code></li>
 </ul>
 </li>
 </ul>
