@@ -6,6 +6,7 @@
   <meta name="color-scheme" content="dark">
   <title>Card — interactive demo</title>
   <link rel="preload" href="card.wasm" as="fetch" type="application/wasm" crossorigin>
+  <link rel="preload" href="animation.json" as="fetch" type="application/json" crossorigin>
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="wasm.css">
   <style>
@@ -20,13 +21,16 @@
     a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
     #restart { margin-left: auto; }
     #focus-app { border-color: var(--green); }
+    #train-speed { display: flex; align-items: center; gap: 4px; }
+    #train-speed button { width: 36px; min-width: 36px; padding: 6px; user-select: none; touch-action: none; }
+    #train-speed-value { min-width: 3ch; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
     .help { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
     #stage { flex: 1; min-height: 0; min-width: 0; overflow: auto; display: flex; }
     #terminal { --term-font-size: 16px; --term-line-height: 20px; --term-row-height: 20px !important; --term-fg: var(--text); --term-bg: transparent; flex: 1; min-width: 0; margin: 0; padding: 12px; border-radius: 0; box-shadow: none; outline-offset: -3px; touch-action: pan-y; }
     #terminal:focus-within { outline: 1px solid var(--green); }
     #status { padding: 8px 12px; margin: 0; color: var(--muted); }
     .embedded h1 { display:none; }
-    @media (max-width: 640px) { h1 { flex-basis: 100%; } a, button { min-height: 40px; padding: 7px 10px; } #terminal { --term-font-size: 14px; --term-line-height: 18px; --term-row-height: 18px !important; padding: 6px; } header { gap: 6px; padding: 8px; } }
+    @media (max-width: 640px) { h1 { flex-basis: 100%; } a, button { min-height: 40px; padding: 7px 10px; } #train-speed button { padding: 6px; } #terminal { --term-font-size: 14px; --term-line-height: 18px; --term-row-height: 18px !important; padding: 6px; } header { gap: 6px; padding: 8px; } }
   </style>
   <script src="wasm.js" defer></script>
 </head>
@@ -35,10 +39,15 @@
     <h1>Interactive demo</h1>
     <button id="focus-app" type="button" aria-controls="terminal" aria-describedby="help" disabled>Focus app</button>
     <nav id="links" aria-label="Card actions"></nav>
+    <div id="train-speed" role="group" aria-label="Border train speed">
+      <button id="train-slower" type="button" aria-label="Slow border train" title="Slow border train; hold to repeat" disabled>−</button>
+      <span id="train-speed-value" aria-hidden="true">2×</span>
+      <button id="train-faster" type="button" aria-label="Speed up border train" title="Speed up border train; hold to repeat" disabled>+</button>
+    </div>
     <button id="motion" type="button" disabled>Pause</button>
     <button id="restart" type="button" disabled>Restart</button>
   </header>
-  <p class="help" id="help">Tab or arrows to move through fields and controls. Enter or a click copies a field or activates a control. Home selects Name, End selects Email. Shift+Left or Right adjusts train speed from 0.5 to 6 times, starting at 2. Space pauses motion. Page Up or Down scrolls short terminals. Esc pauses the demo.</p>
+  <p class="help" id="help">Tab or arrows to move through fields and controls. Enter or a click copies a field or activates a control. Tap the moving border train to stop or resume it; drag a stopped train along the border. Hold minus or plus to change speed temporarily; release to restore it. Shift+Left or Right sets train speed from 0.5 to 6 times, starting at 2. Space pauses other motion. Page Up or Down scrolls short terminals. Esc pauses the demo.</p>
   <div id="stage"><div id="terminal" tabindex="0" role="group" aria-label="Interactive card" aria-describedby="help">Loading…</div></div>
   <p id="status" role="status">Loading…</p>
   <noscript>This interactive view requires JavaScript. The standalone HTML and SVG cards work without it.</noscript>
