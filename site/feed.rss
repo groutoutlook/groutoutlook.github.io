@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>running `vsinst` will trigger visual studio installer updater for me. the thing is it will be delete system git</title><category>git</category><category>ide</category><category>vs</category><category>windows</category><pubDate>2026-11-11 02:34:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>CAN to UART bridge (Rev. A) - slaaej2a.pdf</title><category>adapter</category><category>can</category><category>hardware</category><category>proto</category><category>uart</category><pubDate>2026-11-11 06:14:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.ti.com/lit/sd/slaaej2a/slaaej2a.pdf">CAN to UART bridge (Rev. A) - slaaej2a.pdf</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> just discover I still can use USART2 in FT32Fxxx board to work with things.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/32241/is-mcp2551-a-uart-to-can-converter">MCP2551 UART-to-CAN converter?</a>
+<ul>
+<li>#mcu/nxp : [Wed Nov 11 18:17:11 2026] <a href="https://www.nxp.com/docs/en/brochure/75017050.pdf">CAN transceiver builtin MCU lpc11c00</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 11 18:14:59 2026] <a href="https://www.reddit.com/r/embedded/comments/1b7x8sb">You can just connect CAN transceiver with your UART pins. When you send data to UART, read and discard received data from UART</a>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/30564/is-a-can-enabled-microcontroller-sufficient-to-drive-a-can-bus">Is a CAN enabled microcontroller sufficient to drive a CAN bus?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>running `vsinst` will trigger visual studio installer updater for me. the thing is it will be delete system git</title><category>git</category><category>ide</category><category>vs</category><category>windows</category><pubDate>2026-11-11 02:34:06 PM</pubDate><content:encoded><![CDATA[<ul>
 <li>running <code>vsinst</code> will trigger visual studio installer updater for me. the thing is it will be delete system git
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gitv2</code> is bundled in visual studio.</li>
@@ -307,39 +328,6 @@ herdr server stop # kill all session.
 <li><a href="https://wikipedia.org/wiki/Sequoia_Capital">Sequoia Capital</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`rtic` Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</title><category>embed</category><category>rust</category><category>scheduler</category><category>stm32</category><pubDate>2026-11-09 06:22:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/rtic-rs/rtic"><code>rtic</code> Real-Time Interrupt-driven Concurrency (RTIC) framework for ARM Cortex-M microcontrollers</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #protocol/ptp: <a href="https://github.com/pendulum-project/statime"><code>statime</code> Precision Time Protocol (PTP) in Rust</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have #stm32 implementation as well, madness.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> at first I thought of this as something related to NTP.
-<ul>
-<li><a href="https://github.com/pendulum-project/ntpd-rs"><code>ntpd-rs</code> full implementation of Network Time Protocol, NTS support.</a>
-<ul>
-<li>#blog <a href="https://lobste.rs/s/rnvrel/ubuntu_adopt_ntpd_rs_as_default_time">Ubuntu to adopt ntpd-rs as the default time synchronization client and server</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=35520044">The end of a myth: Distributed transactions can scale</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#networking <a href="https://nasa-jpl.github.io/tsn-scenarios/docs/main/">Introduction :: TSN: Time sensitive networking Scenarios</a></li>
-<li><a href="https://github.com/nasa-jpl/tsn-scenarios">Time-Sensitive Networking scenarios</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:01:10 2026] <a href="https://www.ti.com/product/DP83640">DP83640 PTP-aware Ethernet PHY transceiver</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 18:22:24 2026] <a href="https://austinsnerdythings.com/2026/04/26/ptp-osa5401-26-nanoseconds-raspberry-pi/">From Milliseconds to 26 Nanoseconds: How a $20 eBay SFP Module Beat My Entire NTP Setup - Austin's Nerdy Things</a></li>
 </ul>
 </li>
 </ul>
