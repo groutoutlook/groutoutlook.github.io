@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>hw-at32f455-bob</title><category>mcu</category><category>pcba</category><category>protocol/cana</category><pubDate>2026-11-10 05:22:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`vliv` The Very Large Image Viewer , as 16k and above.</title><category>format</category><category>image</category><category>swgui</category><category>viewer</category><pubDate>2026-11-11 11:52:23 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/delhoume/vliv"><code>vliv</code> The Very Large Image Viewer , as 16k and above.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 16k is default size of ultra high HD my phone produce.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #rust <a href="https://github.com/andrinbr/xl-view"><code>xl-view</code> minimalist HDR image viewer optimize for large images</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>hw-at32f455-bob</title><category>mcu</category><category>pcba</category><category>protocol/cana</category><pubDate>2026-11-10 05:22:10 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/burgrp/hw-at32f455-bob">hw-at32f455-bob</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> about the only board I saw online that use a CAN transceiver with it</li>
@@ -349,18 +362,6 @@ V (Vertical): Refers to precision along the Z-axis (altitude or elevation).</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  9 18:20:44 2026] <a href="https://lobste.rs/s/jdsu1z/microsecond_accurate_ntp_with_raspberry">Microsecond accurate NTP with a Raspberry Pi and PPS GPS(2021)</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>HMC241 EVB antenna switch.</title><category>analog/switch</category><category>ic</category><category>rfid</category><pubDate>2026-11-09 06:16:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/g3f3O7T2-lNE53z7rtLzaw">HMC241 EVB antenna switch.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 0-3.5GHz.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.ti.com/product/SN74LVC1G139">SN74LVC1G139 2-Line-to-4-Line Decoder</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
