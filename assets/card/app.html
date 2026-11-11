@@ -47,6 +47,7 @@ body[data-state="paused"] * { animation-play-state:paused!important; } body[data
 .spotlight-4 { animation-name:spotlight-4; animation-delay:-2000ms; }
 
 .rainbow-bar { animation:rainbow-chase 2000ms linear infinite; }
+@media (hover:none) and (pointer:coarse) { main { animation:none; background-position:0 0,50% 50%; } .rainbow-bar { animation:none; background-position:50% 0; } }
 @media (prefers-reduced-motion:reduce) { body:not([data-state="playing"]) * { animation:none!important; } }
 @media(min-width:761px) {
 body { padding:32px; gap:16px; }
@@ -108,13 +109,19 @@ li a { padding:16px 0; } .playback { font-size:14px; }
   const body=document.body, play=document.getElementById('play'), slider=document.getElementById('timeline');
   const duration=Number(slider.max);
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  function state(value) { body.dataset.state=value; play.textContent=value==='playing'?'Pause':'Play'; play.setAttribute('aria-pressed',String(value==='playing')); }
+  let syncTimer;
+  function scheduleSync() {
+    clearTimeout(syncTimer);
+    if(body.dataset.state!=='playing' || document.hidden) return;
+    syncTimer=setTimeout(()=>{const item=document.querySelector('.spotlight').getAnimations()[0];if(item)slider.value=Number(item.currentTime)%duration;scheduleSync();},100);
+  }
+  function state(value) { body.dataset.state=value; play.textContent=value==='playing'?'Pause':'Play'; play.setAttribute('aria-pressed',String(value==='playing')); scheduleSync(); }
   state('playing');
   play.onclick=()=>state(body.dataset.state==='playing'?'paused':'playing');
   document.getElementById('static').onclick=()=>{ state('static'); slider.value=0; };
   document.getElementById('restart').onclick=()=>{ state('playing'); requestAnimationFrame(()=>document.getAnimations().forEach(a=>a.currentTime=0)); };
   slider.oninput=()=>{ if(body.dataset.state==='static') state('playing'); state('paused'); requestAnimationFrame(()=>document.getAnimations().forEach(a=>a.currentTime=Number(slider.value))); };
   reduced.addEventListener('change',event=>{ if(event.matches) state('static'); });
-  function update() { if(body.dataset.state==='playing') { const item=document.querySelector('.spotlight').getAnimations()[0]; if(item) slider.value=Number(item.currentTime)%duration; } requestAnimationFrame(update); } requestAnimationFrame(update);
+  document.addEventListener('visibilitychange',scheduleSync);
 })();
 </script></body></html>

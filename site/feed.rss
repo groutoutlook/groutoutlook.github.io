@@ -5,9 +5,9 @@
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ggand0/viewskater"><code>viewskater</code> fast image viewer for browsing large collections of images.</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #rust <a href="https://github.com/andrinbr/xl-view"><code>xl-view</code> minimalist HDR image viewer optimize for large images</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #rust <a href="https://github.com/andrinbr/xl-view"><code>xl-view</code> minimalist HDR image viewer optimize for JXL large images</a></li>
 </ul>
 </li>
 </ul>
