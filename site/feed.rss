@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Create a COM interface</title><category>cpp</category><category>ipc</category><category>windows</category><category>wsdk</category><pubDate>2026-11-12 03:42:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-12 04:37:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://codeberg.org/mergiraf/mergiraf"><code>mergiraf</code> A syntax-aware git merge driver for a growing collection of programming languages and file formats.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> not only #nightly, I have to link it into <code>~/.local/bin</code> or <code>git</code> couldnt find it.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> pull origin_sample main</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> merge origin_sample/main</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://mergiraf.org/usage.html#registration-as-a-git-merge-driver">Usage - Mergiraf</a>
+<ul>
+<li>#til about <code>.gitattributes</code> and the global one....</li>
+</ul>
+</li>
+<li><a href="https://mergiraf.org/usage.html#interactive-use-after-encountering-a-merge-conflict">Interactive use after encountering a merge conflict - <code>mergiraf solve conflict.cpp</code></a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/1qmcac/tools_built_on_tree_sitter_s_concrete">Tools built on tree-sitter's concrete syntax trees</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://repo.jellyfin.org/?path=/server/windows/latest-preview/amd64">Nightlies Jellyfin Repository</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:37:29 2026] <a href="https://nelson.cloud/you-can-hide-languages-from-githubs-languages-bar/">You Can Hide Languages From GitHub's Languages Bar <code>linguist</code></a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Create a COM interface</title><category>cpp</category><category>ipc</category><category>windows</category><category>wsdk</category><pubDate>2026-11-12 03:42:17 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://learn.microsoft.com/en-us/cpp/ide/creating-a-com-interface-visual-cpp">Create a COM interface</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -323,18 +353,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 <li><a href="https://github.com/coreywonggithub/beryl7-travel">OpenWrt 25.12 firmware and a phone-first travel panel for the GL.iNet Beryl 7 (GL-MT3600BE), with mt76 and hostapd fixes</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>800V thyristors enter Dyson&apos;s high-end personal care products!</title><category>bldc</category><category>hard</category><category>mosfet</category><category>pcb</category><pubDate>2026-11-10 01:29:36 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/2e8WAw8-BoLqorGAjLczLw">800V thyristors enter Dyson's high-end personal care products!</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> really consolidated protection mechanism on the thyristor / MOSFET.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
