@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>SSG builder with golang, `hugo`</title><category>golang</category><category>html</category><category>uiweb</category><pubDate>2026-11-12 04:51:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>AI Productivity Gains Mainly Benefit People At The Top | Nelson Figueroa</title><category>ai</category><category>blog</category><category>technologia</category><pubDate>2026-11-12 04:53:35 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://nelson.cloud/ai-productivity-gains-mainly-benefit-people-at-the-top/">AI Productivity Gains Mainly Benefit People At The Top | Nelson Figueroa</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well..</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SSG builder with golang, `hugo`</title><category>golang</category><category>html</category><category>uiweb</category><pubDate>2026-11-12 04:51:24 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/gohugoio/hugo">SSG builder with golang, <code>hugo</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> too famous to not know, like GitHub Jekyll.
@@ -356,18 +368,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>U3210A - High Voltage Power IC（&gt;400V） - 绍兴宇力半导体有限公司官网</title><category>buck</category><category>module</category><category>voltage/ac</category><pubDate>2026-11-10 03:29:40 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="http://www.uni-semic.com/product/515.html">U3210A - High Voltage Power IC（&gt;400V） - 绍兴宇力半导体有限公司官网</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  10-20V HVDC non isolated buck.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in APT32F170 schdoc, this one out 15V -&gt; CJ78L05 to provide 5V? i dont understand that part.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
