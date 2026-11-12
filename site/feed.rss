@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Roll 1D6</title><category>math</category><category>stat</category><pubDate>2026-11-12 03:39:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Create a COM interface</title><category>cpp</category><category>ipc</category><category>windows</category><category>wsdk</category><pubDate>2026-11-12 03:42:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/en-us/cpp/ide/creating-a-com-interface-visual-cpp">Create a COM interface</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  Requested <code>Build.BuildSelection</code> via Visual Studio COM (PID 7396).</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Roll 1D6</title><category>math</category><category>stat</category><pubDate>2026-11-12 03:39:06 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.diedice.com/roll-1d6/">Roll 1D6</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -323,18 +335,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 <li><a href="https://mp.weixin.qq.com/s/2e8WAw8-BoLqorGAjLczLw">800V thyristors enter Dyson's high-end personal care products!</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> really consolidated protection mechanism on the thyristor / MOSFET.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>2 ns, 87 A: 7 W laser tube can be used to 67 W</title><category>blog</category><category>hard</category><category>laser</category><pubDate>2026-11-10 01:28:02 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/s_r5OcBcc0QHUckamq_hQQ">2 ns, 87 A: 7 W laser tube can be used to 67 W</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
