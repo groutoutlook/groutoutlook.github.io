@@ -1,4 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>How to remove the blue Google Chrome profile icon?</title><category>browser</category><category>chrome</category><category>desktop</category><category>soft</category><pubDate>2026-11-12 12:31:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Roll 1D6</title><category>math</category><category>stat</category><pubDate>2026-11-12 03:39:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.diedice.com/roll-1d6/">Roll 1D6</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49752041">OpenJev</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.liquid.ai/blog/d1-decision-model">Introducing d1: The most capable decision model, now with vision | Blog | Liquid AI</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 15:39:06 2026] <a href="https://news.ycombinator.com/item?id=50456791">Gemini Decisions API</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`pyzotero` Python client for Zotero API</title><category>cli</category><category>document</category><category>gui</category><category>typesetting</category><pubDate>2026-11-12 03:11:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/urschrei/pyzotero"><code>pyzotero</code> Python client for Zotero API</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">r ins # uv tool install .[cli,mcp]
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.zotero.org/support/dev/web_api/v3/basics/#searches">Zotero Web API Documentation | Zotero Documentation</a>
+<ul>
+<li>so... only touch this if there are some functionality that is so intricate then.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>no, Zotero dont have URI scheme.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 15:11:05 2026] <a href="https://github.com/redhat-et/ripwire"><code>ripwire</code> ripgrep of AI context zero-dependency C++23 CLI + MCP server for coding agents. Find what you want without reading the repo, then check you built what you meant — blast radius, tests-to-run, quality deltas. Signatures at 74.7% fewer bytes than bodies; every guess labelled, every loss published. Paddle out with a map.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Invoke-WebRequest` | `iwr`</title><category>lang</category><category>powershell/utils</category><pubDate>2026-11-12 02:37:05 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest"><code>Invoke-WebRequest</code> | <code>iwr</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>-OutFile</code> as <a href="https://unix.stackexchange.com/questions/642479/what-is-curl-o"><code>curl -O</code>/<code>-o</code> or <code>curl -o-</code></a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest#example-5-submit-a-multipart-form-data-file">Submit a multipart/form-data file</a></li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$FilePath = &quot;$pwd/.gitconfig&quot;
+$FieldName = &#39;document&#39;
+$ContentType = &#39;text/plain&#39;
+
+$FileStream = [System.IO.FileStream]::new($filePath, [System.IO.FileMode]::Open)
+$FileHeader = [System.Net.Http.Headers.ContentDispositionHeaderValue]::new(&#39;form-data&#39;)
+$FileHeader.Name = $FieldName
+$FileHeader.FileName = Split-Path -Leaf $FilePath
+$FileContent = [System.Net.Http.StreamContent]::new($FileStream)
+$FileContent.Headers.ContentDisposition = $FileHeader
+$FileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse($ContentType)
+
+$MultipartContent = [System.Net.Http.MultipartFormDataContent]::new()
+$MultipartContent.Add($FileContent)
+
+$Response = Invoke-WebRequest -Body $MultipartContent -method Post -uri https://127.0.0.1:8000    
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain"># convenient way to download files + overwrite from powershell. Wget can also do this but kinda convoluted.
+iwr (gcb) -OutFile .\mousemaster.exe
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> sometimes I want to curl/wget but I'm in powershell, do not want to touch wget/curl binaries.
+<ul>
+<li>For examples, manual download some scoop packages which has been abandoned.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#doc/official :<a href="https://www.mankier.com/1/curl"><code>curl</code> transfer a URL | curl Commands</a></li>
+<li>#linux/utils : <a href="https://cheat.sh/curl">curl options</a>
+<ul>
+<li><a href="https://cheat.sh/wget">wget option</a>
+<ul>
+<li><code>wget</code> batch download a dir, maybe I need to explore more the terminology.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wget</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>r</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>np</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>nH</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>cut-dirs</span><span class="keyword operator assignment option shell">=</span>1<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>R</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>index.html*<span class="punctuation definition string end shell">&quot;</span></span> https://pcb.mit.edu/lectures/<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-check-certificate</span></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 14:37:05 2026] <a href="https://daniel.haxx.se/blog/2024/07/03/wcurl-is-here/"><code>wcurl</code> , <code>wget</code>-like <code>libcurl</code> cli.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>vainty is Excessive pride in appearance or accomplishments; conceit. #synonym: conceit.</title><category>noun</category><category>vocab</category><pubDate>2026-11-12 01:21:57 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>vainty is Excessive pride in appearance or accomplishments; conceit. #synonym: conceit.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in vain or futile.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/txkq8s/horrible_public_key_tricks">Horrible public key tricks</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Gephi` - Open Graph Viz Platform</title><category>netw</category><category>software</category><category>visualization</category><pubDate>2026-11-12 01:04:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/gephi/gephi"><code>Gephi</code> - Open Graph Viz Platform</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Tagged union</title><category>compsci</category><category>csci</category><pubDate>2026-11-12 12:58:14 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Tagged_union">Tagged union</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sum type is this, or read this <a href="https://stackoverflow.com/questions/64779163/sum-types-in-c">templates - Sum types in C++</a>
+<ul>
+<li>IT's literally <code>std::variant</code>, type-safe union in C++</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://ericcodes.io/blog/gleam-my-new-obsession.html">Gleam my new obsession | Eric Codes</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://wikipedia.org/wiki/Product_type">Product type</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> which is struct, holding infinite range of values.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Contrast of sum type which only hold several predefined values.</li>
+<li><a href="https://lobste.rs/s/jxprbr/algebraic_types_are_not_scary_actually">Algebraic Types are not Scary, Actually</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 12:58:14 2026] <a href="https://lobste.rs/s/zingk1/announcing_net_11">Announcing .NET 11 with C# 15 union type.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>How to remove the blue Google Chrome profile icon?</title><category>browser</category><category>chrome</category><category>desktop</category><category>soft</category><pubDate>2026-11-12 12:31:26 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://superuser.com/questions/1079771/how-to-remove-the-blue-google-chrome-profile-icon">How to remove the blue Google Chrome profile icon?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -25,7 +171,11 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/facebook/docusaurus"><code>docusaurus</code> documentation websites.</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 11 19:37:41 2026] <a href="https://eaj.no/posts/open-graph-images-with-typst/">Open Graph images with Astro and Typst · Erik André Jakobsen</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 11 19:37:41 2026] <a href="https://eaj.no/posts/open-graph-images-with-typst/">Open Graph images with Astro and Typst · Erik André Jakobsen</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #social/media <a href="https://ogp.me/">Open Graph protocol</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -183,147 +333,6 @@
 </ul>
 ]]></content:encoded></item><item><title>2 ns, 87 A: 7 W laser tube can be used to 67 W</title><category>blog</category><category>hard</category><category>laser</category><pubDate>2026-11-10 01:28:02 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/s_r5OcBcc0QHUckamq_hQQ">2 ns, 87 A: 7 W laser tube can be used to 67 W</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Google AI search mode can take image and you query against that directly on browser</title><category>browser</category><category>google</category><category>search/engine</category><category>web</category><pubDate>2026-11-10 12:45:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://google.com/ai">Google AI search mode can take image and you query against that directly on browser</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>EtherCAT</title><category>board</category><category>hard</category><category>protocol/ethernet</category><pubDate>2026-11-10 12:34:20 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/EtherCAT">EtherCAT</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> seems like every RS-485,CAN,LIN and other method will emerge in EtherCAT.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> a #protocol for PLC. every digital servo/robot arm 'll be controlled by this.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/VZ7iMurWvaWd-gsyCqdFeg">It's really open source?! The big god spends 150 yuan, hand rubbing FOC drive! It is also an EtherCAT slave development board......</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://electronics.stackexchange.com/questions/507197/can-you-use-cat-5-6-ethernet-cable-to-power-devices#507208">Can you use cat 5/6 ethernet cable to power devices?</a>
-<ul>
-<li>I want to PoE without dedicated hardware.</li>
-</ul>
-</li>
-<li><a href="https://www.eevblog.com/forum/beginners/power-over-cat5-what-is-the-max-current/">Power over cat5. What is the max current?</a></li>
-<li><a href="https://electronics.stackexchange.com/questions/113253/voltage-drop-and-safe-current-load-on-cat5-cable">power - Voltage Drop and Safe Current Load on CAT5 Cable</a>
-<ul>
-<li>which you ought to push voltage much further to balance the drop.</li>
-<li>The return path(negative wire on DC, AC dont have that.) also contribute to total voltage drop.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #meta <a href="https://www.rapidtables.com/calc/wire/voltage-drop-calculator.html">Voltage Drop Calculator</a></li>
-</ul>
-</li>
-<li><a href="https://wikipedia.org/wiki/Category_1_cable">Category 1 cable</a>
-<ul>
-<li>this normally appears on probes. good for nothing other than power supplying, telephone lines, etc..</li>
-<li>#meta <a href="https://wikipedia.org/wiki/Structured_cabling">Structured cabling - CAT1 -&gt; CAT8</a></li>
-<li><a href="https://wikipedia.org/wiki/ISO/IEC_11801#Category_8">ISO/IEC 11801 - Defining CAT7 and CAT8 cable</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/PLC/comments/mndwk3">Why Windows on PLCs?</a>
-<ul>
-<li>#blog <a href="https://news.ycombinator.com/item?id=45605556">PoE basics and beyond: What every engineer should know</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 28 17:37:24 2026] <a href="https://www.reddit.com/r/PLC/comments/rl3f42">Ethernet IP and EtherCAT on the same switch</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 12:34:20 2026] #connector #RJ45 <a href="https://item.taobao.com/item.htm?id=758270727052">ZLG致远电子 集成式EtherCAT从站开发模块 以太网模块DPort-ECT</a>
-<ul>
-<li>shop owner <a href="https://zhiydz.taobao.com/category-1742969720.htm">默认宝贝分类页-广州致远电子官方企业店</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Pulian Technology launched an industrial-grade PLC single-lamp controller</title><category>blog</category><category>hard</category><category>pcb</category><category>protocol/powerline</category><category>psa</category><pubDate>2026-11-10 12:31:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/kokt6NGytZ8G9cwIZ3eomA">Pulian Technology launched an industrial-grade PLC single-lamp controller</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> such things really require a high conformance AC-DC or DC-DC conversion module.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`rust-cache` GitHub Action that implements smart caching for rust/cargo projects</title><category>build/cargo</category><category>cicd</category><category>ide</category><pubDate>2026-11-10 12:18:39 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Swatinem/rust-cache"><code>rust-cache</code> GitHub Action that implements smart caching for rust/cargo projects</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/rust/comments/1hpuy01">Why You Need Sccache</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://gitlab.com/bits-n-bites/buildcache">Bits-n-Bites / BuildCache · GitLab</a></li>
-<li><a href="https://github.com/mozilla/sccache"><code>Sccache</code> ccache-like tool. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sometime you need <code>$env:SCCACHE_SERVER_PORT = '4226'</code> .idk.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 12:18:39 2026] <a href="https://github.com/kosumic/invocateur"><code>invocateur</code> Summon coding agents in Herdr from configurable GitHub comment</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`herdr` runtime your coding agents live on</title><category>ai</category><category>swt</category><category>terminal</category><pubDate>2026-11-10 12:10:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/herdrdev/herdr"><code>herdr</code> runtime your coding agents live on</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://herdr.dev/docs/configuration/">Configuration | herdr</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">herdr # launch into the big mux menu.
-herdr server stop # kill all session.
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: choose me <code>pwsh</code> without any config. That's much better over <code>zellij</code> which chose <code>cmd</code></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201003">Herdr is joining Y Combinator. The runtime stays open</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50298436">Herdr has released native app</a>
-<ul>
-<li>#android <a href="https://github.com/0cv/herdr-mobile-relay"><code>herdr-mobile-relay</code> monitor Herdr agents remotely from your phone, a mobile web app for Android/iOS with push notifications, QR setup, and multi-computer relays.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>zellij</code>, <code>tmux</code>
-<ul>
-<li>but those 2 cant run in windows so dont bother actually.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Aug 28 12:35:05 2026] <code>zellij</code> in scoop now.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 30 17:15:10 2026] #macos <a href="https://github.com/codealong/codealong"><code>codealong</code> agent you run, in 1 window for macOS and Linux for Claude Code, Codex, OpenCode, Antigravity and Cursor, across your accounts and machines.</a>
-<ul>
-<li><a href="https://github.com/BrokkAi/mjolnir/"><code>mjolnir</code> Manage Harness with durable sessions, isolated environments, quotas, and remote control</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov  6 07:15:27 2026] <a href="https://github.com/makefunstuff/herdr-android">herdr-android</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 12:10:34 2026] #android <a href="https://github.com/kosumic/whip"><code>Whip</code> agent-native SSH mobile client, Herdr multiplexer in Android</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Model Context Protocol (MCP) for `meilisearch`</title><category>backend</category><category>harness</category><category>protocol/mcp</category><category>search/engine</category><pubDate>2026-11-10 11:49:19 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.meilisearch.com/docs/getting_started/integrations/mcp">Model Context Protocol (MCP) for <code>meilisearch</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
