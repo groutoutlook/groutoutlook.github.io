@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-12 04:37:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`darling` Darwin/macOS emulation layer for Linux</title><category>arch/arm</category><category>linux</category><category>macos</category><category>virtualization</category><category>windows</category><pubDate>2026-11-12 04:44:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/darlinghq/darling"><code>darling</code> Darwin/macOS emulation layer for Linux</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like <code>wine</code> Windows emulation.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-12 04:37:29 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://codeberg.org/mergiraf/mergiraf"><code>mergiraf</code> A syntax-aware git merge driver for a growing collection of programming languages and file formats.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> not only #nightly, I have to link it into <code>~/.local/bin</code> or <code>git</code> couldnt find it.</li>
@@ -346,18 +358,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/icamaster/picothermal"><code>picothermal</code> Thermal camera based on Flir Lepton with RP2040 and USB-C</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>OpenWrt 25.12 firmware and a phone-first travel panel for the GL.iNet Beryl 7 (GL-MT3600BE), with mt76 and hostapd fixes</title><category>firmware</category><category>netw</category><category>router</category><pubDate>2026-11-10 02:09:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/coreywonggithub/beryl7-travel">OpenWrt 25.12 firmware and a phone-first travel panel for the GL.iNet Beryl 7 (GL-MT3600BE), with mt76 and hostapd fixes</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
