@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`darling` Darwin/macOS emulation layer for Linux</title><category>arch/arm</category><category>linux</category><category>macos</category><category>virtualization</category><category>windows</category><pubDate>2026-11-12 04:44:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>SSG builder with golang, `hugo`</title><category>golang</category><category>html</category><category>uiweb</category><pubDate>2026-11-12 04:51:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/gohugoio/hugo">SSG builder with golang, <code>hugo</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> too famous to not know, like GitHub Jekyll.
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=44675053">How I fixed my blog's performance issues by writing a new Jekyll plugin</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">hugo</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>help <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> know next to nothing.</span><span class="comment line number-sign shell">
+</span></span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> simple and popular enough?
+<ul>
+<li>Con: tons of feature I dont know how to use.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-07-04 02:37:48 PM]</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://soupault.app/"><code>soupault</code></a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #rust <a href="https://github.com/Mvk122/sitesy"><code>sitesy</code> static site generator built in rust</a>
+<ul>
+<li>#zig <a href="https://github.com/kristoff-it/zine"><code>zine</code> Scalable, Flexible Static Site Generator MD-&gt;HTML</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:51:24 2026] <a href="https://nelson.cloud/how-to-serve-your-hugo-site-on-a-local-network/">How to Serve Your Hugo Site on a Local Network | Nelson Figueroa</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I'm full in <code>zola</code> now.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`darling` Darwin/macOS emulation layer for Linux</title><category>arch/arm</category><category>linux</category><category>macos</category><category>virtualization</category><category>windows</category><pubDate>2026-11-12 04:44:26 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/darlinghq/darling"><code>darling</code> Darwin/macOS emulation layer for Linux</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like <code>wine</code> Windows emulation.</li>
@@ -336,28 +369,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in APT32F170 schdoc, this one out 15V -&gt; CJ78L05 to provide 5V? i dont understand that part.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</title><category>debugging</category><category>hard</category><category>optic</category><category>probe</category><category>thermal</category><pubDate>2026-11-10 02:24:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://resources.altium.com/p/using-thermal-camera-pcb-diagnostics">Using a Thermal Camera for PCB Inspection and Diagnostics | Blog | Altium Designer</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I may have to reside to a thermal camera nowadays..</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/AskElectronics/comments/1oh4kz9">How to locate a short circuit on a PCB</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #video #review <a href="https://www.youtube.com/watch?v=OivS8pxigNw">Thermal Master P3 USB-C Camera Review - YouTube</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Oct 16 07:21:44 2026] <a href="https://item.taobao.com/item.htm?id=921791272515&amp;skuId=6246273539527">【正品保障】艾睿天眼P2pro热成像P3手机外接摄像头工业热成像</a>
-<ul>
-<li>it's really cheaper than the affiliate link, but by 5-10 only..</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 10 14:24:32 2026] <a href="https://github.com/icamaster/picothermal-fw">Firmware for the picothermal project and WebUSB app</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/icamaster/picothermal"><code>picothermal</code> Thermal camera based on Flir Lepton with RP2040 and USB-C</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
