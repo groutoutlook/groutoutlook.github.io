@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>F# for Performance-Critical Code, by Matthew Crews</title><category>dotnet/fsharp</category><category>lang</category><pubDate>2026-11-12 04:58:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`dinit` Service monitoring / &quot;init&quot; system</title><category>alternative</category><category>boot</category><category>linux</category><category>systemd</category><category>windows</category><pubDate>2026-11-12 07:46:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/davmac314/dinit"><code>dinit</code> Service monitoring / &quot;init&quot; system</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> direct modern competitor to <code>systemd</code>... let's see how this playout.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://rdrama.net/h/slackernews/post/821280">KaOS (QT Linux distro) finished migrating to <code>Dinit</code> over <code>systemd</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #tui #zig <a href="https://github.com/fairyglade/ly"><code>ly</code> small TUI (ncurses-like) display manager for Linux and BSD</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 19:46:50 2026] <a href="https://news.ycombinator.com/item?id=50425017">A live tree of systemd jobs on the boot console</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Anthropic IPO</title><category>ai</category><category>finance</category><category>media</category><category>technologia</category><pubDate>2026-11-12 07:45:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50465829">Anthropic IPO</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>F# for Performance-Critical Code, by Matthew Crews</title><category>dotnet/fsharp</category><category>lang</category><pubDate>2026-11-12 04:58:50 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://youtu.be/NZ5Lwzrdoe8">F# for Performance-Critical Code, by Matthew Crews</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -353,31 +378,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 <li><a href="https://electronics.stackexchange.com/questions/30564/is-a-can-enabled-microcontroller-sufficient-to-drive-a-can-bus">Is a CAN enabled microcontroller sufficient to drive a CAN bus?</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>running `vsinst` will trigger visual studio installer updater for me. the thing is it will be delete system git</title><category>git</category><category>ide</category><category>vs</category><category>windows</category><pubDate>2026-11-11 02:34:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>running <code>vsinst</code> will trigger visual studio installer updater for me. the thing is it will be delete system git
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gitv2</code> is bundled in visual studio.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`vliv` The Very Large Image Viewer , as 16k and above.</title><category>format</category><category>image</category><category>swgui</category><category>viewer</category><pubDate>2026-11-11 11:52:23 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/delhoume/vliv"><code>vliv</code> The Very Large Image Viewer , as 16k and above.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> 16k is default size of ultra high HD my phone produce.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ggand0/viewskater"><code>viewskater</code> fast image viewer for browsing large collections of images.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #rust <a href="https://github.com/andrinbr/xl-view"><code>xl-view</code> minimalist HDR image viewer optimize for JXL large images</a></li>
 </ul>
 </li>
 </ul>
