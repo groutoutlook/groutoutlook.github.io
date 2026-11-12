@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>CAN to UART bridge (Rev. A) - slaaej2a.pdf</title><category>adapter</category><category>can</category><category>hardware</category><category>proto</category><category>uart</category><pubDate>2026-11-11 06:14:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>How to remove the blue Google Chrome profile icon?</title><category>browser</category><category>chrome</category><category>desktop</category><category>soft</category><pubDate>2026-11-12 12:31:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://superuser.com/questions/1079771/how-to-remove-the-blue-google-chrome-profile-icon">How to remove the blue Google Chrome profile icon?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`astro` web framework for content-driven websites</title><category>ssg</category><category>typescript</category><category>wprog</category><pubDate>2026-11-11 07:37:41 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/withastro/astro"><code>astro</code> web framework for content-driven websites</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> wordpress alternative.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://jeamland.net/">Benno Rice</a> through his github. he was OpenBSD maintainer.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>Update 2025-05 : <a href="https://lobste.rs/s/tjbgo2/hyper_typing">Hyper-Typing</a></li>
+<li>#frontend : <a href="https://github.com/withastro/starlight">withastro/starlight:  Build beautiful, accessible, high-performance documentation websites with Astro</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/facebook/docusaurus"><code>docusaurus</code> documentation websites.</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 11 19:37:41 2026] <a href="https://eaj.no/posts/open-graph-images-with-typst/">Open Graph images with Astro and Typst · Erik André Jakobsen</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Salient means standing out</title><category>adjective</category><category>vocab</category><pubDate>2026-11-11 06:29:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://dictionary.cambridge.org/dictionary/english/salient">Salient means standing out</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CAN to UART bridge (Rev. A) - slaaej2a.pdf</title><category>adapter</category><category>can</category><category>hardware</category><category>proto</category><category>uart</category><pubDate>2026-11-11 06:14:59 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.ti.com/lit/sd/slaaej2a/slaaej2a.pdf">CAN to UART bridge (Rev. A) - slaaej2a.pdf</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -288,46 +331,6 @@ herdr server stop # kill all session.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CAN Protocol maximum devices in network and longest range</title><category>can</category><category>proto</category><category>range</category><pubDate>2026-11-10 11:21:26 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://blog.mbedded.ninja/electronics/communication-protocols/can-protocol/#bit-rate-and-transmission-distances">CAN Protocol maximum devices in network and longest range</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> we have a general correlation between Bit Rate And Transmission Distances.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> Contactless CAN Bus Sniffers.. true wire-tap spirit.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>jacuzzi is A hot tub with underwater jets that massage the body.</title><category>bathroom</category><category>vocab</category><pubDate>2026-11-10 11:17:24 AM</pubDate><content:encoded><![CDATA[<ul>
-<li>jacuzzi is A hot tub with underwater jets that massage the body.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in those massage place.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Nvidia was in 1 in 11 startup rounds over $100M last year</title><category>finance</category><category>media</category><category>us</category><pubDate>2026-11-09 07:23:27 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50392256">Nvidia was in 1 in 11 startup rounds over $100M last year</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Andreessen_Horowitz">Andreessen Horowitz</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #acronym <a href="https://wikipedia.org/wiki/Assets_under_management">AUM: Assets under management</a>
-<ul>
-<li><a href="https://wikipedia.org/wiki/Sequoia_Capital">Sequoia Capital</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
