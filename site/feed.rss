@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>About Vinschool | Vinschool K-12 Education System</title><category>news</category><category>other</category><category>social</category><pubDate>2026-11-12 08:41:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`kisi` KiCad signal and power integrity tools, running locally in your browser or as CLI tool.</title><category>cli</category><category>kicad</category><category>pcb</category><category>power/integrity</category><category>software</category><category>visualization</category><category>web/ui</category><pubDate>2026-11-13 09:04:56 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/riehlies/kisi"><code>kisi</code> KiCad signal and power integrity tools, running locally in your browser or as CLI tool.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.kicad.info/t/kisi-fast-si-pi-checks-for-kicad-boards-right-in-your-browser-feedback-wanted/72277">kisi – fast SI/PI checks for KiCad boards, right in your browser (feedback wanted) - External Plugins</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>About Vinschool | Vinschool K-12 Education System</title><category>news</category><category>other</category><category>social</category><pubDate>2026-11-12 08:41:59 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://vinschool.edu.vn/en/introduction/about-vinschool/">About Vinschool | Vinschool K-12 Education System</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> so turns out Vinschool is K-12...</li>
@@ -358,18 +370,6 @@ iwr (gcb) -OutFile .\mousemaster.exe
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 12:58:14 2026] <a href="https://lobste.rs/s/zingk1/announcing_net_11">Announcing .NET 11 with C# 15 union type.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How to remove the blue Google Chrome profile icon?</title><category>browser</category><category>chrome</category><category>desktop</category><category>soft</category><pubDate>2026-11-12 12:31:26 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://superuser.com/questions/1079771/how-to-remove-the-blue-google-chrome-profile-icon">How to remove the blue Google Chrome profile icon?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
