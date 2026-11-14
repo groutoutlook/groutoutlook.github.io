@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>nmWave-Interferometer: An Open Source Interferometer for Accurate Distance Measurements</title><category>fsdk</category><category>kicad</category><category>metrology</category><category>pcb</category><pubDate>2026-11-13 09:08:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</title><category>hard</category><category>usb</category><category>utils/hub</category><pubDate>2026-11-14 07:33:47 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://item.taobao.com/item.htm?id=800669982337">CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#alternative : <a href="https://item.taobao.com/item.htm?id=961666176946">CH339F USB转1路百兆以太网 4路USBHUB2.0 模块</a>
+cheaper. this is 45. the original one is 58.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/XmYttuyf9CvoS7TVNfsR5Q">For more DIY activities, use the CH339 to hand rub a USB Hub with four-way current detection and independent switching, which is fully open source~</a>
+<ul>
+<li>#example/repo <a href="https://oshwhub.com/wandaeda/ch339-electronic-diy-development">CH339 电子 DIY 开发工具 - 立创开源硬件平台</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=870803125108">原装 CH217K 丝印17K SOT23-6 可调限流门限 USB限流配电开关芯片</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym OVP/OCP/ESD, for every USB-powered compliance devices.
+OVP: over voltage protection and ESD: electrostatic discharge is more important one.
+<ul>
+<li><a href="https://www.st.com/resource/en/application_note/an6236-overcurrent-protection-stmicroelectronics.pdf">OCP: Overcurrent protection - Application note - an6236-overcurrent-protection-stmicroelectronics.pdf</a>
+<ul>
+<li>more about how SMPS Flyback PSU do OCP while the PMIC dont have them itself.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.monolithicpower.com/en/mp4501.html">MP4501 | 60V, USB Type-C Port with OVP and IEC ESD Protection | MPS</a>
+<ul>
+<li><a href="https://assets.nexperia.com/documents/data-sheet/PESD3V3S2UT.pdf">Double ESD protection diode - PESD3V3S2UT.pdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 07:33:47 2026] <a href="https://superuser.com/questions/1847406/what-is-the-difference-between-the-stt-and-mtt-in-usb-2-0-interface">usb storage - What is the difference between the STT and MTT in USB 2.0 interface?</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>How Not to Build a Music Player</title><category>prog</category><category>software</category><pubDate>2026-11-13 09:11:30 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://alichraghi.github.io/blog/how-not-to-build-a-music-player/">How Not to Build a Music Player</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> and more how not to from now on.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>nmWave-Interferometer: An Open Source Interferometer for Accurate Distance Measurements</title><category>fsdk</category><category>kicad</category><category>metrology</category><category>pcb</category><pubDate>2026-11-13 09:08:22 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/0x23/nmWave-Interferometer">nmWave-Interferometer: An Open Source Interferometer for Accurate Distance Measurements</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -285,77 +341,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 15:11:05 2026] <a href="https://github.com/redhat-et/ripwire"><code>ripwire</code> ripgrep of AI context zero-dependency C++23 CLI + MCP server for coding agents. Find what you want without reading the repo, then check you built what you meant — blast radius, tests-to-run, quality deltas. Signatures at 74.7% fewer bytes than bodies; every guess labelled, every loss published. Paddle out with a map.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Invoke-WebRequest` | `iwr`</title><category>lang</category><category>powershell/utils</category><pubDate>2026-11-12 02:37:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest"><code>Invoke-WebRequest</code> | <code>iwr</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>-OutFile</code> as <a href="https://unix.stackexchange.com/questions/642479/what-is-curl-o"><code>curl -O</code>/<code>-o</code> or <code>curl -o-</code></a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest#example-5-submit-a-multipart-form-data-file">Submit a multipart/form-data file</a></li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$FilePath = &quot;$pwd/.gitconfig&quot;
-$FieldName = &#39;document&#39;
-$ContentType = &#39;text/plain&#39;
-
-$FileStream = [System.IO.FileStream]::new($filePath, [System.IO.FileMode]::Open)
-$FileHeader = [System.Net.Http.Headers.ContentDispositionHeaderValue]::new(&#39;form-data&#39;)
-$FileHeader.Name = $FieldName
-$FileHeader.FileName = Split-Path -Leaf $FilePath
-$FileContent = [System.Net.Http.StreamContent]::new($FileStream)
-$FileContent.Headers.ContentDisposition = $FileHeader
-$FileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse($ContentType)
-
-$MultipartContent = [System.Net.Http.MultipartFormDataContent]::new()
-$MultipartContent.Add($FileContent)
-
-$Response = Invoke-WebRequest -Body $MultipartContent -method Post -uri https://127.0.0.1:8000    
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain"># convenient way to download files + overwrite from powershell. Wget can also do this but kinda convoluted.
-iwr (gcb) -OutFile .\mousemaster.exe
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> sometimes I want to curl/wget but I'm in powershell, do not want to touch wget/curl binaries.
-<ul>
-<li>For examples, manual download some scoop packages which has been abandoned.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#doc/official :<a href="https://www.mankier.com/1/curl"><code>curl</code> transfer a URL | curl Commands</a></li>
-<li>#linux/utils : <a href="https://cheat.sh/curl">curl options</a>
-<ul>
-<li><a href="https://cheat.sh/wget">wget option</a>
-<ul>
-<li><code>wget</code> batch download a dir, maybe I need to explore more the terminology.
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">wget</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>r</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>np</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>nH</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>cut-dirs</span><span class="keyword operator assignment option shell">=</span>1<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>R</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>index.html*<span class="punctuation definition string end shell">&quot;</span></span> https://pcb.mit.edu/lectures/<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>no-check-certificate</span></span>
-</span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 14:37:05 2026] <a href="https://daniel.haxx.se/blog/2024/07/03/wcurl-is-here/"><code>wcurl</code> , <code>wget</code>-like <code>libcurl</code> cli.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>vainty is Excessive pride in appearance or accomplishments; conceit. #synonym: conceit.</title><category>noun</category><category>vocab</category><pubDate>2026-11-12 01:21:57 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>vainty is Excessive pride in appearance or accomplishments; conceit. #synonym: conceit.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in vain or futile.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/txkq8s/horrible_public_key_tricks">Horrible public key tricks</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
