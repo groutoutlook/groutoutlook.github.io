@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`uhubctl` - USB hub per-port power control</title><category>cli</category><category>cli/ctl</category><category>usb/hub</category><pubDate>2026-11-14 10:01:19 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`kanzo` sharable kanban for humans and agent with MCP</title><category>backend</category><category>management</category><category>productivity</category><category>rust</category><category>server</category><category>tui</category><category>web/ui</category><pubDate>2026-11-14 11:36:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/emanuele-em/kanzo"><code>kanzo</code> sharable kanban for humans and agent with MCP</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Nextcloud` server</title><category>backend</category><category>filesystem</category><category>nas</category><category>networking</category><pubDate>2026-11-14 11:32:00 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nextcloud/server"><code>Nextcloud</code> server</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/nextcloud/desktop">Desktop sync client for Nextcloud</a>, <a href="https://github.com/nextcloud/android">Nextcloud Android app</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://openwrt.org/docs/guide-user/services/nas/owncloud"><code>owncloud</code> or <code>nextcloud</code></a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://forum.gl-inet.com/t/is-it-possible-to-install-nextcloud-on-a-flint-2-router/56788">Is it possible to install Nextcloud on a Flint 2 Router ? - Router - GL.iNet Official Forum</a>
+<ul>
+<li><a href="https://github.com/nextcloud/spreed"><code>spreed</code> Nextcloud Talk – chat, video &amp; audio calls for Nextcloud</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 11:32:00 2026] <a href="https://github.com/nextcloud/deck"><code>deck</code> Kanban-style project &amp; personal management tool for Nextcloud, similar to Trello</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`fselect` Find files with SQL-like queries</title><category>cli</category><category>cli/utils</category><category>filesystem</category><category>query</category><category>rust</category><category>sql</category><pubDate>2026-11-14 11:25:24 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/jhspetersson/fselect"><code>fselect</code> Find files with SQL-like queries</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to do something in place of <code>find</code>/<code>fd</code>. not really interested on it anymore.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fselect</span></span><span class="meta function-call arguments shell"> size, path from <span class="meta group expansion parameter shell"><span class="punctuation definition variable shell">$</span><span class="variable other readwrite shell">pwd</span></span> where size gt 10mb</span>
+<span class="meta function-call shell"><span class="variable function shell">gci</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>recurse</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">where</span></span><span class="meta function-call arguments shell"> Length<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>gt</span> 10mb <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> equivalent in powershell... so `fselect` is kinda useless in Windows.</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#syntax <a href="https://github.com/jhspetersson/fselect/blob/master/docs/usage.md#columns-and-fields">Columns and fields - <code>fselect</code></a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: lightweight runtime, almost no dependency, a #linux native tools.</li>
+<li>Con: IT's completedly inferior compare to a whole dotnet runtime in powershell.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in scoop.
+<ul>
+<li>#discussion : <a href="https://lobste.rs/s/dtwy2u/open_file_format_for_storing_information">An Open File Format for storing the information from a forge such as issues, pull/merge requests, milestones</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://code.forgejo.org/f3/gof3">f3/gof3: Read a software project from a forge and convert it into the Friendly Forge Format. Read from the Friendly Forge Format and write to a software project in a forge</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #git <a href="https://github.com/jhspetersson/git-task"><code>git task</code></a>
+<ul>
+<li>project management software. Like github projects / jira / gitlab. This one is local first.
+<ul>
+<li>This work as a perfect todo management, I don need <code>taskwarrior</code> for this.</li>
+<li>The could one is a huge kanban board. I'm not really into that.</li>
+</ul>
+</li>
+<li>It's like a <code>gh ic</code>, but I dont have to make round trip to browsers.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 11:25:24 2026] #productivity <a href="https://github.com/kanbn/kan"><code>kan</code> open source Trello alternative.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Contra &quot;Glue work considered harmful&quot;</title><category>blog</category><category>cpp</category><category>discussion</category><pubDate>2026-11-14 11:00:07 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/f6u0cg/contra_glue_work_considered_harmful">Contra &quot;Glue work considered harmful&quot;</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`uhubctl` - USB hub per-port power control</title><category>cli</category><category>cli/ctl</category><category>usb/hub</category><pubDate>2026-11-14 10:01:19 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/mvp/uhubctl"><code>uhubctl</code> - USB hub per-port power control</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -235,80 +320,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/jxigk6/let_s_talk_about_why_all_this_ot_stuff_is">Let’s Talk About Why all This OT Stuff is Connected</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>No AI — foac</title><category>ai</category><category>blog</category><category>opinion</category><category>programming</category><pubDate>2026-11-12 04:54:35 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="http://txtpunk.com/foac">No AI — foac</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/qbvfll/microsoft_comic_chat_is_now_open_source">Microsoft Comic Chat is now open source</a>
-<ul>
-<li><a href="https://github.com/theAlexes/comic-chat-deslopped">Source code for the Microsoft Comic Chat IRC client, with the AI slop removed</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://fuckoffaimusic.com/">fuckoffaimusic | fuck off ai music</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:54:35 2026] <a href="https://lobste.rs/s/nld6x3/what_are_some_no_ai_apps_companies">What are some &quot;No AI&quot; apps/companies/resources you know of?</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>AI Productivity Gains Mainly Benefit People At The Top | Nelson Figueroa</title><category>ai</category><category>blog</category><category>technologia</category><pubDate>2026-11-12 04:53:35 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://nelson.cloud/ai-productivity-gains-mainly-benefit-people-at-the-top/">AI Productivity Gains Mainly Benefit People At The Top | Nelson Figueroa</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well..</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>SSG builder with golang, `hugo`</title><category>golang</category><category>html</category><category>uiweb</category><pubDate>2026-11-12 04:51:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/gohugoio/hugo">SSG builder with golang, <code>hugo</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> too famous to not know, like GitHub Jekyll.
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=44675053">How I fixed my blog's performance issues by writing a new Jekyll plugin</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">hugo</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>help <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> know next to nothing.</span><span class="comment line number-sign shell">
-</span></span></span></span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> simple and popular enough?
-<ul>
-<li>Con: tons of feature I dont know how to use.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-07-04 02:37:48 PM]</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://soupault.app/"><code>soupault</code></a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #rust <a href="https://github.com/Mvk122/sitesy"><code>sitesy</code> static site generator built in rust</a>
-<ul>
-<li>#zig <a href="https://github.com/kristoff-it/zine"><code>zine</code> Scalable, Flexible Static Site Generator MD-&gt;HTML</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:51:24 2026] <a href="https://nelson.cloud/how-to-serve-your-hugo-site-on-a-local-network/">How to Serve Your Hugo Site on a Local Network | Nelson Figueroa</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I'm full in <code>zola</code> now.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`darling` Darwin/macOS emulation layer for Linux</title><category>arch/arm</category><category>linux</category><category>macos</category><category>virtualization</category><category>windows</category><pubDate>2026-11-12 04:44:26 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/darlinghq/darling"><code>darling</code> Darwin/macOS emulation layer for Linux</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like <code>wine</code> Windows emulation.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
