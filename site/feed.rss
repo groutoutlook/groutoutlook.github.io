@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`std::exchange`</title><category>atomic</category><category>cpp</category><category>lang</category><category>threading</category><pubDate>2026-11-14 08:56:38 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`uhubctl` - USB hub per-port power control</title><category>cli</category><category>cli/ctl</category><category>usb/hub</category><pubDate>2026-11-14 10:01:19 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/mvp/uhubctl"><code>uhubctl</code> - USB hub per-port power control</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> ch335 hub.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`std::exchange`</title><category>atomic</category><category>cpp</category><category>lang</category><category>threading</category><pubDate>2026-11-14 08:56:38 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://cppreference.com/cpp/utility/exchange"><code>std::exchange</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Replaces the value of obj with new_value and returns the old value of obj. Idiomatic and thread-safe hopefully.</li>
@@ -298,36 +310,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-12 04:37:29 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://codeberg.org/mergiraf/mergiraf"><code>mergiraf</code> A syntax-aware git merge driver for a growing collection of programming languages and file formats.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> not only #nightly, I have to link it into <code>~/.local/bin</code> or <code>git</code> couldnt find it.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> pull origin_sample main</span>
-<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> merge origin_sample/main</span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://mergiraf.org/usage.html#registration-as-a-git-merge-driver">Usage - Mergiraf</a>
-<ul>
-<li>#til about <code>.gitattributes</code> and the global one....</li>
-</ul>
-</li>
-<li><a href="https://mergiraf.org/usage.html#interactive-use-after-encountering-a-merge-conflict">Interactive use after encountering a merge conflict - <code>mergiraf solve conflict.cpp</code></a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/1qmcac/tools_built_on_tree_sitter_s_concrete">Tools built on tree-sitter's concrete syntax trees</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://repo.jellyfin.org/?path=/server/windows/latest-preview/amd64">Nightlies Jellyfin Repository</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:37:29 2026] <a href="https://nelson.cloud/you-can-hide-languages-from-githubs-languages-bar/">You Can Hide Languages From GitHub's Languages Bar <code>linguist</code></a></li>
 </ul>
 </li>
 </ul>
