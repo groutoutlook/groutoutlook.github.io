@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</title><category>hard</category><category>usb</category><category>utils/hub</category><pubDate>2026-11-14 07:33:47 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`std::exchange`</title><category>atomic</category><category>cpp</category><category>lang</category><category>threading</category><pubDate>2026-11-14 08:56:38 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://cppreference.com/cpp/utility/exchange"><code>std::exchange</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Replaces the value of obj with new_value and returns the old value of obj. Idiomatic and thread-safe hopefully.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Environment -&gt; Keyboard Shortcuts are where keybinding editor reside now.</title><category>config</category><category>editor</category><category>ide</category><category>keybinding</category><category>vs</category><pubDate>2026-11-14 08:10:59 AM</pubDate><content:encoded><![CDATA[<ul>
+<li>Environment -&gt; Keyboard Shortcuts are where keybinding editor reside now.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I tried <code>ctrl+, ctrl+k</code>, cant open it so here we go.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Apply any palette to your pixel art, or reduce it to a few clean colors.</title><category>asset</category><category>color/theory</category><category>pixel</category><category>rust</category><pubDate>2026-11-14 07:52:52 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Hugo-Dz/spritefusion-palette-snapper">Apply any palette to your pixel art, or reduce it to a few clean colors.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</title><category>hard</category><category>usb</category><category>utils/hub</category><pubDate>2026-11-14 07:33:47 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://item.taobao.com/item.htm?id=800669982337">CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -292,55 +328,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:37:29 2026] <a href="https://nelson.cloud/you-can-hide-languages-from-githubs-languages-bar/">You Can Hide Languages From GitHub's Languages Bar <code>linguist</code></a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Create a COM interface</title><category>cpp</category><category>ipc</category><category>windows</category><category>wsdk</category><pubDate>2026-11-12 03:42:17 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/en-us/cpp/ide/creating-a-com-interface-visual-cpp">Create a COM interface</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->  Requested <code>Build.BuildSelection</code> via Visual Studio COM (PID 7396).</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Roll 1D6</title><category>math</category><category>stat</category><pubDate>2026-11-12 03:39:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.diedice.com/roll-1d6/">Roll 1D6</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49752041">OpenJev</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.liquid.ai/blog/d1-decision-model">Introducing d1: The most capable decision model, now with vision | Blog | Liquid AI</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 15:39:06 2026] <a href="https://news.ycombinator.com/item?id=50456791">Gemini Decisions API</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`pyzotero` Python client for Zotero API</title><category>cli</category><category>document</category><category>gui</category><category>typesetting</category><pubDate>2026-11-12 03:11:05 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/urschrei/pyzotero"><code>pyzotero</code> Python client for Zotero API</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #nightly</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">r ins # uv tool install .[cli,mcp]
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.zotero.org/support/dev/web_api/v3/basics/#searches">Zotero Web API Documentation | Zotero Documentation</a>
-<ul>
-<li>so... only touch this if there are some functionality that is so intricate then.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>no, Zotero dont have URI scheme.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 15:11:05 2026] <a href="https://github.com/redhat-et/ripwire"><code>ripwire</code> ripgrep of AI context zero-dependency C++23 CLI + MCP server for coding agents. Find what you want without reading the repo, then check you built what you meant — blast radius, tests-to-run, quality deltas. Signatures at 74.7% fewer bytes than bodies; every guess labelled, every loss published. Paddle out with a map.</a></li>
 </ul>
 </li>
 </ul>
