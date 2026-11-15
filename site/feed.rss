@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Let Me Let You Own Your Data</title><category>blog</category><category>host/self</category><category>infosec</category><category>server</category><pubDate>2026-11-15 05:35:40 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Step-Down Step-Up (Buck-Boost) Converter – Primechip</title><category>boost</category><category>buck</category><category>module</category><category>pmic</category><pubDate>2026-11-15 06:07:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.prime-chip.com/buck-boost/?lang=en">Step-Down Step-Up (Buck-Boost) Converter – Primechip</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.prime-chip.com/wp-content/uploads/2025/05/YX2545_CN_Rev1.1.4_250516.pdf">YX2545</a>
+<ul>
+<li>from wx blog post.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Let Me Let You Own Your Data</title><category>blog</category><category>host/self</category><category>infosec</category><category>server</category><pubDate>2026-11-15 05:35:40 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://lobste.rs/s/fllb0m/let_me_let_you_own_your_data">Let Me Let You Own Your Data</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -276,18 +292,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`kisi` KiCad signal and power integrity tools, running locally in your browser or as CLI tool.</title><category>cli</category><category>kicad</category><category>pcb</category><category>power/integrity</category><category>software</category><category>visualization</category><category>web/ui</category><pubDate>2026-11-13 09:04:56 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/riehlies/kisi"><code>kisi</code> KiCad signal and power integrity tools, running locally in your browser or as CLI tool.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://forum.kicad.info/t/kisi-fast-si-pi-checks-for-kicad-boards-right-in-your-browser-feedback-wanted/72277">kisi – fast SI/PI checks for KiCad boards, right in your browser (feedback wanted) - External Plugins</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
