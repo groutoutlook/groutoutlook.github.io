@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Any way to increase the context window? - Codex - OpenAI Developer Community</title><category>codex</category><category>config</category><category>harness</category><category>swt</category><pubDate>2026-11-15 12:05:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`healthchecks-rs` Simple Rust library to interact with healthchecks.io + `hcctl`</title><category>backend</category><category>cli</category><category>library/rust</category><category>management</category><category>uptime</category><pubDate>2026-11-15 03:12:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/msfjarvis/healthchecks-rs"><code>healthchecks-rs</code> Simple Rust library to interact with healthchecks.io + <code>hcctl</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Any way to increase the context window? - Codex - OpenAI Developer Community</title><category>codex</category><category>config</category><category>harness</category><category>swt</category><pubDate>2026-11-15 12:05:46 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://community.openai.com/t/any-way-to-increase-the-context-window/1385212/7">Any way to increase the context window? - Codex - OpenAI Developer Community</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is.</li>
@@ -281,21 +293,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`cs` CLI and MCP</title><category>cli</category><category>mcp</category><pubDate>2026-11-12 07:52:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/boyter/cs#mcp-server-mode"><code>cs</code> CLI and MCP</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">cs meili --reverse # relevance downmost for you to check by pure terminal.
-</span></code></pre>
-</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
