@@ -45,7 +45,7 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> create <code>foo.just</code> -&gt; declare in file <code>mod foo</code>, can be optional by <code>mod?</code></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">mod bar
+<pre class="syntax-highlighting"><code class="language-justfile"><span class="text plain">mod bar
 mod? foo &#39;bar.just&#39;
 
 a:
@@ -53,28 +53,20 @@ a:
 # bar.just
 b:
   @echo B
+
+&gt; just bar b # just bar::b -like kinda pathing/namespacing is okay too.
+&gt; just foo::b # okay too...
 </span></code></pre>
-<ul>
-<li>Invoke:
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"> bar b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just bar::b -like kinda pathing/namespacing is okay too.</span><span class="comment line number-sign shell">
-</span></span><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"> foo::b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> okay too...</span><span class="comment line number-sign shell">
-</span></span></span></code></pre>
-</li>
-</ul>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#aliases">we can do alias on modules now.</a>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#aliases">we can do alias on modules, and module give me namespace on <code>just</code>.</a>
 <ul>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">mod bar
+<pre class="syntax-highlighting"><code class="language-justfile"><span class="text plain">mod bar
 alias f := bar
+&gt; just f b # just f::b , whatever.
 </span></code></pre>
-<ul>
-<li>Invoke:</li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"> f b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just f::b , whatever.</span><span class="comment line number-sign shell">
-</span></span></span></code></pre>
 </li>
 </ul>
 </li>
