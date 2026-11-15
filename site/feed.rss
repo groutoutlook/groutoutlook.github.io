@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>A family tree of software job titles</title><category>corporation</category><category>culture</category><category>meta</category><category>prog</category><pubDate>2026-11-15 10:45:48 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>2^18 == 262144. IT&apos;s the typical storage limit of I2C EEPROM chip.</title><category>numeric</category><category>quick/math</category><category>shape</category><pubDate>2026-11-15 12:03:14 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>2^18 == 262144. IT's the typical storage limit of I2C EEPROM chip.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`trunk` Build, bundle &amp; ship your Rust WASM application to the web.</title><category>rust</category><category>wasm</category><category>wprog</category><pubDate>2026-11-15 11:57:56 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/trunk-rs/trunk"><code>trunk</code> Build, bundle &amp; ship your Rust WASM application to the web.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ai <code>codex</code> point me to <code>trunk</code> while upgrade <code>card</code> to <code>ratzilla</code>.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>A family tree of software job titles</title><category>corporation</category><category>culture</category><category>meta</category><category>prog</category><pubDate>2026-11-15 10:45:48 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50499038">A family tree of software job titles</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -273,34 +297,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://rdrama.net/h/slackernews/post/821280">KaOS (QT Linux distro) finished migrating to <code>Dinit</code> over <code>systemd</code></a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #tui #zig <a href="https://github.com/fairyglade/ly"><code>ly</code> small TUI (ncurses-like) display manager for Linux and BSD</a></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 19:46:50 2026] <a href="https://news.ycombinator.com/item?id=50425017">A live tree of systemd jobs on the boot console</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Anthropic IPO</title><category>ai</category><category>finance</category><category>media</category><category>technologia</category><pubDate>2026-11-12 07:45:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50465829">Anthropic IPO</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>F# for Performance-Critical Code, by Matthew Crews</title><category>dotnet/fsharp</category><category>lang</category><pubDate>2026-11-12 04:58:50 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://youtu.be/NZ5Lwzrdoe8">F# for Performance-Critical Code, by Matthew Crews</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://youtu.be/g-WPhYREFjk">Branchless Programming in C++ - Fedor Pikus - CppCon 2021</a>
-<ul>
-<li>talking about SIMD and inline assembly in cpp20 upward.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:58:50 2026] <a href="https://lobste.rs/s/qi2lni/c_quicksort_faster_than_std_sort">A C++ Quicksort Faster Than std::sort</a></li>
 </ul>
 </li>
 </ul>
