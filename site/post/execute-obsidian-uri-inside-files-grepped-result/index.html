@@ -46,11 +46,12 @@
 
         <div class="til-content">
             <ul>
-<li>execute obsidian uri inside files/grepped result.
+<li>
+<p>execute obsidian uri inside files/grepped result.</p>
 <ul>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">rgj keyshot | sls -pattern &quot;obsidian://.*&quot; | % { 
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">rgj keyshot | sls -pattern &quot;obsidian://.*&quot; | % {
 $matched = $_.matches.value -replace &quot;\)&quot;,&quot;&quot;
 start $matched
 }

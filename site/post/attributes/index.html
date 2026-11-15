@@ -56,24 +56,26 @@
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> it could be multiple line or just <code>[no-cd, private]</code> concatenated like lists in python.
 <ul>
-<li>[working-directory(path)]	set recipe working directory. path may be relative or absolute. if relative, it is interpreted relative to the default working directory.</li>
+<li>[working-directory(path)] set recipe working directory. path may be relative or absolute. if relative, it is interpreted relative to the default working directory.</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
-<li><a href="https://github.com/casey/just/readme.md#private-recipes">private recipes</a>
+<li>
+<p><a href="https://github.com/casey/just/readme.md#private-recipes">private recipes</a></p>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>[private]</code> attribute/<code>_</code> intial  use to hide recipes or aliases. ( in <code>--list</code>)
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>[private]</code> attribute/<code>_</code> intial use to hide recipes or aliases. ( in <code>--list</code>)</p>
 <ul>
 <li>useful for helper recipes which are <strong>only meant to be used as dependencies of other recipes</strong>.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain">_hid:
-
-[private]
+        [private]
 foo:
 
 [private]
@@ -82,7 +84,8 @@ alias b := bar
 bar:
 </span></code></pre>
 <ul>
-<li>Invoke:
+<li>
+<p>Invoke:</p>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>list <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> only `bar` pop out.</span><span class="comment line number-sign shell">
 </span></span></span></span></code></pre>
 </li>
@@ -90,7 +93,8 @@ bar:
 </li>
 </ul>
 </li>
-<li><a href="https://github.com/casey/just/readme.md#script-recipes">script recipes</a>
+<li>
+<p><a href="https://github.com/casey/just/readme.md#script-recipes">script recipes</a></p>
 <ul>
 <li><code>[script(command)]</code> attribute are run as scripts interpreted by command.
 <ul>
@@ -105,7 +109,8 @@ bar:
 </li>
 </ul>
 </li>
-<li>[<code>[doc]</code> attribute can be used to <a href="https://github.com/casey/just/blob/master/readme.md#documentation-comments">set or suppress a recipe's doc comment.</a>
+<li>
+<p>[<code>[doc]</code> attribute can be used to <a href="https://github.com/casey/just/blob/master/readme.md#documentation-comments">set or suppress a recipe's doc comment.</a></p>
 <ul>
 <li><a href="https://github.com/casey/just/issues/2684"><code>just --usage</code> should support multi-line documentation comments by <code>[doc]</code> attribute</a></li>
 </ul>

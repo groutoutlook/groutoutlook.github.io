@@ -48,8 +48,11 @@
             <ul>
 <li><a href="https://www.reddit.com/r/CodexAutomation/comments/1xpf8er">Codex CLI 0.167.0 add <code>Agent Command Center</code> backend switching and image previews</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's <code>left</code> on a blank textbox. <code>esc</code> back to normal interface. navigation keys move around, there is &quot;show more&quot;</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's <code>left</code> on a blank textbox. <code>esc</code> back to normal interface. navigation keys move around, there is &quot;show more&quot;</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">codex agents --no-daemon # in my shim anyways.
 
 Working directory · resume
@@ -64,8 +67,11 @@ Working directory · resume
   enter continue · esc use session · ctrl+c quit
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can change dir easier.. look at other running, history inside <code>codex</code> itself.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can change dir easier.. look at other running, history inside <code>codex</code> itself.</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
 <ul>
 <li>Pro: very useful if you let 2 agents running on the same dir and cant <code>codex resume --last</code>
 <ul>
@@ -74,12 +80,23 @@ Working directory · resume
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> thousand times better than <code>cc-switch</code></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> thousand times better than <code>cc-switch</code></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
 <ul>
-<li><code>PgUp</code>/<code>PgDn</code> for moving text buffer while you are in textbox.
+<li><code>PgUp</code>/<code>PgDn</code> for moving text buffer while you are in textbox of codex.
 <ul>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you really want to <code>ctrl+m</code> mark mode to select something. e.g. codex invocation.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you really want to <code>ctrl+m</code> mark mode to select something. e.g. codex invocation.
+<ul>
+<li><code>ctrl+n</code>/<code>ctrl+p</code> will be the same as up/down, navigate history of chat.
+<ul>
+<li>if cursor in middle of text, press them all the way will clamp of start/end, and history again.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

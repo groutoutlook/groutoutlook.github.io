@@ -45,25 +45,32 @@
 
         <div class="til-content">
             <ul>
-<li>[external commands](https://github.com/casey/just#external-commands  - recap:
+<li>[external commands](https://github.com/casey/just#external-commands - recap:
 <ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you have to append <code>set unstable</code> for now.
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you have to append <code>set unstable</code> for now.</p>
 <ul>
-<li><code>shell(command, args...)</code> returns the standard output of shell script
+<li>
+<p><code>shell(command, args...)</code> returns the standard output of shell script
 <code>command</code> with zero or more positional arguments <code>args</code>. the shell used to
 interpret <code>command</code> is the same shell that is used to evaluate recipe lines,
-and can be changed with <code>set shell := […]</code>.</li>
-<li><code>command</code> is passed as the first argument, so if the command is <code>'echo $@'</code>,
-the full command line, with the default shell command <code>sh -cu</code> and <code>args</code> <code>'foo'</code> and <code>'bar'</code> will be:</li>
-</ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell"><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>sh<span class="punctuation definition string end shell">&#39;</span></span></span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>-cu<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>echo $@<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>echo $@<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>foo<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>bar<span class="punctuation definition string end shell">&#39;</span></span></span>
-</span></code></pre>
-<ul>
-<li>this is so that <code>$@</code> works as expected, and <code>$1</code> refers to the first
+and can be changed with <code>set shell := […]</code>.</p>
+</li>
+<li>
+<p><code>command</code> is passed as the first argument, so if the command is <code>'echo $@'</code>,
+the full command line, with the default shell command <code>sh -cu</code> and <code>args</code> <code>'foo'</code> and <code>'bar'</code> will be:
+<code>sh 'sh' '-cu' 'echo $@' 'echo $@' 'foo' 'bar' </code></p>
+</li>
+<li>
+<p>this is so that <code>$@</code> works as expected, and <code>$1</code> refers to the first
 argument. <code>$@</code> does not include the first positional argument, which is
-expected to be the name of the program being run.</li>
-<li>#example :
+expected to be the name of the program being run.</p>
+</li>
+<li>
+<p>#example :</p>
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># arguments can be variables or expressions
 file := &#39;/sys/class/power_supply/bat0/status&#39;
 bat0stat := shell(&#39;cat $1&#39;, file)
@@ -78,8 +85,12 @@ full := shell(&#39;echo $1&#39;, &#39;foo&#39;)
 </ul>
 <pre class="syntax-highlighting"><code></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
 </ul>
 </li>
 </ul>

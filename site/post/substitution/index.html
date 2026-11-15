@@ -57,17 +57,9 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#strings">more about string substitution and single quote, double quote, triple quote.</a>
 <ul>
 <li>cant nest more <code>{{...}}</code> inside <code>{{...}}</code>.</li>
-<li>complex strings:</li>
+<li>complex strings:
+<code>just export FOO := ''' a complicated string with some dis\tur\bi\ng escape sequences and &quot;quotes&quot; of 'different' kinds ''' [script] bar: echo &quot;$env:FOO&quot; </code></li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">export FOO := &#39;&#39;&#39;
-  a complicated string with
-  some dis\tur\bi\ng escape sequences
-  and &quot;quotes&quot; of &#39;different&#39; kinds
-&#39;&#39;&#39;
-[script]
-bar:
-  echo &quot;$env:FOO&quot;
-</span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->

@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Strait of Hormuz</title><category>geography</category><category>media</category><category>politic</category><pubDate>2026-11-16 01:06:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Trail of Bits `skills` for security research, vulnerability detection, and audit workflows</title><category>cpp</category><category>harness/skill</category><category>ide</category><pubDate>2026-11-16 01:52:36 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/trailofbits/skills">Trail of Bits <code>skills</code> for security research, vulnerability detection, and audit workflows</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`std::projected`</title><category>cpp</category><category>lang</category><category>metaprogram</category><pubDate>2026-11-16 01:33:05 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://cppreference.com/cpp/iterator/projected"><code>std::projected</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Strait of Hormuz</title><category>geography</category><category>media</category><category>politic</category><pubDate>2026-11-16 01:06:27 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Strait_of_Hormuz">Strait of Hormuz</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -103,16 +127,27 @@
 ]]></content:encoded></item><item><title>Any way to increase the context window? - Codex - OpenAI Developer Community</title><category>codex</category><category>config</category><category>harness</category><category>swt</category><pubDate>2026-11-15 12:05:46 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://community.openai.com/t/any-way-to-increase-the-context-window/1385212/7">Any way to increase the context window? - Codex - OpenAI Developer Community</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is.</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">model_context_window = 272000
 model_auto_compact_token_limit = 262144 # 2^18.
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
 </ul>
 </li>
 </ul>
@@ -233,30 +268,6 @@ model_auto_compact_token_limit = 262144 # 2^18.
 <li><a href="https://cppreference.com/cpp/utility/exchange"><code>std::exchange</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Replaces the value of obj with new_value and returns the old value of obj. Idiomatic and thread-safe hopefully.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Environment -&gt; Keyboard Shortcuts are where keybinding editor reside now.</title><category>config</category><category>editor</category><category>ide</category><category>keybinding</category><category>vs</category><pubDate>2026-11-14 08:10:59 AM</pubDate><content:encoded><![CDATA[<ul>
-<li>Environment -&gt; Keyboard Shortcuts are where keybinding editor reside now.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I tried <code>ctrl+, ctrl+k</code>, cant open it so here we go.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Apply any palette to your pixel art, or reduce it to a few clean colors.</title><category>asset</category><category>color/theory</category><category>pixel</category><category>rust</category><pubDate>2026-11-14 07:52:52 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/Hugo-Dz/spritefusion-palette-snapper">Apply any palette to your pixel art, or reduce it to a few clean colors.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>

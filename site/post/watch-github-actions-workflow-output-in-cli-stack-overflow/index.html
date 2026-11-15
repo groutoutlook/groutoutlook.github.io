@@ -56,10 +56,9 @@
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gh run view</code> | <code>gh nv</code></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> again all start with <code>n</code> is related to cicd in my gh aliases.
 <ul>
-<li>or <code>gh w</code> to check workflows?</li>
+<li>or <code>gh w</code> to check workflows?
+<code>sh gh alias set ab --shell 'gh alias list | bat' --clobber # to overwrite command. </code></li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">gh</span></span><span class="meta function-call arguments shell"> alias set ab<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>shell</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>gh alias list | bat<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>clobber <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> to overwrite command.</span><span class="comment line number-sign shell">
-</span></span></span></span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> I shim bat to <code>bat.cmd</code> file just for that alias.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
