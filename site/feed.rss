@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>git - How to use submodules publicly, but symlinks to a single clone locally?</title><category>filesystem</category><category>git</category><category>prog</category><pubDate>2026-11-15 09:02:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Strait of Hormuz</title><category>geography</category><category>media</category><category>politic</category><pubDate>2026-11-16 01:06:27 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Strait_of_Hormuz">Strait of Hormuz</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/vozforums/comments/1rplkt4">Thông tin chính thức từ Iran</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=47475686">Hormuz Minesweeper – Are you tired of winning?</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 16 01:06:27 2026] <a href="https://news.ycombinator.com/item?id=50443331">A rare glimpse inside the high-risk, high-reward Hormuz trade</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>git - How to use submodules publicly, but symlinks to a single clone locally?</title><category>filesystem</category><category>git</category><category>prog</category><pubDate>2026-11-15 09:02:18 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/21077493/how-to-use-submodules-publicly-but-symlinks-to-a-single-clone-locally/69247412#69247412">git - How to use submodules publicly, but symlinks to a single clone locally?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -249,50 +262,6 @@ model_auto_compact_token_limit = 262144 # 2^18.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</title><category>hard</category><category>usb</category><category>utils/hub</category><pubDate>2026-11-14 07:33:47 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://item.taobao.com/item.htm?id=800669982337">CH339F模块 USB转HUB模块1路RJ45 USB转RJ45网口网络4路usb扩展器</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>#alternative : <a href="https://item.taobao.com/item.htm?id=961666176946">CH339F USB转1路百兆以太网 4路USBHUB2.0 模块</a>
-cheaper. this is 45. the original one is 58.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/XmYttuyf9CvoS7TVNfsR5Q">For more DIY activities, use the CH339 to hand rub a USB Hub with four-way current detection and independent switching, which is fully open source~</a>
-<ul>
-<li>#example/repo <a href="https://oshwhub.com/wandaeda/ch339-electronic-diy-development">CH339 电子 DIY 开发工具 - 立创开源硬件平台</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://item.taobao.com/item.htm?id=870803125108">原装 CH217K 丝印17K SOT23-6 可调限流门限 USB限流配电开关芯片</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym OVP/OCP/ESD, for every USB-powered compliance devices.
-OVP: over voltage protection and ESD: electrostatic discharge is more important one.
-<ul>
-<li><a href="https://www.st.com/resource/en/application_note/an6236-overcurrent-protection-stmicroelectronics.pdf">OCP: Overcurrent protection - Application note - an6236-overcurrent-protection-stmicroelectronics.pdf</a>
-<ul>
-<li>more about how SMPS Flyback PSU do OCP while the PMIC dont have them itself.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.monolithicpower.com/en/mp4501.html">MP4501 | 60V, USB Type-C Port with OVP and IEC ESD Protection | MPS</a>
-<ul>
-<li><a href="https://assets.nexperia.com/documents/data-sheet/PESD3V3S2UT.pdf">Double ESD protection diode - PESD3V3S2UT.pdf</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 07:33:47 2026] <a href="https://superuser.com/questions/1847406/what-is-the-difference-between-the-stt-and-mtt-in-usb-2-0-interface">usb storage - What is the difference between the STT and MTT in USB 2.0 interface?</a></li>
 </ul>
 </li>
 </ul>
