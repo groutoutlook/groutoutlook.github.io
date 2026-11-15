@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Step-Down Step-Up (Buck-Boost) Converter – Primechip</title><category>boost</category><category>buck</category><category>module</category><category>pmic</category><pubDate>2026-11-15 06:07:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Aperture CLI · Tailscale Docs</title><category>cli</category><category>harness</category><category>network</category><pubDate>2026-11-15 07:01:50 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://tailscale.com/docs/aperture/cli">Aperture CLI · Tailscale Docs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://tailscale.com/docs/reference/tailscale-cli">Tailscale CLI · Tailscale Docs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Step-Down Step-Up (Buck-Boost) Converter – Primechip</title><category>boost</category><category>buck</category><category>module</category><category>pmic</category><pubDate>2026-11-15 06:07:07 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.prime-chip.com/buck-boost/?lang=en">Step-Down Step-Up (Buck-Boost) Converter – Primechip</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -274,18 +286,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 </ul>
 ]]></content:encoded></item><item><title>nmWave-Interferometer: An Open Source Interferometer for Accurate Distance Measurements</title><category>fsdk</category><category>kicad</category><category>metrology</category><category>pcb</category><pubDate>2026-11-13 09:08:22 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/0x23/nmWave-Interferometer">nmWave-Interferometer: An Open Source Interferometer for Accurate Distance Measurements</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`MicroManipulatorStepper` sub-micrometer 3D motion control plattform.</title><category>cnc</category><category>hard</category><category>motor</category><category>pnp</category><pubDate>2026-11-13 09:07:25 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/0x23/MicroManipulatorStepper"><code>MicroManipulatorStepper</code> sub-micrometer 3D motion control plattform.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
