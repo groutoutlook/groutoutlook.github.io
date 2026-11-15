@@ -55,16 +55,20 @@
             <ul>
 <li><a href="https://mpv.io/manual/master/#playback-control">Playback control</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-56,<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-00:56 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> end time - 56 seconds. As negative indexing. </span><span class="comment line number-sign shell">
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-56,<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-00:56 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> end time - 56 seconds. As negative indexing.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>50<span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> middle of the file.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>30<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>end</span><span class="keyword operator assignment option shell">=</span>40 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> at 30 seconds, plays 10 seconds, and exits.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>-3:20<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>length</span><span class="keyword operator assignment option shell">=</span>10 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> at 3:20 seconds before the end, plays 10s, and exits.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>#2<span class="punctuation definition string end shell">&#39;</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>end</span><span class="keyword operator assignment option shell">=</span><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>#4<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Plays chapters 2 and 3, and exits.</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
 <ul>
 <li>file/playlist loop: <code>--loop-file=&lt;N|inf|no&gt;, --loop=&lt;N|inf|no&gt;</code></li>
 <li>AB Loop set from cli: <code>--ab-loop-a=&lt;time&gt;, --ab-loop-b=&lt;time&gt;</code>
@@ -75,10 +79,14 @@
 <li>chapter from external metadata: <code>--chapters-file=&lt;filename&gt;</code></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-09-06 03:51:36 PM] #mpv #config
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-09-06 03:51:36 PM] #mpv #config</p>
 <ul>
-<li><a href="https://mpv.io/manual/stable/#options-start">Playback Control - Start/End time.</a>
+<li>
+<p><a href="https://mpv.io/manual/stable/#options-start">Playback Control - Start/End time.</a></p>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> all that so you can do:</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"> .<span class="constant character escape shell">\h</span>ypnotize-xg-jazz.mkv<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>start</span><span class="keyword operator assignment option shell">=</span>02:49.3</span>
 <span class="meta function-call shell"><span class="variable function shell">mpv</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ab-loop-a</span><span class="keyword operator assignment option shell">=</span>0:56<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>ab-loop-b</span><span class="keyword operator assignment option shell">=</span>0:59</span>
@@ -90,7 +98,8 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
 <ul>
 <li><code>--shuffle=yes</code> to shuffle/play at random track in playlist, or bind <code>ctrl+s playlist-shuffle</code>
 <ul>
