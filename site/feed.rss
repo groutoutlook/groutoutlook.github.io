@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`healthchecks-rs` Simple Rust library to interact with healthchecks.io + `hcctl`</title><category>backend</category><category>cli</category><category>library/rust</category><category>management</category><category>uptime</category><pubDate>2026-11-15 03:12:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`t` language for string, replacing common usage patterns of Unix: grep, sed, cut, awk, sort, uniq</title><category>cli</category><category>rust</category><category>string</category><pubDate>2026-11-15 05:15:17 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/alecthomas/t"><code>t</code> language for string, replacing common usage patterns of Unix: grep, sed, cut, awk, sort, uniq</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/rjw7zn/t_concise_language_for_manipulating_text">lobster discussion</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov 15 17:15:17 2026] no, you really dont need this thing. the guy is on LLM-coke.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`healthchecks-rs` Simple Rust library to interact with healthchecks.io + `hcctl`</title><category>backend</category><category>cli</category><category>library/rust</category><category>management</category><category>uptime</category><pubDate>2026-11-15 03:12:03 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/msfjarvis/healthchecks-rs"><code>healthchecks-rs</code> Simple Rust library to interact with healthchecks.io + <code>hcctl</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -285,18 +298,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 20:41:59 2026] #windows #browser #sysadmin <a href="https://github.com/SafeExamBrowser/seb-win-refactoring">Safe Exam Browser Windows</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Duplo` Duplicates finder for various source code formats.</title><category>cpp</category><category>prog</category><category>refactor</category><category>software</category><pubDate>2026-11-12 08:13:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/dlidstrom/Duplo#1-general-information"><code>Duplo</code> Duplicates finder for various source code formats.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
