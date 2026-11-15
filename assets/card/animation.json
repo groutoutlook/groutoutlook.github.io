@@ -1,0 +1,6 @@
+{
+  "step_ms": 2000,
+  "fade_in_ms": 300,
+  "fade_out_ms": 450,
+  "colors": ["#84d884", "#8bc9ef", "#aaa2ef"]
+}
