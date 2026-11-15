@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`kanzo` sharable kanban for humans and agent with MCP</title><category>backend</category><category>management</category><category>productivity</category><category>rust</category><category>server</category><category>tui</category><category>web/ui</category><pubDate>2026-11-14 11:36:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>A family tree of software job titles</title><category>corporation</category><category>culture</category><category>meta</category><category>prog</category><pubDate>2026-11-15 10:45:48 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50499038">A family tree of software job titles</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50501594">How did Woz write the Apple 1 BASIC before building the computer?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`turso` next evolution of SQLite.</title><category>backend</category><category>database</category><category>embedded</category><category>library</category><category>rust</category><category>sql/sqlite</category><pubDate>2026-11-14 12:00:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/tursodatabase/turso"><code>turso</code> next evolution of SQLite.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #libc <a href="https://github.com/tursodatabase/libsql"><code>libsql</code> fork of SQLite that is both Open Source, and Open Contributions.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#cli <a href="https://github.com/tursodatabase/turso-cli"><code>turso</code> cli for Turso Cloud.</a></li>
+<li>#rust #library : <a href="https://github.com/spacejam/sled"><code>sled</code> embedded databases</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 12:00:12 2026] accquired by <code>supabase</code>.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`kanzo` sharable kanban for humans and agent with MCP</title><category>backend</category><category>management</category><category>productivity</category><category>rust</category><category>server</category><category>tui</category><category>web/ui</category><pubDate>2026-11-14 11:36:51 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/emanuele-em/kanzo"><code>kanzo</code> sharable kanban for humans and agent with MCP</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -271,35 +301,6 @@ OVP: over voltage protection and ESD: electrostatic discharge is more important 
 </li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:58:50 2026] <a href="https://lobste.rs/s/qi2lni/c_quicksort_faster_than_std_sort">A C++ Quicksort Faster Than std::sort</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>OT: Operational technology</title><category>acro</category><category>hardware</category><category>infosec</category><pubDate>2026-11-12 04:58:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Operational_technology">OT: Operational technology</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> kinda like what a SRE, Sysadmin doing.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/jxigk6/let_s_talk_about_why_all_this_ot_stuff_is">Let’s Talk About Why all This OT Stuff is Connected</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>No AI — foac</title><category>ai</category><category>blog</category><category>opinion</category><category>programming</category><pubDate>2026-11-12 04:54:35 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="http://txtpunk.com/foac">No AI — foac</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/qbvfll/microsoft_comic_chat_is_now_open_source">Microsoft Comic Chat is now open source</a>
-<ul>
-<li><a href="https://github.com/theAlexes/comic-chat-deslopped">Source code for the Microsoft Comic Chat IRC client, with the AI slop removed</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://fuckoffaimusic.com/">fuckoffaimusic | fuck off ai music</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 12 16:54:35 2026] <a href="https://lobste.rs/s/nld6x3/what_are_some_no_ai_apps_companies">What are some &quot;No AI&quot; apps/companies/resources you know of?</a></li>
 </ul>
 </li>
 </ul>
