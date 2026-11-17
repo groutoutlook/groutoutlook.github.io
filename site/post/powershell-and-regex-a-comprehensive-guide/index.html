@@ -58,8 +58,11 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Instead of using <code>$1</code> as matching results, we have to use &quot;`$1&quot; to indicating matches.
 <ul>
 <li>Since the <code>$</code> symbol is the alias with variable expansion in PowerShell as well.</li>
-<li>Something like:
-<code>PowerShell (rg &quot;fake&quot; -n -g !&quot;*.js&quot;) -replace &quot;:(\d+):.*&quot;,&quot;:`$1&quot; </code></li>
+<li>Something like:</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">(rg &quot;fake&quot; -n -g !&quot;*.js&quot;) -replace &quot;:(\d+):.*&quot;,&quot;:`$1&quot;
+</span></code></pre>
+<ul>
 <li>The above solution is for double quotes. Related links describe usage with single quotes, which is easier, no backtick involved.</li>
 </ul>
 </li>

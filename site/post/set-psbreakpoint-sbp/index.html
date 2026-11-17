@@ -52,21 +52,18 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint"><code>Set-PSBreakpoint</code> | <code>sbp</code></a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> invoke breakpoint inside REPL.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Can run in <code>psm1</code> as well as <code>ps1</code>.</p>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> invoke breakpoint inside REPL.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Can run in <code>psm1</code> as well as <code>ps1</code>.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">sbp -s &quot;$((gmo quickPwshUtils).Path)&quot; -Line 242 # REPL debugging with powershell.
 </span></code></pre>
 <ul>
-<li>Or can run in function/cmdlets by name/alias. <code>-Commmand</code> can not be used with <code>-Line</code>.
-<code>powershell sbp -c &quot;rvcb&quot;  </code>
+<li>Or can run in function/cmdlets by name/alias. <code>-Commmand</code> can not be used with <code>-Line</code>.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">sbp -c &quot;rvcb&quot; 
+</span></code></pre>
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_debuggers#debugging-functions">Debugging Advanced Functions (with <code>begin</code>,<code>process</code>,<code>end</code>)</a>
 It will break on each of start on those 3 blocks. Otherwise, it's breaking on start only.</li>
-</ul>
-</li>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_debuggers#debugger-commands">about_Debuggers | Debugger commands </a>
 <ul>
 <li>When you hit Breakpoints in REPL. it will prompt you that you have enter debug mode.
@@ -80,8 +77,7 @@ only care about <code>s</code>/<code>v</code>/<code>c</code>. <code>o</code> ste
 </li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint#example-3-set-a-breakpoint-on-a-variable">breakpoint on a variable</a>
 <ul>
@@ -92,14 +88,9 @@ only care about <code>s</code>/<code>v</code>/<code>c</code>. <code>o</code> ste
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_debuggers#the-debugger-environment">debugger environment - <code>$PSDebugContext</code></a></li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.ironmansoftware.com/daily-powershell/powershell-debugging-terminal/">Stepping through PowerShell Scripts with the PowerShell Terminal</a></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I need a data breakpoint in powershell, within #ide/vscode.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-psbreakpoint"><code>Get-PSBreakpoint</code> | <code>gbp</code></a></p>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.ironmansoftware.com/daily-powershell/powershell-debugging-terminal/">Stepping through PowerShell Scripts with the PowerShell Terminal</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> I need a data breakpoint in powershell, within #ide/vscode.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-psbreakpoint"><code>Get-PSBreakpoint</code> | <code>gbp</code></a>
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/enable-psbreakpoint"><code>Enable-PSBreakpoint</code> | <code>ebp</code></a></li>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/disable-psbreakpoint"><code>Disable-PSBreakpoint</code> | <code>dbp</code></a></li>

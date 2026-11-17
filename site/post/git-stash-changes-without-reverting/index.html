@@ -48,30 +48,23 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/39412407/git-stash-changes-without-reverting">git-stash changes without reverting</a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> git stash keeping changes instead of resetting everything.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> git stash keeping changes instead of resetting everything.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash store <span class="meta group expansion command parens shell"><span class="punctuation definition variable shell">$</span><span class="punctuation section parens begin shell">(</span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash create</span><span class="punctuation section parens end shell">)</span></span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Stash commit message<span class="punctuation definition string end shell">&quot;</span></span></span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">or an alias</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span> alias.stk <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>!git stash store $(git stash create)<span class="punctuation definition string end shell">&#39;</span></span></span>
 <span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stk<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Stash commit message<span class="punctuation definition string end shell">&quot;</span></span></span>
 <span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> stash show<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>p</span> <span class="keyword operator assignment redirection shell">&gt;</span> ./hx.patch <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> equal with a format-patch without actually commit.</span><span class="comment line number-sign shell">
-</span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span> alias.stss <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>!git stashes<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I&#39;m that lazy.</span><span class="comment line number-sign shell">
+</span></span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> config<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>global</span> alias.stss <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>!git stashes<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I&#39;m that lazy.    </span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
 <li>#patch <a href="https://stackoverflow.com/questions/2160638/how-can-i-format-patch-with-what-i-stash-away/41489686#41489686">git format patch with what I stash away</a></li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.rs/clap/latest/clap/_derive/index.html#arg-attributes">clap::_derive - Rust</a></p>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.rs/clap/latest/clap/_derive/index.html#arg-attributes">clap::_derive - Rust</a>
 <ul>
 <li><a href="https://github.com/clap-rs/clap/discussions/4270">Derive: set custom long and short names different from field name · clap-rs/clap · Discussion #4270</a>
 <ul>
@@ -84,22 +77,18 @@
 </li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#git #patch <a href="https://stackoverflow.com/questions/2217452/in-git-how-do-i-create-a-single-patch-for-the-last-2-revisions/52460808#52460808">In git, how do I create a single patch for the last 2+ revisions?</a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> format-patch<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>rangediff</span></span>
 <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> traditional</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> format-patch<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>2</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>stdout</span> <span class="keyword operator assignment redirection shell">&gt;</span> changes.patch</span>
-<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> am ./<span class="keyword operator regexp quantifier shell">*</span>patch <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I&#39;m so lazy.</span><span class="comment line number-sign shell">
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> am ./<span class="keyword operator regexp quantifier shell">*</span>patch <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I&#39;m so lazy.      </span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li>
-<p><a href="https://stackoverflow.com/questions/52884437/git-generate-a-single-patch-across-multiple-commits">format a single patch across multiple commits</a></p>
-</li>
+<li><a href="https://stackoverflow.com/questions/52884437/git-generate-a-single-patch-across-multiple-commits">format a single patch across multiple commits</a></li>
 </ul>
 </li>
 </ul>

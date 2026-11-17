@@ -48,7 +48,6 @@
         </div>
         <div class="til-subtags" aria-label="In-topic tags">
             <span class="til-subtags-label">In-topic tags</span>
-            <a class="til-tag in-topic-tag" href="/blog/subtag/INFO">#INFO</a>
             <a class="til-tag in-topic-tag" href="/blog/subtag/default">#default</a>
             <a class="til-tag in-topic-tag" href="/blog/subtag/helix">#helix</a>
             <a class="til-tag in-topic-tag" href="/blog/subtag/motion">#motion</a>
@@ -85,9 +84,16 @@
 </li>
 <li>Some difference with #neovim default:
 <ul>
-<li><code>a</code> : <code>aw</code> expand mid word, <code>as</code> mid sentence.
-<code>jsonc // #INFO this is how we scroll without touching `PgUp`/`PgDn` { &quot;ctrl+e&quot;: VisualAction.ScrollDown, &quot;ctrl+y&quot;: VisualAction.ScrollUp, &quot;ctrl+down&quot;: VisualAction.ScrollDown, &quot;ctrl+up&quot;: VisualAction.ScrollUp }       </code></li>
+<li><code>a</code> : <code>aw</code> expand mid word, <code>as</code> mid sentence.</li>
 </ul>
+<pre class="syntax-highlighting"><code class="language-jsonc"><span class="text plain">// #INFO this is how we scroll without touching `PgUp`/`PgDn`
+{
+  &quot;ctrl+e&quot;: VisualAction.ScrollDown,
+  &quot;ctrl+y&quot;: VisualAction.ScrollUp,
+  &quot;ctrl+down&quot;: VisualAction.ScrollDown,
+  &quot;ctrl+up&quot;: VisualAction.ScrollUp
+}      
+</span></code></pre>
 </li>
 </ul>
 </li>

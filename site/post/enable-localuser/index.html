@@ -38,30 +38,22 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/enable-localuser"><code>Enable-LocalUser</code></a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">net user &quot;Administrator&quot; /active:yes
 Enable-LocalUser -Name Administrator
 </span></code></pre>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/set-localuser"><code>Set-LocalUser</code></a></p>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/set-localuser"><code>Set-LocalUser</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<code>powershell Set-LocalUser -Name RemoteUser -Password (Read-Host -AsSecureString) </code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 </ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Set-LocalUser -Name RemoteUser -Password (Read-Host -AsSecureString)
+</span></code></pre>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.wsman.management/invoke-wsmanaction#-authentication">Invoke-WSManAction (Microsoft.WSMan.Management)</a>
 <ul>

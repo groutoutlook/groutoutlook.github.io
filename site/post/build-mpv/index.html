@@ -38,22 +38,14 @@
             <ul>
 <li><a href="https://github.com/mpv-player/mpv/blob/master/DOCS/compile-windows.md#native-compilation-with-clang-windows-sdk-build">build <code>mpv</code></a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> ...</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> found the command to trigger devenv msvc....</p>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> ...</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> found the command to trigger devenv msvc....
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&amp; &quot;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1&quot; -Arch amd64 -HostArch amd64 -SkipAutomaticLocation | Out-Null
 </span></code></pre>
 <ul>
-<li>
-<p>It included <code>cl.exe</code> as that's MSVC binaries.</p>
-</li>
-<li>
-<p>Although you with need <code>envvar</code>.</p>
+<li>It included <code>cl.exe</code> as that's MSVC binaries.</li>
+<li>Although you with need <code>envvar</code>.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$env:CC = &#39;clang&#39;
 $env:CXX = &#39;clang++&#39;
 $env:CC_LD = &#39;lld&#39;
@@ -63,12 +55,8 @@ $env:WINDRES = &#39;llvm-rc&#39;
 </li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
-</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>

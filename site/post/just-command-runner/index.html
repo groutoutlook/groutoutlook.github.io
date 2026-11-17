@@ -55,20 +55,15 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [[001-just]]</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
-<li>
-<p>#plugin/vscode :<a href="https://github.com/nefrob/vscode-just">nefrob/vscode-just: vscode syntax highlighting for just files</a></p>
-</li>
-<li>
-<p>#plugin/neovim :<a href="https://github.com/stevearc/overseer.nvim/">stevearc/overseer.nvim: a task runner and job management plugin for neovim</a></p>
-</li>
-<li>
-<p>#powershell #justfile I build <code>just</code> with <code>just</code>.</p>
+<li>#plugin/vscode :<a href="https://github.com/nefrob/vscode-just">nefrob/vscode-just: vscode syntax highlighting for just files</a></li>
+<li>#plugin/neovim :<a href="https://github.com/stevearc/overseer.nvim/">stevearc/overseer.nvim: a task runner and job management plugin for neovim</a></li>
+<li>#powershell #justfile I build <code>just</code> with <code>just</code>.
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># I really added that in the end of `just` &#39;s `justfile`
 [group(&#39;dev&#39;)]
 b : # for just windows.
   cargo build --release
 </span></code></pre>
-<p>then invoke by :</p>
+then invoke by :
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">(r -s b )[-1]|iex # `just -s` show the recipes to stdout..
 </span></code></pre>
 </li>

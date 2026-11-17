@@ -55,19 +55,13 @@
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables#ofs"><code>$OFS</code> - PowerShell</a>
 <ul>
-<li>
-<p>Use for the stringify of primitive array type like [array] and others.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> separate the values when an array is converted to a string.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<li>Use for the stringify of primitive array type like [array] and others.</li>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> separate the values when an array is converted to a string.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$OFS = &quot;+&quot;;[string](1,2,3,4); # output 1+2+3+4. alternative is `-join` or `-f`.
 </span></code></pre>
 </li>
-<li>
-<p>It's something really similar to IFS and FS in grep/awk/bash.</p>
+<li>It's something really similar to IFS and FS in grep/awk/bash.
 <ul>
 <li><a href="https://bash.cyberciti.biz/guide/$IFS"><code>$IFS</code> Linux Bash Shell Scripting Tutorial Wiki</a></li>
 </ul>

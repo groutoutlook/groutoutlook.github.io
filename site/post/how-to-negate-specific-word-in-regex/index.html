@@ -48,18 +48,14 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/1240275/how-to-negate-specific-word-in-regex">How to negate specific word in regex?</a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> negative look-ahead, possible with <code>pcre2</code>/<code>re2</code>.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> negative look-ahead, possible with <code>pcre2</code>/<code>re2</code>.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">rg &quot;(?&lt;!-)-replace&quot; --pcre2 #this has look-ahead, only possible in pcre2
 rgj &quot;[[:^alpha:]]-replace&quot;
-rg &quot;[^-]-replace&quot;
+rg &quot;[^-]-replace&quot; 
 </span></code></pre>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #AI teach me.</p>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #AI teach me.
 <ul>
 <li>for <code>rg</code>, <code>fd</code>,.. usage, see <a href="https://docs.rs/regex/latest/regex/#matching-one-character">negative syntax in regex</a>
 <ul>
@@ -68,14 +64,9 @@ rg &quot;[^-]-replace&quot;
 </li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li>#explaination : <a href="https://stackoverflow.com/questions/2973436/regex-lookahead-lookbehind-and-atomic-groups">Regex lookahead, lookbehind and atomic groups</a></li>
 <li><a href="https://stackoverflow.com/questions/6488944/what-is-the-difference-between-atomic-and-non-capturing-groups">regex - What is the difference between atomic and non-capturing groups?</a></li>

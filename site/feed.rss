@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`opam` - `ocaml` language&apos;s package manager.</title><category>functional</category><category>libman</category><category>ocaml</category><category>prog</category><pubDate>2026-11-17 06:33:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>collaboration-mode-templates/templates/plan.md at main · openai/codex</title><category>codex</category><category>harness</category><category>mcp</category><category>plan</category><category>swt</category><pubDate>2026-11-17 10:07:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/openai/codex/blob/main/codex-rs/collaboration-mode-templates/templates/plan.md">collaboration-mode-templates/templates/plan.md at main · openai/codex</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> not the collab mode you think.. multiple codex long running session interact with each other,
+<ul>
+<li>but you can always paste the session id in. There is <code>codex_tui</code> default MCP for that.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: it plan, that's all</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/openai/codex/blob/main/codex-rs/collaboration-mode-templates/templates/default.md">collaboration-mode-templates/templates/default.md at main · openai/codex</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`askama` template rendering engine based on Jinja, generating type-safe Rust code at compile time.</title><category>api</category><category>documentation</category><category>rust</category><category>string</category><category>template</category><pubDate>2026-11-17 09:20:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/askama-rs/askama"><code>askama</code> template rendering engine based on Jinja, generating type-safe Rust code at compile time.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Keats/tera"><code>tera</code> template engine for Rust based on Jinja2/Django</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 21:20:59 2026] <a href="https://github.com/nk9/textr">textr: Making template texting easier</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`opam` - `ocaml` language&apos;s package manager.</title><category>functional</category><category>libman</category><category>ocaml</category><category>prog</category><pubDate>2026-11-17 06:33:44 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://opam.ocaml.org/"><code>opam</code> - <code>ocaml</code> language's package manager.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also sit here as anchor for topic related to ocaml.</li>
@@ -10,7 +43,7 @@
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ocaml/ocaml">the core ocaml system: compilers, runtime system, base libraries</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #web/prog #introduction : <a href="https://uniker.nl/unikernels/immuable/">immuable — Unikernels in OCaml</a>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #wprog #introduction : <a href="https://uniker.nl/unikernels/immuable/">immuable — Unikernels in OCaml</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a bit about how to use <code>opam</code> with external repo.</li>
 </ul>
@@ -300,30 +333,6 @@ model_auto_compact_token_limit = 262144 # 2^18.
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`trunk` Build, bundle &amp; ship your Rust WASM application to the web.</title><category>rust</category><category>wasm</category><category>wprog</category><pubDate>2026-11-15 11:57:56 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/trunk-rs/trunk"><code>trunk</code> Build, bundle &amp; ship your Rust WASM application to the web.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ai <code>codex</code> point me to <code>trunk</code> while upgrade <code>card</code> to <code>ratzilla</code>.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>A family tree of software job titles</title><category>corporation</category><category>culture</category><category>meta</category><category>prog</category><pubDate>2026-11-15 10:45:48 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50499038">A family tree of software job titles</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50501594">How did Woz write the Apple 1 BASIC before building the computer?</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>

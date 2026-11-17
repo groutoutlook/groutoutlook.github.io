@@ -48,33 +48,24 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_commonparameters#-pipelinevariable"><code>-PipelineVariable</code> | <code>-pv</code></a>
 <ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I love pipelines, so what?</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> there are parameter preference for a function to get into pipelines.</p>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> I love pipelines, so what?</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> there are parameter preference for a function to get into pipelines.
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">[Parameter(
-    Position=0, Mandatory=$true,
+    Position=0, Mandatory=$true, 
     ValueFromPipeline=$true,
     ValueFromPipelineByPropertyName=$true)
 ]
 </span></code></pre>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Pay attention to scope.</p>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Pay attention to scope.
 <ul>
 <li>This pass a variable which can be accessed through all the after block in pipes.
 The block before it knows nothing, of course.</li>
 </ul>
 </li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> better lifetime management, use this to avoid global states.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://fercorrales.com/powershell-practical-use-of-pipelinevariable-common-parameter/"><code>-PipelineVariable</code> usage</a></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> better lifetime management, use this to avoid global states.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://fercorrales.com/powershell-practical-use-of-pipelinevariable-common-parameter/"><code>-PipelineVariable</code> usage</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
 <ul>
 <li><a href="https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_pipelines#intrinsic-line-continuation">Intrinsic line continuation</a>
 <ul>

@@ -57,8 +57,11 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
 <ul>
-<li>Write-Host or Write-Output could also render Unicode char.
-<code>powershell Write-Host &quot;`u{25cb}&quot; </code></li>
+<li>Write-Host or Write-Output could also render Unicode char.</li>
+</ul>
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Write-Host &quot;`u{25cb}&quot;
+</span></code></pre>
+<ul>
 <li>#grep: remember how to escape dollar sign (&quot;<code>$&quot;) and backslash (&quot;</code>\&quot;). Other delimiters are similar.
 <ul>
 <li>#cli/utils: feed them into cli tools e.g.<code>rg</code> or <code>fd</code> required extra care as &quot;<code>\</code>$&quot; for example...
@@ -72,7 +75,7 @@
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
 <ul>
-<li>&quot;`a&quot; will beep. It's a #crossplatform thing.</li>
+<li>&quot;`a&quot; will beep. It's a #crossplatform  thing.</li>
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
