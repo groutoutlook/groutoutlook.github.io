@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>OpenStreetMap</title><category>global</category><category>map</category><category>service</category><category>web</category><pubDate>2026-11-16 02:26:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`trivy` Find vulnerabilities, misconfigurations, secrets, SBOM in containers, K8s, code repositories, clouds and more</title><category>backend</category><category>cicd</category><category>sdk</category><category>sysadmin</category><category>wprog</category><pubDate>2026-11-17 12:04:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/aquasecurity/trivy"><code>trivy</code> Find vulnerabilities, misconfigurations, secrets, SBOM in containers, K8s, code repositories, clouds and more</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #infosec <a href="https://www.reddit.com/r/selfhosted/comments/1w3bu10">How seriously do you take the security of your self-hosted apps?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/zaproxy/zaproxy"><code>zaproxy</code> ZAP by Checkmarx Core project</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #cli <a href="https://github.com/anchore/syft"><code>syft</code> CLI tool and library for generating a Software Bill of Materials from container images and filesystems</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-27 04:19:06 PM] #cli #utils #management <a href="https://github.com/microsoft/sbom-tool"><code>sbom-tool</code> highly scalable and enterprise ready tool to create spdx 2.2 compatible sboms for any variety of artifacts.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in scoop</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/">Malware Peddlers Are Now Hijacking Snap Publisher Domains - Alan Pope's blog</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/psastras/sbom-rs"><code>sbom-rs</code> group of Rust projects for interacting with and producing software bill of materials (SBOMs).</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 12:04:54 2026] <a href="https://github.com/CycloneDX">CycloneDX BOM Standard</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>OpenStreetMap</title><category>global</category><category>map</category><category>service</category><category>web</category><pubDate>2026-11-16 02:26:43 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.openstreetmap.org">OpenStreetMap</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> very nice #web/ui, you can select other option than the first match much faster by the side pane.</li>
@@ -270,18 +298,6 @@ model_auto_compact_token_limit = 262144 # 2^18.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`uhubctl` - USB hub per-port power control</title><category>cli</category><category>cli/ctl</category><category>usb/hub</category><pubDate>2026-11-14 10:01:19 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/mvp/uhubctl"><code>uhubctl</code> - USB hub per-port power control</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> ch335 hub.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://oshwlab.com/iamseer/ch335-hub">CH335 HUB (USB) - OSHWLab</a></li>
 </ul>
 </li>
 </ul>
