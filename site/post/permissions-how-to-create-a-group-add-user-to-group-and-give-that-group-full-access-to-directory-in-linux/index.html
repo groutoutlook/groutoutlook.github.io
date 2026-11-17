@@ -56,39 +56,49 @@
             <ul>
 <li><a href="https://superuser.com/questions/914666/how-to-create-a-group-add-user-to-group-and-give-that-group-full-access-to-dir">permissions - How to create a group, add user to group, and give that group full access to directory in linux</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">useradd</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>m</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>G</span> wheel<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>s</span> /usr/sbin/nu golk <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> add new user...</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> usermod<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>l</span> old new <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> rename current user, passwd required.</span><span class="comment line number-sign shell">
 </span></span><span class="meta function-call shell"><span class="variable function shell">userdel</span></span><span class="meta function-call arguments shell"> golk <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> samething.</span><span class="comment line number-sign shell">
 </span></span></span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://askubuntu.com/questions/34074/how-do-i-change-my-username">permissions - How do I change my username?</a>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://askubuntu.com/questions/34074/how-do-i-change-my-username">permissions - How do I change my username?</a></p>
 <ul>
 <li>#sysadmin topic mainly.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
 <ul>
-<li>#sysadmin : <a href="https://askubuntu.com/questions/985296/how-can-i-add-a-user-and-set-the-password-for-them-at-the-same-time">add a user and set the password for them at the same time?</a>
+<li>
+<p>#sysadmin : <a href="https://askubuntu.com/questions/985296/how-can-i-add-a-user-and-set-the-password-for-them-at-the-same-time">add a user and set the password for them at the same time?</a></p>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">sudo</span></span><span class="meta function-call arguments shell"> adduser golk</span>
 </span></code></pre>
 <ul>
 <li>or if in #wsl : <strong>remember to run</strong> as root <code>passwd</code> and <code>passwd golk</code> first
 <ul>
 <li>#perl is a decent tool for substitue #string. It's like #awk on steroid</li>
-<li>#AI/llm teach me:</li>
+<li>#AI/llm teach me:
+`sh
+cp /etc/sudoers /etc/sudoers.bak # remember sudo-rs dont understand NOPASSWD: or so.</li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">cp</span></span><span class="meta function-call arguments shell"> /etc/sudoers /etc/sudoers.bak <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> remember sudo-rs dont understand NOPASSWD: or so.</span><span class="comment line number-sign shell">
-</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Uncomment wheel group line</span><span class="comment line number-sign shell">
-</span><span class="meta function-call shell"><span class="variable function shell">perl</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>i</span><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>pe</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>s/^#\s*(%wheel\s+ALL=\(ALL:ALL\)\s+ALL)/$1/<span class="punctuation definition string end shell">&#39;</span></span> /etc/sudoers</span>
-<span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span>Wheel group granted sudo access.<span class="punctuation definition string end shell">&quot;</span></span></span>
-</span></code></pre>
-</li>
+<h1>Uncomment wheel group line</h1>
+perl -i -pe 's/^#\s*(%wheel\s+ALL=(ALL:ALL)\s+ALL)/$1/' /etc/sudoers
+echo &quot;Wheel group granted sudo access.&quot;
+`</li>
 </ul>
 </li>
-<li><a href="https://askubuntu.com/questions/118204/sudoers-simple-explanation-requested/118227#118227">sudo - sudoers - simple explanation requested</a></li>
+<li>
+<p><a href="https://askubuntu.com/questions/118204/sudoers-simple-explanation-requested/118227#118227">sudo - sudoers - simple explanation requested</a></p>
+</li>
 </ul>
 </li>
 </ul>

@@ -45,8 +45,16 @@
 <blockquote>
 <p>[!abstract]</p>
 <h1>push constants</h1>
+</blockquote>
+<pre class="syntax-highlighting"><code><span class="text plain">&gt;
+</span></code></pre>
+<blockquote>
 <hr />
 <h2>introduction</h2>
+</blockquote>
+<pre class="syntax-highlighting"><code><span class="text plain">&gt;
+</span></code></pre>
+<blockquote>
 <p>push constants are usually the first method newer vulkan programmers will stumble upon when beginning to work with constant data. they are straightforward to use and integrate nicely into any codebase, making them a great option to send simple data to your shaders.</p>
 <p>a downside to push constants is that on some platforms they have strict limitations on how much data can be sent. the vulkan spec guarantees that drivers will support at least 128 bytes of push constants. many modern implementations of vulkan will commonly support 256 bytes and sometimes much more.</p>
 <p><em>note:</em> to determine how many bytes your system supports, you can query the physical device for its vkphysicaldevicelimits and check the value maxpushconstantssize.</p>
