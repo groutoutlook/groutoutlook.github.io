@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`serie` git commit graph in your terminal, like magic 📚</title><category>cli/utils</category><category>git</category><category>swt</category><pubDate>2026-11-17 03:37:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`opam` - `ocaml` language&apos;s package manager.</title><category>functional</category><category>libman</category><category>ocaml</category><category>prog</category><pubDate>2026-11-17 06:33:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://opam.ocaml.org/"><code>opam</code> - <code>ocaml</code> language's package manager.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also sit here as anchor for topic related to ocaml.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>winget</code> for <code>opam</code> - <code>ocaml</code> is on msys2.
+<ul>
+<li>but as now I truly dont use them a lot...</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ocaml/ocaml">the core ocaml system: compilers, runtime system, base libraries</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #web/prog #introduction : <a href="https://uniker.nl/unikernels/immuable/">immuable — Unikernels in OCaml</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a bit about how to use <code>opam</code> with external repo.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 18:33:44 2026] <a href="https://lobste.rs/s/s7mejx/how_rust_changed_me_as_developer">How Rust Changed Me As A Developer</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> mentioned #functional language and <code>ocaml</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`serie` git commit graph in your terminal, like magic 📚</title><category>cli/utils</category><category>git</category><category>swt</category><pubDate>2026-11-17 03:37:49 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/lusingander/serie"><code>serie</code> git commit graph in your terminal, like magic 📚</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Better <code>git log</code>. Although in Windows now it's unusable on the graph.</li>
@@ -300,24 +325,6 @@ model_auto_compact_token_limit = 262144 # 2^18.
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50501594">How did Woz write the Apple 1 BASIC before building the computer?</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`turso` next evolution of SQLite.</title><category>backend</category><category>database</category><category>embedded</category><category>library</category><category>rust</category><category>sql/sqlite</category><pubDate>2026-11-14 12:00:12 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/tursodatabase/turso"><code>turso</code> next evolution of SQLite.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #libc <a href="https://github.com/tursodatabase/libsql"><code>libsql</code> fork of SQLite that is both Open Source, and Open Contributions.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#cli <a href="https://github.com/tursodatabase/turso-cli"><code>turso</code> cli for Turso Cloud.</a></li>
-<li>#rust #library : <a href="https://github.com/spacejam/sled"><code>sled</code> embedded databases</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 12:00:12 2026] accquired by <code>supabase</code>.</li>
 </ul>
 </li>
 </ul>
