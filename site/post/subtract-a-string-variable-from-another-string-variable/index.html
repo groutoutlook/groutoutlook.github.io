@@ -51,14 +51,14 @@
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> actually what I need is subtract...
 <ul>
-<li><a href="https://stackoverflow.com/questions/957928/is-there-a-way-to-get-the-git-root-directory-in-one-command/31696782#31696782">get the git root directory</a></li>
+<li><a href="https://stackoverflow.com/questions/957928/is-there-a-way-to-get-the-git-root-directory-in-one-command/31696782#31696782">get the git root directory</a>
+`pwsh</li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain"># get git root then subtract the path so we can get the subproject name.
+<h1>get git root then subtract the path so we can get the subproject name.</h1>
 $current_gitroot = Split-Path (git rev-parse --show-toplevel)
-$current_proj = $pwd.path.replace(&quot;$current_gitroot\&quot;,&quot;&quot;).replace(&#39;\&#39;,&#39;.&#39;)
+$current_proj = $pwd.path.replace(&quot;$current_gitroot&quot;,&quot;&quot;).replace('','.')
 Write-Host &quot;Current project : $current_proj&quot; -Fore Yellow
-</span></code></pre>
-</li>
+`</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/PowerShell/comments/11zouyt">Delete all text in a variable before a certain word</a></li>

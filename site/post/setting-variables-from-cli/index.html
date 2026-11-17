@@ -57,9 +57,14 @@
             <ul>
 <li><a href="https://github.com/casey/just#setting-variables-from-the-command-line">setting variables from cli</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> either in form <code>name=value</code> can be passed before recipes: <code>just var_test=thiscli test</code>
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> either in form <code>name=value</code> can be passed before recipes: <code>just var_test=thiscli test</code></p>
 <ul>
 <li>or <code>just --set var_test &quot;this is atrocious&quot; test</code></li>
 <li>important: it has to prepend the recipe name.</li>
@@ -74,38 +79,48 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> positional arguments may also be turned on on a per-recipe basis...
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> positional arguments may also be turned on on a per-recipe basis...</p>
 <ul>
 <li>with the [positional-arguments] attribute.
 <ul>
-<li>note that powershell does not handle positional arguments in the same way as other shells, so turning on positional arguments will likely break recipes that use powershell.
+<li>
+<p>note that powershell does not handle positional arguments in the same way as other shells, so turning on positional arguments will likely break recipes that use powershell.</p>
 <ul>
 <li><del>the <code>-commandwithargs</code> flag will make positional arguments work as expected</del>.
 <ul>
-<li>not work for current v7.6 preview.</li>
-</ul>
-</li>
-</ul>
+<li>
+<p>not work for current v7.6 preview.</p>
 <pre class="syntax-highlighting"><code class="language-just"><span class="text plain">set shell := [&#39;pwsh.exe&#39;, &#39;-commandwithargs&#39;]
 set positional-arguments
 
-[positional-arguments]
-@foo bar:
-  echo $0
-  echo $1
-  foobar := x&#39;~/$0/$1&#39;
-
-print-args a b c:
-  write-output @($args[1..($args.count - 1)])
 </span></code></pre>
 </li>
 </ul>
 </li>
 </ul>
+<p>[positional-arguments]
+@foo bar:
+echo $0
+echo $1
+foobar := x'~/$0/$1'</p>
+<p>print-args a b c:
+write-output @($args[1..($args.count - 1)])</p>
+<pre class="syntax-highlighting"><code></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> 2025-05-20 07:23:17 : #default : <code>just --choose</code> seems like a good default.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> 2025-05-20 07:23:17 : #default : <code>just --choose</code> seems like a good default.</p>
+</li>
 </ul>
 </li>
 </ul>

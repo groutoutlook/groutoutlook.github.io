@@ -48,16 +48,22 @@
             <ul>
 <li><a href="https://github.com/afnanenayet/diffsitter"><code>diffsitter</code> with some semantic highlight.</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well maybe better than <code>git diff</code>?</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well maybe better than <code>git diff</code>?</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-nu"><span class="text plain">cd obs
 git diff | save obs.patch
 miniserve ./obs.patch # I just serve it. You can do `scp` or `sftp` but I&#39;m so lazy.
 git apply obs.patch
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/5159185">Create a git patch from the uncommitted changes in the current working directory without creating a commit?</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2026-02-04 14:55:55 AM] Much safer than git stash if you have to consider git remote update.
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/5159185">Create a git patch from the uncommitted changes in the current working directory without creating a commit?</a></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2026-02-04 14:55:55 AM] Much safer than git stash if you have to consider git remote update.</p>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git diff &gt; &quot;../$(spa -leaf $pwd).patch&quot; # output to patch files.
 git apply &quot;../$(spa -leaf $pwd).patch&quot; # reapply the patch files.
 </span></code></pre>

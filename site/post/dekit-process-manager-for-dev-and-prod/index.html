@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>TIL: &#x60;mprocs&#x60; Run multiple commands in parallel</title>
+        <title>TIL: &#x60;dekit&#x60; Process manager for dev and prod</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/blog/syntect.css">
         <link rel="stylesheet" href="/blog/style.css">
@@ -17,7 +17,7 @@
         </nav>
 
         <header class="til-header">
-            <h1 class="til-title" title="&#x60;mprocs&#x60; Run multiple commands in parallel"><code>mprocs</code> Run multiple commands in parallel</h1>
+            <h1 class="til-title" title="&#x60;dekit&#x60; Process manager for dev and prod"><code>dekit</code> Process manager for dev and prod</h1>
         </header>
 
         <div class="til-subheader">
@@ -61,12 +61,21 @@
 
         <div class="til-content">
             <ul>
-<li><a href="https://github.com/pvolok/mprocs"><code>mprocs</code> Run multiple commands in parallel</a>
+<li><a href="https://github.com/pvolok/dekit"><code>dekit</code> Process manager for dev and prod</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> scoop available.
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">cd rust nigh &amp;&amp; r pu &amp;&amp; r rba # that&#39;s where my shim is. I dont even know anymore.
+</span></code></pre>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> scoop available.</p>
 <ul>
 <li>Pro: detect <code>justfile</code> recipes.
 <a href="https://github.com/pvolok/mprocs/pull/157">Add <code>--just</code> argument to load recipes from justfile</a>
@@ -76,15 +85,23 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/pvolok/mprocs"><code>mprocs</code> Run multiple commands in parallel</a></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
 <ul>
 <li>#utils : <a href="https://github.com/aaronriekenberg/rust-parallel"><code>rust-parallel</code>in rust/tokio to run commands in parallel. Similar interface to GNU parallel or xargs plus useful features. Listed in Awesome Rust utilities.</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #justfile <a href="https://github.com/casey/just#parallelism"><code>just</code> <code>[parallel]</code> attribute only for linewise recipes.</a>
+<li>
+<p><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #justfile <a href="https://github.com/casey/just#parallelism"><code>just</code> <code>[parallel]</code> attribute only for linewise recipes.</a></p>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#parallelism"><code>[parallel]</code> for certain single thread work.</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#parallelism"><code>[parallel]</code> for certain single thread work.</a></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> call `compile` with each element of `args` in parallel</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">[parallel]</span></span>
 <span class="meta function-call shell"><span class="variable function shell">build</span></span><span class="meta function-call arguments shell"> <span class="keyword operator regexp quantifier shell">*</span>args: <span class="keyword operator regexp quantifier shell">*</span><span class="punctuation section parens begin shell">(</span>compile <span class="keyword operator regexp quantifier shell">*</span>args<span class="punctuation section parens end shell">)</span></span>

@@ -53,8 +53,11 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-process"><code>Get-Process</code> | <code>ps</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">ps -n pwsh -IncludeUserName | ? userName -eq $null |%{
   Invoke-SudoPwsh &quot;kill -id $($_.id)&quot;
 }
@@ -62,9 +65,14 @@
 (ps -n todo).CommandLine # check the dir of Windows-installed application, work with pwsh installed by `msixbundle`
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/64187004/powershell-selecting-noteproperty-type-objects-from-object">pscustomobject - Powershell Selecting NoteProperty Type Objects From Object</a>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/64187004/powershell-selecting-noteproperty-type-objects-from-object">pscustomobject - Powershell Selecting NoteProperty Type Objects From Object</a></p>
 <ul>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://thinkpowershell.com/get-process-name-and-owner-user-name/">Get Process Name and Owner User Name</a>
 <ul>
@@ -73,7 +81,9 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
 </ul>
 </li>
 </ul>

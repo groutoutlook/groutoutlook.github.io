@@ -47,28 +47,39 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-childitem#-attributes"><code>Get-ChildItem</code> | <code>gci</code> alias</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gci D:\ProgramDataD\9-ProductionFiles\Firmware-Finished -File|%{cp $_}
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
 <ul>
-<li><code>gci -File</code> and <code>-Directory</code> is convenient.</li>
-<li>#til : you can put some basic conditions on <code>gci</code>.
+<li>
+<p><code>gci -File</code> and <code>-Directory</code> is convenient.</p>
+</li>
+<li>
+<p>#til : you can put some basic conditions on <code>gci</code>.</p>
 <pre class="syntax-highlighting"><code class="language-PowerShell"><span class="text plain">Get-ChildItem -Attributes !Directory+!System+Encrypted, !Directory+!System+Compressed
 </span></code></pre>
 </li>
-<li>can use <code>gci -Path -Filter</code> with others. <code>-Filter</code> only supports * and ? wildcards.</li>
+<li>
+<p>can use <code>gci -Path -Filter</code> with others. <code>-Filter</code> only supports * and ? wildcards.</p>
+</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
 <ul>
 <li>Pro: builtin</li>
 <li>Con: not as portable and crossplatform as <code>fd</code>. Cant write <code>--exec</code> styles of command.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm trying to match only <code>Archive</code> types in <code>music.playlist.main</code> using <code>-Attributes</code> | <code>-At</code>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I'm trying to match only <code>Archive</code> types in <code>music.playlist.main</code> using <code>-Attributes</code> | <code>-At</code></p>
 <ul>
 <li>Should have used <code>-File</code> instead.
 <ul>
@@ -82,7 +93,9 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
 </ul>
 </li>
 </ul>

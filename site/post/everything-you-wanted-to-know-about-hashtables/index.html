@@ -47,12 +47,14 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/scripting/learn/deep-dives/everything-about-hashtable#adding-hashtables">Everything you wanted to know about hashtables</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you can add 2 hashtable together, but you need a bit more elaborate to full outer join 2 tables.
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you can add 2 hashtable together, but you need a bit more elaborate to full outer join 2 tables.</p>
 <ul>
 <li>if there are collisions, errors will be triggered.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain"># 1 simple scheme is this.
 function Merge-Hashtables($htold, $htnew)
 {
@@ -63,13 +65,21 @@ $temp_hash = @{}
 # in case this is not regular `hashtable` but PSObject of hashtable-lookalike.
 $jsonObj.$Type | Get-Member -MemberType NoteProperty | ForEach-Object {
   $temp_hash[$_.Name] = $jsonObj.$Type.($_.Name)
-}    
+}
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> got to give it to #AI that helps me burst through this.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> got to give it to #AI that helps me burst through this.</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
 </ul>
 </li>
 </ul>

@@ -48,8 +48,11 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_commonparameters#-outbuffer"><code>-OutBuffer</code>| <code>-ob</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use with <code>foreach</code>|<code>%</code> and <code>where</code>, normally a ScriptBlock, not standalone cmdlet</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> usage with <code>%</code>, alternates in batches of 2 or <code>OutBuffer + 1</code>.
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> use with <code>foreach</code>|<code>%</code> and <code>where</code>, normally a ScriptBlock, not standalone cmdlet</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> usage with <code>%</code>, alternates in batches of 2 or <code>OutBuffer + 1</code>.</p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">1..4 | ForEach-Object {
     Write-Host &quot;$($_): First&quot;; write ($_*5)
   } -ob 1 -ov b | ForEach-Object {}{Write-Host &quot;$($_): Second&quot; } {echo &quot;$b is weird&quot;}
@@ -59,7 +62,8 @@
 <li>If elements are exhausted, it will flush i.e. process anything left in the buffer.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> also see <code>write -n</code> for passing a whole array.
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> also see <code>write -n</code> for passing a whole array.</p>
 <ul>
 <li>#note : <strong>IMPORTANT</strong> this doesnt meant <code>$_</code> being promoted into list or array type.
 <ul>
@@ -73,13 +77,18 @@
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> This can help me buffer an array of <code>$_</code> before passing to next one.
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> This can help me buffer an array of <code>$_</code> before passing to next one.</p>
 <ul>
 <li>Reduce usage of <code>select-object</code> or <code>where-object</code>.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
+</li>
 </ul>
 </li>
 </ul>

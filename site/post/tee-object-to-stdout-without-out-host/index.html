@@ -60,12 +60,14 @@
             <ul>
 <li><a href="https://stackoverflow.com/questions/71039495/can-you-redirect-tee-object-to-standard-out"><code>Tee-Object</code> to stdout without <code>Out-Host</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>ls|tee \\.\CON|%{&quot;hmmm&quot;}</code> that's the only way now to <code>tee</code> to stdout.
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>ls|tee \\.\CON|%{&quot;hmmm&quot;}</code> that's the only way now to <code>tee</code> to stdout.</p>
 <ul>
 <li>normally it's <code>ls|tee -variable $a|Out-Host</code> but yeah... this couldnt help me pipe with another <code>ForEach</code> | <code>%</code></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">fd hex$ -HI | %{cp $_ ($dest = &quot;../built_binary/$current_branch.hex&quot;) -Force &amp;&amp; gci $dest | tee -v path  | oh; $path} | Set-Clipboard
 # find how deep current pwd is relatively to a parent dir, match by its string(regex)
 (pwd) -split &#39;\\&#39; | Tee -var pwds -ob 999 | % { $i = 0 }
@@ -82,12 +84,17 @@ IT will abrupt the whole script. Not simply local break, but <strong>global brea
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
 <ul>
-<li><a href="https://github.com/PowerShell/PowerShell/issues/19827"><code>Tee-Object</code> should have a <code>-Console</code> parameter · Issue #19827 · PowerShell/PowerShell</a>
+<li>
+<p><a href="https://github.com/PowerShell/PowerShell/issues/19827"><code>Tee-Object</code> should have a <code>-Console</code> parameter · Issue #19827 · PowerShell/PowerShell</a></p>
 <ul>
-<li>..which for now I will make a <code>Tee-Host</code> functions</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 12:01:06 2026]
+<li>
+<p>..which for now I will make a <code>Tee-Host</code> functions</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 17 12:01:06 2026]</p>
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">function Set-PathClipboard{ # which I alias to `pwc` as well.
     pwd | tee-host {&quot;set-clipboard to $(Convert-PathToOsc8 $_)&quot;}| scb
 }
@@ -95,29 +102,40 @@ IT will abrupt the whole script. Not simply local break, but <strong>global brea
 </li>
 </ul>
 </li>
-<li><a href="https://github.com/PowerShell/PowerShell/issues/20123"><code>Tee-Object -Process</code></a></li>
+<li>
+<p><a href="https://github.com/PowerShell/PowerShell/issues/20123"><code>Tee-Object -Process</code></a></p>
+</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I want to validate results of my command when I'm writing pipelines syntax.
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I want to validate results of my command when I'm writing pipelines syntax.</p>
 <ul>
 <li><a href="https://github.com/groutoutlook/RGB_CPP_V2_2024/commit/25d4f9b3a4cac409a10057e6011134b7ca596554">feat: more spicy recipes... load and hex copy. · groutoutlook/RGB_CPP_V2_2024@25d4f9b</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
 <ul>
 <li>#container : <a href="https://stackoverflow.com/questions/1785474/get-index-of-current-item-in-a-powershell-loop">Get index of current item in a PowerShell loop</a>
 <ul>
-<li>It's like <code>iota</code> in c++ but now it's accessible in pipeline, could access index
+<li>
+<p>It's like <code>iota</code> in c++ but now it's accessible in pipeline, could access index</p>
 <ul>
-<li>In pipeline now. Handy.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p>In pipeline now. Handy.</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">&quot;a&quot;,&quot;b&quot;,&quot;c&quot; | % {$id = 0}{Write-Host $_,$id,&quot; &quot; -nonewline;$id++}
 </span></code></pre>
 </li>
 </ul>
 </li>
-<li>So even in pipelines we have the begin-process-end block. <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_methods">about_Functions_Advanced_Methods</a>
+<li>
+<p>So even in pipelines we have the begin-process-end block. <a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_methods">about_Functions_Advanced_Methods</a></p>
 <ul>
 <li><code>end</code> block is like <code>defer</code> in #golang. quite useful.</li>
 </ul>

@@ -49,23 +49,29 @@
             <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertto-json"><code>ConvertTo-Json</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to convert variables/output of cmdlets to something comprehensible.
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to convert variables/output of cmdlets to something comprehensible.</p>
 <ul>
 <li>Since <code>Format-Table</code> can only display a limited amount of objects.</li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Used in pipe
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> Used in pipe</p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">Get-Service -Name sshd | ConvertTo-Json | fx # `fx` go along with this pretty well.
 Get-Service -Name term* | ConvertTo-Json -Depth 4 | bat -ljson # or advanced pager like bat. This is more colorful though.
 gsv proton* |convertto-json |bat -ljson
 </span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>cfjson</code>/<code>ctjson</code> could also be used to assign hashtable with <code>-AsHashtable</code> flag
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>cfjson</code>/<code>ctjson</code> could also be used to assign hashtable with <code>-AsHashtable</code> flag</p>
 <ul>
 <li>you have to cast keys into <code>[String]</code>
 <ul>
-<li>access by index into <code>.keys</code> of <code>HashTable</code> by cast <code>$table.keys</code> into <code>[Array]</code>.</li>
-<li>An example of removing ununsed buckets.
+<li>
+<p>access by index into <code>.keys</code> of <code>HashTable</code> by cast <code>$table.keys</code> into <code>[Array]</code>.</p>
+</li>
+<li>
+<p>An example of removing ununsed buckets.</p>
 <pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">$b = scoop list | Select Source -Unique
 gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
 </span></code></pre>
@@ -74,17 +80,21 @@ gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> My favorite JSON engine.
-<code>pwsh</code> eat everything JSON, even JSONC (which has trailing comma, comments and other stuff.)</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/40495248/create-hashtable-from-json">powershell - Create Hashtable from JSON</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> My favorite JSON engine.
+<code>pwsh</code> eat everything JSON, even JSONC (which has trailing comma, comments and other stuff.)</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/40495248/create-hashtable-from-json">powershell - Create Hashtable from JSON</a></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
 <ul>
 <li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json"><code>ConvertFrom-Json</code></a>
 <ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to consume what is json before...</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> to consume what is json before...
+<code>powershell uni i k -aj | ConvertFrom-Json </code></li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">uni i k -aj | ConvertFrom-Json
-</span></code></pre>
 </li>
 <li>#decoder <a href="https://github.com/powershell/textutility#convertfrom-base64"><code>ConvertFrom-Base64</code></a>
 <ul>
@@ -93,7 +103,9 @@ gci | where Name -notin $b.Source # .Source is critical since $b is hashtable...
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 10:50:44 2026] #anatomy #nervous <a href="https://news.ycombinator.com/item?id=50029830">Food processing influences metabolism and brain activity</a></li>
+<li>
+<p><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Oct 11 10:50:44 2026] #anatomy #nervous <a href="https://news.ycombinator.com/item?id=50029830">Food processing influences metabolism and brain activity</a></p>
+</li>
 </ul>
 </li>
 </ul>

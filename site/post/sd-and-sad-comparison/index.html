@@ -53,18 +53,21 @@
             <ul>
 <li><a href="https://github.com/ms-jpq/sad?#what-about-stdin---stdout"><code>sd</code> and <code>sad</code> comparison</a>
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> A short comparison, not too completed there.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<li>
+<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> A short comparison, not too completed there.</p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> Original pattern that I want to remove.</span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> wait = 80</span><span class="comment line number-sign shell">
-</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> </span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> key_press = &quot;Tab&quot;</span><span class="comment line number-sign shell">
-</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> </span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> wait = 80</span><span class="comment line number-sign shell">
-</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> </span><span class="comment line number-sign shell">
+</span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [[events]]</span><span class="comment line number-sign shell">
 </span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> key_release = &quot;Tab&quot;</span><span class="comment line number-sign shell">
 </span><span class="meta function-call shell"><span class="variable function shell">gci</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Filter</span> <span class="keyword operator regexp quantifier shell">*</span>.toml<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>Recurse</span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell"><span class="meta group expansion job shell"><span class="punctuation definition variable job shell">%</span></span></span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>
@@ -72,10 +75,17 @@
 <span class="punctuation section expansion brace end shell">}</span></span>    <span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span><span class="punctuation section group end shell">`</span></span><span class="meta group expansion command backticks shell"><span class="punctuation section group begin shell">`</span>
 </span></span></span></code></pre>
 </li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/beyondgrep/ack3">beyondgrep/ack3: ack is a grep-like search tool optimized for source code.</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-12-06 13:23:45] <code>scooter</code> still cant replace multi-line string.
+<li>
+<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/beyondgrep/ack3">beyondgrep/ack3: ack is a grep-like search tool optimized for source code.</a></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-12-06 13:23:45] <code>scooter</code> still cant replace multi-line string.</p>
 <ul>
 <li><a href="https://github.com/thomasschafer/scooter/issues/31">Support multi-line replacements · Issue #31 · thomasschafer/scooter</a></li>
 </ul>

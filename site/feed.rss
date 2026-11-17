@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`mxc` Policy-driven, layered isolation and containment</title><category>container</category><category>infosec</category><category>os</category><category>sandbox</category><category>windows</category><pubDate>2026-11-17 12:11:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`serie` git commit graph in your terminal, like magic 📚</title><category>cli/utils</category><category>git</category><category>swt</category><pubDate>2026-11-17 03:37:49 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/lusingander/serie"><code>serie</code> git commit graph in your terminal, like magic 📚</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Better <code>git log</code>. Although in Windows now it's unusable on the graph.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> [2025-08-04 09:57:38] run good in <code>wezterm</code> since it's using iterm2 inline image protocol.
+<ul>
+<li>but not <code>sixel</code> so #windows terminal is not able to display anything. that's why I shim it.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #browser/plugin : <a href="https://github.com/NirmalScaria/le-git-graph"><code>le-git-graph</code> Browser extension to add git graph to GitHub website.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative <a href="https://github.com/mlange-42/git-graph"><code>git-graph</code> Command line tool to show clear git graphs arranged for your branching model</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/trasta298/keifu"><code>keifu</code> TUI for navigating commit graphs with color and clarity.</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2026-02-03 4:36:46 PM] #nightly cant take it anymore and alias <code>git graph</code> and <code>git bg</code> to <code>serie</code>
+<ul>
+<li>
+<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> we have to launch a wezterm there so it can display inline properly.</p>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> serie</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> launch a new window for that.</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> git b</span>
+<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I even alias this, so I have to comment out the gitalias.txt&#39;s alias.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+<li>
+<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> I #nightly <code>wezterm</code> again just for this. my shim script for <code>serie</code> invoke <code>wezterm</code> for the image protocol.</p>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Jun 24 17:33:20 2026] <a href="https://stackoverflow.com/questions/34096982/how-can-i-pass-a-string-to-git-log-s-instead-of-just-a-word"><code>git log -S</code> pass a string instead of just a word?</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --><a href="https://lobste.rs/s/y4hgjd/please_keep_code_descriptions_simple">Please keep code descriptions simple</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog <a href="https://blog.danlew.net/2019/02/19/git-log-s/">Adding <code>git log -S</code> to your code detective toolbox</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 15:37:49 2026] #gui <a href="https://help.gitkraken.com/gitkraken-desktop/workspaces/"><code>GitKraken</code> Desktop Workspaces | Share Repos With Your Team</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> after almost 3 years unused.. this is still the <strong>best</strong> GUI git branches previewer.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in <code>scoop</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Gitloque` commit replay tool for the terminal, turning your Git history into a living, animated story.</title><category>cli</category><category>rust</category><category>visualization</category><pubDate>2026-11-17 03:11:11 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/unhappychoice/gitlogue"><code>Gitloque</code> commit replay tool for the terminal, turning your Git history into a living, animated story.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`mxc` Policy-driven, layered isolation and containment</title><category>container</category><category>infosec</category><category>os</category><category>sandbox</category><category>windows</category><pubDate>2026-11-17 12:11:15 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/microsoft/mxc"><code>mxc</code> Policy-driven, layered isolation and containment</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -263,41 +318,6 @@ model_auto_compact_token_limit = 262144 # 2^18.
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 12:00:12 2026] accquired by <code>supabase</code>.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`kanzo` sharable kanban for humans and agent with MCP</title><category>backend</category><category>management</category><category>productivity</category><category>rust</category><category>server</category><category>tui</category><category>web/ui</category><pubDate>2026-11-14 11:36:51 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/emanuele-em/kanzo"><code>kanzo</code> sharable kanban for humans and agent with MCP</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #golang <a href="https://github.com/markrai/scrumboy"><code>scrumboy</code> project management • Customizable boards • Cross-project workload and flow analytics • Calendar/Agenda • Sticky-note wall • Imports/Backups • Email notifications • MCP/Agent automation</a>
-<ul>
-<li>Con: it uses <code>docker</code>. which I ultra hate on Windows.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/BloopAI/vibe-kanban"><code>vibe-kanban</code> - <strong>DEAD</strong></a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/Windshiftapp/core">Self-hosted, open-source work management platform and Jira alternative <code>Windshift</code> core.</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #typescript <a href="https://github.com/kanbn/kan"><code>kan</code> open source Trello alternative.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Nextcloud` server</title><category>backend</category><category>filesystem</category><category>nas</category><category>networking</category><pubDate>2026-11-14 11:32:00 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/nextcloud/server"><code>Nextcloud</code> server</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/nextcloud/desktop">Desktop sync client for Nextcloud</a>, <a href="https://github.com/nextcloud/android">Nextcloud Android app</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://openwrt.org/docs/guide-user/services/nas/owncloud"><code>owncloud</code> or <code>nextcloud</code></a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://forum.gl-inet.com/t/is-it-possible-to-install-nextcloud-on-a-flint-2-router/56788">Is it possible to install Nextcloud on a Flint 2 Router ? - Router - GL.iNet Official Forum</a>
-<ul>
-<li><a href="https://github.com/nextcloud/spreed"><code>spreed</code> Nextcloud Talk – chat, video &amp; audio calls for Nextcloud</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 14 11:32:00 2026] <a href="https://github.com/nextcloud/deck"><code>deck</code> Kanban-style project &amp; personal management tool for Nextcloud, similar to Trello</a></li>
 </ul>
 </li>
 </ul>
