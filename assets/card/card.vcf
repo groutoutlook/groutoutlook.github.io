@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Meog
+NICKNAME:meogauchip_0
+ORG:RelightTL
+TITLE:Embedded Firmware Engineer + PCB Designer
+NOTE:I write software and write hardware\, yeah\, write. Sometimes fun TUI/CLI things like this!
+EMAIL;TYPE=work:tdtd@duck.com
+END:VCARD

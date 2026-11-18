@@ -2,6 +2,10 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark"><meta name="description" content="Meog — Embedded Firmware Engineer + PCB Designer">
+<meta property="og:type" content="profile"><meta property="og:title" content="Meog — Embedded Firmware Engineer + PCB Designer">
+<meta property="og:description" content="meogauchip_0 · RelightTL"><meta property="og:image" content="https://img.ogis.dev/?template=twilight&amp;title=Meog&amp;subtitle=Embedded%20Firmware%20Engineer%20%2B%20PCB%20Designer&amp;description=meogauchip_0%20%C2%B7%20RelightTL">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <title>Meog — Embedded Firmware Engineer + PCB Designer</title>
 <style>
 :root { color-scheme:dark; --bg:#10151d; --panel:#151c26; --text:#f5f9ff; --muted:#a7b6c8; --green:#84d884; --blue:#8bc9ef; --line:#283342; background:var(--bg); color:var(--text); font-family:Consolas,"Liberation Mono",monospace; }
@@ -82,7 +86,7 @@ li a { padding:16px 0; } .playback { font-size:14px; }
 .app-actions summary::-webkit-details-marker { display:none; }
 .app-actions summary::after { content:' ▾'; color:var(--green); }
 .app-actions summary:focus-visible { outline:2px solid var(--green); outline-offset:4px; }
-.export-options { position:absolute; z-index:2; bottom:calc(100% + 8px); right:0; width:160px; padding:6px; border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:0 12px 32px #0006; }
+.export-options { position:absolute; z-index:2; bottom:calc(100% + 8px); right:0; width:180px; padding:6px; border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:0 12px 32px #0006; }
 .export-options a { display:block; padding:8px 10px; border-radius:4px; }
 .export-options a:hover { background:var(--line); color:var(--green); }
 #export-status { width:100%; margin:0; color:var(--muted); }
@@ -104,7 +108,7 @@ li a { padding:16px 0; } .playback { font-size:14px; }
 </main><footer class="playback" aria-label="Animation controls">
 <button id="play" type="button">Pause</button><button id="restart" type="button">Restart</button><button id="static" type="button">Static view</button>
 <label class="scrubber">Timeline <input id="timeline" type="range" min="0" max="10000" step="50" value="0" aria-label="Animation position"></label>
-<span id="clock">10 s loop · 2 s / item</span><nav class="app-actions" aria-label="Card actions"><a href="wasm.html" title="Try clicking, tapping, or using the keyboard">Try interactive demo</a><details><summary aria-live="polite">Export</summary><div class="export-options"><a href="card.png" download>PNG</a><a href="card.svg" download>SVG</a><a href="card.html" download>HTML</a><a href="card.animated.html" download>Animated HTML</a><a href="card.gif" download>GIF</a><a href="card.lottie.json" download>Lottie</a></div></details></nav><p id="export-status" role="status" hidden></p></footer><script>
+<span id="clock">10 s loop · 2 s / item</span><nav class="app-actions" aria-label="Card actions"><a href="card.interactive.html" title="Try clicking, tapping, or using the keyboard">Try interactive demo</a><details><summary aria-live="polite">Export</summary><div class="export-options"><a href="card.vcf" download>Contact (vCard)</a><a href="card.png" download>PNG</a><a href="card.svg" download>SVG</a><a href="card.html" download>HTML</a><a href="card.animated.html" download>Animated HTML</a><a href="card.gif" download>GIF</a><a href="card.lottie.json" download>Lottie</a></div></details></nav><p id="export-status" role="status" hidden></p></footer><script>
 (() => {
   const body=document.body, play=document.getElementById('play'), slider=document.getElementById('timeline');
   const duration=Number(slider.max);

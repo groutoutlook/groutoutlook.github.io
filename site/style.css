@@ -55,6 +55,10 @@ body {
     transition: color 150ms ease, background-color 150ms ease;
 }
 
+@media (min-width: 1024px) {
+    body { max-width: clamp(50rem, 63vw, 1200px); }
+}
+
 h1.til-title { margin-bottom: 0; }
 .til-title {
     display: block;
