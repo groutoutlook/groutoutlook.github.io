@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>SocketCAN</title><category>can</category><category>linux</category><category>proto</category><category>usb</category><pubDate>2026-11-18 09:58:28 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`OpenDeck` software for Stream Deck with support for original Elgato Stream Deck plugins</title><category>firmware</category><category>hard</category><category>linux</category><category>software</category><pubDate>2026-11-18 11:26:25 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nekename/OpenDeck"><code>OpenDeck</code> software for Stream Deck with support for original Elgato Stream Deck plugins</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/mdvictor/opendeck-graphs"><code>opendeck-graphs</code> configurable OpenDeck plugin that displays real-time hardware sensor data</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #cpp #library #midi <a href="https://github.com/shanteacontrols/OpenDeck"><code>OpenDeck</code> platform for building interactive control and sensing devices using MIDI and OSC built with Zephyr RTOS.</a>
+<ul>
+<li>not the opendeck that is the #alternative to stream deck controller.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`acdc` Toolkit for AsciiDoc™ converter, linting, lsp, mcp</title><category>asciidoc</category><category>cli</category><category>file</category><pubDate>2026-11-18 11:02:33 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/nlopes/acdc"><code>acdc</code> Toolkit for AsciiDoc™ converter, linting, lsp, mcp</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Jetplugins/adoc-engine"><code>adoc-engine</code> Fast native AsciiDoc engine: HTML, PDF, EPUB, SVG, CLI and language server</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`khal`: :calendar: CLI calendar application</title><category>cli</category><category>python</category><category>time</category><pubDate>2026-11-18 10:39:29 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/pimutils/khal"><code>khal</code>: :calendar: CLI calendar application</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>cal(1)</code>.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc5545">RFC 5545 - Internet Calendaring and Scheduling Core Object Specification (iCalendar)</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/b1rger/carl"><code>carl</code> calendar for the commandline</a>
+<ul>
+<li>#nightly, and I shimmed it to <code>calendar</code> as well.</li>
+</ul>
+</li>
+<li>#rust #library <a href="https://github.com/hoodie/icalendar"><code>icalendar</code> library, in Rust of course - for fun</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 10:39:29 2026] <a href="https://github.com/pimalaya/calendula"><code>calendula</code>: CLI to manage calendars</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`himalaya` CLI to manage emails</title><category>cli</category><category>crossplatform</category><category>email</category><category>rust</category><pubDate>2026-11-18 10:27:48 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/pimalaya/himalaya"><code>himalaya</code> CLI to manage emails</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> still finding <code>aerc</code> or <code>neomutt</code> for windows, but this might be the way.
+<ul>
+<li><a href="https://github.com/pimalaya/himalaya-tui"><code>himalaya-tui</code> to manage emails is closer to an <code>aerc</code> alternative than the original project</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/pimalaya/himalaya#configuration">config for different provider</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=42366025">Himalaya: CLI to Manage Emails</a>
+<ul>
+<li>To be fair it's #AI/llm point me to here.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/pimalaya/neverest"><code>neverest</code> CLI to synchronize mails, contacts and calendars</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>neomd</code></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 10:27:48 2026] <a href="https://github.com/pimalaya/carillon"><code>carillon</code> CLI to watch PIM collection changes</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym <a href="https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure">PIM: Privileged Identity Management? - Microsoft Entra ID Governance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SocketCAN</title><category>can</category><category>linux</category><category>proto</category><category>usb</category><pubDate>2026-11-18 09:58:28 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/SocketCAN">SocketCAN</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -268,58 +344,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/vozforums/comments/1rplkt4">Thông tin chính thức từ Iran</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=47475686">Hormuz Minesweeper – Are you tired of winning?</a></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 16 01:06:27 2026] <a href="https://news.ycombinator.com/item?id=50443331">A rare glimpse inside the high-risk, high-reward Hormuz trade</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>git - How to use submodules publicly, but symlinks to a single clone locally?</title><category>filesystem</category><category>git</category><category>prog</category><pubDate>2026-11-15 09:02:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/21077493/how-to-use-submodules-publicly-but-symlinks-to-a-single-clone-locally/69247412#69247412">git - How to use submodules publicly, but symlinks to a single clone locally?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Obtainium` Get Android app updates straight from the source.</title><category>android</category><category>app</category><category>soft</category><category>update</category><pubDate>2026-11-15 07:21:48 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/ImranR98/Obtainium"><code>Obtainium</code> Get Android app updates straight from the source.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> in komi store.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/thejaustin/ObtainiumPlus"><code>ObtainiumPlus</code> AI-assisted development fork of Obtainium with extra features.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Aperture CLI · Tailscale Docs</title><category>cli</category><category>harness</category><category>network</category><pubDate>2026-11-15 07:01:50 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://tailscale.com/docs/aperture/cli">Aperture CLI · Tailscale Docs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://tailscale.com/docs/reference/tailscale-cli">Tailscale CLI · Tailscale Docs</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Step-Down Step-Up (Buck-Boost) Converter – Primechip</title><category>boost</category><category>buck</category><category>module</category><category>pmic</category><pubDate>2026-11-15 06:07:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.prime-chip.com/buck-boost/?lang=en">Step-Down Step-Up (Buck-Boost) Converter – Primechip</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.prime-chip.com/wp-content/uploads/2025/05/YX2545_CN_Rev1.1.4_250516.pdf">YX2545</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/lznkhmf5RwnJ9WCo8wHhew">Integrates 4 MOS chips and synchronous buck-boost chips</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
