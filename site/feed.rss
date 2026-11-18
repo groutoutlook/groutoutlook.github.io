@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>OpenGraph checker</title><category>image</category><category>social</category><category>web</category><pubDate>2026-11-18 03:07:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>What is the flat thing and why is it there - weird toilet.</title><category>bathroom</category><category>eu</category><category>society</category><pubDate>2026-11-18 03:12:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/whatisit/comments/1xxs5tv">What is the flat thing and why is it there - weird toilet.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>OpenGraph checker</title><category>image</category><category>social</category><category>web</category><pubDate>2026-11-18 03:07:46 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.opengraph.xyz/url/https%3A%2F%2Fgroutoutlook.github.io%2F">OpenGraph checker</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -349,18 +361,6 @@
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> OpenFreeMap or something</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Trail of Bits `skills` for security research, vulnerability detection, and audit workflows</title><category>cpp</category><category>harness/skill</category><category>ide</category><pubDate>2026-11-16 01:52:36 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/trailofbits/skills">Trail of Bits <code>skills</code> for security research, vulnerability detection, and audit workflows</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
