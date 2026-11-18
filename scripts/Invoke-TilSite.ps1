@@ -13,7 +13,7 @@ if ([string]::IsNullOrWhiteSpace($TillerExecutable)) { $TillerExecutable = Join-
 if (!(Test-Path $TillerExecutable -PathType Leaf)) { throw "Tiller executable not found: $TillerExecutable" }
 $tillerArgs = @('--indir', $root, '--outdir', $site)
 if ($Force) { $tillerArgs += '--force' }
-& $TillerExecutable @tillerArgs
+& $TillerExecutable @tillerArgs 1>$null
 if ($LASTEXITCODE) { exit $LASTEXITCODE }
 & node (Join-Path $PSScriptRoot 'build-site.mjs')
 exit $LASTEXITCODE

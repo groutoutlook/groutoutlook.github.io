@@ -21,11 +21,13 @@ function init(directory) {
 function commit(directory, message) { git(directory, 'add', '-A'); git(directory, 'commit', '-m', message); }
 function browserFiles(directory, version = 'one') {
   fs.mkdirSync(directory, { recursive: true });
-  const html = `<html><head><title>Card</title></head><body><header></header>${version}<nav class="app-actions"></nav><div class="actions"></div></body></html>`;
-  for (const name of ['app.html', 'index.html', 'wasm.html']) fs.writeFileSync(path.join(directory, name), html);
-  fs.writeFileSync(path.join(directory, 'wasm.js'), '// browser host');
-  fs.writeFileSync(path.join(directory, 'animation.json'), '{}');
+  const html = `<html><head><title>Card</title></head><body><main>${version}</main><a href="card.vcf" download>Contact</a><script type="module" src="card-web.js"></script></body></html>`;
+  for (const name of ['app.html', 'index.html', 'wasm.html', 'card.interactive.html']) fs.writeFileSync(path.join(directory, name), html);
+  fs.writeFileSync(path.join(directory, 'card-web.js'), '// Ratzilla loader');
+  fs.writeFileSync(path.join(directory, 'card-web_bg.wasm'), Buffer.from([0, 97, 115, 109, 1, 0, 0, 0]));
   fs.writeFileSync(path.join(directory, 'theme.css'), 'body{}');
+  fs.writeFileSync(path.join(directory, 'card.vcf'), 'BEGIN:VCARD\r\nVERSION:4.0\r\nFN:Test\r\nEND:VCARD\r\n');
+  fs.writeFileSync(path.join(directory, 'RATZILLA-LICENSE-MIT'), 'Ratzilla license');
   fs.writeFileSync(path.join(directory, 'card.wasm'), Buffer.from([0, 97, 115, 109, 1, 0, 0, 0]));
 }
 function fixture() {
@@ -60,8 +62,14 @@ test('latest-commit sync builds once, preserves local source edits, and picks up
     assert.ok(fs.readFileSync(path.join(assets, 'app.html'), 'utf8').includes('one'));
     assert.equal(fs.readFileSync(path.join(f.source, 'version.txt'), 'utf8'), 'uncommitted work');
     const manifest = fs.readFileSync(path.join(assets, 'build.json'), 'utf8');
-    const second = await syncCard({ projectRoot: f.projectRoot, build });
+    let syncOutput = '';
+    const log = console.log;
+    console.log = value => { syncOutput += `${value}\n`; };
+    let second;
+    try { second = await syncCard({ projectRoot: f.projectRoot, build, quiet: true }); }
+    finally { console.log = log; }
     assert.equal(second.changed, false);
+    assert.equal(syncOutput, '', 'quiet sync emits no successful build details');
     assert.equal(builds, 1);
     assert.equal(fs.readFileSync(path.join(assets, 'build.json'), 'utf8'), manifest);
     fs.writeFileSync(path.join(f.source, 'version.txt'), 'two');
@@ -101,7 +109,13 @@ test('manual imports are idempotent and invalid browser files do not replace the
   try {
     const source = path.join(f.temp, 'browser-files'), destination = path.join(f.projectRoot, 'assets/card');
     browserFiles(source);
+    fs.appendFileSync(path.join(source, 'card.interactive.html'), '<script>const example = \'<img src="${image}">\';</script>');
     assert.equal(importCard(source, { destination }).changed, true);
+    assert.ok(fs.existsSync(path.join(destination, 'card.interactive.html')));
+    assert.ok(fs.existsSync(path.join(destination, 'card-web.js')));
+    assert.ok(fs.existsSync(path.join(destination, 'card-web_bg.wasm')));
+    assert.ok(fs.existsSync(path.join(destination, 'card.vcf')));
+    assert.ok(!fs.existsSync(path.join(destination, 'animation.json')));
     const manifest = fs.readFileSync(path.join(destination, 'build.json'), 'utf8');
     assert.equal(importCard(source, { destination }).changed, false);
     assert.equal(fs.readFileSync(path.join(destination, 'build.json'), 'utf8'), manifest);
@@ -130,7 +144,7 @@ test('card publishing commits only card assets and retries an already committed 
     fs.appendFileSync(path.join(directory, 'site/index.html'), 'Unpublished blog change');
     fs.writeFileSync(path.join(directory, 'notes.txt'), 'Unrelated staged work');
     git(directory, 'add', 'notes.txt');
-    publishCard(directory);
+    assert.equal(publishCard(directory), true);
     assert.equal(git(directory, 'show', '--format=', '--name-only', 'HEAD'), 'assets/card/app.html');
     assert.equal(git(directory, 'rev-parse', 'HEAD'), git(remote, 'rev-parse', 'refs/heads/main'));
     assert.ok(git(directory, 'status', '--porcelain').includes('site/index.html'));
@@ -138,10 +152,30 @@ test('card publishing commits only card assets and retries an already committed 
     fs.appendFileSync(path.join(directory, 'assets/card/theme.css'), '/* updated */');
     git(directory, 'add', 'assets/card/theme.css');
     git(directory, 'commit', '-m', 'Pending card update', '--', 'assets/card/theme.css');
-    publishCard(directory);
+    assert.equal(publishCard(directory), true);
     assert.equal(git(directory, 'rev-parse', 'HEAD'), git(remote, 'rev-parse', 'refs/heads/main'));
     const head = git(directory, 'rev-parse', 'HEAD');
-    publishCard(directory);
+    assert.equal(publishCard(directory), false);
     assert.equal(git(directory, 'rev-parse', 'HEAD'), head);
+    const publishOutput = execFileSync('pwsh', ['-NoProfile', '-File', path.join(directory, 'scripts/Publish-TilSite.ps1'), '-CardOnly'], { cwd: directory, encoding: 'utf8' }).trim();
+    assert.equal(publishOutput, 'https://groutoutlook.github.io/');
+    let quietOutput = '';
+    const log = console.log;
+    console.log = value => { quietOutput += `${value}\n`; };
+    try { publishCard(directory, { quiet: true }); }
+    finally { console.log = log; }
+    assert.equal(quietOutput, '', 'quiet card publish has no extra success logs');
+    // Publishing uses the current snapshot even when the card source is unavailable.
+    for (const script of ['sync-card.mjs', 'import-card.mjs', 'build-site.mjs']) {
+      fs.copyFileSync(path.join(root, 'scripts', script), path.join(directory, 'scripts', script));
+    }
+    fs.cpSync(path.join(root, 'assets/site'), path.join(directory, 'assets/site'), { recursive: true });
+    fs.unlinkSync(path.join(directory, 'card.config.json'));
+    fs.appendFileSync(path.join(directory, 'assets/card/theme.css'), '/* snapshot to publish */');
+    const cliOutput = execFileSync(process.execPath, [path.join(directory, 'scripts/sync-card.mjs'), '--publish', '--quiet'], { cwd: directory, encoding: 'utf8' }).trim();
+    assert.equal(cliOutput, 'https://groutoutlook.github.io/');
+    assert.equal(git(directory, 'show', '--format=', '--name-only', 'HEAD'), 'assets/card/theme.css');
+    assert.equal(git(directory, 'rev-parse', 'HEAD'), git(remote, 'rev-parse', 'refs/heads/main'));
+    assert.ok(!fs.existsSync(path.join(directory, '.cache/card')), 'publish never checks out or builds the card source');
   } finally { f.cleanup(); }
 });

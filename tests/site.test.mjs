@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 import vm from 'node:vm';
-import { assemble, normalizeBase, rewriteBlog, withFavicon } from '../scripts/build-site.mjs';
+import { assemble, normalizeBase, ogisImageUrl, rewriteBlog, withFavicon } from '../scripts/build-site.mjs';
 
 const sample = `<head><title>TILs - Page 1</title><link href="/style.css"></head><body>
 <nav><a class="top-link" href="/">All TILs</a></nav><h1>TILs</h1>
@@ -19,7 +19,22 @@ test('blog routes move together while external links and anchors stay intact', (
   for (const url of ['https://example.com/post/hello', '//example.com/', '/unrelated', '#topics']) assert.ok(html.includes(`"${url}"`), url);
   assert.ok(html.includes('<h1>Blog</h1>'));
   assert.ok(html.includes('<title>Blog - Page 1</title>'));
+  assert.ok(html.includes('property="og:image"'));
+  assert.ok(html.includes('template=gradient-forest-centered'));
+  assert.equal((html.match(/data-ogis-meta/g) || []).length, 9);
   assert.equal(rewriteBlog(html), html, 'rewriting is idempotent');
+});
+
+test('OGIS page images use decoded title/description and a configurable HTTP endpoint', () => {
+  const html = rewriteBlog('<html><head><title>TIL: Tom &amp; Jerry &#x1F436;</title><meta name="description" content="A &quot;useful&quot; note"></head><body></body></html>', '/personal/', 'https://ogis.example/images');
+  const content = html.match(/property="og:image" content="([^"]+)"/)[1].replaceAll('&amp;', '&');
+  const image = new URL(content);
+  assert.equal(image.origin, 'https://ogis.example');
+  assert.equal(image.pathname, '/images');
+  assert.equal(image.searchParams.get('template'), 'gradient-forest-centered');
+  assert.equal(image.searchParams.get('title'), 'TIL: Tom & Jerry 🐶');
+  assert.equal(image.searchParams.get('description'), 'A "useful" note');
+  assert.throws(() => ogisImageUrl('x', 'y', 'file:///tmp/image'), /HTTP or HTTPS/);
 });
 
 test('configured blog URLs and project-site base paths do not double prefix', () => {
@@ -51,9 +66,9 @@ test('assembled routes, feed, navigation and legacy redirects work at root and s
     fs.writeFileSync(path.join(blogSource, 'post/hello/index.html'), sample);
     fs.writeFileSync(path.join(blogSource, 'style.css'), 'body{}');
     fs.writeFileSync(path.join(blogSource, 'feed.rss'), '<rss><channel><link>/</link><item><link>/post/hello</link><guid isPermaLink="true">/post/hello</guid></item></channel></rss>');
-    fs.writeFileSync(path.join(cardSource, 'app.html'), '<head></head><main>Card</main><nav class="app-actions"></nav>');
-    fs.writeFileSync(path.join(cardSource, 'index.html'), '<head></head><div class="actions"></div>');
-    fs.writeFileSync(path.join(cardSource, 'wasm.html'), '<head></head><header></header>');
+    fs.writeFileSync(path.join(cardSource, 'app.html'), '<html><head></head><body><main>Card</main><nav class="app-actions"></nav></body></html>');
+    fs.writeFileSync(path.join(cardSource, 'index.html'), '<html><head></head><body><div class="actions"></div></body></html>');
+    fs.writeFileSync(path.join(cardSource, 'wasm.html'), '<html><head></head><body><header></header></body></html>');
     fs.writeFileSync(path.join(cardSource, 'card.wasm'), Buffer.from([0, 97, 115, 109, 1, 0, 0, 0]));
     for (const basePath of ['/', '/personal/']) {
       const output = path.join(temp, basePath === '/' ? 'root' : 'subpath');
@@ -67,8 +82,15 @@ test('assembled routes, feed, navigation and legacy redirects work at root and s
         assert.ok(html.includes(`href="${basePath}favicon.svg"`), file);
         assert.ok(html.includes(`href="${basePath}favicon.ico"`), file);
       }
+      const appHtml = fs.readFileSync(path.join(output, 'index.html'), 'utf8');
+      const siteNav = appHtml.indexOf('<nav class="site-links"');
+      assert.ok(siteNav >= 0 && siteNav < appHtml.indexOf('<main>'), 'site navigation stays outside the card');
+      assert.ok(siteNav < appHtml.indexOf('<nav class="app-actions"'), 'site navigation stays separate from card controls');
       assert.deepEqual([...fs.readFileSync(path.join(output, 'favicon.ico')).subarray(0, 6)], [0, 0, 1, 0, 3, 0]);
       assert.ok(fs.readFileSync(path.join(output, 'feed.rss'), 'utf8').includes(`<link>${basePath}blog/post/hello</link>`));
+      const postHtml = fs.readFileSync(path.join(output, 'blog/post/hello/index.html'), 'utf8');
+      assert.ok(postHtml.includes('property="og:image"'));
+      assert.ok(postHtml.includes(`${basePath}og/blog.png`));
       const script = fs.readFileSync(path.join(output, '404.html'), 'utf8').match(/<script>([\s\S]*?)<\/script>/)[1];
       let redirected;
       const location = { pathname: `${basePath}post/hello`, search: '?a=1', hash: '#section', replace: value => { redirected = value; } };

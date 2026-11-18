@@ -20,16 +20,25 @@ GitHub Pages runs the assembler before uploading `public/`.
 The shared green microchip favicon is in `assets/site/` and is added to the
 card, blog, map, and other browser views during assembly.
 
-`rlo` now checks the latest committed card on every run. When the daily blog
-publish is due, it runs `just pub`: sync the card, regenerate the blog, assemble
-the site, and commit/push the blog and card assets. If the blog was already
-published today, it runs `just card-publish`: sync and publish card changes
-without rebuilding the journals. `rlo -Force` still bypasses the daily blog
-check. An unchanged card commit does not trigger another card build or commit.
+`rlo` runs `just pub` for the daily blog publish and `just card-publish` on
+later runs that day. Both use the existing card snapshot; neither fetches the
+private card repo nor installs packages nor compiles Rust/WASM.
+`rlo -Force` still bypasses the daily blog check. Card updates are explicit:
+run `just card-import` to fetch/build/import, then `just card-publish` to
+publish the imported files.
+The card-only path keeps successful build details quiet and prints the site URI
+as its final line, including when there are no card changes.
+
+Verified 2026-11-11: `node --test tests/site.test.mjs tests/card.test.mjs`
+passed all eight tests, including publishing without card source configuration.
+`just assemble` generated `public/` with 14,636 blog pages. Publishing recipes
+were checked with `just --dry-run pub` and `just --dry-run card-publish`;
+no live publish was run. Explicit card imports still encounter the upstream
+packager's “Could not inline the interactive browser assets” template error.
 
 Card source and ref are configured in `card.config.json`. By default, syncing
 fetches the latest commit on the private repo's default branch. Push changes
-to the card repo, then run `rlo`; tags and GitHub Releases are not required.
+to the card repo, then run `just card-import`; tags and GitHub Releases are not required.
 Git uses your existing GitHub credentials. The private checkout, npm packages,
 and Rust build cache stay under ignored `.cache/card/`; only browser files
 are imported into `assets/card/` and published. Your working card repo is
@@ -64,7 +73,7 @@ only card assets, leaving pending blog edits for the daily publish.
 GitHub Pages consumes the checked-in browser files; it needs no private-repo
 token or source checkout. The optional `just card-release <tag>` recipe still
 accepts a `card-web.zip` from a GitHub Release if one exists; it is not used
-by `rlo` or `just card-import`.
+by normal publishing or `just card-import`.
 
 The **Package card browser snapshot** Actions workflow produces `card-web.zip`
 from the checked-in snapshot. It can be downloaded and imported elsewhere;
@@ -76,15 +85,62 @@ New-Item artifacts -ItemType Directory -Force
 Compress-Archive -Path assets/card/* -DestinationPath artifacts/card-web.zip -Force
 ```
 
-`just build` / `just rebuild` first import the latest committed card, then run
-Tiller against the configured journals and assemble the complete site. The
-import includes bundled fonts and their licenses. If an older `public/` has no
-build marker, it is preserved under `.cache/public-backup-*/public` before the
-new output is created. Unmarked custom output directories are still refused.
+`just build` / `just rebuild` run Tiller against the configured journals and
+assemble the complete site with the existing card snapshot. The snapshot
+includes the self-contained interactive HTML and matching multi-file browser
+host. If an older `public/` has no build marker, it is preserved under
+`.cache/public-backup-*/public` before the new output is created. Unmarked
+custom output directories are still refused.
 Tiller uses `/blog/` rather than overriding
 the base URL with `--dev`. Existing generated pages with root URLs are also
 supported, so assembling alone does not require a full journal rebuild.
 The blog header reads **Blog**, with Home and Map links on every entry.
+Open `/share-preview.html` after `just dev` to see the card's share image and
+download its vCard or JSContact. Paste a `/blog/post/.../` URL into that preview to inspect
+one blog entry. Open the downloaded `.vcf` in Contacts to review its fields.
+Edit the card project's `profile.toml` for identity, exact wording, links, and
+optional contact details. Rebuild with `just wasm-stage`, then import that
+local card project here. The generated `card.profile.json` supplies the blog
+intro and share-image text; do not edit the generated JSON.
+
+The card uses the **tcard** Rust library to serialize vCard 4.0. **JSContact**
+(RFC 9553) is a separate JSON export from the same TOML profile. Both downloads
+are available in Export and `/share-preview.html`; the latter also displays
+raw fields. The masked phone placeholder is omitted from contact exports.
+
+The card's Rust/WASM renderer prepares matching 1200×630 share images at build
+time. The assembler points crawlers at PNGs hosted on this website, avoiding an
+OGIS dependency for prepared images. **OGIS** remains a generic HTTP fallback
+when no prepared image exists, and is used by the PowerShell `ogp -Generate`
+command. `OGIS_BASE_URL` selects a hosted or local endpoint.
+
+Prepare the shared blog cover and selected post covers after card changes:
+
+```powershell
+node scripts/prepare-share-images.mjs post/gephi-open-graph-viz-platform
+just dev
+ogp http://127.0.0.1:1337/
+ogp http://127.0.0.1:1337/blog/ -PassThru
+```
+
+Preparation uses the owning card checkout (`CARD_PROJECT` overrides its path),
+reads the existing blog snapshot, and generates only the common cover plus
+explicitly named posts. It does not regenerate journals. Other blog pages keep
+their page metadata and use the common cover. The profile's exact wording is
+preserved; no handle is added as share-image branding.
+
+`ogp` is website-agnostic and displays images through `imgcat` by default.
+Use `-Browser`, `-OutFile preview.png`, or `-PassThru` for other outputs;
+`-Generate` explicitly requests OGIS even when a page already has an image.
+No public tunnel is needed for this local inspection. Social services need a
+published page and may cache old previews.
+
+`just dev` assembles image URLs for its localhost port. `just assemble` and
+publishing use the public domain by default; `SITE_URL` / `--site-url` override
+it for other hosts. Reassemble with the production URL before deployment.
+Desktop blog pages grow to about 63vw, capped at 1200px; mobile keeps its existing
+layout. The CSS lives in Tiller's `assets/static/style.css` and the checked-in
+`site/style.css` snapshot. Rebuild Tiller after changing its embedded CSS.
 Old `/post/`, `/category/`, `/subtag/`, and `/recent/` links redirect through
 the Pages 404 page, preserving query strings and anchors; the old root RSS
 URL continues to serve the feed. These HTML redirects require JavaScript.

@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const assetPattern = /^[\w.-]+\.(?:html|js|css|wasm|json|svg|png|gif)$/;
+const assetPattern = /^[\w.-]+\.(?:html|js|css|wasm|json|svg|png|gif|vcf)$/;
 const fontPattern = /^[\w.-]+\.(?:woff2?|ttf|otf|txt|md)$/;
 
 function assetFiles(directory) {
@@ -22,7 +22,7 @@ function assetFiles(directory) {
     if (entry.name === 'fonts') {
       if (!entry.isDirectory()) throw new Error('The fonts asset must be a real directory.');
       fonts('fonts');
-    } else if (entry.name !== 'build.json' && (assetPattern.test(entry.name) || entry.name === 'LICENSE')) {
+    } else if (entry.name !== 'build.json' && (assetPattern.test(entry.name) || entry.name === 'LICENSE' || entry.name === 'wterm.LICENSE' || entry.name.startsWith('RATZILLA-LICENSE-'))) {
       if (!entry.isFile()) throw new Error(`Unexpected card asset: ${entry.name}`);
       files.push(entry.name);
     }
@@ -33,7 +33,11 @@ function assetFiles(directory) {
 function validateReferences(directory, files) {
   for (const name of files.filter(name => /\.(?:html|css)$/.test(name))) {
     const content = fs.readFileSync(path.join(directory, name), 'utf8');
-    const urls = [...content.matchAll(/(?:src|href)="([^"#?]+)"/g), ...content.matchAll(/url\(\s*['"]?([^'"\s)]+)['"]?\s*\)/g)];
+    // Keep script opening tags (and their src), but ignore JavaScript strings.
+    const markup = name.endsWith('.html')
+      ? content.replace(/(<script\b[^>]*>)[\s\S]*?<\/script\s*>/gi, '$1</script>')
+      : content;
+    const urls = [...markup.matchAll(/(?:src|href)="([^"#?]+)"/g), ...markup.matchAll(/url\(\s*['"]?([^'"\s)]+)['"]?\s*\)/g)];
     for (const [, url] of urls) {
       if (/^(?:[a-z]+:|\/|#)/i.test(url)) continue;
       const target = path.resolve(path.dirname(path.join(directory, name)), url.split(/[?#]/)[0]);
@@ -50,12 +54,12 @@ export function assetFingerprint(directory) {
   return hash.digest('hex');
 }
 
-export function importCard(source, { destination = path.join(root, 'assets/card'), repository } = {}) {
+export function importCard(source, { destination = path.join(root, 'assets/card'), repository, quiet = false } = {}) {
   source = path.resolve(source);
   destination = path.resolve(destination);
   const dist = fs.existsSync(path.join(source, 'dist/card.wasm')) ? path.join(source, 'dist') : source;
   if (dist === path.resolve(destination)) throw new Error('Import source must be outside assets/card.');
-  for (const name of ['app.html', 'index.html', 'wasm.html', 'wasm.js', 'card.wasm', 'animation.json', 'theme.css']) {
+  for (const name of ['app.html', 'index.html', 'wasm.html', 'card.interactive.html', 'card.wasm', 'theme.css']) {
     if (!fs.statSync(path.join(dist, name), { throwIfNoEntry: false })?.isFile()) throw new Error(`Missing ${name} in ${dist}. Build the browser files first.`);
   }
   const wasm = fs.readFileSync(path.join(dist, 'card.wasm'));
@@ -88,7 +92,7 @@ export function importCard(source, { destination = path.join(root, 'assets/card'
     if (fs.existsSync(previousPath)) {
       const previous = JSON.parse(fs.readFileSync(previousPath, 'utf8'));
       if (Object.entries(manifest).every(([key, value]) => previous[key] === value) && assetFingerprint(destination) === contentSha256) {
-        console.log(`Card already up to date (${commit?.slice(0, 8) || 'same browser files'}).`);
+        if (!quiet) console.log(`Card already up to date (${commit?.slice(0, 8) || 'same browser files'}).`);
         return { changed: false, commit };
       }
     }
@@ -104,7 +108,7 @@ export function importCard(source, { destination = path.join(root, 'assets/card'
       else fs.unlinkSync(target);
     }
     fs.cpSync(staging, destination, { recursive: true });
-    console.log(`Imported ${allowed.length} card assets${commit ? ` from ${commit.slice(0, 8)}` : ''}${dirty ? ' (local changes included)' : ''}.`);
+    if (!quiet) console.log(`Imported ${allowed.length} card assets${commit ? ` from ${commit.slice(0, 8)}` : ''}${dirty ? ' (local changes included)' : ''}.`);
     return { changed: true, commit };
   } finally {
     if (path.dirname(staging) !== path.dirname(destination) || !path.basename(staging).startsWith('.card-import-')) throw new Error('Unsafe card staging directory.');

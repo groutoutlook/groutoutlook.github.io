@@ -19,10 +19,10 @@ _default:
 
 alias b := build
 alias rb := rebuild
-build: card-import
+build:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1"
 
-rebuild: card-import
+rebuild:
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Invoke-TilSite.ps1" -Force
 
 # Assemble the checked-in blog and card without reading the journals.
@@ -33,15 +33,16 @@ assemble:
 card-import source="":
     node "{{justfile_directory()}}/scripts/sync-card.mjs" "{{source}}"
 
-# Update and publish the card without rebuilding the journals.
+# Publish the current card snapshot without rebuilding the journals.
 card-publish:
-    node "{{justfile_directory()}}/scripts/sync-card.mjs" --publish
+    @node "{{justfile_directory()}}/scripts/sync-card.mjs" --publish --quiet
 
 # Download only final browser files from an authenticated private release.
 card-release tag="latest" repo="groutoutlook/card":
     node "{{justfile_directory()}}/scripts/import-card-release.mjs" "{{tag}}" "{{repo}}"
 
-dev port="1337": assemble
+dev port="1337":
+    node "{{justfile_directory()}}/scripts/build-site.mjs" --site-url "http://127.0.0.1:{{port}}/"
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Start-TilPreview.ps1" -Port {{port}}
 
 dev-stop port="1337":

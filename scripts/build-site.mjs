@@ -3,7 +3,11 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const intro = 'Notes on firmware, hardware, software, and things learned along the way.';
+export function readPublicProfile(filename = path.join(root, 'assets/card/card.profile.json')) {
+  return fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {};
+}
+const publicProfile = readPublicProfile();
+const profileIntro = profile => [profile.text?.quote, profile.text?.extra].filter(Boolean).join(' ');
 const legacyRoutes = ['category', 'subtag', 'post', 'recent'];
 
 export function normalizeBase(value = '/') {
@@ -19,7 +23,62 @@ export function withFavicon(html, base = '/') {
   return html.replace(/<\/head>/i, `${icons}\n</head>`);
 }
 
-export function rewriteBlog(html, base = '/') {
+function decodeHtmlText(value) {
+  const named = { amp: '&', apos: "'", gt: '>', lt: '<', quot: '"', nbsp: '\u00a0' };
+  return value.replace(/&(#x[\da-f]+|#\d+|[a-z]+);/gi, (match, entity) => {
+    if (entity[0] !== '#') return named[entity.toLowerCase()] ?? match;
+    const codepoint = entity[1].toLowerCase() === 'x'
+      ? Number.parseInt(entity.slice(2), 16)
+      : Number.parseInt(entity.slice(1), 10);
+    return Number.isInteger(codepoint) && codepoint > 0 && codepoint <= 0x10ffff
+      ? String.fromCodePoint(codepoint)
+      : match;
+  });
+}
+
+function escapeHtmlAttribute(value) {
+  return value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
+}
+
+export function ogisImageUrl(title, description, baseUrl = process.env.OGIS_BASE_URL || 'https://img.ogis.dev/') {
+  const endpoint = new URL(baseUrl);
+  if (!['http:', 'https:'].includes(endpoint.protocol)) throw new Error('OGIS_BASE_URL must use HTTP or HTTPS.');
+  endpoint.search = new URLSearchParams({
+    template: 'gradient-forest-centered',
+    title,
+    subtitle: 'Blog',
+    description,
+  }).toString();
+  return endpoint.toString();
+}
+
+export function pageMetadata(html, profile = publicProfile) {
+  const heading = html.match(/<h1\b[^>]*class=["']til-title["'][^>]*>([\s\S]*?)<\/h1>/i)?.[1]?.replace(/<[^>]*>/g, '');
+  const title = decodeHtmlText(heading || html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() || 'Blog');
+  const descriptionMatch = html.match(/<meta\b(?=[^>]*\bname=["']description["'])[^>]*\bcontent=["']([^"']*)["'][^>]*>/i);
+  const description = decodeHtmlText(descriptionMatch?.[1] || profileIntro(profile));
+  return { title, description, hasDescription: Boolean(descriptionMatch) };
+}
+
+function withOpenGraph(html, ogisBaseUrl, preparedImage, profile) {
+  if (html.includes('data-ogis-meta')) return html;
+  const { title, description, hasDescription } = pageMetadata(html, profile);
+  const image = escapeHtmlAttribute(preparedImage || ogisImageUrl(title, description, ogisBaseUrl));
+  const escapedTitle = escapeHtmlAttribute(title);
+  const escapedDescription = escapeHtmlAttribute(description);
+  const type = /class=["']til-content\b/i.test(html) ? 'article' : 'website';
+  const tags = `<meta property="og:type" content="${type}" data-ogis-meta>
+<meta property="og:site_name" content="${escapeHtmlAttribute(profile.sharing?.blog_title || 'Blog')}" data-ogis-meta>
+<meta property="og:title" content="${escapedTitle}" data-ogis-meta>
+<meta property="og:description" content="${escapedDescription}" data-ogis-meta>
+<meta property="og:image" content="${image}" data-ogis-meta>
+<meta property="og:image:width" content="1200" data-ogis-meta>
+<meta property="og:image:height" content="630" data-ogis-meta>
+<meta name="twitter:card" content="summary_large_image" data-ogis-meta>${hasDescription ? '' : `\n<meta name="description" content="${escapedDescription}" data-ogis-meta>`}`;
+  return html.replace(/<\/head>/i, `${tags}\n</head>`);
+}
+
+export function rewriteBlog(html, base = '/', ogisBaseUrl = process.env.OGIS_BASE_URL || publicProfile.sharing?.ogis_base_url || 'https://img.ogis.dev/', preparedImage, profile = publicProfile) {
   base = normalizeBase(base);
   const blog = `${base}blog/`;
   const owned = /^(?:category\/|subtag\/|post\/|recent\/|style\.css(?:[?#]|$)|syntect\.css(?:[?#]|$)|index\.js(?:[?#]|$)|feed\.rss(?:[?#]|$))/;
@@ -32,9 +91,10 @@ export function rewriteBlog(html, base = '/') {
   html = html.replace(/(<a\b[^>]*class="top-link"[^>]*>)All TILs<\/a>/g,
     `<a class="top-link" href="${base}">Home</a>$1Blog</a><a class="top-link" href="${base}map/">Map</a>`);
   html = html.replace(/(<a\b[^>]*class="top-link"[^>]*href=")[^"]*(">Home<\/a>)/g, `$1${base}$2`);
-  return withFavicon(html.replace(/<title>TILs - Page (\d+)<\/title>/, '<title>Blog - Page $1</title>')
+  html = html.replace(/<title>TILs - Page (\d+)<\/title>/, '<title>Blog - Page $1</title>')
     .replace('<h1>TILs</h1>', '<h1>Blog</h1>')
-    .replace('A small wall garden grown from the configured <code>jrnl</code> journals.', intro), base);
+    .replace('A small wall garden grown from the configured <code>jrnl</code> journals.', escapeHtmlAttribute(profileIntro(profile)));
+  return withFavicon(withOpenGraph(html, ogisBaseUrl, preparedImage, profile), base);
 }
 
 function page(title, body, base) {
@@ -66,8 +126,12 @@ export function prepareOutput(output, projectRoot = root) {
   fs.writeFileSync(marker, 'Generated by scripts/build-site.mjs\n');
 }
 
-export function assemble({ blogSource = path.join(root, 'site'), cardSource = path.join(root, 'assets/card'), output = path.join(root, 'public'), basePath = '/' } = {}) {
+export function assemble({ blogSource = path.join(root, 'site'), cardSource = path.join(root, 'assets/card'), output = path.join(root, 'public'), basePath = '/', ogisBaseUrl = process.env.OGIS_BASE_URL || 'https://img.ogis.dev/', siteUrl = process.env.SITE_URL || 'https://groutoutlook.github.io/', quiet = false } = {}) {
+  const profile = readPublicProfile(path.join(cardSource, 'card.profile.json'));
+  const intro = escapeHtmlAttribute(profileIntro(profile));
   const base = normalizeBase(basePath);
+  const site = new URL(base, siteUrl);
+  if (!['http:', 'https:'].includes(site.protocol)) throw new Error('SITE_URL must use HTTP or HTTPS.');
   for (const file of [path.join(blogSource, 'index.html'), path.join(cardSource, 'app.html'), path.join(cardSource, 'card.wasm')]) {
     if (!fs.existsSync(file)) throw new Error(`Missing ${file}. Import a card release and keep the generated site/ blog.`);
   }
@@ -79,24 +143,34 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
   }
   prepareOutput(output);
   fs.cpSync(cardSource, output, { recursive: true });
+  function cardMetadata(html, route = '') {
+    if (!fs.existsSync(path.join(cardSource, 'card.og.png')) || !html.includes('property="og:image"')) return html;
+    const image = escapeHtmlAttribute(new URL('card.og.png', site).href);
+    const url = escapeHtmlAttribute(new URL(route, site).href);
+    return html.replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${image}$2`)
+      .replace(/<\/head>/i, `<meta property="og:url" content="${url}"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="${escapeHtmlAttribute(profile.profile?.name || 'Card')}"><meta name="twitter:image" content="${image}">\n</head>`);
+  }
   for (const name of fs.readdirSync(cardSource).filter(name => name.endsWith('.html'))) {
-    fs.writeFileSync(path.join(output, name), withFavicon(fs.readFileSync(path.join(cardSource, name), 'utf8'), base));
+    fs.writeFileSync(path.join(output, name), withFavicon(cardMetadata(fs.readFileSync(path.join(cardSource, name), 'utf8'), name), base));
   }
   for (const name of ['favicon.svg', 'favicon.ico']) fs.copyFileSync(path.join(root, 'assets/site', name), path.join(output, name));
-  const links = `<a href="${base}blog/">Blog</a><a href="${base}map/">Map</a>`;
-  function navigation(html, mode) {
-    html = withFavicon(html, base);
-    html = html.replace('</head>', '<style>.app-actions{flex-wrap:wrap}.site-links{display:flex;flex-wrap:wrap;gap:8px}.site-links a{padding:6px 12px;border:1px solid var(--line);border-radius:6px}header .site-links{margin-left:auto}</style></head>');
-    if (mode === 'app') return html.replace(/(<nav class="app-actions"[^>]*>)/, `$1${links}`);
-    if (mode === 'wasm') return html.replace('</header>', `<nav class="site-links" aria-label="Site navigation"><a href="${base}">Home</a>${links}</nav></header>`);
-    return html.replace('<div class="actions">', `<nav class="site-links" aria-label="Site navigation"><a href="${base}">Home</a>${links}</nav><div class="actions">`);
+  fs.writeFileSync(path.join(output, 'share-preview.html'), withFavicon(fs.readFileSync(path.join(root, 'assets/site/share-preview.html'), 'utf8'), base));
+  const coversRoot = path.join(root, 'assets/site/og');
+  const covers = fs.existsSync(path.join(coversRoot, 'index.json'))
+    ? JSON.parse(fs.readFileSync(path.join(coversRoot, 'index.json'), 'utf8')) : {};
+  if (fs.existsSync(coversRoot)) fs.cpSync(coversRoot, path.join(output, 'og'), { recursive: true });
+  function navigation(html, home = false) {
+    html = withFavicon(cardMetadata(html, home ? 'wasm.html' : ''), base);
+    const links = `${home ? `<a href="${base}">Home</a>` : ''}<a href="${base}blog/">Blog</a><a href="${base}map/">Map</a>`;
+    html = html.replace('</head>', '<style>body>nav.site-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:16px;width:min(1440px,calc(100vw - 64px));margin:0 auto;color:var(--muted);font-size:13px}body>nav.site-links a{color:inherit;text-decoration:none}body>nav.site-links a:hover{color:var(--green)}body>nav.site-links a:focus-visible{outline:2px solid var(--green);outline-offset:5px}@media(max-width:760px){body>nav.site-links{width:calc(100vw - 24px)}}</style></head>');
+    return html.replace(/(<body\b[^>]*>)/i, `$1<nav class="site-links" aria-label="Site navigation">${links}</nav>`);
   }
-  const app = navigation(fs.readFileSync(path.join(cardSource, 'app.html'), 'utf8'), 'app');
+  const app = navigation(fs.readFileSync(path.join(cardSource, 'app.html'), 'utf8'));
   fs.writeFileSync(path.join(output, 'index.html'), app);
   fs.writeFileSync(path.join(output, 'app.html'), app);
-  for (const [filename, mode] of [['wasm.html', 'wasm'], ['index.html', 'preview']]) {
-    const html = navigation(fs.readFileSync(path.join(cardSource, filename), 'utf8'), mode);
-    fs.writeFileSync(path.join(output, mode === 'preview' ? 'preview.html' : filename), html);
+  for (const filename of ['wasm.html', 'index.html']) {
+    const html = navigation(fs.readFileSync(path.join(cardSource, filename), 'utf8'), true);
+    fs.writeFileSync(path.join(output, filename === 'index.html' ? 'preview.html' : filename), html);
   }
   fs.mkdirSync(path.join(output, 'preview'));
   fs.writeFileSync(path.join(output, 'preview/index.html'), page('Card preview', `<script>location.replace(${JSON.stringify(base + 'preview.html')}+location.search+location.hash)</script><p><a href="${base}preview.html">Open the card preview</a></p>`, base));
@@ -110,7 +184,8 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
       if (entry.isSymbolicLink()) throw new Error(`Unexpected symlink in generated blog: ${next}`);
       if (entry.isDirectory()) copyBlog(source, next);
       else if (entry.name.endsWith('.html')) {
-        fs.writeFileSync(destination, rewriteBlog(fs.readFileSync(source, 'utf8'), base));
+        const cover = covers[next.split(path.sep).join('/')] || covers['*'];
+        fs.writeFileSync(destination, rewriteBlog(fs.readFileSync(source, 'utf8'), base, ogisBaseUrl, cover ? new URL(`og/${cover}`, site).href : undefined, profile));
         pages++;
       } else if (entry.name === 'feed.rss') {
         const rss = fs.readFileSync(source, 'utf8').replace(/<(link|guid)([^>]*)>\/(?:blog\/)?([^<]*)<\/(?:link|guid)>/g, `<$1$2>${base}blog/$3</$1>`);
@@ -125,13 +200,13 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
   fs.writeFileSync(path.join(output, '404.html'), page('Page not found', `${redirect}<h1>Page not found</h1><p>The TILs now live under <a href="${base}blog/">Blog</a>. Visit the <a href="${base}map/">site map</a> to find your way.</p>`, base));
   if (fs.existsSync(path.join(output, 'blog/feed.rss'))) fs.copyFileSync(path.join(output, 'blog/feed.rss'), path.join(output, 'feed.rss'));
   fs.writeFileSync(path.join(output, '.nojekyll'), '');
-  console.log(`Assembled card + ${pages} blog pages + /map/ in ${output} (base ${base}).`);
+  if (!quiet) console.log(`Assembled card + ${pages} blog pages + /map/ in ${output} (base ${base}).`);
   return { output, pages };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   const args = process.argv.slice(2);
-  if (args.some((arg, index) => index % 2 === 0 && !['--base-path', '--outdir'].includes(arg)) || args.length % 2) throw new Error('Usage: node scripts/build-site.mjs [--base-path /] [--outdir public]');
+  if (args.some((arg, index) => index % 2 === 0 && !['--base-path', '--outdir', '--site-url'].includes(arg)) || args.length % 2) throw new Error('Usage: node scripts/build-site.mjs [--base-path /] [--outdir public] [--site-url https://example.org/]');
   const options = Object.fromEntries(Array.from({ length: args.length / 2 }, (_, index) => [args[index * 2], args[index * 2 + 1]]));
-  assemble({ basePath: options['--base-path'] || '/', output: options['--outdir'] || path.join(root, 'public') });
+  assemble({ basePath: options['--base-path'] || '/', output: options['--outdir'] || path.join(root, 'public'), siteUrl: options['--site-url'] || process.env.SITE_URL });
 }

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Share preview</title>
+<style>
+:root{color-scheme:dark;--bg:#10151d;--panel:#151c26;--text:#f5f9ff;--muted:#a7b6c8;--green:#84d884;--line:#283342;font:16px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--text)}
+*{box-sizing:border-box}body{max-width:1000px;margin:auto;padding:clamp(16px,4vw,40px)}a{color:var(--green)}nav{display:flex;gap:24px;flex-wrap:wrap}h1{margin-bottom:8px}p{color:var(--muted)}form{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}label{width:100%}input,button,.download{font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text)}input{flex:1;min-width:160px}button,.download{cursor:pointer}button:hover,.download:hover{border-color:var(--green)}:focus-visible{outline:2px solid var(--green);outline-offset:3px}.share{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.share img{display:block;width:100%;aspect-ratio:1200/630;object-fit:contain;background:var(--bg)}.caption{padding:20px}.caption h2{margin:0}.caption p{margin-bottom:0}.contact{margin-top:32px;padding:20px;border:1px solid var(--line);border-radius:12px}.download{display:inline-block;text-decoration:none}pre{white-space:pre-wrap;overflow-wrap:anywhere;color:var(--muted);font:14px/1.6 ui-monospace,monospace}#status{min-height:1.5em}small{color:var(--muted)}
+</style>
+</head>
+<body>
+<nav aria-label="Site navigation"><a href="./">Card</a><a href="blog/">Blog</a><a href="map/">Map</a></nav>
+<h1>Share preview</h1>
+<p>See the image, title, and description a page provides when its link is shared. Paste a card or blog page URL below.</p>
+<form id="preview-form"><label for="page-url">Page URL or path</label><input id="page-url" name="page" value="./" required><button>Preview</button></form>
+<nav aria-label="Preview examples"><a href="?page=./">Card preview</a><a href="?page=blog/">Blog preview</a></nav>
+<p id="status" role="status" aria-live="polite"></p>
+<article class="share" id="share" hidden>
+<a id="image-link" target="_blank" rel="noopener"><img id="image" alt="Page share image"></a>
+<div class="caption"><small id="page-host"></small><h2 id="title"></h2><p id="description"></p><p><a id="open-page">Open page</a> · <a id="open-image" target="_blank" rel="noopener">Open full image</a></p></div>
+</article>
+<section class="contact"><h2>Contact card</h2><p>Open the vCard in your Contacts app to review it before saving, or download JSContact JSON.</p><a class="download" href="card.vcf" download>Download vCard</a> <a class="download" href="card.jscontact.json" download>Download JSContact</a><details><summary>View vCard fields</summary><pre id="vcard">Loading contact card…</pre></details><details><summary>View JSContact fields</summary><pre id="jscontact">Loading JSContact…</pre></details></section>
+<script>
+const form = document.querySelector('#preview-form'), input = document.querySelector('#page-url');
+const status = document.querySelector('#status'), image = document.querySelector('#image');
+const base = new URL('./', location.href);
+const text = (id, value) => { document.getElementById(id).textContent = value; };
+async function preview(value) {
+  status.textContent = 'Loading page…';
+  document.querySelector('#share').hidden = true;
+  try {
+    const url = new URL(value, base);
+    if (url.origin !== base.origin || !url.pathname.startsWith(base.pathname)) throw new Error('Choose a page on this site.');
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Page returned HTTP ${response.status}.`);
+    const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const meta = key => doc.querySelector(`meta[property="${key}"]`)?.content;
+    const src = meta('og:image');
+    if (!src) throw new Error('This page has no Open Graph image yet.');
+    const imageUrl = new URL(src, url);
+    if (!['https:', 'http:'].includes(imageUrl.protocol)) throw new Error('Image must use HTTP or HTTPS.');
+    text('title', meta('og:title') || doc.title);
+    text('description', meta('og:description') || '');
+    text('page-host', url.host + url.pathname);
+    document.querySelector('#open-page').href = url;
+    for (const id of ['image-link', 'open-image']) document.getElementById(id).href = imageUrl;
+    image.onload = () => { status.textContent = `Image loaded: ${image.naturalWidth} × ${image.naturalHeight}. Sharing services may cache an older preview.`; };
+    image.onerror = () => { status.textContent = 'The share image could not load. Open the full image link to check the image service.'; };
+    status.textContent = 'Loading share image…';
+    image.src = imageUrl;
+    document.querySelector('#share').hidden = false;
+    history.replaceState(null, '', `?${new URLSearchParams({page: value})}`);
+  } catch (error) { status.textContent = error.message; }
+}
+form.addEventListener('submit', event => { event.preventDefault(); preview(input.value); });
+input.value = new URLSearchParams(location.search).get('page') || './';
+preview(input.value);
+for (const [id, filename] of [['vcard', 'card.vcf'], ['jscontact', 'card.jscontact.json']]) fetch(new URL(filename, base)).then(async response => {
+  if (!response.ok) throw new Error(`Contact card returned HTTP ${response.status}.`);
+  text(id, await response.text());
+}).catch(error => text(id, error.message));
+</script>
+</body>
+</html>
