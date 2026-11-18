@@ -1,0 +1,31 @@
+{
+  "profile": {
+    "uid": "urn:uuid:70972849-495c-48b4-9783-16976edfa5af",
+    "name": "Meog",
+    "handle": "meogauchip_0",
+    "title": "Embedded Firmware Engineer + PCB Designer",
+    "company": "RelightTL"
+  },
+  "text": {
+    "quote": "I write software and write hardware, yeah, write.",
+    "extra": "Sometimes fun TUI/CLI things like this!",
+    "detail": "Hope to do more connectivity-related demo tho",
+    "learn_more": "Learn more:"
+  },
+  "links": [
+    {
+      "label": "Email",
+      "url": "mailto:tdtd@duck.com"
+    }
+  ],
+  "contact": {
+    "phone": "**********",
+    "website": "",
+    "social_profiles": [],
+    "photo_url": ""
+  },
+  "sharing": {
+    "blog_title": "Blog",
+    "ogis_base_url": "https://img.ogis.dev/"
+  }
+}

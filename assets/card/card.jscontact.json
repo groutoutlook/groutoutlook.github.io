@@ -1,0 +1,31 @@
+{
+  "@type": "Card",
+  "emails": {
+    "email0": {
+      "address": "tdtd@duck.com",
+      "label": "Email"
+    }
+  },
+  "kind": "individual",
+  "name": {
+    "full": "Meog"
+  },
+  "notes": {
+    "intro": {
+      "note": "I write software and write hardware, yeah, write. Sometimes fun TUI/CLI things like this!"
+    }
+  },
+  "organizations": {
+    "work": {
+      "name": "RelightTL"
+    }
+  },
+  "titles": {
+    "role": {
+      "name": "Embedded Firmware Engineer + PCB Designer",
+      "organizationId": "work"
+    }
+  },
+  "uid": "urn:uuid:70972849-495c-48b4-9783-16976edfa5af",
+  "version": "1.0"
+}
