@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`OpenDeck` software for Stream Deck with support for original Elgato Stream Deck plugins</title><category>firmware</category><category>hard</category><category>linux</category><category>software</category><pubDate>2026-11-18 11:26:25 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`astro` web framework for content-driven websites</title><category>ssg</category><category>typescript</category><category>wprog</category><pubDate>2026-11-18 02:36:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/withastro/astro"><code>astro</code> web framework for content-driven websites</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> wordpress alternative.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://jeamland.net/">Benno Rice</a> through his github. he was OpenBSD maintainer.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>Update 2025-05 : <a href="https://lobste.rs/s/tjbgo2/hyper_typing">Hyper-Typing</a></li>
+<li>#frontend : <a href="https://github.com/withastro/starlight">withastro/starlight:  Build beautiful, accessible, high-performance documentation websites with Astro</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/facebook/docusaurus"><code>docusaurus</code> documentation websites.</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 11 19:37:41 2026] <a href="https://eaj.no/posts/open-graph-images-with-typst/">Open Graph images with Astro and Typst · Erik André Jakobsen</a>
+<ul>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/twangodev/ogis"><code>ogis</code> High performance open graph image generation</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #social/media <a href="https://ogp.me/">Open Graph protocol</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/pimalaya/tcard"><code>tcard</code> Edit and merge vCards as ergonomic TOML</a>
+<ul>
+<li><a href="https://github.com/lucc/khard"><code>khard</code> Console vcard client</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 14:36:18 2026] <a href="https://www.rfc-editor.org/info/rfc9982/">RFC 9982: <code>JSContact</code> Version 2.0: A JSON Representation of Contact Data | RFC Editor</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`OpenDeck` software for Stream Deck with support for original Elgato Stream Deck plugins</title><category>firmware</category><category>hard</category><category>linux</category><category>software</category><pubDate>2026-11-18 11:26:25 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/nekename/OpenDeck"><code>OpenDeck</code> software for Stream Deck with support for original Elgato Stream Deck plugins</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -331,19 +361,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Strait of Hormuz</title><category>geography</category><category>media</category><category>politic</category><pubDate>2026-11-16 01:06:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Strait_of_Hormuz">Strait of Hormuz</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/vozforums/comments/1rplkt4">Thông tin chính thức từ Iran</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #discussion <a href="https://news.ycombinator.com/item?id=47475686">Hormuz Minesweeper – Are you tired of winning?</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 16 01:06:27 2026] <a href="https://news.ycombinator.com/item?id=50443331">A rare glimpse inside the high-risk, high-reward Hormuz trade</a></li>
 </ul>
 </li>
 </ul>
