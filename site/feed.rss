@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`gltf` runtime 3d asset delivery</title><category>graphic</category><category>prog</category><category>vulkan</category><category>webgl</category><pubDate>2026-11-18 08:24:01 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>SocketCAN</title><category>can</category><category>linux</category><category>proto</category><category>usb</category><pubDate>2026-11-18 09:58:28 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/SocketCAN">SocketCAN</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.mbedded.ninja/programming/operating-systems/linux/how-to-use-socketcan-with-the-command-line-in-linux/">How To Use SocketCAN With The Command-Line In Linux | mbedded.ninja</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>BufWriter in std::io - Rust</title><category>buffer</category><category>container</category><category>lang</category><category>rust</category><pubDate>2026-11-18 08:26:10 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://doc.rust-lang.org/std/io/struct.BufWriter.html">BufWriter in std::io - Rust</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  Wraps a writer and buffers its output. as writing in batch.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`gltf` runtime 3d asset delivery</title><category>graphic</category><category>prog</category><category>vulkan</category><category>webgl</category><pubDate>2026-11-18 08:24:01 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/khronosgroup/gltf?#for-developers"><code>gltf</code> runtime 3d asset delivery</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gltf</code> specs with various reading resources and related projects.</li>
@@ -296,31 +320,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Let Me Let You Own Your Data</title><category>blog</category><category>host/self</category><category>infosec</category><category>server</category><pubDate>2026-11-15 05:35:40 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/fllb0m/let_me_let_you_own_your_data">Let Me Let You Own Your Data</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`t` language for string, replacing common usage patterns of Unix: grep, sed, cut, awk, sort, uniq</title><category>cli</category><category>rust</category><category>string</category><pubDate>2026-11-15 05:15:17 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/alecthomas/t"><code>t</code> language for string, replacing common usage patterns of Unix: grep, sed, cut, awk, sort, uniq</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/rjw7zn/t_concise_language_for_manipulating_text">lobster discussion</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov 15 17:15:17 2026] no, you really dont need this thing. the guy is on LLM-coke.</li>
 </ul>
 </li>
 </ul>
