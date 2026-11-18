@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/groutoutlook/card",
-  "commit": "cdc8876d794c6808540ede29e013725ebf5581f6",
-  "dirty": false,
-  "wasmSha256": "ea55fcb7c79a12335b019e54e6007268c6d255a0cbd8919af314611823f47d00",
-  "contentSha256": "498be122afdef88dd9cf1d0a7a0839865e8d2b0c821c1de804e3da0dd4598a07",
-  "importedAt": "2026-11-18T06:21:02.934Z"
+  "commit": "bac8ac1ac5eb8cbe7e9aed27541266eece1f2a30",
+  "dirty": true,
+  "wasmSha256": "e470b4c9a9e1555f40761fd6513096eb375502d944790e9b6349392facef21b0",
+  "contentSha256": "4c87d598e8d23685123ea34cc97e1e361754e74d00a45449d15ed815149d592c",
+  "importedAt": "2026-11-18T07:28:24.798Z"
 }
