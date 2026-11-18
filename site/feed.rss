@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>collaboration-mode-templates/templates/plan.md at main · openai/codex</title><category>codex</category><category>harness</category><category>mcp</category><category>plan</category><category>swt</category><pubDate>2026-11-17 10:07:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`gltf` runtime 3d asset delivery</title><category>graphic</category><category>prog</category><category>vulkan</category><category>webgl</category><pubDate>2026-11-18 08:24:01 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/khronosgroup/gltf?#for-developers"><code>gltf</code> runtime 3d asset delivery</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gltf</code> specs with various reading resources and related projects.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->  #typescript <a href="https://gltf-transform.dev/">gltf transform</a>
+<ul>
+<li>#javascript #web/react  <a href="https://github.com/pmndrs/gltfjsx"><code>gltfjsx</code> turns gltfs into jsx components</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 08:24:01 2026] <a href="https://github.com/KhronosGroup/glTF-Sample-Assets">glTF-Sample-Assets: assortment of assets that demonstrate features and capabilities of the glTF format</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>c4 models as code - simon brown - ndc porto 2023</title><category>format/uml</category><category>prog</category><category>video</category><pubDate>2026-11-17 10:15:55 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://youtu.be/4HEd1EEQLR0">c4 models as code - simon brown - ndc porto 2023</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/c4_model">c4 model - wikipedia</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#web : <a href="https://c4model.com/">the c4 model for visualising software architecture</a></li>
+<li>#plugin: <a href="https://github.com/plantuml-stdlib/c4-plantuml">c4-plantuml combines the benefits of plantuml and the c4 model for providing a simple way of describing and communicate software architectures</a></li>
+<li>#vscode/plugin: <a href="https://gitlab.com/systemticks/c4-grammar">c4-grammar · gitlab</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [Fri Sep 25 15:57:19 2026] <a href="https://github.com/likec4/likec4"><code>likec4</code>: Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49833867">Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 22:15:55 2026] <a href="https://github.com/likec4/likec4">likec4/likec4: Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>2</title><category>swt</category><pubDate>2026-11-17 10:12:07 PM</pubDate><content:encoded><![CDATA[]]></content:encoded></item><item><title>collaboration-mode-templates/templates/plan.md at main · openai/codex</title><category>codex</category><category>harness</category><category>mcp</category><category>plan</category><category>swt</category><pubDate>2026-11-17 10:07:08 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/openai/codex/blob/main/codex-rs/collaboration-mode-templates/templates/plan.md">collaboration-mode-templates/templates/plan.md at main · openai/codex</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -283,57 +321,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/rjw7zn/t_concise_language_for_manipulating_text">lobster discussion</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov 15 17:15:17 2026] no, you really dont need this thing. the guy is on LLM-coke.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`healthchecks-rs` Simple Rust library to interact with healthchecks.io + `hcctl`</title><category>backend</category><category>cli</category><category>library/rust</category><category>management</category><category>uptime</category><pubDate>2026-11-15 03:12:03 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/msfjarvis/healthchecks-rs"><code>healthchecks-rs</code> Simple Rust library to interact with healthchecks.io + <code>hcctl</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Any way to increase the context window? - Codex - OpenAI Developer Community</title><category>codex</category><category>config</category><category>harness</category><category>swt</category><pubDate>2026-11-15 12:05:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://community.openai.com/t/any-way-to-increase-the-context-window/1385212/7">Any way to increase the context window? - Codex - OpenAI Developer Community</a>
-<ul>
-<li>
-<p><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is.</p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></p>
-<pre class="syntax-highlighting"><code class="language-toml"><span class="text plain">model_context_window = 272000
-model_auto_compact_token_limit = 262144 # 2^18.
-</span></code></pre>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></p>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>2^18 == 262144. IT&apos;s the typical storage limit of I2C EEPROM chip.</title><category>numeric</category><category>quick/math</category><category>shape</category><pubDate>2026-11-15 12:03:14 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>2^18 == 262144. IT's the typical storage limit of I2C EEPROM chip.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
