@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>What is the flat thing and why is it there - weird toilet.</title><category>bathroom</category><category>eu</category><category>society</category><pubDate>2026-11-18 03:12:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>sarasa Gothic mono as multilingual Iosevka</title><category>file</category><category>typeface</category><category>typesetting</category><pubDate>2026-11-18 07:19:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/picaq/picaq.github.io/tree/master/sarasa">sarasa Gothic mono as multilingual Iosevka</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> okay we have iosevka but CJK and vietnamese now.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/de02yg/sarasa_gothic_mono">Sarasa Gothic Mono</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>difference between installing proxmox directly vs installing on top of Debian 11 server</title><category>backend</category><category>host/self</category><category>linux</category><pubDate>2026-11-18 07:03:11 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/Proxmox/comments/1034ore">difference between installing proxmox directly vs installing on top of Debian 11 server</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Proxmox come with OOTB ZFS.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>proxmox</code> is glorified Debian + a <code>pct</code>.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/tom-sapletta-com/proxmox-pfsense-OpenWrt-TrueNas"><code>proxmox</code> install pfsense, OpenWrt, TrueNAS</a>
+<ul>
+<li>self host final boss.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://thelastguardian.me/posts/2020-01-10-kubernetes-in-lxc-on-proxmox/">Kubernetes in LXC on Proxmox</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 19:03:11 2026] <a href="https://sh.reddit.com/r/selfhosted/comments/1twqdd1">Appreciation for Forgejo, my best self-hosted tool in 2026</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym PBS: Proxmox Backup Server.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What is the flat thing and why is it there - weird toilet.</title><category>bathroom</category><category>eu</category><category>society</category><pubDate>2026-11-18 03:12:31 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.reddit.com/r/whatisit/comments/1xxs5tv">What is the flat thing and why is it there - weird toilet.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -312,55 +345,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`trivy` Find vulnerabilities, misconfigurations, secrets, SBOM in containers, K8s, code repositories, clouds and more</title><category>backend</category><category>cicd</category><category>sdk</category><category>sysadmin</category><category>wprog</category><pubDate>2026-11-17 12:04:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/aquasecurity/trivy"><code>trivy</code> Find vulnerabilities, misconfigurations, secrets, SBOM in containers, K8s, code repositories, clouds and more</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #infosec <a href="https://www.reddit.com/r/selfhosted/comments/1w3bu10">How seriously do you take the security of your self-hosted apps?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/zaproxy/zaproxy"><code>zaproxy</code> ZAP by Checkmarx Core project</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #cli <a href="https://github.com/anchore/syft"><code>syft</code> CLI tool and library for generating a Software Bill of Materials from container images and filesystems</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-05-27 04:19:06 PM] #cli #utils #management <a href="https://github.com/microsoft/sbom-tool"><code>sbom-tool</code> highly scalable and enterprise ready tool to create spdx 2.2 compatible sboms for any variety of artifacts.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in scoop</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/">Malware Peddlers Are Now Hijacking Snap Publisher Domains - Alan Pope's blog</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/psastras/sbom-rs"><code>sbom-rs</code> group of Rust projects for interacting with and producing software bill of materials (SBOMs).</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 12:04:54 2026] <a href="https://github.com/CycloneDX">CycloneDX BOM Standard</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>OpenStreetMap</title><category>global</category><category>map</category><category>service</category><category>web</category><pubDate>2026-11-16 02:26:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.openstreetmap.org">OpenStreetMap</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> very nice #web/ui, you can select other option than the first match much faster by the side pane.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://engineering.stackexchange.com/questions/19758/transmitting-power-over-long-distances-what-is-better-ac-or-dc">Transmitting power over long distances what is better AC or DC?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://map.publicgis.com/#2.86/39.5/-98.5">PublicGIS ◦ Property and parcel map</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50095353">We’re releasing Jev 1.14.0 along with experimental features for dreamers</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 16 14:26:43 2026] <a href="https://news.ycombinator.com/item?id=50509837">Protomaps: Self-hosting map tiles has gotten cheap and easy</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> OpenFreeMap or something</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
