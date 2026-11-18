@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>sarasa Gothic mono as multilingual Iosevka</title><category>file</category><category>typeface</category><category>typesetting</category><pubDate>2026-11-18 07:19:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`valkey` flexible distributed key-value datastore that is optimized for caching and other realtime workloads.</title><category>backend</category><category>database</category><category>wprog</category><pubDate>2026-11-18 07:20:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/valkey-io/valkey"><code>valkey</code> flexible distributed key-value datastore that is optimized for caching and other realtime workloads.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> successor of Redis, since Redis change to close source.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50389333">Blender's UI and Runtime: Much Faster Than GPUI</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#gui <a href="https://github.com/vicanso/zedis"><code>Zedis</code> native <code>Redis</code> GUI built with Rust and GPUI.</a>
+<ul>
+<li><a href="https://github.com/gpui-ce/gpui-ce">gpui-ce: <code>GPUI</code> – Community Edition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=39915473">Redict 7.3.0, a copyleft fork of Redis, is now available</a>
+<ul>
+<li>quite dead actually.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 19:20:23 2026] <em>DEAD</em> <a href="https://lobste.rs/s/z4rhlt/redict_is_deprecated">Redict is deprecated</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>sarasa Gothic mono as multilingual Iosevka</title><category>file</category><category>typeface</category><category>typesetting</category><pubDate>2026-11-18 07:19:13 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/picaq/picaq.github.io/tree/master/sarasa">sarasa Gothic mono as multilingual Iosevka</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -107,7 +132,12 @@
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: well just write it instead of markdown. Much more consistent syntax.</li>
+<li>Con: no support from my <code>$EDITOR</code> <a href="https://github.com/helix-editor/helix/issues/6781">Add syntax highlighting for <code>asciidoc</code></a></li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Jetplugins/adoc-engine"><code>adoc-engine</code> Fast native AsciiDoc engine: HTML, PDF, EPUB, SVG, CLI and language server</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
@@ -326,18 +356,6 @@
 </ul>
 ]]></content:encoded></item><item><title>`Gitloque` commit replay tool for the terminal, turning your Git history into a living, animated story.</title><category>cli</category><category>rust</category><category>visualization</category><pubDate>2026-11-17 03:11:11 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/unhappychoice/gitlogue"><code>Gitloque</code> commit replay tool for the terminal, turning your Git history into a living, animated story.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`mxc` Policy-driven, layered isolation and containment</title><category>container</category><category>infosec</category><category>os</category><category>sandbox</category><category>windows</category><pubDate>2026-11-17 12:11:15 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/microsoft/mxc"><code>mxc</code> Policy-driven, layered isolation and containment</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
