@@ -232,7 +232,11 @@ adb forward tcp:8022 tcp:8022 &amp;&amp; ssh localhost -p8022 # you may want to 
 </ul>
 </li>
 <li>#rust #library <a href="https://github.com/hoodie/icalendar"><code>icalendar</code> library, in Rust of course - for fun</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 10:39:29 2026] <a href="https://github.com/pimalaya/calendula"><code>calendula</code>: CLI to manage calendars</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 10:39:29 2026] <a href="https://github.com/pimalaya/calendula"><code>calendula</code>: CLI to manage calendars</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #cli <a href="https://github.com/pimalaya/tcal"><code>tcal</code> Edit and merge iCalendars as ergonomic TOML - <strong>NOT CalDAV</strong> which is the better one</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
