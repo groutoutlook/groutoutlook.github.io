@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`valkey` flexible distributed key-value datastore that is optimized for caching and other realtime workloads.</title><category>backend</category><category>database</category><category>wprog</category><pubDate>2026-11-18 07:20:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Starter Apps | Google AI Studio</title><category>AI</category><category>web</category><pubDate>2026-11-19 02:35:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://aistudio.google.com/prompts/new_chat">Starter Apps | Google AI Studio</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> It's now free for many tiers.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> eh...</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=43720845">Gemini 2.5 Flash</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50073879">Gemini 4 Argon</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 14:35:15 2026] <a href="https://news.ycombinator.com/item?id=50552424">Gemini 4 Neon</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`valkey` flexible distributed key-value datastore that is optimized for caching and other realtime workloads.</title><category>backend</category><category>database</category><category>wprog</category><pubDate>2026-11-18 07:20:23 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/valkey-io/valkey"><code>valkey</code> flexible distributed key-value datastore that is optimized for caching and other realtime workloads.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> successor of Redis, since Redis change to close source.</li>
@@ -351,18 +364,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in <code>scoop</code></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Gitloque` commit replay tool for the terminal, turning your Git history into a living, animated story.</title><category>cli</category><category>rust</category><category>visualization</category><pubDate>2026-11-17 03:11:11 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/unhappychoice/gitlogue"><code>Gitloque</code> commit replay tool for the terminal, turning your Git history into a living, animated story.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
