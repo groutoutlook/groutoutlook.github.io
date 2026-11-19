@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`bikeshed` word pre-processor specifications converts source files into actual specs.</title><category>documentation</category><category>format/html</category><category>wprog</category><pubDate>2026-11-19 05:05:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`meson-with-vcpkg` Make vcpkg packages available from meson</title><category>buildsystem</category><category>cmake</category><category>libman/meson</category><category>libman/vcpkg</category><pubDate>2026-11-19 10:55:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/gh0st-work/meson-with-vcpkg"><code>meson-with-vcpkg</code> Make vcpkg packages available from meson</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #build/xmake <a href="https://github.com/xmake-io/xmake/wiki/C-and-Cplusplus-build-system,-I-use-xmake#meson-and-vcpkg">C and C++ build system, <code>xmake</code> Wiki</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #vocabulary ecology is current biome/biosphere, or a broader meaning, status quo of current development, environment.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 22:55:19 2026] <a href="https://www.opensourceecology.org/">Home | Open Source Ecology</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Post Apocalyptic Computing</title><category>blog</category><category>compsci</category><pubDate>2026-11-19 10:51:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/avwtt3/post_apocalyptic_computing">Post Apocalyptic Computing</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Collapse computing as the technical term.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://kiwix.org/">Offline Wikipedia and Educational Content with Kiwix</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 22:51:10 2026] <a href="https://news.ycombinator.com/item?id=50560822">Everything you need to survive and rebuild society</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>competition is for loser</title><category>business</category><category>other</category><pubDate>2026-11-19 05:22:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://youtu.be/5_0dVHMpJlo">competition is for loser</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> According to the like of Sam Altman and Peter Thiel, go monopoly.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Monopoly">Monopoly</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Oligopoly">Triopoly is the Oligopoly of 3 seller in a general field</a> and duopoly.
+<ul>
+<li>#news <a href="https://rdrama.net/h/slackernews/post/811079">Sam Cuckman is such a little cute twink that he created an Internal Company mechanism, so that his own fricking CFO (chief financial officer) Sarah Friar, cannot report directly to him and has to instead fricking report to an intermediary yesman :marseytrollcrazy: :marseytrollcrazy: :marseytrollcrazy: because she keeps giving pushback and concerns about going on burgerland stock exchange IPO - she fears that when SEC investigates with internal auditing will be so shit that stock collapse day1</a>
+<ul>
+<li>it's just so hillarious this fucking community.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:22:47 2026] <a href="https://wikipedia.org/wiki/Collusion">Collusion</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Everything I Wrote – journal.stuffwithstuff.com</title><category>blog</category><category>prog</category><pubDate>2026-11-19 05:19:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://journal.stuffwithstuff.com/archive/">Everything I Wrote – journal.stuffwithstuff.com</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a MacOS dev.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`hwinfo` cross platform C++ library for hardware information (CPU, RAM, GPU, ...)</title><category>api</category><category>arch</category><category>cpp</category><category>cpu</category><pubDate>2026-11-19 05:17:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/lfreist/hwinfo"><code>hwinfo</code> cross platform C++ library for hardware information (CPU, RAM, GPU, ...)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>hwinfo/hwinfo.h<span class="punctuation definition string end c++">&gt;</span></span>;auto cpus = hwinfo::cpus();  <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> hwinfo::result&lt;std::vector&lt;hwinfo::Cpu&gt;&gt;, i.e. std::expected&lt;..., hwinfo::error&gt;</span>
+</span></span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ThePhD/infoware"><code>infoware</code> C++ Library for pulling system and hardware information, without hitting the command line.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`bikeshed` word pre-processor specifications converts source files into actual specs.</title><category>documentation</category><category>format/html</category><category>wprog</category><pubDate>2026-11-19 05:05:54 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/speced/bikeshed"><code>bikeshed</code> word pre-processor specifications converts source files into actual specs.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Look at the <code>.bs</code> file...</li>
@@ -15,7 +89,7 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #std/doc: <a href="https://speced.github.io/bikeshed/#installing">Bikeshed Documentation</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:05:54 2026] <a href="https://thephd.dev/_vendor/future_cxx/papers/d1040.html">P1040R11: std::embed</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:05:54 2026] <a href="https://thephd.dev/_vendor/future_cxx/papers/d1040.html">P1040R11: <code>std::embed</code></a></li>
 </ul>
 </li>
 </ul>
@@ -243,96 +317,6 @@ adb forward tcp:8022 tcp:8022 &amp;&amp; ssh localhost -p8022 # you may want to 
 </li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Jetplugins/adoc-engine"><code>adoc-engine</code> Fast native AsciiDoc engine: HTML, PDF, EPUB, SVG, CLI and language server</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`khal`: :calendar: CLI calendar application</title><category>cli</category><category>python</category><category>time</category><pubDate>2026-11-18 10:39:29 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/pimutils/khal"><code>khal</code>: :calendar: CLI calendar application</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>cal(1)</code>.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://datatracker.ietf.org/doc/html/rfc5545">RFC 5545 - Internet Calendaring and Scheduling Core Object Specification (iCalendar)</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/b1rger/carl"><code>carl</code> calendar for the commandline</a>
-<ul>
-<li>#nightly, and I shimmed it to <code>calendar</code> as well.</li>
-</ul>
-</li>
-<li>#rust #library <a href="https://github.com/hoodie/icalendar"><code>icalendar</code> library, in Rust of course - for fun</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 10:39:29 2026] <a href="https://github.com/pimalaya/calendula"><code>calendula</code>: CLI to manage calendars</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #cli <a href="https://github.com/pimalaya/tcal"><code>tcal</code> Edit and merge iCalendars as ergonomic TOML - <strong>NOT CalDAV</strong> which is the better one</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`himalaya` CLI to manage emails</title><category>cli</category><category>crossplatform</category><category>email</category><category>rust</category><pubDate>2026-11-18 10:27:48 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/pimalaya/himalaya"><code>himalaya</code> CLI to manage emails</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> still finding <code>aerc</code> or <code>neomutt</code> for windows, but this might be the way.
-<ul>
-<li><a href="https://github.com/pimalaya/himalaya-tui"><code>himalaya-tui</code> to manage emails is closer to an <code>aerc</code> alternative than the original project</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/pimalaya/himalaya#configuration">config for different provider</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=42366025">Himalaya: CLI to Manage Emails</a>
-<ul>
-<li>To be fair it's #AI/llm point me to here.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/pimalaya/neverest"><code>neverest</code> CLI to synchronize mails, contacts and calendars</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>neomd</code></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 10:27:48 2026] <a href="https://github.com/pimalaya/carillon"><code>carillon</code> CLI to watch PIM collection changes</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #acronym <a href="https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure">PIM: Privileged Identity Management? - Microsoft Entra ID Governance</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>SocketCAN</title><category>can</category><category>linux</category><category>proto</category><category>usb</category><pubDate>2026-11-18 09:58:28 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/SocketCAN">SocketCAN</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://blog.mbedded.ninja/programming/operating-systems/linux/how-to-use-socketcan-with-the-command-line-in-linux/">How To Use SocketCAN With The Command-Line In Linux | mbedded.ninja</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>BufWriter in std::io - Rust</title><category>buffer</category><category>container</category><category>lang</category><category>rust</category><pubDate>2026-11-18 08:26:10 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://doc.rust-lang.org/std/io/struct.BufWriter.html">BufWriter in std::io - Rust</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted -->  Wraps a writer and buffers its output. as writing in batch.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`gltf` runtime 3d asset delivery</title><category>graphic</category><category>prog</category><category>vulkan</category><category>webgl</category><pubDate>2026-11-18 08:24:01 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/khronosgroup/gltf?#for-developers"><code>gltf</code> runtime 3d asset delivery</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>gltf</code> specs with various reading resources and related projects.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->  #typescript <a href="https://gltf-transform.dev/">gltf transform</a>
-<ul>
-<li>#javascript #web/react  <a href="https://github.com/pmndrs/gltfjsx"><code>gltfjsx</code> turns gltfs into jsx components</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 08:24:01 2026] <a href="https://github.com/KhronosGroup/glTF-Sample-Assets">glTF-Sample-Assets: assortment of assets that demonstrate features and capabilities of the glTF format</a></li>
 </ul>
 </li>
 </ul>
