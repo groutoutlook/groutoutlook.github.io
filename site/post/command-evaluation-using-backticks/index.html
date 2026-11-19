@@ -66,15 +66,15 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/mokeyish/smartdns-rs/blob/main/justfile">smartdns-rs justfile</a>
 <ul>
 <li>#til : somehow <code>positional-arguments</code> tail the recipe's own name into the argument list.
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">set shell := [&quot;C://Program Files//Git//bin//bash.exe&quot;,&quot;-eu&quot;]
-set windows-shell := [&quot;pwsh.exe&quot;, &quot;-NoLogo&quot;, &quot;-NoProfile&quot;,&quot;-Command&quot;]
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="meta function makefile"><span class="entity name function makefile">set shell</span></span> <span class="keyword operator assignment makefile">:</span><span class="meta function arguments makefile"><span class="string unquoted makefile">= [&quot;C://Program Files//Git//bin//bash.exe&quot;,&quot;-eu&quot;]</span></span><span class="meta function body makefile">
+</span><span class="variable other makefile">set windows-shell</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">[&quot;pwsh.exe&quot;, &quot;-NoLogo&quot;, &quot;-NoProfile&quot;,&quot;-Command&quot;]</span>
 
-alias cb := custom-build-for-win
+<span class="variable other makefile">alias cb</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">custom-build-for-win</span>
 [group(&#39;dev&#39;)]
 [windows]
-custom-build-for-win +args=&quot;&quot;:
-  @cargo build --release; echo 
-</span></code></pre>
+<span class="meta function makefile"><span class="entity name function makefile">custom-build-for-win +args=&quot;&quot;</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">  <span class="constant language makefile">@</span><span class="source shell"><span class="meta function-call shell"><span class="variable function shell">cargo</span></span><span class="meta function-call arguments shell"> build<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>release</span></span><span class="keyword operator logical continue shell">;</span> <span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> </span></span>
+</span></span></code></pre>
 <ul>
 <li>Run <code>just cb</code>: build -&gt; echo <code>custom-build-for-win</code> which is theoretically <code>$0</code>.</li>
 </ul>

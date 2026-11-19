@@ -45,9 +45,9 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> each <code>[arg()]</code> define one of such long/short flag. you can use multiple.
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[arg(&quot;bar&quot;, long=&quot;bar&quot;, value=&quot;hello&quot;)]
-foo bar:
-</span></code></pre>
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile">[arg(<span class="variable other makefile">&quot;bar&quot;, long</span><span class="keyword operator assignment makefile">=</span><span class="string unquoted makefile">&quot;bar&quot;, value=&quot;hello&quot;)]</span>
+<span class="meta function makefile"><span class="entity name function makefile">foo bar</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span></span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/casey/just/issues/3065">Allow <code>[arg(..., value=...)]</code> to accept expressions like global vars and <code>env()</code></a>
 <ul>
@@ -61,10 +61,10 @@ foo bar:
 <ul>
 <li><a href="https://github.com/casey/just#recipe-flags-and-options">Recipe's flag and short/long option.</a></li>
 <li>[Sat Jun 27 09:58:32 2026] now with variadic
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[arg(&#39;file&#39;, long)]
-backup +file:
-  scp {{file}} me@server.com:
-</span></code></pre>
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile">[arg(&#39;file&#39;, long)]
+<span class="meta function makefile"><span class="entity name function makefile">backup +file</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">  <span class="source shell"><span class="meta function-call shell"><span class="variable function shell">scp</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span><span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>file<span class="punctuation section expansion brace end shell">}</span></span><span class="punctuation section expansion brace end shell">}</span></span> me@server.com:</span></span>
+</span></span></code></pre>
 <ul>
 <li>Invoke:
 <pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> just backup<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> FAQ.md<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>file</span> GRAMMAR.md</span>

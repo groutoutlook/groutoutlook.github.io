@@ -45,24 +45,24 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> create <code>foo.just</code> -&gt; declare in file <code>mod foo</code>, can be optional by <code>mod?</code></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-justfile"><span class="text plain">mod bar
+<pre class="syntax-highlighting"><code class="language-makefile"><span class="source makefile">mod bar
 mod? foo &#39;bar.just&#39;
-a:
-  @echo A
-    # bar.just
-b:
-  @echo B
-    &gt; just bar b # just bar::b -like kinda pathing/namespacing is okay too.
-&gt; just foo::b # okay too...
-</span></code></pre>
+<span class="meta function makefile"><span class="entity name function makefile">a</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">  <span class="constant language makefile">@</span><span class="source shell"><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> A</span></span>
+    <span class="source shell"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span> bar.just</span></span>
+</span><span class="meta function makefile"><span class="entity name function makefile">b</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">  <span class="constant language makefile">@</span><span class="source shell"><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> B</span></span>
+    <span class="source shell"><span class="meta function-call shell"></span><span class="meta function-call arguments shell"><span class="keyword operator assignment redirection shell">&gt;</span> just bar b <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just bar::b -like kinda pathing/namespacing is okay too.</span></span></span>
+</span><span class="meta function makefile"><span class="entity name function makefile">&gt; just foo</span></span><span class="keyword operator assignment makefile">::</span><span class="meta function arguments makefile"><span class="string unquoted makefile">b </span></span><span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> okay too...</span><span class="meta function body makefile">
+</span></span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://github.com/casey/just#aliases">we can do alias on modules, and module give me namespace on <code>just</code>.</a>
 <ul>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-justfile"><span class="text plain">mod bar
-alias f := bar
-&gt; just f b # just f::b , whatever.
-</span></code></pre>
+<pre class="syntax-highlighting"><code class="language-makefile"><span class="source makefile">mod bar
+<span class="variable other makefile">alias f</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">bar</span>
+<span class="meta function makefile"><span class="entity name function makefile">&gt; just f b # just f</span></span><span class="keyword operator assignment makefile">::</span><span class="meta function arguments makefile"><span class="string unquoted makefile">b , whatever.</span></span><span class="meta function body makefile">
+</span></span></code></pre>
 </li>
 </ul>
 </li>

@@ -55,7 +55,7 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> only for variables.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">foo := if &quot;hello&quot; =~ &#39;hello&#39; { &quot;match&quot; } else { &quot;mismatch&quot; }
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="variable other makefile">foo</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">if &quot;hello&quot; =~ &#39;hello&#39; { &quot;match&quot; } else { &quot;mismatch&quot; }</span>
 </span></code></pre>
 <ul>
 <li><code>!=</code> operator in justfile do exact match comparison, matching regex we use <code>=~</code>.</li>
@@ -64,8 +64,8 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> you can put variable inside of them. no closure.
 <ul>
 <li>or even output from backtick expression:
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">bar := &quot;this is bar.&quot;
-foo := if env_var(&quot;release&quot;) == &quot;true&quot; { `get-something-from-release-database` } else { bar }
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="variable other makefile">bar</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">&quot;this is bar.&quot;</span>
+<span class="variable other makefile">foo</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">if env_var(&quot;release&quot;) == &quot;true&quot; { `get-something-from-release-database` } else { bar }</span>
 </span></code></pre>
 </li>
 </ul>

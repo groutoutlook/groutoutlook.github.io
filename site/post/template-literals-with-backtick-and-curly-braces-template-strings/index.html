@@ -64,8 +64,8 @@
 <li>#cli #justfile <a href="https://github.com/casey/just/issues/11">Allow interpolation inside of single/double quote strings</a>
 <ul>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">foo := &#39;world&#39;
-bar := f&#39;Hello, {foo}!&#39;
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="variable other makefile">foo</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">&#39;world&#39;</span>
+<span class="variable other makefile">bar</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">f&#39;Hello, {foo}!&#39;</span>
 </span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/casey/just/issues/2986">Allow interpolation inside of backticks · Issue #2986 · casey/just</a></li>

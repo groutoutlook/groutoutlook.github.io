@@ -89,10 +89,10 @@
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Jul  3 10:37:17 2026] #constraint <a href="https://github.com/casey/just/issues/3519">Add <code>min</code> and <code>max</code> constraints to variadic <code>arg</code> attributes · Issue #3519 · casey/just</a>
 <ul>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">[arg(&quot;package&quot;, min=2, max=5)]
-publish *package:
-  echo {{package}}
-# just publish core cli server # or anything like that.
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile">[arg(<span class="variable other makefile">&quot;package&quot;, min</span><span class="keyword operator assignment makefile">=</span><span class="string unquoted makefile">2, max=5)]</span>
+<span class="meta function makefile"><span class="entity name function makefile">publish *package</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">  <span class="source shell"><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span><span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>package<span class="punctuation section expansion brace end shell">}</span></span><span class="punctuation section expansion brace end shell">}</span></span></span></span>
+</span><span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> just publish core cli server # or anything like that.</span>
 </span></code></pre>
 </li>
 </ul>

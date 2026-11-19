@@ -58,11 +58,11 @@
 <li>#plugin/vscode :<a href="https://github.com/nefrob/vscode-just">nefrob/vscode-just: vscode syntax highlighting for just files</a></li>
 <li>#plugin/neovim :<a href="https://github.com/stevearc/overseer.nvim/">stevearc/overseer.nvim: a task runner and job management plugin for neovim</a></li>
 <li>#powershell #justfile I build <code>just</code> with <code>just</code>.
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># I really added that in the end of `just` &#39;s `justfile`
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> I really added that in the end of `just` &#39;s `justfile`</span>
 [group(&#39;dev&#39;)]
-b : # for just windows.
-  cargo build --release
-</span></code></pre>
+<span class="meta function makefile"><span class="entity name function makefile">b</span></span> <span class="keyword operator assignment makefile">:</span> <span class="meta function arguments makefile"></span><span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> for just windows.</span><span class="meta function body makefile">
+</span><span class="meta function body makefile">  <span class="source shell"><span class="meta function-call shell"><span class="variable function shell">cargo</span></span><span class="meta function-call arguments shell"> build<span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>release</span></span></span>
+</span></span></code></pre>
 then invoke by :
 <pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">(r -s b )[-1]|iex # `just -s` show the recipes to stdout..
 </span></code></pre>

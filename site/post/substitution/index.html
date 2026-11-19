@@ -59,15 +59,15 @@
 <li>cant nest more <code>{{...}}</code> inside <code>{{...}}</code>.</li>
 <li>complex strings:</li>
 </ul>
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">export FOO := &#39;&#39;&#39;
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="keyword control makefile">export</span><span class="variable other makefile"> FOO <span class="keyword operator assignment makefile">:=</span></span> <span class="string unquoted makefile">&#39;&#39;&#39;</span>
   a complicated string with
   some dis\tur\bi\ng escape sequences
   and &quot;quotes&quot; of &#39;different&#39; kinds
 &#39;&#39;&#39;
 [script]
-bar:
-  echo &quot;$env:FOO&quot;
-</span></code></pre>
+<span class="meta function makefile"><span class="entity name function makefile">bar</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">  <span class="source shell"><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted double shell"><span class="punctuation definition string begin shell">&quot;</span><span class="variable parameter makefile"><span class="keyword other single-character-variable makefile">$</span>e</span>nv:FOO<span class="punctuation definition string end shell">&quot;</span></span></span></span>
+</span></span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->

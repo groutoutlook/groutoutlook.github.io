@@ -61,9 +61,7 @@
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/casey/just/readme.md#private-recipes">private recipes</a>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/casey/just/readme.md#private-recipes">private recipes</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>[private]</code> attribute/<code>_</code> intial  use to hide recipes or aliases. ( in <code>--list</code>)
 <ul>
@@ -71,22 +69,18 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">_hid:
-
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="meta function makefile"><span class="entity name function makefile">_hid</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span>
 [private]
-foo:
-
+<span class="meta function makefile"><span class="entity name function makefile">foo</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span>
 [private]
-alias b := bar
+<span class="variable other makefile">alias b</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">bar</span>
 
-bar:
+<span class="meta function makefile"><span class="entity name function makefile">bar</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span>
+&gt; just --list <span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> only `bar` pop out.</span>
 </span></code></pre>
-<ul>
-<li>Invoke:
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">just</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>list <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> only `bar` pop out.</span><span class="comment line number-sign shell">
-</span></span></span></span></code></pre>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -110,9 +104,7 @@ bar:
 <li><a href="https://github.com/casey/just/issues/2684"><code>just --usage</code> should support multi-line documentation comments by <code>[doc]</code> attribute</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> <a href="https://github.com/casey/just/issues/2260#issuecomment-3000742935">concatenated string in custom <code>script()</code> attributes</a>
+<li><a href="https://github.com/casey/just/issues/2260#issuecomment-3000742935">concatenated string in custom <code>script()</code> attributes</a>
 <ul>
 <li>use with <code>nix-shell</code> and <code>python</code> for example.</li>
 </ul>

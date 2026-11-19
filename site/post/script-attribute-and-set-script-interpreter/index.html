@@ -50,7 +50,7 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">set script-interpreter := if os() == &quot;windows&quot; { [&quot;busybox&quot;, &quot;sh&quot;, &quot;-eu&quot;] } else { [&quot;sh&quot;, &quot;-eu&quot;] }
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="variable other makefile">set script-interpreter</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">if os() == &quot;windows&quot; { [&quot;busybox&quot;, &quot;sh&quot;, &quot;-eu&quot;] } else { [&quot;sh&quot;, &quot;-eu&quot;] }</span>
 </span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>

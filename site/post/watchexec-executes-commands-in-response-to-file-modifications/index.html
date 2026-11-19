@@ -66,10 +66,10 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> we could test programs in runtime like this.
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">alias cint := check_integration
-check_integration args=&quot;csv&quot;:
-    watchexec -e {{args}} git dft *{{args}}
-</span></code></pre>
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="variable other makefile">alias cint</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">check_integration</span>
+<span class="meta function makefile"><span class="entity name function makefile">check_integration args=&quot;csv&quot;</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">    <span class="source shell"><span class="meta function-call shell"><span class="variable function shell">watchexec</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> -</span>e</span> <span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span><span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>args<span class="punctuation section expansion brace end shell">}</span></span><span class="punctuation section expansion brace end shell">}</span></span> git dft <span class="keyword operator regexp quantifier shell">*</span><span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span><span class="meta group expansion brace shell"><span class="punctuation section expansion brace begin shell">{</span>args<span class="punctuation section expansion brace end shell">}</span></span><span class="punctuation section expansion brace end shell">}</span></span></span></span>
+</span></span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->

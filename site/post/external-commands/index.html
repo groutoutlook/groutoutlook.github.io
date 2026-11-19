@@ -64,15 +64,15 @@ the full command line, with the default shell command <code>sh -cu</code> and <c
 argument. <code>$@</code> does not include the first positional argument, which is
 expected to be the name of the program being run.</li>
 <li>#example :
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain"># arguments can be variables or expressions
-file := &#39;/sys/class/power_supply/bat0/status&#39;
-bat0stat := shell(&#39;cat $1&#39;, file)
-# commands can be variables or expressions
-command := &#39;wc -l&#39;
-output := shell(command + &#39; &quot;$1&quot;&#39;, &#39;main.c&#39;)
-# arguments referenced by the shell command must be used
-empty := shell(&#39;echo&#39;, &#39;foo&#39;)
-full := shell(&#39;echo $1&#39;, &#39;foo&#39;)
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> arguments can be variables or expressions</span>
+<span class="variable other makefile">file</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">&#39;/sys/class/power_supply/bat0/status&#39;</span>
+<span class="variable other makefile">bat0stat</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">shell(&#39;cat $1&#39;, file)</span>
+<span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> commands can be variables or expressions</span>
+<span class="variable other makefile">command</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">&#39;wc -l&#39;</span>
+<span class="variable other makefile">output</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">shell(command + &#39; &quot;$1&quot;&#39;, &#39;main.c&#39;)</span>
+<span class="comment line number-sign makefile"><span class="punctuation definition comment makefile">#</span> arguments referenced by the shell command must be used</span>
+<span class="variable other makefile">empty</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">shell(&#39;echo&#39;, &#39;foo&#39;)</span>
+<span class="variable other makefile">full</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">shell(&#39;echo $1&#39;, &#39;foo&#39;)</span>
 </span></code></pre>
 </li>
 </ul>

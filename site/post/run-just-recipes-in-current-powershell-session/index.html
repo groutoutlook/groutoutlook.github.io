@@ -50,10 +50,10 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> so basically we wrap <code>just subcommand</code> into <code>Invoke-Expression</code>.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-just"><span class="text plain">alias rim := reimport-module
-reimport-module:
-    &#39;gci *psd1 | %{:mo $_}&#39; # just a single quote string.
-</span></code></pre>
+<pre class="syntax-highlighting"><code class="language-make"><span class="source makefile"><span class="variable other makefile">alias rim</span> <span class="keyword operator assignment makefile">:=</span> <span class="string unquoted makefile">reimport-module</span>
+<span class="meta function makefile"><span class="entity name function makefile">reimport-module</span></span><span class="keyword operator assignment makefile">:</span>
+<span class="meta function arguments makefile"></span><span class="meta function body makefile"></span><span class="meta function body makefile">    <span class="source shell"><span class="meta function-call shell"><span class="variable function shell"><span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>gci *psd1 | %{:mo $_}<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> just a single quote string.</span></span></span></span>
+</span></span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Then <code>r rim | iex</code>. Literally that. I nowadays do <code>just com | iex</code> tho.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
