@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>embedding lua in c++ part 3: meh...  use `sol2`...</title><category>cpp</category><category>lang</category><category>lua</category><category>prog</category><pubDate>2026-11-19 04:54:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`bikeshed` word pre-processor specifications converts source files into actual specs.</title><category>documentation</category><category>format/html</category><category>wprog</category><pubDate>2026-11-19 05:05:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/speced/bikeshed"><code>bikeshed</code> word pre-processor specifications converts source files into actual specs.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Look at the <code>.bs</code> file...</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Looks kinda nice, what people normally used in specs documentation.
+<ul>
+<li>Which is ECMA-style.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://tc39.es/ecma262/">ECMAScript® 2025 Language Specification</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/WICG/observable">WICG/observable: Observable API proposal</a>
+<ul>
+<li><a href="https://ecma-international.org/">Home - Ecma International</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #std/doc: <a href="https://speced.github.io/bikeshed/#installing">Bikeshed Documentation</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:05:54 2026] <a href="https://thephd.dev/_vendor/future_cxx/papers/d1040.html">P1040R11: std::embed</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>embedding lua in c++ part 3: meh...  use `sol2`...</title><category>cpp</category><category>lang</category><category>lua</category><category>prog</category><pubDate>2026-11-19 04:54:38 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://youtu.be/onywoojc4tq">embedding lua in c++ part 3: meh...  use <code>sol2</code>...</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -312,30 +333,6 @@ adb forward tcp:8022 tcp:8022 &amp;&amp; ssh localhost -p8022 # you may want to 
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 18 08:24:01 2026] <a href="https://github.com/KhronosGroup/glTF-Sample-Assets">glTF-Sample-Assets: assortment of assets that demonstrate features and capabilities of the glTF format</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>c4 models as code - simon brown - ndc porto 2023</title><category>format/uml</category><category>prog</category><category>video</category><pubDate>2026-11-17 10:15:55 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://youtu.be/4HEd1EEQLR0">c4 models as code - simon brown - ndc porto 2023</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/c4_model">c4 model - wikipedia</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#web : <a href="https://c4model.com/">the c4 model for visualising software architecture</a></li>
-<li>#plugin: <a href="https://github.com/plantuml-stdlib/c4-plantuml">c4-plantuml combines the benefits of plantuml and the c4 model for providing a simple way of describing and communicate software architectures</a></li>
-<li>#vscode/plugin: <a href="https://gitlab.com/systemticks/c4-grammar">c4-grammar · gitlab</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> [Fri Sep 25 15:57:19 2026] <a href="https://github.com/likec4/likec4"><code>likec4</code>: Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49833867">Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 22:15:55 2026] <a href="https://github.com/likec4/likec4">likec4/likec4: Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code</a></li>
 </ul>
 </li>
 </ul>
