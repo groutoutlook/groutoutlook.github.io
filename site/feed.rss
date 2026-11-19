@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Starter Apps | Google AI Studio</title><category>AI</category><category>web</category><pubDate>2026-11-19 02:35:15 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Can codex ask interactive clickable questions like claude code?</title><category>default</category><category>harness</category><category>keybinding</category><category>swt</category><pubDate>2026-11-19 03:08:58 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/codex/comments/1uj74vc">Can codex ask interactive clickable questions like claude code?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>y</code>/<code>p</code>/<code>n</code> yes/please-yes/no. to confirm direction in TUI.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Starter Apps | Google AI Studio</title><category>AI</category><category>web</category><pubDate>2026-11-19 02:35:15 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://aistudio.google.com/prompts/new_chat">Starter Apps | Google AI Studio</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> It's now free for many tiers.</li>
@@ -319,49 +331,6 @@
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 18:33:44 2026] <a href="https://lobste.rs/s/s7mejx/how_rust_changed_me_as_developer">How Rust Changed Me As A Developer</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> mentioned #functional language and <code>ocaml</code>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`serie` git commit graph in your terminal, like magic 📚</title><category>cli/utils</category><category>git</category><category>swt</category><pubDate>2026-11-17 03:37:49 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lusingander/serie"><code>serie</code> git commit graph in your terminal, like magic 📚</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Better <code>git log</code>. Although in Windows now it's unusable on the graph.</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> [2025-08-04 09:57:38] run good in <code>wezterm</code> since it's using iterm2 inline image protocol.
-<ul>
-<li>but not <code>sixel</code> so #windows terminal is not able to display anything. that's why I shim it.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #browser/plugin : <a href="https://github.com/NirmalScaria/le-git-graph"><code>le-git-graph</code> Browser extension to add git graph to GitHub website.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative <a href="https://github.com/mlange-42/git-graph"><code>git-graph</code> Command line tool to show clear git graphs arranged for your branching model</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/trasta298/keifu"><code>keifu</code> TUI for navigating commit graphs with color and clarity.</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2026-02-03 4:36:46 PM] #nightly cant take it anymore and alias <code>git graph</code> and <code>git bg</code> to <code>serie</code>
-<ul>
-<li>
-<p><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> we have to launch a wezterm there so it can display inline properly.</p>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> serie</span>
-<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> launch a new window for that.</span><span class="comment line number-sign shell">
-</span><span class="meta function-call shell"><span class="variable function shell">$</span></span><span class="meta function-call arguments shell"> git b</span>
-<span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> I even alias this, so I have to comment out the gitalias.txt&#39;s alias.</span><span class="comment line number-sign shell">
-</span></span></code></pre>
-</li>
-<li>
-<p><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> I #nightly <code>wezterm</code> again just for this. my shim script for <code>serie</code> invoke <code>wezterm</code> for the image protocol.</p>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Jun 24 17:33:20 2026] <a href="https://stackoverflow.com/questions/34096982/how-can-i-pass-a-string-to-git-log-s-instead-of-just-a-word"><code>git log -S</code> pass a string instead of just a word?</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --><a href="https://lobste.rs/s/y4hgjd/please_keep_code_descriptions_simple">Please keep code descriptions simple</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #blog <a href="https://blog.danlew.net/2019/02/19/git-log-s/">Adding <code>git log -S</code> to your code detective toolbox</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 15:37:49 2026] #gui <a href="https://help.gitkraken.com/gitkraken-desktop/workspaces/"><code>GitKraken</code> Desktop Workspaces | Share Repos With Your Team</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> after almost 3 years unused.. this is still the <strong>best</strong> GUI git branches previewer. shim <code>gik</code>/<code>gitk</code></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in <code>scoop</code></li>
 </ul>
 </li>
 </ul>
