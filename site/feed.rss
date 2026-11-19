@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Importing PowerShell binary modules from network location</title><category>LAN</category><category>netw</category><category>powershell</category><category>sysadmin</category><pubDate>2026-11-19 03:38:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>embedding lua in c++ part 3: meh...  use `sol2`...</title><category>cpp</category><category>lang</category><category>lua</category><category>prog</category><pubDate>2026-11-19 04:54:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://youtu.be/onywoojc4tq">embedding lua in c++ part 3: meh...  use <code>sol2</code>...</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> bike shedding, who can remember where it came from.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/thephd/sol2"><code>sol3</code> (sol2 v3.0) - a c++ &lt;-&gt; lua api wrapper with advanced features and top performance</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 16:54:38 2026] <a href="https://realtimelogic.com/articles/SOL2-C-Lua-Binding-Tutorial">SOL2 C++ Lua Binding Tutorial</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Importing PowerShell binary modules from network location</title><category>LAN</category><category>netw</category><category>powershell</category><category>sysadmin</category><pubDate>2026-11-19 03:38:09 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/13162962/importing-powershell-binary-modules-from-network-location">Importing PowerShell binary modules from network location</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -327,4 +339,4 @@ adb forward tcp:8022 tcp:8022 &amp;&amp; ssh localhost -p8022 # you may want to 
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>2</title><category>swt</category><pubDate>2026-11-17 10:12:07 PM</pubDate><content:encoded><![CDATA[]]></content:encoded></item></channel></rss>
+]]></content:encoded></item></channel></rss>
