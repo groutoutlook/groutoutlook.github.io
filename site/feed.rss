@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Can codex ask interactive clickable questions like claude code?</title><category>default</category><category>harness</category><category>keybinding</category><category>swt</category><pubDate>2026-11-19 03:08:58 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Importing PowerShell binary modules from network location</title><category>LAN</category><category>netw</category><category>powershell</category><category>sysadmin</category><pubDate>2026-11-19 03:38:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/13162962/importing-powershell-binary-modules-from-network-location">Importing PowerShell binary modules from network location</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>bash - Force SSH to use a specific shell - Server Fault</title><category>bash</category><category>netw</category><category>shell</category><category>ssh</category><pubDate>2026-11-19 03:34:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://serverfault.com/questions/162018/force-ssh-to-use-a-specific-shell">bash - Force SSH to use a specific shell - Server Fault</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try to use <code>pwsh</code> instead of <code>nushell</code> in #termux.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Termux to ADB and SSH setup.</title><category>adb</category><category>android</category><category>ssh</category><category>windows</category><pubDate>2026-11-19 03:21:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Termux to ADB and SSH setup.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-powershell"><span class="text plain">adb shell &quot;run-as com.termux files/usr/bin/bash -lic &#39;export PATH=/data/data/com.termux/files/usr/bin:`$PATH; export LD_PRELOAD=/data/data/com.termux/files/usr/lib/libtermux-exec.so; bash -i&#39;&quot;
+adb forward tcp:8022 tcp:8022 &amp;&amp; ssh localhost -p8022 # you may want to adb kill-server first.
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/56130335/adb-port-forwarding-to-listen-on-all-interfaces">adb port forwarding to listen on all interfaces</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/MansfieldPlumbing/Pwsh"><code>PowerShell</code> as Android appliance: CoreCLR and System.Management.Automation in-process</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/termux/termux-packages/pull/31503"><code>libpsl-native</code>, <code>powershell</code></a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 15:21:12 2026] <strong>MERGED</strong>.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Can codex ask interactive clickable questions like claude code?</title><category>default</category><category>harness</category><category>keybinding</category><category>swt</category><pubDate>2026-11-19 03:08:58 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.reddit.com/r/codex/comments/1uj74vc">Can codex ask interactive clickable questions like claude code?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>y</code>/<code>p</code>/<code>n</code> yes/please-yes/no. to confirm direction in TUI.</li>
@@ -278,62 +323,4 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>2</title><category>swt</category><pubDate>2026-11-17 10:12:07 PM</pubDate><content:encoded><![CDATA[]]></content:encoded></item><item><title>collaboration-mode-templates/templates/plan.md at main · openai/codex</title><category>codex</category><category>harness</category><category>mcp</category><category>plan</category><category>swt</category><pubDate>2026-11-17 10:07:08 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/openai/codex/blob/main/codex-rs/collaboration-mode-templates/templates/plan.md">collaboration-mode-templates/templates/plan.md at main · openai/codex</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> not the collab mode you think.. multiple codex long running session interact with each other,
-<ul>
-<li>but you can always paste the session id in. There is <code>codex_tui</code> default MCP for that.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: it plan, that's all</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/openai/codex/blob/main/codex-rs/collaboration-mode-templates/templates/default.md">collaboration-mode-templates/templates/default.md at main · openai/codex</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`askama` template rendering engine based on Jinja, generating type-safe Rust code at compile time.</title><category>api</category><category>documentation</category><category>rust</category><category>string</category><category>template</category><pubDate>2026-11-17 09:20:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/askama-rs/askama"><code>askama</code> template rendering engine based on Jinja, generating type-safe Rust code at compile time.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/Keats/tera"><code>tera</code> template engine for Rust based on Jinja2/Django</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 21:20:59 2026] <a href="https://github.com/nk9/textr">textr: Making template texting easier</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`opam` - `ocaml` language&apos;s package manager.</title><category>functional</category><category>libman</category><category>ocaml</category><category>prog</category><pubDate>2026-11-17 06:33:44 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://opam.ocaml.org/"><code>opam</code> - <code>ocaml</code> language's package manager.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> also sit here as anchor for topic related to ocaml.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <code>winget</code> for <code>opam</code> - <code>ocaml</code> is on msys2.
-<ul>
-<li>but as now I truly dont use them a lot...</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ocaml/ocaml">the core ocaml system: compilers, runtime system, base libraries</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #wprog #introduction : <a href="https://uniker.nl/unikernels/immuable/">immuable — Unikernels in OCaml</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a bit about how to use <code>opam</code> with external repo.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 17 18:33:44 2026] <a href="https://lobste.rs/s/s7mejx/how_rust_changed_me_as_developer">How Rust Changed Me As A Developer</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> mentioned #functional language and <code>ocaml</code>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded></item><item><title>2</title><category>swt</category><pubDate>2026-11-17 10:12:07 PM</pubDate><content:encoded><![CDATA[]]></content:encoded></item></channel></rss>
