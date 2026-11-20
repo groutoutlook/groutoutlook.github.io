@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Day Night Cycle using LUT in Fragment Shader of Materials</title><category>asset</category><category>blender</category><pubDate>2026-11-20 11:49:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Why is boredom painful for humans? Other animals spend most of their time just chilling.</title><category>human</category><category>philosophy</category><pubDate>2026-11-20 02:11:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/NoStupidQuestions/comments/1wc8jr6">Why is boredom painful for humans? Other animals spend most of their time just chilling.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well, other animal do too.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/nihilism/comments/xg9ncu">Optimistic Nihilism Hate</a>
+<ul>
+<li>#terminology make me dizzy</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> an #alternative of speaking 'soul seeking' is 'pondering the meaning of life'.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:11:51 2026] #quote &quot;If you're bored then you're boring.&quot;
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://acid.vegas/about/">acidvegas x about</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Port 53 (tcp/udp) :: SpeedGuide</title><category>network</category><category>wprog</category><pubDate>2026-11-20 02:06:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.speedguide.net/port.php?port=53">Port 53 (tcp/udp) :: SpeedGuide</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> DNS.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">List of TCP and UDP port numbers</a>
+<ul>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2025-06-24 22:29:54]: add all that port info.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/8748396/ipc-port-ranges">windows - IPC port ranges - <code>49152-65535</code> </a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative: <a href="https://stackoverflow.com/questions/32478277/is-there-any-standard-alternative-https-port">web services - Is there any standard alternative HTTPS port?</a>
+<ul>
+<li><a href="https://superuser.com/questions/605148/are-there-good-alternative-http-ports-rather-than-port-80#1077437">Are there good alternative HTTP ports rather than port 80?</a></li>
+<li>8000, 8443, 8080 is some popular candidate
+<ul>
+<li><a href="https://www.speedguide.net/port.php?port=8000">Port 8000 (tcp/udp) :: SpeedGuide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:06:09 2026] #blog <a href="https://acid.vegas/blog/the-port-that-does-not-exist/">The port <code>0</code> that does not exist</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Move a pane of code file to a whole new window for a more focused view. Zoom more on that as well.</title><category>editor</category><category>ide</category><category>windows</category><pubDate>2026-11-20 01:39:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Move a pane of code file to a whole new window for a more focused view. Zoom more on that as well.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-json"><span class="source json">,
+<span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>scheme<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Visual C++ 6<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>command<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Window.NewWindow<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>shortcut<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Ctrl+W, Ctrl+Shift+N<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>scope<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Global<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>scopeId<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>{5EFC7975-14BC-11CF-9B2B-00AA00573819}<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
+  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>isRemoval<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="constant language json">false</span>
+</span><span class="punctuation section dictionary end json">}</span></span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Day Night Cycle using LUT in Fragment Shader of Materials</title><category>asset</category><category>blender</category><pubDate>2026-11-20 11:49:51 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://shahriyarshahrabi.medium.com/day-night-cycle-using-lut-in-fragment-shader-of-materials-80edaf26f655">Day Night Cycle using LUT in Fragment Shader of Materials</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -288,54 +358,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://kiwix.org/">Offline Wikipedia and Educational Content with Kiwix</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 22:51:10 2026] <a href="https://news.ycombinator.com/item?id=50560822">Everything you need to survive and rebuild society</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>competition is for loser</title><category>business</category><category>other</category><pubDate>2026-11-19 05:22:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://youtu.be/5_0dVHMpJlo">competition is for loser</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> According to the like of Sam Altman and Peter Thiel, go monopoly.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Monopoly">Monopoly</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Oligopoly">Triopoly is the Oligopoly of 3 seller in a general field</a> and duopoly.
-<ul>
-<li>#news <a href="https://rdrama.net/h/slackernews/post/811079">Sam Cuckman is such a little cute twink that he created an Internal Company mechanism, so that his own fricking CFO (chief financial officer) Sarah Friar, cannot report directly to him and has to instead fricking report to an intermediary yesman :marseytrollcrazy: :marseytrollcrazy: :marseytrollcrazy: because she keeps giving pushback and concerns about going on burgerland stock exchange IPO - she fears that when SEC investigates with internal auditing will be so shit that stock collapse day1</a>
-<ul>
-<li>it's just so hillarious this fucking community.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:22:47 2026] <a href="https://wikipedia.org/wiki/Collusion">Collusion</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Everything I Wrote – journal.stuffwithstuff.com</title><category>blog</category><category>prog</category><pubDate>2026-11-19 05:19:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://journal.stuffwithstuff.com/archive/">Everything I Wrote – journal.stuffwithstuff.com</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a MacOS dev.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`hwinfo` cross platform C++ library for hardware information (CPU, RAM, GPU, ...)</title><category>api</category><category>arch</category><category>cpp</category><category>cpu</category><pubDate>2026-11-19 05:17:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lfreist/hwinfo"><code>hwinfo</code> cross platform C++ library for hardware information (CPU, RAM, GPU, ...)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-c++"><span class="source c++"><span class="meta preprocessor include c++"><span class="keyword control import include c++">#include</span> <span class="string quoted other lt-gt include c++"><span class="punctuation definition string begin c++">&lt;</span>hwinfo/hwinfo.h<span class="punctuation definition string end c++">&gt;</span></span>;auto cpus = hwinfo::cpus();  <span class="comment line double-slash c"><span class="punctuation definition comment c">//</span> hwinfo::result&lt;std::vector&lt;hwinfo::Cpu&gt;&gt;, i.e. std::expected&lt;..., hwinfo::error&gt;</span>
-</span></span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ThePhD/infoware"><code>infoware</code> C++ Library for pulling system and hardware information, without hitting the command line.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
