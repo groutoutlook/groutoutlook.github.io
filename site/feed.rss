@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-20 03:01:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</title><category>ch32</category><category>embed</category><category>mcu</category><category>rgb</category><category>waveform</category><pubDate>2026-11-20 04:09:42 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/cpldcpu/WS2812Tester/tree/master">WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> basically RX side of 2812 RGB LED protocol.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> IT has always a better decision to patiently wait until someone do it. And I'm right.
+<ul>
+<li><a href="https://github.com/cpldcpu/WS2812Tester/blob/master/docs/findings.md">WS2812Tester docs finding in general</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cpldcpu.com/2024/01/21/analysis-of-the-gen2-addressable-rgb-led-protocol/">Analysis of the Gen2 Addressable RGB LED Protocol – Tim's Blog</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Synology Security Advisory</title><category>infosec</category><category>nas</category><category>tailscale</category><category>tunnel</category><category>vpn</category><pubDate>2026-11-20 03:13:45 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50567209">Synology Security Advisory</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> just guard your NAS.. properly. very stupid leave them out open just for you to access it remotely.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-20 03:01:28 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://news.ycombinator.com/item?id=50418176">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -94,10 +122,10 @@
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>Move a pane of code file to a whole new window for a more focused view. Zoom more on that as well.</title><category>editor</category><category>ide</category><category>windows</category><pubDate>2026-11-20 01:39:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Move a pane of code file to a whole new window for a more focused view. Zoom more on that as well.
+]]></content:encoded></item><item><title>`ctrl+w ctrl+shift+n` Move pane of code file to a whole new window for a more focused view. Zoom more on that as well.</title><category>editor</category><category>ide</category><category>windows</category><pubDate>2026-11-20 01:39:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><code>ctrl+w ctrl+shift+n</code> Move pane of code file to a whole new window for a more focused view. Zoom more on that as well.
 <ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> can <code>alt+right</code> move between document group pretty easily.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
 <pre class="syntax-highlighting"><code class="language-json"><span class="source json">,
 <span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
@@ -356,30 +384,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>bot] · Pull Request #62121 · openai/codex</title><category>codex</category><category>harness</category><category>network</category><category>remote</category><category>swt</category><pubDate>2026-11-20 08:25:02 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/openai/codex/pull/62121">Add <code>/rc</code> to manage remote control from the TUI by copyberry[bot] · Pull Request #62121 · openai/codex</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have to sign in #account within ChatGPT.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>etc1tool  |  Android Studio  |  Android Developers</title><category>adb</category><category>android</category><category>cli</category><category>ide</category><pubDate>2026-11-20 08:00:08 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://developer.android.com/tools/etc1tool">etc1tool  |  Android Studio  |  Android Developers</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/5019847/what-is-etc1tool">android - What is etc1tool?</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
