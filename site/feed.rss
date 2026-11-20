@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Remembrance Day</title><category>society</category><category>uk</category><category>us</category><pubDate>2026-11-20 10:53:25 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>build Rust code with a C++/Qt/CMake project</title><category>build/cargo</category><category>build/cmake</category><category>buildsystem</category><category>framework/qt</category><category>rust/interop</category><pubDate>2026-11-20 11:00:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/31162438/how-can-i-build-rust-code-with-a-c-qt-cmake-project/70767637#70767637">build Rust code with a C++/Qt/CMake project</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/corrosion-rs/corrosion"><code>corrosion</code> Rust and CMake - Easy Rust and C/C++ Integration!</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->[2025-08-29 11:35:20 AM] <a href="https://blog.memzero.de/cmake-cargo-example/">memzero</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #zig : <a href="https://blog.memzero.de/zig-cross-compile/">memzero</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#rust <a href="https://github.com/KDAB/cxx-qt"><code>cxx-qt</code> Safe interop between Rust and Qt</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/KDE/cxx-kde-frameworks"><code>cxx-kde-frameworks</code> Bridge KDE Frameworks and Rust by <code>cxx-qt</code></a>
+<ul>
+<li>very low activity though.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/rust/comments/1dg8ut4">Anyone interested in working on adding Rust bindings for KDE frameworks?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:00:46 2026] #ide #code/forge <a href="https://github.com/Keats/kickstart"><code>kickstart</code> scaffolding tool to get new projects up and running quickly</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Remembrance Day</title><category>society</category><category>uk</category><category>us</category><pubDate>2026-11-20 10:53:25 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Remembrance_Day">Remembrance Day</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> that's in UK.</li>
@@ -295,18 +329,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>bash - Force SSH to use a specific shell - Server Fault</title><category>bash</category><category>netw</category><category>shell</category><category>ssh</category><pubDate>2026-11-19 03:34:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://serverfault.com/questions/162018/force-ssh-to-use-a-specific-shell">bash - Force SSH to use a specific shell - Server Fault</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> try to use <code>pwsh</code> instead of <code>nushell</code> in #termux.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
