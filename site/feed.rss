@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Why is boredom painful for humans? Other animals spend most of their time just chilling.</title><category>human</category><category>philosophy</category><pubDate>2026-11-20 02:11:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-20 03:01:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50418176">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/hew3d/hew"><code>hew</code> intuitive, Open Source, cross-platform, solids-first 3D modeler</a></li>
+<li><a href="https://github.com/iamahsanmehmood/openskp"><code>openskp</code> Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #meta  <a href="https://3dwarehouse.sketchup.com/">3D Warehouse a model library</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/hew3d/hew">The intuitive, Open Source, cross-platform, solids-first 3D modeler</a>
+<ul>
+<li><a href="https://github.com/iamahsanmehmood/openskp">Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/tangency-labs/solidcraft"><code>SolidCraft</code> parametric 3D CAD application, desktop, web, and automation MCP.</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 15:01:28 2026] <a href="https://github.com/Fluid-CAD/FluidCAD"><code>FluidCAD</code> parametric CAD modeling combines both mouse-driven and code driven approaches</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50528119">How to CAD Almost Anything</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Handle`</title><category>process</category><category>windows</category><pubDate>2026-11-20 02:35:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/handle"><code>Handle</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1412239/how-to-force-closing-freeing-the-serial-ports-opened-by-other-programs-in-cmd">closing / freeing serial ports opened by other programs in Powershell</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>procmon</code></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2024-07-23 11:22:22 AM] #windows #process/handle
+<ul>
+<li><a href="https://github.com/PolarGoose/Handle2">Handle2 - Alternative to the Sysinternals Handle.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like Sysinternals Handle but in CLI.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:35:59 2026] <a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23678">avformat/file: add Windows handle protocol - <code>FFmpeg</code> Forgejo</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Why is boredom painful for humans? Other animals spend most of their time just chilling.</title><category>human</category><category>philosophy</category><pubDate>2026-11-20 02:11:51 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.reddit.com/r/NoStupidQuestions/comments/1wc8jr6">Why is boredom painful for humans? Other animals spend most of their time just chilling.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well, other animal do too.</li>
@@ -332,32 +381,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://stackoverflow.com/questions/5019847/what-is-etc1tool">android - What is etc1tool?</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`meson-with-vcpkg` Make vcpkg packages available from meson</title><category>buildsystem</category><category>cmake</category><category>libman/meson</category><category>libman/vcpkg</category><pubDate>2026-11-19 10:55:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/gh0st-work/meson-with-vcpkg"><code>meson-with-vcpkg</code> Make vcpkg packages available from meson</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #build/xmake <a href="https://github.com/xmake-io/xmake/wiki/C-and-Cplusplus-build-system,-I-use-xmake#meson-and-vcpkg">C and C++ build system, <code>xmake</code> Wiki</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #vocabulary ecology is current biome/biosphere, or a broader meaning, status quo of current development, environment.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 22:55:19 2026] <a href="https://www.opensourceecology.org/">Home | Open Source Ecology</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Post Apocalyptic Computing</title><category>blog</category><category>compsci</category><pubDate>2026-11-19 10:51:10 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/avwtt3/post_apocalyptic_computing">Post Apocalyptic Computing</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Collapse computing as the technical term.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://kiwix.org/">Offline Wikipedia and Educational Content with Kiwix</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 22:51:10 2026] <a href="https://news.ycombinator.com/item?id=50560822">Everything you need to survive and rebuild society</a></li>
 </ul>
 </li>
 </ul>
