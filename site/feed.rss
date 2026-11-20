@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>cppstat - C++ Compiler Support Status</title><category>compatiblity</category><category>cpp</category><category>list</category><category>matrix</category><pubDate>2026-11-20 11:40:15 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Day Night Cycle using LUT in Fragment Shader of Materials</title><category>asset</category><category>blender</category><pubDate>2026-11-20 11:49:51 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://shahriyarshahrabi.medium.com/day-night-cycle-using-lut-in-fragment-shader-of-materials-80edaf26f655">Day Night Cycle using LUT in Fragment Shader of Materials</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/2zlrjv/ai_smells_on_medium#c_xlcxag">AI Smells on Medium</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:49:51 2026] Medium unblock Vietnam ISP now.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>cppstat - C++ Compiler Support Status</title><category>compatiblity</category><category>cpp</category><category>list</category><category>matrix</category><pubDate>2026-11-20 11:40:15 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://cppstat.dev/">cppstat - C++ Compiler Support Status</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -190,7 +203,7 @@
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://interrupt.memfault.com/blog/matter-internet-connectivity">Connecting Matter-over-Thread Devices to the Internet | Interrupt</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
@@ -323,27 +336,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ThePhD/infoware"><code>infoware</code> C++ Library for pulling system and hardware information, without hitting the command line.</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`bikeshed` word pre-processor specifications converts source files into actual specs.</title><category>documentation</category><category>format/html</category><category>wprog</category><pubDate>2026-11-19 05:05:54 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/speced/bikeshed"><code>bikeshed</code> word pre-processor specifications converts source files into actual specs.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Look at the <code>.bs</code> file...</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> Looks kinda nice, what people normally used in specs documentation.
-<ul>
-<li>Which is ECMA-style.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://tc39.es/ecma262/">ECMAScript® 2025 Language Specification</a></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/WICG/observable">WICG/observable: Observable API proposal</a>
-<ul>
-<li><a href="https://ecma-international.org/">Home - Ecma International</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #std/doc: <a href="https://speced.github.io/bikeshed/#installing">Bikeshed Documentation</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:05:54 2026] <a href="https://thephd.dev/_vendor/future_cxx/papers/d1040.html">P1040R11: <code>std::embed</code></a></li>
 </ul>
 </li>
 </ul>
