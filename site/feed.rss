@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>build Rust code with a C++/Qt/CMake project</title><category>build/cargo</category><category>build/cmake</category><category>buildsystem</category><category>framework/qt</category><category>rust/interop</category><pubDate>2026-11-20 11:00:46 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>cppstat - C++ Compiler Support Status</title><category>compatiblity</category><category>cpp</category><category>list</category><category>matrix</category><pubDate>2026-11-20 11:40:15 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://cppstat.dev/">cppstat - C++ Compiler Support Status</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cppreference.com/cpp/compiler_support/26">Compiler support for C++26</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> for example I really want <code>submdspan</code> and <del><code>inplace_vector</code></del> to land in <code>clang</code>, and MSVC..</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:40:15 2026] and Expansion Statements <code>template for</code>.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>c++ - How can you iterate over the elements of an std::tuple?</title><category>container/tuple</category><category>lang</category><pubDate>2026-11-20 11:37:30 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/1198260/how-can-you-iterate-over-the-elements-of-an-stdtuple">c++ - How can you iterate over the elements of an std::tuple?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>using mp11 or boost.hana honestly... since that require <code>template for</code>. Worked at c++11 and c++14, respectively.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>c++23 and c++26 havent got support for <a href="https://github.com/cplusplus/papers/issues/156">P1306 R3 Expansion Statements</a>
+<ul>
+<li><a href="https://www.reddit.com/r/cpp/comments/qwsekk">Did 'template for' make it into C++23?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://tsche.github.io/proposals/">WG21 Papers &amp; Issues</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:37:30 2026] <a href="https://tsche.github.io/proposals/dollar_idents.html#r2-july-2026"><code>$identifiers</code></a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>build Rust code with a C++/Qt/CMake project</title><category>build/cargo</category><category>build/cmake</category><category>buildsystem</category><category>framework/qt</category><category>rust/interop</category><pubDate>2026-11-20 11:00:46 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/31162438/how-can-i-build-rust-code-with-a-c-qt-cmake-project/70767637#70767637">build Rust code with a C++/Qt/CMake project</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -306,30 +344,6 @@
 </li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #std/doc: <a href="https://speced.github.io/bikeshed/#installing">Bikeshed Documentation</a></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 17:05:54 2026] <a href="https://thephd.dev/_vendor/future_cxx/papers/d1040.html">P1040R11: <code>std::embed</code></a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>embedding lua in c++ part 3: meh...  use `sol2`...</title><category>cpp</category><category>lang</category><category>lua</category><category>prog</category><pubDate>2026-11-19 04:54:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://youtu.be/onywoojc4tq">embedding lua in c++ part 3: meh...  use <code>sol2</code>...</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> bike shedding, who can remember where it came from.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/thephd/sol2"><code>sol3</code> (sol2 v3.0) - a c++ &lt;-&gt; lua api wrapper with advanced features and top performance</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 19 16:54:38 2026] <a href="https://realtimelogic.com/articles/SOL2-C-Lua-Binding-Tutorial">SOL2 C++ Lua Binding Tutorial</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Importing PowerShell binary modules from network location</title><category>LAN</category><category>netw</category><category>powershell</category><category>sysadmin</category><pubDate>2026-11-19 03:38:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/13162962/importing-powershell-binary-modules-from-network-location">Importing PowerShell binary modules from network location</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
