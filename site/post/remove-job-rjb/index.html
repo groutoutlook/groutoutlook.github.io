@@ -50,7 +50,7 @@
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> not <code>spjb</code> but clean up job from job entries of current shell session.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gjb | ? state -eq completed |%{ rjb $_} # remove done/finished job.
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">gjb | ? state -in @(&quot;stopped&quot;,&quot;completed&quot;) |%{ Remove-Job $_} # remove done/finished/forcefully stopped job.
 </span></code></pre>
 </li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
