@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-21 02:38:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Agrivoltaics</title><category>agriculture</category><category>misc</category><pubDate>2026-11-21 04:51:48 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Agrivoltaics">Agrivoltaics</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> agrisolar, dual use solar.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Vibecoding an inference chip</title><category>asic</category><category>cpld</category><category>discussion</category><category>llm</category><pubDate>2026-11-21 03:22:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50579297">Vibecoding an inference chip</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-21 02:38:54 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://codeberg.org/mergiraf/mergiraf"><code>mergiraf</code> A syntax-aware git merge driver for a growing collection of programming languages and file formats.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> not only #nightly, I have to link it into <code>~/.local/bin</code> or <code>git</code> couldnt find it.</li>
@@ -44,7 +68,7 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #technologia <a href="https://lobste.rs/s/cmifpg/levent_alpoge_claims_proof_riemann">Levent Alpoge Claims Proof of Riemann Hypothesis</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50578358">Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis</a></li>
 </ul>
 </li>
 </ul>
@@ -343,42 +367,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:06:09 2026] #blog <a href="https://acid.vegas/blog/the-port-that-does-not-exist/">The port <code>0</code> that does not exist</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`ctrl+w ctrl+shift+n` Move pane of code file to a whole new window for a more focused view. Zoom more on that as well.</title><category>editor</category><category>ide</category><category>windows</category><pubDate>2026-11-20 01:39:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><code>ctrl+w ctrl+shift+n</code> Move pane of code file to a whole new window for a more focused view. Zoom more on that as well.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> can <code>alt+right</code> move between document group pretty easily.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-json"><span class="source json">,
-<span class="meta structure dictionary json"><span class="punctuation section dictionary begin json">{</span>
-  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>scheme<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Visual C++ 6<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
-  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>command<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Window.NewWindow<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
-  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>shortcut<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Ctrl+W, Ctrl+Shift+N<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
-  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>scope<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>Global<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
-  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>scopeId<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>{5EFC7975-14BC-11CF-9B2B-00AA00573819}<span class="punctuation definition string end json">&quot;</span></span><span class="punctuation separator dictionary pair json">,</span></span>
-  <span class="meta structure dictionary key json"><span class="string quoted double json"><span class="punctuation definition string begin json">&quot;</span>isRemoval<span class="punctuation definition string end json">&quot;</span></span></span><span class="meta structure dictionary value json"><span class="punctuation separator dictionary key-value json">:</span> <span class="constant language json">false</span>
-</span><span class="punctuation section dictionary end json">}</span></span>
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Day Night Cycle using LUT in Fragment Shader of Materials</title><category>asset</category><category>blender</category><pubDate>2026-11-20 11:49:51 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://shahriyarshahrabi.medium.com/day-night-cycle-using-lut-in-fragment-shader-of-materials-80edaf26f655">Day Night Cycle using LUT in Fragment Shader of Materials</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/2zlrjv/ai_smells_on_medium#c_xlcxag">AI Smells on Medium</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:49:51 2026] Medium unblock Vietnam ISP now.</li>
 </ul>
 </li>
 </ul>
