@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</title><category>ch32</category><category>dma</category><category>embed</category><category>mcu</category><category>rgb</category><category>waveform</category><pubDate>2026-11-20 04:09:42 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>linux - DMA buf import into Vulkan</title><category>dma</category><category>graph</category><category>vulkan</category><pubDate>2026-11-21 07:04:11 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/78071242/dma-buf-import-into-vulkan">linux - DMA buf import into Vulkan</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://gist.github.com/seonjunn/3a402330262d7bea19eac800ce1f1cb7">DMA-BUF Vulkan Interop Example (Android)</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</title><category>ch32</category><category>dma</category><category>embed</category><category>mcu</category><category>rgb</category><category>waveform</category><pubDate>2026-11-20 04:09:42 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/cpldcpu/WS2812Tester/tree/master">WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> basically RX side of 2812 RGB LED protocol.</li>
@@ -370,21 +382,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> who knows... I'm  trying to find some examples to write TUI tools.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 08:45:32 2026] #css #web/ui <a href="https://github.com/ArthurSonzogni/RTXUI"><code>RTXUI</code> C++ reactive terminal user interfaces from HTML templates, CSS, and plain C++ state.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Poll until `scoop` update my badly wanted packages.</title><category>powershell</category><category>scoop</category><category>snippet</category><pubDate>2026-11-20 08:33:23 AM</pubDate><content:encoded><![CDATA[<ul>
-<li>Poll until <code>scoop</code> update my badly wanted packages.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">$a=get-date; while ((scoop if codex).version -ne &#39;0.171.0&#39;) {scoop update ; sleep -ms 10000 ; get-date}; (get-date)-$a
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
