@@ -1,4 +1,188 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Smith chart</title><category>chart</category><category>elec</category><category>rf</category><pubDate>2026-11-21 09:20:43 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`mergiraf` A syntax-aware git merge driver for a growing collection of programming languages and file formats.</title><category>cli</category><category>diff</category><category>utils</category><pubDate>2026-11-21 02:38:54 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://codeberg.org/mergiraf/mergiraf"><code>mergiraf</code> A syntax-aware git merge driver for a growing collection of programming languages and file formats.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> not only #nightly, I have to link it into <code>~/.local/bin</code> or <code>git</code> couldnt find it.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> pull origin_sample main</span>
+<span class="meta function-call shell"><span class="variable function shell">git</span></span><span class="meta function-call arguments shell"> merge origin_sample/main</span>
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://mergiraf.org/usage.html#registration-as-a-git-merge-driver">Usage - Mergiraf</a>
+<ul>
+<li>#til about <code>.gitattributes</code> and the global one....</li>
+</ul>
+</li>
+<li><a href="https://mergiraf.org/usage.html#interactive-use-after-encountering-a-merge-conflict">Interactive use after encountering a merge conflict - <code>mergiraf solve conflict.cpp</code></a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/1qmcac/tools_built_on_tree_sitter_s_concrete">Tools built on tree-sitter's concrete syntax trees</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://nelson.cloud/you-can-hide-languages-from-githubs-languages-bar/">You Can Hide Languages From GitHub's Languages Bar <code>linguist</code></a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 21 14:38:54 2026] <a href="https://codeberg.org/mergiraf/mergiraf/issues/511">#511 - <code>Mergiraf: You seem to be using Jujutsu instead of Git.</code></a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Announcing `jj-musubi` live sync for Jujutsu</title><category>blog</category><category>cli</category><category>jj</category><category>prog</category><category>psa</category><pubDate>2026-11-21 02:25:44 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/tj1j4b/announcing_jj_musubi_live_sync_for">Announcing <code>jj-musubi</code> live sync for Jujutsu</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/baptiste0928/jj-mesh"><code>jj-mesh</code> Peer-to-peer synchronization daemon for jj repositories</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>number theory - What does proving the Riemann Hypothesis accomplish?</title><category>misc</category><category>news</category><category>shape</category><pubDate>2026-11-21 02:14:27 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://math.stackexchange.com/questions/404624/what-does-proving-the-riemann-hypothesis-accomplish/404630#404630">number theory - What does proving the Riemann Hypothesis accomplish?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #technologia <a href="https://lobste.rs/s/cmifpg/levent_alpoge_claims_proof_riemann">Levent Alpoge Claims Proof of Riemann Hypothesis</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Limelight Smart Camera</title><category>camera</category><category>hard</category><category>poe</category><category>ros</category><pubDate>2026-11-21 02:04:26 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://limelightvision.io/">Limelight Smart Camera</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/embedded/comments/1y1egnu">I made an IP streaming camera. Is this worth pursuing?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Is there a good way to make circuits in Typst? - Questions - Typst Forum</title><category>file</category><category>hardware</category><category>kicad</category><category>typesetting</category><pubDate>2026-11-21 02:02:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://forum.typst.app/t/is-there-a-good-way-to-make-circuits-in-typst/1558/14">Is there a good way to make circuits in Typst? - Questions - Typst Forum</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #latex <a href="https://circuitikz.com/">CircuiTikZ – Advanced Circuit Drawing Package for LaTeX</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/Mc-Zen/quill">quill: Effortlessly create quantum circuit diagrams in Typst.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Publish (on your) Own Site Syndicate Elsewhere – Dr Leon Furze</title><category>blog</category><category>host/self</category><category>ssg</category><pubDate>2026-11-21 01:59:01 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://leonfurze.com/2025/07/23/publish-on-your-own-site-syndicate-elsewhere/">Publish (on your) Own Site Syndicate Elsewhere – Dr Leon Furze</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`convex-backend` reactive database for app developers</title><category>backend</category><category>database</category><category>rust</category><category>typescript</category><pubDate>2026-11-21 01:53:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/convex/convex-backend"><code>convex-backend</code> reactive database for app developers</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`fx` terminal json viewer &amp; processor</title><category>cli</category><category>cli/option</category><category>format/json</category><category>format/yaml</category><category>keybinding</category><category>tui</category><category>utils</category><pubDate>2026-11-21 01:51:07 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/antonmedv/fx"><code>fx</code> terminal json viewer &amp; processor</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> name is really hard to remember though. it's readonly. And can read YAML/JSON.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://fx.wtf/getting-started#streaming-mode">Getting Started | fx</a>
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> processing of a JSON stream as a single array...</span><span class="comment line number-sign shell">
+</span><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>{&quot;str&quot;: &quot;Hello&quot;}{&quot;str&quot;: &quot;World!&quot;}<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>slurp</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.map(x =&gt; x.str)<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.join(&quot;, &quot;)<span class="punctuation definition string end shell">&#39;</span></span></span>
+</span></code></pre>
+<ul>
+<li>#faq <a href="https://fx.wtf/how-to/join-two-arrays-by-their-properties"><code>fx</code> join two arrays by properties</a></li>
+<li><code>fx</code> can process TOML easily... #til that put a query on it will dump content to stdout instead of open #TUI app.
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="constant character escape shell">\m</span>ouse-around.toml .events <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> dump all events to terminal. No TUI.</span><span class="comment line number-sign shell">
+</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or you can just put `.`, it will practically convert toml to json. No adhoc scripts.</span><span class="comment line number-sign shell">
+</span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://fx.wtf/how-to/viewing-yaml-in-the-terminal-on-linux-with-fx#open-a-yaml-file">Viewing YAML in the Terminal on Linux with fx | fx</a></li>
+<li><a href="https://fx.wtf/advanced-usage">Advanced Usage | fx</a></li>
+<li><code>v</code> to open in <code>$editor</code> this will open in current focused line.
+<ul>
+<li>I have a small patch that ignore executable and enable <code>hx</code> to edit files.</li>
+</ul>
+</li>
+<li><a href="https://github.com/antonmedv/fx/pull/358">feat: yank key and value - <code>y b</code> as keybinding</a>
+<ul>
+<li>there are <code>y p</code>, <code>y k</code>, <code>y v</code> as well. <code>y b</code> is like, yank both.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop. but It's #nightly now.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bxgmid"><code>fx</code> json terminal viewer</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #cli #python #library
+<ul>
+<li><a href="https://github.com/kellyjonbrazil/jc"><code>jc</code> output cli, file-types, and common strings to json, yaml, or dictionaries</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>jc</code> output famous cli tools to json, both in #windows and #linux.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>fx</code> is actually quite hard to use. in scoop.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://gitlab.com/makapuf/treewalker"><code>treewalker</code></a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:31:46 2026] <code>fx</code> add XML, HTML, EDN, MAML support..</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 21 13:51:07 2026] <a href="https://github.com/antonmedv/fx/pull/443">Preserve array indexes when serializing query results</a>
+<ul>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>[1,2,3]<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>x =&gt; { delete x[1]; return x }<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [1,null,3]</span><span class="comment line number-sign shell">
+</span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Powershell 7 is coming to Windows</title><category>default</category><category>powershell</category><category>windows</category><pubDate>2026-11-21 01:41:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.reddit.com/r/PowerShell/comments/1xz1542">Powershell 7 is coming to Windows</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #comedy : Where else would it come.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SENTENTIAL: relating to, or involving a proposition in logic</title><category>english</category><category>vocab</category><pubDate>2026-11-21 09:48:55 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.merriam-webster.com/dictionary/sentential">SENTENTIAL: relating to, or involving a proposition in logic</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.cppmore.com/2026/10/07/back-to-basics-first-order-logic/#Why_First-Order_Logic">Back to Basics: First-Order Logic</a>
+<ul>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.cppmore.com/2026/08/23/back-to-basics-sentential-logic/">Back to Basics: Sentential Logic - CppMore</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Smith chart</title><category>chart</category><category>elec</category><category>rf</category><pubDate>2026-11-21 09:20:43 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Smith_chart">Smith chart</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Smith Chart is so popular on RF probe and measurement device in general.</li>
@@ -195,203 +379,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/2zlrjv/ai_smells_on_medium#c_xlcxag">AI Smells on Medium</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:49:51 2026] Medium unblock Vietnam ISP now.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>cppstat - C++ Compiler Support Status</title><category>compatiblity</category><category>cpp</category><category>list</category><category>matrix</category><pubDate>2026-11-20 11:40:15 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://cppstat.dev/">cppstat - C++ Compiler Support Status</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cppreference.com/cpp/compiler_support/26">Compiler support for C++26</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> for example I really want <code>submdspan</code> and <del><code>inplace_vector</code></del> to land in <code>clang</code>, and MSVC..</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:40:15 2026] and Expansion Statements <code>template for</code>.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>c++ - How can you iterate over the elements of an std::tuple?</title><category>container/tuple</category><category>lang</category><pubDate>2026-11-20 11:37:30 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/1198260/how-can-you-iterate-over-the-elements-of-an-stdtuple">c++ - How can you iterate over the elements of an std::tuple?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>using mp11 or boost.hana honestly... since that require <code>template for</code>. Worked at c++11 and c++14, respectively.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>c++23 and c++26 havent got support for <a href="https://github.com/cplusplus/papers/issues/156">P1306 R3 Expansion Statements</a>
-<ul>
-<li><a href="https://www.reddit.com/r/cpp/comments/qwsekk">Did 'template for' make it into C++23?</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://tsche.github.io/proposals/">WG21 Papers &amp; Issues</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:37:30 2026] <a href="https://tsche.github.io/proposals/dollar_idents.html#r2-july-2026"><code>$identifiers</code></a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>build Rust code with a C++/Qt/CMake project</title><category>build/cargo</category><category>build/cmake</category><category>buildsystem</category><category>framework/qt</category><category>rust/interop</category><pubDate>2026-11-20 11:00:46 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/31162438/how-can-i-build-rust-code-with-a-c-qt-cmake-project/70767637#70767637">build Rust code with a C++/Qt/CMake project</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/corrosion-rs/corrosion"><code>corrosion</code> Rust and CMake - Easy Rust and C/C++ Integration!</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted -->[2025-08-29 11:35:20 AM] <a href="https://blog.memzero.de/cmake-cargo-example/">memzero</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #zig : <a href="https://blog.memzero.de/zig-cross-compile/">memzero</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#rust <a href="https://github.com/KDAB/cxx-qt"><code>cxx-qt</code> Safe interop between Rust and Qt</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://github.com/KDE/cxx-kde-frameworks"><code>cxx-kde-frameworks</code> Bridge KDE Frameworks and Rust by <code>cxx-qt</code></a>
-<ul>
-<li>very low activity though.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/rust/comments/1dg8ut4">Anyone interested in working on adding Rust bindings for KDE frameworks?</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 11:00:46 2026] #ide #code/forge <a href="https://github.com/Keats/kickstart"><code>kickstart</code> scaffolding tool to get new projects up and running quickly</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Remembrance Day</title><category>society</category><category>uk</category><category>us</category><pubDate>2026-11-20 10:53:25 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Remembrance_Day">Remembrance Day</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> that's in UK.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Veterans_Day">Veterans Day</a>
-<ul>
-<li>both is in Nov 11th.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #china #commercial
-<ul>
-<li><a href="https://wikipedia.org/wiki/618_shopping_day">618 shopping day</a></li>
-<li><a href="https://wikipedia.org/wiki/Singles%27_Day">1111 Singles' Day - Double Eleven</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 10:53:25 2026] <a href="https://wikipedia.org/wiki/Black_Friday_(shopping">Black Friday 27th November</a>)</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Diving into JTAG — Usage Scenarios (Part 5) | Interrupt</title><category>debugging</category><category>jtag</category><category>probe</category><category>proto</category><pubDate>2026-11-20 09:47:20 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://interrupt.memfault.com/blog/diving-into-jtag-part-5">Diving into JTAG — Usage Scenarios (Part 5) | Interrupt</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>tls - Where does SSL encryption take place?</title><category>netw</category><category>ssl</category><category>standard</category><category>tls</category><pubDate>2026-11-20 09:22:16 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://security.stackexchange.com/questions/19681/where-does-ssl-encryption-take-place">tls - Where does SSL encryption take place?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> OSI layer 6 or layer 5.... not that important.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>Layer 6 Syntax layer or <a href="https://wikipedia.org/wiki/Presentation_layer">Presentation layer</a>
-<ul>
-<li>the most famous one is TLS, MIME in email and PGP.</li>
-</ul>
-</li>
-<li>Layer 5: Session layer.
-<ul>
-<li>most famous one:<a href="https://wikipedia.org/wiki/SOCKS">SOCKS</a>
-<ul>
-<li>and RTP <a href="https://wikipedia.org/wiki/Real-time_Transport_Protocol">Real-time Transport Protocol</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: ehm more #terminology for you.</li>
-<li>Con: OSI model is overly complex.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2025-06-16 05:34:48 PM] #infosec
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=44282378">Why SSL was renamed to TLS in late 90s (2014)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's naming, bascially the same</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Automatic_Certificate_Management_Environment">Automatic Certificate Management Environment</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 09:22:16 2026] <a href="https://kapteko.com/15-million-webservers/">15 million web servers on one VM - smoltcp, DPDK, AF_XDP · kapteko</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>esp-gmf: Espressif General Multimedia Framework (ESP-GMF)</title><category>esp32</category><category>fsdk</category><category>graphic</category><pubDate>2026-11-20 09:03:27 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/espressif/esp-gmf">esp-gmf: Espressif General Multimedia Framework (ESP-GMF)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #protocol/matter <a href="https://github.com/espressif/esp-matter">esp-matter: Espressif's SDK for Matter</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`PanelLan-ESP32-SDK` ​ESP-IDF library integrating ZX2D10GE01R (ST7701S+Encoder), ZX2D80CE02S (ST7789+FT5x06), ZX3D50CE02S-USRC (ST7796+FT5x06), ZX3D95CE01S-TR (GC9503V+FT5x06), ZX4D30CE08S (NV3041+CST3240), ZX4D30NE01S-UR (ST7701), and ZX7D00CE01S (EK9716BD4+GT911). Compatible with ESP-IDF v6.x, it also supports adding custom display and touch</title><category>esp32</category><category>fsdk</category><pubDate>2026-11-20 09:02:37 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/smartpanle/PanelLan-ESP32-SDK"><code>PanelLan-ESP32-SDK</code> ​ESP-IDF library integrating ZX2D10GE01R (ST7701S+Encoder), ZX2D80CE02S (ST7789+FT5x06), ZX3D50CE02S-USRC (ST7796+FT5x06), ZX3D95CE01S-TR (GC9503V+FT5x06), ZX4D30CE08S (NV3041+CST3240), ZX4D30NE01S-UR (ST7701), and ZX7D00CE01S (EK9716BD4+GT911). Compatible with ESP-IDF v6.x, it also supports adding custom display and touch</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`matter.js` complete typescript implementation of the Matter protocol specification</title><category>protocol/matter</category><category>typescript</category><category>wprog</category><pubDate>2026-11-20 09:01:49 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/matter-js/matter.js"><code>matter.js</code> complete typescript implementation of the Matter protocol specification</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`rs-matter` Rust implementation of the Matter protocol.</title><category>embed</category><category>protocol/matter</category><category>rust</category><pubDate>2026-11-20 09:01:08 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/project-chip/rs-matter"><code>rs-matter</code> Rust implementation of the Matter protocol.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://interrupt.memfault.com/blog/matter-internet-connectivity">Connecting Matter-over-Thread Devices to the Internet | Interrupt</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
