@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`anyrender` Rust 2D drawing abstraction</title><category>graphic</category><category>library</category><category>rust</category><category>wprog</category><pubDate>2026-11-22 10:33:44 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Mathlib</title><category>lean</category><category>math</category><category>meta</category><category>shape</category><category>technologia</category><category>theorem</category><pubDate>2026-11-22 11:06:02 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mathlib.org/">Mathlib</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://physlib.io/">Physlib: Digitalizing Physics in Lean 4</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50589618">Lean verification of the Riemann Hypothesis</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`anyrender` Rust 2D drawing abstraction</title><category>graphic</category><category>library</category><category>rust</category><category>wprog</category><pubDate>2026-11-22 10:33:44 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/DioxusLabs/anyrender"><code>anyrender</code> Rust 2D drawing abstraction</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -319,18 +331,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 21 09:20:43 2026] <a href="https://mp.weixin.qq.com/s/M_uXjJwoSkFwHAFmdBunmw">SYSJOINT NanoVNA-FV3 Screen-Splitter Review</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>linux - DMA buf import into Vulkan</title><category>dma</category><category>graph</category><category>vulkan</category><pubDate>2026-11-21 07:04:11 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/78071242/dma-buf-import-into-vulkan">linux - DMA buf import into Vulkan</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://gist.github.com/seonjunn/3a402330262d7bea19eac800ce1f1cb7">DMA-BUF Vulkan Interop Example (Android)</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
