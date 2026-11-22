@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</title><category>boost</category><category>module</category><category>pmic</category><pubDate>2026-11-22 09:54:14 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>How does programming language affect token efficiency and correctness?</title><category>llm</category><category>prog</category><category>technologia</category><pubDate>2026-11-22 10:00:14 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://danluu.com/pl-tokens/">How does programming language affect token efficiency and correctness?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis">Advice for the next 100 Rust GUIs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</title><category>boost</category><category>module</category><category>pmic</category><pubDate>2026-11-22 09:54:14 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mp.weixin.qq.com/s/lTlesoVlRxWpPrn9mVpUWQ">PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -336,28 +348,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50528119">How to CAD Almost Anything</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Handle`</title><category>process</category><category>windows</category><pubDate>2026-11-20 02:35:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/handle"><code>Handle</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1412239/how-to-force-closing-freeing-the-serial-ports-opened-by-other-programs-in-cmd">closing / freeing serial ports opened by other programs in Powershell</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <code>procmon</code></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [2024-07-23 11:22:22 AM] #windows #process/handle
-<ul>
-<li><a href="https://github.com/PolarGoose/Handle2">Handle2 - Alternative to the Sysinternals Handle.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> it's like Sysinternals Handle but in CLI.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:35:59 2026] <a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23678">avformat/file: add Windows handle protocol - <code>FFmpeg</code> Forgejo</a></li>
 </ul>
 </li>
 </ul>
