@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Slopstrap LLM-style web design.</title><category>css</category><category>llm</category><category>technologia</category><category>uiweb</category><pubDate>2026-11-22 11:48:55 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>c++20 - What is a C++ module purview?</title><category>build</category><category>cmake</category><category>cpp</category><category>lang</category><category>module</category><pubDate>2026-11-22 01:23:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/49204175/what-is-a-c-module-purview">c++20 - What is a C++ module purview?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Slopstrap LLM-style web design.</title><category>css</category><category>llm</category><category>technologia</category><category>uiweb</category><pubDate>2026-11-22 11:48:55 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://slopstrap.mikelacher.com/">Slopstrap LLM-style web design.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -302,22 +314,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>SENTENTIAL: relating to, or involving a proposition in logic</title><category>english</category><category>vocab</category><pubDate>2026-11-21 09:48:55 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.merriam-webster.com/dictionary/sentential">SENTENTIAL: relating to, or involving a proposition in logic</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.cppmore.com/2026/10/07/back-to-basics-first-order-logic/#Why_First-Order_Logic">Back to Basics: First-Order Logic</a>
-<ul>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.cppmore.com/2026/08/23/back-to-basics-sentential-logic/">Back to Basics: Sentential Logic - CppMore</a></li>
-</ul>
-</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
