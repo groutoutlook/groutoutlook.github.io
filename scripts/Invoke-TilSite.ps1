@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$TillerRoot = 'D:\ProgramDataD\MiscLang\07.02-Rust\nightly\tiller',
+    [string]$TillerRoot = 'D:\ProgramDataD\MiscLang\07.02-Rust\proj\tiller',
     [string]$TillerExecutable,
     [switch]$Force
 )

@@ -16,7 +16,10 @@ just test           # Check card syncing, publishing, routes, and favicons
 
 `site/` stays the generated Tiller blog. `assets/card/` is a portable browser
 snapshot; `public/` is the assembled Pages output and is ignored by Git.
-GitHub Pages runs the assembler before uploading `public/`.
+The Pages build job runs the assembler and uploads `public/`. The deploy job
+starts after the build job finishes so GitHub has time to register the
+`github-pages` artifact. If artifact lookup fails after a successful build,
+rerun only the failed deploy job to reuse the upload.
 The shared green microchip favicon is in `assets/site/` and is added to the
 card, blog, map, and other browser views during assembly.
 

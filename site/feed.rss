@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Mathlib</title><category>lean</category><category>math</category><category>meta</category><category>shape</category><category>technologia</category><category>theorem</category><pubDate>2026-11-22 11:06:02 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Slopstrap LLM-style web design.</title><category>css</category><category>llm</category><category>technologia</category><category>uiweb</category><pubDate>2026-11-22 11:48:55 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://slopstrap.mikelacher.com/">Slopstrap LLM-style web design.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50576012">Slopstrap – Make your site look hastily vibecoded</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Mathlib</title><category>lean</category><category>math</category><category>meta</category><category>shape</category><category>technologia</category><category>theorem</category><pubDate>2026-11-22 11:06:02 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://mathlib.org/">Mathlib</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -6,7 +18,11 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://physlib.io/">Physlib: Digitalizing Physics in Lean 4</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50589618">Lean verification of the Riemann Hypothesis</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50589618">Lean verification of the Riemann Hypothesis</a>
+<ul>
+<li><a href="https://www.cslib.io/">A Focused Effort on Formalizing Computer Science in Lean</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -303,34 +319,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Smith chart</title><category>chart</category><category>elec</category><category>rf</category><pubDate>2026-11-21 09:20:43 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Smith_chart">Smith chart</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Smith Chart is so popular on RF probe and measurement device in general.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> graphical calculator or nomogram designed for electrical and electronics engineers specializing in radio frequency (RF) engineering to assist in solving problems with transmission lines and matching circuits.[6][7][8][9][10]</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://detail.tmall.com/item.htm?id=838297858188">RF Demo Kit NanoVNA 射频测试板 矢网测试 滤波器 衰减器 rf板卡</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://pyvisa.readthedocs.io/en/latest/">PyVISA: Control your instruments with VISA/GPIB script</a>
-<ul>
-<li>or all of SCPI tool as your oscilloscope + DC programmable Load + Programmable power supply.</li>
-</ul>
-</li>
-<li><a href="https://www.eevblog.com/forum/chatgptai/ai-in-your-test-equipment/msg6288990/#msg6288990">AI in your test equipment(RF VNA)</a></li>
-<li>#acronym <a href="https://wikipedia.org/wiki/Network_analyzer_(electrical)">VNA: Vector/Scalar Network analyzer (electrical)</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/xNcqdSg3SmNyT-jEgCjDaw">Step-by-step guide on how to perform complete amplifier parameter testing using a vector network (VNA).</a></li>
-</ul>
-</li>
-<li><a href="https://mp.weixin.qq.com/s/J9qUiU0jpfGG60ekspweCQ">Losing 10dB, then making up for another 10—yes, a design from a big manufacturer—sure, that's right. Use ...... with peace of mind</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 21 09:20:43 2026] <a href="https://mp.weixin.qq.com/s/M_uXjJwoSkFwHAFmdBunmw">SYSJOINT NanoVNA-FV3 Screen-Splitter Review</a></li>
 </ul>
 </li>
 </ul>
