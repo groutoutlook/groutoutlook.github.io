@@ -1,12 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>How does programming language affect token efficiency and correctness?</title><category>llm</category><category>prog</category><category>technologia</category><pubDate>2026-11-22 10:00:14 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://danluu.com/pl-tokens/">How does programming language affect token efficiency and correctness?</a>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`anyrender` Rust 2D drawing abstraction</title><category>graphic</category><category>library</category><category>rust</category><category>wprog</category><pubDate>2026-11-22 10:33:44 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/DioxusLabs/anyrender"><code>anyrender</code> Rust 2D drawing abstraction</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis">Advice for the next 100 Rust GUIs</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> C++ <code>skia</code>.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`blitz` radically modular HTML/CSS rendering engine</title><category>css</category><category>web/ui</category><category>wprog</category><pubDate>2026-11-22 10:29:35 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/dioxuslabs/blitz"><code>blitz</code> radically modular HTML/CSS rendering engine</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`imgui-combo-filter` Dear ImGui combo box widget with text filter</title><category>cpp</category><category>graph</category><category>ui/imgui/widget</category><pubDate>2026-11-22 10:23:44 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/khlorz/imgui-combo-filter"><code>imgui-combo-filter</code> Dear ImGui combo box widget with text filter</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> using v2 please.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/hnOsmium0001/imgui-command-palette"><code>imgui-command-palette</code> Sublime Text or VSCode style command palette in ImGui</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/pthom/imgui_bundle_template"><code>imgui_bundle_template</code> quick start template to work with Dear ImGui Bundle</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov 22 10:23:44 2026] I just cant care much and rolled my own.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>How does programming language affect token efficiency and correctness?</title><category>llm</category><category>prog</category><category>technologia</category><pubDate>2026-11-22 10:00:14 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://danluu.com/pl-tokens/">How does programming language affect token efficiency and correctness?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you're often better off throwing away a chunk of code and having an LLM re-write it from scratch than you are having an LLM modify it or try to re-write it in place.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis">Advice for the next 100 Rust GUIs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://claude.com/marketplace/plugins/ralph-loop">Ralph Loop | Claude by Anthropic</a></li>
 </ul>
 </li>
 </ul>
@@ -293,61 +331,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://gist.github.com/seonjunn/3a402330262d7bea19eac800ce1f1cb7">DMA-BUF Vulkan Interop Example (Android)</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</title><category>ch32</category><category>dma</category><category>embed</category><category>mcu</category><category>rgb</category><category>waveform</category><pubDate>2026-11-20 04:09:42 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/cpldcpu/WS2812Tester/tree/master">WS2812Tester: An automated tester for WS2812 Addressible RGB LEDs and clones based on CH32V003</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> basically RX side of 2812 RGB LED protocol.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> IT has always a better decision to patiently wait until someone do it. And I'm right.
-<ul>
-<li><a href="https://github.com/cpldcpu/WS2812Tester/blob/master/docs/findings.md">WS2812Tester docs finding in general</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://cpldcpu.com/2024/01/21/analysis-of-the-gen2-addressable-rgb-led-protocol/">Analysis of the Gen2 Addressable RGB LED Protocol – Tim's Blog</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Synology Security Advisory</title><category>infosec</category><category>nas</category><category>tailscale</category><category>tunnel</category><category>vpn</category><pubDate>2026-11-20 03:13:45 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50567209">Synology Security Advisory</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> just guard your NAS.. properly. very stupid leave them out open just for you to access it remotely.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</title><category>freecad</category><category>news</category><category>software</category><pubDate>2026-11-20 03:01:28 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50418176">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/hew3d/hew"><code>hew</code> intuitive, Open Source, cross-platform, solids-first 3D modeler</a></li>
-<li><a href="https://github.com/iamahsanmehmood/openskp"><code>openskp</code> Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #meta  <a href="https://3dwarehouse.sketchup.com/">3D Warehouse a model library</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/hew3d/hew">The intuitive, Open Source, cross-platform, solids-first 3D modeler</a>
-<ul>
-<li><a href="https://github.com/iamahsanmehmood/openskp">Open-source SketchUp (.skp) reader, writer, and converter - parse, create, and edit .skp files; export to GLB, OBJ, STL, PLY, DXF, IFC4, and Fragments. Python, TypeScript, .NET, Dart, and C++.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/tangency-labs/solidcraft"><code>SolidCraft</code> parametric 3D CAD application, desktop, web, and automation MCP.</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 15:01:28 2026] <a href="https://github.com/Fluid-CAD/FluidCAD"><code>FluidCAD</code> parametric CAD modeling combines both mouse-driven and code driven approaches</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50528119">How to CAD Almost Anything</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
