@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>With wafer scale chips becoming more popular, what&apos;s stopping nvidia or someone from putting literally everything on the wafer including vram, ram, and even the CPU?</title><category>AI</category><category>news</category><category>technologia</category><pubDate>2026-11-21 05:36:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</title><category>boost</category><category>module</category><category>pmic</category><pubDate>2026-11-22 09:54:14 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/lTlesoVlRxWpPrn9mVpUWQ">PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>With wafer scale chips becoming more popular, what&apos;s stopping nvidia or someone from putting literally everything on the wafer including vram, ram, and even the CPU?</title><category>AI</category><category>news</category><category>technologia</category><pubDate>2026-11-21 05:36:43 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://sh.reddit.com/r/mlscaling/comments/1csquky">With wafer scale chips becoming more popular, what's stopping nvidia or someone from putting literally everything on the wafer including vram, ram, and even the CPU?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -346,27 +358,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:35:59 2026] <a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23678">avformat/file: add Windows handle protocol - <code>FFmpeg</code> Forgejo</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Why is boredom painful for humans? Other animals spend most of their time just chilling.</title><category>human</category><category>philosophy</category><pubDate>2026-11-20 02:11:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/NoStupidQuestions/comments/1wc8jr6">Why is boredom painful for humans? Other animals spend most of their time just chilling.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> well, other animal do too.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/nihilism/comments/xg9ncu">Optimistic Nihilism Hate</a>
-<ul>
-<li>#terminology make me dizzy</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> an #alternative of speaking 'soul seeking' is 'pondering the meaning of life'.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 20 14:11:51 2026] #quote &quot;If you're bored then you're boring.&quot;
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://acid.vegas/about/">acidvegas x about</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
