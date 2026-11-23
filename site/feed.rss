@@ -1,4 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Fallacy of composition</title><category>debate</category><category>fallacy</category><category>topic</category><pubDate>2026-11-23 11:12:15 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>For the RDMA novice: libfabric, libibverbs, InfiniBand, OFED, MOFED? — Rohit Zambre</title><category>compsci</category><category>hpc</category><category>linux</category><category>network</category><category>windows</category><pubDate>2026-11-23 01:10:24 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.rohitzambre.com/blog/2018/2/9/for-the-rdma-novice-libfabric-libibverbs-infiniband-ofed-mofed">For the RDMA novice: libfabric, libibverbs, InfiniBand, OFED, MOFED? — Rohit Zambre</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Remote_direct_memory_access">RDMA : Remote direct memory access</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="http://lastweek.io/notes/source_code/rdma/">DPDK and RDMA - Yizhou Shan's Home Page</a>
+<ul>
+<li>#os <a href="https://github.com/microsoft/demikernel">demikernel: Kernel-Bypass LibOS Architecture</a></li>
+<li>#linux <a href="https://github.com/gramineproject/gramine">gramine: A library OS for Linux multi-process applications, with Intel SGX support</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/DPDK/dpdk"><code>dpdk</code> Data Plane Development Kit</a>
+<ul>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Data_Plane_Development_Kit">DPDK Data Plane Development Kit</a>
+<ul>
+<li>BLUF : No - <a href="https://stackoverflow.com/questions/78132901/is-there-a-windows-user-space-api-similar-to-vfio-for-linux-for-writing-drivers">Windows user space API similar to VFIO for Linux for writing drivers for custom hardware?</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/DPDK/grout"><code>grout</code> graph router based on DPDK</a>
+<ul>
+<li>coincidence for sure.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Friday, April 17, 2026 09:12:10 AM ] #linux #documentation
+<ul>
+<li><a href="https://warewulf.org/docs/main/getting-started/introduction.html">Introduction —  Warewulf User Guide main documentation</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> those have <code>wwctl</code> tool..</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 23 13:10:24 2026] #usb #technologia <a href="https://techcommunity.microsoft.com/blog/microsoftusbblog/introducing-rdma-over-usb4%C2%AE-on-windows-run-larger-local-ai-models-across-pcs/4574602?afd_azwaf_tok=eyJraWQiOiI4Q0U5QzZBMjdDMThGODlEMDVDRERCQTk3MUM5MTU4QjVCMDUzQjk5OEQwNjhDRDREQzRCNTg5RTU3QjlBRjk5IiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ0ZWNoY29tbXVuaXR5Lm1pY3Jvc29mdC5jb20iLCJleHAiOjE3OTU0MTM5OTEsImlhdCI6MTc5NTQxMzk4MSwiaXNzIjoidGllcjEtNjRkN2Q4OThkLWt6dndtIiwic3ViIjoiMTcxLjIzMi44Ny4yMjEiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MTEyM1QwNjA2MjFaLXIxNjRkN2Q4OThka3p2d21oQzFTRzF4eWc4MDAwMDAwMDEyMDAwMDAwMDAwM3dtdSIsImIiOiJTaHFrc25XMkVJUmRBSm5wUm1OQ1J0R1huc2dtV3FUdUpEM1I5c3RWWjBJIiwiaCI6IjhoOGpDOHVOQ2UxTzJkWVoxWXVaRnRSNFNOUTFkVjlMZEFERzlaem9KZjAifX0.JKgaoG2bL06Z2B1yWPIhDWzFUhH6WW96Hfr6BtITfWK48IuAIPt3Kt6GSJ3wKXaDj3XWHhxaE3gvVWGL6eIbLR5aTwT4iIWyiNZojosaT2p6RXkd7frohRZE01RLQK3G5DzMa4be8_bSkBRi3foT6zcTED0T6A-S9-E9eT6-yWOp3M8TF6mdMUJiRL_vgRpCs2jHkHXWeaYTl3I1BSSy2Rxgd0mGuZPFcOZ-vXAPZZF0US6KbYxI3p32sHpLjncGYgT9TqV-4wKnxMRp1D44vR3jj8jB0tz7ya6uml8FU4TE5WUNpQR-_Q2oueqHwa2oddV5umbnvRWzLXjBBGFoWg.WF3obl2IDtqgvMFRqVdYkD5s">Introducing RDMA over USB4® on Windows: run larger local AI models across PCs | Microsoft Community Hub</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>openhwfoundation/core-v-cores: CORE-V Family of RISC-V Cores</title><category>arch/riscv</category><category>dma</category><category>mcu</category><pubDate>2026-11-23 01:10:06 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/openhwfoundation/core-v-cores">openhwfoundation/core-v-cores: CORE-V Family of RISC-V Cores</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/openhwfoundation">OpenHW Foundation</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.openhwgroup.org/projects/core-v-mcu/doc-src/udma_subsystem.html">uDMA/μDMA Micro-DMA Subsystem — CORE-V MCU documentation</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>SimpleNFC - Nicolas Kruse</title><category>embed</category><category>hardware</category><category>protocol/nfc</category><category>uart</category><category>web/api/webserial</category><pubDate>2026-11-23 01:00:21 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.nonan.net/nkruse/simplenfc">SimpleNFC - Nicolas Kruse</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ch32 <a href="https://github.com/MartinEssink/CH32V003-NFC">CH32V003-NFC: Emulating NFC Tags on the CH32V003</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Public Suffix List</title><category>dns/tld</category><category>netw</category><category>uri</category><pubDate>2026-11-23 12:00:47 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://publicsuffix.org/">Public Suffix List</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bjoete/falsehoods_programmers_believe_about">Falsehoods Programmers Believe About ATProto</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Redmi AC2100 router gigabit port dual-band home 5g high-speed wifi wireless wall piercing</title><category>backend</category><category>ota</category><category>router</category><pubDate>2026-11-23 11:57:43 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://detail.1688.com/offer/961907388382.html">Redmi AC2100 router gigabit port dual-band home 5g high-speed wifi wireless wall piercing</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>I need a router or some method to extend my connection to the ESP32 or wi-fi SoC I connected to the board.
+<ul>
+<li>Even a RPi + wireguard client as tailscale or iroh is fine. I need OTA badly.
+<ul>
+<li>#blog #comparison <a href="https://news.ycombinator.com/item?id=48542480"><code>Iroh</code> 1.0 and Hacker News comparison with that and <code>tailscale</code>.</a></li>
+<li><a href="https://lobste.rs/s/cslljn/iroh_1_0_dial_keys_not_ips">Iroh 1.0 - Dial Keys, not IPs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>they use AC2100 for <a href="https://forum.openwrt.org/t/powering-an-esp32-with-ttl-headers/96935">Powering an ESP32 with TTL headers - Hardware Questions and Recommendations</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://openwrt.org/toh/xiaomi/xiaomi_redmi_router_ac2100">Redmi Router AC2100</a>
+<ul>
+<li>This is a cheap router than we can sideload OpenWrt firmware in.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/openwrt/comments/1bx8ey0">Openwrt router suggestions for a very poor man ( ultra cheap )</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/6laoto/road_iroh_1_0">The road to iroh 1.0</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Aug  8 17:01:38 2026] <a href="https://www.michaelvivirito.com/articles/beryl-7-tailscale-travel-router">Home Network Router: Beryl 7 + Tailscale - Michael Vivirito</a>
+<ul>
+<li>just try to run something in general, anything.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 23 11:57:43 2026] #wireguard <a href="https://www.reddit.com/r/Tailscale/comments/1fmxwad">WireGuard into Tailnet node and access Tailnet</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Fallacy of composition</title><category>debate</category><category>fallacy</category><category>topic</category><pubDate>2026-11-23 11:12:15 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Fallacy_of_composition">Fallacy of composition</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -6,7 +130,11 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50604472">The Usefulness of Useless Knowledge (1939)</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://wikipedia.org/wiki/Rapport">Rapport is close and harmonious relationship</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -208,66 +336,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/baptiste0928/jj-mesh"><code>jj-mesh</code> Peer-to-peer synchronization daemon for jj repositories</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>number theory - What does proving the Riemann Hypothesis accomplish?</title><category>misc</category><category>news</category><category>shape</category><pubDate>2026-11-21 02:14:27 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://math.stackexchange.com/questions/404624/what-does-proving-the-riemann-hypothesis-accomplish/404630#404630">number theory - What does proving the Riemann Hypothesis accomplish?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #technologia <a href="https://lobste.rs/s/cmifpg/levent_alpoge_claims_proof_riemann">Levent Alpoge Claims Proof of Riemann Hypothesis</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50578358">Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Limelight Smart Camera</title><category>camera</category><category>hard</category><category>poe</category><category>ros</category><pubDate>2026-11-21 02:04:26 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://limelightvision.io/">Limelight Smart Camera</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/embedded/comments/1y1egnu">I made an IP streaming camera. Is this worth pursuing?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Is there a good way to make circuits in Typst? - Questions - Typst Forum</title><category>file</category><category>hardware</category><category>kicad</category><category>typesetting</category><pubDate>2026-11-21 02:02:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://forum.typst.app/t/is-there-a-good-way-to-make-circuits-in-typst/1558/14">Is there a good way to make circuits in Typst? - Questions - Typst Forum</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #latex <a href="https://circuitikz.com/">CircuiTikZ – Advanced Circuit Drawing Package for LaTeX</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/Mc-Zen/quill">quill: Effortlessly create quantum circuit diagrams in Typst.</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Publish (on your) Own Site Syndicate Elsewhere – Dr Leon Furze</title><category>blog</category><category>host/self</category><category>ssg</category><pubDate>2026-11-21 01:59:01 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://leonfurze.com/2025/07/23/publish-on-your-own-site-syndicate-elsewhere/">Publish (on your) Own Site Syndicate Elsewhere – Dr Leon Furze</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`convex-backend` reactive database for app developers</title><category>backend</category><category>database</category><category>rust</category><category>typescript</category><pubDate>2026-11-21 01:53:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/convex/convex-backend"><code>convex-backend</code> reactive database for app developers</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
