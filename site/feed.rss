@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>c++20 - What is a C++ module purview?</title><category>build</category><category>cmake</category><category>cpp</category><category>lang</category><category>module</category><pubDate>2026-11-22 01:23:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Fallacy of composition</title><category>debate</category><category>fallacy</category><category>topic</category><pubDate>2026-11-23 11:12:15 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Fallacy_of_composition">Fallacy of composition</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50604472">The Usefulness of Useless Knowledge (1939)</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>IPv6 delegation, an unusually subtle failure mode</title><category>ipv6</category><category>lan</category><category>netw</category><pubDate>2026-11-22 03:07:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://lobste.rs/s/inj0dn/ipv6_delegation_unusually_subtle">IPv6 delegation, an unusually subtle failure mode</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>c++20 - What is a C++ module purview?</title><category>build</category><category>cmake</category><category>cpp</category><category>lang</category><category>module</category><pubDate>2026-11-22 01:23:36 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/49204175/what-is-a-c-module-purview">c++20 - What is a C++ module purview?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -240,76 +264,6 @@
 <li><a href="https://github.com/convex/convex-backend"><code>convex-backend</code> reactive database for app developers</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`fx` terminal json viewer &amp; processor</title><category>cli</category><category>cli/option</category><category>format/json</category><category>format/yaml</category><category>keybinding</category><category>tui</category><category>utils</category><pubDate>2026-11-21 01:51:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/antonmedv/fx"><code>fx</code> terminal json viewer &amp; processor</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> name is really hard to remember though. it's readonly. And can read YAML/JSON.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> <a href="https://fx.wtf/getting-started#streaming-mode">Getting Started | fx</a>
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> processing of a JSON stream as a single array...</span><span class="comment line number-sign shell">
-</span><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>{&quot;str&quot;: &quot;Hello&quot;}{&quot;str&quot;: &quot;World!&quot;}<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"><span class="variable parameter option shell"><span class="punctuation definition parameter shell"> --</span>slurp</span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.map(x =&gt; x.str)<span class="punctuation definition string end shell">&#39;</span></span> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>.join(&quot;, &quot;)<span class="punctuation definition string end shell">&#39;</span></span></span>
-</span></code></pre>
-<ul>
-<li>#faq <a href="https://fx.wtf/how-to/join-two-arrays-by-their-properties"><code>fx</code> join two arrays by properties</a></li>
-<li><code>fx</code> can process TOML easily... #til that put a query on it will dump content to stdout instead of open #TUI app.
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="meta group expansion tilde"><span class="variable language tilde shell">~</span></span><span class="constant character escape shell">\.</span>config<span class="constant character escape shell">\m</span>acors<span class="constant character escape shell">\m</span>acros<span class="constant character escape shell">\m</span>ouse-around.toml .events <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> dump all events to terminal. No TUI.</span><span class="comment line number-sign shell">
-</span></span><span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> or you can just put `.`, it will practically convert toml to json. No adhoc scripts.</span><span class="comment line number-sign shell">
-</span></span></code></pre>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://fx.wtf/how-to/viewing-yaml-in-the-terminal-on-linux-with-fx#open-a-yaml-file">Viewing YAML in the Terminal on Linux with fx | fx</a></li>
-<li><a href="https://fx.wtf/advanced-usage">Advanced Usage | fx</a></li>
-<li><code>v</code> to open in <code>$editor</code> this will open in current focused line.
-<ul>
-<li>I have a small patch that ignore executable and enable <code>hx</code> to edit files.</li>
-</ul>
-</li>
-<li><a href="https://github.com/antonmedv/fx/pull/358">feat: yank key and value - <code>y b</code> as keybinding</a>
-<ul>
-<li>there are <code>y p</code>, <code>y k</code>, <code>y v</code> as well. <code>y b</code> is like, yank both.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop. but It's #nightly now.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bxgmid"><code>fx</code> json terminal viewer</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #cli #python #library
-<ul>
-<li><a href="https://github.com/kellyjonbrazil/jc"><code>jc</code> output cli, file-types, and common strings to json, yaml, or dictionaries</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>jc</code> output famous cli tools to json, both in #windows and #linux.</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <code>fx</code> is actually quite hard to use. in scoop.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://gitlab.com/makapuf/treewalker"><code>treewalker</code></a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 10 11:31:46 2026] <code>fx</code> add XML, HTML, EDN, MAML support..</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 21 13:51:07 2026] <a href="https://github.com/antonmedv/fx/pull/443">Preserve array indexes when serializing query results</a>
-<ul>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-sh"><span class="source shell bash"><span class="meta function-call shell"><span class="support function echo shell">echo</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>[1,2,3]<span class="punctuation definition string end shell">&#39;</span></span></span> <span class="keyword operator logical pipe shell">|</span> <span class="meta function-call shell"><span class="variable function shell">fx</span></span><span class="meta function-call arguments shell"> <span class="string quoted single shell"><span class="punctuation definition string begin shell">&#39;</span>x =&gt; { delete x[1]; return x }<span class="punctuation definition string end shell">&#39;</span></span> <span class="comment line number-sign shell"><span class="punctuation definition comment begin shell">#</span></span><span class="comment line number-sign shell"> [1,null,3]</span><span class="comment line number-sign shell">
-</span></span></span></code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Powershell 7 is coming to Windows</title><category>default</category><category>powershell</category><category>windows</category><pubDate>2026-11-21 01:41:33 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.reddit.com/r/PowerShell/comments/1xz1542">Powershell 7 is coming to Windows</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #comedy : Where else would it come.</li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
