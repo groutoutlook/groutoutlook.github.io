@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>you can try `ogp` any youtube videos to kinda see the thumbnail of almost every thing.</title><category>image</category><category>snippet</category><category>youtube</category><pubDate>2026-11-24 02:25:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>What is the smallest graph of treewidth k having less edges than the (k+1)-clique?</title><category>csci</category><category>logic/discrete</category><category>math</category><pubDate>2026-11-24 03:02:36 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://cstheory.stackexchange.com/questions/53806/what-is-the-smallest-graph-of-treewidth-k-having-less-edges-than-the-k1-c">What is the smallest graph of treewidth k having less edges than the (k+1)-clique?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>you can try `ogp` any youtube videos to kinda see the thumbnail of almost every thing.</title><category>image</category><category>snippet</category><category>youtube</category><pubDate>2026-11-24 02:25:22 PM</pubDate><content:encoded><![CDATA[<ul>
 <li>you can try <code>ogp</code> any youtube videos to kinda see the thumbnail of almost every thing.
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -88,7 +100,11 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50620102">VP ≠ VNP over Every Field</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mathsclub.org/problems/valiant-s-hypothesis">Valiant's Hypothesis — MathsClub</a>
+<ul>
+<li><a href="https://cstheory.stackexchange.com/questions/529/does-vp-neq-vnp-imply-p-neq-np/534#534">Does VP ≠ VNP imply P ≠ NP</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -293,18 +309,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> you will always be sure on where to press it. really hate how they normally is <code>y</code>/<code>p</code>/<code>a</code>/<code>n</code> or so.</li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> find out while settings <code>/permission</code>. you can quick type <code>/per</code> -&gt; <code>enter</code> -&gt; <code>3</code> -&gt; <code>1</code> for now.</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`preact` ⚛️ Fast 3kB React alternative with the same modern API. Components &amp; Virtual DOM.</title><category>javascript</category><category>web/app/spa</category><category>web/ui</category><category>wprog</category><pubDate>2026-11-24 09:35:34 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/preactjs/preact"><code>preact</code> ⚛️ Fast 3kB React alternative with the same modern API. Components &amp; Virtual DOM.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/mborejdo/onepage"><code>onepage</code> Preact to one self-contained HTML file: swc, encre-css, strict CSP, opt-in WebAssembly.</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
