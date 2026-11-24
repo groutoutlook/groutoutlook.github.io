@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</title><category>cicd</category><category>code/forge</category><category>github</category><category>prog</category><pubDate>2026-11-24 01:36:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>you can try `ogp` any youtube videos to kinda see the thumbnail of almost every thing.</title><category>image</category><category>snippet</category><category>youtube</category><pubDate>2026-11-24 02:25:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>you can try <code>ogp</code> any youtube videos to kinda see the thumbnail of almost every thing.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ogp https://www.youtube.com/watch?v=O_zcc6Xl12g
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Gravimetry</title><category>metrology</category><category>physic</category><pubDate>2026-11-24 01:55:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Gravimetry">Gravimetry</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to measure strength of a gravitational field.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #science <a href="https://web.archive.org/web/20261123200228/https://news.uq.edu.au/2026-11-uq-researchers-send-unblockable-message-using-gravity">UQ researchers send an unblockable message using gravity - News - The University of Queensland</a>
+<ul>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> demonstrates the possibility of communicating using a method that ordinary physical barriers cannot block.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
+<ul>
+<li>Pro: no EMI. no electromagnetic field.</li>
+<li>Con: you need a 1.8 ton counterweight...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Sneakernet</title><category>infosec</category><category>lan</category><category>message</category><category>netw</category><pubDate>2026-11-24 01:51:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://sneakernet.eu/">Sneakernet</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sending message wthout using internet.. but through LAN still. Could be combined with #lora.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/pdecff/sneakernet">Lobsters discussion</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #filesystem #sharing <a href="http://www.nncpgo.org/">NNCP (NNCP)</a>
+<ul>
+<li>#http #p2p still but <a href="https://sneakerweb.org/">sneakerweb</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/vwni9c/sneakerweb">sneakerweb</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>iroh</code> and pal.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Human genome</title><category>anim</category><category>biology</category><category>gene</category><pubDate>2026-11-24 01:47:12 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Human_genome">Human genome</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.friedgil.com/nullomers">Nullomers – Gil</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Permanent (mathematics)</title><category>linalg</category><category>matrix/mul</category><category>shape</category><pubDate>2026-11-24 01:44:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>[Permanent (mathematics)](https://wikipedia.org/wiki/Permanent_(mathematics)
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Determinant">Determinant</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>What VP ≠ VNP Means (In 3 Minutes) – Gil</title><category>compsci</category><category>linalg</category><category>shape</category><pubDate>2026-11-24 01:41:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.friedgil.com/vpvnp">What VP ≠ VNP Means (In 3 Minutes) – Gil</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50620102">VP ≠ VNP over Every Field</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</title><category>cicd</category><category>code/forge</category><category>github</category><category>prog</category><pubDate>2026-11-24 01:36:09 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/groutoutlook/QcClip-Mod/actions/workflows/release.yml">disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the <code>… </code> elipsis.</li>
@@ -211,133 +305,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/mborejdo/onepage"><code>onepage</code> Preact to one self-contained HTML file: swc, encre-css, strict CSP, opt-in WebAssembly.</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`lean4` lean 4 programming language and theorem prover</title><category>compsci</category><category>functional</category><category>lang</category><category>prog</category><pubDate>2026-11-24 09:10:54 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/leanprover/lean4"><code>lean4</code> lean 4 programming language and theorem prover</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-10-08 12:23:11 AM] #compsci #meta
-<ul>
-<li><a href="https://proofassistants.stackexchange.com/questions/4274/reduce-type-name-in-lean">lean4 - reduce type name in lean - proof assistants stack exchange</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> cateogory some hyper compsci things.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li>#blog <a href="https://lean-lang.org/talks/from_z3_to_lean.pdf">z3 to lean</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted -->
-<ul>
-<li>#discussion <a href="https://lobste.rs/s/dixmkp/proof_oriented_programming_f">Proof-oriented Programming in F*</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:51:09 2026] #rust #blog <a href="https://lobste.rs/s/6tbd2o/creusot_0_14_0_release_contracts_for_rust">Creusot 0.14.0 release - Contracts for Rust, formally proved</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 24 09:10:54 2026] <a href="https://gruhn.me/blog/2026-08-29/">Niklas Gruhn - Lean explained with TypeScript</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`robot-cpp` Mouse, keyboard and display automation.</title><category>api</category><category>cpp</category><category>crossplatform</category><category>keyboard</category><category>mouse</category><pubDate>2026-11-24 09:10:33 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/developer239/robot-cpp"><code>robot-cpp</code> Mouse, keyboard and display automation.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>linux - How to ring the system bell from command line?</title><category>linux</category><category>notification</category><category>windows</category><pubDate>2026-11-23 04:25:55 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://superuser.com/questions/969080/how-to-ring-the-system-bell-from-command-line">linux - How to ring the system bell from command line?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>apoluekt/OpenRPNCalc: Open-source and open-hardware scientific RPN calculator</title><category>calculator</category><category>hard</category><category>stem</category><pubDate>2026-11-23 01:18:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/apoluekt/OpenRPNCalc">apoluekt/OpenRPNCalc: Open-source and open-hardware scientific RPN calculator</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/gOyIM6HCIhWq0BJEjzT4Gw">Are calculators also open source? The casing is assembled from seven PCBs, and the board manufacturer smiled like a child when they saw this project!</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>For the RDMA novice: libfabric, libibverbs, InfiniBand, OFED, MOFED? — Rohit Zambre</title><category>compsci</category><category>hpc</category><category>linux</category><category>network</category><category>windows</category><pubDate>2026-11-23 01:10:24 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.rohitzambre.com/blog/2018/2/9/for-the-rdma-novice-libfabric-libibverbs-infiniband-ofed-mofed">For the RDMA novice: libfabric, libibverbs, InfiniBand, OFED, MOFED? — Rohit Zambre</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Remote_direct_memory_access">RDMA : Remote direct memory access</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="http://lastweek.io/notes/source_code/rdma/">DPDK and RDMA - Yizhou Shan's Home Page</a>
-<ul>
-<li>#os <a href="https://github.com/microsoft/demikernel">demikernel: Kernel-Bypass LibOS Architecture</a></li>
-<li>#linux <a href="https://github.com/gramineproject/gramine">gramine: A library OS for Linux multi-process applications, with Intel SGX support</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://github.com/DPDK/dpdk"><code>dpdk</code> Data Plane Development Kit</a>
-<ul>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Data_Plane_Development_Kit">DPDK Data Plane Development Kit</a>
-<ul>
-<li>BLUF : No - <a href="https://stackoverflow.com/questions/78132901/is-there-a-windows-user-space-api-similar-to-vfio-for-linux-for-writing-drivers">Windows user space API similar to VFIO for Linux for writing drivers for custom hardware?</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/DPDK/grout"><code>grout</code> graph router based on DPDK</a>
-<ul>
-<li>coincidence for sure.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [ Friday, April 17, 2026 09:12:10 AM ] #linux #documentation
-<ul>
-<li><a href="https://warewulf.org/docs/main/getting-started/introduction.html">Introduction —  Warewulf User Guide main documentation</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> those have <code>wwctl</code> tool..</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 23 13:10:24 2026] #usb #technologia <a href="https://techcommunity.microsoft.com/blog/microsoftusbblog/introducing-rdma-over-usb4%C2%AE-on-windows-run-larger-local-ai-models-across-pcs/4574602?afd_azwaf_tok=eyJraWQiOiI4Q0U5QzZBMjdDMThGODlEMDVDRERCQTk3MUM5MTU4QjVCMDUzQjk5OEQwNjhDRDREQzRCNTg5RTU3QjlBRjk5IiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ0ZWNoY29tbXVuaXR5Lm1pY3Jvc29mdC5jb20iLCJleHAiOjE3OTU0MTM5OTEsImlhdCI6MTc5NTQxMzk4MSwiaXNzIjoidGllcjEtNjRkN2Q4OThkLWt6dndtIiwic3ViIjoiMTcxLjIzMi44Ny4yMjEiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MTEyM1QwNjA2MjFaLXIxNjRkN2Q4OThka3p2d21oQzFTRzF4eWc4MDAwMDAwMDEyMDAwMDAwMDAwM3dtdSIsImIiOiJTaHFrc25XMkVJUmRBSm5wUm1OQ1J0R1huc2dtV3FUdUpEM1I5c3RWWjBJIiwiaCI6IjhoOGpDOHVOQ2UxTzJkWVoxWXVaRnRSNFNOUTFkVjlMZEFERzlaem9KZjAifX0.JKgaoG2bL06Z2B1yWPIhDWzFUhH6WW96Hfr6BtITfWK48IuAIPt3Kt6GSJ3wKXaDj3XWHhxaE3gvVWGL6eIbLR5aTwT4iIWyiNZojosaT2p6RXkd7frohRZE01RLQK3G5DzMa4be8_bSkBRi3foT6zcTED0T6A-S9-E9eT6-yWOp3M8TF6mdMUJiRL_vgRpCs2jHkHXWeaYTl3I1BSSy2Rxgd0mGuZPFcOZ-vXAPZZF0US6KbYxI3p32sHpLjncGYgT9TqV-4wKnxMRp1D44vR3jj8jB0tz7ya6uml8FU4TE5WUNpQR-_Q2oueqHwa2oddV5umbnvRWzLXjBBGFoWg.WF3obl2IDtqgvMFRqVdYkD5s">Introducing RDMA over USB4® on Windows: run larger local AI models across PCs | Microsoft Community Hub</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>CORE-V Family of RISC-V Cores</title><category>arch/riscv</category><category>dma</category><category>mcu</category><pubDate>2026-11-23 01:10:06 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/openhwfoundation/core-v-cores">CORE-V Family of RISC-V Cores</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/openhwfoundation">OpenHW Foundation</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.openhwgroup.org/projects/core-v-mcu/doc-src/udma_subsystem.html">uDMA/μDMA Micro-DMA Subsystem — CORE-V MCU documentation</a></li>
-</ul>
-</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
