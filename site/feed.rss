@@ -1,4 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>linux - How to ring the system bell from command line?</title><category>linux</category><category>notification</category><category>windows</category><pubDate>2026-11-23 04:25:55 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`Waybar` Highly customizable Wayland bar for Sway and Wlroots based compositors. :tada:</title><category>wayland</category><category>windows</category><category>wm</category><pubDate>2026-11-24 10:42:17 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Alexays/Waybar"><code>Waybar</code> Highly customizable Wayland bar for Sway and Wlroots based compositors. :tada:</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/bjesus/wttrbar"><code>wttrbar</code> Custom module for showing the weather in Waybar, using the great wttr.in</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>I failed moving my Google calendar to Proton</title><category>calendar</category><category>google</category><category>service</category><category>web</category><pubDate>2026-11-24 10:40:20 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=42707606">I failed moving my Google calendar to Proton</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> for both <a href="https://calendly.com/">Meeting Scheduling Software and AI Meeting Tools | Calendly</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`hfs` web file server - share folders or even a single file thru vfs</title><category>backend</category><category>crossplatform</category><category>html</category><category>nas</category><pubDate>2026-11-24 10:35:33 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/rejetto/hfs"><code>hfs</code> web file server - share folders or even a single file thru vfs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> a replacement for <code>scp</code>/<code>sftp</code> I guess.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <del>in #termux I supposed</del> Nope, it doesnt.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> in scoop.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>regard #protocol/ftp : <a href="https://github.com/rejetto/hfs/issues/807">FTP protocol support · Issue #807</a></li>
+<li>#blog: <a href="https://fodor.pro/en/2025/02/14/hfs3-on-truenas.html">HTTP File Server on TrueNAS - Tutorial | Fodor Benedek</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> #termux #android: <a href="https://github.com/rejetto/hfs/wiki/HFS-on-Android">HFS on Android · rejetto/hfs Wiki</a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/crazyscot/qcp"><code>qcp</code> Quick File Copy using QUIC</a>
+<ul>
+<li><code>miniserve</code> still doing good.</li>
+<li><code>dufs</code> is a new contender to <code>hfs</code> though.</li>
+<li>#python <a href="https://github.com/9001/copyparty"><code>copyparty</code> file server with resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> have web/desktop/android clients.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --> on NAS and make android clients use the app to upload files.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> much more friendly than <code>syncthing</code>/<code>immich</code> and the like...
+<ul>
+<li>those WebDAV and WebRTC things for media playing only, TBF not really needed.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=44711519">Copyparty – Turn almost any device into a file server</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #android/client <a href="https://github.com/9001/party-up"><code>copyparty</code> client for android</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 24 10:35:33 2026] <a href="https://github.com/haiwen/seafile"><code>seafile</code> syncing, sharing, organize files with extensible file properties and flexible views</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Radicale` simple CalDAV (calendar) and CardDAV (contact) server.</title><category>backend</category><category>calendar</category><category>cloud</category><category>host/self</category><category>python</category><category>schedule</category><pubDate>2026-11-24 10:16:32 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/Kozea/Radicale"><code>Radicale</code> simple CalDAV (calendar) and CardDAV (contact) server.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> to use with #android #app like <a href="https://www.davx5.com/">CalDAV, CardDAV and WebDAV for Android</a>
+<ul>
+<li>#alternative <a href="https://github.com/tasks/tasks"><code>Astrid</code> Tasks back from the dead</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> Using formal standard as WebDAV to update events, medias.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> CardDAV/CalDAV things.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/opencloud-eu/opencloud/issues/3275">Support JSContact (RFC 9553) for storing contacts · <code>opencloud</code></a></li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> #php <a href="https://github.com/sabre-io/Baikal"><code>Baikal</code> Calendar+Contacts server</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #web/client <a href="https://github.com/agendav/agendav"><code>agendav</code> CalDAV web client similar to Google Calendar</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 24 10:16:32 2026] <a href="https://github.com/lennart-k/rustical"><code>rustical</code> calendar server aiming to be fast and passwordless</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/selfhosted/comments/1qqyfwd">Self hosted calendar client for <code>radicale</code> or other CalDAV servers</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Relocated:<!-- raw HTML omitted --> [2026-11-24 10:22:14] from #soft</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Flectar Mail delivers native performance, instant startup, and about 20 MB of private memory at idle.</title><category>backend</category><category>caldav</category><category>mail</category><pubDate>2026-11-24 10:03:41 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/flectar/mail">Flectar Mail delivers native performance, instant startup, and about 20 MB of private memory at idle.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/trougnouf/cfait"><code>cfait</code> Take control of your TODO list</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kurrier-org/kurrier"><code>Kurrier</code> modern, self-hosted workspace for email, calendar, contacts and storage.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>you can type `1,2,3..9` to quickly select options inside codex instead of arrows around.</title><category>codex</category><category>default</category><category>keybinding</category><category>navigation</category><category>permission</category><category>swt</category><pubDate>2026-11-24 09:49:29 AM</pubDate><content:encoded><![CDATA[<ul>
+<li>you can type <code>1,2,3..9</code> to quickly select options inside codex instead of arrows around.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> you will always be sure on where to press it. really hate how they normally is <code>y</code>/<code>p</code>/<code>a</code>/<code>n</code> or so.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> find out while settings <code>/permission</code>. you can quick type <code>/per</code> -&gt; <code>enter</code> -&gt; <code>3</code> -&gt; <code>1</code> for now.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`preact` ⚛️ Fast 3kB React alternative with the same modern API. Components &amp; Virtual DOM.</title><category>javascript</category><category>web/app/spa</category><category>web/ui</category><category>wprog</category><pubDate>2026-11-24 09:35:34 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/preactjs/preact"><code>preact</code> ⚛️ Fast 3kB React alternative with the same modern API. Components &amp; Virtual DOM.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #rust <a href="https://github.com/mborejdo/onepage"><code>onepage</code> Preact to one self-contained HTML file: swc, encre-css, strict CSP, opt-in WebAssembly.</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`lean4` lean 4 programming language and theorem prover</title><category>compsci</category><category>functional</category><category>lang</category><category>prog</category><pubDate>2026-11-24 09:10:54 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/leanprover/lean4"><code>lean4</code> lean 4 programming language and theorem prover</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> [2024-10-08 12:23:11 AM] #compsci #meta
+<ul>
+<li><a href="https://proofassistants.stackexchange.com/questions/4274/reduce-type-name-in-lean">lean4 - reduce type name in lean - proof assistants stack exchange</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> cateogory some hyper compsci things.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#blog <a href="https://lean-lang.org/talks/from_z3_to_lean.pdf">z3 to lean</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted -->
+<ul>
+<li>#discussion <a href="https://lobste.rs/s/dixmkp/proof_oriented_programming_f">Proof-oriented Programming in F*</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Oct 14 12:51:09 2026] #rust #blog <a href="https://lobste.rs/s/6tbd2o/creusot_0_14_0_release_contracts_for_rust">Creusot 0.14.0 release - Contracts for Rust, formally proved</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Tue Nov 24 09:10:54 2026] <a href="https://gruhn.me/blog/2026-08-29/">Niklas Gruhn - Lean explained with TypeScript</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`robot-cpp` Mouse, keyboard and display automation.</title><category>api</category><category>cpp</category><category>crossplatform</category><category>keyboard</category><category>mouse</category><pubDate>2026-11-24 09:10:33 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/developer239/robot-cpp"><code>robot-cpp</code> Mouse, keyboard and display automation.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>linux - How to ring the system bell from command line?</title><category>linux</category><category>notification</category><category>windows</category><pubDate>2026-11-23 04:25:55 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://superuser.com/questions/969080/how-to-ring-the-system-bell-from-command-line">linux - How to ring the system bell from command line?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -194,134 +363,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50576012">Slopstrap – Make your site look hastily vibecoded</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Mathlib</title><category>lean</category><category>math</category><category>meta</category><category>shape</category><category>technologia</category><category>theorem</category><pubDate>2026-11-22 11:06:02 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mathlib.org/">Mathlib</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://physlib.io/">Physlib: Digitalizing Physics in Lean 4</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50589618">Lean verification of the Riemann Hypothesis</a>
-<ul>
-<li><a href="https://www.cslib.io/">A Focused Effort on Formalizing Computer Science in Lean</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`anyrender` Rust 2D drawing abstraction</title><category>graphic</category><category>library</category><category>rust</category><category>wprog</category><pubDate>2026-11-22 10:33:44 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/DioxusLabs/anyrender"><code>anyrender</code> Rust 2D drawing abstraction</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> C++ <code>skia</code>.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`blitz` radically modular HTML/CSS rendering engine</title><category>css</category><category>web/ui</category><category>wprog</category><pubDate>2026-11-22 10:29:35 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/dioxuslabs/blitz"><code>blitz</code> radically modular HTML/CSS rendering engine</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`imgui-combo-filter` Dear ImGui combo box widget with text filter</title><category>cpp</category><category>graph</category><category>ui/imgui/widget</category><pubDate>2026-11-22 10:23:44 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/khlorz/imgui-combo-filter"><code>imgui-combo-filter</code> Dear ImGui combo box widget with text filter</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> using v2 please.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/hnOsmium0001/imgui-command-palette"><code>imgui-command-palette</code> Sublime Text or VSCode style command palette in ImGui</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/pthom/imgui_bundle_template"><code>imgui_bundle_template</code> quick start template to work with Dear ImGui Bundle</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sun Nov 22 10:23:44 2026] I just cant care much and rolled my own.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>How does programming language affect token efficiency and correctness?</title><category>llm</category><category>prog</category><category>technologia</category><pubDate>2026-11-22 10:00:14 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://danluu.com/pl-tokens/">How does programming language affect token efficiency and correctness?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> you're often better off throwing away a chunk of code and having an LLM re-write it from scratch than you are having an LLM modify it or try to re-write it in place.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis">Advice for the next 100 Rust GUIs</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://claude.com/marketplace/plugins/ralph-loop">Ralph Loop | Claude by Anthropic</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</title><category>boost</category><category>module</category><category>pmic</category><pubDate>2026-11-22 09:54:14 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/lTlesoVlRxWpPrn9mVpUWQ">PL30502 : 18V/10A current, 7mΩ internal resistance. QFN13 (4*4mm but strip on middle)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>With wafer scale chips becoming more popular, what&apos;s stopping nvidia or someone from putting literally everything on the wafer including vram, ram, and even the CPU?</title><category>AI</category><category>news</category><category>technologia</category><pubDate>2026-11-21 05:36:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://sh.reddit.com/r/mlscaling/comments/1csquky">With wafer scale chips becoming more popular, what's stopping nvidia or someone from putting literally everything on the wafer including vram, ram, and even the CPU?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> basically Kagi used Cerebas hardware to run AI-assisted search.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://sh.reddit.com/r/todayilearned/comments/1te32f7">TIL largest computer chip, Wafer Scale Engine 3. A single chip 21.5cm square with 4 trillion transistors and 900,000 cores</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://wikipedia.org/wiki/Wafer-scale_integration">Wafer-scale integration</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Aug 26 17:55:08 2026] <a href="https://news.ycombinator.com/item?id=49434378">OpenAI Jalapeño: Better than Nvidia Blackwell</a>
-<ul>
-<li>and even more #discussion about big firm should etch the whole weight on custom silicon by now.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 21 17:36:43 2026] #ai #pcb another inference board <a href="https://taalas.com/products/">Products | Taalas</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49201970">AMD acquires Taalas to boost inference performance by etching models in silicon</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Agrivoltaics</title><category>agriculture</category><category>misc</category><pubDate>2026-11-21 04:51:48 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Agrivoltaics">Agrivoltaics</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> agrisolar, dual use solar.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Vibecoding an inference chip</title><category>asic</category><category>cpld</category><category>discussion</category><category>llm</category><pubDate>2026-11-21 03:22:29 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50579297">Vibecoding an inference chip</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
