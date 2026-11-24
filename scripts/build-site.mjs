@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { calendarStyle, countPublishedDays, renderBlogCalendar } from './blog-calendar.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 export function readPublicProfile(filename = path.join(root, 'assets/card/card.profile.json')) {
@@ -23,7 +24,7 @@ export function withFavicon(html, base = '/') {
   return html.replace(/<\/head>/i, `${icons}\n</head>`);
 }
 
-function decodeHtmlText(value) {
+export function decodeHtmlText(value) {
   const named = { amp: '&', apos: "'", gt: '>', lt: '<', quot: '"', nbsp: '\u00a0' };
   return value.replace(/&(#x[\da-f]+|#\d+|[a-z]+);/gi, (match, entity) => {
     if (entity[0] !== '#') return named[entity.toLowerCase()] ?? match;
@@ -95,6 +96,54 @@ export function rewriteBlog(html, base = '/', ogisBaseUrl = process.env.OGIS_BAS
     .replace('<h1>TILs</h1>', '<h1>Blog</h1>')
     .replace('A small wall garden grown from the configured <code>jrnl</code> journals.', escapeHtmlAttribute(profileIntro(profile)));
   return withFavicon(withOpenGraph(html, ogisBaseUrl, preparedImage, profile), base);
+}
+
+const topicsStart = /<details\b[^>]*\bid=["']topics["'][^>]*>/i;
+const topicCloudStyle = `<style>
+.topic-cloud { margin: 1rem 0; }
+.topic-cloud img { display: block; width: 100%; height: auto; }
+.topic-cloud .topic-cloud-dark, html[data-theme="dark"] .topic-cloud-light { display: none; }
+html[data-theme="dark"] .topic-cloud .topic-cloud-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .topic-cloud-light { display: none; }
+  html:not([data-theme="light"]) .topic-cloud .topic-cloud-dark { display: block; }
+}
+</style>`;
+function topicCloud(prefix = '') {
+  return `<figure class="topic-cloud" role="img" aria-label="Most-used blog topics, sized by number of posts">
+  <img class="topic-cloud-light" src="${prefix}topic-cloud.svg" alt="" width="900" height="320">
+  <img class="topic-cloud-dark" src="${prefix}topic-cloud-dark.svg" alt="" width="900" height="320">
+</figure>`;
+}
+
+function withBlogVisualizations(html, base, hasTopicCloud) {
+  const link = `<p><a href="${base}blog/visualizations/">Blog visualizations</a></p>`;
+  if (hasTopicCloud) html = html.replace(/<\/head>/i, `${topicCloudStyle}\n</head>`);
+  const overview = hasTopicCloud ? `${topicCloud()}\n${link}` : link;
+  return topicsStart.test(html)
+    ? html.replace(topicsStart, match => `${overview}\n${match}`)
+    : html.replace(/<h1>Blog<\/h1>/, match => `${match}\n${overview}`);
+}
+
+function blogVisualizations(base, ogisBaseUrl, profile, cover, hasTopicCloud, calendar) {
+  const cloud = hasTopicCloud ? `<section><h2>Topics by post count</h2>
+${topicCloud(`${base}blog/`)}
+<p><a href="/blog/#topics">Browse topics and post counts</a></p></section>` : '';
+  const html = `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog visualizations</title><link rel="stylesheet" href="/blog/style.css">
+${hasTopicCloud ? topicCloudStyle : ''}
+${calendar ? calendarStyle : ''}</head>
+<body><script src="/blog/index.js"></script>
+<nav class="top-links" aria-label="Site navigation">
+  <a class="top-link" href="/blog/">All TILs</a>
+  <label class="theme-toggle"><input type="checkbox" role="switch" onchange="setTheme(this.checked ? 'dark' : 'light')"><span>Dark mode</span></label>
+</nav>
+<main><h1>Blog visualizations</h1>
+${cloud}
+${calendar}
+</main></body></html>\n`;
+  return rewriteBlog(html, base, ogisBaseUrl, cover, profile);
 }
 
 function page(title, body, base) {
@@ -175,6 +224,8 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
   fs.mkdirSync(path.join(output, 'preview'));
   fs.writeFileSync(path.join(output, 'preview/index.html'), page('Card preview', `<script>location.replace(${JSON.stringify(base + 'preview.html')}+location.search+location.hash)</script><p><a href="${base}preview.html">Open the card preview</a></p>`, base));
 
+  const publishedDays = new Map();
+  let landing;
   let pages = 0;
   function copyBlog(directory, relative = '') {
     fs.mkdirSync(path.join(output, 'blog', relative), { recursive: true });
@@ -185,7 +236,12 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
       if (entry.isDirectory()) copyBlog(source, next);
       else if (entry.name.endsWith('.html')) {
         const cover = covers[next.split(path.sep).join('/')] || covers['*'];
-        fs.writeFileSync(destination, rewriteBlog(fs.readFileSync(source, 'utf8'), base, ogisBaseUrl, cover ? new URL(`og/${cover}`, site).href : undefined, profile));
+        const sourceHtml = fs.readFileSync(source, 'utf8');
+        const route = next.split(path.sep).join('/');
+        if (route === 'index.html' || /^recent\/\d+\/index\.html$/.test(route)) countPublishedDays(sourceHtml, publishedDays);
+        const html = rewriteBlog(sourceHtml, base, ogisBaseUrl, cover ? new URL(`og/${cover}`, site).href : undefined, profile);
+        if (route === 'index.html') landing = html;
+        else fs.writeFileSync(destination, html);
         pages++;
       } else if (entry.name === 'feed.rss') {
         const rss = fs.readFileSync(source, 'utf8').replace(/<(link|guid)([^>]*)>\/(?:blog\/)?([^<]*)<\/(?:link|guid)>/g, `<$1$2>${base}blog/$3</$1>`);
@@ -194,8 +250,21 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
     }
   }
   copyBlog(blogSource);
+  const hasTopicCloud = topicsStart.test(landing) && ['topic-cloud.svg', 'topic-cloud-dark.svg']
+    .every(file => fs.existsSync(path.join(output, 'blog', file)));
+  const calendar = renderBlogCalendar(publishedDays);
+  const hasVisualizations = hasTopicCloud || Boolean(calendar);
+  fs.writeFileSync(path.join(output, 'blog', 'index.html'),
+    hasVisualizations ? withBlogVisualizations(landing, base, hasTopicCloud) : landing);
+  if (hasVisualizations) {
+    const directory = path.join(output, 'blog', 'visualizations');
+    const cover = covers['*'] ? new URL(`og/${covers['*']}`, site).href : undefined;
+    fs.mkdirSync(directory, { recursive: true });
+    fs.writeFileSync(path.join(directory, 'index.html'), blogVisualizations(base, ogisBaseUrl, profile, cover, hasTopicCloud, calendar));
+  }
+  const visualizations = hasVisualizations ? `<li><a href="${base}blog/visualizations/">Blog visualizations</a></li>` : '';
   fs.mkdirSync(path.join(output, 'map'));
-  fs.writeFileSync(path.join(output, 'map/index.html'), page('Site map', `<h1>Site map</h1><p>A way into the card and the blog.</p><ul><li><a href="${base}">Card / Home</a><p>About me, contact details, and the animated card.</p></li><li><a href="${base}wasm.html">Interactive WASM card</a><p>The Rust card running in your browser.</p></li><li><a href="${base}blog/">Blog / TILs</a><p>${intro}</p></li><li><a href="${base}blog/#topics">Browse blog topics</a></li><li><a href="${base}blog/feed.rss">Blog RSS feed</a></li><li><a href="${base}preview.html">Card render modes and exports</a></li></ul>`, base));
+  fs.writeFileSync(path.join(output, 'map/index.html'), page('Site map', `<h1>Site map</h1><p>A way into the card and the blog.</p><ul><li><a href="${base}">Card / Home</a><p>About me, contact details, and the animated card.</p></li><li><a href="${base}wasm.html">Interactive WASM card</a><p>The Rust card running in your browser.</p></li><li><a href="${base}blog/">Blog / TILs</a><p>${intro}</p></li><li><a href="${base}blog/#topics">Browse blog topics</a></li>${visualizations}<li><a href="${base}blog/feed.rss">Blog RSS feed</a></li><li><a href="${base}preview.html">Card render modes and exports</a></li></ul>`, base));
   const redirect = `<script>(()=>{const base=${JSON.stringify(base)},p=location.pathname.slice(base.length);if(location.pathname.startsWith(base)&&${JSON.stringify(legacyRoutes)}.includes(p.split('/')[0]))location.replace(base+'blog/'+p+location.search+location.hash)})()</script>`;
   fs.writeFileSync(path.join(output, '404.html'), page('Page not found', `${redirect}<h1>Page not found</h1><p>The TILs now live under <a href="${base}blog/">Blog</a>. Visit the <a href="${base}map/">site map</a> to find your way.</p>`, base));
   if (fs.existsSync(path.join(output, 'blog/feed.rss'))) fs.copyFileSync(path.join(output, 'blog/feed.rss'), path.join(output, 'feed.rss'));

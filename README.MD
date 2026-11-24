@@ -97,6 +97,21 @@ custom output directories are still refused.
 Tiller uses `/blog/` rather than overriding
 the base URL with `--dev`. Existing generated pages with root URLs are also
 supported, so assembling alone does not require a full journal rebuild.
+
+The `/blog/` landing page shows a word cloud sized by Tiller’s published topic
+counts. The landing page and sitemap link to `/blog/visualizations/`, which
+also links back to the topic counts. The page includes a calendar of
+published posts by original entry date, covering up to 12 months through the
+latest post. Both views inherit Tiller’s `exclude_tags` filter from the blog
+snapshot.
+
+`just build` and `just rebuild` run the local `wordcloud` executable
+after Tiller and save light and dark SVGs in `site/`. `just pub` includes those
+images in the blog snapshot that Pages assembles. The generator reads the
+published topic list and runs offline. To refresh the images from the existing
+snapshot, run `node scripts/build-topic-cloud.mjs`. Set `WORDCLOUD_EXE` to the
+renderer’s executable path if it lives outside the usual MiscLang checkout
+or `PATH`.
 The blog header reads **Blog**, with Home and Map links on every entry.
 Open `/share-preview.html` after `just dev` to see the card's share image and
 download its vCard or JSContact. Paste a `/blog/post/.../` URL into that preview to inspect
@@ -158,3 +173,24 @@ Serve the resulting `public/` directory at that path. The default base path
 is `/`, so moving the repo or changing a domain does not require hard-coded
 card or blog domain changes. Configure the same base path in the deploy build
 command when using subdirectory hosting.
+
+## Local journal calendars
+
+The private exporter reads `jrnl` JSON. It runs separately from the blog build
+and can export a single journal or a date range. Keep its output outside the
+published `site/` directory. The public blacklist applies to the Tiller build.
+
+```powershell
+$cache = Join-Path $env:LOCALAPPDATA 'jrnl'
+New-Item -ItemType Directory -Path $cache -Force | Out-Null
+node scripts/export-jrnl-calendar.mjs vc --kind event --output (Join-Path $cache 'vc-events.ics')
+node scripts/export-jrnl-calendar.mjs vc --directory (Join-Path $cache 'vc-caldav')
+```
+
+Point Carl’s `[[ical]]` `file` setting at `vc-events.ics` and use `carl --agenda`.
+It highlights journal days and shows entry titles. The second command creates a
+new directory with one `VJOURNAL` resource per entry for CalDAV. Use the generated
+filename as its resource ID when writing to Radicale with `calendula caldav put`.
+Re-export to a new directory for a fresh snapshot. For entries with no `jrnl`
+UUID, the ID comes from the journal alias and timestamp, plus the entry’s
+position among entries sharing that minute.

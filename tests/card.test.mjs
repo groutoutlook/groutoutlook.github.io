@@ -166,7 +166,7 @@ test('card publishing commits only card assets and retries an already committed 
     finally { console.log = log; }
     assert.equal(quietOutput, '', 'quiet card publish has no extra success logs');
     // Publishing uses the current snapshot even when the card source is unavailable.
-    for (const script of ['sync-card.mjs', 'import-card.mjs', 'build-site.mjs']) {
+    for (const script of ['sync-card.mjs', 'import-card.mjs', 'build-site.mjs', 'blog-calendar.mjs']) {
       fs.copyFileSync(path.join(root, 'scripts', script), path.join(directory, 'scripts', script));
     }
     fs.cpSync(path.join(root, 'assets/site'), path.join(directory, 'assets/site'), { recursive: true });
