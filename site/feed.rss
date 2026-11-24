@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`Waybar` Highly customizable Wayland bar for Sway and Wlroots based compositors. :tada:</title><category>wayland</category><category>windows</category><category>wm</category><pubDate>2026-11-24 10:42:17 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</title><category>cicd</category><category>code/forge</category><category>github</category><category>prog</category><pubDate>2026-11-24 01:36:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/groutoutlook/QcClip-Mod/actions/workflows/release.yml">disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the <code>… </code> elipsis.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Feigned surprise is when you act surprised when someone doesn’t know something.</title><category>psychology</category><category>social</category><category>term</category><pubDate>2026-11-24 01:09:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>Feigned surprise is when you act surprised when someone doesn’t know something.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.recurse.com/social-rules">Social rules - Recurse Center</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/h6webg/ladybird_is_now_alpha">Ladybird is now in alpha</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>breezewiki: An alternative frontend for Fandom</title><category>list</category><category>proxy</category><category>web/ui</category><category>wpro</category><pubDate>2026-11-24 01:04:59 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://gitdab.com/cadence/breezewiki">breezewiki: An alternative frontend for Fandom</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->  <a href="https://breezewiki.com/yugioh/wiki/Yugi_Mutou_(manga">Yugi Mutou (manga) | Yu-Gi-Oh!+BreezeWiki</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50617499">Per Arm's request, this site will be discontinued on 4 December 2026 :(</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>when making your own mirror from existed `.git` repo</title><category>git</category><category>powershell</category><category>snippet</category><pubDate>2026-11-24 12:43:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>when making your own mirror from existed <code>.git</code> repo
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git fetch --unshallow origin &amp;&amp; quickInitGit -repo_name &#39;groutoutlook/QcClip-Mod&#39; -remote_name origin_code
+</span></code></pre>
+</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>TLE6220GP - FLEX drivers IC inductive and resistive loads (e.g. Solenoids, Injectors, Valves, Relays)</title><category>ic/driver</category><category>inductive</category><category>mcu</category><category>module</category><category>mosfet</category><category>spi</category><pubDate>2026-11-24 12:15:51 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.infineon.com/part/TLE6220GP">TLE6220GP - FLEX drivers IC inductive and resistive loads (e.g. Solenoids, Injectors, Valves, Relays)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> MCU Compatible Power Switch for 12 V and 24 V Applications.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #pcb <a href="https://mp.weixin.qq.com/s/-3oPH_uG62OkAFJRs2KufA">a project that use this chip</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>nRF7120 WiFi 6 2.4+5GHz, BLE, Thread, NFC, 256 MHz Arm M33, 256 MHz Risc-V coCPU, SoftPeripherals, 4 MB flash, 1 MB RAM</title><category>matter</category><category>mcu</category><category>nfc</category><category>nordic</category><category>wifi</category><pubDate>2026-11-24 12:11:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.nordicsemi.com/Products/nRF7120">nRF7120 WiFi 6 2.4+5GHz, BLE, Thread, NFC, 256 MHz Arm M33, 256 MHz Risc-V coCPU, SoftPeripherals, 4 MB flash, 1 MB RAM</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Clear-ItemProperty` | `clp `</title><category>lang</category><category>powershell</category><pubDate>2026-11-24 12:01:46 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/clear-itemproperty"><code>Clear-ItemProperty</code> | <code>clp </code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I am about to shim <code>clp</code> to my main clipboard app.. guess I have to de-alias this one.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Waybar` Highly customizable Wayland bar for Sway and Wlroots based compositors. :tada:</title><category>wayland</category><category>windows</category><category>wm</category><pubDate>2026-11-24 10:42:17 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/Alexays/Waybar"><code>Waybar</code> Highly customizable Wayland bar for Sway and Wlroots based compositors. :tada:</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -247,122 +338,6 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.openhwgroup.org/projects/core-v-mcu/doc-src/udma_subsystem.html">uDMA/μDMA Micro-DMA Subsystem — CORE-V MCU documentation</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>SimpleNFC - Nicolas Kruse</title><category>embed</category><category>hardware</category><category>protocol/nfc</category><category>uart</category><category>web/api/webserial</category><pubDate>2026-11-23 01:00:21 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.nonan.net/nkruse/simplenfc">SimpleNFC - Nicolas Kruse</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #ch32 <a href="https://github.com/MartinEssink/CH32V003-NFC">CH32V003-NFC: Emulating NFC Tags on the CH32V003</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Public Suffix List</title><category>dns/tld</category><category>netw</category><category>uri</category><pubDate>2026-11-23 12:00:47 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://publicsuffix.org/">Public Suffix List</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/bjoete/falsehoods_programmers_believe_about">Falsehoods Programmers Believe About ATProto</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Redmi AC2100 router gigabit port dual-band home 5g high-speed wifi wireless wall piercing</title><category>backend</category><category>ota</category><category>router</category><pubDate>2026-11-23 11:57:43 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://detail.1688.com/offer/961907388382.html">Redmi AC2100 router gigabit port dual-band home 5g high-speed wifi wireless wall piercing</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li>I need a router or some method to extend my connection to the ESP32 or wi-fi SoC I connected to the board.
-<ul>
-<li>Even a RPi + wireguard client as tailscale or iroh is fine. I need OTA badly.
-<ul>
-<li>#blog #comparison <a href="https://news.ycombinator.com/item?id=48542480"><code>Iroh</code> 1.0 and Hacker News comparison with that and <code>tailscale</code>.</a></li>
-<li><a href="https://lobste.rs/s/cslljn/iroh_1_0_dial_keys_not_ips">Iroh 1.0 - Dial Keys, not IPs</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>they use AC2100 for <a href="https://forum.openwrt.org/t/powering-an-esp32-with-ttl-headers/96935">Powering an ESP32 with TTL headers - Hardware Questions and Recommendations</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://openwrt.org/toh/xiaomi/xiaomi_redmi_router_ac2100">Redmi Router AC2100</a>
-<ul>
-<li>This is a cheap router than we can sideload OpenWrt firmware in.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/openwrt/comments/1bx8ey0">Openwrt router suggestions for a very poor man ( ultra cheap )</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/6laoto/road_iroh_1_0">The road to iroh 1.0</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Aug  8 17:01:38 2026] <a href="https://www.michaelvivirito.com/articles/beryl-7-tailscale-travel-router">Home Network Router: Beryl 7 + Tailscale - Michael Vivirito</a>
-<ul>
-<li>just try to run something in general, anything.</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov 23 11:57:43 2026] #wireguard <a href="https://www.reddit.com/r/Tailscale/comments/1fmxwad">WireGuard into Tailnet node and access Tailnet</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Fallacy of composition</title><category>debate</category><category>fallacy</category><category>topic</category><pubDate>2026-11-23 11:12:15 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Fallacy_of_composition">Fallacy of composition</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50604472">The Usefulness of Useless Knowledge (1939)</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://wikipedia.org/wiki/Rapport">Rapport is close and harmonious relationship</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>IPv6 delegation, an unusually subtle failure mode</title><category>ipv6</category><category>lan</category><category>netw</category><pubDate>2026-11-22 03:07:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://lobste.rs/s/inj0dn/ipv6_delegation_unusually_subtle">IPv6 delegation, an unusually subtle failure mode</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>c++20 - What is a C++ module purview?</title><category>build</category><category>cmake</category><category>cpp</category><category>lang</category><category>module</category><pubDate>2026-11-22 01:23:36 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/49204175/what-is-a-c-module-purview">c++20 - What is a C++ module purview?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Slopstrap LLM-style web design.</title><category>css</category><category>llm</category><category>technologia</category><category>uiweb</category><pubDate>2026-11-22 11:48:55 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://slopstrap.mikelacher.com/">Slopstrap LLM-style web design.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50576012">Slopstrap – Make your site look hastily vibecoded</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
