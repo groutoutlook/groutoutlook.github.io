@@ -77,7 +77,8 @@
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://learn.microsoft.com/powershell/scripting/learn/shell/using-predictors">Using predictors in <code>PSReadLine</code></a>
 <ul>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">PredictionSource = &quot;HistoryAndPlugin&quot;
+<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain"># PredictionSource = &quot;HistoryAndPlugin&quot; 
+Set-PSReadLineOption -PredictionSource None # if any key just keep pop out a `wt`
 </span></code></pre>
 </li>
 </ul>
