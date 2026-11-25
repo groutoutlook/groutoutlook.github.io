@@ -27,7 +27,7 @@ card, blog, map, and other browser views during assembly.
 later runs that day. Both use the existing card snapshot; neither fetches the
 private card repo nor installs packages nor compiles Rust/WASM.
 `rlo -Force` bypasses the daily blog check and calls `just pub-force`, which
-forces a blog rebuild and regenerates the topic cloud. Card updates are explicit:
+forces a blog rebuild and regenerates the journal weaves. Card updates are explicit:
 run `just card-import` to fetch/build/import, then `just card-publish` to
 publish the imported files.
 The card-only path keeps successful build details quiet and prints the site URI
@@ -99,16 +99,17 @@ Tiller uses `/blog/` rather than overriding
 the base URL with `--dev`. Existing generated pages with root URLs are also
 supported, so assembling alone does not require a full journal rebuild.
 
-The word cloud on `/blog/` and `/blog/visualizations/` weaves the canonical
-names from `~/hw/dot/config/jrnl/master-tags.toml` into `BLOG`. Each name is
-weighted by the square root of the published count for its journal's parent tag. The
-visualizations page links back to the topic counts and includes a calendar
-covering up to 12 months through the latest published post. Both views use
-the filtered Tiller snapshot.
+The blog links to **Journal tag weaves** on `/blog/visualizations/`. Each
+configured journal with published tagged entries gets a page. Glyphweave
+spells the canonical master tag from `~/hw/dot/config/jrnl/master-tags.toml`
+using that journal's own tags. The page shows how many entries used each
+tag, counting a tag once per entry across heading and body tags. The
+visualizations page also includes a calendar of published posts.
 
-`just rebuild` and `rlo -Force` run Glyphweave after Tiller and save light and
-dark SVGs in `site/`. Daily builds and Pages assembly reuse these SVGs. To
-regenerate them from the existing snapshot, run `node scripts/build-topic-cloud.mjs`.
+`just rebuild` and `rlo -Force` run Glyphweave after Tiller and write light and
+dark SVGs and the tag counts to `site/journal-weaves/`. Daily builds and Pages
+assembly reuse those files. To regenerate from the existing Tiller snapshot,
+run `node scripts/build-topic-cloud.mjs`.
 `GLYPHWEAVE_EXE`, `GLYPHWEAVE_FONT`, and `JRNL_MASTER_TAGS` can override the local
 executable, font, and dictionary paths.
 The blog header reads **Blog**, with Home and Map links on every entry.

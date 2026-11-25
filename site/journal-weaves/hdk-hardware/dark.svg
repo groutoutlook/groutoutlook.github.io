@@ -1,0 +1,379 @@
+<svg height="320" role="img" viewBox="0 0 900 320" width="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>GlyphWeave word cloud — FastGrid</title>
+<desc>GlyphWeave word cloud — seed 90 — algorithm fast-grid — 124 words — 63.5% fill</desc>
+<metadata>
+<glyphweave algorithm="fast-grid" fill_ratio="0.6349" placed_words="124" seed="90" xmlns="https://github.com/Acture/glyphweave/v1"/>
+</metadata>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(442 152) rotate(90)" x="0" y="0">
+scripting
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(838 134) rotate(90)" x="0" y="0">
+fpga
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(768 145) rotate(90)" x="0" y="0">
+web/api/webusb
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(19 176) rotate(90)" x="0" y="0">
+meta
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(178 151) rotate(90)" x="0" y="0">
+blog
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(283 159) rotate(90)" x="0" y="0">
+mcu/otp
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="309" y="154">
+voltage
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(177 183) rotate(90)" x="0" y="0">
+pmic
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(70 139) rotate(90)" x="0" y="0">
+signal
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(19 129) rotate(90)" x="0" y="0">
+meta
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(513 150) rotate(90)" x="0" y="0">
+oscilloscope
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(335 123) rotate(90)" x="0" y="0">
+software
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="10" text-anchor="start" transform="translate(102 132) rotate(90)" x="0" y="0">
+hardware
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(281 129) rotate(90)" x="0" y="0">
+adapter
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(334 171) rotate(90)" x="0" y="0">
+mcu/otp
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="857" y="154">
+pcb
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="250" y="120">
+dsp
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="851" y="192">
+taobao
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(441 126) rotate(90)" x="0" y="0">
+power
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="8" text-anchor="start" x="382" y="171">
+acronym
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(839 156) rotate(90)" x="0" y="0">
+framework
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="42" y="155">
+signal
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="99" y="119">
+dsp
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" x="452" y="120">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(561 147) rotate(90)" x="0" y="0">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="10" y="155">
+mcu/nxp
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(812 134) rotate(90)" x="0" y="0">
+rust
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="702" y="171">
+voltage/dc
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(100 182) rotate(90)" x="0" y="0">
+mcu
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(71 169) rotate(90)" x="0" y="0">
+esp32
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(71 122) rotate(90)" x="0" y="0">
+dsp
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(149 146) rotate(90)" x="0" y="0">
+memory
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="10" text-anchor="start" transform="translate(178 124) rotate(90)" x="0" y="0">
+usb
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(837 122) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="507" y="120">
+power
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="285" y="154">
+board
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="762" y="120">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(659 169) rotate(90)" x="0" y="0">
+mcu
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(653 186) rotate(90)" x="0" y="0">
+cpu
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" x="376" y="151">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="850" y="120">
+acronym
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="10" text-anchor="start" transform="translate(486 138) rotate(90)" x="0" y="0">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="8" text-anchor="start" x="784" y="159">
+pcb
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(631 119) rotate(90)" x="0" y="0">
+usb
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="714" y="124">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" x="102" y="192">
+signal
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="657" y="160">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="9" text-anchor="start" x="593" y="164">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(178 171) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(560 159) rotate(90)" x="0" y="0">
+meta
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(509 128) rotate(90)" x="0" y="0">
+wasm
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="452" y="160">
+fpga
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(439 186) rotate(90)" x="0" y="0">
+cpu
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="9" text-anchor="start" x="844" y="154">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(590 124) rotate(90)" x="0" y="0">
+mcu
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(333 164) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="388" y="124">
+ble
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="598" y="184">
+rust
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="522" y="193">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(17 165) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="9" text-anchor="start" x="772" y="159">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(766 128) rotate(90)" x="0" y="0">
+fpga
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(671 124) rotate(90)" x="0" y="0">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(195 149) rotate(90)" x="0" y="0">
+cpu
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="776" y="119">
+dsp
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="372" y="172">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="275" y="120">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="695" y="172">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="662" y="145">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(424 191) rotate(90)" x="0" y="0">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="600" y="193">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(748 185) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="609" y="171">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(544 190) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="841" y="193">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="689" y="191">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(602 173) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="636" y="153">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(595 143) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="434" y="119">
+mcu
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(846 121) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="550" y="178">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" x="642" y="175">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="10" y="120">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="700" y="159">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(367 191) rotate(90)" x="0" y="0">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="803" y="150">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(146 174) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="115" y="120">
+isr
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(535 121) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(420 183) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="709" y="134">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" x="479" y="130">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="274" y="193">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="216" y="188">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="214" y="122">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(131 191) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" x="465" y="121">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="126" y="122">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="198" y="140">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="477" y="185">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="802" y="126">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" x="169" y="143">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(371 181) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="706" y="143">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#c2de9b" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(408 150) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="806" y="190">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="797" y="173">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(643 161) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="204" y="172">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="593" y="156">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="7" text-anchor="start" x="731" y="157">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" x="726" y="143">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(697 180) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="8" text-anchor="start" x="406" y="159">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="7" text-anchor="start" x="139" y="133">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="616" y="151">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(19 194) rotate(90)" x="0" y="0">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="471" y="156">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#b1cdb8" font-family="Roboto Regular" font-size="8" text-anchor="start" x="10" y="147">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#a1dcb7" font-family="Roboto Regular" font-size="7" text-anchor="start" x="620" y="136">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" x="243" y="121">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#77c99b" font-family="Roboto Regular" font-size="8" text-anchor="start" x="471" y="174">
+rf
+</text>
+<text dominant-baseline="text-before-edge" fill="#8dd1ae" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(557 136) rotate(90)" x="0" y="0">
+cli
+</text>
+</svg>

@@ -1,0 +1,463 @@
+<svg height="320" role="img" viewBox="0 0 900 320" width="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>GlyphWeave word cloud — FastGrid</title>
+<desc>GlyphWeave word cloud — seed 90 — algorithm fast-grid — 152 words — 67.1% fill</desc>
+<metadata>
+<glyphweave algorithm="fast-grid" fill_ratio="0.6710" placed_words="152" seed="90" xmlns="https://github.com/Acture/glyphweave/v1"/>
+</metadata>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="12" text-anchor="start" transform="translate(346 186) rotate(90)" x="0" y="0">
+reflection
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="9" text-anchor="start" x="201" y="229">
+format/json
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="13" text-anchor="start" transform="translate(499 195) rotate(90)" x="0" y="0">
+rust
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(567 128) rotate(90)" x="0" y="0">
+graphic
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="14" text-anchor="start" transform="translate(639 214) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(851 131) rotate(90)" x="0" y="0">
+libc
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="13" text-anchor="start" transform="translate(31 163) rotate(90)" x="0" y="0">
+cpp
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="12" text-anchor="start" x="208" y="86">
+format/midi
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="8" text-anchor="start" x="699" y="204">
+ansi
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" x="80" y="227">
+image
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" x="383" y="89">
+format/midi
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="20" text-anchor="start" transform="translate(151 143) rotate(90)" x="0" y="0">
+image
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="18" text-anchor="start" transform="translate(639 117) rotate(90)" x="0" y="0">
+backend
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" x="649" y="90">
+format/csv
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="10" text-anchor="start" transform="translate(19.000002 143) rotate(90)" x="0" y="0">
+coroutine
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="18" text-anchor="start" transform="translate(833 191) rotate(90)" x="0" y="0">
+zig
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(544 81) rotate(90)" x="0" y="0">
+ffmpeg
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(295 188) rotate(90)" x="0" y="0">
+serialize
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="18" text-anchor="start" x="341" y="159">
+physic
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="9" text-anchor="start" x="252" y="224">
+audio
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(142 205) rotate(90)" x="0" y="0">
+scripting
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="15" text-anchor="start" x="550" y="182">
+event
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="11" text-anchor="start" x="643" y="160">
+framework
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="22" text-anchor="start" transform="translate(212 105) rotate(90)" x="0" y="0">
+reflection
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(512 167) rotate(90)" x="0" y="0">
+keyboard
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(209 208) rotate(90)" x="0" y="0">
+glaze
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(406 157) rotate(90)" x="0" y="0">
+geometry
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(144 81) rotate(90)" x="0" y="0">
+metaprogramming
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="18" text-anchor="start" x="342" y="81">
+dns
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="14" text-anchor="start" x="43" y="226">
+libc
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="15" text-anchor="start" transform="translate(639 93) rotate(90)" x="0" y="0">
+tts
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(715 145) rotate(90)" x="0" y="0">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(283 92) rotate(90)" x="0" y="0">
+compiler
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="13" text-anchor="start" transform="translate(429 205) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(548 188) rotate(90)" x="0" y="0">
+ui
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="13" text-anchor="start" transform="translate(31.000002 109) rotate(90)" x="0" y="0">
+server
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" x="706" y="134">
+blog
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(788 94) rotate(90)" x="0" y="0">
+infosec
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" x="548" y="115">
+ml
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(600 212) rotate(90)" x="0" y="0">
+python
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(524 121) rotate(90)" x="0" y="0">
+mouse
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="11" text-anchor="start" transform="translate(31 204) rotate(90)" x="0" y="0">
+ipc
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="16" text-anchor="start" transform="translate(435 117) rotate(90)" x="0" y="0">
+utils
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="10" text-anchor="start" transform="translate(345 116) rotate(90)" x="0" y="0">
+windows
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="14" text-anchor="start" transform="translate(700 178) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" x="406" y="192">
+stem
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(426 99) rotate(90)" x="0" y="0">
+libc
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="14" text-anchor="start" transform="translate(721 107) rotate(90)" x="0" y="0">
+zig
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" x="242" y="150">
+typescript
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(18.000002 99) rotate(90)" x="0" y="0">
+comparison
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="20" text-anchor="start" x="218" y="150">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(811 145) rotate(90)" x="0" y="0">
+graph
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="791" y="132">
+cpp
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(874 85) rotate(90)" x="0" y="0">
+linux
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="10" text-anchor="start" x="18" y="228">
+hash
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="270" y="139">
+json
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="8" text-anchor="start" x="622" y="84">
+matrix
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" x="566" y="165">
+hpc
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(287 190) rotate(90)" x="0" y="0">
+hpc
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="9" text-anchor="start" x="14" y="188">
+json
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" x="588" y="202">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="11" text-anchor="start" x="787" y="122">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" x="283" y="175">
+http
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(625 221) rotate(90)" x="0" y="0">
+math
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" x="339" y="101">
+midi
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="14" text-anchor="start" x="620" y="195">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="13" text-anchor="start" x="819" y="177">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" x="695" y="196">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(151 203) rotate(90)" x="0" y="0">
+terminal
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="13" text-anchor="start" transform="translate(724 222) rotate(90)" x="0" y="0">
+tui
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(840 148) rotate(90)" x="0" y="0">
+glaze
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" x="659" y="81">
+matrix
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(695 84) rotate(90)" x="0" y="0">
+json
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(513 148) rotate(90)" x="0" y="0">
+math
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(858 109) rotate(90)" x="0" y="0">
+hash
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(293 107) rotate(90)" x="0" y="0">
+format
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" x="248" y="158">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(339 166) rotate(90)" x="0" y="0">
+lua
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(203 84) rotate(90)" x="0" y="0">
+blog
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="13" text-anchor="start" x="517" y="184">
+cpp
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(712 216) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="13" text-anchor="start" transform="translate(31 85) rotate(90)" x="0" y="0">
+usb
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="8" text-anchor="start" x="812" y="166">
+imgui
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" x="273" y="164">
+html
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="8" text-anchor="start" x="427" y="231">
+libc
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(553 92) rotate(90)" x="0" y="0">
+string
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(866 110) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="11" text-anchor="start" transform="translate(536 96) rotate(90)" x="0" y="0">
+utils
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" x="818" y="232">
+rust
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(200 207) rotate(90)" x="0" y="0">
+utils
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(199 226) rotate(90)" x="0" y="0">
+tui
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(494 222) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(353 128) rotate(90)" x="0" y="0">
+ml
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="9" text-anchor="start" x="413" y="152">
+lua
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="9" text-anchor="start" x="698" y="96">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" x="420" y="221">
+zig
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(626 103) rotate(90)" x="0" y="0">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(780 81) rotate(90)" x="0" y="0">
+glaze
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(436 106) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(486 223) rotate(90)" x="0" y="0">
+rust
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" x="378" y="81">
+tts
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(592 212) rotate(90)" x="0" y="0">
+dsp
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" x="282" y="131">
+ipc
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(704 151) rotate(90)" x="0" y="0">
+http
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(352 175) rotate(90)" x="0" y="0">
+tts
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="11" text-anchor="start" x="275" y="213">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" x="817" y="224">
+cpp
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(866 95) rotate(90)" x="0" y="0">
+cpp
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(340 88) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(503 179) rotate(90)" x="0" y="0">
+ui
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(17 199) rotate(90)" x="0" y="0">
+compsci
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(29 148) rotate(90)" x="0" y="0">
+rust
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(353 206) rotate(90)" x="0" y="0">
+mouse
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(417 200) rotate(90)" x="0" y="0">
+tts
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(353 191) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" x="67" y="232">
+tui
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(353 143) rotate(90)" x="0" y="0">
+html
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(353 113) rotate(90)" x="0" y="0">
+hpc
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(586 199) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" x="569" y="174">
+html
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(151 93) rotate(90)" x="0" y="0">
+mouse
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(575 147) rotate(90)" x="0" y="0">
+cpp
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(883 81) rotate(90)" x="0" y="0">
+ui
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(832 154) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(438 221) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(796 109) rotate(90)" x="0" y="0">
+tui
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="9" text-anchor="start" transform="translate(18 83) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(803 140) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" x="409" y="184">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(531 121) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" x="629" y="231">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="649" y="81">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="336" y="179">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" x="202" y="200">
+gui
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(770 81) rotate(90)" x="0" y="0">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="9" text-anchor="start" x="68" y="223">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="8" text-anchor="start" x="260" y="159">
+cli
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(558 125) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(820 156) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="8" text-anchor="start" x="619" y="95">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(626 209) rotate(90)" x="0" y="0">
+zig
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(151 131) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#365c41" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(151 119) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="23" y="221">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#396935" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(703 87) rotate(90)" x="0" y="0">
+ui
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="8" text-anchor="start" transform="translate(687 171) rotate(90)" x="0" y="0">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" transform="translate(607 230) rotate(90)" x="0" y="0">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#184f37" font-family="Roboto Regular" font-size="8" text-anchor="start" x="374" y="89">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="7" text-anchor="start" x="389" y="82">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="817" y="217">
+os
+</text>
+<text dominant-baseline="text-before-edge" fill="#28634c" font-family="Roboto Regular" font-size="9" text-anchor="start" x="279" y="204">
+ai
+</text>
+<text dominant-baseline="text-before-edge" fill="#206549" font-family="Roboto Regular" font-size="7" text-anchor="start" x="704" y="196">
+ai
+</text>
+</svg>

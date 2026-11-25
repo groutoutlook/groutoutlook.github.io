@@ -6,7 +6,7 @@ import test from 'node:test';
 import vm from 'node:vm';
 import { assemble, normalizeBase, ogisImageUrl, rewriteBlog, withFavicon } from '../scripts/build-site.mjs';
 
-import { topicCloudInput } from '../scripts/build-topic-cloud.mjs';
+import { journalWeaves } from '../scripts/build-topic-cloud.mjs';
 
 const sample = `<head><title>TILs - Page 1</title><link href="/style.css"></head><body>
 <nav><a class="top-link" href="/">All TILs</a></nav><h1>TILs</h1>
@@ -20,18 +20,29 @@ const topicDetails = `<details class="by-topic" id="topics"><summary>TILs by top
 <a href="/category/cpp"><span>C&#43;&#43; &amp; Tools</span><span class="til-tag-count">12</span></a>
 </details><details id="in-topic-tags"><a><span>Body only</span><span class="til-tag-count">20</span></a></details>`;
 
-test('Glyphweave uses canonical master tags weighted by published parent-tag counts', () => {
-  const dictionary = `[master_tags.rust]
+test('journal weaves count heading and body tags once per published entry in its source journal', () => {
+  const dictionary = `[master_tags."programming-tools"]
+source = "ToolsJournal.md"
+parent_tag = "tool"
+[master_tags.rust]
 source = "RustJournal.md"
-[master_tags."programming-tools"]
-parent_tag = "C++ & Tools"
-[master_tags.'unpublished']
-parent_tag = "Body only"
-aliases = ["Rust"]`;
-  const html = topicDetails.replace('</details>', '<a><span>Miscellaneous</span><span class="til-tag-count">99</span></a></details>');
-  assert.deepEqual(topicCloudInput(html, dictionary), [['rust', 4], ['programming-tools', 12]]);
-  assert.deepEqual(topicCloudInput(sample, dictionary), []);
-  assert.throws(() => topicCloudInput(html, ''), /No master tag tables/);
+[master_tags.empty]
+source = "EmptyJournal.md"`;
+  const tools = '<a class="til-tag parent-tag"><span>#tool</span></a>';
+  const rust = '<a class="til-tag parent-tag"><span>#rust</span></a>';
+  const shared = '<a class="til-tag master-tag"><span>CLI &amp; tools</span></a>';
+  const input = [
+    `${tools}${shared}<a class="til-tag in-topic-tag">#CLI &amp; tools</a><a class="til-tag in-topic-tag">#linux</a><div class="til-content"><a class="til-tag">body markup</a>`,
+    `${tools}${shared}<a class="til-tag"><span>rust</span></a>`,
+    tools,
+    `${rust}${shared}<a class="til-tag in-topic-tag">#rust</a>`,
+    `<a class="til-tag parent-tag"><span>#unmapped</span></a>${shared}`,
+  ];
+  assert.deepEqual(journalWeaves(dictionary, input), [
+    { name: 'programming-tools', parent: 'tool', posts: 3, tags: [['cli & tools', 2], ['linux', 1], ['rust', 1]] },
+    { name: 'rust', parent: 'rust', posts: 1, tags: [['cli & tools', 1]] },
+  ]);
+  assert.throws(() => journalWeaves('', input), /No master tag tables/);
 });
 
 test('blog routes move together while external links and anchors stay intact', () => {
@@ -88,7 +99,10 @@ test('assembled routes, feed, navigation and legacy redirects work at root and s
     fs.mkdirSync(path.join(blogSource, 'recent/2'), { recursive: true });
     fs.writeFileSync(path.join(blogSource, 'recent/2/index.html'), sample.replace('</body>', `${recent}</body>`));
     fs.writeFileSync(path.join(blogSource, 'index.html'), landing);
-    for (const name of ['topic-cloud.svg', 'topic-cloud-dark.svg']) fs.writeFileSync(path.join(blogSource, name), '<svg/>');
+    const weaves = path.join(blogSource, 'journal-weaves');
+    fs.mkdirSync(path.join(weaves, 'rust'), { recursive: true });
+    fs.writeFileSync(path.join(weaves, 'index.json'), JSON.stringify([{ name: 'rust', parent: 'rs', posts: 2, tags: [['cli & tools', 2]] }]));
+    for (const file of ['light.svg', 'dark.svg']) fs.writeFileSync(path.join(weaves, 'rust', file), '<svg/>');
     fs.writeFileSync(path.join(blogSource, 'post/hello/index.html'), landing);
     fs.writeFileSync(path.join(blogSource, 'style.css'), 'body{}');
     fs.writeFileSync(path.join(blogSource, 'feed.rss'), '<rss><channel><link>/</link><item><link>/post/hello</link><guid isPermaLink="true">/post/hello</guid></item></channel></rss>');
@@ -115,18 +129,22 @@ test('assembled routes, feed, navigation and legacy redirects work at root and s
       assert.deepEqual([...fs.readFileSync(path.join(output, 'favicon.ico')).subarray(0, 6)], [0, 0, 1, 0, 3, 0]);
       assert.ok(fs.readFileSync(path.join(output, 'feed.rss'), 'utf8').includes(`<link>${basePath}blog/post/hello</link>`));
       const landingHtml = fs.readFileSync(path.join(output, 'blog/index.html'), 'utf8');
-      assert.match(landingHtml, /src="topic-cloud\.svg"/);
-      assert.match(landingHtml, /src="topic-cloud-dark\.svg"/);
+      assert.ok(landingHtml.includes(`href="${basePath}blog/visualizations/#journal-weaves"`));
       assert.ok(landingHtml.includes(`href="${basePath}blog/visualizations/"`));
       const visualizations = fs.readFileSync(path.join(output, 'blog/visualizations/index.html'), 'utf8');
-      assert.ok(visualizations.includes(`src="${basePath}blog/topic-cloud.svg"`));
-      assert.ok(visualizations.includes(`href="${basePath}blog/#topics"`));
+      assert.ok(visualizations.includes(`href="${basePath}blog/journal-weaves/rust/"`));
+      const weave = fs.readFileSync(path.join(output, 'blog/journal-weaves/rust/index.html'), 'utf8');
+      assert.ok(weave.includes(`href="${basePath}blog/category/rs/"`));
+      assert.match(weave, /<th scope="row">cli &amp; tools<\/th><td>2<\/td>/);
+      for (const file of ['light.svg', 'dark.svg']) {
+        assert.ok(weave.includes(`src="${basePath}blog/journal-weaves/rust/${file}"`));
+        assert.ok(fs.existsSync(path.join(output, 'blog/journal-weaves/rust', file)));
+      }
       assert.match(visualizations, /February 2024 · 2 posts/);
       assert.match(visualizations, /2024-02-29 · 2 posts/);
       assert.doesNotMatch(visualizations, /March 2024/);
       const map = fs.readFileSync(path.join(output, 'map/index.html'), 'utf8');
       assert.ok(map.includes(`href="${basePath}blog/visualizations/"`));
-      for (const name of ['topic-cloud.svg', 'topic-cloud-dark.svg']) assert.ok(fs.existsSync(path.join(output, 'blog', name)));
       const postHtml = fs.readFileSync(path.join(output, 'blog/post/hello/index.html'), 'utf8');
       assert.ok(postHtml.includes('property="og:image"'));
       assert.doesNotMatch(postHtml, /class="topic-cloud"/);
@@ -141,11 +159,11 @@ test('assembled routes, feed, navigation and legacy redirects work at root and s
       vm.runInNewContext(script, { location });
       assert.equal(redirected, undefined, 'unknown paths do not redirect');
     }
-    fs.unlinkSync(path.join(blogSource, 'topic-cloud-dark.svg'));
+    fs.unlinkSync(path.join(weaves, 'rust', 'dark.svg'));
     const noCloud = assemble({ blogSource, cardSource, output: path.join(temp, 'no-cloud'), quiet: true }).output;
     const calendarOnly = fs.readFileSync(path.join(noCloud, 'blog/visualizations/index.html'), 'utf8');
     assert.match(calendarOnly, /Posting calendar/);
-    assert.doesNotMatch(calendarOnly, /topic-cloud\.svg/);
+    assert.doesNotMatch(calendarOnly, /journal-weaves\/rust/);
     assert.match(fs.readFileSync(path.join(noCloud, 'map/index.html'), 'utf8'), /blog\/visualizations/);
 
     assert.throws(() => assemble({ blogSource, cardSource, output: temp }), /must not contain/);
