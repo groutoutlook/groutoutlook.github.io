@@ -10,10 +10,14 @@
 </li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://www.st.com/en/clocks-and-timers/rtc-parallel-interface-timekeepers.html">RTC - Parallel interface (Timekeepers) - STMicroelectronics</a></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?abbucket=13">M4T28-BR12SH1 M4T28 M4T32-BR12SH1 M4T32 测试好 质量保证 DIP</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> for lego <a href="https://item.taobao.com/item.htm?id=658157721810&amp;itemIds=658157721810">时钟模块 传感器 DS1307 PCF8563可编程创客教育兼容Arduino micr</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> for lego <a href="https://item.taobao.com/item.htm?id=658157721810&amp;itemIds=658157721810">时钟模块 传感器 DS1307 PCF8563可编程创客教育兼容Arduino micr</a>
+<ul>
+<li>#firmware <a href="https://github.com/libdriver/ds1307"><code>DS1307</code> full-featured driver library for general-purpose MCU and Linux.</a></li>
+</ul>
+</li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 25 18:53:23 2026] <a href="https://github.com/Makuna/Rtc/discussions/141">DS1302 - multiple devices on SPI bus · 3-Wire protocol.</a>
 <ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #firmware #linux #mcu #libc <a href="https://github.com/libdriver/ds1302/tree/main"><code>DS1302</code> full-featured driver library for general-purpose MCU and Linux.</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #firmware #linux #mcu #libc <a href="https://github.com/libdriver/ds1302/tree/main"><code>DS1302</code> driver library for general-purpose MCU and Linux.</a></li>
 </ul>
 </li>
 </ul>
