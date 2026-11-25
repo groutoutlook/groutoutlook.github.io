@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`ESPectre` Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</title><category>esp32</category><category>hard</category><category>sensor</category><pubDate>2026-11-25 07:35:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Marginalia Search</title><category>list</category><category>niche</category><category>search/engine</category><pubDate>2026-11-25 08:16:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://marginalia-search.com/">Marginalia Search</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://lite.duckduckgo.com/lite/">Lite DuckDuckGo</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://yep.com/">Yep</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50638220">Marginalia Search, Money, C++, Rust, AI, Stuff</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`ESPectre` Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</title><category>esp32</category><category>hard</category><category>sensor</category><pubDate>2026-11-25 07:35:19 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/francescopace/espectre"><code>ESPectre</code> Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> PIR sensor is equal with trash. it's dirt cheap and being used in PIR LED module all the time tho.</li>
@@ -278,18 +290,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><a href="https://cstheory.stackexchange.com/questions/529/does-vp-neq-vnp-imply-p-neq-np/534#534">Does VP ≠ VNP imply P ≠ NP</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</title><category>cicd</category><category>code/forge</category><category>github</category><category>prog</category><pubDate>2026-11-24 01:36:09 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/groutoutlook/QcClip-Mod/actions/workflows/release.yml">disable workflow of YAML work in here.. on the &quot;workflow option&quot; on right most for now.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> the <code>… </code> elipsis.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
