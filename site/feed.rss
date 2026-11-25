@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`aholo-viewer` high performance 3DGS renderer</title><category>cpp</category><category>file</category><category>graphic</category><category>vulkan</category><pubDate>2026-11-25 05:48:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Battery and crystal - STMicroelectronics</title><category>comp</category><category>module</category><category>rtc</category><pubDate>2026-11-25 06:53:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.st.com/en/clocks-and-timers/battery-and-crystal.html">Battery and crystal - STMicroelectronics</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.st.com/en/clocks-and-timers/m4t28-br12sh.html">M4T28-BR12SH | Product - STMicroelectronics</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://www.st.com/en/clocks-and-timers/rtc-parallel-interface-timekeepers.html">RTC - Parallel interface (Timekeepers) - STMicroelectronics</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?abbucket=13">M4T28-BR12SH1 M4T28 M4T32-BR12SH1 M4T32 测试好 质量保证 DIP</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> for lego <a href="https://item.taobao.com/item.htm?id=658157721810&amp;itemIds=658157721810">时钟模块 传感器 DS1307 PCF8563可编程创客教育兼容Arduino micr</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 25 18:53:23 2026] <a href="https://github.com/Makuna/Rtc/discussions/141">DS1302 - multiple devices on SPI bus · 3-Wire protocol.</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #firmware #linux #mcu #libc <a href="https://github.com/libdriver/ds1302/tree/main"><code>DS1302</code> full-featured driver library for general-purpose MCU and Linux.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Bend` 2 fast language that blocks AI mistakes via proof</title><category>compsci</category><category>functional</category><category>lang</category><pubDate>2026-11-25 06:10:20 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/bendlang/bend"><code>Bend</code> 2 fast language that blocks AI mistakes via proof</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`aholo-viewer` high performance 3DGS renderer</title><category>cpp</category><category>file</category><category>graphic</category><category>vulkan</category><pubDate>2026-11-25 05:48:22 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/manycoretech/aholo-viewer"><code>aholo-viewer</code> high performance 3DGS renderer</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -248,33 +281,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->  <a href="https://breezewiki.com/yugioh/wiki/Yugi_Mutou_(manga">Yugi Mutou (manga) | Yu-Gi-Oh!+BreezeWiki</a></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50617499">Per Arm's request, this site will be discontinued on 4 December 2026 :(</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>when making your own mirror from existed `.git` repo</title><category>git</category><category>powershell</category><category>snippet</category><pubDate>2026-11-24 12:43:08 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>when making your own mirror from existed <code>.git</code> repo
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">git fetch --unshallow origin &amp;&amp; quickInitGit -repo_name &#39;groutoutlook/QcClip-Mod&#39; -remote_name origin_code
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>TLE6220GP - FLEX drivers IC inductive and resistive loads (e.g. Solenoids, Injectors, Valves, Relays)</title><category>ic/driver</category><category>inductive</category><category>mcu</category><category>module</category><category>mosfet</category><category>spi</category><pubDate>2026-11-24 12:15:51 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.infineon.com/part/TLE6220GP">TLE6220GP - FLEX drivers IC inductive and resistive loads (e.g. Solenoids, Injectors, Valves, Relays)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> MCU Compatible Power Switch for 12 V and 24 V Applications.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #pcb <a href="https://mp.weixin.qq.com/s/-3oPH_uG62OkAFJRs2KufA">a project that use this chip</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
