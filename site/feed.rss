@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>MSPM0G5187 80MHz Arm Cortex M0+ MCU, 128kB flash, 32kB SRAM, USB 2.0 FS, I2S, ADC and TinyEngine™ NPU</title><category>arch/arm</category><category>mcu</category><category>npu</category><category>usb</category><pubDate>2026-11-25 07:58:29 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>May have to consider getting USB type-C both male cable. but have internal pull up resistor or the one with e-Marker inside.</title><category>asset</category><category>cable</category><category>hard</category><category>usb/typec</category><pubDate>2026-11-25 12:19:31 PM</pubDate><content:encoded><![CDATA[<ul>
+<li>May have to consider getting USB type-C both male cable. but have internal pull up resistor or the one with e-Marker inside.
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>MSPM0G5187 80MHz Arm Cortex M0+ MCU, 128kB flash, 32kB SRAM, USB 2.0 FS, I2S, ADC and TinyEngine™ NPU</title><category>arch/arm</category><category>mcu</category><category>npu</category><category>usb</category><pubDate>2026-11-25 07:58:29 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.ti.com/product/MSPM0G5187">MSPM0G5187 80MHz Arm Cortex M0+ MCU, 128kB flash, 32kB SRAM, USB 2.0 FS, I2S, ADC and TinyEngine™ NPU</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -306,18 +318,6 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Relocated:<!-- raw HTML omitted --> [2026-11-24 10:22:14] from #soft</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Flectar Mail delivers native performance, instant startup, and about 20 MB of private memory at idle.</title><category>backend</category><category>caldav</category><category>mail</category><pubDate>2026-11-24 10:03:41 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/flectar/mail">Flectar Mail delivers native performance, instant startup, and about 20 MB of private memory at idle.</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/trougnouf/cfait"><code>cfait</code> Take control of your TODO list</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/kurrier-org/kurrier"><code>Kurrier</code> modern, self-hosted workspace for email, calendar, contacts and storage.</a></li>
 </ul>
 </li>
 </ul>
