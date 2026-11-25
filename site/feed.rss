@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Battery and crystal - STMicroelectronics</title><category>comp</category><category>module</category><category>rtc</category><pubDate>2026-11-25 06:53:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`ESPectre` Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</title><category>esp32</category><category>hard</category><category>sensor</category><pubDate>2026-11-25 07:35:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/francescopace/espectre"><code>ESPectre</code> Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> PIR sensor is equal with trash. it's dirt cheap and being used in PIR LED module all the time tho.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> there are some interesting #cicd stuff inside here,
+as using QEMU to smoke test firmware of ESP32.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.xda-developers.com/i-built-multimodal-esp32-powered-presence-sensor/">I built a ghost-proof ESP32-powered presence sensor and here’s how it works</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/homeassistant/comments/1tnuxsu">PIR vs Presence Sensor for dual zone Hallway &amp; Stairwell</a>
+<ul>
+<li>#blog <a href="https://mp.weixin.qq.com/s/nVOa6ilwAPsRsxPznSO_xA">HC-SR501 Human Infrared Sensor</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> ToF sensor, LiDAR, various of optical based sensors.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 13:53:38 2026] #re <a href="https://mp.weixin.qq.com/s/azo8R_3Sea2JxZwg8QizmQ">interior of the infrared sensor (human detection) ground light</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 25 19:35:19 2026] #firmware <a href="https://github.com/bitbank2/bb_proximity"><code>bb_proximity</code> cross-platform embedded library for light and proximity sensors</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`PNGdec` optimized PNG decoder suitable for microcontrollers and PCs</title><category>decoder</category><category>embed</category><category>format/png</category><category>image</category><category>libc</category><pubDate>2026-11-25 07:35:10 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/bitbank2/PNGdec"><code>PNGdec</code> optimized PNG decoder suitable for microcontrollers and PCs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Battery and crystal - STMicroelectronics</title><category>comp</category><category>module</category><category>rtc</category><pubDate>2026-11-25 06:53:23 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.st.com/en/clocks-and-timers/battery-and-crystal.html">Battery and crystal - STMicroelectronics</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -257,34 +289,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Feigned surprise is when you act surprised when someone doesn’t know something.</title><category>psychology</category><category>social</category><category>term</category><pubDate>2026-11-24 01:09:18 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>Feigned surprise is when you act surprised when someone doesn’t know something.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.recurse.com/social-rules">Social rules - Recurse Center</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/h6webg/ladybird_is_now_alpha">Ladybird is now in alpha</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>breezewiki: An alternative frontend for Fandom</title><category>list</category><category>proxy</category><category>web/ui</category><category>wpro</category><pubDate>2026-11-24 01:04:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://gitdab.com/cadence/breezewiki">breezewiki: An alternative frontend for Fandom</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->  <a href="https://breezewiki.com/yugioh/wiki/Yugi_Mutou_(manga">Yugi Mutou (manga) | Yu-Gi-Oh!+BreezeWiki</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50617499">Per Arm's request, this site will be discontinued on 4 December 2026 :(</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
