@@ -27,7 +27,7 @@ card, blog, map, and other browser views during assembly.
 later runs that day. Both use the existing card snapshot; neither fetches the
 private card repo nor installs packages nor compiles Rust/WASM.
 `rlo -Force` bypasses the daily blog check and calls `just pub-force`, which
-forces a blog rebuild and regenerates the journal weaves. Card updates are explicit:
+forces a blog rebuild and regenerates the journal word clouds. Card updates are explicit:
 run `just card-import` to fetch/build/import, then `just card-publish` to
 publish the imported files.
 The card-only path keeps successful build details quiet and prints the site URI
@@ -99,19 +99,19 @@ Tiller uses `/blog/` rather than overriding
 the base URL with `--dev`. Existing generated pages with root URLs are also
 supported, so assembling alone does not require a full journal rebuild.
 
-The blog links to **Journal tag weaves** on `/blog/visualizations/`. Each
-configured journal with published tagged entries gets a page. Glyphweave
-spells the canonical master tag from `~/hw/dot/config/jrnl/master-tags.toml`
-using that journal's own tags. The page shows how many entries used each
-tag, counting a tag once per entry across heading and body tags. The
-visualizations page also includes a calendar of published posts.
+The blog links to **Blog visualizations**, which lists the journal word
+clouds and a calendar of published posts. Each journal in
+`~/hw/dot/config/jrnl/master-tags.toml` with published tagged entries gets a
+page with a cloud of its most-used tags and a table of all tag counts.
+Tags link to their existing Tiller pages. Each tag counts once per entry
+across heading and body tags.
 
-`just rebuild` and `rlo -Force` run Glyphweave after Tiller and write light and
+`just rebuild` and `rlo -Force` run Wordcloud offline after Tiller and write light and
 dark SVGs and the tag counts to `site/journal-weaves/`. Daily builds and Pages
 assembly reuse those files. To regenerate from the existing Tiller snapshot,
 run `node scripts/build-topic-cloud.mjs`.
-`GLYPHWEAVE_EXE`, `GLYPHWEAVE_FONT`, and `JRNL_MASTER_TAGS` can override the local
-executable, font, and dictionary paths.
+`WORDCLOUD_EXE` and `JRNL_MASTER_TAGS` can override the local executable and
+dictionary paths.
 The blog header reads **Blog**, with Home and Map links on every entry.
 Open `/share-preview.html` after `just dev` to see the card's share image and
 download its vCard or JSContact. Paste a `/blog/post/.../` URL into that preview to inspect

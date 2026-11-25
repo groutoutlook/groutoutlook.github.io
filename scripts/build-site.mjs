@@ -102,7 +102,9 @@ const topicsStart = /<details\b[^>]*\bid=["']topics["'][^>]*>/i;
 const journalWeavesPath = 'journal-weaves';
 const topicCloudStyle = `<style>
 .topic-cloud { margin: 1rem 0; }
-.topic-cloud img { display: block; width: 100%; height: auto; }
+.topic-cloud svg, .topic-cloud img { display: block; width: 100%; height: auto; }
+.topic-cloud a { pointer-events: bounding-box; }
+.topic-cloud a:is(:hover, :focus-visible) path { stroke: currentColor; stroke-width: 1.25; }
 .topic-cloud .topic-cloud-dark, html[data-theme="dark"] .topic-cloud-light { display: none; }
 html[data-theme="dark"] .topic-cloud .topic-cloud-dark { display: block; }
 @media (prefers-color-scheme: dark) {
@@ -115,17 +117,25 @@ html[data-theme="dark"] .topic-cloud .topic-cloud-dark { display: block; }
 .journal-tag-counts th, .journal-tag-counts td { padding: .35rem .75rem; text-align: start; overflow-wrap: anywhere; }
 .journal-tag-counts td:last-child { text-align: end; font-variant-numeric: tabular-nums; }
 </style>`;
-function topicCloud(name) {
-  const prefix = `/blog/${journalWeavesPath}/${name}/`;
-  return `<figure class="topic-cloud" role="img" aria-label="${name} woven from tags in its published journal entries">
-  <img class="topic-cloud-light" src="${prefix}light.svg" alt="" width="900" height="320">
-  <img class="topic-cloud-dark" src="${prefix}dark.svg" alt="" width="900" height="320">
-</figure>`;
+function topicCloud(name, directory, links) {
+  const images = ['light', 'dark'].map(theme => {
+    const source = fs.readFileSync(path.join(directory, `${theme}.svg`), 'utf8');
+    // Wordcloud emits one titled glyph path for each placed word.
+    const words = [...source.matchAll(/<path fill="(#[\da-f]{6})" d="([a-z\d.,\s+-]+)"><title>([^<]*)<\/title><\/path>/gi)]
+      .map(([, fill, outline, title]) => {
+        const tag = decodeHtmlText(title);
+        const href = links.get(tag)?.[0]?.href;
+        const glyph = `<path fill="${fill}" d="${outline}"><title>${escapeHtmlAttribute(tag)}</title></path>`;
+        return href ? `<a href="${href}" aria-label="${escapeHtmlAttribute(tag)}">${glyph}</a>` : glyph;
+      });
+    if (!words.length) return `<img class="topic-cloud-${theme}" src="/blog/${journalWeavesPath}/${name}/${theme}.svg" alt="${name} tag cloud" width="900" height="320">`;
+    return `<svg class="topic-cloud-${theme}" viewBox="0 0 900 320" width="900" height="320" aria-label="${name} tag cloud">${words.join('\n')}</svg>`;
+  });
+  return `<figure class="topic-cloud">${images.join('\n')}</figure>`;
 }
 
-function withBlogVisualizations(html, base, weaves) {
-  const link = `<p><a href="${base}blog/visualizations/">Blog visualizations</a></p>`;
-  const overview = weaves.length ? `${link}\n<p><a href="${base}blog/visualizations/#journal-weaves">Journal tag weaves (${weaves.length})</a></p>` : link;
+function withBlogVisualizations(html, base) {
+  const overview = `<p><a href="${base}blog/visualizations/">Blog visualizations</a></p>`;
   return topicsStart.test(html)
     ? html.replace(topicsStart, match => `${overview}\n${match}`)
     : html.replace(/<h1>Blog<\/h1>/, match => `${match}\n${overview}`);
@@ -133,15 +143,28 @@ function withBlogVisualizations(html, base, weaves) {
 
 function blogVisualizations(base, ogisBaseUrl, profile, cover, weaves, calendar) {
   const list = weaves.map(({ name }) => `<li><a href="/blog/${journalWeavesPath}/${name}/">${name}</a></li>`).join('\n');
-  const index = weaves.length ? `<section id="journal-weaves"><h2>Journal tag weaves</h2>
+  const index = weaves.length ? `<section id="journal-weaves"><h2>Journal word clouds</h2>
 <ul class="journal-weave-index">${list}</ul></section>` : '';
   return visualizationPage('Blog visualizations', `${index}\n${calendar}`, `${weaves.length ? topicCloudStyle : ''}\n${calendar ? calendarStyle : ''}`, base, ogisBaseUrl, profile, cover);
 }
 
-function journalWeavePage({ name, parent, posts, tags }, base, ogisBaseUrl, profile, cover) {
-  const rows = tags.map(([tag, count]) => `<tr><th scope="row">${escapeHtmlAttribute(tag)}</th><td>${count}</td></tr>`).join('\n');
-  const content = `<p><a href="/blog/visualizations/#journal-weaves">All journal weaves</a> · <a href="/blog/category/${encodeURIComponent(parent)}/">Browse journal posts</a></p>
-${topicCloud(name)}
+function journalWeavePage({ name, parent, posts, tags }, blog, base, ogisBaseUrl, profile, cover) {
+  const links = new Map(tags.map(([tag, , routes]) => [tag, ['category', 'subtag'].flatMap(kind => {
+    if (routes && !routes[kind]) return [];
+    const parts = (routes?.[kind] ?? tag).replace(/\/$/, '').split('/');
+    if (parts.some(part => !part || part === '.' || part === '..' || /[\\:\u0000]/.test(part))) return [];
+    return fs.existsSync(path.join(blog, kind, ...parts, 'index.html'))
+      ? [{ kind, href: `/blog/${kind}/${parts.map(encodeURIComponent).join('/')}/` }] : [];
+  })]));
+  const rows = tags.map(([tag, count]) => {
+    const label = escapeHtmlAttribute(tag);
+    const [first, second] = links.get(tag);
+    const primary = first ? `<a href="${first.href}">${label}</a>` : label;
+    const other = second ? ` <a href="${second.href}" aria-label="${label} in-topic posts">(in-topic)</a>` : '';
+    return `<tr><th scope="row">${primary}${other}</th><td>${count}</td></tr>`;
+  }).join('\n');
+  const content = `<p><a href="/blog/visualizations/#journal-weaves">All journal word clouds</a> · <a href="/blog/category/${encodeURIComponent(parent)}/">Browse journal posts</a></p>
+${topicCloud(name, path.join(blog, journalWeavesPath, name), links)}
 <p>${posts} published ${posts === 1 ? 'entry' : 'entries'}</p>
 <table class="journal-tag-counts"><thead><tr><th scope="col">Tag</th><th scope="col">Posts</th></tr></thead>
 <tbody>${rows}</tbody></table>`;
@@ -275,14 +298,14 @@ export function assemble({ blogSource = path.join(root, 'site'), cardSource = pa
   const calendar = renderBlogCalendar(publishedDays);
   const hasVisualizations = weaves.length > 0 || Boolean(calendar);
   fs.writeFileSync(path.join(output, 'blog', 'index.html'),
-    hasVisualizations ? withBlogVisualizations(landing, base, weaves) : landing);
+    hasVisualizations ? withBlogVisualizations(landing, base) : landing);
   if (hasVisualizations) {
     const directory = path.join(output, 'blog', 'visualizations');
     const cover = covers['*'] ? new URL(`og/${covers['*']}`, site).href : undefined;
     fs.mkdirSync(directory, { recursive: true });
     fs.writeFileSync(path.join(directory, 'index.html'), blogVisualizations(base, ogisBaseUrl, profile, cover, weaves, calendar));
     for (const weave of weaves) {
-      fs.writeFileSync(path.join(weaveDirectory, weave.name, 'index.html'), journalWeavePage(weave, base, ogisBaseUrl, profile, cover));
+      fs.writeFileSync(path.join(weaveDirectory, weave.name, 'index.html'), journalWeavePage(weave, path.join(output, 'blog'), base, ogisBaseUrl, profile, cover));
     }
   }
   const visualizations = hasVisualizations ? `<li><a href="${base}blog/visualizations/">Blog visualizations</a></li>` : '';
