@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Squash and Stretch and Squeeze in pure CSS</title><category>animation</category><category>html</category><category>uiweb</category><pubDate>2026-11-25 02:08:38 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`aholo-viewer` high performance 3DGS renderer</title><category>cpp</category><category>file</category><category>graphic</category><category>vulkan</category><pubDate>2026-11-25 05:48:22 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/manycoretech/aholo-viewer"><code>aholo-viewer</code> high performance 3DGS renderer</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #python <a href="https://github.com/playcanvas/supersplat"><code>supersplat</code> 3D Gaussian Splat Editor</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Vulkan `wgpu` ports: LingBot-World, HunyuanWorld-Mirror, 3D Gaussian Splatting (AMD Windows, no CUDA)</title><category>graph</category><category>llm</category><category>model</category><category>vulkan</category><pubDate>2026-11-25 05:42:53 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/q760440238/vulkan-world-models#english">Vulkan <code>wgpu</code> ports: LingBot-World, HunyuanWorld-Mirror, 3D Gaussian Splatting (AMD Windows, no CUDA)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://embo.com/introducing-embo">Introducing Embo | Embo</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/shg8/3DGS.cpp"><code>3DGS</code> cross-platform, high performance renderer for Gaussian Splatting using Vulkan Compute</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Squash and Stretch and Squeeze in pure CSS</title><category>animation</category><category>html</category><category>uiweb</category><pubDate>2026-11-25 02:08:38 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.joshwcomeau.com/animation/squash-and-stretch/">Squash and Stretch and Squeeze in pure CSS</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -251,30 +275,6 @@
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #pcb <a href="https://mp.weixin.qq.com/s/-3oPH_uG62OkAFJRs2KufA">a project that use this chip</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>nRF7120 WiFi 6 2.4+5GHz, BLE, Thread, NFC, 256 MHz Arm M33, 256 MHz Risc-V coCPU, SoftPeripherals, 4 MB flash, 1 MB RAM</title><category>matter</category><category>mcu</category><category>nfc</category><category>nordic</category><category>wifi</category><pubDate>2026-11-24 12:11:32 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.nordicsemi.com/Products/nRF7120">nRF7120 WiFi 6 2.4+5GHz, BLE, Thread, NFC, 256 MHz Arm M33, 256 MHz Risc-V coCPU, SoftPeripherals, 4 MB flash, 1 MB RAM</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Clear-ItemProperty` | `clp `</title><category>lang</category><category>powershell</category><pubDate>2026-11-24 12:01:46 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://learn.microsoft.com/powershell/module/microsoft.powershell.management/clear-itemproperty"><code>Clear-ItemProperty</code> | <code>clp </code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> I am about to shim <code>clp</code> to my main clipboard app.. guess I have to de-alias this one.</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
