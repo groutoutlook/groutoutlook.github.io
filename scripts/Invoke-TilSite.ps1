@@ -14,7 +14,9 @@ $tillerArgs = @('--indir', $root, '--outdir', (Join-Path $root 'site'))
 if ($Force) { $tillerArgs += '--force' }
 & $TillerExecutable @tillerArgs 1>$null
 if ($LASTEXITCODE) { exit $LASTEXITCODE }
-& node (Join-Path $PSScriptRoot 'build-topic-cloud.mjs')
-if ($LASTEXITCODE) { exit $LASTEXITCODE }
+if ($Force) {
+    & node (Join-Path $PSScriptRoot 'build-topic-cloud.mjs')
+    if ($LASTEXITCODE) { exit $LASTEXITCODE }
+}
 & node (Join-Path $PSScriptRoot 'build-site.mjs')
 exit $LASTEXITCODE

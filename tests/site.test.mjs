@@ -20,11 +20,18 @@ const topicDetails = `<details class="by-topic" id="topics"><summary>TILs by top
 <a href="/category/cpp"><span>C&#43;&#43; &amp; Tools</span><span class="til-tag-count">12</span></a>
 </details><details id="in-topic-tags"><a><span>Body only</span><span class="til-tag-count">20</span></a></details>`;
 
-test('word cloud uses the published topic counts from the landing page', () => {
-  const input = topicCloudInput(topicDetails);
-  assert.match(input, /weight = 12[\s\S]+words = \["C\+\+ & Tools"\][\s\S]+weight = 4[\s\S]+words = \["Rust"\]/);
-  assert.doesNotMatch(input, /Body only/);
-  assert.equal(topicCloudInput(sample), '');
+test('Glyphweave uses canonical master tags weighted by published parent-tag counts', () => {
+  const dictionary = `[master_tags.rust]
+source = "RustJournal.md"
+[master_tags."programming-tools"]
+parent_tag = "C++ & Tools"
+[master_tags.'unpublished']
+parent_tag = "Body only"
+aliases = ["Rust"]`;
+  const html = topicDetails.replace('</details>', '<a><span>Miscellaneous</span><span class="til-tag-count">99</span></a></details>');
+  assert.deepEqual(topicCloudInput(html, dictionary), [['rust', 4], ['programming-tools', 12]]);
+  assert.deepEqual(topicCloudInput(sample, dictionary), []);
+  assert.throws(() => topicCloudInput(html, ''), /No master tag tables/);
 });
 
 test('blog routes move together while external links and anchors stay intact', () => {

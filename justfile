@@ -62,3 +62,6 @@ hooks:
 
 pub: build
     pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Publish-TilSite.ps1"
+
+pub-force: rebuild
+    pwsh -NoProfile -File "{{justfile_directory()}}/scripts/Publish-TilSite.ps1"

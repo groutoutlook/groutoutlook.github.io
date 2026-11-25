@@ -26,7 +26,8 @@ card, blog, map, and other browser views during assembly.
 `rlo` runs `just pub` for the daily blog publish and `just card-publish` on
 later runs that day. Both use the existing card snapshot; neither fetches the
 private card repo nor installs packages nor compiles Rust/WASM.
-`rlo -Force` still bypasses the daily blog check. Card updates are explicit:
+`rlo -Force` bypasses the daily blog check and calls `just pub-force`, which
+forces a blog rebuild and regenerates the topic cloud. Card updates are explicit:
 run `just card-import` to fetch/build/import, then `just card-publish` to
 publish the imported files.
 The card-only path keeps successful build details quiet and prints the site URI
@@ -98,20 +99,18 @@ Tiller uses `/blog/` rather than overriding
 the base URL with `--dev`. Existing generated pages with root URLs are also
 supported, so assembling alone does not require a full journal rebuild.
 
-The `/blog/` landing page shows a word cloud sized by Tiller’s published topic
-counts. The landing page and sitemap link to `/blog/visualizations/`, which
-also links back to the topic counts. The page includes a calendar of
-published posts by original entry date, covering up to 12 months through the
-latest post. Both views inherit Tiller’s `exclude_tags` filter from the blog
-snapshot.
+The word cloud on `/blog/` and `/blog/visualizations/` weaves the canonical
+names from `~/hw/dot/config/jrnl/master-tags.toml` into `BLOG`. Each name is
+weighted by the square root of the published count for its journal's parent tag. The
+visualizations page links back to the topic counts and includes a calendar
+covering up to 12 months through the latest published post. Both views use
+the filtered Tiller snapshot.
 
-`just build` and `just rebuild` run the local `wordcloud` executable
-after Tiller and save light and dark SVGs in `site/`. `just pub` includes those
-images in the blog snapshot that Pages assembles. The generator reads the
-published topic list and runs offline. To refresh the images from the existing
-snapshot, run `node scripts/build-topic-cloud.mjs`. Set `WORDCLOUD_EXE` to the
-renderer’s executable path if it lives outside the usual MiscLang checkout
-or `PATH`.
+`just rebuild` and `rlo -Force` run Glyphweave after Tiller and save light and
+dark SVGs in `site/`. Daily builds and Pages assembly reuse these SVGs. To
+regenerate them from the existing snapshot, run `node scripts/build-topic-cloud.mjs`.
+`GLYPHWEAVE_EXE`, `GLYPHWEAVE_FONT`, and `JRNL_MASTER_TAGS` can override the local
+executable, font, and dictionary paths.
 The blog header reads **Blog**, with Home and Map links on every entry.
 Open `/share-preview.html` after `just dev` to see the card's share image and
 download its vCard or JSContact. Paste a `/blog/post/.../` URL into that preview to inspect
