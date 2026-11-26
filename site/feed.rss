@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Making battery eliminator and battery cooperate</title><category>battery</category><category>diode/ideal</category><category>hard</category><category>power</category><pubDate>2026-11-26 10:47:42 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Difference between `.js` and `.mjs` files?</title><category>backend</category><category>file</category><category>nodejs</category><pubDate>2026-11-26 03:14:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/57492546/what-is-the-difference-between-js-and-mjs-files">Difference between <code>.js</code> and <code>.mjs</code> files?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>.mjs</code> is for node only.*</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Embed a highly customizable web calendar into your website using ICal source links</title><category>caldav</category><category>calendar</category><category>event</category><category>file</category><category>viewer</category><pubDate>2026-11-26 01:49:58 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/niccokunzmann/open-web-calendar">Embed a highly customizable web calendar into your website using ICal source links</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://serverfault.com/questions/142598/open-source-web-application-for-viewing-ics-calendars">open source web application for viewing .ics calendars - Server Fault</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Poisson distribution</title><category>distribution</category><category>stat</category><pubDate>2026-11-26 01:42:28 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Poisson_distribution">Poisson distribution</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50467297">Our software engineering interviews are changing a little</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>back to the past for a day, month or year. `/front`</title><category>discussion</category><category>forum</category><category>misc</category><category>news</category><category>site/map</category><category>web</category><pubDate>2026-11-26 01:35:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/front"> back to the past for a day, month or year. <code>/front</code></a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>1password</title><category>cli</category><category>manager</category><category>password</category><category>soft</category><pubDate>2026-11-26 01:33:25 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://1password.com/">1password</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> managing passwords... we have a <a href="https://developer.1password.com/docs/cli/">CLI as well</a></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative is<code>bitwarden</code>.
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://community.bitwarden.com/t/auto-type-autofill-for-logging-into-other-desktop-apps/158/495">Auto-type/Autofill for logging into other desktop apps - Feature Requests / Password Manager - Bitwarden Community Forums</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Sep  3 15:32:35 2026] <a href="https://lobste.rs/s/ipy9xw/normalized_fascism_open_source_12">Normalized Fascism in Open Source: $12 Million Given to DHH</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 13:33:25 2026] <a href="https://news.ycombinator.com/item?id=50644817">1Password Security Incident</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Making battery eliminator and battery cooperate</title><category>battery</category><category>diode/ideal</category><category>hard</category><category>power</category><pubDate>2026-11-26 10:47:42 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.eevblog.com/forum/beginners/making-battery-eliminator-and-battery-to-cooperate/">Making battery eliminator and battery cooperate</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -210,87 +274,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Tensor_product">Tensor product</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>May have to consider getting USB type-C both male cable. but have internal pull up resistor or the one with e-Marker inside.</title><category>asset</category><category>cable</category><category>hard</category><category>usb/typec</category><pubDate>2026-11-25 12:19:31 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>May have to consider getting USB type-C both male cable. but have internal pull up resistor or the one with e-Marker inside.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>MSPM0G5187 80MHz Arm Cortex M0+ MCU, 128kB flash, 32kB SRAM, USB 2.0 FS, I2S, ADC and TinyEngine™ NPU</title><category>arch/arm</category><category>mcu</category><category>npu</category><category>usb</category><pubDate>2026-11-25 07:58:29 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.ti.com/product/MSPM0G5187">MSPM0G5187 80MHz Arm Cortex M0+ MCU, 128kB flash, 32kB SRAM, USB 2.0 FS, I2S, ADC and TinyEngine™ NPU</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://mp.weixin.qq.com/s/u2ROkhgiiIEiQ1OKjwsaBw">NPU neural network run by an MCU costing less than $1 achieve 90 times faster</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #sdk <a href="https://software-dl.ti.com/mctools/nnc/mcu/users_guide/">TI Neural Network Compiler for MCUs User’s Guide - 2.1.2.LTS — TI Neural Network Compiler for MCUs User's Guide</a>
-<ul>
-<li>#taobao <a href="https://item.taobao.com/item.htm?id=1083826015564">LP-MSPM0G5187 MSPM0G5187 LaunchPad™ 开发套件评估模块</a>
-<ul>
-<li><a href="https://shop108712443.taobao.com/category.htm">hzidesign</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What is the smallest graph of treewidth k having less edges than the (k+1)-clique?</title><category>csci</category><category>logic/discrete</category><category>math</category><pubDate>2026-11-24 03:02:36 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://cstheory.stackexchange.com/questions/53806/what-is-the-smallest-graph-of-treewidth-k-having-less-edges-than-the-k1-c">What is the smallest graph of treewidth k having less edges than the (k+1)-clique?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>you can try `ogp` any youtube videos to kinda see the thumbnail of almost every thing.</title><category>image</category><category>snippet</category><category>youtube</category><pubDate>2026-11-24 02:25:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>you can try <code>ogp</code> any youtube videos to kinda see the thumbnail of almost every thing.
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted -->
-<pre class="syntax-highlighting"><code class="language-pwsh"><span class="text plain">ogp https://www.youtube.com/watch?v=O_zcc6Xl12g
-</span></code></pre>
-</li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Gravimetry</title><category>metrology</category><category>physic</category><pubDate>2026-11-24 01:55:33 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Gravimetry">Gravimetry</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> to measure strength of a gravitational field.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #science <a href="https://web.archive.org/web/20261123200228/https://news.uq.edu.au/2026-11-uq-researchers-send-unblockable-message-using-gravity">UQ researchers send an unblockable message using gravity - News - The University of Queensland</a>
-<ul>
-<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> demonstrates the possibility of communicating using a method that ordinary physical barriers cannot block.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted -->
-<ul>
-<li>Pro: no EMI. no electromagnetic field.</li>
-<li>Con: you need a 1.8 ton counterweight...</li>
-</ul>
-</li>
-</ul>
-</li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>

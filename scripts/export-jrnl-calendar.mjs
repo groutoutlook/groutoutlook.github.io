@@ -35,7 +35,7 @@ function calendar(records) {
 function recordsFor(entries, alias, kind) {
   const stamp = new Date().toISOString().replace(/[-:]|\.\d+/g, '');
   const occurrences = new Map();
-  return entries.map(entry => {
+  return entries.map(({ entry, source }) => {
     const { uuid, date, time, title, body, tags } = entry;
     const day = new Date(date + 'T00:00:00Z');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(day.valueOf())
@@ -47,7 +47,7 @@ function recordsFor(entries, alias, kind) {
     const occurrence = (occurrences.get(instant) ?? 0) + 1;
     occurrences.set(instant, occurrence);
     const identity = uuid || instant + '#' + occurrence;
-    const id = createHash('sha256').update(JSON.stringify([alias, identity])).digest('hex').slice(0, 32);
+    const id = createHash('sha256').update(JSON.stringify([alias, source, identity])).digest('hex').slice(0, 32);
     const uid = id + '@jrnl.local';
     const component = kind === 'event' ? 'VEVENT' : 'VJOURNAL';
     const dayValue = date.replaceAll('-', '');
@@ -59,6 +59,39 @@ function recordsFor(entries, alias, kind) {
     lines.push('END:' + component);
     return { id, lines };
   });
+}
+
+function runJrnl(alias, values) {
+  const args = [alias, '--format', 'json'];
+  for (const [option, flag] of [['from', '-from'], ['to', '-to'], ['config-file', '--config-file']]) {
+    if (values[option] !== undefined) args.push(flag, values[option]);
+  }
+  const result = spawnSync('jrnl', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['inherit', 'pipe', 'inherit'] });
+  if (result.error) throw result.error;
+  if (result.status !== 0) throw new Error('jrnl export failed (' + (result.status ?? result.signal) + ').');
+  const { entries } = JSON.parse(result.stdout);
+  if (!Array.isArray(entries)) throw new Error('jrnl returned no entries array.');
+  return entries.map(entry => ({ entry, source: alias }));
+}
+
+function allJournals(values) {
+  const args = ['--list', '--format', 'json'];
+  if (values['config-file'] !== undefined) args.push('--config-file', values['config-file']);
+  const result = spawnSync('jrnl', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['inherit', 'pipe', 'inherit'] });
+  if (result.error) throw result.error;
+  if (result.status !== 0) throw new Error('jrnl journal listing failed (' + (result.status ?? result.signal) + ').');
+  const { journals } = JSON.parse(result.stdout);
+  if (!journals || typeof journals !== 'object') throw new Error('jrnl returned no journal map.');
+
+  const seen = new Set();
+  const entries = [];
+  for (const [alias, value] of Object.entries(journals)) {
+    const journalPath = typeof value === 'string' ? value : value?.journal;
+    if (!journalPath || seen.has(journalPath)) continue;
+    seen.add(journalPath);
+    entries.push(...runJrnl(alias, values));
+  }
+  return entries;
 }
 
 function main() {
@@ -74,19 +107,11 @@ function main() {
     },
   });
   const [alias] = positionals;
-  if (positionals.length !== 1 || !/^[\p{L}\p{N}_][\p{L}\p{N}_.-]*$/u.test(alias)
+  if (positionals.length !== 1 || (!/^all$/i.test(alias) && !/^[\p{L}\p{N}_][\p{L}\p{N}_.-]*$/u.test(alias))
     || !['journal', 'event'].includes(values.kind) || (values.output && values.directory)) {
     throw new Error('Usage: node scripts/export-jrnl-calendar.mjs ALIAS [--kind journal|event] [--output FILE | --directory NEW_DIR] [--from DATE] [--to DATE] [--config-file FILE]');
   }
-  const args = [alias, '--format', 'json'];
-  for (const [option, flag] of [['from', '-from'], ['to', '-to'], ['config-file', '--config-file']]) {
-    if (values[option] !== undefined) args.push(flag, values[option]);
-  }
-  const result = spawnSync('jrnl', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['inherit', 'pipe', 'inherit'] });
-  if (result.error) throw result.error;
-  if (result.status !== 0) throw new Error('jrnl export failed (' + (result.status ?? result.signal) + ').');
-  const { entries } = JSON.parse(result.stdout);
-  if (!Array.isArray(entries)) throw new Error('jrnl returned no entries array.');
+  const entries = /^all$/i.test(alias) ? allJournals(values) : runJrnl(alias, values);
 
   const records = recordsFor(entries, alias, values.kind);
   if (values.directory) {
