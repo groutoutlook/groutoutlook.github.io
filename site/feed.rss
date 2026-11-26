@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Low-code programming for event-driven applications : Node-RED</title><category>lowcode</category><category>mqtt</category><category>netw</category><category>wifi</category><pubDate>2026-11-26 04:14:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Paronym - near-homophone(soundalike)/near-cognates(meanalike) word/term</title><category>homophone</category><category>linguistic</category><category>symnonym</category><category>til</category><pubDate>2026-11-26 04:40:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Paronym">Paronym - near-homophone(soundalike)/near-cognates(meanalike) word/term</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> It's when I really want to write something to <code>- Related:</code> but it's only soundalike, and unrelated/tangetially correlation.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>I don&apos;t want streaming music, I want to stream my music</title><category>backend</category><category>music</category><category>software</category><pubDate>2026-11-26 04:38:03 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=35461596">I don't want streaming music, I want to stream my music</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> Emby, Jellyfin, Subsonic and some alternative to Spotify.</li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-server-windows/">Windows tray app and installer for Jellyfin Server on Windows.</a></li>
+<li><a href="https://jellyfin.org/docs/general/post-install/networking/">Networking | Jellyfin</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> #default port HTTP 8096 , HTTPS 8920. access using browser to those localhost to run test.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in <code>scoop</code>. it comes with <code>createdump</code> binary as well, I dont really know.
+<ul>
+<li>Pro: seems like Jellyfin is so famous now.</li>
+<li>Con: lacking in UI compared to Plex or so.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#desktop/client <a href="https://github.com/DonutWare/Fladder"><code>Fladder</code> cross-platform Jellyfin Frontend built on top of Flutter</a>
+<ul>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in <code>scoop</code> and much <strong>modern than everything else</strong></li>
+</ul>
+</li>
+<li>#tui <a href="https://github.com/dhonus/jellyfin-tui"><code>jellyfin-tui</code> Modern music streaming client for the terminal</a></li>
+<li><a href="https://github.com/GioF71/minidlna-docker"><code>minidlna-docker</code> Easily run MiniDLNA with Docker</a></li>
+<li>#cpp #firmware <a href="https://github.com/Linkenelis/ESP32-DLNA-Client">ESP32 DLNA Client</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> instead of trying to fit in the jellyfin system, just do UPnP/DLNA interface.</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 16:38:03 2026] #paronym <a href="https://news.ycombinator.com/item?id=50340088">Show HN: Subvocal – Talk to your computer without making noise</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Low-code programming for event-driven applications : Node-RED</title><category>lowcode</category><category>mqtt</category><category>netw</category><category>wifi</category><pubDate>2026-11-26 04:14:23 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://nodered.org/">Low-code programming for event-driven applications : Node-RED</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -262,30 +312,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #python <a href="https://github.com/playcanvas/supersplat"><code>supersplat</code> 3D Gaussian Splat Editor</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Vulkan `wgpu` ports: LingBot-World, HunyuanWorld-Mirror, 3D Gaussian Splatting (AMD Windows, no CUDA)</title><category>graph</category><category>llm</category><category>model</category><category>vulkan</category><pubDate>2026-11-25 05:42:53 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/q760440238/vulkan-world-models#english">Vulkan <code>wgpu</code> ports: LingBot-World, HunyuanWorld-Mirror, 3D Gaussian Splatting (AMD Windows, no CUDA)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://embo.com/introducing-embo">Introducing Embo | Embo</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://github.com/shg8/3DGS.cpp"><code>3DGS</code> cross-platform, high performance renderer for Gaussian Splatting using Vulkan Compute</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Squash and Stretch and Squeeze in pure CSS</title><category>animation</category><category>html</category><category>uiweb</category><pubDate>2026-11-25 02:08:38 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.joshwcomeau.com/animation/squash-and-stretch/">Squash and Stretch and Squeeze in pure CSS</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
