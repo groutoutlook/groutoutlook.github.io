@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Marginalia Search</title><category>list</category><category>niche</category><category>search/engine</category><pubDate>2026-11-25 08:16:13 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-26 10:06:54 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.ti.com/product/TCAN332">TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a>
+<ul>
+<li>#alternative <a href="https://www.ti.com/product/TCAN3413">TCAN3413 3.3-V CAN FD transceiver with flexible IO and standby mode </a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 10:06:54 2026] #doc/an <a href="https://www.novosns.com/en/documents-download/2084844435420495872/AN-13-0022_For%20CAN%20FD%20Transceiver%20with%20Partial%20Networking.pdf">AN-13-0022_For CAN FD Transceiver with Partial Networking | novosns.com</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>NCA1042C-DSPR | CAN Transceivers | novosns.com</title><category>can</category><category>ic/transceiver</category><category>module</category><pubDate>2026-11-26 10:04:58 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.novosns.com/en/product/NCA1042C-DSPR">NCA1042C-DSPR | CAN Transceivers | novosns.com</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #doc/an <a href="https://www.novosns.com/en/documents-download/2019231853204344834/AN-13-0004_CAN%20Transceiver%20Node%20Calculation%20and%20Peripherals%20Circuit%20Reference%20Design.pdf">AN-13-0004_CAN Transceiver Node Calculation and Peripherals Circuit Reference Design | novosns.com</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.novosns.com/en/product/NCA1462-Q1DNR">NCA1462-Q1DNR | CAN FD Transceiver with Signal Improvement Capability and Standby Mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Marginalia Search</title><category>list</category><category>niche</category><category>search/engine</category><pubDate>2026-11-25 08:16:13 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://marginalia-search.com/">Marginalia Search</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -262,34 +295,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.friedgil.com/nullomers">Nullomers – Gil</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Permanent (mathematics)</title><category>linalg</category><category>matrix/mul</category><category>shape</category><pubDate>2026-11-24 01:44:59 PM</pubDate><content:encoded><![CDATA[<ul>
-<li>[Permanent (mathematics)](https://wikipedia.org/wiki/Permanent_(mathematics)
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Determinant">Determinant</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>What VP ≠ VNP Means (In 3 Minutes) – Gil</title><category>compsci</category><category>linalg</category><category>shape</category><pubDate>2026-11-24 01:41:29 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.friedgil.com/vpvnp">What VP ≠ VNP Means (In 3 Minutes) – Gil</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50620102">VP ≠ VNP over Every Field</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://mathsclub.org/problems/valiant-s-hypothesis">Valiant's Hypothesis — MathsClub</a>
-<ul>
-<li><a href="https://cstheory.stackexchange.com/questions/529/does-vp-neq-vnp-imply-p-neq-np/534#534">Does VP ≠ VNP imply P ≠ NP</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
