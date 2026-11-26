@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 
 const newline = '\r\n';
@@ -74,22 +74,40 @@ function runJrnl(alias, values) {
   return entries.map(entry => ({ entry, source: alias }));
 }
 
-function allJournals(values) {
-  const args = ['--list', '--format', 'json'];
-  if (values['config-file'] !== undefined) args.push('--config-file', values['config-file']);
-  const result = spawnSync('jrnl', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['inherit', 'pipe', 'inherit'] });
-  if (result.error) throw result.error;
-  if (result.status !== 0) throw new Error('jrnl journal listing failed (' + (result.status ?? result.signal) + ').');
-  const { journals } = JSON.parse(result.stdout);
-  if (!journals || typeof journals !== 'object') throw new Error('jrnl returned no journal map.');
+function allTiller(values) {
+  const root = process.env.TILLER_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+  const sourceDir = path.join(root, 'tils');
+  if (!fs.statSync(sourceDir, { throwIfNoEntry: false })?.isDirectory()) {
+    throw new Error(`Tiller source directory not found: ${sourceDir}`);
+  }
 
-  const seen = new Set();
+  const from = values.from ? values.from.slice(0, 10) : null;
+  const to = values.to ? values.to.slice(0, 10) : null;
   const entries = [];
-  for (const [alias, value] of Object.entries(journals)) {
-    const journalPath = typeof value === 'string' ? value : value?.journal;
-    if (!journalPath || seen.has(journalPath)) continue;
-    seen.add(journalPath);
-    entries.push(...runJrnl(alias, values));
+  for (const file of fs.readdirSync(sourceDir).filter(name => name.endsWith('.md')).sort()) {
+    const source = file.slice(0, -3);
+    const lines = fs.readFileSync(path.join(sourceDir, file), 'utf8').split(/\r?\n/);
+    const starts = lines.map((line, index) => /^\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}(?: (?:AM|PM))?\] /.test(line) ? index : -1)
+      .filter(index => index >= 0);
+    for (let index = 0; index < starts.length; index++) {
+      const start = starts[index];
+      const end = starts[index + 1] ?? lines.length;
+      const match = lines[start].match(/^\[(?<date>\d{4}-\d{2}-\d{2}) (?<time>\d{2}:\d{2}:\d{2})(?: (?<meridiem>AM|PM))?\] (?<title>.*)$/);
+      if (!match) continue;
+      const date = match.groups.date;
+      if ((from && date < from) || (to && date > to)) continue;
+      let hour = Number(match.groups.time.slice(0, 2));
+      if (match.groups.meridiem) hour = (hour % 12) + (match.groups.meridiem === 'PM' ? 12 : 0);
+      const time = `${String(hour).padStart(2, '0')}:${match.groups.time.slice(3, 5)}`;
+      const titleParts = [];
+      const tags = [];
+      for (const word of match.groups.title.split(/\s+/)) {
+        if (word.startsWith('#') && word.length > 1) tags.push(word);
+        else if (word.startsWith('@') && word.length > 1) tags.push(word);
+        else titleParts.push(word);
+      }
+      entries.push({ source, entry: { date, time, title: titleParts.join(' '), body: lines.slice(start + 1, end).join('\n').trim(), tags } });
+    }
   }
   return entries;
 }
@@ -111,7 +129,7 @@ function main() {
     || !['journal', 'event'].includes(values.kind) || (values.output && values.directory)) {
     throw new Error('Usage: node scripts/export-jrnl-calendar.mjs ALIAS [--kind journal|event] [--output FILE | --directory NEW_DIR] [--from DATE] [--to DATE] [--config-file FILE]');
   }
-  const entries = /^all$/i.test(alias) ? allJournals(values) : runJrnl(alias, values);
+  const entries = /^all$/i.test(alias) ? allTiller(values) : runJrnl(alias, values);
 
   const records = recordsFor(entries, alias, values.kind);
   if (values.directory) {
