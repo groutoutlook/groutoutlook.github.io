@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-26 10:06:54 AM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Making battery eliminator and battery cooperate</title><category>battery</category><category>diode/ideal</category><category>hard</category><category>power</category><pubDate>2026-11-26 10:47:42 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.eevblog.com/forum/beginners/making-battery-eliminator-and-battery-to-cooperate/">Making battery eliminator and battery cooperate</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://www.analog.com/en/resources/analog-dialogue/articles/robust-power-source-with-ideal-diode.html">Robust Power Source with Ideal Diodes | Analog Devices</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/139600/how-to-use-coin-cell-cr2032-in-parallel-with-a-power-supply">How to use coin cell CR2032 in parallel with a power supply?</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Key points for Ethernet routing/layout: Crossing the median belt is the other side</title><category>blog</category><category>ethernet/phy</category><category>layout</category><category>pcba</category><pubDate>2026-11-26 10:19:21 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s/4AnMnIWt6ZPInIW7Mfj2Ag">Key points for Ethernet routing/layout: Crossing the median belt is the other side</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-26 10:06:54 AM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://www.ti.com/product/TCAN332">TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -8,15 +32,21 @@
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a>
 <ul>
 <li>#alternative <a href="https://www.ti.com/product/TCAN3413">TCAN3413 3.3-V CAN FD transceiver with flexible IO and standby mode </a></li>
+<li>old but <a href="https://www.ti.com/product/SN65HVD233">SN65HVD233 data sheet, product information and support | TI.com</a></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a>
+<ul>
+<li><a href="https://www.ti.com/product/SN65HVD23">SN65HVD23 Extended Common-mode RS-485 Transceiver</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> as popular as TJA1042 and such.</li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 10:06:54 2026] #doc/an <a href="https://www.novosns.com/en/documents-download/2084844435420495872/AN-13-0022_For%20CAN%20FD%20Transceiver%20with%20Partial%20Networking.pdf">AN-13-0022_For CAN FD Transceiver with Partial Networking | novosns.com</a></li>
 </ul>
 </li>
 </ul>
-]]></content:encoded></item><item><title>NCA1042C-DSPR | CAN Transceivers | novosns.com</title><category>can</category><category>ic/transceiver</category><category>module</category><pubDate>2026-11-26 10:04:58 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.novosns.com/en/product/NCA1042C-DSPR">NCA1042C-DSPR | CAN Transceivers | novosns.com</a>
+]]></content:encoded></item><item><title>NCA1042C | CAN Transceivers | novosns.com</title><category>can</category><category>ic/transceiver</category><category>module</category><pubDate>2026-11-26 10:04:58 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://www.novosns.com/en/product/NCA1042C-DSPR">NCA1042C | CAN Transceivers | novosns.com</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
@@ -261,39 +291,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 </li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Sneakernet</title><category>infosec</category><category>lan</category><category>message</category><category>netw</category><pubDate>2026-11-24 01:51:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://sneakernet.eu/">Sneakernet</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> sending message wthout using internet.. but through LAN still. Could be combined with #lora.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/pdecff/sneakernet">Lobsters discussion</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #filesystem #sharing <a href="http://www.nncpgo.org/">NNCP (NNCP)</a>
-<ul>
-<li>#http #p2p still but <a href="https://sneakerweb.org/">sneakerweb</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/vwni9c/sneakerweb">sneakerweb</a></li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <code>iroh</code> and pal.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Human genome</title><category>anim</category><category>biology</category><category>gene</category><pubDate>2026-11-24 01:47:12 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Human_genome">Human genome</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.friedgil.com/nullomers">Nullomers – Gil</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
