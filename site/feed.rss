@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`Ibex` small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</title><category>arch/riscv</category><category>cpld</category><category>vlsi</category><pubDate>2026-11-26 03:51:30 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Low-code programming for event-driven applications : Node-RED</title><category>lowcode</category><category>mqtt</category><category>netw</category><category>wifi</category><pubDate>2026-11-26 04:14:23 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://nodered.org/">Low-code programming for event-driven applications : Node-RED</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://community.home-assistant.io/t/controlling-tuya-devices-locally-using-node-red/584224">Controlling Tuya devices locally using Node-Red - Community Guides - Home Assistant Community</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Chiptune</title><category>audio</category><category>misc</category><category>music</category><pubDate>2026-11-26 03:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Chiptune">Chiptune</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> those so called 8-bit music, which is simplify melody based on sound chips.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #cpp #gui <a href="https://github.com/tildearrow/furnace"><code>furnace</code> multi-system chiptune tracker compatible with DefleMask modules</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45356226">Greatest irony of the AI age: Humans hired to clean AI slop</a>
+<ul>
+<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> We have been doing this for decades. I was hired to correct and train speech
+recognition and OCR programs like 20 years ago, friend of mine corrected geolocated tags.
+In the history of AI systems you basically had people inputing Prolog rules in &quot;smart&quot;
+systems or programmers hardcoding rules is programs like ELIZA or Generalised Problem Solvers.
+<ul>
+<li>Human refine AI results is nothing new. It's labeled with new term and acronym as RLHF.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #culture  <a href="https://www.youtube.com/watch?v=_dUJvlpjwq4">Star Spangled Banner 8-Bit Chiptune</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 15:56:43 2026] #codec #library/cpp <a href="https://github.com/jarikomppa/audio2ay"><code>audio2ay</code> audio file to low rate AY data stream</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Ibex` small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</title><category>arch/riscv</category><category>cpld</category><category>vlsi</category><pubDate>2026-11-26 03:51:30 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/lowrisc/ibex"><code>Ibex</code> small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -251,30 +287,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Button Sounds – collection of professionally-recorded button clicks and presses</title><category>audio</category><category>misc</category><category>web/ui</category><pubDate>2026-11-25 01:59:49 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=50638032">Button Sounds – collection of professionally-recorded button clicks and presses</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> very nice web design.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #css <a href="https://www.joshwcomeau.com/animation/scroll-driven-animations/">Scroll-Driven Animations • Josh W. Comeau</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Cartesian tensor</title><category>shape</category><category>tensor</category><pubDate>2026-11-25 01:19:29 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Cartesian_tensor">Cartesian tensor</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://webhome.phy.duke.edu/~rgb/Class/Electrodynamics/Electrodynamics/node167.html">Tensors in 4 Dimensions</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.vttoth.com/CMS/physics-notes/139-on-tensors-and-their-matrix-representations">Viktor T. Toth - On tensors and their matrix representations</a></li>
 </ul>
 </li>
 </ul>
