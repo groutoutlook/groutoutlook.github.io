@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Difference between `.js` and `.mjs` files?</title><category>backend</category><category>file</category><category>nodejs</category><pubDate>2026-11-26 03:14:52 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>`Ibex` small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</title><category>arch/riscv</category><category>cpld</category><category>vlsi</category><pubDate>2026-11-26 03:51:30 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/lowrisc/ibex"><code>Ibex</code> small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/lowrisc/opentitan"><code>OpenTitan</code> Open source silicon root of trust</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Difference between `.js` and `.mjs` files?</title><category>backend</category><category>file</category><category>nodejs</category><pubDate>2026-11-26 03:14:52 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://stackoverflow.com/questions/57492546/what-is-the-difference-between-js-and-mjs-files">Difference between <code>.js</code> and <code>.mjs</code> files?</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>.mjs</code> is for node only.*</li>
@@ -263,18 +275,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://webhome.phy.duke.edu/~rgb/Class/Electrodynamics/Electrodynamics/node167.html">Tensors in 4 Dimensions</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.vttoth.com/CMS/physics-notes/139-on-tensors-and-their-matrix-representations">Viktor T. Toth - On tensors and their matrix representations</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>terminology - Are matrices 2D by definition?</title><category>definition</category><category>linalg</category><category>matrix</category><category>shape</category><category>tensor</category><pubDate>2026-11-25 01:10:07 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://math.stackexchange.com/questions/1806739/are-matrices-2d-by-definition">terminology - Are matrices 2D by definition?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> there is no such , 3D matrix, it should be called tensor.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://wikipedia.org/wiki/Tensor_product">Tensor product</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
