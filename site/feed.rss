@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Paronym - near-homophone(soundalike)/near-cognates(meanalike) word/term</title><category>homophone</category><category>linguistic</category><category>symnonym</category><category>til</category><pubDate>2026-11-26 04:40:33 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Elf Loader</title><category>embed</category><category>firmware/mcu</category><category>libc</category><category>ota</category><pubDate>2026-11-26 05:34:00 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://ourembeddeds.github.io/blog/2020/08/16/elf-loader/">Elf Loader</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> some explaination about MMU on modern CPU and how to execute ELF in MCU.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://ourembeddeds.github.io/blog/2020/11/02/armv7m-semihosting/">Remote control via semihosting</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://ourembeddeds.github.io/blog/2020/09/21/arm7m-startup-ldscript/">Armv7m Startup (2) - Linker script</a>
+<ul>
+<li>more explaination about linker scripts</li>
+</ul>
+</li>
+<li><a href="https://mklimenko.github.io/english/2018/11/02/disable-semihosting/">Disable semihosting with ARM Compiler 5/6 | GNSS C++ solutions</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 17:34:00 2026] <a href="https://www.qemu.org/docs/master/about/emulation.html#semihosting">Emulation and semihosting <code>QEMU</code> documentation</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/groutoutlook/cortex-m-qemu">cortex-m-qemu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Triplet state</title><category>physic</category><category>quantum</category><category>technologia</category><pubDate>2026-11-26 05:32:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Triplet_state">Triplet state</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Paronym - near-homophone(soundalike)/near-cognates(meanalike) word/term</title><category>homophone</category><category>linguistic</category><category>symnonym</category><category>til</category><pubDate>2026-11-26 04:40:33 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://wikipedia.org/wiki/Paronym">Paronym - near-homophone(soundalike)/near-cognates(meanalike) word/term</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -44,7 +82,11 @@
 </ul>
 </li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> instead of trying to fit in the jellyfin system, just do UPnP/DLNA interface.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 16:38:03 2026] #paronym <a href="https://news.ycombinator.com/item?id=50340088">Show HN: Subvocal – Talk to your computer without making noise</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 16:38:03 2026] #paronym <a href="https://news.ycombinator.com/item?id=50340088">Show HN: Subvocal – Talk to your computer without making noise</a>
+<ul>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #poetry <a href="https://timothyades.com/francisco-de-quevedo-1580-1645-a-una-nariz/">A una Nariz – Timothy Adès</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -289,30 +331,6 @@ as using QEMU to smoke test firmware of ESP32.</li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #firmware #linux #mcu #libc <a href="https://github.com/libdriver/ds1302/tree/main"><code>DS1302</code> driver library for general-purpose MCU and Linux.</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Bend` 2 fast language that blocks AI mistakes via proof</title><category>compsci</category><category>functional</category><category>lang</category><pubDate>2026-11-25 06:10:20 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/bendlang/bend"><code>Bend</code> 2 fast language that blocks AI mistakes via proof</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`aholo-viewer` high performance 3DGS renderer</title><category>cpp</category><category>file</category><category>graphic</category><category>vulkan</category><pubDate>2026-11-25 05:48:22 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/manycoretech/aholo-viewer"><code>aholo-viewer</code> high performance 3DGS renderer</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #python <a href="https://github.com/playcanvas/supersplat"><code>supersplat</code> 3D Gaussian Splat Editor</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
 </ul>
 </li>
 </ul>
