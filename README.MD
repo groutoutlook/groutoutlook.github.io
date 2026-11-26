@@ -194,3 +194,12 @@ filename as its resource ID when writing to Radicale with `calendula caldav put`
 Re-export to a new directory for a fresh snapshot. For entries with no `jrnl`
 UUID, the ID comes from the journal alias and timestamp, plus the entry’s
 position among entries sharing that minute.
+
+The Tiller config enables a static activity calendar from the same entries the
+site publishes. Tiller generates `site/calendar.ics`, `site/calendar.css`, and
+static month pages under `site/calendar/`; excluded tags stay out. `just calendar`
+in MainVault runs that incremental Tiller build, while `rlo` generates the same
+outputs as part of its normal publish. After deployment, the calendar is at
+`https://groutoutlook.github.io/blog/calendar/` and the iCalendar feed is at
+`https://groutoutlook.github.io/blog/calendar.ics`.
+
