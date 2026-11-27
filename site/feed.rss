@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>Elf Loader</title><category>embed</category><category>firmware/mcu</category><category>libc</category><category>ota</category><pubDate>2026-11-26 05:34:00 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>EyeGestures: gaze tracking software</title><category>desktop</category><category>peripheral</category><category>soft</category><pubDate>2026-11-26 06:19:55 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/NativeSensors/EyeGestures">EyeGestures: gaze tracking software</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/ck-zhang/EyeTrax"><code>EyeTrax</code> – webcam-based eye tracking made simple</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>transfer from UFS to MCU (stm32) - Technical Subjects / Open Solution - Quectel Forums</title><category>buildsystem</category><category>memory</category><pubDate>2026-11-26 05:57:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://forums.quectel.com/t/how-to-transfer-from-ufs-to-mcu-stm32/27774">transfer from UFS to MCU (stm32) - Technical Subjects / Open Solution - Quectel Forums</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> OTA on stm32 via ec200.</li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?id=926447083866">瑞莎 Radxa UFS模块 UFS 3.1 无需焊接 多品牌兼容 瑞莎多SBC适用</a>
+<ul>
+<li><a href="https://semiconductor.samsung.com/estorage/ufs/ufs-3-1/">UFS 3.1 | Universal Flash Storage | Samsung Semiconductor Global</a>
+<ul>
+<li>faster #sucessor of eMMC kind of memory.</li>
+</ul>
+</li>
+<li><a href="https://radxa.com/products/rock5/5bp">Radxa ROCK 5B+ CPU RK3588 RTL8852BE wifi6/BLE 5.2 dual mode</a>
+<ul>
+<li><a href="https://radxa.com/products/rock5/5t/">ROCK 5T, ~ 5B+ but 12V VIN at DC Jack 5525 and 2x 2.5 Gigabit Ethernet Ports, 1 PoE <strong>builtin</strong></a></li>
+<li><a href="https://docs.radxa.com/en/rock5/rock5t/getting-started/introduction?versions=ROCK+5T+V1.2">ROCK 5T Product Introduction | Radxa Docs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=1011554119533">瑞莎 Radxa Cubie A7S 迷你主板 全志A733 八核CPU 3TOPS WiFi6</a>
+<ul>
+<li><a href="https://item.taobao.com/item.htm?id=874627252163">全志原装全新A733MX-HN3 A733MX-N3X AXP318W,AXP515,AC101开发票</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/radxa-build/radxa-a733">radxa-a733: Generic A733 Image for Radxa products</a></li>
+</ul>
+</li>
+<li><a href="https://mp.weixin.qq.com/s/d-XAW8pw1j8l_jD1ZLakew">Rockchip has released the RK3572, and this year there will also be the RK3688 and the 250TOPS+ RK1899 coming soon!</a>
+<ul>
+<li>naming scheme of rockchip isnt making sense at all.</li>
+</ul>
+</li>
+<li>#re <a href="https://mp.weixin.qq.com/s/IoAkzcMo0sQ4ksObBMUUoA">Product Teardown: Under the DJI ROMO 2 Transparent Shell, 36,000Pa Super Suction Power</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 17:57:34 2026] <a href="https://radxa.com/products/cubie/a5e/">Radxa Cubie A5E is on promotion for 12.12 at 2GB: 299</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Modular arithmetic - Residue systems</title><category>numeric</category><category>shape</category><pubDate>2026-11-26 05:50:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Modular_arithmetic#Residue_systems">Modular arithmetic - Residue systems</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Metre-stick</title><category>slang</category><category>stem</category><category>vocab</category><pubDate>2026-11-26 05:47:32 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Metre-stick">Metre-stick</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #math #compsci <a href="https://wiki.bbchallenge.org/wiki/Graham%27s_number">Graham's number - BusyBeaverWiki</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://wiki.bbchallenge.org/wiki/Probvious">Probvious: high degree of confidence about a mathematical statement that is not known to be true</a>
+<ul>
+<li><a href="https://www.sligocki.com//2023/10/16/bb-3-3-is-hard.html">BB(3, 3) is Hard (Bigfoot) | sligocki</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Pilcrow - hex(0xB6)</title><category>ascii</category><category>file</category><category>hex</category><pubDate>2026-11-26 05:38:09 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Pilcrow">Pilcrow - hex(0xB6) </a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://superuser.com/questions/1100931/what-is-this-mystery-paragraph-mark-in-microsoft-word-that-cannot-be-copied">windows 7 - What is this mystery paragraph mark in Microsoft Word that cannot be copied?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> hate this so much since once things crashed, this appeared quite a lot.</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Elf Loader</title><category>embed</category><category>firmware/mcu</category><category>libc</category><category>ota</category><pubDate>2026-11-26 05:34:00 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://ourembeddeds.github.io/blog/2020/08/16/elf-loader/">Elf Loader</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> some explaination about MMU on modern CPU and how to execute ELF in MCU.</li>
@@ -246,91 +344,6 @@ systems or programmers hardcoding rules is programs like ELIZA or Generalised Pr
 </li>
 <li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> as popular as TJA1042 and such.</li>
 <li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 10:06:54 2026] #doc/an <a href="https://www.novosns.com/en/documents-download/2084844435420495872/AN-13-0022_For%20CAN%20FD%20Transceiver%20with%20Partial%20Networking.pdf">AN-13-0022_For CAN FD Transceiver with Partial Networking | novosns.com</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>NCA1042C | CAN Transceivers | novosns.com</title><category>can</category><category>ic/transceiver</category><category>module</category><pubDate>2026-11-26 10:04:58 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.novosns.com/en/product/NCA1042C-DSPR">NCA1042C | CAN Transceivers | novosns.com</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #doc/an <a href="https://www.novosns.com/en/documents-download/2019231853204344834/AN-13-0004_CAN%20Transceiver%20Node%20Calculation%20and%20Peripherals%20Circuit%20Reference%20Design.pdf">AN-13-0004_CAN Transceiver Node Calculation and Peripherals Circuit Reference Design | novosns.com</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.novosns.com/en/product/NCA1462-Q1DNR">NCA1462-Q1DNR | CAN FD Transceiver with Signal Improvement Capability and Standby Mode</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Marginalia Search</title><category>list</category><category>niche</category><category>search/engine</category><pubDate>2026-11-25 08:16:13 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://marginalia-search.com/">Marginalia Search</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://lite.duckduckgo.com/lite/">Lite DuckDuckGo</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://yep.com/">Yep</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50638220">Marginalia Search, Money, C++, Rust, AI, Stuff</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`ESPectre` Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</title><category>esp32</category><category>hard</category><category>sensor</category><pubDate>2026-11-25 07:35:19 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/francescopace/espectre"><code>ESPectre</code> Motion detection system based on Wi-Fi spectre analysis (CSI), Home Assistant integration</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> PIR sensor is equal with trash. it's dirt cheap and being used in PIR LED module all the time tho.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> there are some interesting #cicd stuff inside here,
-as using QEMU to smoke test firmware of ESP32.</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://www.xda-developers.com/i-built-multimodal-esp32-powered-presence-sensor/">I built a ghost-proof ESP32-powered presence sensor and here’s how it works</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://www.reddit.com/r/homeassistant/comments/1tnuxsu">PIR vs Presence Sensor for dual zone Hallway &amp; Stairwell</a>
-<ul>
-<li>#blog <a href="https://mp.weixin.qq.com/s/nVOa6ilwAPsRsxPznSO_xA">HC-SR501 Human Infrared Sensor</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> ToF sensor, LiDAR, various of optical based sensors.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Mon Nov  2 13:53:38 2026] #re <a href="https://mp.weixin.qq.com/s/azo8R_3Sea2JxZwg8QizmQ">interior of the infrared sensor (human detection) ground light</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 25 19:35:19 2026] #firmware <a href="https://github.com/bitbank2/bb_proximity"><code>bb_proximity</code> cross-platform embedded library for light and proximity sensors</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`PNGdec` optimized PNG decoder suitable for microcontrollers and PCs</title><category>decoder</category><category>embed</category><category>format/png</category><category>image</category><category>libc</category><pubDate>2026-11-25 07:35:10 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/bitbank2/PNGdec"><code>PNGdec</code> optimized PNG decoder suitable for microcontrollers and PCs</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Battery and crystal - STMicroelectronics</title><category>comp</category><category>module</category><category>rtc</category><pubDate>2026-11-25 06:53:23 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.st.com/en/clocks-and-timers/battery-and-crystal.html">Battery and crystal - STMicroelectronics</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
-<ul>
-<li><a href="https://www.st.com/en/clocks-and-timers/m4t28-br12sh.html">M4T28-BR12SH | Product - STMicroelectronics</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> <a href="https://www.st.com/en/clocks-and-timers/rtc-parallel-interface-timekeepers.html">RTC - Parallel interface (Timekeepers) - STMicroelectronics</a></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://item.taobao.com/item.htm?abbucket=13">M4T28-BR12SH1 M4T28 M4T32-BR12SH1 M4T32 测试好 质量保证 DIP</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> for lego <a href="https://item.taobao.com/item.htm?id=658157721810&amp;itemIds=658157721810">时钟模块 传感器 DS1307 PCF8563可编程创客教育兼容Arduino micr</a>
-<ul>
-<li>#firmware <a href="https://github.com/libdriver/ds1307"><code>DS1307</code> full-featured driver library for general-purpose MCU and Linux.</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Wed Nov 25 18:53:23 2026] <a href="https://github.com/Makuna/Rtc/discussions/141">DS1302 - multiple devices on SPI bus · 3-Wire protocol.</a>
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #firmware #linux #mcu #libc <a href="https://github.com/libdriver/ds1302/tree/main"><code>DS1302</code> driver library for general-purpose MCU and Linux.</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
