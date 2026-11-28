@@ -1,4 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>EyeGestures: gaze tracking software</title><category>desktop</category><category>peripheral</category><category>soft</category><pubDate>2026-11-26 06:19:55 PM</pubDate><content:encoded><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>TILs</title><link>/blog/</link><description></description><item><title>A Website To End All Websites | Henry From Online</title><category>internet</category><category>opin</category><category>retro</category><category>wprog</category><pubDate>2026-11-28 06:30:08 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://henry.codes/writing/a-website-to-destroy-all-websites/">A Website To End All Websites | Henry From Online</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://lobste.rs/s/kbkcbe/website_end_all_websites">discussion in Lobsters</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50674218">Unkernel: Real Linux kernel, compiled to WebAssembly</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Nov 28 18:30:08 2026] <a href="https://github.com/gbl08ma/waarm64">gbl08ma/waarm64: A whole 64-bit ARM computer in a browser tab.</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>algorithm - What is the difference between an edge case and a corner case?</title><category>prog</category><category>term</category><pubDate>2026-11-27 09:53:29 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://stackoverflow.com/questions/47560177/what-is-the-difference-between-an-edge-case-and-a-corner-case">algorithm - What is the difference between an edge case and a corner case?</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Elicitation technique</title><category>ai</category><category>mcp</category><category>vocab</category><pubDate>2026-11-27 03:44:18 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Elicitation_technique">Elicitation technique</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50653477">Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Company Culture = Slack Emoji ÷ √Headcount</title><category>communication</category><category>corporation</category><category>slack</category><category>society</category><category>software</category><pubDate>2026-11-27 02:55:35 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://news.ycombinator.com/item?id=50659640">Company Culture = Slack Emoji ÷ √Headcount</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`Tavily` CLI: search, extract, crawl, map, and research from the command line</title><category>ai</category><category>cli</category><category>search</category><pubDate>2026-11-27 02:09:34 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/tavily-ai/cli"><code>Tavily</code> CLI: search, extract, crawl, map, and research from the command line</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://docs.tavily.com/documentation/tavily-cli#tavily-cli">Tavily CLI</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> <a href="https://docs.tavily.com/documentation/mcp?landing=docs.tavily.com%2Fdocumentation%2Ftavily-cli">Tavily MCP</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>CWT: Continuous wavelet transform</title><category>elec</category><category>math</category><category>signal</category><pubDate>2026-11-27 01:05:19 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://wikipedia.org/wiki/Continuous_wavelet_transform">CWT: Continuous wavelet transform</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>`meilisearch` search engine API for local/selfhosted server</title><category>backend</category><category>library</category><category>regex</category><category>rust</category><category>search/engine</category><category>service</category><category>web/api</category><pubDate>2026-11-27 12:52:39 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://github.com/meilisearch/meilisearch"><code>meilisearch</code> search engine API for local/selfhosted server</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> alternative to <code>elasticsearch</code>. Much more modern I guess.</li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://a.l3x.in/blog/use-the-unshittified-alternatives/">Stop complaining about enshittification. Use the alternatives • Alexander Fortin</a></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted -->
+<ul>
+<li>#guide : <a href="https://www.meilisearch.com/docs/learn/self_hosted/getting_started_with_self_hosted_meilisearch">Getting started with self-hosted Meilisearch — Meilisearch documentation</a>
+<ul>
+<li>relatively simple.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --> in scoop.</li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative : <a href="https://github.com/algolia/algoliasearch-client-javascript">algoliasearch-client-javascript API client to interact with Algolia</a>
+<ul>
+<li>It's not embeddable without paying them the license...</li>
+<li>#meta #comparison: <a href="https://www.meilisearch.com/docs/learn/resources/comparison_to_alternatives">Comparison to alternatives — Meilisearch documentation</a></li>
+<li>#alternative: <a href="https://github.com/Tencent/MMKV">Tencent/MMKV: An efficient, small mobile key-value storage framework developed by WeChat. Works on Android, iOS, macOS, Windows, POSIX, and OHOS.</a>
+<ul>
+<li><a href="https://github.com/mrousavy/react-native-mmkv">mrousavy/react-native-mmkv: ⚡️ The fastest key/value storage for React Native. ~30x faster than AsyncStorage!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> <a href="https://github.com/apache/solr"><code>solr</code> search software</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> or <a href="https://github.com/manticoresoftware/manticoresearch"><code>manticoresearch</code> database for search, alternative Elasticsearch, for E in the ELK stack</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45950720">Building a Simple Search Engine That Works</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 27 12:52:39 2026] <a href="https://a.l3x.in/blog/use-the-unshittified-alternatives/">Stop complaining about enshittification. Use the alternatives</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <a href="https://www.tavily.com/">Tavily - Web search API for agents</a></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=49963171">Web Search API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>A deep dive into my `Forgejo` setup • Alexander Fortin</title><category>backend</category><category>code/forge</category><category>forgejo</category><pubDate>2026-11-27 12:50:48 PM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://a.l3x.in/blog/welcome-to-my-forge/">A deep dive into my <code>Forgejo</code> setup • Alexander Fortin</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://forge.l3x.in/alex/pi-shared">personal Pi coding agent's skills and prompts - Forgejo: Alexander Fortin's forge</a></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50660180">AI made self-hosting fun again</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Create private networks with WARP-to-WARP · Cloudflare Zero Trust docs</title><category>cloudflare</category><category>netw</category><category>network</category><category>remote</category><pubDate>2026-11-27 10:15:48 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/warp-to-warp/">Create private networks with WARP-to-WARP · Cloudflare Zero Trust docs</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> p2p network with <code>warp-cli</code></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> CF Access offer Zero trust Remote access solution, same as Tailscale.</li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #android: <a href="https://tailscale.com/kb/1079/install-android#mdm-deployments">Install Tailscale on Android · Tailscale Docs</a></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted -->
+<ul>
+<li>#comparison : <a href="https://tailscale.com/compare/zerotier">ZeroTier vs. Tailscale | Which VPN Alternative is Better for You?</a>
+<ul>
+<li><a href="https://www.reddit.com/r/CloudFlare/comments/uiotfa">Cloudflare Zero Trust, Zerotier, Tailscale - differences?</a></li>
+<li><a href="https://tailscale.com/compare/cloudflare-access">Cloudflare Access vs. Tailscale | Compare Access and Gateway to Tailscale</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Sat Oct 24 13:53:35 2026] <a href="https://github.com/tailscale/tailscale/issues/183">FR: Connect to multiple tailnets simultaneously · Issue #183 · tailscale/tailscale</a></li>
+<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Fri Nov 27 10:15:48 2026] <a href="https://github.com/prnake/lolinet"><code>lolinet</code> machines on 1 encrypted network, on relays you own</a></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Summary - Maintainability</title><category>cicd</category><category>prog</category><category>wprog</category><pubDate>2026-11-27 08:49:26 AM</pubDate><content:encoded><![CDATA[<ul>
+<li><a href="https://sonarcloud.io/summary/new_code?id=inventree_InvenTree">Summary - Maintainability</a>
+<ul>
+<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
+</ul>
+</li>
+</ul>
+]]></content:encoded></item><item><title>EyeGestures: gaze tracking software</title><category>desktop</category><category>peripheral</category><category>soft</category><pubDate>2026-11-26 06:19:55 PM</pubDate><content:encoded><![CDATA[<ul>
 <li><a href="https://github.com/NativeSensors/EyeGestures">EyeGestures: gaze tracking software</a>
 <ul>
 <li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
@@ -197,153 +358,6 @@
 <li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
 <li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://community.home-assistant.io/t/controlling-tuya-devices-locally-using-node-red/584224">Controlling Tuya devices locally using Node-Red - Community Guides - Home Assistant Community</a></li>
 <li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Chiptune</title><category>audio</category><category>misc</category><category>music</category><pubDate>2026-11-26 03:56:43 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Chiptune">Chiptune</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> those so called 8-bit music, which is simplify melody based on sound chips.</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> #cpp #gui <a href="https://github.com/tildearrow/furnace"><code>furnace</code> multi-system chiptune tracker compatible with DefleMask modules</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=45356226">Greatest irony of the AI age: Humans hired to clean AI slop</a>
-<ul>
-<li><!-- raw HTML omitted -->Recite:<!-- raw HTML omitted --> We have been doing this for decades. I was hired to correct and train speech
-recognition and OCR programs like 20 years ago, friend of mine corrected geolocated tags.
-In the history of AI systems you basically had people inputing Prolog rules in &quot;smart&quot;
-systems or programmers hardcoding rules is programs like ELIZA or Generalised Problem Solvers.
-<ul>
-<li>Human refine AI results is nothing new. It's labeled with new term and acronym as RLHF.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #culture  <a href="https://www.youtube.com/watch?v=_dUJvlpjwq4">Star Spangled Banner 8-Bit Chiptune</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 15:56:43 2026] #codec #library/cpp <a href="https://github.com/jarikomppa/audio2ay"><code>audio2ay</code> audio file to low rate AY data stream</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>`Ibex` small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</title><category>arch/riscv</category><category>cpld</category><category>vlsi</category><pubDate>2026-11-26 03:51:30 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/lowrisc/ibex"><code>Ibex</code> small 32-bit RISC-V CPU core with high-level of verification (previously known as zero-riscy)</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://github.com/lowrisc/opentitan"><code>OpenTitan</code> Open source silicon root of trust</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Difference between `.js` and `.mjs` files?</title><category>backend</category><category>file</category><category>nodejs</category><pubDate>2026-11-26 03:14:52 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://stackoverflow.com/questions/57492546/what-is-the-difference-between-js-and-mjs-files">Difference between <code>.js</code> and <code>.mjs</code> files?</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> <code>.mjs</code> is for node only.*</li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Embed a highly customizable web calendar into your website using ICal source links</title><category>caldav</category><category>calendar</category><category>event</category><category>file</category><category>viewer</category><pubDate>2026-11-26 01:49:58 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://github.com/niccokunzmann/open-web-calendar">Embed a highly customizable web calendar into your website using ICal source links</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://serverfault.com/questions/142598/open-source-web-application-for-viewing-ics-calendars">open source web application for viewing .ics calendars - Server Fault</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Poisson distribution</title><category>distribution</category><category>stat</category><pubDate>2026-11-26 01:42:28 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://wikipedia.org/wiki/Poisson_distribution">Poisson distribution</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://news.ycombinator.com/item?id=50467297">Our software engineering interviews are changing a little</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>back to the past for a day, month or year. `/front`</title><category>discussion</category><category>forum</category><category>misc</category><category>news</category><category>site/map</category><category>web</category><pubDate>2026-11-26 01:35:34 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/front"> back to the past for a day, month or year. <code>/front</code></a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>1password</title><category>cli</category><category>manager</category><category>password</category><category>soft</category><pubDate>2026-11-26 01:33:25 PM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://1password.com/">1password</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --> managing passwords... we have a <a href="https://developer.1password.com/docs/cli/">CLI as well</a></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #alternative is<code>bitwarden</code>.
-<ul>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://community.bitwarden.com/t/auto-type-autofill-for-logging-into-other-desktop-apps/158/495">Auto-type/Autofill for logging into other desktop apps - Feature Requests / Password Manager - Bitwarden Community Forums</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Sep  3 15:32:35 2026] <a href="https://lobste.rs/s/ipy9xw/normalized_fascism_open_source_12">Normalized Fascism in Open Source: $12 Million Given to DHH</a></li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 13:33:25 2026] <a href="https://news.ycombinator.com/item?id=50644817">1Password Security Incident</a></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Making battery eliminator and battery cooperate</title><category>battery</category><category>diode/ideal</category><category>hard</category><category>power</category><pubDate>2026-11-26 10:47:42 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.eevblog.com/forum/beginners/making-battery-eliminator-and-battery-to-cooperate/">Making battery eliminator and battery cooperate</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --> <a href="https://www.analog.com/en/resources/analog-dialogue/articles/robust-power-source-with-ideal-diode.html">Robust Power Source with Ideal Diodes | Analog Devices</a></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> <a href="https://electronics.stackexchange.com/questions/139600/how-to-use-coin-cell-cr2032-in-parallel-with-a-power-supply">How to use coin cell CR2032 in parallel with a power supply?</a></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>Key points for Ethernet routing/layout: Crossing the median belt is the other side</title><category>blog</category><category>ethernet/phy</category><category>layout</category><category>pcba</category><pubDate>2026-11-26 10:19:21 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://mp.weixin.qq.com/s/4AnMnIWt6ZPInIW7Mfj2Ag">Key points for Ethernet routing/layout: Crossing the median belt is the other side</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --></li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</title><category>can</category><category>ic/transceiver</category><category>proto</category><pubDate>2026-11-26 10:06:54 AM</pubDate><content:encoded><![CDATA[<ul>
-<li><a href="https://www.ti.com/product/TCAN332">TCAN332 3.3-V CAN Transceivers ±12V CAN/CAN-FD voltage</a>
-<ul>
-<li><!-- raw HTML omitted -->Recap:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Run:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Resolution:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Reason:<!-- raw HTML omitted --></li>
-<li><!-- raw HTML omitted -->Root:<!-- raw HTML omitted --> #og <a href="https://www.ti.com/product/SN65HVD230">SN65HVD230 3.3 V CAN Transceiver with Standby Mode </a>
-<ul>
-<li>#alternative <a href="https://www.ti.com/product/TCAN3413">TCAN3413 3.3-V CAN FD transceiver with flexible IO and standby mode </a></li>
-<li>old but <a href="https://www.ti.com/product/SN65HVD233">SN65HVD233 data sheet, product information and support | TI.com</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Related:<!-- raw HTML omitted --> #taobao <a href="https://item.taobao.com/item.htm?id=1067248361463">SPI/IIC转4路 CH9434D模块 UART/TTL串口/CAN总线工控拓展</a>
-<ul>
-<li><a href="https://www.ti.com/product/SN65HVD23">SN65HVD23 Extended Common-mode RS-485 Transceiver</a></li>
-</ul>
-</li>
-<li><!-- raw HTML omitted -->Rival:<!-- raw HTML omitted --> as popular as TJA1042 and such.</li>
-<li><!-- raw HTML omitted -->Revisit:<!-- raw HTML omitted --> [Thu Nov 26 10:06:54 2026] #doc/an <a href="https://www.novosns.com/en/documents-download/2084844435420495872/AN-13-0022_For%20CAN%20FD%20Transceiver%20with%20Partial%20Networking.pdf">AN-13-0022_For CAN FD Transceiver with Partial Networking | novosns.com</a></li>
 </ul>
 </li>
 </ul>
